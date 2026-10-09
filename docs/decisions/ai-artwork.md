@@ -14,7 +14,9 @@ Preserve unused unique artwork and disabled source. Reusing parent artwork remai
 
 ## Current artwork progress
 
-The [second batch](../ai-artwork-batch-2.md) adds eight import-commodity redraws, for 12 AI icons and 106 unchanged originals. The owner corrected the processor palette during review: its center must stay red and all eight outer cells blue. For future batches, enlarge the original before describing its colors and preserve each color-bearing part and its position. First-batch counts and validation below remain historical.
+The owner confirmed the [second batch](../ai-artwork-batch-2.md) works. The [third batch](../artwork-batch-3.md) adds seven sprite-referenced redraws and reuses the shared-factory icon from Engines, bringing the local set to 19 AI icons and 98 unchanged originals. Its integrated graphical check remains pending.
+
+Before future drawing, inspect the existing sprite/animation sheets and check both Yuoki Industries and Yuoki Engines for related artwork. Reuse confirmed parent assets directly. Otherwise reference both the original icon and actual sprite frames, preserving camera, footprint, structure and colors. The owner rejected icon-only component/shared-factory drafts because their structures were inaccurate. The processor's earlier color correction also remains binding: red center, eight blue outer cells. Full batch records retain the reference and correction evidence. First-batch counts below remain historical.
 
 ## Arrow variants
 

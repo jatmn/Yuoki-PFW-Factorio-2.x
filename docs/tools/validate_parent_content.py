@@ -68,6 +68,13 @@ assert set(redraws) == {
     'graphics/imports/crystal_1.png', 'graphics/imports/crystal_green.png',
     'graphics/imports/wire_2.png', 'graphics/imports/uni-com-pro.png',
     'graphics/imports/barren_mixed_9.png', 'graphics/imports/barren_mixed_11.png',
+    'graphics/entity/fabrik-bio-icon.png',
+    'graphics/entity/fabrik-comp-icon.png',
+    'graphics/entity/fabrik-equip-icon.png',
+    'graphics/entity/fabrik-trucks-icon.png',
+    'graphics/entity/fabrik-weapons-icon.png',
+    'graphics/entity/profit-show-1-icon.png',
+    'graphics/entity/profit-show-2-icon.png',
 }
 assert not redraws.keys() & replacements.keys()
 for entry in redraws.values():
@@ -160,7 +167,7 @@ for asset in assets:
         assert arrow_variants[asset['path']]['original_sha256'] == asset['sha256'], asset['path']
     else:
         assert hashlib.sha256((ROOT / asset['path']).read_bytes()).hexdigest() == asset['sha256'], asset['path']
-assert len(replacements) == 39
+assert len(replacements) == 40
 assert len(list((ROOT / 'graphics').rglob('*.png'))) == len(assets) - len(replacements) - len(arrow_variants)
 
 def check_layouts(value):
@@ -196,6 +203,6 @@ for i, line in enumerate(lines):
 trades = [r for r in recipes if 'yrcat-retrade' in after['recipe'][r['name']].get('categories', [])]
 assert len(trades) == 56
 print(f'PASS: {removed} redundant declarations inactive; 105 recipe routes and quantities retained; '
-      '56 trades supported; pending mappings/parent behavior preserved; 39 parent assets verified, '
-      '12 AI icons/source images verified, 49 arrow variants replaced, 106 original graphics unchanged; '
+      '56 trades supported; pending mappings/parent behavior preserved; 40 parent assets verified, '
+      '19 AI icons/source images verified, 49 arrow variants replaced, 98 original graphics unchanged; '
       '0.5.1 changelog and no migrations verified.')

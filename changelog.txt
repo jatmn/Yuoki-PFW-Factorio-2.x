@@ -10,6 +10,7 @@ Date: 9. 10. 2026
     - Redraw the ammunition factory, plasma gun, tire and filled energy-cell icons at 64px using the selected AI artwork method.
     - Generate PFW import/export arrows with Yuoki helpers; remove 49 precomposed trade-icon variants and retain their base-art mappings.
     - Redraw the eight import commodity base icons at 64px; generated trade arrows follow the updated artwork.
+    - Redraw seven factory/display icons from their original sprite references; reuse Engines artwork for the shared-factory icon.
   Compatibility:
     - Keep the two pending PFW energy guns compatible with Yuoki's energy ammunition.
     - Keep migrations deferred until a formal release; validate this development version with fresh games.

@@ -936,6 +936,32 @@
       ],
       "evidence": "Visually confirmed same artwork family; decoded pixels differ. Parent version used directly.",
       "metadata": "Icon size follows provider dimensions; equal-sized sprites retain all frame, direction, shift and scale fields."
+    },
+    {
+      "pfw_path": "graphics/entity/tut-icon.png",
+      "provider": "yi_engines",
+      "provider_path": "graphics/entity/science_gen_icon.png",
+      "original_dimensions": [
+        32,
+        32
+      ],
+      "provider_dimensions": [
+        32,
+        32
+      ],
+      "original_sha256": "3aaa3340c95b6a1a73a93047e2c616b093c9e3b089fe436a1f70140a4cbe03e5",
+      "provider_sha256": "e6fdebfc60fa78eb15f7cff07078ab7461683c795f9407be6259cdf341bd1240",
+      "source_references_before": [
+        "prototypes/ir_factory.lua:28",
+        "prototypes/ir_factory.lua:30",
+        "prototypes/ir_factory.lua:31",
+        "prototypes/e_factory.lua:94",
+        "prototypes/e_factory.lua:156",
+        "prototypes/e_factory.lua:187"
+      ],
+      "evidence": "Batch3 sprite review: same four circular stations, blue central rotor and front rotor machine family. Parent icon is a newer rendering/state, not byte-identical. Reuse directly; do not generate another copy. PFW directional sheets remain for later frame-specific assessment.",
+      "metadata": "All six icon paths use parent image directly at its existing32px size; no entity or recipe alias.",
+      "batch": 3
     }
   ],
   "retained_candidates": [

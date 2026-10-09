@@ -8,7 +8,7 @@ The [accepted build plan](build-plan.md) puts a crash-free launch first. Compreh
 
 ## Current implementation status
 
-The [0.5.1 artwork pass](asset-reuse-0.5.1.md) implemented 39 visually confirmed replacements, initially retaining 167 original files unchanged. The subsequent [AI-artwork decision](decisions/ai-artwork.md) applies four reviewed redraws; 163 other local files remain unchanged. The latest [arrow-overlay pass](decisions/trade-arrow-overlays.md) removes 49 more variants and leaves 118 local images (four AI redraws and 114 originals). The [second AI batch](ai-artwork-batch-2.md) then redraws eight bases; the current total remains 118 local images (12 AI icons, 106 originals). The inventory and candidate tables below remain historical discovery evidence.
+The [0.5.1 artwork pass](asset-reuse-0.5.1.md) implemented 39 visually confirmed replacements, initially retaining 167 original files unchanged. The subsequent [AI-artwork decision](decisions/ai-artwork.md) applies four reviewed redraws; 163 other local files remain unchanged. The latest [arrow-overlay pass](decisions/trade-arrow-overlays.md) removes 49 more variants and leaves 118 local images (four AI redraws and 114 originals). The [second AI batch](ai-artwork-batch-2.md) then redraws eight bases; that batch retained 118 local images (12 AI icons, 106 originals). The [third batch](artwork-batch-3.md) reuses the shared-factory icon from Engines and redraws seven building icons, leaving 117 local images (19 AI icons, 98 originals) and 40 parent replacements. The inventory and candidate tables below remain historical discovery evidence.
 
 ## Preserve unused assets and disabled code
 

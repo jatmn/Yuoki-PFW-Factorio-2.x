@@ -64,3 +64,5 @@ Preserve unique recipes when a machine/item moves to a parent. Retain redundant 
 On 2026-10-09 the owner selected **AI-assisted redraws** after reviewing four comparisons against conventional resizing. Follow the [accepted artwork decision](decisions/ai-artwork.md), preserve parent reuse and unused unique artwork, and review later batches at game size. The first four reviewed icons are implemented at 64px; this does not complete all retained artwork or animation work.
 
 The owner also selected [Yuoki-generated trade arrows](decisions/trade-arrow-overlays.md). Redraw base artwork only and generate arrow variants through the parent helper; do not create separate baked-arrow PNGs.
+
+For building artwork, the owner requires inspecting existing sprite/animation sheets and checking both parents before drawing. Reuse confirmed parent art directly; otherwise use both icon and sprite references. Preserve structural identity and colors. See the [batch3 reference correction](artwork-batch-3.md).
