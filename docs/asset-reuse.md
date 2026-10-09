@@ -16,9 +16,7 @@ The owner also confirmed that retained PFW-owned artwork should be brought up to
 - Preserve the existing artwork, transparency, silhouettes, and consistent appearance across animation frames. Select the resampling/enhancement method through representative visual comparisons; upscaling cannot recover missing original detail automatically.
 - Keep the original artwork recoverable through the baseline commit; avoid shipping old and upscaled copies together when only one is used.
 
-Resolution improvement and runtime performance must be validated separately. Enlarging an image alone does not establish faster rendering: doubling both dimensions gives four times as many pixels before compression and can increase texture-memory requirements. Factorio developers have documented memory/performance pressure from higher-resolution sprites. These historical reports explain the tradeoff; actual Factorio 2.1 results must be measured on the final assets. [Rendering and memory](https://www.factorio.com/blog/post/fff-227), [texture streaming](https://www.factorio.com/blog/post/fff-264).
-
-Record visual quality, package size, loading time, and graphics-memory/rendering behavior separately using the same game version, mod set, save/view, zoom, hardware, and graphics settings. Report whether reuse, removal, and upscaling improve or regress each measurement; do not claim an FPS/UPS improvement from increased resolution alone.
+Validate the updated artwork in-game at representative zoom levels. Review icon clarity, transparency, animation alignment, and intended world size, and record the resulting distribution package size.
 
 ## Dependency and selection policy
 
@@ -81,7 +79,6 @@ These are candidates, not approved deletion instructions. The audit also records
 - Normal graphical Factorio startup and in-game visual inspection confirm icons, machines, equipment, and every retained armor animation. A headless prototype dump alone does not verify appearance.
 - The distribution contains no local copies of the approved replaced assets, and unique retained assets still work.
 - Retained low-resolution artwork has a documented target and reviewed upscale where needed; icons remain clear and animated assets preserve frame alignment, alpha edges, and intended world size.
-- Performance and memory claims use comparable before/after measurements; larger image dimensions are not accepted as evidence of a speed improvement.
 - Package-size measurements describe the actual release archive, with no assumption that filename-match totals equal savings.
 
 Reproduce the initial audit with Python 3:

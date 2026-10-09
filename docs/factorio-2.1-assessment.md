@@ -12,7 +12,7 @@ All external ingredient/product names referenced by active PFW recipes appeared 
 
 ## Asset ownership before the port
 
-Map existing artwork to supported parent-owned assets before modernizing its prototype references. Keep both parent mods required, detect their enabled versions in the data stage, and use their files or visual definitions. Remove duplicate PFW files after replacement references and graphical validation are complete. Upscale retained low-resolution PFW assets to reviewed targets, with correct icon/frame metadata and preserved world size. Measure visual quality and runtime performance separately; increased resolution alone is not a performance optimization. These are required parts of restoration, not optional later package cleanup. The [initial audit](asset-reuse.md) records 39 same-named candidates, with resolution/layout differences still requiring review.
+Map existing artwork to supported parent-owned assets before modernizing its prototype references. Keep both parent mods required, detect their enabled versions in the data stage, and use their files or visual definitions. Remove duplicate PFW files after replacement references and graphical validation are complete. Upscale retained low-resolution PFW assets to reviewed targets, with correct icon/frame metadata and preserved world size. These are required parts of restoration, not optional later package cleanup. The [initial audit](asset-reuse.md) records 39 same-named candidates, with resolution/layout differences still requiring review.
 
 ## Required compatibility work
 
