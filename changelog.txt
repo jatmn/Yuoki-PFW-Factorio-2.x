@@ -18,6 +18,7 @@ Date: 9. 10. 2026
     - Redraw the PFW crafting-tab icon and energy-cell equipment image at 128px; keep the equipment display size and shared cell model.
     - Redraw both static profit-display world sprites at double resolution while retaining their display size and placement.
     - Reuse Engines' matching east/west factory animation; retain its original display size and the distinct north/south artwork.
+    - Rebuild the ammunition-factory animation with a fixed AI-redrawn body, separate moving parts and shadow; preserve its 16-frame cycle.
   Compatibility:
     - Keep the two pending PFW energy guns compatible with Yuoki's energy ammunition.
     - Keep migrations deferred until a formal release; validate this development version with fresh games.

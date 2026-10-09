@@ -153,6 +153,37 @@ for name in ['y-factory-4', 'y-factory-6', 'y-factory-7']:
         assert sprite['filename'] == '__yi_engines__/graphics/entity/science_gen.png'
         assert (sprite['width'], sprite['height'], sprite.get('scale', 1)) == (120, 120, 1)
         sprite.update(width=128, height=128, scale=0.9375)
+# The ammunition factory shares one layered animation in all directions.
+ammo_layers = []
+for name, width, height, shift in [
+    ('base', 256, 256, [0.5, 0]),
+    ('upper', 44, 35, [0.046875, -0.6953125]),
+    ('front', 44, 41, [0.0625, 1.1015625]),
+    ('rear', 44, 32, [0.1875, -1.53125]),
+    ('shadow', 256, 256, [0.5, 0]),
+]:
+    layer = dict(filename='__yi_pfw__/graphics/entity/fab-ammo-' + name + '.png',
+                 width=width, height=height, scale=0.5, shift=shift)
+    if name in {'base', 'shadow'}:
+        layer.update(frame_count=1, repeat_count=16)
+    else:
+        layer.update(frame_count=16, line_length=16)
+    if name == 'shadow':
+        layer['draw_as_shadow'] = True
+    ammo_layers.append(layer)
+expected['assembling-machine']['y-factory-1']['graphics_set']['animation'] = {'layers': ammo_layers}
+layered, = redraw_map['layered_animations']
+assert layered['prototype'] == 'y-factory-1'
+assert {e['path'] for e in layered['outputs']} == {
+    layer['filename'].removeprefix('__yi_pfw__/') for layer in ammo_layers
+}
+for entry in [layered['original'], layered['source'], *layered['outputs']]:
+    content = (ROOT / entry['path']).read_bytes()
+    assert hashlib.sha256(content).hexdigest() == entry['sha256'], entry['path']
+    assert list(struct.unpack('>II', content[16:24])) == entry['dimensions'], entry['path']
+for layer in ammo_layers:
+    content = (ROOT / layer['filename'].removeprefix('__yi_pfw__/')).read_bytes()
+    assert struct.unpack('>II', content[16:24]) == (layer['width'] * layer.get('line_length', 1), layer['height'])
 trade_map = json.loads((ROOT / 'docs/data/trade-icons-0.5.1.json').read_text())
 arrow_variants = {a['path']: a for a in trade_map['removed_variants']}
 assert len(arrow_variants) == 49
@@ -206,7 +237,7 @@ for asset in assets:
     else:
         assert hashlib.sha256((ROOT / asset['path']).read_bytes()).hexdigest() == asset['sha256'], asset['path']
 assert len(replacements) == 41
-assert len(list((ROOT / 'graphics').rglob('*.png'))) == len(assets) - len(replacements) - len(arrow_variants)
+assert len(list((ROOT / 'graphics').rglob('*.png'))) == len(assets) - len(replacements) - len(arrow_variants) + len(ammo_layers)
 
 def check_layouts(value):
     if isinstance(value, list):

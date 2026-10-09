@@ -1078,5 +1078,71 @@
       ],
       "review": "Original world sprites and accepted icon masters inspected; pinned parent graphic review reused. Grey-background comparison and160px display preview reviewed. Shadows corrected; rejected radial crop retained in docs. Graphical placement check pending."
     }
+  ],
+  "layered_animations": [
+    {
+      "prototype": "y-factory-1",
+      "method": "Fixed accepted AI body, rotor faces and lighting; projected moving markings, original rear trajectory and shadow; see docs/tools/build_ammo_animation.py.",
+      "frame_count": 16,
+      "scale": 0.5,
+      "original": {
+        "path": "graphics/entity/fab-ammo-sheet.png",
+        "sha256": "59368a1d6909b2f30e20f082c6bfebcb8654396aa250613781f481fb0985c0bf",
+        "dimensions": [
+          2048,
+          128
+        ]
+      },
+      "source": {
+        "path": "docs/artwork/ai-redraw-0.5.1/fabrik-ammo-icon-source.png",
+        "sha256": "2bc6e7f886b1d070a55f6590a927578d044584e8a4bf84c5e7fe338bcddf3719",
+        "dimensions": [
+          1254,
+          1254
+        ]
+      },
+      "outputs": [
+        {
+          "path": "graphics/entity/fab-ammo-base.png",
+          "sha256": "71558f70e3f865997af2d01d68f5408aa4354e11adcdeaa98ad7499b944950f5",
+          "dimensions": [
+            256,
+            256
+          ]
+        },
+        {
+          "path": "graphics/entity/fab-ammo-upper.png",
+          "sha256": "1df86ed8c08aa3212fb7a21f278b90c99d57842c6e4b44d4fae04b2308270285",
+          "dimensions": [
+            704,
+            35
+          ]
+        },
+        {
+          "path": "graphics/entity/fab-ammo-front.png",
+          "sha256": "4ee2cf3777854281cebfce0da4bbc8ff9be43151a3f45af3cb8d191763549577",
+          "dimensions": [
+            704,
+            41
+          ]
+        },
+        {
+          "path": "graphics/entity/fab-ammo-rear.png",
+          "sha256": "704d996ee1f8a5450ad59d3c2f2522118cf5f7989da6d321ec57c0c4cdf2009e",
+          "dimensions": [
+            704,
+            32
+          ]
+        },
+        {
+          "path": "graphics/entity/fab-ammo-shadow.png",
+          "sha256": "147cccf13285ea411dd22d151fbd7e8237700d95d5d1f7863239bfefdb6e3cfc",
+          "dimensions": [
+            256,
+            256
+          ]
+        }
+      ]
+    }
   ]
 }
