@@ -21,11 +21,11 @@ data:extend(
 		energy_source =
 		{
 			type = "electric",
-			buffer_capacity = "15KJ",
-			input_flow_limit = "30KW",
+			buffer_capacity = "15kJ",
+			input_flow_limit = "30kW",
 			usage_priority = "primary-input"
 		},
-		energy_per_shield = "3KJ",
+		energy_per_shield = "3kJ",
 		categories = {"armor"},
 	},
 	
@@ -49,11 +49,11 @@ data:extend(
 		energy_source =
 		{
 			type = "electric",
-			buffer_capacity = "25KJ",
-			input_flow_limit = "50KW",
+			buffer_capacity = "25kJ",
+			input_flow_limit = "50kW",
 			usage_priority = "primary-input"
 		},
-		energy_per_shield = "5KJ",
+		energy_per_shield = "5kJ",
 		categories = {"armor"},
 	},
 	
@@ -77,11 +77,11 @@ data:extend(
 		energy_source =
 		{
 			type = "electric",
-			buffer_capacity = "35KJ",
-			input_flow_limit = "70KW",
+			buffer_capacity = "35kJ",
+			input_flow_limit = "70kW",
 			usage_priority = "primary-input"
 		},
-		energy_per_shield = "7KJ",
+		energy_per_shield = "7kJ",
 		categories = {"armor"},
 	},	
 	
@@ -105,11 +105,11 @@ data:extend(
 		energy_source =
 		{
 			type = "electric",
-			buffer_capacity = "56KJ",
-			input_flow_limit = "110KW",
+			buffer_capacity = "56kJ",
+			input_flow_limit = "110kW",
 			usage_priority = "primary-input"
 		},
-		energy_per_shield = "8KJ",
+		energy_per_shield = "8kJ",
 		categories = {"armor"},
 	},
 	
@@ -135,7 +135,7 @@ data:extend(
 			buffer_capacity = "15MJ",
 			input_flow_limit = "15MW",
 			output_flow_limit = "15MW",
-			usage_priority = "terciary"
+			usage_priority = "tertiary"
 		},
 		categories = {"armor"},
 	},

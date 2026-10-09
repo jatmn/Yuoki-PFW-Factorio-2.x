@@ -71,4 +71,4 @@ A port should assign ownership of these prototypes explicitly, avoiding accident
 
 Other cleanup candidates include missing/stale localization, package icons hiding the identity of trade goods, the `fals` typo in one animation definition, obsolete sound/graphics references, and old equipment energy-source fields. These have not all been validated against the running engine.
 
-Sources: [gun/ammunition prototypes](../prototypes/uo_fab2.lua), [armor](../prototypes/uo_fab3.lua), [equipment](../prototypes/uo_fab8.lua), [character animation edits](../prototypes/uo_fabx.lua), [migration JSON](../prototypes/migrations/yi_pfw_0.4.15.json), [inventory summary](data/inventory-summary.json).
+Sources: [gun/ammunition prototypes](../prototypes/uo_fab2.lua), [armor](../prototypes/uo_fab3.lua), [equipment](../prototypes/uo_fab8.lua), [character animation edits](../prototypes/uo_fabx.lua), [migration JSON](https://github.com/jatmn/Yuoki-PFW-Factorio-2.x/blob/103efa8acc74ab86b282b5388f64f333d06660dd/prototypes/migrations/yi_pfw_0.4.15.json), [inventory summary](data/inventory-summary.json).

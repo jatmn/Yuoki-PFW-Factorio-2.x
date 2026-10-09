@@ -1,0 +1,118 @@
+Selected engine evidence; Factorio 2.1.21, PFW 0.5.0, Yuoki and yi_engines 1.3.0.
+Full logs retained in the implementation run artifacts; timings omitted.
+
+packaged-data:
+   0.029 Loading mod settings Yuoki 1.3.0 (settings.lua)
+   0.029 Loading mod settings yi_engines 1.3.0 (settings.lua)
+   0.031 Loading mod core 0.0.0 (data.lua)
+   0.040 Loading mod base 2.1.21 (data.lua)
+   0.143 Loading mod Yuoki 1.3.0 (data.lua)
+   0.172 Loading mod yi_engines 1.3.0 (data.lua)
+   0.182 Loading mod yi_pfw 0.5.0 (data.lua)
+   0.190 Loading mod base 2.1.21 (data-updates.lua)
+   0.197 Loading mod Yuoki 1.3.0 (data-updates.lua)
+   0.205 Loading mod yi_engines 1.3.0 (data-updates.lua)
+   0.211 Loading mod Yuoki 1.3.0 (data-final-fixes.lua)
+   0.219 Loading mod yi_engines 1.3.0 (data-final-fixes.lua)
+   0.411 Prototype list checksum: 1735036413
+   1.156 Factorio initialised
+   1.177 Goodbye
+
+packaged-new-game:
+   0.029 Loading mod settings Yuoki 1.3.0 (settings.lua)
+   0.030 Loading mod settings yi_engines 1.3.0 (settings.lua)
+   0.031 Loading mod core 0.0.0 (data.lua)
+   0.040 Loading mod base 2.1.21 (data.lua)
+   0.144 Loading mod Yuoki 1.3.0 (data.lua)
+   0.170 Loading mod yi_engines 1.3.0 (data.lua)
+   0.180 Loading mod yi_pfw 0.5.0 (data.lua)
+   0.188 Loading mod base 2.1.21 (data-updates.lua)
+   0.196 Loading mod Yuoki 1.3.0 (data-updates.lua)
+   0.205 Loading mod yi_engines 1.3.0 (data-updates.lua)
+   0.212 Loading mod Yuoki 1.3.0 (data-final-fixes.lua)
+   0.219 Loading mod yi_engines 1.3.0 (data-final-fixes.lua)
+   0.406 Prototype list checksum: 1735036413
+   0.431 Factorio initialised
+   0.431 Info Create.cpp:32: Creating new map [isolated packaged new save]
+   0.975 Info Scenario.cpp:152: Map version 2.1.21-11
+   1.060 Goodbye
+
+reload-smoke:
+   0.027 Loading mod settings Yuoki 1.3.0 (settings.lua)
+   0.028 Loading mod settings yi_engines 1.3.0 (settings.lua)
+   0.029 Loading mod core 0.0.0 (data.lua)
+   0.038 Loading mod base 2.1.21 (data.lua)
+   0.143 Loading mod Yuoki 1.3.0 (data.lua)
+   0.162 Loading mod yi_engines 1.3.0 (data.lua)
+   0.173 Loading mod yi_pfw 0.5.0 (data.lua)
+   0.181 Loading mod base 2.1.21 (data-updates.lua)
+   0.187 Loading mod Yuoki 1.3.0 (data-updates.lua)
+   0.194 Loading mod yi_engines 1.3.0 (data-updates.lua)
+   0.200 Loading mod Yuoki 1.3.0 (data-final-fixes.lua)
+   0.207 Loading mod yi_engines 1.3.0 (data-final-fixes.lua)
+   0.405 Prototype list checksum: 1735036413
+   0.432 Factorio initialised
+   0.432 Loading map [isolated Phase 1 save]
+   0.442 Info Scenario.cpp:152: Map version 2.1.21-11
+Running update 0
+Running update 100
+Running update 200
+Running update 300
+Running update 400
+Running update 500
+  Performed 600 updates [timing omitted]
+   0.546 Goodbye
+
+packaged-reload:
+   0.030 Loading mod settings Yuoki 1.3.0 (settings.lua)
+   0.031 Loading mod settings yi_engines 1.3.0 (settings.lua)
+   0.032 Loading mod core 0.0.0 (data.lua)
+   0.042 Loading mod base 2.1.21 (data.lua)
+   0.151 Loading mod Yuoki 1.3.0 (data.lua)
+   0.170 Loading mod yi_engines 1.3.0 (data.lua)
+   0.181 Loading mod yi_pfw 0.5.0 (data.lua)
+   0.189 Loading mod base 2.1.21 (data-updates.lua)
+   0.196 Loading mod Yuoki 1.3.0 (data-updates.lua)
+   0.204 Loading mod yi_engines 1.3.0 (data-updates.lua)
+   0.210 Loading mod Yuoki 1.3.0 (data-final-fixes.lua)
+   0.217 Loading mod yi_engines 1.3.0 (data-final-fixes.lua)
+   0.409 Prototype list checksum: 1735036413
+   0.435 Factorio initialised
+   0.435 Loading map [isolated Phase 1 save]
+   0.445 Info Scenario.cpp:152: Map version 2.1.21-11
+Running update 0
+Running update 100
+Running update 200
+Running update 300
+Running update 400
+Running update 500
+  Performed 600 updates [timing omitted]
+   0.557 Goodbye
+
+dlc-data:
+   0.030 Loading mod settings Yuoki 1.3.0 (settings.lua)
+   0.031 Loading mod settings yi_engines 1.3.0 (settings.lua)
+   0.033 Loading mod core 0.0.0 (data.lua)
+   0.043 Loading mod base 2.1.21 (data.lua)
+   0.151 Loading mod elevated-rails 2.1.21 (data.lua)
+   0.163 Loading mod recycler 2.1.21 (data.lua)
+   0.170 Loading mod quality 2.1.21 (data.lua)
+   0.175 Loading mod space-age 2.1.21 (data.lua)
+   0.331 Loading mod Yuoki 1.3.0 (data.lua)
+   0.350 Loading mod yi_engines 1.3.0 (data.lua)
+   0.363 Loading mod yi_pfw 0.5.0 (data.lua)
+   0.375 Loading mod base 2.1.21 (data-updates.lua)
+   0.385 Loading mod recycler 2.1.21 (data-updates.lua)
+   0.406 Loading mod space-age 2.1.21 (data-updates.lua)
+   0.416 Loading mod Yuoki 1.3.0 (data-updates.lua)
+   0.428 Loading mod yi_engines 1.3.0 (data-updates.lua)
+   0.438 Loading mod Yuoki 1.3.0 (data-final-fixes.lua)
+   0.449 Loading mod yi_engines 1.3.0 (data-final-fixes.lua)
+   0.893 Prototype list checksum: 695468490
+   1.911 Factorio initialised
+   1.960 Goodbye
+
+PFW_PASS loaded at tick 4
+PFW_PASS all 12 machines created; both armor grids accepted all 7 equipment types
+PFW_PASS tick 6
+PFW_PASS factory and export crafted, tick 187

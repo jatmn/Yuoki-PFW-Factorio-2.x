@@ -1,3 +1,4 @@
+-- Legacy emissions coefficient multiplied by rated kW gives pollution per minute.
 data:extend(
 {  
 
@@ -5,16 +6,15 @@ data:extend(
 	{
 		type = "assembling-machine",
 		name = "y-retrader-1",
-		icon = "__yi_pfw__/graphics/entity/trade-node-icon.png",
+		icon = "__yi_pfw__/graphics/entity/trade-node-icon.png", icon_size = 32,
 		flags = {"placeable-neutral","placeable-player", "player-creation"},
-		minable = {hardness = 0.2, mining_time = 0.5, result = "y-retrader-1"},
+		minable = {mining_time = 0.5, result = "y-retrader-1"},
 		max_health = 350, corpse = "big-remnants", resistances = {{type = "physical",percent = 60},},
 		collision_box = {{-1.3, -1.3}, {1.3, 1.3}},
 		selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
 		fast_replaceable_group = "assembling-machine",
 
-		animation =
-		{
+		graphics_set = { animation = {
 			north= { 
 				filename = "__yi_pfw__/graphics/entity/gate-node.png",			
 				width = 128, height = 128, shift = {0.5, -0.25}, frame_count = 1, line_length = 1,},
@@ -27,9 +27,9 @@ data:extend(
 			west= {
 				filename = "__yi_pfw__/graphics/entity/gate-node.png",			
 				width = 128, height = 128, shift = {0.5, -0.25}, frame_count = 1, line_length = 1,},			
-		},		
+		} },
 		crafting_categories = {"yrcat-retrade"}, crafting_speed = 2,
-		energy_source = {type = "electric", usage_priority = "secondary-input", emissions = 0.04 / 2.5 },
+		energy_source = {type = "electric", usage_priority = "secondary-input", emissions_per_minute = { pollution = 0.04 / 2.5 * 1250 } },
 		energy_usage = "1250kW",
 		ingredient_count = 5,		
 		order="a",
@@ -40,21 +40,20 @@ data:extend(
 	{
 		type = "assembling-machine",
 		name = "y-rich-1",
-		icon = "__yi_pfw__/graphics/entity/profit-show-2-icon.png",
+		icon = "__yi_pfw__/graphics/entity/profit-show-2-icon.png", icon_size = 32,
 		flags = {"placeable-neutral","placeable-player", "player-creation"},
-		minable = {hardness = 0.4, mining_time = 3, result = "y-rich-1"},
+		minable = {mining_time = 3, result = "y-rich-1"},
 		max_health = 750, corpse = "big-remnants", resistances = {{type = "physical",percent = 60},},
 		collision_box = {{-1.8, -1.8}, {1.8, 1.8}},
 		selection_box = {{-2.0, -2.0}, {2.0, 2.0}},
 		fast_replaceable_group = "assembling-machine",
 
-		animation =
-		{
+		graphics_set = { animation = {
 			filename = "__yi_pfw__/graphics/entity/profit-show-2.png",			
 			width = 160, height = 160, shift = {0.5, -0.25}, frame_count = 1, line_length = 1,
-		},		
-		crafting_categories = {"yuoki-fame-recipe"}, crafting_speed = 6,
-		energy_source = {type = "electric", usage_priority = "secondary-input", emissions = 0.04 / 2.5 },
+		} },
+		crafting_categories = {"yuoki-fame"}, crafting_speed = 6,
+		energy_source = {type = "electric", usage_priority = "secondary-input", emissions_per_minute = { pollution = 0.04 / 2.5 * 10000 } },
 		energy_usage = "10MW",
 		ingredient_count = 5,		
 		order="a",
@@ -65,20 +64,19 @@ data:extend(
 	{
 		type = "assembling-machine",
 		name = "y-rich-2",
-		icon = "__yi_pfw__/graphics/entity/profit-show-1-icon.png",
+		icon = "__yi_pfw__/graphics/entity/profit-show-1-icon.png", icon_size = 32,
 		flags = {"placeable-neutral","placeable-player", "player-creation"},
-		minable = {hardness = 0.5, mining_time = 5, result = "y-rich-2"},
+		minable = {mining_time = 5, result = "y-rich-2"},
 		max_health = 1000, corpse = "big-remnants", resistances = {{type = "physical",percent = 60},},
 		collision_box = {{-1.8, -1.8}, {1.8, 1.8}},
 		selection_box = {{-2.0, -2.0}, {2.0, 2.0}},
 		fast_replaceable_group = "assembling-machine",
-		animation =
-		{
+		graphics_set = { animation = {
 			filename = "__yi_pfw__/graphics/entity/profit-show-1.png",			
 			width = 160, height = 160, shift = {1.0, -0.25}, frame_count = 1, line_length = 1,
-		},				
-		crafting_categories = {"yuoki-fame-recipe"}, crafting_speed = 18,
-		energy_source = {type = "electric", usage_priority = "secondary-input", emissions = 0.04 / 2.5 },
+		} },
+		crafting_categories = {"yuoki-fame"}, crafting_speed = 18,
+		energy_source = {type = "electric", usage_priority = "secondary-input", emissions_per_minute = { pollution = 0.04 / 2.5 * 25000 } },
 		energy_usage = "25MW",
 		ingredient_count = 5,		
 		order="a",

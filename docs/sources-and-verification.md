@@ -33,6 +33,8 @@ The official `latest` API pages identified themselves as 2.1.21 during discovery
 
 ## Reproduce the static inventory
 
+The commands in the historical inventory/evaluation sections below apply to discovery commit `de56798e400c9a2a855ebd8ab428c93135fe0448`, before implementation. Run them in a checkout of that revision to reproduce the original records. For the current port, use the [Phase 1 checks](phase-1.md).
+
 From the repository root, using Python 3 and its standard library:
 
 ```sh
@@ -59,6 +61,8 @@ This reads both provider checkouts, hashes PNG files, records dimensions, and lo
 
 ## Verify preservation
 
+On the current implementation branch, use `python3 docs/tools/verify_original.py --archive-only` to verify the immutable original import. The strict working-tree command below is for the historical discovery checkout; source changes in the port are intentional.
+
 ```sh
 python3 docs/tools/verify_original.py
 ```
@@ -76,7 +80,7 @@ This checks the working tree's original files against the manifest and ensures t
 - The PR diff is confined to `/docs`; original mod files remain unchanged.
 - Live repository settings and ruleset were checked against the selected Yuoki reference policy.
 
-The initial discovery did not launch the game. The later ownership evaluation successfully launched a fresh parent-only Factorio 2.1.21 data-stage baseline as described below. No PFW load, historical playtest, port implementation, economy simulation, or migration test is claimed.
+The initial discovery did not launch the game. The later ownership evaluation successfully launched a fresh parent-only Factorio 2.1.21 data-stage baseline as described below. Those discovery results did not include a PFW load, historical playtest, port implementation, economy simulation or migration test. Subsequent implementation results are recorded separately in [Phase 1](phase-1.md).
 
 
 ## Reproduce the content ownership evidence

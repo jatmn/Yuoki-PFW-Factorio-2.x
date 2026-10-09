@@ -1,9 +1,10 @@
+-- PFW 12x12 grid: distinct from Yuoki's existing 14x14 y_walker_grid.
 data:extend(
 {
 
 	{
 		type = "equipment-grid",
-		name = "y_walker_grid",
+		name = "yi-pfw-walker-grid",
 		width = 12,
 		height = 12,
 		equipment_categories = {"armor"},
@@ -24,8 +25,7 @@ data:extend(
 	{
 		type = "armor",
 		name = "y-cyb-8u",
-		icon = "__yi_pfw__/graphics/fab3/neron_u3_32.png",
-		flags = {"goes-to-main-inventory"},
+		icon = "__yi_pfw__/graphics/fab3/neron_u3_32.png", icon_size = 32,
 		resistances = 
 		{
 			{	type = "physical", decrease = 12, percent = 55 },
@@ -36,15 +36,14 @@ data:extend(
 		subgroup = "armor",
 		order = "e[power-armor-mk2]",
 		stack_size = 1,
-		equipment_grid = "y_walker_grid",
+		equipment_grid = "yi-pfw-walker-grid",
 		inventory_size_bonus = 30						
 	},
 
 	{
 		type = "armor",
 		name = "y-cyb-9u",
-		icon = "__yi_pfw__/graphics/fab3/neron_u5_32.png",
-		flags = {"goes-to-main-inventory"},
+		icon = "__yi_pfw__/graphics/fab3/neron_u5_32.png", icon_size = 32,
 		resistances = 
 		{
 			{	type = "physical", decrease = 14, percent = 75 },
