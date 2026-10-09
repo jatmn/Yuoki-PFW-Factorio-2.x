@@ -2,7 +2,7 @@
 
 A restoration appears feasible, but changing `factorio_version` would not produce a working mod. The work includes modernizing prototypes, restoring production paths, reconciling parent-mod ownership, and rebalancing an incomplete economic design.
 
-This assessment is a discovery record. The owner has added an explicit requirement to reuse assets from loaded Yuoki/Engines and remove redundant local copies; see [asset reuse](asset-reuse.md). The complete implementation sequence and new gameplay features remain undecided. No PFW 2.1 load test was performed.
+This assessment is a discovery record. The owner has added explicit requirements to reuse assets from loaded Yuoki/Engines, remove redundant local copies, and modernize the resolution of retained PFW artwork; see [asset reuse](asset-reuse.md). Unused assets and disabled/commented-out code must remain in the maintained source tree for future reuse; only confirmed parent-owned asset duplicates may be removed through the mapped replacement process. The complete implementation sequence and new gameplay features remain undecided. No PFW 2.1 load test was performed.
 
 ## Existing infrastructure
 
@@ -12,7 +12,7 @@ All external ingredient/product names referenced by active PFW recipes appeared 
 
 ## Asset ownership before the port
 
-Map existing artwork to supported parent-owned assets before modernizing its prototype references. Keep both parent mods required, detect their enabled versions in the data stage, and use their files or visual definitions. Remove duplicate PFW files after replacement references and graphical validation are complete. This is a required part of restoration, not optional later package cleanup. The [initial audit](asset-reuse.md) records 39 same-named candidates, with resolution/layout differences still requiring review.
+Map existing artwork to supported parent-owned assets before modernizing its prototype references. Keep both parent mods required, detect their enabled versions in the data stage, and use their files or visual definitions. Remove duplicate PFW files after replacement references and graphical validation are complete. Upscale retained low-resolution PFW assets to reviewed targets, with correct icon/frame metadata and preserved world size. These are required parts of restoration, not optional later cleanup. The [initial audit](asset-reuse.md) records 39 same-named candidates, with resolution/layout differences still requiring review.
 
 ## Required compatibility work
 
@@ -25,7 +25,7 @@ Map existing artwork to supported parent-owned assets before modernizing its pro
 | **2.1 categories** | Singular recipe `category` | `categories = { ... }` under the current 2.1 schema |
 | Machine graphics | Top-level `animation` | Current `graphics_set` structure |
 | Old fields | Inventory flags, mining hardness, old emissions and ingredient limits | Remove or convert according to the target prototype API |
-| Icons | Legacy 32-pixel icons without size metadata | Specify actual icon sizes; decide separately whether upscaling is worthwhile |
+| Icons | Legacy 32-pixel icons without size metadata | Upscale retained low-resolution icons to reviewed modern targets and specify actual icon sizes |
 | Vanilla names | `flame-thrower`, `raw-wood` | Update the flamethrower reference and redesign the old processed/raw-wood conversion |
 | Fluids | Water quantities from the pre-0.15 fluid scale | Re-evaluate modern amounts rather than copying the numeric values blindly |
 | Character | `data.raw.player.player.animations` | Current `character` prototype and armor-animation array handling |
@@ -38,11 +38,15 @@ The biomass recipe deserves design attention: simply replacing `raw-wood` with `
 
 ## Production and ownership work
 
-Resolve the 18 items lacking a producing recipe and the two direct name collisions before calling the production graph complete. Several active cyborg and equipment recipes depend on unavailable legacy armor or gun IDs. Choose whether these become modern Yuoki equipment, distinct trade-only components, or restored legacy items.
+The [content-ownership requirement](content-ownership.md) extends reuse to machines/entities, items, guns, ammunition, equipment, and recipes already provided by Yuoki or Engines. Audit functional equivalence separately for each definition. Keep redundant PFW declarations commented out and annotated with parent replacements, then point active references to those replacements. Preserve distinct PFW recipes even when their machine or output item is parent-owned, and ensure the selected parent machine supports them. Do not prune disabled source code.
+
+Resolve the 18 items lacking a producing recipe and the two direct name collisions before calling the production graph complete. Several active cyborg and equipment recipes depend on unavailable legacy armor or gun IDs. Determine which have functionally equivalent parent-owned replacements and which remain distinct PFW components or legacy features to restore.
 
 Reusing `yi_lasergun`, `yi_minigun`, `yi_ammo_energie`, and modern equipment would fit the intent suggested by the bundled migration file. It would also change recipe costs and possibly create different recycling paths. Mapping names is not sufficient to preserve economics.
 
 No runtime control system is present in the old archive. The existing trade mechanism can remain data-stage recipes and assembling machines; a new scripted market is not necessary to restore its original concept.
+
+Preserve currently disabled recipes, placeholder content, and their unique assets while deciding how to restore them. Neither lack of a live recipe path nor lack of an asset reference authorizes pruning. Keep disabled behavior inactive until it is deliberately revisited.
 
 ## Balance and optional DLC
 

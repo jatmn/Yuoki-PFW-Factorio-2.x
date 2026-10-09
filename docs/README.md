@@ -11,9 +11,10 @@ This directory records the original mod's behavior and the initial investigation
 3. [Recipes and production chains](recipes.md): quantities, example loops, imports, and a complete linked recipe catalog.
 4. [Incomplete and overlapping content](incomplete-content.md): defined versus obtainable items, placeholders, and dependency overlap.
 5. [Factorio 2.1 assessment](factorio-2.1-assessment.md): concrete compatibility work and decisions that remain open.
-6. [Parent-mod asset reuse](asset-reuse.md): accepted reuse/removal requirement, initial ownership candidates, and validation before deleting local artwork.
-7. [Repository protections](repository-protections.md): the existing Yuoki policy used when creating this repository.
-8. [Sources and verification](sources-and-verification.md): evidence, reproducibility commands, and work not performed.
+6. [Parent-mod asset reuse](asset-reuse.md): accepted reuse/removal, unused-content preservation, and retained-artwork resolution requirements, initial ownership candidates, and validation before changing local artwork.
+7. [Content ownership](content-ownership.md): reuse parent-owned machines, items, guns, and equivalent recipes while preserving unique PFW recipes and commenting out redundant definitions.
+8. [Repository protections](repository-protections.md): the existing Yuoki policy used when creating this repository.
+9. [Sources and verification](sources-and-verification.md): evidence, reproducibility commands, and work not performed.
 
 ## Machine-readable records
 
