@@ -1,4 +1,22 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.5.1
+Date: 9. 10. 2026
+  Changes:
+    - Reuse Engines' Trade Node and Yuoki's minigun, energy ammunition, mobile generator, movement equipment and first walker.
+    - Keep redundant PFW definitions commented with parent ownership references; retain all distinct PFW recipes and quantities.
+    - Allow the Engines Trade Node to process PFW trades while retaining its existing categories and operating statistics.
+    - Keep ambiguous gun, shield, second-armor and fuel-cell mappings pending; preserve unique artwork and previously disabled content.
+    - Replace 39 confirmed local artwork duplicates with parent references, updating icon dimensions and active/inactive source.
+    - Redraw the ammunition factory, plasma gun, tire and filled energy-cell icons at 64px using the selected AI artwork method.
+    - Generate PFW import/export arrows with Yuoki helpers; remove 49 precomposed trade-icon variants and retain their base-art mappings.
+    - Redraw the eight import commodity base icons at 64px; generated trade arrows follow the updated artwork.
+    - Redraw seven factory/display icons from their original sprite references; reuse Engines artwork for the shared-factory icon.
+    - Correct the ammunition-factory icon from its original animation sheet to match the sprite-referenced factory artwork.
+  Compatibility:
+    - Keep the two pending PFW energy guns compatible with Yuoki's energy ammunition.
+    - Keep migrations deferred until a formal release; validate this development version with fresh games.
+
+---------------------------------------------------------------------------------------------------
 Version: 0.5.0
 Date: 9. 10. 2026
   Changes:

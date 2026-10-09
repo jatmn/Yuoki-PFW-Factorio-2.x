@@ -1,0 +1,18 @@
+Ammunition factory artwork correction,2026-10-09
+Starting head:dedaf639cd7b5562972cab6efeaec96567dbd41d
+PASS: corrected master and64px derivative visually compared with original128px sprite frame0 and original32px icon.
+PASS: all16 original animation frames inspected; both unchanged pinned parents checked using prior visual inventory plus refreshed filename search.
+PASS: full Phase1-to-current preservation validator;19 AI/source identities,98 original PNGs,40 parent replacements,49 arrow removals/base mappings.
+PASS: all232 original archive files preserved.
+PASS: complete data dump equality with prior candidate; no prototype changes.
+PASS: other18 AI entries unchanged; runtime changes limited to ammo icon and changelog; sprite/style reference hashes verified.
+PASS: real RGBA transparency and visible-object margins; unchanged64px icon metadata.
+PASS:144-file ZIP equals runtime source; Factorio2.1.21 loads candidate with pinned Yuoki/Engines1.3.0.
+Reused: prior candidate fresh-game creation and600tick same-version reload, because all runtime logic and prototypes remain unchanged. These are not claimed as new runs.
+Package SHA256:5154297d014598368eb73812b535a0f37085d800a6b7a1aa7564bfddc6c30f83
+Graphical corrected-icon check: pending owner local client. Third-batch appearance accepted; no new graphical load claimed.
+
+   0.241 Loading mod yi_pfw 0.5.1 (data.lua)
+   0.468 Prototype list checksum: 755479145
+   0.958 Factorio initialised
+   0.979 Goodbye

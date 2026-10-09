@@ -1,0 +1,34 @@
+0.5.1 AI artwork batch2,2026-10-09
+Starting head:da0aa937d088cfd272a8e3d4d2e6d4f64a654ab7
+Eight original32px import base icons redrawn to64px.
+Processor corrected before installation: red center,eight blue cells; rejected green-cell output excluded.
+PASS: selected64px processor has8 distinct blue cell regions and1 red center region; visual palette comparison agrees.
+Factorio2.1.21 headless, same pinned Yuoki/Engines1.3.0 parents.
+PASS: full Phase1-to-current data and preservation validator.
+PASS: independent previous-candidate comparison:8 item icon_size fields and16 recipe base-layer size/scale pairs only.
+PASS:12 AI icon/source hashes/dimensions;106 unchanged originals;39 parent replacements;49 removed arrow variants/base mappings.
+PASS:105 active recipe routes/quantities and35 disabled recipe states preserved;232 original import files verified.
+PASS: final145-file ZIP equals runtime source; load,new game,600tick same-version reload.
+Package:yi_pfw_0.5.1.zip
+SHA256:8a3b5ee2d3ff8d87e628941f0be1d60532696a1ec6a4f2f5e93d50d6c3e1c1ac
+Graphical integrated-batch check: pending local client. Sources/64px previews inspected; processor correction follows owner feedback.
+
+batch2-data:
+   0.296 Loading mod yi_pfw 0.5.1 (data.lua)
+   0.605 Prototype list checksum: 755479145
+   1.178 Factorio initialised
+   1.211 Goodbye
+
+batch2-new:
+   0.212 Loading mod yi_pfw 0.5.1 (data.lua)
+   0.487 Prototype list checksum: 755479145
+   0.525 Factorio initialised
+   0.525 Info Create.cpp:32: Creating new map /home/pi/pr-review/fix-issue-jatmn-Yuoki-PFW-Factorio-2.x-repository-BdhQTWPf/runtime/game/saves/pfw-batch2-new.zip
+   1.200 Goodbye
+
+batch2-reload:
+   0.205 Loading mod yi_pfw 0.5.1 (data.lua)
+   0.488 Prototype list checksum: 755479145
+   0.528 Factorio initialised
+  Performed 600 updates in 72.033 ms
+   0.683 Goodbye

@@ -6,7 +6,7 @@ data:extend(
 	{
 		type = "assembling-machine",
 		name = "y-factory-1",
-		icon = "__yi_pfw__/graphics/entity/fabrik-ammo-icon.png", icon_size = 32,
+		icon = "__yi_pfw__/graphics/entity/fabrik-ammo-icon.png", icon_size = 64,
 		flags = {"placeable-neutral","placeable-player", "player-creation"},
 		minable = {mining_time = 0.5, result = "y-factory-1"},
 		max_health = 350, corpse = "big-remnants", resistances = {{type = "physical",percent = 60},},
@@ -37,7 +37,7 @@ data:extend(
 	{
 		type = "assembling-machine",
 		name = "y-factory-2",
-		icon = "__yi_pfw__/graphics/entity/fabrik-weapons-icon.png", icon_size = 32,
+		icon = "__yi_pfw__/graphics/entity/fabrik-weapons-icon.png", icon_size = 64,
 		flags = {"placeable-neutral","placeable-player", "player-creation"},
 		minable = {mining_time = 0.5, result = "y-factory-2"},
 		max_health = 350, corpse = "big-remnants", resistances = {{type = "physical",percent = 60},},
@@ -68,7 +68,7 @@ data:extend(
 	{
 		type = "assembling-machine",
 		name = "y-factory-3",
-		icon = "__yi_pfw__/graphics/entity/fabrik-bio-icon.png", icon_size = 32,
+		icon = "__yi_pfw__/graphics/entity/fabrik-bio-icon.png", icon_size = 64,
 		flags = {"placeable-neutral","placeable-player", "player-creation"},
 		minable = {mining_time = 0.5, result = "y-factory-3"},
 		max_health = 350, corpse = "big-remnants", resistances = {{type = "physical",percent = 60},},
@@ -91,7 +91,7 @@ data:extend(
 	{
 		type = "assembling-machine",
 		name = "y-factory-4",
-		icon = "__yi_pfw__/graphics/entity/tut-icon.png", icon_size = 32,
+		icon = "__yi_engines__/graphics/entity/science_gen_icon.png", icon_size = 32,
 		flags = {"placeable-neutral","placeable-player", "player-creation"},
 		minable = {mining_time = 0.5, result = "y-factory-4"},
 		max_health = 350, corpse = "big-remnants", resistances = {{type = "physical",percent = 60},},
@@ -122,7 +122,7 @@ data:extend(
 	{
 		type = "assembling-machine",
 		name = "y-factory-5",
-		icon = "__yi_pfw__/graphics/entity/fabrik-trucks-icon.png", icon_size = 32,
+		icon = "__yi_pfw__/graphics/entity/fabrik-trucks-icon.png", icon_size = 64,
 		flags = {"placeable-neutral","placeable-player", "player-creation"},
 		minable = {mining_time = 0.5, result = "y-factory-5"},
 		max_health = 350, corpse = "big-remnants", resistances = {{type = "physical",percent = 60},},
@@ -153,7 +153,7 @@ data:extend(
 	{
 		type = "assembling-machine",
 		name = "y-factory-6",
-		icon = "__yi_pfw__/graphics/entity/tut-icon.png", icon_size = 32,
+		icon = "__yi_engines__/graphics/entity/science_gen_icon.png", icon_size = 32,
 		flags = {"placeable-neutral","placeable-player", "player-creation"},
 		minable = {mining_time = 0.5, result = "y-factory-6"},
 		max_health = 350, corpse = "big-remnants", resistances = {{type = "physical",percent = 60},},
@@ -184,7 +184,7 @@ data:extend(
 	{
 		type = "assembling-machine",
 		name = "y-factory-7",
-		icon = "__yi_pfw__/graphics/entity/tut-icon.png", icon_size = 32,
+		icon = "__yi_engines__/graphics/entity/science_gen_icon.png", icon_size = 32,
 		flags = {"placeable-neutral","placeable-player", "player-creation"},
 		minable = {mining_time = 0.5, result = "y-factory-7"},
 		max_health = 350, corpse = "big-remnants", resistances = {{type = "physical",percent = 60},},
@@ -215,7 +215,7 @@ data:extend(
 	{
 		type = "assembling-machine",
 		name = "y-factory-8",
-		icon = "__yi_pfw__/graphics/entity/fabrik-equip-icon.png", icon_size = 32,
+		icon = "__yi_pfw__/graphics/entity/fabrik-equip-icon.png", icon_size = 64,
 		flags = {"placeable-neutral","placeable-player", "player-creation"},
 		minable = {mining_time = 0.5, result = "y-factory-8"},
 		max_health = 350, corpse = "big-remnants", resistances = {{type = "physical",percent = 60},},
@@ -247,7 +247,7 @@ data:extend(
 	{
 		type = "assembling-machine",
 		name = "y-factory-9",
-		icon = "__yi_pfw__/graphics/entity/fabrik-comp-icon.png", icon_size = 32,
+		icon = "__yi_pfw__/graphics/entity/fabrik-comp-icon.png", icon_size = 64,
 		flags = {"placeable-neutral","placeable-player", "player-creation"},
 		minable = {mining_time = 0.5, result = "y-factory-9"},
 		max_health = 300, corpse = "big-remnants", resistances = {{type = "physical",percent = 60},},

@@ -6,7 +6,7 @@ data:extend(
 		name = "y-combat-armor-2",
 		sprite = 
 		{
-			filename = "__yi_pfw__/graphics/equip/panz_5-96be.png",
+			filename = "__Yuoki__/graphics/armor/panz_5-96be.png",
 			width = 96,
 			height = 64,
 			priority = "medium"
@@ -34,7 +34,7 @@ data:extend(
 		name = "y-combat-armor-3",
 		sprite = 
 		{
-			filename = "__yi_pfw__/graphics/equip/panz_4-96be.png",
+			filename = "__Yuoki__/graphics/armor/panz_4-96be.png",
 			width = 96,
 			height = 64,
 			priority = "medium"
@@ -62,7 +62,7 @@ data:extend(
 		name = "y-equ-1",
 		sprite = 
 		{
-			filename = "__yi_pfw__/graphics/equip/lfg13_64.png",
+			filename = "__Yuoki__/graphics/armor/lfg13_64.png",
 			width = 64,
 			height = 64,
 			priority = "medium"
@@ -90,7 +90,7 @@ data:extend(
 		name = "y-equ-2",
 		sprite = 
 		{
-			filename = "__yi_pfw__/graphics/equip/mfg28_96.png",
+			filename = "__Yuoki__/graphics/armor/mfg28_96.png",
 			width = 96,
 			height = 96,
 			priority = "medium"
@@ -140,12 +140,14 @@ data:extend(
 		categories = {"armor"},
 	},
 	
+	-- Parent owner: Yuoki, generator-equipment yi_equip_generator_a. Preserved inactive PFW definition.
+	--[=[
 	{
 		type = "generator-equipment",
 		name = "y-equ-6",
 		sprite = 
 		{
-			filename = "__yi_pfw__/graphics/equip/energy-128e.png",
+			filename = "__Yuoki__/graphics/armor/energy-128e.png",
 			width = 128,
 			height = 128,
 			priority = "medium"
@@ -163,14 +165,17 @@ data:extend(
 		},
 		power = "15MW",
 		categories = {"armor"},
-	},	
+	},
+	]=]
 	
+	-- Parent owner: Yuoki, movement-bonus-equipment yi_equip_legs_a. Preserved inactive PFW definition.
+	--[=[
 	{
 		type = "movement-bonus-equipment",
 		name = "y-equ-9",
 		sprite =
 		{
-			filename = "__yi_pfw__/graphics/equip/exo1_upgrade_e.png",
+			filename = "__Yuoki__/graphics/armor/exo1_upgrade_e.png",
 			width = 64,
 			height = 96,
 			priority = "medium"
@@ -190,6 +195,7 @@ data:extend(
 		movement_bonus = 0.275,
 		categories = {"armor"},
 	},
+	]=]
 	
 	
 })

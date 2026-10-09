@@ -1,0 +1,581 @@
+{
+  "decision_date": "2026-10-09",
+  "method": "AI-assisted redraw",
+  "tool": "built-in image_gen",
+  "derivative": "Pillow12.3.0 RGBA resize to64x64, Resampling.LANCZOS",
+  "starting_head": "753b29ab7107ee897eca99ee77ff595c4229083d",
+  "redraws": [
+    {
+      "label": "Factory",
+      "path": "graphics/entity/fabrik-ammo-icon.png",
+      "original_dimensions": [
+        32,
+        32
+      ],
+      "original_sha256": "971bfb1bd19e2caa48d40778c3ffc8df886f77ee2758979821122530e066acc4",
+      "dimensions": [
+        64,
+        64
+      ],
+      "sha256": "ed46454771c14af3286e140b90b008b4049dd5addcba3de2a9dbfc25e9db77db",
+      "source_path": "docs/artwork/ai-redraw-0.5.1/fabrik-ammo-icon-source.png",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "source_sha256": "2bc6e7f886b1d070a55f6590a927578d044584e8a4bf84c5e7fe338bcddf3719",
+      "prompt": "Use case: precise-object-edit. Create a faithful replacement inventory icon for the Yuoki PFW ammunition factory, to be reduced to64x64. Input1 is the authoritative original animation frame: COPY its machine geometry, steep overhead/isometric camera, silhouette, object layout and color locations. Input2 is the original32px icon for identity and framing. Input3 is an approved equipment-factory redraw: use ONLY its rendering style, clean worn-metal material detail and overhead presentation, never its green lights or red-spoke assembly. Subject: a LOW factory production line arranged back-to-front along the ground. At left are TWO distinct grey-rimmed upward-facing circular stations, one at rear/top and one midway toward front, linked by dark grey/silver slanted side trusses. Near upper-center/right is a dark round top rotor in a BLUE-trimmed square housing with tiny ORANGE marker tabs. From it, a broad curved dark cover with an orange band extends toward the front-center circular rotor with tiny orange marker tabs and a blue base. The right is a clearly visible low dark work platform: THREE separate silver-grey tapered ammunition projectiles lie horizontally, parallel, their pointed noses facing right, in a row at the back of this platform; FOUR small upright brass/copper cartridge cases are grouped two-by-two in the front of the platform (rear pair partly occluded). Copy these pieces and their scale from input1. Crucial: stations are separate horizontal positions, not floors of a tower. No tall smokestack, tanks, invented tubes or large pipes. Preserve original muted dark steel, grey socket rims, blue center trim, small orange markings and brass/copper cases. Match original footprint and steep camera; refine pixels without redesigning geometry. Center whole object on a square transparent canvas with small margins; remove only the external cast shadow from original. No ground, backdrop, text, arrows, labels, border or glow. Real transparent background.",
+      "superseded_versions": [
+        {
+          "commit": "dedaf639cd7b5562972cab6efeaec96567dbd41d",
+          "sha256": "00860a1aa3d61fc31cb7e1f1e8f9656ab9c8f1c526a818013af143b37fff4a79",
+          "source_path": "docs/artwork/ai-redraw-0.5.1/fabrik-ammo-icon-source.png",
+          "source_sha256": "428b554d87d8f3d64ea5824bec9cdf71009329a5c9b5c10e14c503cd727ff99a",
+          "prompt": "Use case: precise-object-edit. Edit target: the attached enlarged pixel reference of a legacy Factorio Yuoki PFW inventory icon (original 32x32 pixels). Primary request: create a conservative AI-assisted higher-resolution redraw of exactly this icon for comparison with a conventional 2x upscale. Subject: A compact industrial ammunition factory viewed isometrically: tall cylindrical dark steel processing tower at left/rear, dense mechanical pipes and orange/copper details, squat adjoining production units at right/front. Carefully preserve the original arrangement, footprint, perspective, silhouette, colors and highlight direction. Style: faithfully match the original gritty pre-rendered industrial game art; refine ambiguous pixel edges and small surfaces enough to read at 64x64, without redesigning the object. Composition: one object only, square canvas, retain the reference object's relative canvas occupancy and center; keep a small transparent margin. Background: genuine transparency. Constraints: preserve the object identity and original orientation; no labels, text, border, checkerboard drawn into the image, new props, ground plane, dramatic glow or cast shadow outside the object. This is one sample icon, not a sheet or comparison panel.",
+          "reason": "Owner requested sprite-referenced correction after batch3; first redraw misinterpreted ground-level machinery as a tall tower."
+        }
+      ],
+      "sprite_reference": {
+        "sprite": "__yi_pfw__/graphics/entity/fab-ammo-sheet.png",
+        "sprite_sha256": "59368a1d6909b2f30e20f082c6bfebcb8654396aa250613781f481fb0985c0bf",
+        "frame": {
+          "index": 0,
+          "x": 0,
+          "y": 0,
+          "width": 128,
+          "height": 128
+        },
+        "review": "All16 frames inspected; frame0 chosen. Both pinned parents checked using batch3 visual inventory and refreshed filename search; no equivalent ammunition-factory replacement found in reviewed assets.",
+        "style_reference": "docs/artwork/ai-redraw-0.5.1/fabrik-equip-icon-source.png",
+        "style_reference_sha256": "2d8bc04516e003fdcdd4bef01ffc18588f964dcbcc8f61eff9bb843d7972ffb7"
+      },
+      "correction_date": "2026-10-09"
+    },
+    {
+      "label": "Plasma gun",
+      "path": "graphics/fab2/plasma-gun.png",
+      "original_dimensions": [
+        32,
+        32
+      ],
+      "original_sha256": "704f73d57428063ec398ac87846ddc86059f4f18dc8e9c1a33404697001a2149",
+      "dimensions": [
+        64,
+        64
+      ],
+      "sha256": "28cd22c2926d8847969b5964f862c077445e1deaf1f5c6b2c43b3cdc8b08ceee",
+      "source_path": "docs/artwork/ai-redraw-0.5.1/plasma-gun-source.png",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "source_sha256": "3c7740d2e73e2407bf554b50a5dff7e420d818652b3632cd00b64d1f49130cf0",
+      "prompt": "Use case: precise-object-edit. Edit target: the attached enlarged pixel reference of a legacy Factorio Yuoki PFW inventory icon (original 32x32 pixels). Primary request: create a conservative AI-assisted higher-resolution redraw of exactly this icon for comparison with a conventional 2x upscale. Subject: An industrial science-fiction plasma gun lying diagonally from upper-left (rear) to lower-right (muzzle), dark grey bulky body with small bright green indicators and a silver twin-rail muzzle. Carefully preserve its original silhouette, proportions, diagonal orientation, grey/green palette and lighting. It is an inventory icon, no person holding it. Style: faithfully match the original gritty pre-rendered industrial game art; refine ambiguous pixel edges and small surfaces enough to read at 64x64, without redesigning the object. Composition: one object only, square canvas, retain the reference object's relative canvas occupancy and center; keep a small transparent margin. Background: genuine transparency. Constraints: preserve the object identity and original orientation; no labels, text, border, checkerboard drawn into the image, new props, ground plane, dramatic glow or cast shadow outside the object. This is one sample icon, not a sheet or comparison panel."
+    },
+    {
+      "label": "Tire",
+      "path": "graphics/fab5/reifen.png",
+      "original_dimensions": [
+        32,
+        32
+      ],
+      "original_sha256": "7f861493458874f20b17e807aab81adfe2ff4b1c8bcaa4047b97f13a07a0c2b1",
+      "dimensions": [
+        64,
+        64
+      ],
+      "sha256": "46b9c83e51e9fca02f5c839304d6f720fc948a66476da93f69c909f887922e65",
+      "source_path": "docs/artwork/ai-redraw-0.5.1/reifen-source.png",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "source_sha256": "a99a3219653b052898446f8d3b327e403b4836b36c7ed34a225903a9f0cffc0e",
+      "prompt": "Use case: precise-object-edit. Edit target: the attached enlarged pixel reference of a legacy Factorio Yuoki PFW inventory icon (original 32x32 pixels). Primary request: create a conservative AI-assisted higher-resolution redraw of exactly this icon for comparison with a conventional 2x upscale. Subject: A single thick dark rubber vehicle tire standing upright in three-quarter view, a dark metallic wheel hub and muted teal ring on the left-facing wheel face. Carefully preserve its original silhouette, perspective, proportions, muted color palette and lighting. Style: faithfully match the original gritty pre-rendered industrial game art; refine ambiguous pixel edges and small surfaces enough to read at 64x64, without redesigning the object. Composition: one object only, square canvas, retain the reference object's relative canvas occupancy and center; keep a small transparent margin. Background: genuine transparency. Constraints: preserve the object identity and original orientation; no labels, text, border, checkerboard drawn into the image, new props, ground plane, dramatic glow or cast shadow outside the object. This is one sample icon, not a sheet or comparison panel."
+    },
+    {
+      "label": "Energy cell",
+      "path": "graphics/fab8/fusion-cell.png",
+      "original_dimensions": [
+        32,
+        32
+      ],
+      "original_sha256": "f0136ee29dc8aa64ba64b2bc3db4d5600a02b4a7b6c31dca09d3fb882fbe1ffb",
+      "dimensions": [
+        64,
+        64
+      ],
+      "sha256": "ab15d0cf7ddcbce126639f36048a87f74a611cd7b97c7da26d96733f67707785",
+      "source_path": "docs/artwork/ai-redraw-0.5.1/fusion-cell-source.png",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "source_sha256": "df13252d5a239440a15b20df4fe64e46e9f3b80f2c5b5a2201751cfe1c28e749",
+      "prompt": "Use case: precise-object-edit. Edit target: the attached enlarged pixel reference of a legacy Factorio Yuoki PFW inventory icon (original 32x32 pixels). Primary request: create a conservative AI-assisted higher-resolution redraw of exactly this icon for comparison with a conventional 2x upscale. Subject: An upright small cylindrical fusion energy cell, dark metal stepped cap at the top and luminous purple/magenta vertical windows in the lower body. Carefully preserve the original silhouette, centered composition, proportions, purple/black palette, perspective and lighting. Style: faithfully match the original gritty pre-rendered industrial game art; refine ambiguous pixel edges and small surfaces enough to read at 64x64, without redesigning the object. Composition: one object only, square canvas, retain the reference object's relative canvas occupancy and center; keep a small transparent margin. Background: genuine transparency. Constraints: preserve the object identity and original orientation; no labels, text, border, checkerboard drawn into the image, new props, ground plane, dramatic glow or cast shadow outside the object. This is one sample icon, not a sheet or comparison panel."
+    },
+    {
+      "label": "Red coils",
+      "batch": 2,
+      "path": "graphics/imports/coilsr32.png",
+      "original_dimensions": [
+        32,
+        32
+      ],
+      "original_sha256": "2a8cd83d514bf840c1a2955b9dd89f05c865e6597cd41c89ed13be4e057b9a73",
+      "dimensions": [
+        64,
+        64
+      ],
+      "sha256": "0309a42e1201859bb485c1610443ca222fbcff8ab27e879ab05f635cac7b95e4",
+      "source_path": "docs/artwork/ai-redraw-0.5.1/coilsr32-source.png",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "source_sha256": "2045c977354a4a3f5435348c129e834f2b881a6142066f394d1f172c1b93bdaf",
+      "prompt": "Use case: precise-object-edit. Asset: Factorio Yuoki PFW inventory icon, conservative AI-assisted redraw of the attached original32x32 icon. Subject: Exactly three short upright red/maroon cylindrical coils or hollow spools, tightly grouped, with bright pale rims and dark open centers. Keep their relative heights, triangular grouping and original red palette. Keep the original object identity, orientation, relative canvas occupancy and color coding. Style: gritty pre-rendered industrial game art, consistent with classic Yuoki/Factorio icons, clear forms that remain legible at64x64, subtle material detail; refine the low-resolution reference without decorative redesign. Composition: one isolated icon centered on a square canvas with a small fully transparent margin on all four sides, no clipping. Background: real transparency. Do not add arrows, text, labels, watermark, frame, floor, cast shadows outside the object, unrelated props or extra objects. No pink trade arrow: the game adds that separately. Output a clean high-resolution source icon, which will be reduced to64x64 for the mod."
+    },
+    {
+      "label": "Grey coils",
+      "batch": 2,
+      "path": "graphics/imports/coilsgr32.png",
+      "original_dimensions": [
+        32,
+        32
+      ],
+      "original_sha256": "27b62f330b6b2eb6e531593bb9abe4a61f65bd7919ce79cd1196f8e1f231edd5",
+      "dimensions": [
+        64,
+        64
+      ],
+      "sha256": "99d370ffc6981d3aeea28edf401106f760f5c0bd6fdc5471a1ddfd36cc63bbc5",
+      "source_path": "docs/artwork/ai-redraw-0.5.1/coilsgr32-source.png",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "source_sha256": "cebe102480e7fcc71686195c6d048302e08c504afc99709e7e82b8b503602438",
+      "prompt": "Use case: precise-object-edit. Asset: Factorio Yuoki PFW inventory icon, conservative AI-assisted redraw of the attached original32x32 icon. Subject: Exactly three short upright grey/olive-grey cylindrical coils or hollow spools, tightly grouped, with bright pale rims and dark open centers. Keep their relative heights, triangular grouping and original grey palette. Keep the original object identity, orientation, relative canvas occupancy and color coding. Style: gritty pre-rendered industrial game art, consistent with classic Yuoki/Factorio icons, clear forms that remain legible at64x64, subtle material detail; refine the low-resolution reference without decorative redesign. Composition: one isolated icon centered on a square canvas with a small fully transparent margin on all four sides, no clipping. Background: real transparency. Do not add arrows, text, labels, watermark, frame, floor, cast shadows outside the object, unrelated props or extra objects. No pink trade arrow: the game adds that separately. Output a clean high-resolution source icon, which will be reduced to64x64 for the mod."
+    },
+    {
+      "label": "Orange crystal",
+      "batch": 2,
+      "path": "graphics/imports/crystal_1.png",
+      "original_dimensions": [
+        32,
+        32
+      ],
+      "original_sha256": "47532397564434ed81ed663ec1e0745dafc399829cb4d4cfd8681e39062de063",
+      "dimensions": [
+        64,
+        64
+      ],
+      "sha256": "f94cd7ca5ad4abdbbd687e2e2b23824165f43385d5a22dc15e365508bc19c107",
+      "source_path": "docs/artwork/ai-redraw-0.5.1/crystal_1-source.png",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "source_sha256": "cc78a8af3807c4afd0d75dece29ef767f8fca90eb645920cf4e680b4c8f14762",
+      "prompt": "Use case: precise-object-edit. Asset: Factorio Yuoki PFW inventory icon, conservative AI-assisted redraw of the attached original32x32 icon. Subject: A single low pyramidal orange/amber crystal with triangular facets and a thin yellow-green edge, viewed obliquely from above. Keep the original broad diamond silhouette and amber/orange palette. Keep the original object identity, orientation, relative canvas occupancy and color coding. Style: gritty pre-rendered industrial game art, consistent with classic Yuoki/Factorio icons, clear forms that remain legible at64x64, subtle material detail; refine the low-resolution reference without decorative redesign. Composition: one isolated icon centered on a square canvas with a small fully transparent margin on all four sides, no clipping. Background: real transparency. Do not add arrows, text, labels, watermark, frame, floor, cast shadows outside the object, unrelated props or extra objects. No pink trade arrow: the game adds that separately. Output a clean high-resolution source icon, which will be reduced to64x64 for the mod."
+    },
+    {
+      "label": "Green crystal",
+      "batch": 2,
+      "path": "graphics/imports/crystal_green.png",
+      "original_dimensions": [
+        32,
+        32
+      ],
+      "original_sha256": "bc3c032ec8dc800fdda6691af830feb37309634b28bbef1fedbbfe1061ba2c51",
+      "dimensions": [
+        64,
+        64
+      ],
+      "sha256": "e8594aabda720930b400f1201fd4563ad69f7ddfb648ad86c225e7133546f7fe",
+      "source_path": "docs/artwork/ai-redraw-0.5.1/crystal_green-source.png",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "source_sha256": "67a150ab53ae3a16adbf7f075f4c581af0f9ad78c541962e97128077d68f72cb",
+      "prompt": "Use case: precise-object-edit. Asset: Factorio Yuoki PFW inventory icon, conservative AI-assisted redraw of the attached original32x32 icon. Subject: A compact cluster of green crystal shards, leaf-like elongated faceted points growing from a shared base. Keep the original varying shard heights, silhouette, saturated green palette and upward fan arrangement. Keep the original object identity, orientation, relative canvas occupancy and color coding. Style: gritty pre-rendered industrial game art, consistent with classic Yuoki/Factorio icons, clear forms that remain legible at64x64, subtle material detail; refine the low-resolution reference without decorative redesign. Composition: one isolated icon centered on a square canvas with a small fully transparent margin on all four sides, no clipping. Background: real transparency. Do not add arrows, text, labels, watermark, frame, floor, cast shadows outside the object, unrelated props or extra objects. No pink trade arrow: the game adds that separately. Output a clean high-resolution source icon, which will be reduced to64x64 for the mod."
+    },
+    {
+      "label": "Wire coil",
+      "batch": 2,
+      "path": "graphics/imports/wire_2.png",
+      "original_dimensions": [
+        32,
+        32
+      ],
+      "original_sha256": "9f20581a1eeb85e2430705c9b907404d8129780e36dd278c2a2208dff0c27ddd",
+      "dimensions": [
+        64,
+        64
+      ],
+      "sha256": "9e8222ec33dc7fccdcdbe17191fc1e0c2cb20f492597fef1d6520cbbae58e008",
+      "source_path": "docs/artwork/ai-redraw-0.5.1/wire_2-source.png",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "source_sha256": "b017189176d63bf89ecfa42fdc208ef02d57491b293d0d4798031aee526b9d63",
+      "prompt": "Use case: precise-object-edit. Asset: Factorio Yuoki PFW inventory icon, conservative AI-assisted redraw of the attached original32x32 icon. Subject: A single silver-blue tightly wound hollow metal wire coil or helical spring, lying diagonally lower-left to upper-right. Preserve the diagonal direction, length-to-width proportions, open circular end and repeated turns. Keep the original object identity, orientation, relative canvas occupancy and color coding. Style: gritty pre-rendered industrial game art, consistent with classic Yuoki/Factorio icons, clear forms that remain legible at64x64, subtle material detail; refine the low-resolution reference without decorative redesign. Composition: one isolated icon centered on a square canvas with a small fully transparent margin on all four sides, no clipping. Background: real transparency. Do not add arrows, text, labels, watermark, frame, floor, cast shadows outside the object, unrelated props or extra objects. No pink trade arrow: the game adds that separately. Output a clean high-resolution source icon, which will be reduced to64x64 for the mod."
+    },
+    {
+      "label": "Universal processor",
+      "batch": 2,
+      "path": "graphics/imports/uni-com-pro.png",
+      "original_dimensions": [
+        32,
+        32
+      ],
+      "original_sha256": "745678d784d1afcb013f21844c1713ac8db22df818d58997846e740eb8c66f0c",
+      "dimensions": [
+        64,
+        64
+      ],
+      "sha256": "98baa920a9051fbb48645bade7cf8f4aaa353f0583c327b7732e2bb8dba16d58",
+      "source_path": "docs/artwork/ai-redraw-0.5.1/uni-com-pro-source.png",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "source_sha256": "fcfe181f876124d4fa724dc18aa215fcfa541536c6f1bec7c240e11f9702bbf1",
+      "prompt": "Use case: precise-object-edit. Image1 is the edit target: a high-resolution industrial circular processor icon. Image2 is the enlarged ORIGINAL pixel icon and is the strict color reference. Correct ONLY the colors of image1. The original has ONE RED center (warm coral/red, not orange), surrounded by EIGHT BLUE cells: north, northeast, east, southeast, south, southwest, west and northwest. ALL EIGHT outer cells must be BLUE. The target's two GREEN cells at east and west are WRONG: recolor them to the same medium royal/cobalt blue as the other six. Recolor the orange center to coral RED matching image2. Tint the surrounding mechanical housing toward the muted dark olive-grey of image2 while preserving its metallic highlights and existing detailed texture; no bright green metal. Preserve the target's exact geometry, eight-cell count, positions, perspective, framing, surface detail and transparent alpha background. No additions, text, arrows, shadow floor or other design changes. Output the corrected isolated icon at high resolution with genuine transparency.",
+      "initial_prompt": "Use case: precise-object-edit. Asset: Factorio Yuoki PFW inventory icon, conservative AI-assisted redraw of the attached original32x32 icon. Subject: A compact round dark mechanical processor assembly with a ring of small colored circular modules (blue, orange and green) around its central colored module. Preserve the original circular radial arrangement, dark frame, palette and exact overall silhouette; do not turn it into a rectangular computer chip. Keep the original object identity, orientation, relative canvas occupancy and color coding. Style: gritty pre-rendered industrial game art, consistent with classic Yuoki/Factorio icons, clear forms that remain legible at64x64, subtle material detail; refine the low-resolution reference without decorative redesign. Composition: one isolated icon centered on a square canvas with a small fully transparent margin on all four sides, no clipping. Background: real transparency. Do not add arrows, text, labels, watermark, frame, floor, cast shadows outside the object, unrelated props or extra objects. No pink trade arrow: the game adds that separately. Output a clean high-resolution source icon, which will be reduced to64x64 for the mod.",
+      "correction": "Owner identified color drift in initial output; final has a red center and eight blue outer cells with muted olive-grey metal, matching enlarged original."
+    },
+    {
+      "label": "Blue alloy bar",
+      "batch": 2,
+      "path": "graphics/imports/barren_mixed_9.png",
+      "original_dimensions": [
+        32,
+        32
+      ],
+      "original_sha256": "b67e69030da1b9ab36dd63a46c842cd1676daa6c80b217cda45ed6f583a4e21b",
+      "dimensions": [
+        64,
+        64
+      ],
+      "sha256": "ed3c6ffe6210adf6f4d412dea0663838a62501236026244329b5338518aca9b1",
+      "source_path": "docs/artwork/ai-redraw-0.5.1/barren_mixed_9-source.png",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "source_sha256": "b7240ed5b2b422514e3bc43a5b3f988360a358dbb899925a8fbc76e38fd51db5",
+      "prompt": "Use case: precise-object-edit. Asset: Factorio Yuoki PFW inventory icon, conservative AI-assisted redraw of the attached original32x32 icon. Subject: A single light icy-blue rectangular alloy ingot in the same isometric view, its long axis lower-left to upper-right, with beveled edges and a bright fractured/faceted crystalline top. Keep the long bar proportions, perspective and pale blue/white palette. Keep the original object identity, orientation, relative canvas occupancy and color coding. Style: gritty pre-rendered industrial game art, consistent with classic Yuoki/Factorio icons, clear forms that remain legible at64x64, subtle material detail; refine the low-resolution reference without decorative redesign. Composition: one isolated icon centered on a square canvas with a small fully transparent margin on all four sides, no clipping. Background: real transparency. Do not add arrows, text, labels, watermark, frame, floor, cast shadows outside the object, unrelated props or extra objects. No pink trade arrow: the game adds that separately. Output a clean high-resolution source icon, which will be reduced to64x64 for the mod."
+    },
+    {
+      "label": "Purple alloy bar",
+      "batch": 2,
+      "path": "graphics/imports/barren_mixed_11.png",
+      "original_dimensions": [
+        32,
+        32
+      ],
+      "original_sha256": "2f6aaa36bd4b4d3d52d57b93235d022bd24d1044d9afeb65d87bda0886e7e7cf",
+      "dimensions": [
+        64,
+        64
+      ],
+      "sha256": "a2e8b9c49edacb68198e6165b33b6e33e74704581d819cd47b450aa26e02b73f",
+      "source_path": "docs/artwork/ai-redraw-0.5.1/barren_mixed_11-source.png",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "source_sha256": "10af3b4e77e6370310b1c304c22723c482e1444e559d9d5ca6a31130097c9eae",
+      "prompt": "Use case: precise-object-edit. Asset: Factorio Yuoki PFW inventory icon, conservative AI-assisted redraw of the attached original32x32 icon. Subject: A single dark violet-purple rectangular alloy ingot in the same isometric view, its long axis lower-left to upper-right, with beveled edges, a recessed/rough textured upper face and a lighter violet rim. Keep the long bar proportions, perspective and purple palette. Keep the original object identity, orientation, relative canvas occupancy and color coding. Style: gritty pre-rendered industrial game art, consistent with classic Yuoki/Factorio icons, clear forms that remain legible at64x64, subtle material detail; refine the low-resolution reference without decorative redesign. Composition: one isolated icon centered on a square canvas with a small fully transparent margin on all four sides, no clipping. Background: real transparency. Do not add arrows, text, labels, watermark, frame, floor, cast shadows outside the object, unrelated props or extra objects. No pink trade arrow: the game adds that separately. Output a clean high-resolution source icon, which will be reduced to64x64 for the mod."
+    },
+    {
+      "label": "Bio factory",
+      "batch": 3,
+      "path": "graphics/entity/fabrik-bio-icon.png",
+      "original_dimensions": [
+        32,
+        32
+      ],
+      "original_sha256": "695a6de511d4e80d76b1168840e7d05bcf59db392f6ced4974200a69d268b37f",
+      "dimensions": [
+        64,
+        64
+      ],
+      "source_path": "docs/artwork/ai-redraw-0.5.1/fabrik-bio-icon-source.png",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "source_sha256": "22fe060731ad30aca53984c321f0007b30d85ee0fde5a36602fc494e8b8b7ad8",
+      "initial_prompt": "Use case: precise-object-edit. Edit target: the attached nearest-neighbor enlargement of the original 32px Yuoki PFW game inventory icon. Create a faithful high-resolution redraw for a 64px runtime icon. Subject and original color assignments: Bio factory: two large squat black cylindrical tanks occupy the foreground left and right, each with a bright grass-green oval top. Behind them stands a central dark steel tower with a grey cap, a vivid green middle window and pale cream/yellow shoulder pipes with copper/orange fittings. Preserve this paired-tank frontal/isometric silhouette. Style: gritty pre-rendered industrial game art, subtle worn metal and controlled highlights, readable when reduced to64px. Treat the reference as authoritative for silhouette, relative proportions, exact orientation and color locations; clarify pixel edges without redesigning the machine. Center one whole building on a square transparent canvas with small clear margins; match reference occupancy. Preserve original hues rather than harmonizing the palette. No ground plane, extra buildings, arrows, labels, lettering, border, watermark, dramatic glow or backdrop. True transparent background.",
+      "prompt": "Use case: precise-object-edit. Input1: authoritative original world sprite/frame for this Yuoki PFW building's real geometry. Input2: original32px inventory icon for framing, colors and intended animation state. Create a faithful higher-resolution redraw to be reduced to64px. Two squat black open vats filled with GREEN liquid at the front, behind them a LOW crossbar of machinery with two separate cream-rimmed upward-facing sockets, a small square green center panel, and one squat dark square rotor at the rear with orange trim. Preserve steep overhead view and short rear machinery; do not turn the back into a tall tower or turn cream sockets into curved pipes. Match the original sprite camera, footprint, silhouette and relative proportions closely. Keep muted original hues in their original places; refine edges and materials using restrained pre-rendered industrial game art. Do not invent geometry from blurry pixels. Center whole building with small transparent margins in a square canvas, no floor or external shadow, no arrows, lettering, labels or background. True transparency. Preserve original object identity over ornate new detail.",
+      "sprite_reference": {
+        "icon": "graphics/entity/fabrik-bio-icon.png",
+        "sprite": "__yi_pfw__/graphics/entity/fab-bio-sheet.png",
+        "sprite_sha256": "819865577abc0166462de54c061c45aa46b3c09fe946ec95e27d8611e0abc83f",
+        "frame": {
+          "index": 6,
+          "x": 768,
+          "y": 0,
+          "width": 128,
+          "height": 128
+        },
+        "method": "AI"
+      },
+      "sha256": "465a702febdbaa8d5fdbf06f9030db132f4efdd01e3b9fb1bc8db48bda15d530"
+    },
+    {
+      "label": "Component factory",
+      "batch": 3,
+      "path": "graphics/entity/fabrik-comp-icon.png",
+      "original_dimensions": [
+        32,
+        32
+      ],
+      "original_sha256": "ca8b75d3a70248552c94aef12169f2b7bac24e61c93ae9b425a8e9970b5ec34f",
+      "dimensions": [
+        64,
+        64
+      ],
+      "source_path": "docs/artwork/ai-redraw-0.5.1/fabrik-comp-icon-source.png",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "source_sha256": "30451c194bda7e3b95c4aa59175833507d11a22253116435f2ea6d56323a7b75",
+      "initial_prompt": "Use case: precise-object-edit. Edit target: the attached nearest-neighbor enlargement of the original 32px Yuoki PFW game inventory icon. Create a faithful high-resolution redraw for a 64px runtime icon. Subject and original color assignments: Computer factory: tall complex grey/dark steel processing tower at left, pale brass/cream diagonal frame/pipe down its left edge, a strong red-orange horizontal belt at upper-middle. To the right are two shorter staggered dark grey cylindrical units, with small purple/magenta and green indicators on a dark reddish-brown base. Preserve tall-left/short-right layout and red band. Style: gritty pre-rendered industrial game art, subtle worn metal and controlled highlights, readable when reduced to64px. Treat the reference as authoritative for silhouette, relative proportions, exact orientation and color locations; clarify pixel edges without redesigning the machine. Center one whole building on a square transparent canvas with small clear margins; match reference occupancy. Preserve original hues rather than harmonizing the palette. No ground plane, extra buildings, arrows, labels, lettering, border, watermark, dramatic glow or backdrop. True transparent background.",
+      "prompt": "Use case: precise-object-edit. Input image1 is the authoritative populated animation frame of the original Yuoki PFW component factory; image2 is its original inventory icon for palette and compact framing. Redraw THIS EXACT MACHINE faithfully in clean high-resolution industrial pre-rendered game art on transparency. IMPORTANT structural correction: preserve the steep overhead/isometric camera from image1. The LEFT HALF is a LONG LOW production line running from the back/top of the image toward the front/bottom, with separate circular top-facing mechanical stations along its length, pale brass diagonal side trusses, a red-orange cross brace near its rear and a dark circular rotor at the front. These are horizontal positions along the ground, NOT stories of a vertical tower. The RIGHT HALF is a clearly visible flat rectangular rusty brown tiled staging platform with SIX separate SMALL dark cylindrical canisters standing on it, each with purple/magenta vertical windows. They are loose manufactured products, much shorter than the length of the production line, NOT towers or connected factory machines. Copy exact object arrangement, ground footprint, steep camera and proportions from image1; refine surfaces without adding structures. Retain steel-grey, muted pale brass, red-orange brace, rusty platform, and purple canister window colors. Only use tiny green accents where actually visible. Keep a square compact icon composition, small transparent margins, no ground or external cast shadow. No text, arrows, background, new props or tower-like reinterpretation. The shape of the original sprite is more important than elaborate decorative details.",
+      "sprite_reference": {
+        "icon": "graphics/entity/fabrik-comp-icon.png",
+        "sprite": "__yi_pfw__/graphics/entity/fab-comp-sheet.png",
+        "sprite_sha256": "db636c3f7688e6866ff298c5fee2596245db288e1a1f432deb1a26dac30df954",
+        "frame": {
+          "index": 12,
+          "x": 1536,
+          "y": 0,
+          "width": 128,
+          "height": 128
+        },
+        "method": "AI"
+      },
+      "sha256": "f528abf2d56765d37a3f32214b64900a38a0479f1952178ceafd5d484306d07c"
+    },
+    {
+      "label": "Equipment factory",
+      "batch": 3,
+      "path": "graphics/entity/fabrik-equip-icon.png",
+      "original_dimensions": [
+        32,
+        32
+      ],
+      "original_sha256": "ccd4bdfba9888648328a2ec6f5d8472b6923213e435a105cfca39afa1cd590e2",
+      "dimensions": [
+        64,
+        64
+      ],
+      "source_path": "docs/artwork/ai-redraw-0.5.1/fabrik-equip-icon-source.png",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "source_sha256": "2d8bc04516e003fdcdd4bef01ffc18588f964dcbcc8f61eff9bb843d7972ffb7",
+      "initial_prompt": "Use case: precise-object-edit. Edit target: the attached nearest-neighbor enlargement of the original 32px Yuoki PFW game inventory icon. Create a faithful high-resolution redraw for a 64px runtime icon. Subject and original color assignments: Equipment factory: tall left tower in dark steel with copper-brown vertical pipes/edge, grey cap and broad grey middle ring, green window above the ring and small green indicator below; dark blue accent at left. A shorter right machine has an orange/copper top, grey sides, deep red middle structural detail, and small silver and cyan details. Preserve both connected sections. Style: gritty pre-rendered industrial game art, subtle worn metal and controlled highlights, readable when reduced to64px. Treat the reference as authoritative for silhouette, relative proportions, exact orientation and color locations; clarify pixel edges without redesigning the machine. Center one whole building on a square transparent canvas with small clear margins; match reference occupancy. Preserve original hues rather than harmonizing the palette. No ground plane, extra buildings, arrows, labels, lettering, border, watermark, dramatic glow or backdrop. True transparent background.",
+      "prompt": "Use case: precise-object-edit. Input1: authoritative original world sprite/frame for this Yuoki PFW building's real geometry. Input2: original32px inventory icon for framing, colors and intended animation state. Create a faithful higher-resolution redraw to be reduced to64px. The left half is a LOW production line extending back-to-front along the ground, with separate top-facing circular sockets and rotors arranged along its length, copper-brown side trusses and green indicator dots. These are horizontal stations, NOT levels of a tower. On the right is a flat dark platform holding a small orange-brown rear vessel and a red spoke-like mechanical assembly with a silver central shaft and tiny cyan tip. Copy those shapes and layout exactly. Match the original sprite camera, footprint, silhouette and relative proportions closely. Keep muted original hues in their original places; refine edges and materials using restrained pre-rendered industrial game art. Do not invent geometry from blurry pixels. Center whole building with small transparent margins in a square canvas, no floor or external shadow, no arrows, lettering, labels or background. True transparency. Preserve original object identity over ornate new detail.",
+      "sprite_reference": {
+        "icon": "graphics/entity/fabrik-equip-icon.png",
+        "sprite": "__yi_pfw__/graphics/entity/fab-equip-sheet.png",
+        "sprite_sha256": "02d618c8371db616189d813f2e767402603957f18d2b9e4d12bab2f15928b717",
+        "frame": {
+          "index": 0,
+          "x": 0,
+          "y": 0,
+          "width": 128,
+          "height": 128
+        },
+        "method": "AI"
+      },
+      "sha256": "29ec2e44a8ae8a3be17793c1ada9f0d78b128ebf21bfaa824bcbde0b1d62d412"
+    },
+    {
+      "label": "Vehicle factory",
+      "batch": 3,
+      "path": "graphics/entity/fabrik-trucks-icon.png",
+      "original_dimensions": [
+        32,
+        32
+      ],
+      "original_sha256": "9eedacdd30d8f1bce730b4ebb006665d0949bdd591b8342a832530cdb20004fc",
+      "dimensions": [
+        64,
+        64
+      ],
+      "source_path": "docs/artwork/ai-redraw-0.5.1/fabrik-trucks-icon-source.png",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "source_sha256": "7a770d0de4717ea666ad4dbcac4d1ff2ee23f245e2fcce43ec1959336f9748e1",
+      "initial_prompt": "Use case: precise-object-edit. Edit target: the attached nearest-neighbor enlargement of the original 32px Yuoki PFW game inventory icon. Create a faithful high-resolution redraw for a 64px runtime icon. Subject and original color assignments: Vehicle factory: tall tower on left with copper cap and copper middle ring, copper side pipe, very dark body and deep blue windows. Shorter machine on right is strongly orange/gold, with stepped orange top, dark charcoal middle band, orange lower body and dark blue base. Preserve blue/copper tall section versus orange/gold right section. Style: gritty pre-rendered industrial game art, subtle worn metal and controlled highlights, readable when reduced to64px. Treat the reference as authoritative for silhouette, relative proportions, exact orientation and color locations; clarify pixel edges without redesigning the machine. Center one whole building on a square transparent canvas with small clear margins; match reference occupancy. Preserve original hues rather than harmonizing the palette. No ground plane, extra buildings, arrows, labels, lettering, border, watermark, dramatic glow or backdrop. True transparent background.",
+      "prompt": "Use case: precise-object-edit. Input1: authoritative original world sprite/frame for this Yuoki PFW building's real geometry. Input2: original32px inventory icon for framing, colors and intended animation state. Create a faithful higher-resolution redraw to be reduced to64px. The left half is a LOW production line extending back-to-front along the ground, separate top-facing circular sockets and rotors, copper rims/trusses and blue indicator dots. These are horizontal stations, NOT levels of a tower. The right is a dark flat platform with an orange/yellow industrial vehicle or bulldozer-like assembly: a compact cab at the back/top, chassis and dark wheel/tread shapes, and a wide rectangular orange front blade at bottom. It is NOT an orange cylindrical tank. Copy sprite geometry. Match the original sprite camera, footprint, silhouette and relative proportions closely. Keep muted original hues in their original places; refine edges and materials using restrained pre-rendered industrial game art. Do not invent geometry from blurry pixels. Center whole building with small transparent margins in a square canvas, no floor or external shadow, no arrows, lettering, labels or background. True transparency. Preserve original object identity over ornate new detail.",
+      "sprite_reference": {
+        "icon": "graphics/entity/fabrik-trucks-icon.png",
+        "sprite": "__yi_pfw__/graphics/entity/fab-trucks-sheet.png",
+        "sprite_sha256": "451d00fac551c4f99b82f4add1099f01f77f6dc4b1d4e29a58d2c761ac39d61c",
+        "frame": {
+          "index": 0,
+          "x": 0,
+          "y": 0,
+          "width": 128,
+          "height": 128
+        },
+        "method": "AI"
+      },
+      "sha256": "0b452dc27742d1aac9bc24beaeea589a8d90813351f947f6433f3b0f1cfa3b63"
+    },
+    {
+      "label": "Weapons factory",
+      "batch": 3,
+      "path": "graphics/entity/fabrik-weapons-icon.png",
+      "original_dimensions": [
+        32,
+        32
+      ],
+      "original_sha256": "ab8893ebe2ddffa21b3c70c6427c3a374c746d25622251ae16dffa8d89ad1297",
+      "dimensions": [
+        64,
+        64
+      ],
+      "source_path": "docs/artwork/ai-redraw-0.5.1/fabrik-weapons-icon-source.png",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "source_sha256": "88bafe9bad1dde0cfc3265974ec6d98e201552f377e0b671b6a2a69464878c70",
+      "initial_prompt": "Use case: precise-object-edit. Edit target: the attached nearest-neighbor enlargement of the original 32px Yuoki PFW game inventory icon. Create a faithful high-resolution redraw for a 64px runtime icon. Subject and original color assignments: Weapons factory: tall dark grey steel tower on left, pale cream/light-yellow top cap and middle ring, green vertical windows above the middle ring, small green indicator at foot, and a side pipe along the left edge. Shorter right section has grey cap, vivid red vertical/middle accents, and muted light-blue lower mechanical parts. Preserve cream/green tower and red/blue adjoining section. Style: gritty pre-rendered industrial game art, subtle worn metal and controlled highlights, readable when reduced to64px. Treat the reference as authoritative for silhouette, relative proportions, exact orientation and color locations; clarify pixel edges without redesigning the machine. Center one whole building on a square transparent canvas with small clear margins; match reference occupancy. Preserve original hues rather than harmonizing the palette. No ground plane, extra buildings, arrows, labels, lettering, border, watermark, dramatic glow or backdrop. True transparent background.",
+      "prompt": "Use case: precise-object-edit. Input1: authoritative original world sprite/frame for this Yuoki PFW building's real geometry. Input2: original32px inventory icon for framing, colors and intended animation state. Create a faithful higher-resolution redraw to be reduced to64px. The left half is a LOW production line extending back-to-front along the ground, separate circular top-facing sockets/rotors, two pale cream socket rims and tiny green indicator dots. These are horizontal stations, NOT levels of a tower. The right is a dark work platform with multiple small mechanical assemblies: red/orange rear and middle circular parts, slender grey rail/shaft and small muted blue front gun-shaped components. Copy their layout and scale directly, do not turn into a cluster of tall tanks. Match the original sprite camera, footprint, silhouette and relative proportions closely. Keep muted original hues in their original places; refine edges and materials using restrained pre-rendered industrial game art. Do not invent geometry from blurry pixels. Center whole building with small transparent margins in a square canvas, no floor or external shadow, no arrows, lettering, labels or background. True transparency. Preserve original object identity over ornate new detail.",
+      "sprite_reference": {
+        "icon": "graphics/entity/fabrik-weapons-icon.png",
+        "sprite": "__yi_pfw__/graphics/entity/fab-weapons-sheet.png",
+        "sprite_sha256": "b1df043a1d04793687bf9b6ceff1c7a3f0e8f3ef465f8c21f7d0b989ad1f7e2a",
+        "frame": {
+          "index": 0,
+          "x": 0,
+          "y": 0,
+          "width": 128,
+          "height": 128
+        },
+        "method": "AI"
+      },
+      "sha256": "cd9be5ed31804f001aba01cd35bde3284889f0459956d8ba3260e8384e58c11f"
+    },
+    {
+      "label": "Profit display 1",
+      "batch": 3,
+      "path": "graphics/entity/profit-show-1-icon.png",
+      "original_dimensions": [
+        32,
+        32
+      ],
+      "original_sha256": "8f8e9014a9ccb8f4263fb36011eebb462bf883c2489e894373c23b069c575947",
+      "dimensions": [
+        64,
+        64
+      ],
+      "source_path": "docs/artwork/ai-redraw-0.5.1/profit-show-1-icon-source.png",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "source_sha256": "798c49f9d24c3d5d8e15bbb1ba3105ce0a953d88f360d4c343b5bb8e2902b4eb",
+      "initial_prompt": "Use case: precise-object-edit. Edit target: the attached nearest-neighbor enlargement of the original 32px Yuoki PFW game inventory icon. Create a faithful high-resolution redraw for a 64px runtime icon. Subject and original color assignments: First profit display building: a compact gold/brass and bright blue industrial pedestal supporting TWO long parallel dark green-grey slabs/panels that tilt diagonally upward from lower-left to upper-right in the image, with dark brown division between them. Blue/cyan side columns/accents and gold vertical front supports. Preserve the two-slab shape and grey-green top / gold-blue bottom colors. Style: gritty pre-rendered industrial game art, subtle worn metal and controlled highlights, readable when reduced to64px. Treat the reference as authoritative for silhouette, relative proportions, exact orientation and color locations; clarify pixel edges without redesigning the machine. Center one whole building on a square transparent canvas with small clear margins; match reference occupancy. Preserve original hues rather than harmonizing the palette. No ground plane, extra buildings, arrows, labels, lettering, border, watermark, dramatic glow or backdrop. True transparent background.",
+      "prompt": "Use case: precise-object-edit. Input1: authoritative original world sprite/frame for this Yuoki PFW building's real geometry. Input2: original32px inventory icon for framing, colors and intended animation state. Create a faithful higher-resolution redraw to be reduced to64px. A compact upright futuristic sculpture/machine: TWO parallel dark grey-green thick horizontal PIPE TUBES on top, pointing diagonally from lower-left toward upper-right in image. Beneath them are vertical gold/brass supports, a row of bright blue/cyan cylinders with grey caps at the right and left, and copper-brown cylindrical footings with thin dark rods. Preserve the two hollow pipes (not flat slabs), steep perspective, pipe proportions and gold/blue/copper color assignments. Original shadow extends right: omit external cast shadow and center object. Match the original sprite camera, footprint, silhouette and relative proportions closely. Keep muted original hues in their original places; refine edges and materials using restrained pre-rendered industrial game art. Do not invent geometry from blurry pixels. Center whole building with small transparent margins in a square canvas, no floor or external shadow, no arrows, lettering, labels or background. True transparency. Preserve original object identity over ornate new detail.",
+      "sprite_reference": {
+        "icon": "graphics/entity/profit-show-1-icon.png",
+        "sprite": "__yi_pfw__/graphics/entity/profit-show-1.png",
+        "sprite_sha256": "d2f41b2f9356d43f75997bef420063362cd17520a62220255583b110f795b341",
+        "frame": {
+          "index": 0,
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 160
+        },
+        "method": "AI"
+      },
+      "sha256": "bf2f98b46c06da172a82a8d567d33e1bf89eae70e4067b95984ffc00588a8b03"
+    },
+    {
+      "label": "Profit display 2",
+      "batch": 3,
+      "path": "graphics/entity/profit-show-2-icon.png",
+      "original_dimensions": [
+        32,
+        32
+      ],
+      "original_sha256": "16fcb60a44ca286dcc7b08a268ccb776ea9415a1990afb54da9fe402198509e2",
+      "dimensions": [
+        64,
+        64
+      ],
+      "source_path": "docs/artwork/ai-redraw-0.5.1/profit-show-2-icon-source.png",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "source_sha256": "d739d94337293436ca3f9fcadc494ba922763ca0ff2ce9299749357c8b3791aa",
+      "initial_prompt": "Use case: precise-object-edit. Edit target: the attached nearest-neighbor enlargement of the original 32px Yuoki PFW game inventory icon. Create a faithful high-resolution redraw for a 64px runtime icon. Subject and original color assignments: Second profit display building: a tall central orange/gold cylindrical column with a grey-green cap and small magenta center dot rises from a broad radial cluster of dark grey mechanical feet/tubes. Around the column, low grey-steel machinery has muted brass edges, tiny orange highlights and subtle blue details. Preserve tall orange center, compact dark radial base and original perspective. Style: gritty pre-rendered industrial game art, subtle worn metal and controlled highlights, readable when reduced to64px. Treat the reference as authoritative for silhouette, relative proportions, exact orientation and color locations; clarify pixel edges without redesigning the machine. Center one whole building on a square transparent canvas with small clear margins; match reference occupancy. Preserve original hues rather than harmonizing the palette. No ground plane, extra buildings, arrows, labels, lettering, border, watermark, dramatic glow or backdrop. True transparent background.",
+      "prompt": "Use case: precise-object-edit. Input1: authoritative original world sprite/frame for this Yuoki PFW building's real geometry. Input2: original32px inventory icon for framing, colors and intended animation state. Create a faithful higher-resolution redraw to be reduced to64px. An upright center cylinder in dark grey with orange/gold vertical strips and a PURPLE circular top face. It stands on a central dark hexagonal hub, with SIX radial arms leading to six low chunky grey assemblies/feet. Each foot has two top circular grey discs, tiny amber lights, brass connectors and a lower dark cylinder. Preserve six-arm arrangement and the full purple top face (not a tiny dot), proportions and overhead perspective. Omit external cast shadow. Match the original sprite camera, footprint, silhouette and relative proportions closely. Keep muted original hues in their original places; refine edges and materials using restrained pre-rendered industrial game art. Do not invent geometry from blurry pixels. Center whole building with small transparent margins in a square canvas, no floor or external shadow, no arrows, lettering, labels or background. True transparency. Preserve original object identity over ornate new detail.",
+      "sprite_reference": {
+        "icon": "graphics/entity/profit-show-2-icon.png",
+        "sprite": "__yi_pfw__/graphics/entity/profit-show-2.png",
+        "sprite_sha256": "442c7dc8bae8e798a15dbe5ade0351e43ca812c27c5892e520c966e40a6049e1",
+        "frame": {
+          "index": 0,
+          "x": 0,
+          "y": 0,
+          "width": 160,
+          "height": 160
+        },
+        "method": "AI"
+      },
+      "sha256": "101e1bf5ab7875d1e0e83af8dc45b8f0c71a9e1eb77cf291931b7ecb550923e5"
+    }
+  ],
+  "batches": [
+    {
+      "batch": 2,
+      "date": "2026-10-09",
+      "starting_head": "da0aa937d088cfd272a8e3d4d2e6d4f64a654ab7",
+      "assets": [
+        "coilsr32",
+        "coilsgr32",
+        "crystal_1",
+        "crystal_green",
+        "wire_2",
+        "uni-com-pro",
+        "barren_mixed_9",
+        "barren_mixed_11"
+      ],
+      "review": "Original/64px comparison, alpha/palette review; processor corrected following owner feedback. Integrated graphical check pending."
+    },
+    {
+      "batch": 3,
+      "date": "2026-10-09",
+      "starting_head": "b6a44b892422d838e3f49a0267467603a472a9f1",
+      "assets": [
+        "fabrik-bio-icon",
+        "fabrik-comp-icon",
+        "fabrik-equip-icon",
+        "fabrik-trucks-icon",
+        "fabrik-weapons-icon",
+        "profit-show-1-icon",
+        "profit-show-2-icon"
+      ],
+      "review": "Icon-only drafts rejected following owner feedback. Selected redraws use actual PFW sprite frames; both parent mods checked. Shared factory icon reused from Engines. Full source and64px review; integrated graphical check pending."
+    }
+  ]
+}

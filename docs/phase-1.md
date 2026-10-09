@@ -1,8 +1,8 @@
 # Phase 1: Factorio 2.1 startup candidate
 
-Implementation and verification: 2026-10-09. Version **0.5.0** remains fixed until the owner authorizes a bump. This is a fresh release without a legacy-save upgrade path.
+Implementation and verification: 2026-10-09. This historical implementation record covers version **0.5.0**. The owner subsequently authorized [0.5.1](parent-content-0.5.1.md). This is a fresh release without a legacy-save upgrade path.
 
-**Status:** headless data loading, new-game creation, runtime smoke, saving and reloading pass. The owner will test the candidate locally for the remaining graphical launch and changelog-display check. Phase 1 is not fully signed off until that check passes.
+**Status:** headless checks passed; the owner subsequently reported the candidate appears to work and merged PR #5. No separate detailed graphical checklist or changelog-display report was supplied. This record retains the original automated evidence and test instructions.
 
 ## Verified environment
 
@@ -59,11 +59,13 @@ These are bounded compatibility decisions. All 206 original graphics files remai
 | Optional official mods | Data stage also passed with Space Age, Quality, Elevated Rails and Recycler enabled; no DLC gameplay claim |
 | Distribution ZIP | Final 231-file package loaded, created a new game and reloaded the smoke save for 600 ticks; package identity recorded in validation data |
 | Original archive | All 232 files verified at the immutable import commit using `--archive-only` |
-| Graphical client | Pending owner test; headless does not load/render the complete graphical path |
+| Graphical client | Owner subsequently reported the candidate works and merged PR #5; detailed rendering/changelog checklist not separately reported |
 
 The runtime smoke used console-created machines, electricity and ingredients. It establishes operation of representative paths, not natural progression or complete recipe accessibility. The character animation sheets were checked structurally; their appearance and alignment need the graphical test.
 
 ### Reproduce the core checks
+
+These historical commands, including `validate_phase1.py`, apply to merged Phase 1 commit `c0f0099469d08c98276f662a0e4ce3e54dd2c187`. Current ownership changes are checked by `validate_parent_content.py`.
 
 Use the versions above, an isolated mod directory containing PFW and both parents, and an isolated Factorio config/output directory. Start with base, Yuoki, yi_engines and yi_pfw enabled; explicitly disable Space Age, Quality, Elevated Rails and Recycler for the baseline.
 

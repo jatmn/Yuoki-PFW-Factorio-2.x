@@ -22,15 +22,15 @@ data:extend(
 	{ type = "recipe", name = "y-fab9-recipe", ingredients = {{type="item", name="y-basic-t1-mf", amount=2},{type="item", name="y-bluegear", amount=6}, {type="item", name="y-chip-1", amount=4},}, results = {{type="item", name="y-factory-9", amount=1}}, enabled = true,  order="factory", subgroup = "yi-basic", },
 	
 	
-	{ type = "item", name = "y-factory-1", icon = "__yi_pfw__/graphics/entity/fabrik-ammo-icon.png", icon_size = 32, order = "a", place_result = "y-factory-1", stack_size = 20, },
-	{ type = "item", name = "y-factory-2", icon = "__yi_pfw__/graphics/entity/fabrik-weapons-icon.png", icon_size = 32, order = "a", place_result = "y-factory-2", stack_size = 20, },
-	{ type = "item", name = "y-factory-3", icon = "__yi_pfw__/graphics/entity/fabrik-bio-icon.png", icon_size = 32, order = "a", place_result = "y-factory-3", stack_size = 20, },
-	{ type = "item", name = "y-factory-4", icon = "__yi_pfw__/graphics/entity/tut-icon.png", icon_size = 32, order = "a", place_result = "y-factory-4", stack_size = 20, },
-	{ type = "item", name = "y-factory-5", icon = "__yi_pfw__/graphics/entity/fabrik-trucks-icon.png", icon_size = 32, order = "a", place_result = "y-factory-5", stack_size = 20, },
-	{ type = "item", name = "y-factory-6", icon = "__yi_pfw__/graphics/entity/tut-icon.png", icon_size = 32, order = "a", place_result = "y-factory-6", stack_size = 20, },
-	{ type = "item", name = "y-factory-7", icon = "__yi_pfw__/graphics/entity/tut-icon.png", icon_size = 32, order = "a", place_result = "y-factory-7", stack_size = 20, },
-	{ type = "item", name = "y-factory-8", icon = "__yi_pfw__/graphics/entity/fabrik-equip-icon.png", icon_size = 32, order = "a", place_result = "y-factory-8", stack_size = 20, },
-	{ type = "item", name = "y-factory-9", icon = "__yi_pfw__/graphics/entity/fabrik-comp-icon.png", icon_size = 32, order = "a", place_result = "y-factory-9", stack_size = 20, },
+	{ type = "item", name = "y-factory-1", icon = "__yi_pfw__/graphics/entity/fabrik-ammo-icon.png", icon_size = 64, order = "a", place_result = "y-factory-1", stack_size = 20, },
+	{ type = "item", name = "y-factory-2", icon = "__yi_pfw__/graphics/entity/fabrik-weapons-icon.png", icon_size = 64, order = "a", place_result = "y-factory-2", stack_size = 20, },
+	{ type = "item", name = "y-factory-3", icon = "__yi_pfw__/graphics/entity/fabrik-bio-icon.png", icon_size = 64, order = "a", place_result = "y-factory-3", stack_size = 20, },
+	{ type = "item", name = "y-factory-4", icon = "__yi_engines__/graphics/entity/science_gen_icon.png", icon_size = 32, order = "a", place_result = "y-factory-4", stack_size = 20, },
+	{ type = "item", name = "y-factory-5", icon = "__yi_pfw__/graphics/entity/fabrik-trucks-icon.png", icon_size = 64, order = "a", place_result = "y-factory-5", stack_size = 20, },
+	{ type = "item", name = "y-factory-6", icon = "__yi_engines__/graphics/entity/science_gen_icon.png", icon_size = 32, order = "a", place_result = "y-factory-6", stack_size = 20, },
+	{ type = "item", name = "y-factory-7", icon = "__yi_engines__/graphics/entity/science_gen_icon.png", icon_size = 32, order = "a", place_result = "y-factory-7", stack_size = 20, },
+	{ type = "item", name = "y-factory-8", icon = "__yi_pfw__/graphics/entity/fabrik-equip-icon.png", icon_size = 64, order = "a", place_result = "y-factory-8", stack_size = 20, },
+	{ type = "item", name = "y-factory-9", icon = "__yi_pfw__/graphics/entity/fabrik-comp-icon.png", icon_size = 64, order = "a", place_result = "y-factory-9", stack_size = 20, },
 	
 })	
 	

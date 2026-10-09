@@ -41,10 +41,12 @@ data:extend(
 	]]
 	
 	-- Minigun
+	-- Parent owner: Yuoki, gun yi_minigun. Preserved inactive PFW definition.
+	--[=[
 	{
 		type = "gun",
 		name = "y-sm-5",
-		icon = "__yi_pfw__/graphics/fab2/minigun.png", icon_size = 32,
+		icon = "__Yuoki__/graphics/armor/minigun.png", icon_size = 64,
 		subgroup = "gun",
 		order = "a[basic-clips]-b[submachine-gun]",
 		attack_parameters =
@@ -77,18 +79,20 @@ data:extend(
 		},
 		stack_size = 100
 	},
+	]=]
 
+	-- Identity mapping pending; use Yuoki yi_ammo_energie (plasma) ammunition.
 	-- Lasergun
 	{
 		type = "gun",
 		name = "y-sm-1",
-		icon = "__yi_pfw__/graphics/fab2/lasergun.png", icon_size = 32,
+		icon = "__Yuoki__/graphics/armor/lasergun.png", icon_size = 64,
 		subgroup = "gun",
 		order = "c[railgun]",
 		attack_parameters =
 		{
 			type = "projectile",
-			ammo_category = "yi-pfw-energy",
+			ammo_category = "plasma",
 			cooldown = 20,
 			movement_slow_down_factor = 0.0,
 			projectile_creation_distance = 0.6,
@@ -105,17 +109,18 @@ data:extend(
 		stack_size = 100
 	},
 
+	-- Identity mapping pending; use Yuoki yi_ammo_energie (plasma) ammunition.
 	-- Plasmagun
 	{
 		type = "gun",
 		name = "y-sm-2",
-		icon = "__yi_pfw__/graphics/fab2/plasma-gun.png", icon_size = 32,
+		icon = "__yi_pfw__/graphics/fab2/plasma-gun.png", icon_size = 64,
 		subgroup = "gun",
 		order = "c[railgun]",
 		attack_parameters =
 		{
 			type = "projectile",
-			ammo_category = "yi-pfw-energy",
+			ammo_category = "plasma",
 			cooldown = 7,
 			movement_slow_down_factor = 0.2,
 			projectile_creation_distance = 0.6,
@@ -132,6 +137,8 @@ data:extend(
 		stack_size = 100
 	},
 
+	-- Parent owner: Yuoki, ammo yi_ammo_energie. Preserved inactive PFW definition.
+	--[=[
 	{
 		type = "ammo",
 		name = "y-mun-2",
@@ -167,7 +174,8 @@ data:extend(
 		subgroup = "ammo",
 		order = "c[railgun]",
 		stack_size = 1000
-	},	
+	},
+	]=]
 	
 	
 	-- Parent owner: Yuoki/prototypes/objects/y_player_equipment.lua, projectile p2.

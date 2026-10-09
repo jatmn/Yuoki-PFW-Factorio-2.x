@@ -1,0 +1,1242 @@
+{
+  "date": "2026-10-09",
+  "starting_head": "9fe3001bd43cadc5d3dd54037141e88bb4ee5412",
+  "library": "__Yuoki__/lib/yi-tools.lua",
+  "parent_commit": "50ea38b9703a13e8644c3bcfe6e400b3bf2b4a5c",
+  "trades": [
+    {
+      "recipe": "y-import1-recipe",
+      "source": "y-redcoil",
+      "direction": "up",
+      "old_icon": null
+    },
+    {
+      "recipe": "y-import2-recipe",
+      "source": "y-grycoil",
+      "direction": "up",
+      "old_icon": null
+    },
+    {
+      "recipe": "y-import3-recipe",
+      "source": "y-stuff-1",
+      "direction": "up",
+      "old_icon": null
+    },
+    {
+      "recipe": "y-import4-recipe",
+      "source": "y-stuff-2",
+      "direction": "up",
+      "old_icon": null
+    },
+    {
+      "recipe": "y-import5-recipe",
+      "source": "y-stuff-3",
+      "direction": "up",
+      "old_icon": null
+    },
+    {
+      "recipe": "y-import6-recipe",
+      "source": "y-stuff-4",
+      "direction": "up",
+      "old_icon": null
+    },
+    {
+      "recipe": "y-import7-recipe",
+      "source": "y-stuff-5",
+      "direction": "up",
+      "old_icon": null
+    },
+    {
+      "recipe": "y-import8-recipe",
+      "source": "y-stuff-6",
+      "direction": "up",
+      "old_icon": null
+    },
+    {
+      "recipe": "y-rfab1a-recipe",
+      "source": "y-mun-0",
+      "direction": "down",
+      "old_icon": "__yi_pfw__/graphics/package_common_retrade.png"
+    },
+    {
+      "recipe": "y-rfab1b-recipe",
+      "source": "y-mun-1",
+      "direction": "down",
+      "old_icon": "__yi_pfw__/graphics/package_common_retrade.png"
+    },
+    {
+      "recipe": "y-rfab1c-recipe",
+      "source": "yi_ammo_energie",
+      "direction": "down",
+      "old_icon": "__yi_pfw__/graphics/fab1/bst_z1.png"
+    },
+    {
+      "recipe": "y-rfab1d-recipe",
+      "source": "y-mun-3",
+      "direction": "down",
+      "old_icon": "__yi_pfw__/graphics/package_common_retrade.png"
+    },
+    {
+      "recipe": "y-rfab1e-recipe",
+      "source": "y-mun-4",
+      "direction": "down",
+      "old_icon": "__yi_pfw__/graphics/package_common_retrade.png"
+    },
+    {
+      "recipe": "y-rfab1f-recipe",
+      "source": "y-mun-5",
+      "direction": "down",
+      "old_icon": "__yi_pfw__/graphics/package_common_retrade.png"
+    },
+    {
+      "recipe": "y-rfab1g-recipe",
+      "source": "y-mun-6",
+      "direction": "down",
+      "old_icon": "__yi_pfw__/graphics/package_common_retrade.png"
+    },
+    {
+      "recipe": "y-rfab1h-recipe",
+      "source": "y-mun-7",
+      "direction": "down",
+      "old_icon": "__yi_pfw__/graphics/package_common_retrade.png"
+    },
+    {
+      "recipe": "y-rfab1i-recipe",
+      "source": "y-mun-8",
+      "direction": "down",
+      "old_icon": "__yi_pfw__/graphics/package_common_retrade.png"
+    },
+    {
+      "recipe": "y-rfab1k-recipe",
+      "source": "y-mun-9",
+      "direction": "down",
+      "old_icon": "__yi_pfw__/graphics/package_common_retrade.png"
+    },
+    {
+      "recipe": "y-rfab2a-recipe",
+      "source": "y-sm-0",
+      "direction": "down",
+      "old_icon": "__yi_pfw__/graphics/package_common_retrade.png"
+    },
+    {
+      "recipe": "y-rfab2b-recipe",
+      "source": "y-sm-1",
+      "direction": "down",
+      "old_icon": "__yi_pfw__/graphics/fab2/lasergun-sell.png"
+    },
+    {
+      "recipe": "y-rfab2c-recipe",
+      "source": "y-sm-2",
+      "direction": "down",
+      "old_icon": "__yi_pfw__/graphics/fab2/plasma-gun-sell.png"
+    },
+    {
+      "recipe": "y-rfab2d-recipe",
+      "source": "y-sm-3",
+      "direction": "down",
+      "old_icon": "__yi_pfw__/graphics/package_common_retrade.png"
+    },
+    {
+      "recipe": "y-rfab2e-recipe",
+      "source": "y-sm-4",
+      "direction": "down",
+      "old_icon": "__yi_pfw__/graphics/package_common_retrade.png"
+    },
+    {
+      "recipe": "y-rfab2f-recipe",
+      "source": "yi_minigun",
+      "direction": "down",
+      "old_icon": "__yi_pfw__/graphics/fab2/minigun-sell.png"
+    },
+    {
+      "recipe": "y-rfab2g-recipe",
+      "source": "y-sm-6",
+      "direction": "down",
+      "old_icon": "__yi_pfw__/graphics/package_common_retrade.png"
+    },
+    {
+      "recipe": "y-rfab3a-recipe",
+      "source": "y-cyb-0",
+      "direction": "down",
+      "old_icon": "__yi_pfw__/graphics/fab3/brain-parasite-1-sell.png"
+    },
+    {
+      "recipe": "y-rfab3b-recipe",
+      "source": "y-cyb-1",
+      "direction": "down",
+      "old_icon": "__yi_pfw__/graphics/package_common_retrade.png"
+    },
+    {
+      "recipe": "y-rfab3c-recipe",
+      "source": "y-cyb-2",
+      "direction": "down",
+      "old_icon": "__yi_pfw__/graphics/package_common_retrade.png"
+    },
+    {
+      "recipe": "y-rfab3d-recipe",
+      "source": "y-cyb-3",
+      "direction": "down",
+      "old_icon": "__yi_pfw__/graphics/package_common_retrade.png"
+    },
+    {
+      "recipe": "y-rfab3e-recipe",
+      "source": "y-cyb-4",
+      "direction": "down",
+      "old_icon": "__yi_pfw__/graphics/package_common_retrade.png"
+    },
+    {
+      "recipe": "y-rfab3f-recipe",
+      "source": "y-cyb-5",
+      "direction": "down",
+      "old_icon": "__yi_pfw__/graphics/package_common_retrade.png"
+    },
+    {
+      "recipe": "y-rfab3g-recipe",
+      "source": "y-cyb-6",
+      "direction": "down",
+      "old_icon": "__yi_pfw__/graphics/package_common_retrade.png"
+    },
+    {
+      "recipe": "y-rfab3h-recipe",
+      "source": "y-cyb-7",
+      "direction": "down",
+      "old_icon": "__yi_pfw__/graphics/package_common_retrade.png"
+    },
+    {
+      "recipe": "y-rfab3i-recipe",
+      "source": "y-cyb-8",
+      "direction": "down",
+      "old_icon": "__yi_pfw__/graphics/package_common_retrade.png"
+    },
+    {
+      "recipe": "y-rfab3k-recipe",
+      "source": "y-cyb-9",
+      "direction": "down",
+      "old_icon": "__yi_pfw__/graphics/package_common_retrade.png"
+    },
+    {
+      "recipe": "y-rfab5d-recipe",
+      "source": "y-veh-3",
+      "direction": "down",
+      "old_icon": "__yi_pfw__/graphics/package_common_retrade.png"
+    },
+    {
+      "recipe": "y-rfab5e-recipe",
+      "source": "y-veh-4",
+      "direction": "down",
+      "old_icon": "__yi_pfw__/graphics/package_common_retrade.png"
+    },
+    {
+      "recipe": "y-rfab5f-recipe",
+      "source": "y-veh-5",
+      "direction": "down",
+      "old_icon": "__yi_pfw__/graphics/package_common_retrade.png"
+    },
+    {
+      "recipe": "y-rfab5g-recipe",
+      "source": "y-veh-6",
+      "direction": "down",
+      "old_icon": "__yi_pfw__/graphics/package_common_retrade.png"
+    },
+    {
+      "recipe": "y-rfab5i-recipe",
+      "source": "y-veh-8",
+      "direction": "down",
+      "old_icon": "__yi_pfw__/graphics/package_common_retrade.png"
+    },
+    {
+      "recipe": "y-rfab5k-recipe",
+      "source": "y-veh-9",
+      "direction": "down",
+      "old_icon": "__yi_pfw__/graphics/fab5/reifen-sell.png"
+    },
+    {
+      "recipe": "y-rfab8b-recipe",
+      "source": "y-equ-1",
+      "direction": "down",
+      "old_icon": "__yi_pfw__/graphics/fab8/lfg13-sell.png"
+    },
+    {
+      "recipe": "y-rfab8c-recipe",
+      "source": "y-equ-2",
+      "direction": "down",
+      "old_icon": "__yi_pfw__/graphics/fab8/mfg28-sell.png"
+    },
+    {
+      "recipe": "y-rfab8d-recipe",
+      "source": "y-equ-3",
+      "direction": "down",
+      "old_icon": "__yi_pfw__/graphics/fab8/msg-cb-sell.png"
+    },
+    {
+      "recipe": "y-rfab8e-recipe",
+      "source": "y-equ-4",
+      "direction": "down",
+      "old_icon": "__yi_pfw__/graphics/fab8/sfg400-sell.png"
+    },
+    {
+      "recipe": "y-rfab8f-recipe",
+      "source": "y-equ-5",
+      "direction": "down",
+      "old_icon": "__yi_pfw__/graphics/fab8/teil_02-sell.png"
+    },
+    {
+      "recipe": "y-rfab8g-recipe",
+      "source": "yi_equip_generator_a",
+      "direction": "down",
+      "old_icon": "__Yuoki__/graphics/armor/energy_icon.png"
+    },
+    {
+      "recipe": "y-rimp1-recipe",
+      "source": "y-redcoil",
+      "direction": "down",
+      "old_icon": "__yi_pfw__/graphics/imports/coilsr32-sell.png"
+    },
+    {
+      "recipe": "y-rimp2-recipe",
+      "source": "y-grycoil",
+      "direction": "down",
+      "old_icon": "__yi_pfw__/graphics/imports/coilsgr32-sell.png"
+    },
+    {
+      "recipe": "y-rimp3-recipe",
+      "source": "y-stuff-1",
+      "direction": "down",
+      "old_icon": "__yi_pfw__/graphics/imports/crystal_1-sell.png"
+    },
+    {
+      "recipe": "y-rimp4-recipe",
+      "source": "y-stuff-2",
+      "direction": "down",
+      "old_icon": "__yi_pfw__/graphics/imports/crystal_green-sell.png"
+    },
+    {
+      "recipe": "y-rimp5-recipe",
+      "source": "y-stuff-3",
+      "direction": "down",
+      "old_icon": "__yi_pfw__/graphics/imports/wire_2-sell.png"
+    },
+    {
+      "recipe": "y-rimp6-recipe",
+      "source": "y-stuff-4",
+      "direction": "down",
+      "old_icon": "__yi_pfw__/graphics/imports/uni-com-pro-sell.png"
+    },
+    {
+      "recipe": "y-rimp7-recipe",
+      "source": "y-stuff-5",
+      "direction": "down",
+      "old_icon": "__yi_pfw__/graphics/imports/barren_mixed_9-sell.png"
+    },
+    {
+      "recipe": "y-rimp8-recipe",
+      "source": "y-stuff-6",
+      "direction": "down",
+      "old_icon": "__yi_pfw__/graphics/imports/barren_mixed_11-sell.png"
+    },
+    {
+      "recipe": "y-rzproduct-8-recipe",
+      "source": "y-zproduct-8",
+      "direction": "down",
+      "old_icon": "__yi_pfw__/graphics/fab8/fusion-cell-sell.png"
+    }
+  ],
+  "inactive_recipes": [
+    {
+      "recipe": "y-rfab8a-recipe",
+      "source": "y-equ-0",
+      "file": "prototypes/ir_fab8.lua"
+    },
+    {
+      "recipe": "y-rfab8h-recipe",
+      "source": "y-equ-7",
+      "file": "prototypes/ir_fab8.lua"
+    },
+    {
+      "recipe": "y-rfab8i-recipe",
+      "source": "y-equ-8",
+      "file": "prototypes/ir_fab8.lua"
+    },
+    {
+      "recipe": "y-rfab8k-recipe",
+      "source": "yi_equip_legs_a",
+      "file": "prototypes/ir_fab8.lua"
+    },
+    {
+      "recipe": "y-rfab5a-recipe",
+      "source": "y-veh-0",
+      "file": "prototypes/ir_fab5.lua"
+    },
+    {
+      "recipe": "y-rfab5b-recipe",
+      "source": "y-veh-1",
+      "file": "prototypes/ir_fab5.lua"
+    },
+    {
+      "recipe": "y-rfab5c-recipe",
+      "source": "y-veh-2",
+      "file": "prototypes/ir_fab5.lua"
+    },
+    {
+      "recipe": "y-rfab5h-recipe",
+      "source": "y-veh-7",
+      "file": "prototypes/ir_fab5.lua"
+    }
+  ],
+  "removed_variants": [
+    {
+      "path": "graphics/fab1/bomb-ext-sell.png",
+      "original_sha256": "43bad7be6e9613f6b5887708dcf407e67ff313973d05389d5b6ec232b8691649",
+      "base_icon": "__yi_pfw__/graphics/fab1/teil_03_32.png",
+      "base_dimensions": [
+        32,
+        32
+      ],
+      "base_sha256": "89e2caaa8cd209f3bc219fa3ce6145ad23916993c1da115f6918bef4f3890ced",
+      "direction": "down",
+      "source_references_before": [],
+      "future_use": "Register or restore the intended item with this base artwork, then use yi.lib.recipe.atomics.item_down(item_name). Do not recreate a baked arrow image."
+    },
+    {
+      "path": "graphics/fab1/bomb-free-sell.png",
+      "original_sha256": "22b19257691f1ec0568ec3257383317f2a460804407d369b65848c3ad67fcbaf",
+      "base_icon": "__yi_pfw__/graphics/fab1/bomb-free.png",
+      "base_dimensions": [
+        32,
+        32
+      ],
+      "base_sha256": "68be2560000129be276d69b27f8759225d7baa9f03381c52b9f22a5ada4bcfd7",
+      "direction": "down",
+      "source_references_before": [],
+      "future_use": "Register or restore the intended item with this base artwork, then use yi.lib.recipe.atomics.item_down(item_name). Do not recreate a baked arrow image."
+    },
+    {
+      "path": "graphics/fab1/bombe-1-sell.png",
+      "original_sha256": "c74bd8bd0f959176dceec6596855aa8e429b2c995482980138c3724b0822bb91",
+      "base_icon": "__yi_pfw__/graphics/fab1/bombe-1.png",
+      "base_dimensions": [
+        32,
+        32
+      ],
+      "base_sha256": "f79174dcfd0d5c5cc0bfac41a09a3970fef26d90c734d94b7fcfbaebe1cfcef0",
+      "direction": "down",
+      "source_references_before": [],
+      "future_use": "Register or restore the intended item with this base artwork, then use yi.lib.recipe.atomics.item_down(item_name). Do not recreate a baked arrow image."
+    },
+    {
+      "path": "graphics/fab1/bombe-2-sell.png",
+      "original_sha256": "c6c8717b8d7bc81ea789331b395233b725b8c29c1fea8fe682c8e93e77fd2624",
+      "base_icon": "__yi_pfw__/graphics/fab1/bombe-2.png",
+      "base_dimensions": [
+        32,
+        32
+      ],
+      "base_sha256": "48f80a60b586f2435e902942a2404ca4c8b30a229bc791f7f3e2b35e78fd78be",
+      "direction": "down",
+      "source_references_before": [],
+      "future_use": "Register or restore the intended item with this base artwork, then use yi.lib.recipe.atomics.item_down(item_name). Do not recreate a baked arrow image."
+    },
+    {
+      "path": "graphics/fab1/bombe-3-sell.png",
+      "original_sha256": "016642f37fcdef538f0cae6e1ffff0cf168c1a197dcd302b6d8c4925e61ecc66",
+      "base_icon": "__yi_pfw__/graphics/fab1/bombe-3.png",
+      "base_dimensions": [
+        32,
+        32
+      ],
+      "base_sha256": "06f3930584485167eea7847813b5f7285c843cc9819c0af7397d672a77349578",
+      "direction": "down",
+      "source_references_before": [],
+      "future_use": "Register or restore the intended item with this base artwork, then use yi.lib.recipe.atomics.item_down(item_name). Do not recreate a baked arrow image."
+    },
+    {
+      "path": "graphics/fab1/cluster-sell.png",
+      "original_sha256": "e5692c7d152f0279e0e87ac2cbbd728d70be6a5298fc2aa7cff7cb2cf9c7a299",
+      "base_icon": "__yi_pfw__/graphics/fab1/cluster_32.png",
+      "base_dimensions": [
+        32,
+        32
+      ],
+      "base_sha256": "0ce2704dc2583b63a343685dd498e067b8cfc1f66dd4f84581b79c41c74e6711",
+      "direction": "down",
+      "source_references_before": [],
+      "future_use": "Register or restore the intended item with this base artwork, then use yi.lib.recipe.atomics.item_down(item_name). Do not recreate a baked arrow image."
+    },
+    {
+      "path": "graphics/fab1/rakete-sell.png",
+      "original_sha256": "007fc0f8cd756cb9f043f09d91653a39d984e358a474f3d7cac7a740d480a83c",
+      "base_icon": "__yi_pfw__/graphics/fab1/raketen.png",
+      "base_dimensions": [
+        32,
+        32
+      ],
+      "base_sha256": "0a20f08d3115dbfa185becb1e88cd2f18cdb96cce4f472a481cb1f435f7cc1a4",
+      "direction": "down",
+      "source_references_before": [],
+      "future_use": "Register or restore the intended item with this base artwork, then use yi.lib.recipe.atomics.item_down(item_name). Do not recreate a baked arrow image."
+    },
+    {
+      "path": "graphics/fab1/s_munition-sell.png",
+      "original_sha256": "685f1cc0cdaeda5b9e4f98140739947aa6e5dd68bd34cf1d0e8d5adf5a4473e4",
+      "base_icon": "__yi_pfw__/graphics/fab1/s_munition_32.png",
+      "base_dimensions": [
+        32,
+        32
+      ],
+      "base_sha256": "ce21ccf6ca5032c0171a2840ee05b6650e96a5e7977dc44965bc4521456da09a",
+      "direction": "down",
+      "source_references_before": [],
+      "future_use": "Register or restore the intended item with this base artwork, then use yi.lib.recipe.atomics.item_down(item_name). Do not recreate a baked arrow image."
+    },
+    {
+      "path": "graphics/fab2/a_fblaster32-sell.png",
+      "original_sha256": "26399436de084ca8af59f5ca8b53a3bdd54647f9e4ade66e395b4cb076318272",
+      "base_icon": "__yi_pfw__/graphics/fab2/a_fblaster32.png",
+      "base_dimensions": [
+        32,
+        32
+      ],
+      "base_sha256": "46507a3564f359d7723c1bd10ca0948670378365cd6fa9ad9f6059d82cf1a76f",
+      "direction": "down",
+      "source_references_before": [],
+      "future_use": "Register or restore the intended item with this base artwork, then use yi.lib.recipe.atomics.item_down(item_name). Do not recreate a baked arrow image."
+    },
+    {
+      "path": "graphics/fab2/cc-sell.png",
+      "original_sha256": "d6679ba39ed1770e9781e0c46fe5e746a13b90f7024229f12ec22b700136bae4",
+      "base_icon": "__yi_pfw__/graphics/fab2/cc.png",
+      "base_dimensions": [
+        32,
+        32
+      ],
+      "base_sha256": "0a95c32e02eeaf02c31fd56cd5e0f1b3ae5e6786455414734d26bd3ca2630024",
+      "direction": "down",
+      "source_references_before": [],
+      "future_use": "Register or restore the intended item with this base artwork, then use yi.lib.recipe.atomics.item_down(item_name). Do not recreate a baked arrow image."
+    },
+    {
+      "path": "graphics/fab2/grenade-sell.png",
+      "original_sha256": "af7c9429214226fd8f824c6bdc6ed8dd30968cd9ffa911ea24231454d4850528",
+      "base_icon": "__yi_pfw__/graphics/fab2/grenade-gun.png",
+      "base_dimensions": [
+        32,
+        32
+      ],
+      "base_sha256": "b01b0b855622ff1a0ac1db6450d437e1f7c0b23c755f90d1b3f2ea230a595a1d",
+      "direction": "down",
+      "source_references_before": [],
+      "future_use": "Register or restore the intended item with this base artwork, then use yi.lib.recipe.atomics.item_down(item_name). Do not recreate a baked arrow image."
+    },
+    {
+      "path": "graphics/fab2/lasergun-sell.png",
+      "original_sha256": "c0211b148da4f7f8467d8deeb12c4a74a6decb4bb36988831bdf774dd8570c0c",
+      "base_icon": "__Yuoki__/graphics/armor/lasergun.png",
+      "base_dimensions": [
+        64,
+        64
+      ],
+      "base_sha256": "43300ef294cddfba7b6299098062f9748673e9f42c0e65d4f59b1aa7cfbabee0",
+      "direction": "down",
+      "source_references_before": [
+        {
+          "file": "prototypes/ir_fab2.lua",
+          "line_before": 52
+        }
+      ],
+      "future_use": "Register or restore the intended item with this base artwork, then use yi.lib.recipe.atomics.item_down(item_name). Do not recreate a baked arrow image."
+    },
+    {
+      "path": "graphics/fab2/medic-sell.png",
+      "original_sha256": "cefbd6306d261bf926285aa00bd64c33ea5752bbcdfe14ef2bec5080a998c89f",
+      "base_icon": "__yi_pfw__/graphics/fab2/medic-icon.png",
+      "base_dimensions": [
+        32,
+        32
+      ],
+      "base_sha256": "f9cc701843a05a7c123da9415034da12fe832b7b75395f649c3abd841a3ed4b4",
+      "direction": "down",
+      "source_references_before": [],
+      "future_use": "Register or restore the intended item with this base artwork, then use yi.lib.recipe.atomics.item_down(item_name). Do not recreate a baked arrow image."
+    },
+    {
+      "path": "graphics/fab2/minigun-sell.png",
+      "original_sha256": "e6b8292328667c8a362be9391085a25febd47a3905a1577b714dcf0175a0e74e",
+      "base_icon": "__Yuoki__/graphics/armor/minigun.png",
+      "base_dimensions": [
+        64,
+        64
+      ],
+      "base_sha256": "e923e39a984731ead95c10824b3adbbcbc4c87b489952880ca6f8e610988da6e",
+      "direction": "down",
+      "source_references_before": [
+        {
+          "file": "prototypes/ir_fab2.lua",
+          "line_before": 56
+        }
+      ],
+      "future_use": "Register or restore the intended item with this base artwork, then use yi.lib.recipe.atomics.item_down(item_name). Do not recreate a baked arrow image."
+    },
+    {
+      "path": "graphics/fab2/plasma-gun-sell.png",
+      "original_sha256": "8584e8e63b68461d8ca67fed799bdef7cfc345ecdb1f8b7a98ef5198d9d4d224",
+      "base_icon": "__yi_pfw__/graphics/fab2/plasma-gun.png",
+      "base_dimensions": [
+        64,
+        64
+      ],
+      "base_sha256": "28cd22c2926d8847969b5964f862c077445e1deaf1f5c6b2c43b3cdc8b08ceee",
+      "direction": "down",
+      "source_references_before": [
+        {
+          "file": "prototypes/ir_fab2.lua",
+          "line_before": 53
+        }
+      ],
+      "future_use": "Register or restore the intended item with this base artwork, then use yi.lib.recipe.atomics.item_down(item_name). Do not recreate a baked arrow image."
+    },
+    {
+      "path": "graphics/fab2/sniper-sell.png",
+      "original_sha256": "cb84d05bdc00362897050a546ea0880d6d247aa9abc5fb80a7006f7d9eeb7c15",
+      "base_icon": "__yi_pfw__/graphics/fab2/sniper-rifle.png",
+      "base_dimensions": [
+        32,
+        32
+      ],
+      "base_sha256": "240387abbad71f86f3b7f15fd1f0d3861b2edc1c837666f3bd2df06cbb443b81",
+      "direction": "down",
+      "source_references_before": [],
+      "future_use": "Register or restore the intended item with this base artwork, then use yi.lib.recipe.atomics.item_down(item_name). Do not recreate a baked arrow image."
+    },
+    {
+      "path": "graphics/fab3/brain-parasite-1-sell.png",
+      "original_sha256": "ba2f96df88d2ea88fa231e056839b680be11523e11781ee9ac77c5570e7f5972",
+      "base_icon": "__yi_engines__/graphics/icons/brain-parasite-1.png",
+      "base_dimensions": [
+        32,
+        32
+      ],
+      "base_sha256": "30d680dc4b3475eccd3ddf76fc000f54913861c24f9ad314e861718203f7aa47",
+      "direction": "down",
+      "source_references_before": [
+        {
+          "file": "prototypes/ir_fab3.lua",
+          "line_before": 36
+        }
+      ],
+      "future_use": "Register or restore the intended item with this base artwork, then use yi.lib.recipe.atomics.item_down(item_name). Do not recreate a baked arrow image."
+    },
+    {
+      "path": "graphics/fab3/mcb_defender-sell.png",
+      "original_sha256": "e800cf5dab0acac64696c372688106e38c525bd04bd873d8279ce8322117d1d7",
+      "base_icon": "__yi_pfw__/graphics/fab3/mcb_defender_32.png",
+      "base_dimensions": [
+        32,
+        32
+      ],
+      "base_sha256": "41b4bd7a77ab2eef51db06bdf8be7897946d6554cd4781f306cb093313098414",
+      "direction": "down",
+      "source_references_before": [],
+      "future_use": "Register or restore the intended item with this base artwork, then use yi.lib.recipe.atomics.item_down(item_name). Do not recreate a baked arrow image."
+    },
+    {
+      "path": "graphics/fab3/mcb_pg-sell.png",
+      "original_sha256": "7bf22644d2aa1baf618b472e874e9dad631e606ab2e276918aa86405baadff05",
+      "base_icon": "__yi_pfw__/graphics/fab3/mcb_pg_up_32.png",
+      "base_dimensions": [
+        32,
+        32
+      ],
+      "base_sha256": "8c799c2d57e5526399cbb2c038250b2d8193ded8e7bcdd724e70a3d353c929c5",
+      "direction": "down",
+      "source_references_before": [],
+      "future_use": "Register or restore the intended item with this base artwork, then use yi.lib.recipe.atomics.item_down(item_name). Do not recreate a baked arrow image."
+    },
+    {
+      "path": "graphics/fab3/mcb_pyroon-sell.png",
+      "original_sha256": "fb01235f2da174ee1963e507d54e2750309cc20b04f54580fd4070ba77169b68",
+      "base_icon": "__yi_pfw__/graphics/fab3/mcb_pyroon_32.png",
+      "base_dimensions": [
+        32,
+        32
+      ],
+      "base_sha256": "ca237acb297bd5beadec148d818753f6dcf74accccd5835e8288d3451cec2390",
+      "direction": "down",
+      "source_references_before": [],
+      "future_use": "Register or restore the intended item with this base artwork, then use yi.lib.recipe.atomics.item_down(item_name). Do not recreate a baked arrow image."
+    },
+    {
+      "path": "graphics/fab3/mcb_ranger--sell.png",
+      "original_sha256": "4c71a36a0533bbc8f22719844c632c75266edc1bdf83bf48c532914ae47ee148",
+      "base_icon": "__yi_pfw__/graphics/fab3/mcb_ranger_up_32.png",
+      "base_dimensions": [
+        32,
+        32
+      ],
+      "base_sha256": "9da4ac00952ca2d97e736370305b4f9849431d57cd4a9cd4c2e9a01ab4095350",
+      "direction": "down",
+      "source_references_before": [],
+      "future_use": "Register or restore the intended item with this base artwork, then use yi.lib.recipe.atomics.item_down(item_name). Do not recreate a baked arrow image."
+    },
+    {
+      "path": "graphics/fab3/mcb_ranger-sell.png",
+      "original_sha256": "0a5f96f80c578e40ff0a250cbc96810f94b006e41893fdff14a05d280729bff6",
+      "base_icon": "__yi_pfw__/graphics/fab3/mcb_ranger32.png",
+      "base_dimensions": [
+        32,
+        32
+      ],
+      "base_sha256": "0d118a75cfe0859bf7995b88a7893a0b770279baf0ad7d1c970485cef4ac9b7d",
+      "direction": "down",
+      "source_references_before": [],
+      "future_use": "Register or restore the intended item with this base artwork, then use yi.lib.recipe.atomics.item_down(item_name). Do not recreate a baked arrow image."
+    },
+    {
+      "path": "graphics/fab3/mcb_sani-sell.png",
+      "original_sha256": "4775372f30f4c66b427015a25a290a01f51461c3684132ae26f96f4d264f59ed",
+      "base_icon": "__yi_pfw__/graphics/fab3/mcb_sani_32.png",
+      "base_dimensions": [
+        32,
+        32
+      ],
+      "base_sha256": "19acd4e8532172f89ed0ca2df4f279560707a562f8475519c79eec21e19a9959",
+      "direction": "down",
+      "source_references_before": [],
+      "future_use": "Register or restore the intended item with this base artwork, then use yi.lib.recipe.atomics.item_down(item_name). Do not recreate a baked arrow image."
+    },
+    {
+      "path": "graphics/fab3/mcb_senti-sell.png",
+      "original_sha256": "aab658fbba8ad9e84006f0d230e40644579131b43e53e28160c8a45eaaee79cf",
+      "base_icon": "__yi_pfw__/graphics/fab3/mcb_senti_32.png",
+      "base_dimensions": [
+        32,
+        32
+      ],
+      "base_sha256": "b57f136283668fe103a4e95d28d714679724fc20efc0b2548f56482380494409",
+      "direction": "down",
+      "source_references_before": [],
+      "future_use": "Register or restore the intended item with this base artwork, then use yi.lib.recipe.atomics.item_down(item_name). Do not recreate a baked arrow image."
+    },
+    {
+      "path": "graphics/fab3/neron_u3-sell.png",
+      "original_sha256": "4b75319c6f089ca69c995e170587c9fa46ccc768ba159aa76cdccf51eebd2905",
+      "base_icon": "__Yuoki__/graphics/armor/neron_u3_32.png",
+      "base_dimensions": [
+        64,
+        64
+      ],
+      "base_sha256": "c9f7b4ccc024675735ea17c4bdbcb7c38fe5ad2c2bab7b7191838db8ee2d8435",
+      "direction": "down",
+      "source_references_before": [],
+      "future_use": "Register or restore the intended item with this base artwork, then use yi.lib.recipe.atomics.item_down(item_name). Do not recreate a baked arrow image."
+    },
+    {
+      "path": "graphics/fab3/neron_u5-sell.png",
+      "original_sha256": "66947aefaeb77258b4fc8cd2b5a7a897538a50f626ba7e4341359cf44d2ebead",
+      "base_icon": "__yi_pfw__/graphics/fab3/neron_u5_32.png",
+      "base_dimensions": [
+        32,
+        32
+      ],
+      "base_sha256": "45a671f378cb6eaded55bc04923cdc9b57a49eca77605773271e943f53c57dda",
+      "direction": "down",
+      "source_references_before": [],
+      "future_use": "Register or restore the intended item with this base artwork, then use yi.lib.recipe.atomics.item_down(item_name). Do not recreate a baked arrow image."
+    },
+    {
+      "path": "graphics/fab4/teil_05-sell.png",
+      "original_sha256": "7ce82b2473e62b812e3c19c27f0390320d0b0a3df97ea7b7af210b64eeaa19c0",
+      "base_icon": "__yi_pfw__/graphics/fab1/teil_05_32.png",
+      "base_dimensions": [
+        32,
+        32
+      ],
+      "base_sha256": "4f01c46cf6fe047f2deb425adaacbb6507f64fd5cdc25dfb67c27d304596eeb3",
+      "direction": "down",
+      "source_references_before": [],
+      "future_use": "Register or restore the intended item with this base artwork, then use yi.lib.recipe.atomics.item_down(item_name). Do not recreate a baked arrow image."
+    },
+    {
+      "path": "graphics/fab5/anh_tank-sell.png",
+      "original_sha256": "6022229b1d2da0e0f9e05fe406a84942196d7afc68e516ef001ce41280043ded",
+      "base_icon": "__yi_pfw__/graphics/fab5/anh_tank.png",
+      "base_dimensions": [
+        32,
+        32
+      ],
+      "base_sha256": "092b2517758ae46f959aeb58cd5357e71d56a0c292d1e7b397baf12952dc8ceb",
+      "direction": "down",
+      "source_references_before": [],
+      "future_use": "Register or restore the intended item with this base artwork, then use yi.lib.recipe.atomics.item_down(item_name). Do not recreate a baked arrow image."
+    },
+    {
+      "path": "graphics/fab5/anh_trk32-sell.png",
+      "original_sha256": "d875d107add18c8797f51cf8ff59d669d929418542822cf12abfa7272f3e399c",
+      "base_icon": "__yi_pfw__/graphics/fab5/anh_trk32.png",
+      "base_dimensions": [
+        32,
+        32
+      ],
+      "base_sha256": "32e6e9a14be85b3b4927790a9d5716786db5544ac4075b6eced4411ff88107de",
+      "direction": "down",
+      "source_references_before": [],
+      "future_use": "Register or restore the intended item with this base artwork, then use yi.lib.recipe.atomics.item_down(item_name). Do not recreate a baked arrow image."
+    },
+    {
+      "path": "graphics/fab5/neron_tank-sell.png",
+      "original_sha256": "a29f0ed0a15e908087bb8870519c7e42fad50aa94d811b9db4365dbc2f54adc7",
+      "base_icon": "__yi_pfw__/graphics/fab5/neron_tank.png",
+      "base_dimensions": [
+        32,
+        32
+      ],
+      "base_sha256": "5dcb61e339868b0028a0adfd0443b9828cc522ca18ea8a09a8a94b8fc38ece7d",
+      "direction": "down",
+      "source_references_before": [],
+      "future_use": "Register or restore the intended item with this base artwork, then use yi.lib.recipe.atomics.item_down(item_name). Do not recreate a baked arrow image."
+    },
+    {
+      "path": "graphics/fab5/plower-sell.png",
+      "original_sha256": "b2aa48b6ddbb7eac40b04889f414937a81d9868f2065ca3ebb85c170a3415167",
+      "base_icon": "__yi_pfw__/graphics/fab5/plower.png",
+      "base_dimensions": [
+        32,
+        32
+      ],
+      "base_sha256": "d50c25ad8bff346af20777067b14a57f31219a07463df21dc9ef04f8b2ee9360",
+      "direction": "down",
+      "source_references_before": [],
+      "future_use": "Register or restore the intended item with this base artwork, then use yi.lib.recipe.atomics.item_down(item_name). Do not recreate a baked arrow image."
+    },
+    {
+      "path": "graphics/fab5/reifen-sell.png",
+      "original_sha256": "82cd2a42022fb48dea9677cd7de542b4f5efd4d59f863d61946b03d55457de24",
+      "base_icon": "__yi_pfw__/graphics/fab5/reifen.png",
+      "base_dimensions": [
+        64,
+        64
+      ],
+      "base_sha256": "46b9c83e51e9fca02f5c839304d6f720fc948a66476da93f69c909f887922e65",
+      "direction": "down",
+      "source_references_before": [
+        {
+          "file": "prototypes/ir_fab5.lua",
+          "line_before": 45
+        }
+      ],
+      "future_use": "Register or restore the intended item with this base artwork, then use yi.lib.recipe.atomics.item_down(item_name). Do not recreate a baked arrow image."
+    },
+    {
+      "path": "graphics/fab5/vkzs-10a-sell.png",
+      "original_sha256": "643873a8d44e3a453c20276d8ef526167ad9c5fd8f40578d9b9e82dbcfac281c",
+      "base_icon": "__yi_pfw__/graphics/fab5/vkzs-10a.png",
+      "base_dimensions": [
+        32,
+        32
+      ],
+      "base_sha256": "7996e5a116907bf0789b9d0744acab76a1aa6e06780802fbbb23fe8abceec746",
+      "direction": "down",
+      "source_references_before": [],
+      "future_use": "Register or restore the intended item with this base artwork, then use yi.lib.recipe.atomics.item_down(item_name). Do not recreate a baked arrow image."
+    },
+    {
+      "path": "graphics/fab8/fusion-cell-sell.png",
+      "original_sha256": "21fe9a422addd1ba1effeea0c9b76333aceb44e44311123fa64458eea405b5d9",
+      "base_icon": "__yi_pfw__/graphics/fab8/fusion-cell.png",
+      "base_dimensions": [
+        64,
+        64
+      ],
+      "base_sha256": "ab15d0cf7ddcbce126639f36048a87f74a611cd7b97c7da26d96733f67707785",
+      "direction": "down",
+      "source_references_before": [
+        {
+          "file": "prototypes/ir_zmaterial.lua",
+          "line_before": 92
+        }
+      ],
+      "future_use": "Register or restore the intended item with this base artwork, then use yi.lib.recipe.atomics.item_down(item_name). Do not recreate a baked arrow image."
+    },
+    {
+      "path": "graphics/fab8/lfg13-sell.png",
+      "original_sha256": "fe0d8eafdb22d930ce2ab015d486797d5bbf9b045618a9488d5ce77cb5a74703",
+      "base_icon": "__Yuoki__/graphics/armor/lfg13.png",
+      "base_dimensions": [
+        64,
+        64
+      ],
+      "base_sha256": "d60a6ce7de0386335cc2f1a1c330be0ea578e18eed36ef1c07baae630d0745a1",
+      "direction": "down",
+      "source_references_before": [
+        {
+          "file": "prototypes/ir_fab8.lua",
+          "line_before": 59
+        }
+      ],
+      "future_use": "Register or restore the intended item with this base artwork, then use yi.lib.recipe.atomics.item_down(item_name). Do not recreate a baked arrow image."
+    },
+    {
+      "path": "graphics/fab8/mfg28-sell.png",
+      "original_sha256": "97d9de17fc30806d2c591f4fd17ca11e898c6646bfe4129273cbb4dd294f8cae",
+      "base_icon": "__Yuoki__/graphics/armor/mfg28.png",
+      "base_dimensions": [
+        64,
+        64
+      ],
+      "base_sha256": "42fbf3d67377d3499d5ad8a0a4ef569d6f13cc4727fc160c1fe4ab9e1a5bc514",
+      "direction": "down",
+      "source_references_before": [
+        {
+          "file": "prototypes/ir_fab8.lua",
+          "line_before": 60
+        }
+      ],
+      "future_use": "Register or restore the intended item with this base artwork, then use yi.lib.recipe.atomics.item_down(item_name). Do not recreate a baked arrow image."
+    },
+    {
+      "path": "graphics/fab8/msg-cb-sell.png",
+      "original_sha256": "b8a8a7039e0096728082944f81fb217511f17d7ed04e9b976c74c405a7246996",
+      "base_icon": "__yi_pfw__/graphics/fab8/msg-cb.png",
+      "base_dimensions": [
+        32,
+        32
+      ],
+      "base_sha256": "c12c4ef6336208787b1e5a925a0b16418664ef9f9e45afa1b14b67bf74b400c8",
+      "direction": "down",
+      "source_references_before": [
+        {
+          "file": "prototypes/ir_fab8.lua",
+          "line_before": 61
+        }
+      ],
+      "future_use": "Register or restore the intended item with this base artwork, then use yi.lib.recipe.atomics.item_down(item_name). Do not recreate a baked arrow image."
+    },
+    {
+      "path": "graphics/fab8/sfg400-sell.png",
+      "original_sha256": "9ac3f1c0197996ddd1c8d77bd7171965b28bd43b5a72da4b9e88392ba1c889cc",
+      "base_icon": "__yi_pfw__/graphics/fab8/sfg400.png",
+      "base_dimensions": [
+        32,
+        32
+      ],
+      "base_sha256": "8c29f1d44bc25977c98d066648c75d5e07f28cdc97d45a9322b7bbf840b83d1e",
+      "direction": "down",
+      "source_references_before": [
+        {
+          "file": "prototypes/ir_fab8.lua",
+          "line_before": 63
+        }
+      ],
+      "future_use": "Register or restore the intended item with this base artwork, then use yi.lib.recipe.atomics.item_down(item_name). Do not recreate a baked arrow image."
+    },
+    {
+      "path": "graphics/fab8/teil_02-sell.png",
+      "original_sha256": "675880d3eabd79397ff1ff9989daf64508c560d5010218e79a674d0859fac973",
+      "base_icon": "__yi_pfw__/graphics/fab8/teil_02.png",
+      "base_dimensions": [
+        32,
+        32
+      ],
+      "base_sha256": "bb51b72072fb3641718452454c7585c282b8730710343a0757912daf808159b8",
+      "direction": "down",
+      "source_references_before": [
+        {
+          "file": "prototypes/ir_fab8.lua",
+          "line_before": 64
+        }
+      ],
+      "future_use": "Register or restore the intended item with this base artwork, then use yi.lib.recipe.atomics.item_down(item_name). Do not recreate a baked arrow image."
+    },
+    {
+      "path": "graphics/fab8/teil_04-sell.png",
+      "original_sha256": "eae98ac0ccfd16547f5172fc2d3822152e2b074b4e30d425bf71f5276166cf9f",
+      "base_icon": "__yi_pfw__/graphics/fab8/teil_04_32.png",
+      "base_dimensions": [
+        32,
+        32
+      ],
+      "base_sha256": "e07eeffa746f36959c45296dd26501858214c521bf8b8dacf69ec03905e2b920",
+      "direction": "down",
+      "source_references_before": [
+        {
+          "file": "prototypes/ir_fab8.lua",
+          "line_before": 58
+        }
+      ],
+      "future_use": "Register or restore the intended item with this base artwork, then use yi.lib.recipe.atomics.item_down(item_name). Do not recreate a baked arrow image."
+    },
+    {
+      "path": "graphics/imports/barren_mixed_11-sell.png",
+      "original_sha256": "be95c3287c82f014285550ba009804e5cd629b07c1b6bbad3704743fcd952b5c",
+      "base_icon": "__yi_pfw__/graphics/imports/barren_mixed_11.png",
+      "base_dimensions": [
+        64,
+        64
+      ],
+      "base_sha256": "a2e8b9c49edacb68198e6165b33b6e33e74704581d819cd47b450aa26e02b73f",
+      "direction": "down",
+      "source_references_before": [
+        {
+          "file": "prototypes/ir_imports.lua",
+          "line_before": 32
+        }
+      ],
+      "future_use": "Register or restore the intended item with this base artwork, then use yi.lib.recipe.atomics.item_down(item_name). Do not recreate a baked arrow image.",
+      "base_revision_note": "Base redrawn in AI batch2; removed original variant/hash unchanged."
+    },
+    {
+      "path": "graphics/imports/barren_mixed_9-sell.png",
+      "original_sha256": "ce56317a8b2a07b5c471ac34ff0fa133bd9aaa9431edaefc0c437d7935e8b616",
+      "base_icon": "__yi_pfw__/graphics/imports/barren_mixed_9.png",
+      "base_dimensions": [
+        64,
+        64
+      ],
+      "base_sha256": "ed3c6ffe6210adf6f4d412dea0663838a62501236026244329b5338518aca9b1",
+      "direction": "down",
+      "source_references_before": [
+        {
+          "file": "prototypes/ir_imports.lua",
+          "line_before": 31
+        }
+      ],
+      "future_use": "Register or restore the intended item with this base artwork, then use yi.lib.recipe.atomics.item_down(item_name). Do not recreate a baked arrow image.",
+      "base_revision_note": "Base redrawn in AI batch2; removed original variant/hash unchanged."
+    },
+    {
+      "path": "graphics/imports/coilsgr32-sell.png",
+      "original_sha256": "71f1a480b61b24ed5c1c50e44209eebbcbaf330794ae10ef0a99b6862a26ceb6",
+      "base_icon": "__yi_pfw__/graphics/imports/coilsgr32.png",
+      "base_dimensions": [
+        64,
+        64
+      ],
+      "base_sha256": "99d370ffc6981d3aeea28edf401106f760f5c0bd6fdc5471a1ddfd36cc63bbc5",
+      "direction": "down",
+      "source_references_before": [
+        {
+          "file": "prototypes/ir_imports.lua",
+          "line_before": 26
+        }
+      ],
+      "future_use": "Register or restore the intended item with this base artwork, then use yi.lib.recipe.atomics.item_down(item_name). Do not recreate a baked arrow image.",
+      "base_revision_note": "Base redrawn in AI batch2; removed original variant/hash unchanged."
+    },
+    {
+      "path": "graphics/imports/coilsr32-sell.png",
+      "original_sha256": "8f55f1b2c99fe6b4ac9363b42b7c74f9ca17bef2de1f3d480ab7697b2a512995",
+      "base_icon": "__yi_pfw__/graphics/imports/coilsr32.png",
+      "base_dimensions": [
+        64,
+        64
+      ],
+      "base_sha256": "0309a42e1201859bb485c1610443ca222fbcff8ab27e879ab05f635cac7b95e4",
+      "direction": "down",
+      "source_references_before": [
+        {
+          "file": "prototypes/ir_imports.lua",
+          "line_before": 25
+        }
+      ],
+      "future_use": "Register or restore the intended item with this base artwork, then use yi.lib.recipe.atomics.item_down(item_name). Do not recreate a baked arrow image.",
+      "base_revision_note": "Base redrawn in AI batch2; removed original variant/hash unchanged."
+    },
+    {
+      "path": "graphics/imports/crystal_1-sell.png",
+      "original_sha256": "659ea3c40be91d699952670515283620a3030a0214fab3793794399b014249ad",
+      "base_icon": "__yi_pfw__/graphics/imports/crystal_1.png",
+      "base_dimensions": [
+        64,
+        64
+      ],
+      "base_sha256": "f94cd7ca5ad4abdbbd687e2e2b23824165f43385d5a22dc15e365508bc19c107",
+      "direction": "down",
+      "source_references_before": [
+        {
+          "file": "prototypes/ir_imports.lua",
+          "line_before": 27
+        }
+      ],
+      "future_use": "Register or restore the intended item with this base artwork, then use yi.lib.recipe.atomics.item_down(item_name). Do not recreate a baked arrow image.",
+      "base_revision_note": "Base redrawn in AI batch2; removed original variant/hash unchanged."
+    },
+    {
+      "path": "graphics/imports/crystal_green-sell.png",
+      "original_sha256": "bb3a614903e30de5ef5fcaf436dd667972896c876e47c6a117992af92ed8dac1",
+      "base_icon": "__yi_pfw__/graphics/imports/crystal_green.png",
+      "base_dimensions": [
+        64,
+        64
+      ],
+      "base_sha256": "e8594aabda720930b400f1201fd4563ad69f7ddfb648ad86c225e7133546f7fe",
+      "direction": "down",
+      "source_references_before": [
+        {
+          "file": "prototypes/ir_imports.lua",
+          "line_before": 28
+        }
+      ],
+      "future_use": "Register or restore the intended item with this base artwork, then use yi.lib.recipe.atomics.item_down(item_name). Do not recreate a baked arrow image.",
+      "base_revision_note": "Base redrawn in AI batch2; removed original variant/hash unchanged."
+    },
+    {
+      "path": "graphics/imports/uni-com-pro-sell.png",
+      "original_sha256": "12b40533fa63e73e77b82ebf248164c09fe14de6ea42ad0521dc8e7a760b232c",
+      "base_icon": "__yi_pfw__/graphics/imports/uni-com-pro.png",
+      "base_dimensions": [
+        64,
+        64
+      ],
+      "base_sha256": "98baa920a9051fbb48645bade7cf8f4aaa353f0583c327b7732e2bb8dba16d58",
+      "direction": "down",
+      "source_references_before": [
+        {
+          "file": "prototypes/ir_imports.lua",
+          "line_before": 30
+        }
+      ],
+      "future_use": "Register or restore the intended item with this base artwork, then use yi.lib.recipe.atomics.item_down(item_name). Do not recreate a baked arrow image.",
+      "base_revision_note": "Base redrawn in AI batch2; removed original variant/hash unchanged."
+    },
+    {
+      "path": "graphics/imports/wire_2-sell.png",
+      "original_sha256": "99b9295483ae6109c02ccde3b7dc39fbebaff80d6b4e3f9e0dfcef16608979e7",
+      "base_icon": "__yi_pfw__/graphics/imports/wire_2.png",
+      "base_dimensions": [
+        64,
+        64
+      ],
+      "base_sha256": "9e8222ec33dc7fccdcdbe17191fc1e0c2cb20f492597fef1d6520cbbae58e008",
+      "direction": "down",
+      "source_references_before": [
+        {
+          "file": "prototypes/ir_imports.lua",
+          "line_before": 29
+        }
+      ],
+      "future_use": "Register or restore the intended item with this base artwork, then use yi.lib.recipe.atomics.item_down(item_name). Do not recreate a baked arrow image.",
+      "base_revision_note": "Base redrawn in AI batch2; removed original variant/hash unchanged."
+    },
+    {
+      "path": "graphics/package_common_retrade.png",
+      "original_sha256": "50da397b4942aee21ac3fe6432d49629ee4c2d43797a8e7672a8f46d7e7de8fa",
+      "base_icon": "__yi_engines__/graphics/icons/package_carni.png",
+      "base_dimensions": [
+        32,
+        32
+      ],
+      "base_sha256": "8be468a142549bf1563dc9c4d8a69ff6408daacfc4b50b450c85fb744c91191f",
+      "direction": "down",
+      "source_references_before": [
+        {
+          "file": "prototypes/ir_fab1.lua",
+          "line_before": 37
+        },
+        {
+          "file": "prototypes/ir_fab1.lua",
+          "line_before": 38
+        },
+        {
+          "file": "prototypes/ir_fab1.lua",
+          "line_before": 40
+        },
+        {
+          "file": "prototypes/ir_fab1.lua",
+          "line_before": 41
+        },
+        {
+          "file": "prototypes/ir_fab1.lua",
+          "line_before": 42
+        },
+        {
+          "file": "prototypes/ir_fab1.lua",
+          "line_before": 43
+        },
+        {
+          "file": "prototypes/ir_fab1.lua",
+          "line_before": 44
+        },
+        {
+          "file": "prototypes/ir_fab1.lua",
+          "line_before": 45
+        },
+        {
+          "file": "prototypes/ir_fab1.lua",
+          "line_before": 46
+        },
+        {
+          "file": "prototypes/ir_fab5.lua",
+          "line_before": 39
+        },
+        {
+          "file": "prototypes/ir_fab5.lua",
+          "line_before": 40
+        },
+        {
+          "file": "prototypes/ir_fab5.lua",
+          "line_before": 41
+        },
+        {
+          "file": "prototypes/ir_fab5.lua",
+          "line_before": 42
+        },
+        {
+          "file": "prototypes/ir_fab5.lua",
+          "line_before": 44
+        },
+        {
+          "file": "prototypes/ir_fab2.lua",
+          "line_before": 51
+        },
+        {
+          "file": "prototypes/ir_fab2.lua",
+          "line_before": 54
+        },
+        {
+          "file": "prototypes/ir_fab2.lua",
+          "line_before": 55
+        },
+        {
+          "file": "prototypes/ir_fab2.lua",
+          "line_before": 57
+        },
+        {
+          "file": "prototypes/ir_fab3.lua",
+          "line_before": 37
+        },
+        {
+          "file": "prototypes/ir_fab3.lua",
+          "line_before": 38
+        },
+        {
+          "file": "prototypes/ir_fab3.lua",
+          "line_before": 39
+        },
+        {
+          "file": "prototypes/ir_fab3.lua",
+          "line_before": 40
+        },
+        {
+          "file": "prototypes/ir_fab3.lua",
+          "line_before": 41
+        },
+        {
+          "file": "prototypes/ir_fab3.lua",
+          "line_before": 42
+        },
+        {
+          "file": "prototypes/ir_fab3.lua",
+          "line_before": 43
+        },
+        {
+          "file": "prototypes/ir_fab3.lua",
+          "line_before": 44
+        },
+        {
+          "file": "prototypes/ir_fab3.lua",
+          "line_before": 45
+        }
+      ],
+      "future_use": "Register or restore the intended item with this base artwork, then use yi.lib.recipe.atomics.item_down(item_name). Do not recreate a baked arrow image."
+    }
+  ]
+}

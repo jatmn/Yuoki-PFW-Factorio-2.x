@@ -6,6 +6,10 @@ On 2026-10-09, the owner added the requirement that the Factorio 2.1 restoration
 
 The [accepted build plan](build-plan.md) puts a crash-free launch first. Comprehensive asset ownership, replacement/removal and upscaling follow Phase 1; mapping still precedes deletion. Phase 1 may correct asset paths and metadata as needed for startup. The original import remains the historical record; subsequent implementation commits can remove replaced files without losing that record. This discovery PR records the requirement and audit, and makes no original-source or asset changes.
 
+## Current implementation status
+
+The [0.5.1 artwork pass](asset-reuse-0.5.1.md) implemented 39 visually confirmed replacements, initially retaining 167 original files unchanged. The subsequent [AI-artwork decision](decisions/ai-artwork.md) applies four reviewed redraws; 163 other local files remain unchanged. The latest [arrow-overlay pass](decisions/trade-arrow-overlays.md) removes 49 more variants and leaves 118 local images (four AI redraws and 114 originals). The [second AI batch](ai-artwork-batch-2.md) then redraws eight bases; that batch retained 118 local images (12 AI icons, 106 originals). The [third batch](artwork-batch-3.md) reuses the shared-factory icon from Engines and redraws seven building icons, leaving 117 local images (19 AI icons, 98 originals) and 40 parent replacements. The inventory and candidate tables below remain historical discovery evidence.
+
 ## Preserve unused assets and disabled code
 
 The owner explicitly requires keeping unused assets and disabled/commented-out code for future reuse. Preserve them in the maintained source tree; having the originals in Git history is not a substitute for this requirement. Disabled code remains disabled until its behavior is deliberately revisited.

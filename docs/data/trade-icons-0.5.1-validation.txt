@@ -1,0 +1,50 @@
+0.5.1 generated trade arrows, 2026-10-09
+Starting head: 9fe3001bd43cadc5d3dd54037141e88bb4ee5412
+Factorio 2.1.21 headless; pinned Yuoki/Engines 1.3.0 sources.
+56 trade recipes: 48 item_down exports, 8 item_up imports.
+49 visually confirmed variants removed; all base mappings verified.
+118 local PNGs remain: 4 accepted AI redraws and 114 byte-identical originals.
+8 disabled arrow declarations updated but still inactive; all 35 disabled recipes inactive.
+PASS: complete Phase1-to-current dump validation with explicit allowed changes.
+PASS: independent starting-head comparison: exactly56 recipe icon-only changes; no gameplay difference.
+PASS: 105 recipe routes/quantities, parent prototypes and pending mappings preserved.
+PASS: immutable232-file original archive; all provider/base paths and hashes; no removed Lua references.
+PASS: final ZIP load, fresh game and600tick same-version save reload.
+PASS:145 ZIP entries match exact runtime source; docs/authoring images excluded.
+Version0.5.1; no migrations.
+Package:yi_pfw_0.5.1.zip
+SHA256:a9b3a92919eb920bb8955140289c1a2a3c7727d0be40698b65c9a3fabc6c45ce
+Graphical arrow/alt-mode validation pending local client; preview is a static layer composite.
+
+arrows-package-data:
+   0.174 Loading mod yi_pfw 0.5.1 (data.lua)
+   0.404 Prototype list checksum: 755479145
+   0.909 Factorio initialised
+   0.931 Goodbye
+
+arrows-package-new:
+   0.174 Loading mod yi_pfw 0.5.1 (data.lua)
+   0.402 Prototype list checksum: 755479145
+   0.429 Factorio initialised
+   0.429 Info Create.cpp:32: Creating new map /home/pi/pr-review/fix-issue-jatmn-Yuoki-PFW-Factorio-2.x-repository-BdhQTWPf/runtime/game/saves/pfw-arrows-new.zip
+   1.074 Goodbye
+
+arrows-package-reload:
+   0.179 Loading mod yi_pfw 0.5.1 (data.lua)
+   0.407 Prototype list checksum: 755479145
+   0.433 Factorio initialised
+  Performed 600 updates in 62.901 ms
+   0.573 Goodbye
+
+Final package after stripping inherited trailing tabs from eight edited comment lines:
+arrows-final-data:
+   0.173 Loading mod yi_pfw 0.5.1 (data.lua)
+   0.405 Prototype list checksum: 755479145
+   0.908 Factorio initialised
+   0.931 Goodbye
+arrows-final-reload:
+   0.172 Loading mod yi_pfw 0.5.1 (data.lua)
+   0.401 Prototype list checksum: 755479145
+   0.427 Factorio initialised
+  Performed 600 updates in 50.512 ms
+   0.548 Goodbye

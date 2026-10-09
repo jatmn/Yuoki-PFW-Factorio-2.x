@@ -1,0 +1,39 @@
+Historical first content pass at commit 311b6af; package superseded by asset-reuse-0.5.1-validation.txt.
+0.5.1 confirmed parent-content consolidation; 2026-10-09
+Engine: Factorio 2.1.21 Linux x86-64 headless
+Parents: Yuoki 1.3.0 / yi_engines 1.3.0 at the commits in parent-content-0.5.1.json
+Baseline: c0f0099469d08c98276f662a0e4ce3e54dd2c187
+Migrations: none; development validation uses fresh games
+Package: yi_pfw_0.5.1.zip; 232 files
+Package SHA256: 4240030be29ebf80b2e85119b0e81ac1e2544c8bbe7cf2e68a593105f1d265df
+
+Data comparison: PASS; 11 local declarations suppressed, only five recipe references changed, pending identities and unrelated parent content unchanged.
+Preservation: PASS; 105 active routes, 35 historical inactive recipes, 206 unchanged graphics, 232 immutable original archive files.
+
+PFW_PASS loaded at tick 2
+PFW_PASS all 56 PFW trade recipes and a parent trade accepted; constructor and cyborg recipe started; parent equipment placed/removed
+PFW_PASS tick 4
+PFW_PASS all 56 PFW trades + parent trade + 10-node constructor + minigun cyborg recipe completed with exact outputs; both pending energy guns fired parent ammunition; parent minigun can_shoot accepted
+
+Same-version save/reload: PASS, 600 ticks; final packaged mod reload also passed 600 ticks.
+Optional-mod data stage: PASS with Space Age, Quality, Elevated Rails and Recycler.
+Graphical 0.5.1 test: not performed in this headless environment.
+
+packaged-data selected engine lines:
+   0.181 Loading mod yi_pfw 0.5.1 (data.lua)
+   0.415 Prototype list checksum: 755479145
+   0.923 Factorio initialised
+   0.947 Goodbye
+
+packaged-reload selected engine lines:
+   0.195 Loading mod yi_pfw 0.5.1 (data.lua)
+   0.432 Prototype list checksum: 755479145
+   0.463 Factorio initialised
+  Performed 600 updates [timing omitted]
+   0.614 Goodbye
+
+dlc-data selected engine lines:
+   0.357 Loading mod yi_pfw 0.5.1 (data.lua)
+   0.916 Prototype list checksum: 2919456374
+   1.966 Factorio initialised
+   2.018 Goodbye

@@ -1,0 +1,238 @@
+{
+  "date": "2026-10-09",
+  "parent_commits": {
+    "Yuoki": "50ea38b9703a13e8644c3bcfe6e400b3bf2b4a5c",
+    "yi_engines": "8d777d015e36d93d2757a290c3f3f32a49c11280"
+  },
+  "references": [
+    {
+      "icon": "graphics/entity/fabrik-bio-icon.png",
+      "sprite": "__yi_pfw__/graphics/entity/fab-bio-sheet.png",
+      "sprite_sha256": "819865577abc0166462de54c061c45aa46b3c09fe946ec95e27d8611e0abc83f",
+      "frame": {
+        "index": 6,
+        "x": 768,
+        "y": 0,
+        "width": 128,
+        "height": 128
+      },
+      "method": "AI"
+    },
+    {
+      "icon": "graphics/entity/fabrik-comp-icon.png",
+      "sprite": "__yi_pfw__/graphics/entity/fab-comp-sheet.png",
+      "sprite_sha256": "db636c3f7688e6866ff298c5fee2596245db288e1a1f432deb1a26dac30df954",
+      "frame": {
+        "index": 12,
+        "x": 1536,
+        "y": 0,
+        "width": 128,
+        "height": 128
+      },
+      "method": "AI"
+    },
+    {
+      "icon": "graphics/entity/fabrik-equip-icon.png",
+      "sprite": "__yi_pfw__/graphics/entity/fab-equip-sheet.png",
+      "sprite_sha256": "02d618c8371db616189d813f2e767402603957f18d2b9e4d12bab2f15928b717",
+      "frame": {
+        "index": 0,
+        "x": 0,
+        "y": 0,
+        "width": 128,
+        "height": 128
+      },
+      "method": "AI"
+    },
+    {
+      "icon": "graphics/entity/fabrik-trucks-icon.png",
+      "sprite": "__yi_pfw__/graphics/entity/fab-trucks-sheet.png",
+      "sprite_sha256": "451d00fac551c4f99b82f4add1099f01f77f6dc4b1d4e29a58d2c761ac39d61c",
+      "frame": {
+        "index": 0,
+        "x": 0,
+        "y": 0,
+        "width": 128,
+        "height": 128
+      },
+      "method": "AI"
+    },
+    {
+      "icon": "graphics/entity/fabrik-weapons-icon.png",
+      "sprite": "__yi_pfw__/graphics/entity/fab-weapons-sheet.png",
+      "sprite_sha256": "b1df043a1d04793687bf9b6ceff1c7a3f0e8f3ef465f8c21f7d0b989ad1f7e2a",
+      "frame": {
+        "index": 0,
+        "x": 0,
+        "y": 0,
+        "width": 128,
+        "height": 128
+      },
+      "method": "AI"
+    },
+    {
+      "icon": "graphics/entity/tut-icon.png",
+      "sprite": "__yi_engines__/graphics/entity/science_gen.png",
+      "sprite_sha256": "54063d71f7796748d530f99fb2ebd2f8828473e1961c20d1d46146c373b8ebd8",
+      "frame": {
+        "index": 0,
+        "x": 0,
+        "y": 0,
+        "width": 128,
+        "height": 128
+      },
+      "method": "Parent reuse"
+    },
+    {
+      "icon": "graphics/entity/profit-show-1-icon.png",
+      "sprite": "__yi_pfw__/graphics/entity/profit-show-1.png",
+      "sprite_sha256": "d2f41b2f9356d43f75997bef420063362cd17520a62220255583b110f795b341",
+      "frame": {
+        "index": 0,
+        "x": 0,
+        "y": 0,
+        "width": 160,
+        "height": 160
+      },
+      "method": "AI"
+    },
+    {
+      "icon": "graphics/entity/profit-show-2-icon.png",
+      "sprite": "__yi_pfw__/graphics/entity/profit-show-2.png",
+      "sprite_sha256": "442c7dc8bae8e798a15dbe5ade0351e43ca812c27c5892e520c966e40a6049e1",
+      "frame": {
+        "index": 0,
+        "x": 0,
+        "y": 0,
+        "width": 160,
+        "height": 160
+      },
+      "method": "AI"
+    }
+  ],
+  "parent_check": {
+    "method": "Inspected242 distinct loaded building graphic paths from both parents with declared frame dimensions, plus filename candidates including unused tut-2.png. Full related science_gen and composer sheets inspected.",
+    "related_candidates": [
+      {
+        "index": 0,
+        "path": "__Yuoki__/graphics/entity/base_factory_icon.png",
+        "frame": [
+          64,
+          64
+        ]
+      },
+      {
+        "index": 1,
+        "path": "__Yuoki__/graphics/entity/base_factory_sheet.png",
+        "frame": [
+          256,
+          256
+        ]
+      },
+      {
+        "index": 7,
+        "path": "__Yuoki__/graphics/entity/composer_sheet.png",
+        "frame": [
+          320,
+          320
+        ]
+      },
+      {
+        "index": 155,
+        "path": "__yi_engines__/graphics/entity/av1_sheet.png",
+        "frame": [
+          320,
+          320
+        ]
+      },
+      {
+        "index": 156,
+        "path": "__yi_engines__/graphics/entity/av2_sheet.png",
+        "frame": [
+          256,
+          256
+        ]
+      },
+      {
+        "index": 157,
+        "path": "__yi_engines__/graphics/entity/av3_sheet.png",
+        "frame": [
+          256,
+          256
+        ]
+      },
+      {
+        "index": 234,
+        "path": "__yi_engines__/graphics/entity/science_gen.png",
+        "frame": [
+          128,
+          128
+        ]
+      },
+      {
+        "index": 235,
+        "path": "__yi_engines__/graphics/entity/science_gen_icon.png",
+        "frame": [
+          32,
+          32
+        ]
+      }
+    ],
+    "result": "Engines science_gen artwork supplies shared-factory icon. Yuoki composer and base factory, Engines assembly variants and tut-2 are distinct. No matching parent replacement identified for the other seven selected icons in reviewed assets."
+  },
+  "rejected_drafts": [
+    {
+      "name": "fabrik-bio-icon",
+      "status": "rejected: icon-only reference misinterprets structure; superseded by sprite-guided work or parent reuse",
+      "sha256": "af4a87fc7594c5e08eae2c41c7b249c47a5f398ddcc2a273eb03790a5ee1807c",
+      "generated_filename": "exec-dbed62ed-df00-4ddf-afb4-beea5d78adfe.png"
+    },
+    {
+      "name": "fabrik-comp-icon",
+      "status": "rejected: icon-only reference misinterprets structure; superseded by sprite-guided work or parent reuse",
+      "sha256": "10e49ca9835ddb18bbd77a8555d4769def4ea82ed623f3f55567c2e6ae2a3982",
+      "generated_filename": "exec-17836a05-9747-45ab-9e84-dc21d5dfe0b5.png"
+    },
+    {
+      "name": "fabrik-equip-icon",
+      "status": "rejected: icon-only reference misinterprets structure; superseded by sprite-guided work or parent reuse",
+      "sha256": "3341a613bc64310d9ff1aa8473f6736bb36af65ce9bc8ac8001b809d72c3e0f7",
+      "generated_filename": "exec-902e7fba-384b-4df5-9ae9-32160acd5856.png"
+    },
+    {
+      "name": "fabrik-trucks-icon",
+      "status": "rejected: icon-only reference misinterprets structure; superseded by sprite-guided work or parent reuse",
+      "sha256": "4cce36fb342823527a090d3ae4431fe1bf9388a20b937e8aec99e73f25e8e863",
+      "generated_filename": "exec-27f438b1-51ac-4bef-b318-f92334e014b9.png"
+    },
+    {
+      "name": "fabrik-weapons-icon",
+      "status": "rejected: icon-only reference misinterprets structure; superseded by sprite-guided work or parent reuse",
+      "sha256": "4d77272586479b311891ae9b57be70da2b6d1dac583667fa64ea8d6dbfaf4098",
+      "generated_filename": "exec-b1a4119a-0d3a-42e0-a782-c3b4dcaa5794.png"
+    },
+    {
+      "name": "tut-icon",
+      "status": "rejected: icon-only reference misinterprets structure; superseded by sprite-guided work or parent reuse",
+      "sha256": "37ff94cd3348d54ad17444742dad78df8a248d3dfdca70d759edca186e95eb75",
+      "generated_filename": "exec-4cdc4eb5-8dc4-4684-984c-01d0b8c0d5f5.png"
+    },
+    {
+      "name": "profit-show-1-icon",
+      "status": "rejected: icon-only reference misinterprets structure; superseded by sprite-guided work or parent reuse",
+      "sha256": "8c3ba89695c6622ab1046d473a0b045f6a127704f4061ff0af26d44a7a30aca1",
+      "generated_filename": "exec-c30a0fe7-d60d-49e8-ab05-bfb59a05bc6f.png"
+    },
+    {
+      "name": "profit-show-2-icon",
+      "status": "rejected: icon-only reference misinterprets structure; superseded by sprite-guided work or parent reuse",
+      "sha256": "897a4df52f9ab7c4c5010e371b314693306a6d5ae7002bb7b8595b988fac9e53",
+      "generated_filename": "exec-25b141a0-1546-45d6-bf08-1f12ba0d390a.png"
+    },
+    {
+      "name": "tut-icon",
+      "status": "Sprite-guided draft superseded by direct parent reuse; not installed."
+    }
+  ],
+  "policy": "Read existing sprite sheets and check both parents before future drawing; use confirmed parent art directly. Otherwise use original icon plus corresponding sprite frames as references. Preserve colors and machine geometry."
+}

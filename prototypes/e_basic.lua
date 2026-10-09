@@ -3,6 +3,8 @@ data:extend(
 {  
 
 	-- ReTrader
+	-- Parent owner: yi_engines, assembling-machine ye_trade_node. Preserved inactive PFW definition.
+	--[=[
 	{
 		type = "assembling-machine",
 		name = "y-retrader-1",
@@ -34,13 +36,14 @@ data:extend(
 		ingredient_count = 5,		
 		order="a",
 		subgroup = "yi-basic",
-	},	
+	},
+	]=]
 
 	-- Rich-1
 	{
 		type = "assembling-machine",
 		name = "y-rich-1",
-		icon = "__yi_pfw__/graphics/entity/profit-show-2-icon.png", icon_size = 32,
+		icon = "__yi_pfw__/graphics/entity/profit-show-2-icon.png", icon_size = 64,
 		flags = {"placeable-neutral","placeable-player", "player-creation"},
 		minable = {mining_time = 3, result = "y-rich-1"},
 		max_health = 750, corpse = "big-remnants", resistances = {{type = "physical",percent = 60},},
@@ -64,7 +67,7 @@ data:extend(
 	{
 		type = "assembling-machine",
 		name = "y-rich-2",
-		icon = "__yi_pfw__/graphics/entity/profit-show-1-icon.png", icon_size = 32,
+		icon = "__yi_pfw__/graphics/entity/profit-show-1-icon.png", icon_size = 64,
 		flags = {"placeable-neutral","placeable-player", "player-creation"},
 		minable = {mining_time = 5, result = "y-rich-2"},
 		max_health = 1000, corpse = "big-remnants", resistances = {{type = "physical",percent = 60},},
