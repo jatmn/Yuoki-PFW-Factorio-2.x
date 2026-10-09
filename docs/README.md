@@ -2,7 +2,7 @@
 
 Research date: 2026-10-09. Subject: Yuoki Industries — Profit from War (`yi_pfw`) 0.4.15.
 
-This directory records the original mod's behavior and the initial investigation into a possible Factorio 2.1 restoration. It does not implement or approve a port. The mod source remains the original Factorio 0.14 release, including its incomplete content and defects.
+This directory preserves the original mod's behavior and restoration research. The original Factorio 0.14 release remains in the immutable import commit. The working source is now the **0.5.0 Phase 1 candidate**; see [implementation and validation](phase-1.md) for changes, results and the pending owner graphical check. Historical inventories still describe 0.4.15.
 
 ## Accepted implementation priority
 

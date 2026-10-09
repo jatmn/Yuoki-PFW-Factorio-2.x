@@ -1,0 +1,11 @@
+---------------------------------------------------------------------------------------------------
+Version: 0.5.0
+Date: 9. 10. 2026
+  Changes:
+    - Begin the fresh Factorio 2.1 release; require Factorio 2.1.21, Yuoki 1.3.0 and Yuoki Engines 1.3.0.
+    - Remove the obsolete legacy migrations; this release starts with a new game.
+  Compatibility:
+    - Update recipes, machine graphics, item icons, fuel and equipment declarations for Factorio 2.1.
+    - Update character animation registration and replace obsolete weapon sound references.
+    - Preserve Yuoki's projectile and equipment grid instead of overwriting parent definitions.
+    - Keep all 105 existing recipe routes; update the removed vanilla wood and flamethrower references.

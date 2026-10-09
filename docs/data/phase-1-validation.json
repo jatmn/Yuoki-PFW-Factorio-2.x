@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-09",
+  "engine": "2.1.21 linux64 headless",
+  "pfw": "0.5.0",
+  "parents": {
+    "Yuoki": "50ea38b9703a13e8644c3bcfe6e400b3bf2b4a5c",
+    "yi_engines": "8d777d015e36d93d2757a290c3f3f32a49c11280"
+  },
+  "schemas": {
+    "prototype-api.json": {
+      "application_version": "2.1.21",
+      "sha256": "5abe17bc8797770ab6c7ceb0cbe4348ab3b716efef59c7ee3e539596337132e6"
+    },
+    "runtime-api.json": {
+      "application_version": "2.1.21",
+      "sha256": "f21602449ec6c077afb4a26311ef075af7aedb8c067d53b9cc87efccca4d761f"
+    }
+  },
+  "checks": {
+    "baseline_data_stage": "pass",
+    "dlc_data_stage": "pass",
+    "new_game": "pass",
+    "runtime_machines": 12,
+    "runtime_armors": 2,
+    "runtime_equipment_per_armor": 7,
+    "runtime_crafting": [
+      "y-fab1a-recipe",
+      "y-rfab1a-recipe"
+    ],
+    "saved_game_reload_ticks": 600,
+    "preserved_recipes": 105,
+    "disabled_recipes": 35,
+    "preserved_graphics": 206,
+    "graphical_client": "pending owner local test",
+    "packaged_data_stage": "pass",
+    "packaged_new_game": "pass",
+    "packaged_saved_game_reload_ticks": 600
+  },
+  "package": {
+    "name": "yi_pfw_0.5.0.zip",
+    "sha256": "11e5314d17dd8530773f8724a29c1c0643715deca9b5e03129ee213edce57f0f",
+    "files": 231
+  }
+}

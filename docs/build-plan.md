@@ -1,6 +1,6 @@
 # Accepted build sequence and release policy
 
-Owner requirements recorded 2026-10-09. These govern future implementation and supersede the earlier suggested order where it put comprehensive cleanup ahead of getting the game to launch. This record does not start implementation; the original mod files remain unchanged.
+Owner requirements recorded 2026-10-09. These govern implementation and supersede the earlier suggested order where it put comprehensive cleanup ahead of getting the game to launch. Implementation status and evidence are recorded in [Phase 1](phase-1.md); graphical owner validation is pending.
 
 ## Version and changelog
 

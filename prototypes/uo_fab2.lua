@@ -31,7 +31,7 @@ data:extend(
 			sound =
 			{
 				{
-					filename = "__base__/sound/railgun.ogg",
+					filename = "__Yuoki__/sounds/railgun.ogg",
 					volume = 0.2
 				}
 			}
@@ -44,8 +44,7 @@ data:extend(
 	{
 		type = "gun",
 		name = "y-sm-5",
-		icon = "__yi_pfw__/graphics/fab2/minigun.png",
-		flags = {"goes-to-main-inventory"},
+		icon = "__yi_pfw__/graphics/fab2/minigun.png", icon_size = 32,
 		subgroup = "gun",
 		order = "a[basic-clips]-b[submachine-gun]",
 		attack_parameters =
@@ -71,7 +70,7 @@ data:extend(
 			sound =
 			{
 				{
-					filename = "__base__/sound/railgun.ogg",
+					filename = "__Yuoki__/sounds/railgun.ogg",
 					volume = 0.2
 				}
 			}
@@ -83,14 +82,13 @@ data:extend(
 	{
 		type = "gun",
 		name = "y-sm-1",
-		icon = "__yi_pfw__/graphics/fab2/lasergun.png",
-		flags = {"goes-to-main-inventory"},
+		icon = "__yi_pfw__/graphics/fab2/lasergun.png", icon_size = 32,
 		subgroup = "gun",
 		order = "c[railgun]",
 		attack_parameters =
 		{
 			type = "projectile",
-			ammo_category = "railgun",
+			ammo_category = "yi-pfw-energy",
 			cooldown = 20,
 			movement_slow_down_factor = 0.0,
 			projectile_creation_distance = 0.6,
@@ -99,7 +97,7 @@ data:extend(
 			sound =
 			{
 				{
-					filename = "__base__/sound/fight/laser-1.ogg",
+					filename = "__Yuoki__/sounds/plasma-1.ogg",
 					volume = 0.2
 				}
 			}
@@ -111,14 +109,13 @@ data:extend(
 	{
 		type = "gun",
 		name = "y-sm-2",
-		icon = "__yi_pfw__/graphics/fab2/plasma-gun.png",
-		flags = {"goes-to-main-inventory"},
+		icon = "__yi_pfw__/graphics/fab2/plasma-gun.png", icon_size = 32,
 		subgroup = "gun",
 		order = "c[railgun]",
 		attack_parameters =
 		{
 			type = "projectile",
-			ammo_category = "railgun",
+			ammo_category = "yi-pfw-energy",
 			cooldown = 7,
 			movement_slow_down_factor = 0.2,
 			projectile_creation_distance = 0.6,
@@ -127,7 +124,7 @@ data:extend(
 			sound =
 			{
 				{
-					filename = "__base__/sound/fight/laser-1.ogg",
+					filename = "__Yuoki__/sounds/plasma-1.ogg",
 					volume = 0.2
 				}
 			}
@@ -138,11 +135,10 @@ data:extend(
 	{
 		type = "ammo",
 		name = "y-mun-2",
-		icon = "__yi_pfw__/graphics/fab1/bst_z1.png",
-		flags = {"goes-to-main-inventory"},
+		icon = "__yi_pfw__/graphics/fab1/bst_z1.png", icon_size = 32,
+		ammo_category = "yi-pfw-energy",
 		ammo_type =
 		{
-			category = "railgun",
 			target_type = "direction",
 			
 			action =
@@ -174,7 +170,9 @@ data:extend(
 	},	
 	
 	
-	{
+	-- Parent owner: Yuoki/prototypes/objects/y_player_equipment.lua, projectile p2.
+	--[[
+{
 		type = "projectile",
 		name = "p2",
 		flags = {"not-on-map"},
@@ -203,6 +201,7 @@ data:extend(
 			height = 50,
 			priority = "high"
 		},
-	},	
+	}
+	]]
 }
 )

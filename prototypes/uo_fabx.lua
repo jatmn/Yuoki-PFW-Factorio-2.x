@@ -1,4 +1,4 @@
-playeranimations = {
+local playeranimations = {
 	idle =
 	{
 		filename = "__yi_pfw__/graphics/armor/robo1_idle.png",
@@ -9,7 +9,7 @@ playeranimations = {
 		frame_count = 16,
 		animation_speed = 0.15,
 		shift = {0.13, -0.25},
-		axially_symmetrical = false
+		-- Legacy, no longer read by RotatedAnimation: axially_symmetrical = false
 	},
 	idlewithgun =
 	{
@@ -21,7 +21,7 @@ playeranimations = {
 		frame_count = 16,
 		animation_speed = 0.15,
 		shift = {0.13, -0.25},
-		axially_symmetrical = fals
+		-- Legacy, no longer read by RotatedAnimation: axially_symmetrical = false
 	},
 	miningwithhands =
 	{
@@ -33,7 +33,7 @@ playeranimations = {
 		frame_count = 16,
 		animation_speed = 0.6,
 		shift = {0.13, -0.25},
-		axially_symmetrical = false
+		-- Legacy, no longer read by RotatedAnimation: axially_symmetrical = false
 	},
 	miningwithtool =
 	{
@@ -45,7 +45,7 @@ playeranimations = {
 		frame_count = 16,
 		animation_speed = 0.6,
 		shift = {0.13, -0.25},
-		axially_symmetrical = false
+		-- Legacy, no longer read by RotatedAnimation: axially_symmetrical = false
 	},
 	runningwithgun =
 	{
@@ -66,11 +66,11 @@ playeranimations = {
 		direction_count = 8,
 		frame_count = 22,
 		shift = {0.13, -0.25},
-		axially_symmetrical = false
+		-- Legacy, no longer read by RotatedAnimation: axially_symmetrical = false
 	},
 }
 
-data.raw.player.player.animations.level4addon = {
+table.insert(data.raw.character.character.animations, {
 	armors =  {"y-cyb-8u"},
 	idle =
 	{
@@ -86,13 +86,16 @@ data.raw.player.player.animations.level4addon = {
 			playeranimations.idlewithgun
 		}
 	},
-	mining_with_hands =
+	-- No mining_with_hands field in CharacterArmorAnimation 2.1.
+	--[[
+mining_with_hands =
 	{
 		layers =
 		{
 			playeranimations.miningwithhands
 		}
 	},
+	]]
 	mining_with_tool =
 	{
 		layers =
@@ -114,9 +117,9 @@ data.raw.player.player.animations.level4addon = {
 			playeranimations.running
 		}
 	}
-}
+})
 
-playeranimations_y2 = {
+local playeranimations_y2 = {
 	idle =
 	{
 		filename = "__yi_pfw__/graphics/armor/armor2_idle_sheet.png",
@@ -127,7 +130,7 @@ playeranimations_y2 = {
 		frame_count = 16,
 		animation_speed = 0.15,
 		shift = {0.13, -0.25},
-		axially_symmetrical = false
+		-- Legacy, no longer read by RotatedAnimation: axially_symmetrical = false
 	},
 	idlewithgun =
 	{
@@ -139,7 +142,7 @@ playeranimations_y2 = {
 		frame_count = 16,
 		animation_speed = 0.15,
 		shift = {0.13, -0.25},
-		axially_symmetrical = false
+		-- Legacy, no longer read by RotatedAnimation: axially_symmetrical = false
 	},
 	miningwithhands =
 	{
@@ -151,7 +154,7 @@ playeranimations_y2 = {
 		frame_count = 1,
 		animation_speed = 0.6,
 		shift = {0.13, -0.25},
-		axially_symmetrical = false
+		-- Legacy, no longer read by RotatedAnimation: axially_symmetrical = false
 	},
 	miningwithtool =
 	{
@@ -163,7 +166,7 @@ playeranimations_y2 = {
 		frame_count = 1,
 		animation_speed = 0.6,
 		shift = {0.13, -0.25},
-		axially_symmetrical = false
+		-- Legacy, no longer read by RotatedAnimation: axially_symmetrical = false
 	},
 	runningwithgun =
 	{
@@ -184,11 +187,11 @@ playeranimations_y2 = {
 		direction_count = 8,
 		frame_count = 22,
 		shift = {0.13, -0.25},
-		axially_symmetrical = false
+		-- Legacy, no longer read by RotatedAnimation: axially_symmetrical = false
 	},
 }
 
-data.raw.player.player.animations.level5addon = {
+table.insert(data.raw.character.character.animations, {
 	armors =  {"y-cyb-9u"},
 	idle =
 	{
@@ -204,13 +207,16 @@ data.raw.player.player.animations.level5addon = {
 			playeranimations_y2.idlewithgun
 		}
 	},
-	mining_with_hands =
+	-- No mining_with_hands field in CharacterArmorAnimation 2.1.
+	--[[
+mining_with_hands =
 	{
 		layers =
 		{
 			playeranimations_y2.miningwithhands
 		}
 	},
+	]]
 	mining_with_tool =
 	{
 		layers =
@@ -232,5 +238,5 @@ data.raw.player.player.animations.level5addon = {
 			playeranimations_y2.running
 		}
 	}
-}
+})
 
