@@ -32,7 +32,7 @@ Both `Yuoki` and `yi_engines` are already required dependencies in the original 
 
 At the data stage, inspect `mods["Yuoki"]` and `mods["yi_engines"]` for the enabled provider versions. Dependency declarations establish availability/load order; data-stage checks select the supported integration. Reference providers through `__Yuoki__/...` and `__yi_engines__/...` paths, rather than copying their images back into the PFW package. Asset choice belongs at prototype construction time, not a runtime tick handler. [Factorio data lifecycle](https://lua-api.factorio.com/latest/auxiliary/data-lifecycle.html), [asset path syntax](https://lua-api.factorio.com/latest/types/FileName.html).
 
-Use a centralized mapping of PFW visuals to parent-owned files or visual definitions. Where appropriate, copy a parent prototype's icon or graphics definition into PFW's own definition without mutating the parent. This helps retain correct metadata for layered or resized artwork. Sharing an image does not automatically authorize changing the item's identity, recipe cost, or behavior; those remain separate integration decisions.
+Use a centralized mapping of PFW visuals to parent-owned files or visual definitions. Where appropriate, copy a parent prototype's icon or graphics definition into PFW's own definition without mutating the parent. This helps retain correct metadata for layered or resized artwork. Sharing an image does not establish content equivalence. Apply the separate [content-ownership audit](content-ownership.md) to reuse confirmed parent-owned machines, items, guns, and recipes while retaining unique PFW recipes and preserving redundant local definitions as commented-out code.
 
 ## Initial inventory
 

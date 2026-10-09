@@ -38,7 +38,9 @@ The biomass recipe deserves design attention: simply replacing `raw-wood` with `
 
 ## Production and ownership work
 
-Resolve the 18 items lacking a producing recipe and the two direct name collisions before calling the production graph complete. Several active cyborg and equipment recipes depend on unavailable legacy armor or gun IDs. Choose whether these become modern Yuoki equipment, distinct trade-only components, or restored legacy items.
+The [content-ownership requirement](content-ownership.md) extends reuse to machines/entities, items, guns, ammunition, equipment, and recipes already provided by Yuoki or Engines. Audit functional equivalence separately for each definition. Keep redundant PFW declarations commented out and annotated with parent replacements, then point active references to those replacements. Preserve distinct PFW recipes even when their machine or output item is parent-owned, and ensure the selected parent machine supports them. Do not prune disabled source code.
+
+Resolve the 18 items lacking a producing recipe and the two direct name collisions before calling the production graph complete. Several active cyborg and equipment recipes depend on unavailable legacy armor or gun IDs. Determine which have functionally equivalent parent-owned replacements and which remain distinct PFW components or legacy features to restore.
 
 Reusing `yi_lasergun`, `yi_minigun`, `yi_ammo_energie`, and modern equipment would fit the intent suggested by the bundled migration file. It would also change recipe costs and possibly create different recycling paths. Mapping names is not sufficient to preserve economics.
 
