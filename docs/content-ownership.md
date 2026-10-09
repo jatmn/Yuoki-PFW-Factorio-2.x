@@ -36,6 +36,8 @@ A unique recipe must not disappear merely because its former machine is no longe
 
 ## Ownership mapping and implementation order
 
+The [build plan](build-plan.md) puts crash-free startup before comprehensive consolidation. During Phase 1, use this mapping only as needed to resolve compatibility blockers; the remaining sequence follows that milestone. The owner separately authorized deleting the bundled legacy migration files for a fresh 0.5.0 release; other disabled code remains preserved.
+
 For every reviewed definition, record the PFW type/ID and source location, parent mod and type/ID, supported parent version, evidence of equivalence, retained unique functionality, and the resulting action. Keep ambiguous candidates pending instead of treating them as duplicates automatically.
 
 1. Audit supported current parent versions and classify prototypes and recipes separately.

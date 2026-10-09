@@ -163,10 +163,12 @@ The two direct active same-type/name collisions are projectile `p2` and grid `y_
 
 ## Deferred implementation decisions and checks
 
+The later [accepted build plan](build-plan.md) makes crash-free startup Phase 1 and postpones comprehensive cleanup/expansion until afterward. It also establishes a 0.5.0 version hold and removal of the bundled legacy migrations, with no 0.4.15 upgrade path. The historical migration mappings above remain research evidence only.
+
 1. Select supported parent versions and dependency detection. The evaluated configuration has both parents loaded; Engines 1.3.0 itself requires Yuoki 1.3.0. Validate the selected prototypes as well as mod presence before using parent paths/IDs.
 2. Resolve shield tier grouping, plasma/laser trade identity, second wearable armor, cell equipment separation, and Trade Node constructor yield. Preserve all distinct recipes and inactive source while doing so.
 3. Implement the ownership map; comment and annotate redundant definitions rather than deleting them. Do not rewrite parent combat statistics, grids, crafting categories or unrelated recipes wholesale.
 4. Adapt unique recipe references and node category support. Confirm every retained recipe has a reachable input route, compatible crafter and sufficient result handling. Parent equipment constructors exist and are enabled in the baseline, but PFW's missing armor-Mk.1 route remains a separate blocker.
-5. Validate actual crafting, export payouts, equipment placement/removal, ammunition behavior, parent regressions and any intended save migration on the chosen 2.1 build. This evaluation supplies evidence and decisions; it does not claim those future checks passed.
+5. Validate actual crafting, export payouts, equipment placement/removal, ammunition behavior, parent regressions and saving/reloading new 0.5.0 games on the chosen 2.1 build. Legacy-save migration is explicitly out of scope. This evaluation supplies evidence and decisions; it does not claim those future checks passed.
 
 No source edits, prototype suppression, recipe rebalance, upscaling, asset removal or disabled-content restoration was performed in this evaluation.

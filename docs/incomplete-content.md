@@ -60,7 +60,7 @@ The bundled migration JSON names replacements such as:
 
 The modern Yuoki snapshot contains those replacement names. This supports reusing modern Yuoki content, but does not make the old IDs aliases automatically or prove the migration ever ran.
 
-The JSON is malformed (including trailing commas and a missing separator between sections), is stored under `prototypes/migrations/`, and includes inappropriate entries such as gun names in its equipment mapping. The neighboring Lua file only calls `game.reload_script()`. These files need deliberate replacement if save migration becomes part of a future port.
+The JSON is malformed (including trailing commas and a missing separator between sections), is stored under `prototypes/migrations/`, and includes inappropriate entries such as gun names in its equipment mapping. The neighboring Lua file only calls `game.reload_script()`. The owner subsequently chose a fresh 0.5.0 release: remove both legacy migration files during implementation and do not create a 0.4.15 upgrade migration. Their contents remain historical evidence here; see the [build plan](build-plan.md).
 
 ## Direct modern collisions
 

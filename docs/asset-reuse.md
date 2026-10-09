@@ -4,7 +4,7 @@
 
 On 2026-10-09, the owner added the requirement that the Factorio 2.1 restoration detect Yuoki Industries and Yuoki Engines, reuse the assets those mods now provide, and remove redundant PFW copies so the addon does not carry artwork already supplied by those two mods. Reuse and removal of duplicate assets are the objective. This extends the earlier recommendation to reuse parent-owned equipment into an explicit graphics/asset requirement.
 
-Asset ownership and mapping should happen before the prototype port and before deleting artwork. The original import remains the historical record; subsequent implementation commits can remove replaced files without losing that record. This discovery PR records the requirement and audit, and makes no original-source or asset changes.
+The [accepted build plan](build-plan.md) puts a crash-free launch first. Comprehensive asset ownership, replacement/removal and upscaling follow Phase 1; mapping still precedes deletion. Phase 1 may correct asset paths and metadata as needed for startup. The original import remains the historical record; subsequent implementation commits can remove replaced files without losing that record. This discovery PR records the requirement and audit, and makes no original-source or asset changes.
 
 ## Preserve unused assets and disabled code
 
