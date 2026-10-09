@@ -1,0 +1,52 @@
+{
+  "scope": "Static literal-table inventory of yi_pfw 0.4.15; not a Factorio load test or a general Lua parser.",
+  "active_recipe_count": 105,
+  "recipe_categories": {
+    "chemistry": 1,
+    "crafting": 7,
+    "yrcat-component": 5,
+    "yrcat-cyborgs": 10,
+    "yrcat-fahrzeuge": 9,
+    "yrcat-handwaffen": 4,
+    "yrcat-material": 4,
+    "yrcat-munition": 9,
+    "yrcat-retrade": 56
+  },
+  "prototype_types": {
+    "ammo": 1,
+    "armor": 2,
+    "assembling-machine": 12,
+    "battery-equipment": 1,
+    "energy-shield-equipment": 4,
+    "equipment-grid": 2,
+    "generator-equipment": 1,
+    "gun": 3,
+    "item": 69,
+    "item-group": 1,
+    "item-subgroup": 21,
+    "movement-bonus-equipment": 1,
+    "projectile": 1,
+    "recipe": 105,
+    "recipe-category": 10
+  },
+  "owned_items_without_recipe_output": [
+    "y-combat-armor-1",
+    "y-combat-armor-2",
+    "y-combat-armor-3",
+    "y-cyb-8u",
+    "y-cyb-9u",
+    "y-equ-1",
+    "y-equ-2",
+    "y-equ-6",
+    "y-equ-9",
+    "y-factory-4",
+    "y-factory-6",
+    "y-factory-7",
+    "y-mun-2",
+    "y-rich-1",
+    "y-rich-2",
+    "y-sm-1",
+    "y-sm-2",
+    "y-sm-5"
+  ]
+}

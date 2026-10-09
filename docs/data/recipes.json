@@ -1,0 +1,3162 @@
+[
+  {
+    "name": "y-fab1-recipe",
+    "category": "crafting",
+    "seconds": 0.5,
+    "ingredients": [
+      {
+        "name": "y-basic-t1-mf",
+        "amount": 2.0,
+        "type": "item"
+      },
+      {
+        "name": "y-bluegear",
+        "amount": 6.0,
+        "type": "item"
+      },
+      {
+        "name": "y-chip-1",
+        "amount": 4.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-factory-1",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_factory.lua",
+    "line": 14
+  },
+  {
+    "name": "y-fab1a-recipe",
+    "category": "yrcat-munition",
+    "seconds": 0.5,
+    "ingredients": [
+      {
+        "name": "y-ammo-hohlspitz",
+        "amount": 8.0,
+        "type": "item"
+      },
+      {
+        "name": "wooden-chest",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-mun-0",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_fab1.lua",
+    "line": 12
+  },
+  {
+    "name": "y-fab1b-recipe",
+    "category": "yrcat-munition",
+    "seconds": 0.5,
+    "ingredients": [
+      {
+        "name": "y-ammo-acid-2",
+        "amount": 6.0,
+        "type": "item"
+      },
+      {
+        "name": "iron-chest",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-mun-1",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_fab1.lua",
+    "line": 13
+  },
+  {
+    "name": "y-fab1d-recipe",
+    "category": "yrcat-munition",
+    "seconds": 0.5,
+    "ingredients": [
+      {
+        "name": "y-ammo-poison",
+        "amount": 5.0,
+        "type": "item"
+      },
+      {
+        "name": "y-grycoil",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-mun-3",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_fab1.lua",
+    "line": 15
+  },
+  {
+    "name": "y-fab1e-recipe",
+    "category": "yrcat-munition",
+    "seconds": 0.5,
+    "ingredients": [
+      {
+        "name": "rocket",
+        "amount": 3.0,
+        "type": "item"
+      },
+      {
+        "name": "wooden-chest",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-mun-4",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_fab1.lua",
+    "line": 16
+  },
+  {
+    "name": "y-fab1f-recipe",
+    "category": "yrcat-munition",
+    "seconds": 0.5,
+    "ingredients": [
+      {
+        "name": "iron-plate",
+        "amount": 1.0,
+        "type": "item"
+      },
+      {
+        "name": "explosives",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-mun-5",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_fab1.lua",
+    "line": 17
+  },
+  {
+    "name": "y-fab1g-recipe",
+    "category": "yrcat-munition",
+    "seconds": 0.5,
+    "ingredients": [
+      {
+        "name": "y-mun-5",
+        "amount": 1.0,
+        "type": "item"
+      },
+      {
+        "name": "y-chip-1",
+        "amount": 1.0,
+        "type": "item"
+      },
+      {
+        "name": "iron-plate",
+        "amount": 1.0,
+        "type": "item"
+      },
+      {
+        "name": "wooden-chest",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-mun-6",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_fab1.lua",
+    "line": 18
+  },
+  {
+    "name": "y-fab1h-recipe",
+    "category": "yrcat-munition",
+    "seconds": 0.5,
+    "ingredients": [
+      {
+        "name": "y-mun-5",
+        "amount": 1.0,
+        "type": "item"
+      },
+      {
+        "name": "y-chip-1",
+        "amount": 1.0,
+        "type": "item"
+      },
+      {
+        "name": "y-biomass",
+        "amount": 1.0,
+        "type": "item"
+      },
+      {
+        "name": "iron-chest",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-mun-7",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_fab1.lua",
+    "line": 19
+  },
+  {
+    "name": "y-fab1i-recipe",
+    "category": "yrcat-munition",
+    "seconds": 0.5,
+    "ingredients": [
+      {
+        "name": "y-mun-5",
+        "amount": 1.0,
+        "type": "item"
+      },
+      {
+        "name": "y-toxic-dust",
+        "amount": 4.0,
+        "type": "item"
+      },
+      {
+        "name": "y-stuff-5",
+        "amount": 1.0,
+        "type": "item"
+      },
+      {
+        "name": "y_sc11",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-mun-8",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_fab1.lua",
+    "line": 20
+  },
+  {
+    "name": "y-fab1k-recipe",
+    "category": "yrcat-munition",
+    "seconds": 0.5,
+    "ingredients": [
+      {
+        "name": "y-mun-5",
+        "amount": 1.0,
+        "type": "item"
+      },
+      {
+        "name": "y-stuff-1",
+        "amount": 1.0,
+        "type": "item"
+      },
+      {
+        "name": "y-stuff-6",
+        "amount": 1.0,
+        "type": "item"
+      },
+      {
+        "name": "y_sc11",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-mun-9",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_fab1.lua",
+    "line": 21
+  },
+  {
+    "name": "y-fab2-recipe",
+    "category": "crafting",
+    "seconds": 0.5,
+    "ingredients": [
+      {
+        "name": "y-basic-t1-mf",
+        "amount": 2.0,
+        "type": "item"
+      },
+      {
+        "name": "y-bluegear",
+        "amount": 6.0,
+        "type": "item"
+      },
+      {
+        "name": "y-chip-1",
+        "amount": 4.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-factory-2",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_factory.lua",
+    "line": 15
+  },
+  {
+    "name": "y-fab2a-recipe",
+    "category": "yrcat-handwaffen",
+    "seconds": 0.5,
+    "ingredients": [
+      {
+        "name": "y-refined-yres1",
+        "amount": 1.0,
+        "type": "item"
+      },
+      {
+        "name": "steel-plate",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-sm-0",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_fab2.lua",
+    "line": 24
+  },
+  {
+    "name": "y-fab2d-recipe",
+    "category": "yrcat-handwaffen",
+    "seconds": 0.5,
+    "ingredients": [
+      {
+        "name": "y-refined-yres1",
+        "amount": 1.0,
+        "type": "item"
+      },
+      {
+        "name": "iron-plate",
+        "amount": 5.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-sm-3",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_fab2.lua",
+    "line": 27
+  },
+  {
+    "name": "y-fab2e-recipe",
+    "category": "yrcat-handwaffen",
+    "seconds": 0.5,
+    "ingredients": [
+      {
+        "name": "iron-plate",
+        "amount": 4.0,
+        "type": "item"
+      },
+      {
+        "name": "y-zielfern",
+        "amount": 1.0,
+        "type": "item"
+      },
+      {
+        "name": "y-grycoil",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-sm-4",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_fab2.lua",
+    "line": 28
+  },
+  {
+    "name": "y-fab2g-recipe",
+    "category": "yrcat-handwaffen",
+    "seconds": 0.5,
+    "ingredients": [
+      {
+        "name": "y-richdust",
+        "amount": 1.0,
+        "type": "item"
+      },
+      {
+        "name": "y-biomass",
+        "amount": 7.0,
+        "type": "item"
+      },
+      {
+        "name": "y-stuff-5",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-sm-6",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_fab2.lua",
+    "line": 30
+  },
+  {
+    "name": "y-fab3-recipe",
+    "category": "crafting",
+    "seconds": 0.5,
+    "ingredients": [
+      {
+        "name": "y-basic-t1-mf",
+        "amount": 2.0,
+        "type": "item"
+      },
+      {
+        "name": "y-bluegear",
+        "amount": 6.0,
+        "type": "item"
+      },
+      {
+        "name": "y-chip-1",
+        "amount": 4.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-factory-3",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_factory.lua",
+    "line": 16
+  },
+  {
+    "name": "y-fab3a-recipe",
+    "category": "yrcat-cyborgs",
+    "seconds": 3.0,
+    "ingredients": [
+      {
+        "name": "y-biomass",
+        "amount": 3.0,
+        "type": "item"
+      },
+      {
+        "name": "y-combat-train",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-cyb-0",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_fab3.lua",
+    "line": 13
+  },
+  {
+    "name": "y-fab3b-recipe",
+    "category": "yrcat-cyborgs",
+    "seconds": 3.0,
+    "ingredients": [
+      {
+        "name": "y-cyb-0",
+        "amount": 1.0,
+        "type": "item"
+      },
+      {
+        "name": "submachine-gun",
+        "amount": 1.0,
+        "type": "item"
+      },
+      {
+        "name": "y-combat-armor-1",
+        "amount": 1.0,
+        "type": "item"
+      },
+      {
+        "name": "y-combat-train",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-cyb-1",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_fab3.lua",
+    "line": 14
+  },
+  {
+    "name": "y-fab3c-recipe",
+    "category": "yrcat-cyborgs",
+    "seconds": 3.0,
+    "ingredients": [
+      {
+        "name": "y-cyb-0",
+        "amount": 1.0,
+        "type": "item"
+      },
+      {
+        "name": "y-sm-0",
+        "amount": 1.0,
+        "type": "item"
+      },
+      {
+        "name": "y-combat-armor-2",
+        "amount": 1.0,
+        "type": "item"
+      },
+      {
+        "name": "y-combat-train",
+        "amount": 2.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-cyb-2",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_fab3.lua",
+    "line": 15
+  },
+  {
+    "name": "y-fab3d-recipe",
+    "category": "yrcat-cyborgs",
+    "seconds": 4.0,
+    "ingredients": [
+      {
+        "name": "y-biomass",
+        "amount": 4.0,
+        "type": "item"
+      },
+      {
+        "name": "y-sm-1",
+        "amount": 1.0,
+        "type": "item"
+      },
+      {
+        "name": "y-combat-armor-1",
+        "amount": 1.0,
+        "type": "item"
+      },
+      {
+        "name": "y-combat-train",
+        "amount": 2.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-cyb-3",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_fab3.lua",
+    "line": 16
+  },
+  {
+    "name": "y-fab3e-recipe",
+    "category": "yrcat-cyborgs",
+    "seconds": 4.0,
+    "ingredients": [
+      {
+        "name": "y-cyb-0",
+        "amount": 1.0,
+        "type": "item"
+      },
+      {
+        "name": "flame-thrower",
+        "amount": 1.0,
+        "type": "item"
+      },
+      {
+        "name": "y-combat-armor-1",
+        "amount": 1.0,
+        "type": "item"
+      },
+      {
+        "name": "y-biomass",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-cyb-4",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_fab3.lua",
+    "line": 17
+  },
+  {
+    "name": "y-fab3f-recipe",
+    "category": "yrcat-cyborgs",
+    "seconds": 4.0,
+    "ingredients": [
+      {
+        "name": "y-biomass",
+        "amount": 5.0,
+        "type": "item"
+      },
+      {
+        "name": "y-sm-5",
+        "amount": 1.0,
+        "type": "item"
+      },
+      {
+        "name": "y-combat-armor-2",
+        "amount": 1.0,
+        "type": "item"
+      },
+      {
+        "name": "y-combat-train",
+        "amount": 4.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-cyb-5",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_fab3.lua",
+    "line": 18
+  },
+  {
+    "name": "y-fab3g-recipe",
+    "category": "yrcat-cyborgs",
+    "seconds": 4.0,
+    "ingredients": [
+      {
+        "name": "y-biomass",
+        "amount": 4.0,
+        "type": "item"
+      },
+      {
+        "name": "y-sm-4",
+        "amount": 1.0,
+        "type": "item"
+      },
+      {
+        "name": "y-combat-armor-1",
+        "amount": 1.0,
+        "type": "item"
+      },
+      {
+        "name": "y-combat-train",
+        "amount": 6.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-cyb-6",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_fab3.lua",
+    "line": 19
+  },
+  {
+    "name": "y-fab3h-recipe",
+    "category": "yrcat-cyborgs",
+    "seconds": 4.0,
+    "ingredients": [
+      {
+        "name": "y-biomass",
+        "amount": 5.0,
+        "type": "item"
+      },
+      {
+        "name": "y-medic",
+        "amount": 1.0,
+        "type": "item"
+      },
+      {
+        "name": "y-combat-train",
+        "amount": 5.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-cyb-7",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_fab3.lua",
+    "line": 20
+  },
+  {
+    "name": "y-fab3i-recipe",
+    "category": "yrcat-cyborgs",
+    "seconds": 5.0,
+    "ingredients": [
+      {
+        "name": "y-basic-t1-mf",
+        "amount": 2.0,
+        "type": "item"
+      },
+      {
+        "name": "y-sm-1",
+        "amount": 2.0,
+        "type": "item"
+      },
+      {
+        "name": "y-combat-armor-3",
+        "amount": 1.0,
+        "type": "item"
+      },
+      {
+        "name": "y-chip-2",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-cyb-8",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_fab3.lua",
+    "line": 21
+  },
+  {
+    "name": "y-fab3k-recipe",
+    "category": "yrcat-cyborgs",
+    "seconds": 5.0,
+    "ingredients": [
+      {
+        "name": "y-basic-t2-mf",
+        "amount": 2.0,
+        "type": "item"
+      },
+      {
+        "name": "y-sm-2",
+        "amount": 3.0,
+        "type": "item"
+      },
+      {
+        "name": "y-combat-armor-3",
+        "amount": 1.0,
+        "type": "item"
+      },
+      {
+        "name": "y-chip-2",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-cyb-9",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_fab3.lua",
+    "line": 22
+  },
+  {
+    "name": "y-fab5-recipe",
+    "category": "crafting",
+    "seconds": 0.5,
+    "ingredients": [
+      {
+        "name": "y-basic-t1-mf",
+        "amount": 2.0,
+        "type": "item"
+      },
+      {
+        "name": "y-bluegear",
+        "amount": 6.0,
+        "type": "item"
+      },
+      {
+        "name": "y-chip-1",
+        "amount": 4.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-factory-5",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_factory.lua",
+    "line": 18
+  },
+  {
+    "name": "y-fab5a-recipe",
+    "category": "yrcat-fahrzeuge",
+    "seconds": 0.5,
+    "ingredients": [
+      {
+        "name": "y-veh-9",
+        "amount": 4.0,
+        "type": "item"
+      },
+      {
+        "name": "steel-plate",
+        "amount": 8.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-veh-0",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_fab5.lua",
+    "line": 13
+  },
+  {
+    "name": "y-fab5b-recipe",
+    "category": "yrcat-fahrzeuge",
+    "seconds": 0.5,
+    "ingredients": [
+      {
+        "name": "y-veh-9",
+        "amount": 10.0,
+        "type": "item"
+      },
+      {
+        "name": "steel-plate",
+        "amount": 14.0,
+        "type": "item"
+      },
+      {
+        "name": "y-ffe",
+        "amount": 1.0,
+        "type": "item"
+      },
+      {
+        "name": "y_blocked_capa",
+        "amount": 2.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-veh-1",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_fab5.lua",
+    "line": 14
+  },
+  {
+    "name": "y-fab5c-recipe",
+    "category": "yrcat-fahrzeuge",
+    "seconds": 0.5,
+    "ingredients": [
+      {
+        "name": "y-basic-t2-mf",
+        "amount": 2.0,
+        "type": "item"
+      },
+      {
+        "name": "y-basic-t1-mf",
+        "amount": 4.0,
+        "type": "item"
+      },
+      {
+        "name": "y-seg",
+        "amount": 1.0,
+        "type": "item"
+      },
+      {
+        "name": "y-accumulator-b",
+        "amount": 4.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-veh-2",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_fab5.lua",
+    "line": 15
+  },
+  {
+    "name": "y-fab5d-recipe",
+    "category": "yrcat-fahrzeuge",
+    "seconds": 0.5,
+    "ingredients": [
+      {
+        "name": "y-veh-0",
+        "amount": 1.0,
+        "type": "item"
+      },
+      {
+        "name": "wood",
+        "amount": 14.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-veh-3",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_fab5.lua",
+    "line": 16
+  },
+  {
+    "name": "y-fab5e-recipe",
+    "category": "yrcat-fahrzeuge",
+    "seconds": 0.5,
+    "ingredients": [
+      {
+        "name": "y-veh-0",
+        "amount": 1.0,
+        "type": "item"
+      },
+      {
+        "name": "storage-tank",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-veh-4",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_fab5.lua",
+    "line": 17
+  },
+  {
+    "name": "y-fab5f-recipe",
+    "category": "yrcat-fahrzeuge",
+    "seconds": 0.5,
+    "ingredients": [
+      {
+        "name": "y-veh-1",
+        "amount": 1.0,
+        "type": "item"
+      },
+      {
+        "name": "storage-tank",
+        "amount": 1.0,
+        "type": "item"
+      },
+      {
+        "name": "wood",
+        "amount": 8.0,
+        "type": "item"
+      },
+      {
+        "name": "y-basic-t1-mf",
+        "amount": 2.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-veh-5",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_fab5.lua",
+    "line": 18
+  },
+  {
+    "name": "y-fab5g-recipe",
+    "category": "yrcat-fahrzeuge",
+    "seconds": 0.5,
+    "ingredients": [
+      {
+        "name": "y-veh-1",
+        "amount": 1.0,
+        "type": "item"
+      },
+      {
+        "name": "steel-chest",
+        "amount": 3.0,
+        "type": "item"
+      },
+      {
+        "name": "y-basic-t1-mf",
+        "amount": 4.0,
+        "type": "item"
+      },
+      {
+        "name": "y-basic-t2-mf",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-veh-6",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_fab5.lua",
+    "line": 19
+  },
+  {
+    "name": "y-fab5i-recipe",
+    "category": "yrcat-fahrzeuge",
+    "seconds": 0.5,
+    "ingredients": [
+      {
+        "name": "y-veh-2",
+        "amount": 1.0,
+        "type": "item"
+      },
+      {
+        "name": "y-basic-t2-mf",
+        "amount": 1.0,
+        "type": "item"
+      },
+      {
+        "name": "y-tank-8000",
+        "amount": 1.0,
+        "type": "item"
+      },
+      {
+        "name": "y-chip-2",
+        "amount": 4.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-veh-8",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_fab5.lua",
+    "line": 21
+  },
+  {
+    "name": "y-fab5k-recipe",
+    "category": "yrcat-fahrzeuge",
+    "seconds": 0.5,
+    "ingredients": [
+      {
+        "name": "y-grycoil",
+        "amount": 3.0,
+        "type": "item"
+      },
+      {
+        "name": "iron-plate",
+        "amount": 4.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-veh-9",
+        "amount": 10.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_fab5.lua",
+    "line": 22
+  },
+  {
+    "name": "y-fab8-recipe",
+    "category": "crafting",
+    "seconds": 0.5,
+    "ingredients": [
+      {
+        "name": "y-basic-t1-mf",
+        "amount": 2.0,
+        "type": "item"
+      },
+      {
+        "name": "y-bluegear",
+        "amount": 6.0,
+        "type": "item"
+      },
+      {
+        "name": "y-chip-1",
+        "amount": 4.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-factory-8",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_factory.lua",
+    "line": 21
+  },
+  {
+    "name": "y-fab8a-recipe",
+    "category": "yrcat-material",
+    "seconds": 3.0,
+    "ingredients": [
+      {
+        "name": "y-stuff-4",
+        "amount": 1.0,
+        "type": "item"
+      },
+      {
+        "name": "y-iron-case",
+        "amount": 8.0,
+        "type": "item"
+      },
+      {
+        "name": "y-refined-yres1",
+        "amount": 8.0,
+        "type": "item"
+      },
+      {
+        "name": "y-chip-1",
+        "amount": 8.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-equ-0",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_fab8.lua",
+    "line": 22
+  },
+  {
+    "name": "y-fab8d-recipe",
+    "category": "yrcat-material",
+    "seconds": 3.0,
+    "ingredients": [
+      {
+        "name": "y-zielfern",
+        "amount": 1.0,
+        "type": "item"
+      },
+      {
+        "name": "y-equ-0",
+        "amount": 1.0,
+        "type": "item"
+      },
+      {
+        "name": "y-sm-1",
+        "amount": 1.0,
+        "type": "item"
+      },
+      {
+        "name": "y-cyb-0",
+        "amount": 4.0,
+        "type": "item"
+      },
+      {
+        "name": "y-iron-case",
+        "amount": 1.0,
+        "type": "item"
+      },
+      {
+        "name": "y-zproduct-8",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-equ-3",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_fab8.lua",
+    "line": 25
+  },
+  {
+    "name": "y-fab8e-recipe",
+    "category": "yrcat-material",
+    "seconds": 3.0,
+    "ingredients": [
+      {
+        "name": "y-meg-s",
+        "amount": 2.0,
+        "type": "item"
+      },
+      {
+        "name": "y-beg",
+        "amount": 1.0,
+        "type": "item"
+      },
+      {
+        "name": "y-ups-flywheel-b",
+        "amount": 2.0,
+        "type": "item"
+      },
+      {
+        "name": "y-stirling-solar-dish",
+        "amount": 8.0,
+        "type": "item"
+      },
+      {
+        "name": "y-conductive-wire-1",
+        "amount": 12.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-equ-4",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_fab8.lua",
+    "line": 27
+  },
+  {
+    "name": "y-fab8f-recipe",
+    "category": "yrcat-material",
+    "seconds": 3.0,
+    "ingredients": [
+      {
+        "name": "y-ups-flywheel-b",
+        "amount": 4.0,
+        "type": "item"
+      },
+      {
+        "name": "y-accumulator-b",
+        "amount": 8.0,
+        "type": "item"
+      },
+      {
+        "name": "y-stuff-3",
+        "amount": 3.0,
+        "type": "item"
+      },
+      {
+        "name": "y-conductive-wire-1",
+        "amount": 14.0,
+        "type": "item"
+      },
+      {
+        "name": "y-iron-case",
+        "amount": 4.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-equ-5",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_fab8.lua",
+    "line": 28
+  },
+  {
+    "name": "y-fab9-recipe",
+    "category": "crafting",
+    "seconds": 0.5,
+    "ingredients": [
+      {
+        "name": "y-basic-t1-mf",
+        "amount": 2.0,
+        "type": "item"
+      },
+      {
+        "name": "y-bluegear",
+        "amount": 6.0,
+        "type": "item"
+      },
+      {
+        "name": "y-chip-1",
+        "amount": 4.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-factory-9",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_factory.lua",
+    "line": 22
+  },
+  {
+    "name": "y-import1-recipe",
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "ingredients": [
+      {
+        "name": "y-unicomp-a2",
+        "amount": 3.0,
+        "type": "item"
+      },
+      {
+        "name": "ypfw_trader_sign",
+        "amount": 9.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-redcoil",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_imports.lua",
+    "line": 7
+  },
+  {
+    "name": "y-import2-recipe",
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "ingredients": [
+      {
+        "name": "y-unicomp-a2",
+        "amount": 1.0,
+        "type": "item"
+      },
+      {
+        "name": "ypfw_trader_sign",
+        "amount": 3.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-grycoil",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_imports.lua",
+    "line": 8
+  },
+  {
+    "name": "y-import3-recipe",
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "ingredients": [
+      {
+        "name": "y-unicomp-a2",
+        "amount": 12.0,
+        "type": "item"
+      },
+      {
+        "name": "ypfw_trader_sign",
+        "amount": 36.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-stuff-1",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_imports.lua",
+    "line": 9
+  },
+  {
+    "name": "y-import4-recipe",
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "ingredients": [
+      {
+        "name": "y-unicomp-a2",
+        "amount": 7.0,
+        "type": "item"
+      },
+      {
+        "name": "ypfw_trader_sign",
+        "amount": 21.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-stuff-2",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_imports.lua",
+    "line": 10
+  },
+  {
+    "name": "y-import5-recipe",
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "ingredients": [
+      {
+        "name": "y-unicomp-a2",
+        "amount": 35.0,
+        "type": "item"
+      },
+      {
+        "name": "ypfw_trader_sign",
+        "amount": 105.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-stuff-3",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_imports.lua",
+    "line": 11
+  },
+  {
+    "name": "y-import6-recipe",
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "ingredients": [
+      {
+        "name": "y-unicomp-a2",
+        "amount": 50.0,
+        "type": "item"
+      },
+      {
+        "name": "ypfw_trader_sign",
+        "amount": 150.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-stuff-4",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_imports.lua",
+    "line": 12
+  },
+  {
+    "name": "y-import7-recipe",
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "ingredients": [
+      {
+        "name": "y-unicomp-a2",
+        "amount": 20.0,
+        "type": "item"
+      },
+      {
+        "name": "ypfw_trader_sign",
+        "amount": 60.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-stuff-5",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_imports.lua",
+    "line": 13
+  },
+  {
+    "name": "y-import8-recipe",
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "ingredients": [
+      {
+        "name": "y-unicomp-a2",
+        "amount": 100.0,
+        "type": "item"
+      },
+      {
+        "name": "ypfw_trader_sign",
+        "amount": 300.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-stuff-6",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_imports.lua",
+    "line": 14
+  },
+  {
+    "name": "y-retrader-recipe",
+    "category": "crafting",
+    "seconds": 0.5,
+    "ingredients": [
+      {
+        "name": "y-basic-t1-mf",
+        "amount": 2.0,
+        "type": "item"
+      },
+      {
+        "name": "y-bluegear",
+        "amount": 6.0,
+        "type": "item"
+      },
+      {
+        "name": "y-stargate",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-retrader-1",
+        "amount": 10.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_basic.lua",
+    "line": 4
+  },
+  {
+    "name": "y-rfab1a-recipe",
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "ingredients": [
+      {
+        "name": "y-mun-0",
+        "amount": 8.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-stuff-2",
+        "amount": 1.0,
+        "type": "item"
+      },
+      {
+        "name": "ypfw_trader_sign",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_fab1.lua",
+    "line": 35
+  },
+  {
+    "name": "y-rfab1b-recipe",
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "ingredients": [
+      {
+        "name": "y-mun-1",
+        "amount": 4.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-redcoil",
+        "amount": 3.0,
+        "type": "item"
+      },
+      {
+        "name": "ypfw_trader_sign",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_fab1.lua",
+    "line": 36
+  },
+  {
+    "name": "y-rfab1c-recipe",
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "ingredients": [
+      {
+        "name": "y-mun-2",
+        "amount": 7.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-unicomp-a2",
+        "amount": 1.0,
+        "type": "item"
+      },
+      {
+        "name": "ypfw_trader_sign",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_fab1.lua",
+    "line": 37
+  },
+  {
+    "name": "y-rfab1d-recipe",
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "ingredients": [
+      {
+        "name": "y-mun-3",
+        "amount": 2.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-unicomp-a2",
+        "amount": 5.0,
+        "type": "item"
+      },
+      {
+        "name": "ypfw_trader_sign",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_fab1.lua",
+    "line": 38
+  },
+  {
+    "name": "y-rfab1e-recipe",
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "ingredients": [
+      {
+        "name": "y-mun-4",
+        "amount": 4.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-grycoil",
+        "amount": 9.0,
+        "type": "item"
+      },
+      {
+        "name": "ypfw_trader_sign",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_fab1.lua",
+    "line": 39
+  },
+  {
+    "name": "y-rfab1f-recipe",
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "ingredients": [
+      {
+        "name": "y-mun-5",
+        "amount": 15.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-unicomp-a2",
+        "amount": 4.0,
+        "type": "item"
+      },
+      {
+        "name": "ypfw_trader_sign",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_fab1.lua",
+    "line": 40
+  },
+  {
+    "name": "y-rfab1g-recipe",
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "ingredients": [
+      {
+        "name": "y-mun-6",
+        "amount": 8.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-unicomp-a2",
+        "amount": 5.0,
+        "type": "item"
+      },
+      {
+        "name": "y-richdust",
+        "amount": 22.0,
+        "type": "item"
+      },
+      {
+        "name": "ypfw_trader_sign",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_fab1.lua",
+    "line": 41
+  },
+  {
+    "name": "y-rfab1h-recipe",
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "ingredients": [
+      {
+        "name": "y-mun-7",
+        "amount": 4.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-unicomp-a2",
+        "amount": 4.0,
+        "type": "item"
+      },
+      {
+        "name": "ypfw_trader_sign",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_fab1.lua",
+    "line": 42
+  },
+  {
+    "name": "y-rfab1i-recipe",
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "ingredients": [
+      {
+        "name": "y-mun-8",
+        "amount": 2.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-unicomp-a2",
+        "amount": 6.0,
+        "type": "item"
+      },
+      {
+        "name": "y-stuff-5",
+        "amount": 2.0,
+        "type": "item"
+      },
+      {
+        "name": "ypfw_trader_sign",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_fab1.lua",
+    "line": 43
+  },
+  {
+    "name": "y-rfab1k-recipe",
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "ingredients": [
+      {
+        "name": "y-mun-9",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-unicomp-a2",
+        "amount": 1.0,
+        "type": "item"
+      },
+      {
+        "name": "y-stuff-4",
+        "amount": 2.0,
+        "type": "item"
+      },
+      {
+        "name": "y-stuff-1",
+        "amount": 2.0,
+        "type": "item"
+      },
+      {
+        "name": "ypfw_trader_sign",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_fab1.lua",
+    "line": 44
+  },
+  {
+    "name": "y-rfab2a-recipe",
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "ingredients": [
+      {
+        "name": "y-sm-0",
+        "amount": 7.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-unicomp-a2",
+        "amount": 3.0,
+        "type": "item"
+      },
+      {
+        "name": "ypfw_trader_sign",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_fab2.lua",
+    "line": 47
+  },
+  {
+    "name": "y-rfab2b-recipe",
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "ingredients": [
+      {
+        "name": "y-sm-1",
+        "amount": 3.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-unicomp-a2",
+        "amount": 41.0,
+        "type": "item"
+      },
+      {
+        "name": "ypfw_trader_sign",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_fab2.lua",
+    "line": 48
+  },
+  {
+    "name": "y-rfab2c-recipe",
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "ingredients": [
+      {
+        "name": "y-sm-2",
+        "amount": 6.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-unicomp-a2",
+        "amount": 50.0,
+        "type": "item"
+      },
+      {
+        "name": "ypfw_trader_sign",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_fab2.lua",
+    "line": 49
+  },
+  {
+    "name": "y-rfab2d-recipe",
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "ingredients": [
+      {
+        "name": "y-sm-3",
+        "amount": 7.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-unicomp-a2",
+        "amount": 3.0,
+        "type": "item"
+      },
+      {
+        "name": "ypfw_trader_sign",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_fab2.lua",
+    "line": 50
+  },
+  {
+    "name": "y-rfab2e-recipe",
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "ingredients": [
+      {
+        "name": "y-sm-4",
+        "amount": 5.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-unicomp-a2",
+        "amount": 24.0,
+        "type": "item"
+      },
+      {
+        "name": "ypfw_trader_sign",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_fab2.lua",
+    "line": 51
+  },
+  {
+    "name": "y-rfab2f-recipe",
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "ingredients": [
+      {
+        "name": "y-sm-5",
+        "amount": 4.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-unicomp-a2",
+        "amount": 14.0,
+        "type": "item"
+      },
+      {
+        "name": "ypfw_trader_sign",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_fab2.lua",
+    "line": 52
+  },
+  {
+    "name": "y-rfab2g-recipe",
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "ingredients": [
+      {
+        "name": "y-sm-6",
+        "amount": 2.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-unicomp-a2",
+        "amount": 50.0,
+        "type": "item"
+      },
+      {
+        "name": "ypfw_trader_sign",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_fab2.lua",
+    "line": 53
+  },
+  {
+    "name": "y-rfab3a-recipe",
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "ingredients": [
+      {
+        "name": "y-cyb-0",
+        "amount": 9.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-unicomp-a2",
+        "amount": 2.0,
+        "type": "item"
+      },
+      {
+        "name": "ypfw_trader_sign",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_fab3.lua",
+    "line": 36
+  },
+  {
+    "name": "y-rfab3b-recipe",
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "ingredients": [
+      {
+        "name": "y-cyb-1",
+        "amount": 5.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-unicomp-a2",
+        "amount": 6.0,
+        "type": "item"
+      },
+      {
+        "name": "y-stuff-2",
+        "amount": 1.0,
+        "type": "item"
+      },
+      {
+        "name": "ypfw_trader_sign",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_fab3.lua",
+    "line": 37
+  },
+  {
+    "name": "y-rfab3c-recipe",
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "ingredients": [
+      {
+        "name": "y-cyb-2",
+        "amount": 6.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-unicomp-a2",
+        "amount": 2.0,
+        "type": "item"
+      },
+      {
+        "name": "y-stuff-1",
+        "amount": 1.0,
+        "type": "item"
+      },
+      {
+        "name": "ypfw_trader_sign",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_fab3.lua",
+    "line": 38
+  },
+  {
+    "name": "y-rfab3d-recipe",
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "ingredients": [
+      {
+        "name": "y-cyb-3",
+        "amount": 5.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-unicomp-a2",
+        "amount": 50.0,
+        "type": "item"
+      },
+      {
+        "name": "y-grycoil",
+        "amount": 25.0,
+        "type": "item"
+      },
+      {
+        "name": "ypfw_trader_sign",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_fab3.lua",
+    "line": 39
+  },
+  {
+    "name": "y-rfab3e-recipe",
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "ingredients": [
+      {
+        "name": "y-cyb-4",
+        "amount": 7.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-unicomp-a2",
+        "amount": 3.0,
+        "type": "item"
+      },
+      {
+        "name": "y-stuff-5",
+        "amount": 1.0,
+        "type": "item"
+      },
+      {
+        "name": "ypfw_trader_sign",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_fab3.lua",
+    "line": 40
+  },
+  {
+    "name": "y-rfab3f-recipe",
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "ingredients": [
+      {
+        "name": "y-cyb-5",
+        "amount": 3.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-unicomp-a2",
+        "amount": 5.0,
+        "type": "item"
+      },
+      {
+        "name": "y-stuff-1",
+        "amount": 1.0,
+        "type": "item"
+      },
+      {
+        "name": "ypfw_trader_sign",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_fab3.lua",
+    "line": 41
+  },
+  {
+    "name": "y-rfab3g-recipe",
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "ingredients": [
+      {
+        "name": "y-cyb-6",
+        "amount": 3.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-unicomp-a2",
+        "amount": 3.0,
+        "type": "item"
+      },
+      {
+        "name": "y-redcoil",
+        "amount": 5.0,
+        "type": "item"
+      },
+      {
+        "name": "ypfw_trader_sign",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_fab3.lua",
+    "line": 42
+  },
+  {
+    "name": "y-rfab3h-recipe",
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "ingredients": [
+      {
+        "name": "y-cyb-7",
+        "amount": 9.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-unicomp-a2",
+        "amount": 1.0,
+        "type": "item"
+      },
+      {
+        "name": "y-stuff-2",
+        "amount": 2.0,
+        "type": "item"
+      },
+      {
+        "name": "ypfw_trader_sign",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_fab3.lua",
+    "line": 43
+  },
+  {
+    "name": "y-rfab3i-recipe",
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "ingredients": [
+      {
+        "name": "y-cyb-8",
+        "amount": 2.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-stuff-4",
+        "amount": 1.0,
+        "type": "item"
+      },
+      {
+        "name": "y-stuff-3",
+        "amount": 3.0,
+        "type": "item"
+      },
+      {
+        "name": "y-unicomp-a2",
+        "amount": 10.0,
+        "type": "item"
+      },
+      {
+        "name": "ypfw_trader_sign",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_fab3.lua",
+    "line": 44
+  },
+  {
+    "name": "y-rfab3k-recipe",
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "ingredients": [
+      {
+        "name": "y-cyb-9",
+        "amount": 2.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-stuff-6",
+        "amount": 1.0,
+        "type": "item"
+      },
+      {
+        "name": "y-stuff-5",
+        "amount": 4.0,
+        "type": "item"
+      },
+      {
+        "name": "ypfw_trader_sign",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_fab3.lua",
+    "line": 45
+  },
+  {
+    "name": "y-rfab5d-recipe",
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "ingredients": [
+      {
+        "name": "y-veh-3",
+        "amount": 3.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-unicomp-a2",
+        "amount": 11.0,
+        "type": "item"
+      },
+      {
+        "name": "y-richdust",
+        "amount": 20.0,
+        "type": "item"
+      },
+      {
+        "name": "ypfw_trader_sign",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_fab5.lua",
+    "line": 39
+  },
+  {
+    "name": "y-rfab5e-recipe",
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "ingredients": [
+      {
+        "name": "y-veh-4",
+        "amount": 2.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-unicomp-a2",
+        "amount": 12.0,
+        "type": "item"
+      },
+      {
+        "name": "y-richdust",
+        "amount": 10.0,
+        "type": "item"
+      },
+      {
+        "name": "ypfw_trader_sign",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_fab5.lua",
+    "line": 40
+  },
+  {
+    "name": "y-rfab5f-recipe",
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "ingredients": [
+      {
+        "name": "y-veh-5",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-stuff-5",
+        "amount": 1.0,
+        "type": "item"
+      },
+      {
+        "name": "y-grycoil",
+        "amount": 12.0,
+        "type": "item"
+      },
+      {
+        "name": "ypfw_trader_sign",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_fab5.lua",
+    "line": 41
+  },
+  {
+    "name": "y-rfab5g-recipe",
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "ingredients": [
+      {
+        "name": "y-veh-6",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-stuff-5",
+        "amount": 2.0,
+        "type": "item"
+      },
+      {
+        "name": "y-unicomp-a2",
+        "amount": 8.0,
+        "type": "item"
+      },
+      {
+        "name": "ypfw_trader_sign",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_fab5.lua",
+    "line": 42
+  },
+  {
+    "name": "y-rfab5i-recipe",
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "ingredients": [
+      {
+        "name": "y-veh-8",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-stuff-4",
+        "amount": 2.0,
+        "type": "item"
+      },
+      {
+        "name": "y-unicomp-a2",
+        "amount": 10.0,
+        "type": "item"
+      },
+      {
+        "name": "ypfw_trader_sign",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_fab5.lua",
+    "line": 44
+  },
+  {
+    "name": "y-rfab5k-recipe",
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "ingredients": [
+      {
+        "name": "y-veh-9",
+        "amount": 3.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-unicomp-a2",
+        "amount": 1.0,
+        "type": "item"
+      },
+      {
+        "name": "ypfw_trader_sign",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_fab5.lua",
+    "line": 45
+  },
+  {
+    "name": "y-rfab8b-recipe",
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "ingredients": [
+      {
+        "name": "y-equ-1",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-stuff-1",
+        "amount": 1.0,
+        "type": "item"
+      },
+      {
+        "name": "y-redcoil",
+        "amount": 3.0,
+        "type": "item"
+      },
+      {
+        "name": "ypfw_trader_sign",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_fab8.lua",
+    "line": 50
+  },
+  {
+    "name": "y-rfab8c-recipe",
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "ingredients": [
+      {
+        "name": "y-equ-2",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-stuff-4",
+        "amount": 2.0,
+        "type": "item"
+      },
+      {
+        "name": "y-stuff-2",
+        "amount": 4.0,
+        "type": "item"
+      },
+      {
+        "name": "ypfw_trader_sign",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_fab8.lua",
+    "line": 51
+  },
+  {
+    "name": "y-rfab8d-recipe",
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "ingredients": [
+      {
+        "name": "y-equ-3",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-stuff-2",
+        "amount": 4.0,
+        "type": "item"
+      },
+      {
+        "name": "y-grycoil",
+        "amount": 6.0,
+        "type": "item"
+      },
+      {
+        "name": "ypfw_trader_sign",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_fab8.lua",
+    "line": 52
+  },
+  {
+    "name": "y-rfab8e-recipe",
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "ingredients": [
+      {
+        "name": "y-equ-4",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-stuff-4",
+        "amount": 2.0,
+        "type": "item"
+      },
+      {
+        "name": "y-stuff-5",
+        "amount": 3.0,
+        "type": "item"
+      },
+      {
+        "name": "ypfw_trader_sign",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_fab8.lua",
+    "line": 54
+  },
+  {
+    "name": "y-rfab8f-recipe",
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "ingredients": [
+      {
+        "name": "y-equ-5",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-stuff-6",
+        "amount": 1.0,
+        "type": "item"
+      },
+      {
+        "name": "y-unicomp-a2",
+        "amount": 245.0,
+        "type": "item"
+      },
+      {
+        "name": "ypfw_trader_sign",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_fab8.lua",
+    "line": 55
+  },
+  {
+    "name": "y-rfab8g-recipe",
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "ingredients": [
+      {
+        "name": "y-equ-6",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-stuff-1",
+        "amount": 8.0,
+        "type": "item"
+      },
+      {
+        "name": "y-stuff-2",
+        "amount": 6.0,
+        "type": "item"
+      },
+      {
+        "name": "ypfw_trader_sign",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_fab8.lua",
+    "line": 56
+  },
+  {
+    "name": "y-rimp1-recipe",
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "ingredients": [
+      {
+        "name": "y-redcoil",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-richdust",
+        "amount": 50.0,
+        "type": "item"
+      },
+      {
+        "name": "ypfw_trader_sign",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_imports.lua",
+    "line": 25
+  },
+  {
+    "name": "y-rimp2-recipe",
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "ingredients": [
+      {
+        "name": "y-grycoil",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-richdust",
+        "amount": 16.0,
+        "type": "item"
+      },
+      {
+        "name": "ypfw_trader_sign",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_imports.lua",
+    "line": 26
+  },
+  {
+    "name": "y-rimp3-recipe",
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "ingredients": [
+      {
+        "name": "y-stuff-1",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-unicomp-a2",
+        "amount": 10.0,
+        "type": "item"
+      },
+      {
+        "name": "ypfw_trader_sign",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_imports.lua",
+    "line": 27
+  },
+  {
+    "name": "y-rimp4-recipe",
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "ingredients": [
+      {
+        "name": "y-stuff-2",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-unicomp-a2",
+        "amount": 6.0,
+        "type": "item"
+      },
+      {
+        "name": "ypfw_trader_sign",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_imports.lua",
+    "line": 28
+  },
+  {
+    "name": "y-rimp5-recipe",
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "ingredients": [
+      {
+        "name": "y-stuff-3",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-unicomp-a2",
+        "amount": 31.0,
+        "type": "item"
+      },
+      {
+        "name": "ypfw_trader_sign",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_imports.lua",
+    "line": 29
+  },
+  {
+    "name": "y-rimp6-recipe",
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "ingredients": [
+      {
+        "name": "y-stuff-4",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-unicomp-a2",
+        "amount": 45.0,
+        "type": "item"
+      },
+      {
+        "name": "ypfw_trader_sign",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_imports.lua",
+    "line": 30
+  },
+  {
+    "name": "y-rimp7-recipe",
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "ingredients": [
+      {
+        "name": "y-stuff-5",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-unicomp-a2",
+        "amount": 18.0,
+        "type": "item"
+      },
+      {
+        "name": "ypfw_trader_sign",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_imports.lua",
+    "line": 31
+  },
+  {
+    "name": "y-rimp8-recipe",
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "ingredients": [
+      {
+        "name": "y-stuff-6",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-unicomp-a2",
+        "amount": 90.0,
+        "type": "item"
+      },
+      {
+        "name": "ypfw_trader_sign",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_imports.lua",
+    "line": 32
+  },
+  {
+    "name": "y-rzproduct-8-recipe",
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "ingredients": [
+      {
+        "name": "y-zproduct-8",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-stuff-2",
+        "amount": 1.0,
+        "type": "item"
+      },
+      {
+        "name": "y-redcoil",
+        "amount": 3.0,
+        "type": "item"
+      },
+      {
+        "name": "y-grycoil",
+        "amount": 3.0,
+        "type": "item"
+      },
+      {
+        "name": "y-zproduct-8-empty",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_zmaterial.lua",
+    "line": 92
+  },
+  {
+    "name": "y-zproduct-1-recipe",
+    "category": "chemistry",
+    "seconds": 10.0,
+    "ingredients": [
+      {
+        "name": "wood",
+        "amount": 1.0,
+        "type": "item"
+      },
+      {
+        "name": "y-dirt",
+        "amount": 10.0,
+        "type": "item"
+      },
+      {
+        "name": "water",
+        "amount": 25.0,
+        "type": "fluid"
+      }
+    ],
+    "results": [
+      {
+        "name": "raw-wood",
+        "amount": 1.0,
+        "type": "item"
+      },
+      {
+        "name": "y-biomass",
+        "amount": 2.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_zmaterial.lua",
+    "line": 7
+  },
+  {
+    "name": "y-zproduct-5-recipe",
+    "category": "yrcat-component",
+    "seconds": 4.0,
+    "ingredients": [
+      {
+        "name": "y-chip-1",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-combat-train",
+        "amount": 6.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_zmaterial.lua",
+    "line": 56
+  },
+  {
+    "name": "y-zproduct-6-recipe",
+    "category": "yrcat-component",
+    "seconds": 4.0,
+    "ingredients": [
+      {
+        "name": "y-biomass",
+        "amount": 2.0,
+        "type": "item"
+      },
+      {
+        "name": "y-basic-t1-mf",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-medic",
+        "amount": 6.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_zmaterial.lua",
+    "line": 66
+  },
+  {
+    "name": "y-zproduct-7-recipe",
+    "category": "yrcat-component",
+    "seconds": 4.0,
+    "ingredients": [
+      {
+        "name": "y-chip-1",
+        "amount": 2.0,
+        "type": "item"
+      },
+      {
+        "name": "y-stuff-1",
+        "amount": 1.0,
+        "type": "item"
+      },
+      {
+        "name": "iron-plate",
+        "amount": 4.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-zielfern",
+        "amount": 4.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_zmaterial.lua",
+    "line": 76
+  },
+  {
+    "name": "y-zproduct-8-recipe",
+    "category": "yrcat-component",
+    "seconds": 2.0,
+    "ingredients": [
+      {
+        "name": "y-iron-case",
+        "amount": 2.0,
+        "type": "item"
+      },
+      {
+        "name": "y-refined-yres1",
+        "amount": 6.0,
+        "type": "item"
+      },
+      {
+        "name": "y-infused-uca2",
+        "amount": 3.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-zproduct-8",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_zmaterial.lua",
+    "line": 87
+  },
+  {
+    "name": "y-zproduct-8charge-recipe",
+    "category": "yrcat-component",
+    "seconds": 2.0,
+    "ingredients": [
+      {
+        "name": "y-zproduct-8-empty",
+        "amount": 1.0,
+        "type": "item"
+      },
+      {
+        "name": "y-infused-uca2",
+        "amount": 3.0,
+        "type": "item"
+      }
+    ],
+    "results": [
+      {
+        "name": "y-zproduct-8",
+        "amount": 1.0,
+        "type": "item"
+      }
+    ],
+    "source": "prototypes/ir_zmaterial.lua",
+    "line": 88
+  }
+]

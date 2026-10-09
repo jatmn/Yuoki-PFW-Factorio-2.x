@@ -1,0 +1,60 @@
+{
+  "observed_on": "2026-10-09",
+  "dependency_snapshots": [
+    {
+      "name": "Yuoki",
+      "version": "1.3.0",
+      "factorio_version": "2.1",
+      "commit": "ce7918f2b252f2d79ba86b9ae05d991e7af1f261",
+      "source_url": "https://github.com/jatmn/Yuoki-Factorio-2.x",
+      "working_tree_clean_at_inspection": true
+    },
+    {
+      "name": "yi_engines",
+      "version": "1.3.0",
+      "factorio_version": "2.1",
+      "commit": "dd13f421f68010fd0180cda4fb9273f9b582198e",
+      "source_url": "https://github.com/jatmn/Yuoki-Engines-Factorio-2.x",
+      "working_tree_clean_at_inspection": true
+    }
+  ],
+  "reference_dump": {
+    "engine_version_from_existing_log": "2.1.21",
+    "sha256": "70066c2fa6690ec502701317a8acf656e7a01e2c52ab23b0974ffdbbf4c8a1cc",
+    "bytes": 32308918,
+    "generated_for_this_investigation": false,
+    "limitation": "Existing dump from prior workspace activity, potentially containing additional mods; not newly generated from only the pinned dependency snapshots. Name comparison does not prove type compatibility, historical availability, or runtime behavior."
+  },
+  "missing_external_recipe_names": [
+    "flame-thrower",
+    "raw-wood"
+  ],
+  "colliding_prototypes": [
+    {
+      "type": "projectile",
+      "name": "p2"
+    },
+    {
+      "type": "equipment-grid",
+      "name": "y_walker_grid",
+      "pfw_dimensions": [
+        12,
+        12
+      ],
+      "reference_dimensions": [
+        14,
+        14
+      ]
+    }
+  ],
+  "modern_replacement_names_observed": [
+    "yi_lasergun",
+    "yi_minigun",
+    "yi_ammo_energie",
+    "yi_equip_shield_a",
+    "yi_equip_shield_b",
+    "yi_equip_battery_a",
+    "yi_equip_generator_a",
+    "yi_equip_legs_a"
+  ]
+}
