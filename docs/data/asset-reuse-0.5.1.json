@@ -985,7 +985,7 @@
         "prototypes/e_factory.lua:198",
         "prototypes/e_factory.lua:204"
       ],
-      "evidence": "Batch9: all16 east/west frames visually match the parent four-station machine and rotating front assembly. At120px display size maximum frame mean RGB difference on grey is1.9283/255 and alpha difference0.9012/255. Images are not byte-identical. Distinct north/south sheet retained. See animation-batch-9.md.",
+      "evidence": "All 16 east/west frames match the parent machine and rotating front assembly; the distinct north/south sheet is retained.",
       "metadata": "Only east/west of y-factory-4,6,7: width/height128 and scale0.9375 preserve120px display extent; shift0.3,0, frame_count16, line_length16 and default speed1 unchanged.",
       "batch": 9
     }

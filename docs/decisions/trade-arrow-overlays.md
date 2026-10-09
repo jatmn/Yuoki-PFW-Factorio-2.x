@@ -2,7 +2,7 @@
 
 Status: **accepted on 2026-10-09**. After confirming the first AI-icon candidate works, the owner requested replacing duplicate pink-arrow images with Yuoki's existing up/down-arrow helper.
 
-The counts and previews below describe the arrow conversion at `da0aa93`. The [second AI batch](../ai-artwork-batch-2.md) later redraws eight retained base icons; the helper stays unchanged and that batch totals 12 AI icons plus 106 originals. The [third batch](../artwork-batch-3.md) brings the local total to 19 AI icons plus 98 originals. The [fourth batch](../artwork-batch-4.md) brings the total to 24 AI icons plus 93 originals. The [fifth batch](../artwork-batch-5.md) brings the total to 28 AI icons plus 89 originals; three export base layers follow the new icons while pink arrows remain unchanged.
+The counts below describe the arrow conversion at `da0aa93`. The [second AI batch](../ai-artwork-batch-2.md) later redraws eight retained base icons; the helper stays unchanged and that batch totals 12 AI icons plus 106 originals. The [third batch](../artwork-batch-3.md) brings the local total to 19 AI icons plus 98 originals. The [fourth batch](../artwork-batch-4.md) brings the total to 24 AI icons plus 93 originals. The [fifth batch](../artwork-batch-5.md) brings the total to 28 AI icons plus 89 originals; three export base layers follow the new icons while pink arrows remain unchanged.
 
 ## Implementation
 
@@ -26,11 +26,7 @@ The package retains **118 local PNGs: four accepted AI icons and 114 byte-identi
 
 The [existing validator](../tools/validate_parent_content.py) checks each removed variant's original hash, retained base image/hash/dimensions, absence of deleted paths from Lua, and the expected icon layers from current source prototypes. Its complete engine-dump comparison preserves all 105 recipes, 35 disabled recipe states and unrelated parent behavior. A separate comparison against the previous candidate found **exactly 56 recipe changes, confined to icon fields**.
 
-[Package validation](../data/trade-icons-0.5.1-validation.txt) records successful headless loading, fresh-game creation and a 600-tick same-version save reload. The package contains the exact validated runtime files. The two [variant/base sheets](../artwork/trade-icons-0.5.1/arrow-pairs-0.png) ([second sheet](../artwork/trade-icons-0.5.1/arrow-pairs-1.png)) preserve the visual mapping review.
-
-The preview below composites the actual dump's layers for inspection; it is not an in-game screenshot. Check the final arrows and alt-mode presentation in the graphical client.
-
-![Generated down and up arrows on current item artwork](../artwork/trade-icons-0.5.1/arrow-helper-preview.png)
+[Package validation](../data/trade-icons-0.5.1-validation.txt) records successful headless loading, fresh-game creation and a 600-tick same-version save reload. The package contains the exact validated runtime files.
 
 ## Ongoing artwork work
 
@@ -41,5 +37,3 @@ The [sixth batch](../artwork-batch-6.md) brings the total to 30 AI icons and 87 
 The [seventh batch](../artwork-batch-7.md) adds a group icon and equipment sprite: batch7 total32 AI artwork assets and85 originals. All trade-arrow data remains unchanged.
 
 The [eighth batch](../artwork-batch-8.md) adds two static world sprites: batch8 total34 AI artwork assets and83 originals. All trade-arrow data remains unchanged.
-
-The [ninth batch](../animation-batch-9.md) reuses one parent animation sheet, leaving34 AI assets and82 originals. Trade-arrow mappings and base artwork remain unchanged.
