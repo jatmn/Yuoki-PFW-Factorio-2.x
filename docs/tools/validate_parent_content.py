@@ -80,6 +80,10 @@ assert set(redraws) == {
     'graphics/zmaterial/medic-icon.png',
     'graphics/zmaterial/panz1_32.png',
     'graphics/zmaterial/zielfern-icon.png',
+    'graphics/fab8/teil_04_32.png',
+    'graphics/fab8/msg-cb.png',
+    'graphics/fab8/sfg400.png',
+    'graphics/fab8/teil_02.png',
 }
 assert not redraws.keys() & replacements.keys()
 for entry in redraws.values():
@@ -209,5 +213,5 @@ trades = [r for r in recipes if 'yrcat-retrade' in after['recipe'][r['name']].ge
 assert len(trades) == 56
 print(f'PASS: {removed} redundant declarations inactive; 105 recipe routes and quantities retained; '
       '56 trades supported; pending mappings/parent behavior preserved; 40 parent assets verified, '
-      '24 AI icons/source images verified, 49 arrow variants replaced, 93 original graphics unchanged; '
+      '28 AI icons/source images verified, 49 arrow variants replaced, 89 original graphics unchanged; '
       '0.5.1 changelog and no migrations verified.')

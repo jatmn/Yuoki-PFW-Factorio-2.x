@@ -36,12 +36,12 @@ data:extend(
 	--{ type = "recipe", name = "y-fab8k-recipe", energy_required = 2, ingredients = {{"y-basic-t2-mf",8},{"y_structure_element",12},{"y-bluegear",8},{"y-chip-2",2}, }, result = "y-equ-9", enabled = "true", result_count = 1, order="equ-9", subgroup = "yi-material", category="yrcat-material",},		
 		
 		
-	{ type = "item", name = "y-equ-0", icon = "__yi_pfw__/graphics/fab8/teil_04_32.png", icon_size = 32, order = "a", stack_size = 100, },
+	{ type = "item", name = "y-equ-0", icon = "__yi_pfw__/graphics/fab8/teil_04_32.png", icon_size = 64, order = "a", stack_size = 100, },
 	{ type = "item", name = "y-equ-1", icon = "__Yuoki__/graphics/armor/lfg13.png", icon_size = 64, order = "a", stack_size = 100, place_as_equipment_result = "y-equ-1",},
 	{ type = "item", name = "y-equ-2", icon = "__Yuoki__/graphics/armor/mfg28.png", icon_size = 64, order = "a", stack_size = 100, place_as_equipment_result = "y-equ-2",},
-	{ type = "item", name = "y-equ-3", icon = "__yi_pfw__/graphics/fab8/msg-cb.png", icon_size = 32, order = "a", stack_size = 100, },
-	{ type = "item", name = "y-equ-4", icon = "__yi_pfw__/graphics/fab8/sfg400.png", icon_size = 32, order = "a", stack_size = 100, },
-	{ type = "item", name = "y-equ-5", icon = "__yi_pfw__/graphics/fab8/teil_02.png", icon_size = 32, order = "a", stack_size = 100, },
+	{ type = "item", name = "y-equ-3", icon = "__yi_pfw__/graphics/fab8/msg-cb.png", icon_size = 64, order = "a", stack_size = 100, },
+	{ type = "item", name = "y-equ-4", icon = "__yi_pfw__/graphics/fab8/sfg400.png", icon_size = 64, order = "a", stack_size = 100, },
+	{ type = "item", name = "y-equ-5", icon = "__yi_pfw__/graphics/fab8/teil_02.png", icon_size = 64, order = "a", stack_size = 100, },
 	-- Parent owner: Yuoki, item yi_equip_generator_a. Preserved inactive PFW definition.
 	--[=[
 	{ type = "item", name = "y-equ-6", icon = "__Yuoki__/graphics/armor/energy_icon.png", icon_size = 64, order = "a", stack_size = 100, place_as_equipment_result = "y-equ-6",},

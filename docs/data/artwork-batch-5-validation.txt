@@ -1,0 +1,35 @@
+0.5.1 artwork batch5, 2026-10-09
+Starting head: 8416b2f528c94e94ba6d3b11b3672a4426a1f09e
+Four64px battlefield-support icons. Owner clarified sfg400: box with cylinder on its side; flat-case and upright-canister drafts rejected and retained only as documentation.
+Originals, production sprite associations and both pinned parents inspected; no assigned animation sheets for these four components.
+PASS: Factorio2.1.21 with Yuoki/Engines1.3.0 loads packaged mod, creates fresh game and reloads for600ticks.
+PASS: full Phase1-to-current prototype/preservation validator.
+PASS: independent batch4 comparison: four item icon_size fields32->64, three export base-layer icon_size32->64 and scale1->0.5 pairs only.
+PASS: Lua bytes reconstruct exactly with four metadata substitutions; all other code unchanged.
+PASS: previous24 AI manifest entries and runtime files preserved;28 current AI source/output hashes verified,89 original graphics unchanged,117 local PNGs.
+PASS:40 parent replacements and49 arrow variants retained; four base hash/dimension records refreshed including inactive shield-component export mapping.
+PASS:105 recipe routes/quantities,35 disabled states and232 original archive files preserved; version0.5.1 and no migrations.
+PASS: source alpha/margins and64px visual comparison;144-file ZIP byte-equal to runtime source, excludes docs/masters.
+Package: yi_pfw_0.5.1.zip
+SHA256: ac5878fd41dd8dc75c63361424bf92e2effba02ea350e13314436127537d1c83
+Final corrected appearance and integrated graphical check: pending owner local client.
+
+batch5-data:
+   0.172 Loading mod yi_pfw 0.5.1 (data.lua)
+   0.394 Prototype list checksum: 755479145
+   0.881 Factorio initialised
+   0.902 Goodbye
+
+batch5-new:
+   0.185 Loading mod yi_pfw 0.5.1 (data.lua)
+   0.407 Prototype list checksum: 755479145
+   0.432 Factorio initialised
+   0.432 Info Create.cpp:32: Creating new map /home/pi/pr-review/fix-issue-jatmn-Yuoki-PFW-Factorio-2.x-repository-BdhQTWPf/runtime/game/saves/pfw-batch5-new.zip
+   1.083 Goodbye
+
+batch5-reload:
+   0.181 Loading mod yi_pfw 0.5.1 (data.lua)
+   0.406 Prototype list checksum: 755479145
+   0.433 Factorio initialised
+  Performed 600 updates in 51.393 ms
+   0.548 Goodbye

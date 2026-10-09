@@ -663,6 +663,113 @@
       "source_sha256": "79423af679a01712eae5ff88383f7cc8cfe1cb4642c9ab87f7bb4cbc82157cf1",
       "prompt": "Use case: precise-object-edit. Edit target image1: enlarged original32px Yuoki PFW inventory icon, authoritative for original shape, orientation and colors. Faithfully redraw for a64px game icon, following the established industrial pre-rendered artwork method. A compact futuristic self-adjusting optical scope, diagonal from upper-left to lower-right. Two neighboring elongated grey/silver forms: a slender dark-grey optical tube on the left with a small pale rounded end at upper-left, and a broader pale silver sloped/ribbed housing on the right. A short grey bracket joins them near the lower end. At the lower-right/front end, dark housing surrounds a small green optical area with a RED center indicator/lens. Preserve original diagonal camera, asymmetrical two-part silhouette, pale grey ribbing and small red/green accents. No rifle, hand, tripod, extra lenses, text or redesign into binoculars. Refine unclear pixel edges conservatively, maintaining original object identity, proportions, color positions and relative canvas occupancy. One whole object centered on square transparent canvas, small clear margins; no external cast shadow or floor. Subtle surface detail readable at64px, not a new concept design. No arrows, text, watermark, border, backdrop or unrelated props. Real transparent background.",
       "reference_review": "Item-only component: no corresponding assigned entity/equipment/animation. Original enlarged icon and locale description inspected. Both pinned parents checked; no equivalent replacement selected."
+    },
+    {
+      "label": "Shield Generator Basic Component",
+      "batch": 5,
+      "path": "graphics/fab8/teil_04_32.png",
+      "original_dimensions": [
+        32,
+        32
+      ],
+      "original_sha256": "e07eeffa746f36959c45296dd26501858214c521bf8b8dacf69ec03905e2b920",
+      "dimensions": [
+        64,
+        64
+      ],
+      "sha256": "7a24f64a465e0bbf13537eea5014b2f4e116fa9527b748634185b9a59a057d5a",
+      "source_path": "docs/artwork/ai-redraw-0.5.1/teil_04_32-source.png",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "source_sha256": "18bd555ee2eb1ebbba8f814745eb2672677731f82572c300520159ed75cda4d5",
+      "prompt": "Use case: precise-object-edit. Image1 is the edit target: an enlarged original32px Yuoki PFW game icon. Faithfully redraw the SAME object as a detailed pre-rendered industrial 64px inventory icon. Original silhouette, camera, component positions and color placement are authoritative. No assigned animation sheet exists for this item and no matching parent artwork was found. A small dark mechanical support assembly viewed obliquely from above: compact deep-blue central hub with cyan blue side accents and one small yellow indicator at its upper tip. Four short dark splayed arms extend to small grey square end pads around it: left-middle, right-middle/down, lower-left, with the upper structure compact and mostly dark. Preserve the exact outline and pad placement of the reference; do not turn it into a large building, humanoid or flying craft. Strongest colors remain blue/cyan center, yellow upper spot, dark-grey arms and grey feet. Resolve blurred pixels conservatively; do not redesign or add invented major parts. Keep the same object orientation, proportions and canvas occupancy. Whole object centered on a square canvas with clear margins, actual transparent background, no floor or external cast shadow. Use refined metal/material shading readable at64px, not blocky enlarged pixels. No text, arrows, border or watermark.",
+      "reference_review": "Original enlarged icon, locale, ir_fab8/uo_fab8 source associations and both pinned parents inspected. No assigned entity/equipment/animation and no confirmed parent artwork replacement."
+    },
+    {
+      "label": "Advanced Targeting Device",
+      "batch": 5,
+      "path": "graphics/fab8/msg-cb.png",
+      "original_dimensions": [
+        32,
+        32
+      ],
+      "original_sha256": "c12c4ef6336208787b1e5a925a0b16418664ef9f9e45afa1b14b67bf74b400c8",
+      "dimensions": [
+        64,
+        64
+      ],
+      "sha256": "bfb06630b72a6c08a1024228bdb6aec5b236bf9106773e2acd32f13296f9c9e6",
+      "source_path": "docs/artwork/ai-redraw-0.5.1/msg-cb-source.png",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "source_sha256": "3816ab8bae62d5e2a4ed3e09ba30f1c697063eea2a65060e5287efb5c254ce01",
+      "prompt": "Use case: precise-object-edit. Image1 is the edit target: an enlarged original32px Yuoki PFW game icon. Faithfully redraw the SAME object as a detailed pre-rendered industrial 64px inventory icon. Original silhouette, camera, component positions and color placement are authoritative. No assigned animation sheet exists for this item and no matching parent artwork was found. A compact asymmetrical targeting assembly. Preserve this exact grey/purple multi-part mechanism: a broad grey curved/angled housing at lower-left around a vivid magenta inset; narrow central dark/grey spine extends upward; upper-left small pale pink rounded end on a purple support; to the right a short diagonal transverse assembly with a reddish collar near center-right and a pale pink/lilac rectangular end at far right. Small subdued purple accents, dark gaps between parts. Do not replace with generic camera, rifle scope, robot or tripod. Match the original connected geometry, diagonal camera and grey/lilac/magenta palette. Resolve blurred pixels conservatively; do not redesign or add invented major parts. Keep the same object orientation, proportions and canvas occupancy. Whole object centered on a square canvas with clear margins, actual transparent background, no floor or external cast shadow. Use refined metal/material shading readable at64px, not blocky enlarged pixels. No text, arrows, border or watermark.",
+      "reference_review": "Original enlarged icon, locale, ir_fab8/uo_fab8 source associations and both pinned parents inspected. No assigned entity/equipment/animation and no confirmed parent artwork replacement."
+    },
+    {
+      "label": "Battlefield Energy Support",
+      "batch": 5,
+      "path": "graphics/fab8/sfg400.png",
+      "original_dimensions": [
+        32,
+        32
+      ],
+      "original_sha256": "8c29f1d44bc25977c98d066648c75d5e07f28cdc97d45a9322b7bbf840b83d1e",
+      "dimensions": [
+        64,
+        64
+      ],
+      "sha256": "eeabc2d5f75021f095c4b8947bdcb17f38447d116011f247fa3414c406a22655",
+      "source_path": "docs/artwork/ai-redraw-0.5.1/sfg400-source.png",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "source_sha256": "7ddb513a3981605300659f36bb0c1cac2acbe87663a2e45d7a8922600225b473",
+      "prompt": "Use case: precise-object-edit. Input image1 is the original Yuoki PFW sfg400 icon enlarged from32px; use it as the authoritative reference for colors, viewing angle and overall proportions. Redraw it as a detailed industrial game inventory icon. The owner clarified the physical structure: A BOX WITH A CYLINDER ON ITS SIDE. Depict two clearly distinct connected forms: a compact dark charcoal rectangular box housing at the back, and a copper/bronze cylindrical module attached externally along its visible side/front. The rectangular box must remain visibly box-shaped with straight edges and a flat upper surface. The side-mounted cylinder must read as a round drum with curved copper casing, curved rim and rounded end geometry, not a flat panel. Its exposed curved surface carries the original narrow cyan/deep-blue segmented energy insets between copper ribs. Keep the original oblique three-quarter camera, compact wide proportions, dark upper/rear box, copper lower/front mechanism, and blue indicator placement as closely as possible. Do NOT make the whole assembly one upright cylindrical canister, and do NOT flatten the cylinder into a rectangular suitcase. No carrying handle added above the box. Preserve original palette: muted copper/brown, charcoal grey, small vivid blue/cyan insets. Conservative mechanical detailing; no invented extra devices. Full object centered with small clear margins, square genuinely transparent background. Pre-rendered industrial metal artwork legible when reduced to64px, no blocky pixels, text, arrows, floor or cast shadow.",
+      "reference_review": "Original enlarged icon, locale, ir_fab8/uo_fab8 source associations and both pinned parents inspected. No assigned entity/equipment/animation and no confirmed parent artwork replacement.",
+      "correction": "Owner rejected a flat case and then a whole upright canister; clarified a box with a cylinder on its side. Selected redraw uses a rectangular rear housing and externally attached horizontal cylinder.",
+      "rejected_candidates": [
+        {
+          "reason": "flat-case",
+          "source_path": "docs/artwork/ai-redraw-0.5.1/sfg400-rejected-flat-case.png",
+          "sha256": "872d625ac85d79355f1b04987b124181045c5579f33af9e514c9f2619e96e894",
+          "prompt": "Use case: precise-object-edit. Image1 is the edit target: an enlarged original32px Yuoki PFW game icon. Faithfully redraw the SAME object as a detailed pre-rendered industrial 64px inventory icon. Original silhouette, camera, component positions and color placement are authoritative. No assigned animation sheet exists for this item and no matching parent artwork was found. A compact rectangular copper/brown energy-support unit in three-quarter perspective. Bronze/copper vertical ribbed housing panels face front and right, deep dark inset top under a thick charcoal-grey bar/handle spanning diagonally across the top-left/back edge. Two narrow vertical inset columns of cyan/deep-blue rectangular energy indicators on the front, separated and surrounded by copper ribs. Keep original squat cuboid silhouette, perspective, brown/copper palette, dark upper frame and blue indicator arrangement. Not a futuristic silver suitcase or tall reactor; do not add broad glowing panels or extra equipment. Resolve blurred pixels conservatively; do not redesign or add invented major parts. Keep the same object orientation, proportions and canvas occupancy. Whole object centered on a square canvas with clear margins, actual transparent background, no floor or external cast shadow. Use refined metal/material shading readable at64px, not blocky enlarged pixels. No text, arrows, border or watermark."
+        },
+        {
+          "reason": "upright-canister",
+          "source_path": "docs/artwork/ai-redraw-0.5.1/sfg400-rejected-upright-canister.png",
+          "sha256": "1f5eaadebc8a6d79534de863c02bc107dec8c0a66d3297a2a1e6526d1efebdc4",
+          "prompt": "Use case: precise-object-edit. Image1 is the authoritative original Yuoki PFW sfg400 battlefield-energy-support icon enlarged from32px. Image2 is a REJECTED previous redraw: it wrongly flattened the unit into a rectangular suitcase. User correction: this should be a CYLINDER UNIT. Redraw the original as a compact upright cylindrical industrial energy unit viewed obliquely from above. Make the bronze/copper outer housing visibly round in plan, with a curved front surface, curved sides and vertical copper ribs arranged around the cylinder. Inset narrow segmented blue/cyan vertical energy strips follow the curved shell, separated by copper ribs. Retain the original dark charcoal upper frame spanning the top/back edge, but conform it to the cylindrical assembly; do not make a rectangular suitcase handle and flat case. Preserve original brown/copper, deep blue/cyan and charcoal colors, original camera and compact proportions. Image2 is useful only for material-detail style and colors, NOT geometry. The round volume and curved top/outer contour must read clearly at64px. No new panels, tubes, floor, props, text or arrows. One whole object with small clear margins on square genuinely transparent canvas. Refined pre-rendered industrial metal detail; no blocky pixels, no external cast shadow."
+        }
+      ]
+    },
+    {
+      "label": "Battlefield Energy Stockpile",
+      "batch": 5,
+      "path": "graphics/fab8/teil_02.png",
+      "original_dimensions": [
+        32,
+        32
+      ],
+      "original_sha256": "bb51b72072fb3641718452454c7585c282b8730710343a0757912daf808159b8",
+      "dimensions": [
+        64,
+        64
+      ],
+      "sha256": "9bae4d0da4c33849a3cfab5937fd1d7c41bb4fe10e0965f456ece81706c8026b",
+      "source_path": "docs/artwork/ai-redraw-0.5.1/teil_02-source.png",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "source_sha256": "5f472e9e0e8aec8a429adc9b97410f9f99d592b98a97be303a4f2f1a4289b2b0",
+      "prompt": "Use case: precise-object-edit. Image1 is the edit target: an enlarged original32px Yuoki PFW game icon. Faithfully redraw the SAME object as a detailed pre-rendered industrial 64px inventory icon. Original silhouette, camera, component positions and color placement are authoritative. No assigned animation sheet exists for this item and no matching parent artwork was found. A small elongated paired energy-storage assembly laid diagonally upper-left to lower-right. Two adjacent narrow silver-grey/blue storage units in a dark charcoal open frame, cyan/light-blue illuminated upper portions near the upper-left end, small golden/yellow caps/contacts just behind those bright areas. Dark recessed lower/right portions with slender cyan accents and grey rails/end tips. Preserve the exact asymmetrical diagonal silhouette, two parallel forms, grey ribs/rails, dark base and yellow/cyan accents from the original. Not a gun, vehicle or backpack; do not invent additional cells or a rectangular carrying case. Resolve blurred pixels conservatively; do not redesign or add invented major parts. Keep the same object orientation, proportions and canvas occupancy. Whole object centered on a square canvas with clear margins, actual transparent background, no floor or external cast shadow. Use refined metal/material shading readable at64px, not blocky enlarged pixels. No text, arrows, border or watermark.",
+      "reference_review": "Original enlarged icon, locale, ir_fab8/uo_fab8 source associations and both pinned parents inspected. No assigned entity/equipment/animation and no confirmed parent artwork replacement."
     }
   ],
   "batches": [
@@ -709,6 +816,18 @@
         "zielfern-icon"
       ],
       "review": "Original/full-source/64px comparison; locale and both-parent reference checks. No assigned animations for these item-only components. Integrated graphical check pending."
+    },
+    {
+      "batch": 5,
+      "date": "2026-10-09",
+      "starting_head": "8416b2f528c94e94ba6d3b11b3672a4426a1f09e",
+      "assets": [
+        "teil_04_32",
+        "msg-cb",
+        "sfg400",
+        "teil_02"
+      ],
+      "review": "Original/full-source/64px comparison; no assigned sprite sheets. Both parents checked. Owner clarified sfg400 as box with cylinder on side; previous flat case and upright canister rejected. Integrated graphical check pending."
     }
   ]
 }

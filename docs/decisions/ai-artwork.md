@@ -20,7 +20,7 @@ Before future drawing, inspect the existing sprite/animation sheets and check bo
 
 The owner subsequently accepted the third batch's appearance and requested the [ammunition-factory correction](../ammunition-factory-artwork.md). Its original first-batch redraw is superseded by a sprite-referenced version; the first-batch comparison below remains historical. That correction retains 19 AI icons and 98 unchanged originals.
 
-After PR #6 merged, the [fourth batch](../artwork-batch-4.md) adds five component redraws, bringing the current count to 24 AI icons and 93 unchanged originals. These items have no assigned animation sheets; both parent mods were checked for related artwork before drawing. The fourth batch awaits the owner’s integrated graphical check.
+After PR #6 merged, the [fourth batch](../artwork-batch-4.md) adds five component redraws, bringing the current count to 24 AI icons and 93 unchanged originals. These items have no assigned animation sheets; both parent mods were checked for related artwork before drawing. The owner accepted the fourth batch. The [fifth batch](../artwork-batch-5.md) adds four battlefield-support icons, bringing the current total to 28 AI icons and 89 originals. It records the owner’s correction of the energy-support structure to a box with a cylinder on its side; the final corrected appearance and integrated graphical check remain pending.
 
 ## Arrow variants
 

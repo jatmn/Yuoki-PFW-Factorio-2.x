@@ -2,7 +2,7 @@
 
 Status: **accepted on 2026-10-09**. After confirming the first AI-icon candidate works, the owner requested replacing duplicate pink-arrow images with Yuoki's existing up/down-arrow helper.
 
-The counts and previews below describe the arrow conversion at `da0aa93`. The [second AI batch](../ai-artwork-batch-2.md) later redraws eight retained base icons; the helper stays unchanged and that batch totals 12 AI icons plus 106 originals. The [third batch](../artwork-batch-3.md) brings the local total to 19 AI icons plus 98 originals. The [fourth batch](../artwork-batch-4.md) brings the current total to 24 AI icons plus 93 originals; trade arrows remain unchanged.
+The counts and previews below describe the arrow conversion at `da0aa93`. The [second AI batch](../ai-artwork-batch-2.md) later redraws eight retained base icons; the helper stays unchanged and that batch totals 12 AI icons plus 106 originals. The [third batch](../artwork-batch-3.md) brings the local total to 19 AI icons plus 98 originals. The [fourth batch](../artwork-batch-4.md) brings the total to 24 AI icons plus 93 originals. The [fifth batch](../artwork-batch-5.md) brings the current total to 28 AI icons plus 89 originals; three export base layers follow the new icons while pink arrows remain unchanged.
 
 ## Implementation
 
