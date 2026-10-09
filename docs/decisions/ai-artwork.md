@@ -20,7 +20,7 @@ Before future drawing, inspect the existing sprite/animation sheets and check bo
 
 The owner subsequently accepted the third batch's appearance and requested the [ammunition-factory correction](../ammunition-factory-artwork.md). Its original first-batch redraw is superseded by a sprite-referenced version; the first-batch comparison below remains historical. That correction retains 19 AI icons and 98 unchanged originals.
 
-After PR #6 merged, the [fourth batch](../artwork-batch-4.md) adds five component redraws, bringing the current count to 24 AI icons and 93 unchanged originals. These items have no assigned animation sheets; both parent mods were checked for related artwork before drawing. The owner accepted the fourth batch. The [fifth batch](../artwork-batch-5.md) adds four battlefield-support icons, bringing the current total to 28 AI icons and 89 originals. It records the owner’s correction of the energy-support structure to a box with a cylinder on its side; the final corrected appearance and integrated graphical check remain pending.
+After PR #6 merged, the [fourth batch](../artwork-batch-4.md) adds five component redraws, bringing the count to 24 AI icons and 93 unchanged originals. These items have no assigned animation sheets; both parent mods were checked for related artwork before drawing. The owner accepted the fourth batch. The [fifth batch](../artwork-batch-5.md) adds four battlefield-support icons, bringing the total to 28 AI icons and 89 originals. It records the owner’s correction of the energy-support structure to a box with a cylinder on its side; the final corrected appearance and integrated graphical check remain pending.
 
 ## Arrow variants
 
@@ -44,3 +44,7 @@ The [manifest](../data/ai-redraw-0.5.1.json) records exact prompts, built-in `im
 ![Originals, conventional resizing and selected AI redraws](../artwork/ai-redraw-0.5.1/comparison.png)
 
 Factorio's [2.1.21 icon documentation](https://lua-api.factorio.com/2.1.21/types/IconData.html) defines `icon_size` as the square image size in pixels. The existing [full-dump validator](../tools/validate_parent_content.py) admits only these four image replacements and their icon-size changes on top of the documented parent consolidation, while checking all other retained images and gameplay data. [Validation and candidate identity](../data/ai-redraw-0.5.1-validation.txt) record the package checks. The owner accepted the sample appearance; graphical validation of the integrated candidate remains a separate local check.
+
+## Paired states and batch 6
+
+The owner requires the empty energy cell to use the same physical model as the first-round filled cell. The [sixth batch](../artwork-batch-6.md) directly edits the accepted filled master to switch off its glow, and redraws the second-armor icon after inspecting its assigned parent character sheet. Current inventory: 30 AI icons and 87 originals. Existing filled artwork and animation sheets remain unchanged; graphical confirmation of batch6 is pending.

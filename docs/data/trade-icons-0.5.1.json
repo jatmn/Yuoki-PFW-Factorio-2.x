@@ -734,10 +734,10 @@
       "original_sha256": "66947aefaeb77258b4fc8cd2b5a7a897538a50f626ba7e4341359cf44d2ebead",
       "base_icon": "__yi_pfw__/graphics/fab3/neron_u5_32.png",
       "base_dimensions": [
-        32,
-        32
+        64,
+        64
       ],
-      "base_sha256": "45a671f378cb6eaded55bc04923cdc9b57a49eca77605773271e943f53c57dda",
+      "base_sha256": "dd57a7eea6c812f0fa42e6e3563cf513f9abf95f9e25bfbce7e105716579c4bb",
       "direction": "down",
       "source_references_before": [],
       "future_use": "Register or restore the intended item with this base artwork, then use yi.lib.recipe.atomics.item_down(item_name). Do not recreate a baked arrow image."

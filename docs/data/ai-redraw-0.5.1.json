@@ -770,6 +770,77 @@
       "source_sha256": "5f472e9e0e8aec8a429adc9b97410f9f99d592b98a97be303a4f2f1a4289b2b0",
       "prompt": "Use case: precise-object-edit. Image1 is the edit target: an enlarged original32px Yuoki PFW game icon. Faithfully redraw the SAME object as a detailed pre-rendered industrial 64px inventory icon. Original silhouette, camera, component positions and color placement are authoritative. No assigned animation sheet exists for this item and no matching parent artwork was found. A small elongated paired energy-storage assembly laid diagonally upper-left to lower-right. Two adjacent narrow silver-grey/blue storage units in a dark charcoal open frame, cyan/light-blue illuminated upper portions near the upper-left end, small golden/yellow caps/contacts just behind those bright areas. Dark recessed lower/right portions with slender cyan accents and grey rails/end tips. Preserve the exact asymmetrical diagonal silhouette, two parallel forms, grey ribs/rails, dark base and yellow/cyan accents from the original. Not a gun, vehicle or backpack; do not invent additional cells or a rectangular carrying case. Resolve blurred pixels conservatively; do not redesign or add invented major parts. Keep the same object orientation, proportions and canvas occupancy. Whole object centered on a square canvas with clear margins, actual transparent background, no floor or external cast shadow. Use refined metal/material shading readable at64px, not blocky enlarged pixels. No text, arrows, border or watermark.",
       "reference_review": "Original enlarged icon, locale, ir_fab8/uo_fab8 source associations and both pinned parents inspected. No assigned entity/equipment/animation and no confirmed parent artwork replacement."
+    },
+    {
+      "label": "Empty energy cell",
+      "batch": 6,
+      "path": "graphics/fab8/fusion-cell-empty.png",
+      "original_dimensions": [
+        32,
+        32
+      ],
+      "original_sha256": "a27ee5691420634dfcaea6a0925c8821478a753fe7809c3bac96ce03addd4637",
+      "dimensions": [
+        64,
+        64
+      ],
+      "sha256": "7c3099f225e2c5260e2ac03dfe11490ad749c05da66703b5ec4e21505b1f6511",
+      "source_path": "docs/artwork/ai-redraw-0.5.1/fusion-cell-empty-source.png",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "source_sha256": "3d8dde4b2d2023fb434cbda6714383265727a1559d1390d01ddaba220cb84aee",
+      "prompt": "Use case: lighting-weather. EDIT this exact accepted first-round energy-cell image. Produce the EMPTY/OFF state of THE SAME MODEL. Make only one localized change: turn off every magenta/purple light in its three large inset windows and the narrow upper illuminated ring, and remove their colored reflected light from adjacent metal. Windows should become dark muted grey-violet glass, non-emissive, keeping exactly their current geometry and bevels. Preserve ALL existing physical details, scratches, silhouette, cap, ring count, vents, panel seams, rib widths, orientation, perspective, lighting direction, object size and placement on the canvas. Do not reconstruct, redesign, rescale or reframe the object. In particular retain the exact stacked circular upper rings and top cap and the three front-facing panels. Output should align with the reference when overlaid; only the light-state regions and affected reflections should differ. Keep the existing genuine transparent background unchanged. No floor, shadow, text, extra pieces or background. This is a lighting-state edit, not a fresh object rendering.",
+      "references": [
+        {
+          "path": "graphics/equip/fusion-cell-64.png",
+          "sha256": "45e1c5df3d92d4f1db4672d99a91c4a94753ccfbb940e47cecd6d1e3e3f3a3e9"
+        },
+        {
+          "path": "docs/artwork/ai-redraw-0.5.1/fusion-cell-source.png",
+          "sha256": "df13252d5a239440a15b20df4fe64e46e9f3b80f2c5b5a2201751cfe1c28e749"
+        }
+      ],
+      "reference_review": "Original empty icon and local equipment sprite checked; final generation edits accepted filled-cell master directly. Owner requires same physical model, different light state. Reviewed paired64px views; not a pixel-identical transformation claim.",
+      "superseded_candidate": {
+        "source_path": "docs/artwork/ai-redraw-0.5.1/fusion-cell-empty-superseded-source.png",
+        "sha256": "17379055459945132cec7543b563df3edd34f813acb9ea9ee3ea9f5c39b3fda5",
+        "prompt": "Use case: precise-object-edit. Image1 is the original EMPTY fusion-cell icon enlarged from32px; authoritative for its unlit state and original silhouette. Image2 is the accepted modern FILLED cell artwork; match its physical metal canister geometry, camera, proportions and material detail exactly, but make the cell EMPTY. Image3 is the original related equipment sprite, supporting the cylinder/cap/rib geometry only; do not copy its square blue equipment background. Render one upright dark charcoal metal energy-cell canister with its circular cap, stacked upper rings and dark vertical ribs as in image2. Its inset panels are unlit muted grey/grey-violet, like image1, not glowing pink, purple, blue or cyan. Preserve highlights on metal, but no colored emissive glow or energy. Keep full object centered with small margins on square genuinely transparent canvas. Detailed pre-rendered industrial inventory artwork readable at64px, no pixel blocks, floor, external shadow, text, arrow or new objects. This is the empty state of the SAME accepted filled-cell design, not a redesigned canister.",
+        "reason": "Replaced with direct lighting-state edit after owner emphasized same model as first-round filled cell."
+      }
+    },
+    {
+      "label": "Second combat armor",
+      "batch": 6,
+      "path": "graphics/fab3/neron_u5_32.png",
+      "original_dimensions": [
+        32,
+        32
+      ],
+      "original_sha256": "45a671f378cb6eaded55bc04923cdc9b57a49eca77605773271e943f53c57dda",
+      "dimensions": [
+        64,
+        64
+      ],
+      "sha256": "dd57a7eea6c812f0fa42e6e3563cf513f9abf95f9e25bfbce7e105716579c4bb",
+      "source_path": "docs/artwork/ai-redraw-0.5.1/neron_u5_32-source.png",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "source_sha256": "7a35b194a13fe0815cecded7a0d33d1737f90b9de7d913c27c1130ed080ce5cb",
+      "prompt": "Use case: precise-object-edit. Image1 is the edit target, original Yuoki PFW armor inventory icon enlarged from32px, and is authoritative for SHAPE and COLOR. Images2 and3 are frames of the ACTUAL assigned parent character animation, supplied only to understand dark grey-green metal/material context; do NOT turn the inventory icon into that complete humanoid character. Faithfully redraw image1 as a small EMPTY OPEN MECHANICAL ARMOR FRAME: compact broad uneven grey-green upper yoke/shoulder assembly, open black/transparent gaps, two long slender segmented articulated leg struts ending in flat splayed feet. No head, face, person, helmet, solid torso or extra arms. The upper horizontal assembly has chunky raised ends and a small subdued reddish central accent; left upper end sits slightly lower than right as in original camera. Legs are thin dark green-grey metal with pale grey-green highlights at joints and feet, large clear gap between legs. Match original near-front slight three-quarter orientation, tall narrow canvas occupancy and sparse mechanical silhouette. Refine conservative industrial 3D metal shading without inventing major pieces. Whole frame centered with margins on square transparent background, no floor/cast shadow, no text or arrows. Readable at64px and no blocky pixels.",
+      "references": [
+        {
+          "path": "__Yuoki__/graphics/armor/armor2_idle_sheet.png",
+          "sha256": "ec4fbac4089840167b1220c35466659e200f30156eb50cad83a3d9462e939591",
+          "frame_width": 80,
+          "frame_height": 100,
+          "reviewed": "First frame in each of8 direction rows; front direction4 also supplied separately."
+        }
+      ],
+      "reference_review": "Assigned character sheet gives material/context; original open-frame icon remains silhouette authority. Related parent neron_u3 belongs to different armor. Both parents checked; no equivalent replacement selected; ownership stays pending."
     }
   ],
   "batches": [
@@ -828,6 +899,16 @@
         "teil_02"
       ],
       "review": "Original/full-source/64px comparison; no assigned sprite sheets. Both parents checked. Owner clarified sfg400 as box with cylinder on side; previous flat case and upright canister rejected. Integrated graphical check pending."
+    },
+    {
+      "batch": 6,
+      "date": "2026-10-09",
+      "starting_head": "75e0802febd02df92a1f4ff3695b02f7aeee0fb7",
+      "assets": [
+        "fusion-cell-empty",
+        "neron_u5_32"
+      ],
+      "review": "Original and sprite references plus both-parent check; paired filled/empty64px comparison. Final integrated graphical check pending."
     }
   ]
 }

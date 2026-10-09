@@ -50,7 +50,7 @@ data:extend(
 	{
 		type = "armor",
 		name = "y-cyb-9u",
-		icon = "__yi_pfw__/graphics/fab3/neron_u5_32.png", icon_size = 32,
+		icon = "__yi_pfw__/graphics/fab3/neron_u5_32.png", icon_size = 64,
 		resistances = 
 		{
 			{	type = "physical", decrease = 14, percent = 75 },
