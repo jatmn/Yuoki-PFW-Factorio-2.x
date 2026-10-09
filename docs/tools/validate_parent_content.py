@@ -58,6 +58,23 @@ expected['character']['character']['animations'] = [
 asset_map = json.loads((ROOT / 'docs/data/asset-reuse-0.5.1.json').read_text())
 replacements = {a['pfw_path']: a for a in asset_map['replacements']}
 paths = {'__yi_pfw__/' + a['pfw_path']: a for a in replacements.values()}
+redraw_map = json.loads((ROOT / 'docs/data/ai-redraw-0.5.1.json').read_text())
+redraws = {a['path']: a for a in redraw_map['redraws']}
+redraw_paths = {'__yi_pfw__/' + path: entry for path, entry in redraws.items()}
+assert set(redraws) == {
+    'graphics/entity/fabrik-ammo-icon.png', 'graphics/fab2/plasma-gun.png',
+    'graphics/fab5/reifen.png', 'graphics/fab8/fusion-cell.png',
+}
+assert not redraws.keys() & replacements.keys()
+for entry in redraws.values():
+    for path, digest, dimensions in [
+        (entry['path'], entry['sha256'], entry['dimensions']),
+        (entry['source_path'], entry['source_sha256'], entry['source_dimensions']),
+    ]:
+        content = (ROOT / path).read_bytes()
+        assert hashlib.sha256(content).hexdigest() == digest, path
+        assert list(struct.unpack('>II', content[16:24])) == dimensions, path
+    assert entry['dimensions'] == [64, 64]
 providers = {'Yuoki': args.yuoki, 'yi_engines': args.engines}
 provider_paths = {}
 for entry in replacements.values():
@@ -75,6 +92,8 @@ def replace_visuals(value):
     if isinstance(value, dict):
         if isinstance(value.get('icon'), str) and value['icon'] in paths:
             value['icon_size'] = paths[value['icon']]['provider_dimensions'][0]
+        if isinstance(value.get('icon'), str) and value['icon'] in redraw_paths:
+            value['icon_size'] = 64
         for key, child in value.items():
             value[key] = replace_visuals(child)
     elif isinstance(value, list):
@@ -98,6 +117,8 @@ assets = [a for a in manifest['files'] if a['path'].startswith('graphics/')]
 for asset in assets:
     if asset['path'] in replacements:
         assert replacements[asset['path']]['original_sha256'] == asset['sha256'], asset['path']
+    elif asset['path'] in redraws:
+        assert redraws[asset['path']]['original_sha256'] == asset['sha256'], asset['path']
     else:
         assert hashlib.sha256((ROOT / asset['path']).read_bytes()).hexdigest() == asset['sha256'], asset['path']
 assert len(replacements) == 39
@@ -137,5 +158,5 @@ trades = [r for r in recipes if 'yrcat-retrade' in after['recipe'][r['name']].ge
 assert len(trades) == 56
 print(f'PASS: {removed} redundant declarations inactive; 105 recipe routes and quantities retained; '
       '56 trades supported; pending mappings/parent behavior preserved; 39 parent assets verified, '
-      '167 original graphics unchanged; '
+      '4 approved AI icons/source images verified, 163 original graphics unchanged; '
       '0.5.1 changelog and no migrations verified.')

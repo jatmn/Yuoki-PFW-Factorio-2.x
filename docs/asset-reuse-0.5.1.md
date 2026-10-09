@@ -2,6 +2,8 @@
 
 This continues the unmerged PR #6 after the owner confirmed the first 0.5.1 candidate loads. Version remains **0.5.1**. No migrations, content-identity decisions, balance changes or retained-artwork upscaling are included in this pass.
 
+This record describes the completed parent-reuse pass at `753b29a`. The owner subsequently confirmed that candidate loads and selected [AI redraws](decisions/ai-artwork.md): four of the 167 retained images have since been redrawn, while the other 163 remain unchanged.
+
 ## Result
 
 **39 confirmed duplicate PNGs** now resolve to parent files: 33 from Yuoki and six from Engines. Their local copies were removed after updating all active and commented Lua references. The remaining **167 PNGs are byte-for-byte unchanged**, including unused unique artwork and candidates without a suitable confirmed replacement. All disabled code stays present and inactive.

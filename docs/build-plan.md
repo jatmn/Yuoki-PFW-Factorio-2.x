@@ -58,3 +58,7 @@ This milestone establishes a working launch baseline. It does not assert complet
 Continue the documented parent-content consolidation, unique-recipe restoration, duplicate-asset replacement/removal, retained-artwork upscaling, balance work, cleanup and expansion **after the startup milestone**. These requirements remain in force; they are not prerequisites for Phase 1 except where a specific compatibility fix is needed to launch.
 
 Preserve unique recipes when a machine/item moves to a parent. Retain redundant prototype definitions commented and annotated, and preserve other disabled content and unused unique assets. Apply only the explicit legacy-migration removal exception above. Completing later work does not authorize a bump beyond the explicitly approved current version, 0.5.1.
+
+## Retained-artwork method
+
+On 2026-10-09 the owner selected **AI-assisted redraws** after reviewing four comparisons against conventional resizing. Follow the [accepted artwork decision](decisions/ai-artwork.md), preserve parent reuse and unused unique artwork, and review later batches at game size. The first four reviewed icons are implemented at 64px; this does not complete all retained artwork or animation work.

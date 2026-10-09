@@ -1,0 +1,35 @@
+0.5.1 AI artwork first batch,2026-10-09
+Starting head:753b29ab7107ee897eca99ee77ff595c4229083d
+Owner selected AI redraws after viewing four comparisons.
+Applied exactly the four reviewed64px derivatives; saved full-resolution source PNGs and prompts in docs.
+Factorio2.1.21 headless, Yuoki/Engines1.3.0 at pinned manifest commits.
+PASS: complete prototype-dump comparison against Phase1 plus explicit consolidation/artwork allowances.
+PASS: independent comparison with753b29a dump has exactly five changes, all icon_size32 to64.
+PASS:39 reused parent files,4 accepted redraws/full-resolution source hashes/dimensions,163 original graphics unchanged.
+PASS:232 original files in immutable import;105 recipe routes/quantities and35 disabled recipes preserved.
+PASS: final ZIP data load, fresh-game creation, same-version save reload600ticks.
+PASS:193 package entries match working runtime files;docs/authoring images excluded.
+Version0.5.1; no migrations.
+Package:yi_pfw_0.5.1.zip
+SHA256:5d1aab335c6b3e5ee3a10a7b577722f75eb59a4296fd334a7e6bebfb254dce64
+Graphical integrated-candidate check: pending local owner test. Sample appearance accepted; headless does not render icons.
+
+ai-package-data:
+   0.257 Loading mod yi_pfw 0.5.1 (data.lua)
+   0.531 Prototype list checksum: 755479145
+   1.037 Factorio initialised
+   1.063 Goodbye
+
+ai-package-new:
+   0.172 Loading mod yi_pfw 0.5.1 (data.lua)
+   0.403 Prototype list checksum: 755479145
+   0.429 Factorio initialised
+   0.429 Info Create.cpp:32: Creating new map /home/pi/pr-review/fix-issue-jatmn-Yuoki-PFW-Factorio-2.x-repository-BdhQTWPf/runtime/game/saves/pfw-ai-new.zip
+   1.099 Goodbye
+
+ai-package-reload:
+   0.175 Loading mod yi_pfw 0.5.1 (data.lua)
+   0.406 Prototype list checksum: 755479145
+   0.431 Factorio initialised
+  Performed 600 updates in 64.367 ms
+   0.573 Goodbye

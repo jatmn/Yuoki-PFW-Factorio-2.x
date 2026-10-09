@@ -1,0 +1,93 @@
+{
+  "decision_date": "2026-10-09",
+  "method": "AI-assisted redraw",
+  "tool": "built-in image_gen",
+  "derivative": "Pillow12.3.0 RGBA resize to64x64, Resampling.LANCZOS",
+  "starting_head": "753b29ab7107ee897eca99ee77ff595c4229083d",
+  "redraws": [
+    {
+      "label": "Factory",
+      "path": "graphics/entity/fabrik-ammo-icon.png",
+      "original_dimensions": [
+        32,
+        32
+      ],
+      "original_sha256": "971bfb1bd19e2caa48d40778c3ffc8df886f77ee2758979821122530e066acc4",
+      "dimensions": [
+        64,
+        64
+      ],
+      "sha256": "00860a1aa3d61fc31cb7e1f1e8f9656ab9c8f1c526a818013af143b37fff4a79",
+      "source_path": "docs/artwork/ai-redraw-0.5.1/fabrik-ammo-icon-source.png",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "source_sha256": "428b554d87d8f3d64ea5824bec9cdf71009329a5c9b5c10e14c503cd727ff99a",
+      "prompt": "Use case: precise-object-edit. Edit target: the attached enlarged pixel reference of a legacy Factorio Yuoki PFW inventory icon (original 32x32 pixels). Primary request: create a conservative AI-assisted higher-resolution redraw of exactly this icon for comparison with a conventional 2x upscale. Subject: A compact industrial ammunition factory viewed isometrically: tall cylindrical dark steel processing tower at left/rear, dense mechanical pipes and orange/copper details, squat adjoining production units at right/front. Carefully preserve the original arrangement, footprint, perspective, silhouette, colors and highlight direction. Style: faithfully match the original gritty pre-rendered industrial game art; refine ambiguous pixel edges and small surfaces enough to read at 64x64, without redesigning the object. Composition: one object only, square canvas, retain the reference object's relative canvas occupancy and center; keep a small transparent margin. Background: genuine transparency. Constraints: preserve the object identity and original orientation; no labels, text, border, checkerboard drawn into the image, new props, ground plane, dramatic glow or cast shadow outside the object. This is one sample icon, not a sheet or comparison panel."
+    },
+    {
+      "label": "Plasma gun",
+      "path": "graphics/fab2/plasma-gun.png",
+      "original_dimensions": [
+        32,
+        32
+      ],
+      "original_sha256": "704f73d57428063ec398ac87846ddc86059f4f18dc8e9c1a33404697001a2149",
+      "dimensions": [
+        64,
+        64
+      ],
+      "sha256": "28cd22c2926d8847969b5964f862c077445e1deaf1f5c6b2c43b3cdc8b08ceee",
+      "source_path": "docs/artwork/ai-redraw-0.5.1/plasma-gun-source.png",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "source_sha256": "3c7740d2e73e2407bf554b50a5dff7e420d818652b3632cd00b64d1f49130cf0",
+      "prompt": "Use case: precise-object-edit. Edit target: the attached enlarged pixel reference of a legacy Factorio Yuoki PFW inventory icon (original 32x32 pixels). Primary request: create a conservative AI-assisted higher-resolution redraw of exactly this icon for comparison with a conventional 2x upscale. Subject: An industrial science-fiction plasma gun lying diagonally from upper-left (rear) to lower-right (muzzle), dark grey bulky body with small bright green indicators and a silver twin-rail muzzle. Carefully preserve its original silhouette, proportions, diagonal orientation, grey/green palette and lighting. It is an inventory icon, no person holding it. Style: faithfully match the original gritty pre-rendered industrial game art; refine ambiguous pixel edges and small surfaces enough to read at 64x64, without redesigning the object. Composition: one object only, square canvas, retain the reference object's relative canvas occupancy and center; keep a small transparent margin. Background: genuine transparency. Constraints: preserve the object identity and original orientation; no labels, text, border, checkerboard drawn into the image, new props, ground plane, dramatic glow or cast shadow outside the object. This is one sample icon, not a sheet or comparison panel."
+    },
+    {
+      "label": "Tire",
+      "path": "graphics/fab5/reifen.png",
+      "original_dimensions": [
+        32,
+        32
+      ],
+      "original_sha256": "7f861493458874f20b17e807aab81adfe2ff4b1c8bcaa4047b97f13a07a0c2b1",
+      "dimensions": [
+        64,
+        64
+      ],
+      "sha256": "46b9c83e51e9fca02f5c839304d6f720fc948a66476da93f69c909f887922e65",
+      "source_path": "docs/artwork/ai-redraw-0.5.1/reifen-source.png",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "source_sha256": "a99a3219653b052898446f8d3b327e403b4836b36c7ed34a225903a9f0cffc0e",
+      "prompt": "Use case: precise-object-edit. Edit target: the attached enlarged pixel reference of a legacy Factorio Yuoki PFW inventory icon (original 32x32 pixels). Primary request: create a conservative AI-assisted higher-resolution redraw of exactly this icon for comparison with a conventional 2x upscale. Subject: A single thick dark rubber vehicle tire standing upright in three-quarter view, a dark metallic wheel hub and muted teal ring on the left-facing wheel face. Carefully preserve its original silhouette, perspective, proportions, muted color palette and lighting. Style: faithfully match the original gritty pre-rendered industrial game art; refine ambiguous pixel edges and small surfaces enough to read at 64x64, without redesigning the object. Composition: one object only, square canvas, retain the reference object's relative canvas occupancy and center; keep a small transparent margin. Background: genuine transparency. Constraints: preserve the object identity and original orientation; no labels, text, border, checkerboard drawn into the image, new props, ground plane, dramatic glow or cast shadow outside the object. This is one sample icon, not a sheet or comparison panel."
+    },
+    {
+      "label": "Energy cell",
+      "path": "graphics/fab8/fusion-cell.png",
+      "original_dimensions": [
+        32,
+        32
+      ],
+      "original_sha256": "f0136ee29dc8aa64ba64b2bc3db4d5600a02b4a7b6c31dca09d3fb882fbe1ffb",
+      "dimensions": [
+        64,
+        64
+      ],
+      "sha256": "ab15d0cf7ddcbce126639f36048a87f74a611cd7b97c7da26d96733f67707785",
+      "source_path": "docs/artwork/ai-redraw-0.5.1/fusion-cell-source.png",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "source_sha256": "df13252d5a239440a15b20df4fe64e46e9f3b80f2c5b5a2201751cfe1c28e749",
+      "prompt": "Use case: precise-object-edit. Edit target: the attached enlarged pixel reference of a legacy Factorio Yuoki PFW inventory icon (original 32x32 pixels). Primary request: create a conservative AI-assisted higher-resolution redraw of exactly this icon for comparison with a conventional 2x upscale. Subject: An upright small cylindrical fusion energy cell, dark metal stepped cap at the top and luminous purple/magenta vertical windows in the lower body. Carefully preserve the original silhouette, centered composition, proportions, purple/black palette, perspective and lighting. Style: faithfully match the original gritty pre-rendered industrial game art; refine ambiguous pixel edges and small surfaces enough to read at 64x64, without redesigning the object. Composition: one object only, square canvas, retain the reference object's relative canvas occupancy and center; keep a small transparent margin. Background: genuine transparency. Constraints: preserve the object identity and original orientation; no labels, text, border, checkerboard drawn into the image, new props, ground plane, dramatic glow or cast shadow outside the object. This is one sample icon, not a sheet or comparison panel."
+    }
+  ]
+}

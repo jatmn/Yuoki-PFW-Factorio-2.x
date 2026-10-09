@@ -6,7 +6,7 @@ data:extend(
 	{
 		type = "assembling-machine",
 		name = "y-factory-1",
-		icon = "__yi_pfw__/graphics/entity/fabrik-ammo-icon.png", icon_size = 32,
+		icon = "__yi_pfw__/graphics/entity/fabrik-ammo-icon.png", icon_size = 64,
 		flags = {"placeable-neutral","placeable-player", "player-creation"},
 		minable = {mining_time = 0.5, result = "y-factory-1"},
 		max_health = 350, corpse = "big-remnants", resistances = {{type = "physical",percent = 60},},

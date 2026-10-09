@@ -30,7 +30,7 @@ data:extend(
 	{ type = "item", name = "y-veh-6", icon = "__yi_engines__/graphics/icons/package_carni.png", icon_size = 32, order = "a", stack_size = 30, },
 	--	{ type = "item", name = "y-veh-7", icon = "__yi_pfw__/graphics/fab5/mcb_sani_32.png", flags = {"goes-to-main-inventory"}, order = "a", stack_size = 100, },
 	{ type = "item", name = "y-veh-8", icon = "__yi_engines__/graphics/icons/package_carni.png", icon_size = 32, order = "a", stack_size = 30, },
-	{ type = "item", name = "y-veh-9", icon = "__yi_pfw__/graphics/fab5/reifen.png", icon_size = 32, order = "a", stack_size = 500, },
+	{ type = "item", name = "y-veh-9", icon = "__yi_pfw__/graphics/fab5/reifen.png", icon_size = 64, order = "a", stack_size = 500, },
 		
 	-- Retrade !!!		
 	--{ type = "recipe", name = "y-rfab5a-recipe", ingredients = {{"y-veh-0",9},}, results = {{type="item", name="y-unicomp-a2", amount=2,},}, enabled = "true", order="veh-0", subgroup = "yi-retrade", category="yrcat-retrade", icon = "__yi_pfw__/graphics/fab5/brain-parasite-1-sell.png" },		

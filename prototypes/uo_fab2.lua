@@ -114,7 +114,7 @@ data:extend(
 	{
 		type = "gun",
 		name = "y-sm-2",
-		icon = "__yi_pfw__/graphics/fab2/plasma-gun.png", icon_size = 32,
+		icon = "__yi_pfw__/graphics/fab2/plasma-gun.png", icon_size = 64,
 		subgroup = "gun",
 		order = "c[railgun]",
 		attack_parameters =

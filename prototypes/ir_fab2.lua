@@ -37,7 +37,7 @@ data:extend(
 		
 	{ type = "item", name = "y-sm-0", icon = "__yi_engines__/graphics/icons/package_carni.png", icon_size = 32, order = "a", stack_size = 100, },
 	--{ type = "item", name = "y-sm-1", icon = "__Yuoki__/graphics/armor/lasergun.png", icon_size = 64, flags = {"goes-to-main-inventory"}, order = "a", stack_size = 100, },
-	--{ type = "item", name = "y-sm-2", icon = "__yi_pfw__/graphics/fab2/plasma-gun.png", flags = {"goes-to-main-inventory"}, order = "a", stack_size = 100, },
+	--{ type = "item", name = "y-sm-2", icon = "__yi_pfw__/graphics/fab2/plasma-gun.png", icon_size = 64, flags = {"goes-to-main-inventory"}, order = "a", stack_size = 100, },
 	{ type = "item", name = "y-sm-3", icon = "__yi_engines__/graphics/icons/package_carni.png", icon_size = 32, order = "a", stack_size = 100, },
 	{ type = "item", name = "y-sm-4", icon = "__yi_engines__/graphics/icons/package_carni.png", icon_size = 32, order = "a", stack_size = 100, },
 	-- Parent reference for future restoration: y-sm-5 -> yi_minigun. Keep this declaration inactive.
