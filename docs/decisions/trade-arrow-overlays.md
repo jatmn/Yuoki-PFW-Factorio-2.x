@@ -38,4 +38,6 @@ Continue AI redraws on base artwork only. Do not generate, restore or carry a se
 
 The [sixth batch](../artwork-batch-6.md) brings the total to 30 AI icons and 87 originals. One inactive second-armor arrow mapping receives its new base hash/dimensions; active arrow recipes are unchanged.
 
-The [seventh batch](../artwork-batch-7.md) adds a group icon and equipment sprite: current total32 AI artwork assets and85 originals. All trade-arrow data remains unchanged.
+The [seventh batch](../artwork-batch-7.md) adds a group icon and equipment sprite: batch7 total32 AI artwork assets and85 originals. All trade-arrow data remains unchanged.
+
+The [eighth batch](../artwork-batch-8.md) adds two static world sprites: current total34 AI artwork assets and83 originals. All trade-arrow data remains unchanged.

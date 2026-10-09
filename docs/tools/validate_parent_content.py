@@ -88,6 +88,8 @@ assert set(redraws) == {
     'graphics/fab3/neron_u5_32.png',
     'graphics/mpfw_ticon2.png',
     'graphics/equip/fusion-cell-64.png',
+    'graphics/entity/profit-show-1.png',
+    'graphics/entity/profit-show-2.png',
 }
 assert not redraws.keys() & replacements.keys()
 for entry in redraws.values():
@@ -98,7 +100,9 @@ for entry in redraws.values():
         content = (ROOT / path).read_bytes()
         assert hashlib.sha256(content).hexdigest() == digest, path
         assert list(struct.unpack('>II', content[16:24])) == dimensions, path
-    expected_size = 128 if entry['path'] in {
+    expected_size = 320 if entry['path'] in {
+        'graphics/entity/profit-show-1.png', 'graphics/entity/profit-show-2.png'
+    } else 128 if entry['path'] in {
         'graphics/mpfw_ticon2.png', 'graphics/equip/fusion-cell-64.png'
     } else 64
     assert entry['dimensions'] == [expected_size, expected_size]
@@ -136,6 +140,12 @@ cell_sprite = expected['battery-equipment']['y-zproduct-8']['sprite']
 assert cell_sprite['filename'] == '__yi_pfw__/graphics/equip/fusion-cell-64.png'
 assert (cell_sprite['width'], cell_sprite['height'], cell_sprite.get('scale', 1)) == (64, 64, 1)
 cell_sprite.update(width=128, height=128, scale=0.5)
+# Batch8 changes only the two static profit-display source dimensions/scale.
+for name, filename in [('y-rich-1', 'profit-show-2.png'), ('y-rich-2', 'profit-show-1.png')]:
+    sprite = expected['assembling-machine'][name]['graphics_set']['animation']
+    assert sprite['filename'] == '__yi_pfw__/graphics/entity/' + filename
+    assert (sprite['width'], sprite['height'], sprite.get('scale', 1)) == (160, 160, 1)
+    sprite.update(width=320, height=320, scale=0.5)
 trade_map = json.loads((ROOT / 'docs/data/trade-icons-0.5.1.json').read_text())
 arrow_variants = {a['path']: a for a in trade_map['removed_variants']}
 assert len(arrow_variants) == 49
@@ -225,5 +235,5 @@ trades = [r for r in recipes if 'yrcat-retrade' in after['recipe'][r['name']].ge
 assert len(trades) == 56
 print(f'PASS: {removed} redundant declarations inactive; 105 recipe routes and quantities retained; '
       '56 trades supported; pending mappings/parent behavior preserved; 40 parent assets verified, '
-      '32 AI artwork/source images verified, 49 arrow variants replaced, 85 original graphics unchanged; '
+      '34 AI artwork/source images verified, 49 arrow variants replaced, 83 original graphics unchanged; '
       '0.5.1 changelog and no migrations verified.')

@@ -903,6 +903,92 @@
         }
       ],
       "display": "128x128 source at scale0.5; original2x2 equipment shape and blue opaque backing retained."
+    },
+    {
+      "label": "Twin-pipe profit display",
+      "batch": 8,
+      "path": "graphics/entity/profit-show-1.png",
+      "original_dimensions": [
+        160,
+        160
+      ],
+      "original_sha256": "d2f41b2f9356d43f75997bef420063362cd17520a62220255583b110f795b341",
+      "dimensions": [
+        320,
+        320
+      ],
+      "sha256": "51ec35a30296a76573b24bf2fbf7b1e906a82db1a84408c0b8372197aa5f7b1c",
+      "source_path": "docs/artwork/ai-redraw-0.5.1/profit-show-1-world-source.png",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "source_sha256": "0a2b05a8a2c213320ea10b09fc3bc6d94dc952d447d9b5d63fe2d25ed3cfbe2d",
+      "prompt": "Use case: precise-object-edit. Image1 is the selected detailed Factorio world sprite. Image2 is the ORIGINAL sprite shown on grey only to reveal its shadow. Make ONE change to image1: darken the existing ground shadow to match image2's approximately75% opaque black shadow, keeping the shadow's original shape/extent, position and smooth edge. Do not add a grey background: output must remain genuinely transparent outside the machine/shadow. Keep every machine pixel, color, geometry, lighting, silhouette, object size and position unchanged. Do not recenter or crop the sprite. Preserve the current square canvas and machine/shadow alignment. The current shadow looks too pale on a mid-grey ground; make its interior about75% black opacity, with a small antialiased edge. Machine unchanged, ground shadow opacity only.",
+      "initial_prompt": "Use case: precise-object-edit. Image1 is the original Factorio world sprite enlarged from160x160, the authoritative layout. Image2 is an accepted detailed inventory rendering of the SAME machine, use ONLY to clarify geometry/material detail. Image3 shows image1 on GREY solely to reveal its ground shadow; the GREY background MUST NOT appear in output. Redraw image1 at high resolution for a320x320 world sprite. Preserve original camera, machine size and exact location within the square canvas, and the rightward ground shadow's footprint and relative opacity. Do NOT center the machine or zoom it to fill the canvas like an inventory icon. This machine occupies approximately the LEFT HALF of the canvas: its top begins near x32%,y3%; its full body spans roughly x2%-50% and y3%-90%. The shadow extends from its lower feet across the LOWER RIGHT, to about x98%,y98%; keep that blank/shadow space instead of recentering. Two parallel long grey-green horizontal cylinders angle from lower-left toward upper-right, with narrow red bands; brass hanging supports, bright blue smaller vertical cylinders, brown foot cylinders and fine red cables beneath. Retain the original two pipes, support/cylinder counts, orientations and structure. Match original silhouette, colors and all main components; sharpen/refine conservatively using image2's detail, no added/remodeled parts. World sprite must align with the original when scaled to160px. Keep a genuinely transparent canvas outside the machine AND its semitransparent dark ground shadow. No ground plane, tile, background, text, border or arrows. Preserve empty regions of original canvas. Smooth detailed industrial pre-rendered metal, not chunky enlarged pixels.",
+      "derivative": "Pillow RGBA320x320 Lanczos; overrides earlier64px default",
+      "history": [
+        {
+          "source_path": "docs/artwork/ai-redraw-0.5.1/profit-show-1-world-initial.png",
+          "source_sha256": "9180ea463139f09babdca6f451396ac8487a834bf952ce0e5521efeb41b8499d",
+          "prompt": "Use case: precise-object-edit. Image1 is the original Factorio world sprite enlarged from160x160, the authoritative layout. Image2 is an accepted detailed inventory rendering of the SAME machine, use ONLY to clarify geometry/material detail. Image3 shows image1 on GREY solely to reveal its ground shadow; the GREY background MUST NOT appear in output. Redraw image1 at high resolution for a320x320 world sprite. Preserve original camera, machine size and exact location within the square canvas, and the rightward ground shadow's footprint and relative opacity. Do NOT center the machine or zoom it to fill the canvas like an inventory icon. This machine occupies approximately the LEFT HALF of the canvas: its top begins near x32%,y3%; its full body spans roughly x2%-50% and y3%-90%. The shadow extends from its lower feet across the LOWER RIGHT, to about x98%,y98%; keep that blank/shadow space instead of recentering. Two parallel long grey-green horizontal cylinders angle from lower-left toward upper-right, with narrow red bands; brass hanging supports, bright blue smaller vertical cylinders, brown foot cylinders and fine red cables beneath. Retain the original two pipes, support/cylinder counts, orientations and structure. Match original silhouette, colors and all main components; sharpen/refine conservatively using image2's detail, no added/remodeled parts. World sprite must align with the original when scaled to160px. Keep a genuinely transparent canvas outside the machine AND its semitransparent dark ground shadow. No ground plane, tile, background, text, border or arrows. Preserve empty regions of original canvas. Smooth detailed industrial pre-rendered metal, not chunky enlarged pixels.",
+          "disposition": "Superseded: ground shadow too pale on grey comparison."
+        }
+      ],
+      "references": [
+        {
+          "path": "docs/artwork/ai-redraw-0.5.1/profit-show-1-icon-source.png",
+          "sha256": "798c49f9d24c3d5d8e15bbb1ba3105ce0a953d88f360d4c343b5bb8e2902b4eb"
+        }
+      ],
+      "reference_review": "Original single-frame world sprite controls layout/shadow; accepted icon master controls detail. Both pinned parent revisions rechecked; batch3 review of242 loaded building graphics reused, no confirmed replacement.",
+      "display": "320x320 at scale0.5; original160px display canvas, shift and collision/selection boxes retained. Generated contours and softer shadows are not pixel-identical."
+    },
+    {
+      "label": "Radial profit display",
+      "batch": 8,
+      "path": "graphics/entity/profit-show-2.png",
+      "original_dimensions": [
+        160,
+        160
+      ],
+      "original_sha256": "442c7dc8bae8e798a15dbe5ade0351e43ca812c27c5892e520c966e40a6049e1",
+      "dimensions": [
+        320,
+        320
+      ],
+      "sha256": "a4b218001fd0d7f41e4e60fccb42c8555bd924dcbbc0b6296ba2812880a54794",
+      "source_path": "docs/artwork/ai-redraw-0.5.1/profit-show-2-world-source.png",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "source_sha256": "2651c7831d2144f4d97dcb02bd0eee1562e3c6cc7ae2294a74bea1f5414c7aa0",
+      "prompt": "Edit only the semitransparent ground shadow in this sprite: make it darker, approximately70% opaque black in its interior. Preserve the full existing canvas and exact scale/position of the machine. Absolutely no enlargement, movement, crop, recentering or geometry changes: the leftmost pipes must remain fully within the image with the same tiny left margin. Do not change the machine, its metal textures or colors. Keep the existing shadow shape/extent and transparent background. This is a local shadow-opacity correction only, not a new rendering. Output transparent PNG.",
+      "initial_prompt": "Use case: precise-object-edit. Image1 is the original Factorio world sprite enlarged from160x160, the authoritative layout. Image2 is an accepted detailed inventory rendering of the SAME machine, use ONLY to clarify geometry/material detail. Image3 shows image1 on GREY solely to reveal its ground shadow; the GREY background MUST NOT appear in output. Redraw image1 at high resolution for a320x320 world sprite. Preserve original camera, machine size and exact location within the square canvas, and the rightward ground shadow's footprint and relative opacity. Do NOT center the machine or zoom it to fill the canvas like an inventory icon. This machine occupies roughly x1%-80% and y7%-89% of the canvas, with its centerline near x43%; its shadow extends right/down to around x94%,y94%. Keep original placement instead of filling/centering the canvas. A tall dark-grey central column, orange vertical outer rods and a PURPLE circular top, with SIX surrounding grey box-on-cylinder stations connected radially by brass pipes; each has a small orange top light. Match all SIX radial stations and original arrangement, camera and compact footprint. Do not alter central purple/orange color placement. Match original silhouette, colors and all main components; sharpen/refine conservatively using image2's detail, no added/remodeled parts. World sprite must align with the original when scaled to160px. Keep a genuinely transparent canvas outside the machine AND its semitransparent dark ground shadow. No ground plane, tile, background, text, border or arrows. Preserve empty regions of original canvas. Smooth detailed industrial pre-rendered metal, not chunky enlarged pixels.",
+      "derivative": "Pillow RGBA320x320 Lanczos; overrides earlier64px default",
+      "history": [
+        {
+          "source_path": "docs/artwork/ai-redraw-0.5.1/profit-show-2-world-initial.png",
+          "source_sha256": "8e1fddbee170e9c1fa114dcf8932fd2689128e1528844e563662a9d6760c0c26",
+          "prompt": "Use case: precise-object-edit. Image1 is the original Factorio world sprite enlarged from160x160, the authoritative layout. Image2 is an accepted detailed inventory rendering of the SAME machine, use ONLY to clarify geometry/material detail. Image3 shows image1 on GREY solely to reveal its ground shadow; the GREY background MUST NOT appear in output. Redraw image1 at high resolution for a320x320 world sprite. Preserve original camera, machine size and exact location within the square canvas, and the rightward ground shadow's footprint and relative opacity. Do NOT center the machine or zoom it to fill the canvas like an inventory icon. This machine occupies roughly x1%-80% and y7%-89% of the canvas, with its centerline near x43%; its shadow extends right/down to around x94%,y94%. Keep original placement instead of filling/centering the canvas. A tall dark-grey central column, orange vertical outer rods and a PURPLE circular top, with SIX surrounding grey box-on-cylinder stations connected radially by brass pipes; each has a small orange top light. Match all SIX radial stations and original arrangement, camera and compact footprint. Do not alter central purple/orange color placement. Match original silhouette, colors and all main components; sharpen/refine conservatively using image2's detail, no added/remodeled parts. World sprite must align with the original when scaled to160px. Keep a genuinely transparent canvas outside the machine AND its semitransparent dark ground shadow. No ground plane, tile, background, text, border or arrows. Preserve empty regions of original canvas. Smooth detailed industrial pre-rendered metal, not chunky enlarged pixels.",
+          "disposition": "Superseded: ground shadow too pale on grey comparison."
+        },
+        {
+          "source_path": "docs/artwork/ai-redraw-0.5.1/profit-show-2-world-shadow-rejected.png",
+          "source_sha256": "ecd4fedcde0122e1a5f49aca58ee9256c94cff9cd6174d37ef5872d815bc0742",
+          "prompt": "Use case: precise-object-edit. Image1 is the selected detailed Factorio world sprite. Image2 is the ORIGINAL sprite shown on grey only to reveal its shadow. Make ONE change to image1: darken the existing ground shadow to match image2's approximately75% opaque black shadow, keeping the shadow's original shape/extent, position and smooth edge. Do not add a grey background: output must remain genuinely transparent outside the machine/shadow. Keep every machine pixel, color, geometry, lighting, silhouette, object size and position unchanged. Do not recenter or crop the sprite. Preserve the current square canvas and machine/shadow alignment. The current shadow looks too pale on a mid-grey ground; make its interior about75% black opacity, with a small antialiased edge. Machine unchanged, ground shadow opacity only.",
+          "disposition": "Rejected: shadow edit enlarged/repositioned the machine and cropped left pipes."
+        }
+      ],
+      "references": [
+        {
+          "path": "docs/artwork/ai-redraw-0.5.1/profit-show-2-icon-source.png",
+          "sha256": "d739d94337293436ca3f9fcadc494ba922763ca0ff2ce9299749357c8b3791aa"
+        }
+      ],
+      "reference_review": "Original single-frame world sprite controls layout/shadow; accepted icon master controls detail. Both pinned parent revisions rechecked; batch3 review of242 loaded building graphics reused, no confirmed replacement.",
+      "display": "320x320 at scale0.5; original160px display canvas, shift and collision/selection boxes retained. Generated contours and softer shadows are not pixel-identical."
     }
   ],
   "batches": [
@@ -981,6 +1067,16 @@
         "fusion-cell-equipment"
       ],
       "review": "Original/full-source/128px/64px comparison; cell uses accepted filled model. Both parent group and battery families checked. Graphical confirmation pending."
+    },
+    {
+      "batch": 8,
+      "date": "2026-10-09",
+      "starting_head": "cb49ed4f7b510541cbbfaf279fb8e65e793bf0c4",
+      "assets": [
+        "profit-show-1-world",
+        "profit-show-2-world"
+      ],
+      "review": "Original world sprites and accepted icon masters inspected; pinned parent graphic review reused. Grey-background comparison and160px display preview reviewed. Shadows corrected; rejected radial crop retained in docs. Graphical placement check pending."
     }
   ]
 }
