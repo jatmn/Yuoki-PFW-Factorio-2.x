@@ -40,4 +40,6 @@ The [sixth batch](../artwork-batch-6.md) brings the total to 30 AI icons and 87 
 
 The [seventh batch](../artwork-batch-7.md) adds a group icon and equipment sprite: batch7 total32 AI artwork assets and85 originals. All trade-arrow data remains unchanged.
 
-The [eighth batch](../artwork-batch-8.md) adds two static world sprites: current total34 AI artwork assets and83 originals. All trade-arrow data remains unchanged.
+The [eighth batch](../artwork-batch-8.md) adds two static world sprites: batch8 total34 AI artwork assets and83 originals. All trade-arrow data remains unchanged.
+
+The [ninth batch](../animation-batch-9.md) reuses one parent animation sheet, leaving34 AI assets and82 originals. Trade-arrow mappings and base artwork remain unchanged.

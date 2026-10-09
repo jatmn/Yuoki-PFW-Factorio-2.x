@@ -1,0 +1,128 @@
+{
+  "version": "0.5.1",
+  "starting_head": "ba2723d6ec2d19385942c0ec46099496178baa53",
+  "parent_commits": {
+    "Yuoki": "50ea38b9703a13e8644c3bcfe6e400b3bf2b4a5c",
+    "yi_engines": "8d777d015e36d93d2757a290c3f3f32a49c11280"
+  },
+  "replacement": {
+    "pfw_path": "graphics/entity/tut-hai1.png",
+    "provider": "yi_engines",
+    "provider_path": "graphics/entity/science_gen.png",
+    "original_dimensions": [
+      1920,
+      120
+    ],
+    "provider_dimensions": [
+      2048,
+      128
+    ],
+    "original_sha256": "3fdc36f07c81a4afbe0135a4e5e478170fca6bcce66420dc7c37608b7533aa40",
+    "provider_sha256": "54063d71f7796748d530f99fb2ebd2f8828473e1961c20d1d46146c373b8ebd8",
+    "source_references_before": [
+      "prototypes/e_factory.lua:105",
+      "prototypes/e_factory.lua:111",
+      "prototypes/e_factory.lua:167",
+      "prototypes/e_factory.lua:173",
+      "prototypes/e_factory.lua:198",
+      "prototypes/e_factory.lua:204"
+    ],
+    "evidence": "Batch9: all16 east/west frames visually match the parent four-station machine and rotating front assembly. At120px display size maximum frame mean RGB difference on grey is1.9283/255 and alpha difference0.9012/255. Images are not byte-identical. Distinct north/south sheet retained. See animation-batch-9.md.",
+    "metadata": "Only east/west of y-factory-4,6,7: width/height128 and scale0.9375 preserve120px display extent; shift0.3,0, frame_count16, line_length16 and default speed1 unchanged.",
+    "batch": 9
+  },
+  "comparison": "Original120x120 E/W frames against each128x128 parent frame Lanczos-resized to120px, composited over RGB120 grey. Numeric scores support the all-frame visual assessment; they do not independently authorize reuse. GIF slowed to150ms/frame for inspection, not playback timing.",
+  "frame_metrics": [
+    {
+      "frame": 0,
+      "mean_rgb_difference_on_grey": 1.9283,
+      "mean_alpha_difference": 0.9012
+    },
+    {
+      "frame": 1,
+      "mean_rgb_difference_on_grey": 1.9082,
+      "mean_alpha_difference": 0.8565
+    },
+    {
+      "frame": 2,
+      "mean_rgb_difference_on_grey": 1.9028,
+      "mean_alpha_difference": 0.8535
+    },
+    {
+      "frame": 3,
+      "mean_rgb_difference_on_grey": 1.9116,
+      "mean_alpha_difference": 0.8497
+    },
+    {
+      "frame": 4,
+      "mean_rgb_difference_on_grey": 1.9153,
+      "mean_alpha_difference": 0.8521
+    },
+    {
+      "frame": 5,
+      "mean_rgb_difference_on_grey": 1.926,
+      "mean_alpha_difference": 0.85
+    },
+    {
+      "frame": 6,
+      "mean_rgb_difference_on_grey": 1.9077,
+      "mean_alpha_difference": 0.8457
+    },
+    {
+      "frame": 7,
+      "mean_rgb_difference_on_grey": 1.9126,
+      "mean_alpha_difference": 0.846
+    },
+    {
+      "frame": 8,
+      "mean_rgb_difference_on_grey": 1.8948,
+      "mean_alpha_difference": 0.8451
+    },
+    {
+      "frame": 9,
+      "mean_rgb_difference_on_grey": 1.9086,
+      "mean_alpha_difference": 0.8482
+    },
+    {
+      "frame": 10,
+      "mean_rgb_difference_on_grey": 1.8983,
+      "mean_alpha_difference": 0.8439
+    },
+    {
+      "frame": 11,
+      "mean_rgb_difference_on_grey": 1.9134,
+      "mean_alpha_difference": 0.8451
+    },
+    {
+      "frame": 12,
+      "mean_rgb_difference_on_grey": 1.9245,
+      "mean_alpha_difference": 0.8488
+    },
+    {
+      "frame": 13,
+      "mean_rgb_difference_on_grey": 1.9064,
+      "mean_alpha_difference": 0.8488
+    },
+    {
+      "frame": 14,
+      "mean_rgb_difference_on_grey": 1.8925,
+      "mean_alpha_difference": 0.8499
+    },
+    {
+      "frame": 15,
+      "mean_rgb_difference_on_grey": 1.9024,
+      "mean_alpha_difference": 0.8506
+    }
+  ],
+  "retained_north_south": {
+    "path": "graphics/entity/tut-vai1.png",
+    "sha256": "d3a72bb3ace363618df88d8477cc3f85cf52718aa430232cc35334488fb75c98",
+    "reason": "Different directional machine structure, no confirmed corresponding parent animation."
+  },
+  "other_parent_candidate": {
+    "provider": "yi_engines",
+    "path": "graphics/entity/tut-2.png",
+    "sha256": "0da2eadfaf8fbaa7aaed97dc0763d666006467eb115754cdfa0d61d3e13fe58e",
+    "reason": "Single static asset with different geometry, not a replacement for north/south animation."
+  }
+}

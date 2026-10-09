@@ -102,14 +102,14 @@ data:extend(
 		graphics_set = { animation = {
 			north= { filename = "__yi_pfw__/graphics/entity/tut-vai1.png",			
 				width = 120, height = 128, shift = {0.3, 0}, frame_count = 16, line_length = 16,},
-			east= {	filename = "__yi_pfw__/graphics/entity/tut-hai1.png", 
-				width = 120, height = 120, shift = {0.3, 0}, frame_count = 16, line_length = 16,},
+			east= {	filename = "__yi_engines__/graphics/entity/science_gen.png",
+				width = 128, height = 128, scale = 0.9375, shift = {0.3, 0}, frame_count = 16, line_length = 16,},
 			south= {
 				filename = "__yi_pfw__/graphics/entity/tut-vai1.png",			
 				width = 120, height = 128, shift = {0.3, 0}, frame_count = 16, line_length = 16,},
 			west= {
-				filename = "__yi_pfw__/graphics/entity/tut-hai1.png",			
-				width = 120, height = 120, shift = {0.3, 0}, frame_count = 16, line_length = 16,},			
+				filename = "__yi_engines__/graphics/entity/science_gen.png",
+				width = 128, height = 128, scale = 0.9375, shift = {0.3, 0}, frame_count = 16, line_length = 16,},
 		} },
 		crafting_categories = {"yrcat-swwaffen"}, crafting_speed = 1.0,
 		energy_source = {type = "electric", usage_priority = "secondary-input", emissions_per_minute = { pollution = 0.04 / 2.5 * 3000 } },
@@ -164,14 +164,14 @@ data:extend(
 		graphics_set = { animation = {
 			north= { filename = "__yi_pfw__/graphics/entity/tut-vai1.png",			
 				width = 120, height = 128, shift = {0.3, 0}, frame_count = 16, line_length = 16,},
-			east= {	filename = "__yi_pfw__/graphics/entity/tut-hai1.png", 
-				width = 120, height = 120, shift = {0.3, 0}, frame_count = 16, line_length = 16,},
+			east= {	filename = "__yi_engines__/graphics/entity/science_gen.png",
+				width = 128, height = 128, scale = 0.9375, shift = {0.3, 0}, frame_count = 16, line_length = 16,},
 			south= {
 				filename = "__yi_pfw__/graphics/entity/tut-vai1.png",			
 				width = 120, height = 128, shift = {0.3, 0}, frame_count = 16, line_length = 16,},
 			west= {
-				filename = "__yi_pfw__/graphics/entity/tut-hai1.png",			
-				width = 120, height = 120, shift = {0.3, 0}, frame_count = 16, line_length = 16,},			
+				filename = "__yi_engines__/graphics/entity/science_gen.png",
+				width = 128, height = 128, scale = 0.9375, shift = {0.3, 0}, frame_count = 16, line_length = 16,},
 		} },
 		crafting_categories = {"yrcat-panzer"}, crafting_speed = 1.0,
 		energy_source = {type = "electric", usage_priority = "secondary-input", emissions_per_minute = { pollution = 0.04 / 2.5 * 3000 } },
@@ -195,14 +195,14 @@ data:extend(
 		graphics_set = { animation = {
 			north= { filename = "__yi_pfw__/graphics/entity/tut-vai1.png",			
 				width = 120, height = 128, shift = {0.3, 0}, frame_count = 16, line_length = 16,},
-			east= {	filename = "__yi_pfw__/graphics/entity/tut-hai1.png", 
-				width = 120, height = 120, shift = {0.3, 0}, frame_count = 16, line_length = 16,},
+			east= {	filename = "__yi_engines__/graphics/entity/science_gen.png",
+				width = 128, height = 128, scale = 0.9375, shift = {0.3, 0}, frame_count = 16, line_length = 16,},
 			south= {
 				filename = "__yi_pfw__/graphics/entity/tut-vai1.png",			
 				width = 120, height = 128, shift = {0.3, 0}, frame_count = 16, line_length = 16,},
 			west= {
-				filename = "__yi_pfw__/graphics/entity/tut-hai1.png",			
-				width = 120, height = 120, shift = {0.3, 0}, frame_count = 16, line_length = 16,},			
+				filename = "__yi_engines__/graphics/entity/science_gen.png",
+				width = 128, height = 128, scale = 0.9375, shift = {0.3, 0}, frame_count = 16, line_length = 16,},
 		} },
 		crafting_categories = {"yrcat-support"}, crafting_speed = 1.0,
 		energy_source = {type = "electric", usage_priority = "secondary-input", emissions_per_minute = { pollution = 0.04 / 2.5 * 3000 } },

@@ -146,6 +146,13 @@ for name, filename in [('y-rich-1', 'profit-show-2.png'), ('y-rich-2', 'profit-s
     assert sprite['filename'] == '__yi_pfw__/graphics/entity/' + filename
     assert (sprite['width'], sprite['height'], sprite.get('scale', 1)) == (160, 160, 1)
     sprite.update(width=320, height=320, scale=0.5)
+# Batch9 reuses only the matching east/west frames; north/south remain unchanged.
+for name in ['y-factory-4', 'y-factory-6', 'y-factory-7']:
+    for direction in ['east', 'west']:
+        sprite = expected['assembling-machine'][name]['graphics_set']['animation'][direction]
+        assert sprite['filename'] == '__yi_engines__/graphics/entity/science_gen.png'
+        assert (sprite['width'], sprite['height'], sprite.get('scale', 1)) == (120, 120, 1)
+        sprite.update(width=128, height=128, scale=0.9375)
 trade_map = json.loads((ROOT / 'docs/data/trade-icons-0.5.1.json').read_text())
 arrow_variants = {a['path']: a for a in trade_map['removed_variants']}
 assert len(arrow_variants) == 49
@@ -198,7 +205,7 @@ for asset in assets:
         assert arrow_variants[asset['path']]['original_sha256'] == asset['sha256'], asset['path']
     else:
         assert hashlib.sha256((ROOT / asset['path']).read_bytes()).hexdigest() == asset['sha256'], asset['path']
-assert len(replacements) == 40
+assert len(replacements) == 41
 assert len(list((ROOT / 'graphics').rglob('*.png'))) == len(assets) - len(replacements) - len(arrow_variants)
 
 def check_layouts(value):
@@ -234,6 +241,6 @@ for i, line in enumerate(lines):
 trades = [r for r in recipes if 'yrcat-retrade' in after['recipe'][r['name']].get('categories', [])]
 assert len(trades) == 56
 print(f'PASS: {removed} redundant declarations inactive; 105 recipe routes and quantities retained; '
-      '56 trades supported; pending mappings/parent behavior preserved; 40 parent assets verified, '
-      '34 AI artwork/source images verified, 49 arrow variants replaced, 83 original graphics unchanged; '
+      '56 trades supported; pending mappings/parent behavior preserved; 41 parent assets verified, '
+      '34 AI artwork/source images verified, 49 arrow variants replaced, 82 original graphics unchanged; '
       '0.5.1 changelog and no migrations verified.')
