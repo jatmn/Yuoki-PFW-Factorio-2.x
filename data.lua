@@ -27,3 +27,5 @@ require("prototypes.uo_fabx")
 
 
 
+-- Item-derived trade icons must run after all PFW declarations.
+require("prototypes.trade-icons")

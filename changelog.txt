@@ -8,6 +8,7 @@ Date: 9. 10. 2026
     - Keep ambiguous gun, shield, second-armor and fuel-cell mappings pending; preserve unique artwork and previously disabled content.
     - Replace 39 confirmed local artwork duplicates with parent references, updating icon dimensions and active/inactive source.
     - Redraw the ammunition factory, plasma gun, tire and filled energy-cell icons at 64px using the selected AI artwork method.
+    - Generate PFW import/export arrows with Yuoki helpers; remove 49 precomposed trade-icon variants and retain their base-art mappings.
   Compatibility:
     - Keep the two pending PFW energy guns compatible with Yuoki's energy ammunition.
     - Keep migrations deferred until a formal release; validate this development version with fresh games.

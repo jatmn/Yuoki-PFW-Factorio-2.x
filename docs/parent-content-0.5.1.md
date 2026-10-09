@@ -4,7 +4,7 @@ The owner confirmed the 0.5.0 candidate appears to work, merged PR #5, and expli
 
 ## Ownership changes
 
-The central [mapping record](data/parent-content-0.5.1.json) identifies every suppressed declaration, its source file, parent and replacement ID. All 11 redundant declarations remain in source inside annotated Lua comments. The first walker's redundant character animation is also retained commented. The subsequent [artwork pass](asset-reuse-0.5.1.md) replaces 39 confirmed duplicate files; 167 local images remain. The subsequent [AI redraw batch](decisions/ai-artwork.md) changes four of those; 163 originals remain unchanged.
+The central [mapping record](data/parent-content-0.5.1.json) identifies every suppressed declaration, its source file, parent and replacement ID. All 11 redundant declarations remain in source inside annotated Lua comments. The first walker's redundant character animation is also retained commented. The subsequent [artwork pass](asset-reuse-0.5.1.md) replaces 39 confirmed duplicate files; 167 local images remain. The subsequent [AI redraw batch](decisions/ai-artwork.md) changes four of those. The [arrow-overlay pass](decisions/trade-arrow-overlays.md) then removes 49 redundant variants, leaving four AI icons and 114 originals.
 
 | Former PFW ID | Active parent owner / ID | Preserved behavior and differences |
 |---|---|---|
@@ -38,7 +38,7 @@ All 35 previously disabled recipes remain inactive. The movement recipe `y-fab8k
 - The second armor `y-cyb-9u` and its animation/grid: no unambiguous successor selected.
 - Filled/empty PFW energy cells and wearable battery separation: keep fuel, refill and export behavior intact.
 - Previously unavailable inputs/recipes, factory-8 ingredient capacity, balancing and disabled-content restoration.
-- Retained-artwork upscaling and any still-unconfirmed duplicates. The follow-up maps/removes 39 confirmed duplicates and retains 167 other images, including unused images; four now use the accepted AI redraws.
+- Retained-artwork upscaling and any still-unconfirmed duplicates. The follow-up maps/removes 39 confirmed duplicates and retains 167 other images, including unused images; four now use the accepted AI redraws, and the arrow pass removes another 49 variants.
 - All migrations until a formal release. Reload validation concerns a save created with 0.5.1 itself.
 
 ## Verification
@@ -48,15 +48,15 @@ Tested with Factorio **2.1.21 Linux headless**, Yuoki **1.3.0** at `50ea38b9703a
 The official [crafting-machine schema](https://lua-api.factorio.com/latest/prototypes/AssemblingMachinePrototype.html) was checked for category and result handling, and the matching 2.1.21 runtime schema for equipment insertion/removal and character ammunition checks.
 
 - Full before/after prototype comparison: only the recorded suppressions, five recipe references, two ammunition categories, one removed PFW character-animation entry, Trade Node category addition and subsequent approved artwork substitutions differ. All unrelated parent prototypes and pending content identities/statistics remain unchanged.
-- Preservation: all 105 recipes and their quantities retained, all 35 historical disabled recipes still inactive, 163 remaining graphics unchanged, four approved AI redraws verified and 39 removals verified against the artwork manifest, all 232 original archive files intact at the immutable import commit.
+- Preservation: all 105 recipes and their quantities retained, all 35 historical disabled recipes still inactive, 114 remaining graphics unchanged, four approved AI redraws verified, 39 parent replacements and 49 arrow-variant removals verified against their manifests, all 232 original archive files intact at the immutable import commit.
 - Live crafting: all 56 PFW trades completed in Engines nodes with exact output quantities, including four-product exports and energy-cell exchanges. The parent's existing `y_exchange_b1` trade also completed.
 - Live construction/production: PFW's constructor produced ten parent nodes; the cyborg recipe consumed the parent minigun and produced its expected result. Tests supplied ingredients and power directly; they do not prove natural progression is complete.
 - Equipment: the parent generator and movement equipment were inserted into and removed from both the parent walker and the retained PFW second armor, returning the correct parent item IDs.
 - Ammunition: both pending PFW energy guns fired and consumed the parent ammunition. The engine also accepted the parent minigun/bullet pairing through `can_shoot`; a complete bullet-combat simulation is not claimed.
 - New 0.5.1 game, save and reload: successful; reload ran another 600 ticks. Data loading also checked with official optional mods enabled.
-- Graphical baseline: the owner tested 0.5.0 and confirmed the initial 0.5.1 candidate loads. The owner also confirmed the parent-artwork candidate loads. The latest four AI icons are headless-validated and their sample appearance was accepted; their integrated graphical check remains local.
+- Graphical baseline: the owner tested 0.5.0 and confirmed the initial 0.5.1 candidate loads. The owner also confirmed the parent-artwork candidate loads. The owner confirmed the four AI icons work in-game. The latest generated-arrow presentation still needs a local graphical check.
 
-Initial content-pass output and package identity are in [validation evidence](data/parent-content-0.5.1-validation.txt); the parent-reuse package is recorded in the [artwork follow-up](data/asset-reuse-0.5.1-validation.txt), and the current candidate in the [AI redraw validation](data/ai-redraw-0.5.1-validation.txt).
+Initial content-pass output and package identity are in [validation evidence](data/parent-content-0.5.1-validation.txt); the parent-reuse package is recorded in the [artwork follow-up](data/asset-reuse-0.5.1-validation.txt), the AI candidate in [its validation](data/ai-redraw-0.5.1-validation.txt), and the current candidate in [arrow validation](data/trade-icons-0.5.1-validation.txt).
 
 ### Reproduce the comparison
 

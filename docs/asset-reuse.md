@@ -8,7 +8,7 @@ The [accepted build plan](build-plan.md) puts a crash-free launch first. Compreh
 
 ## Current implementation status
 
-The [0.5.1 artwork pass](asset-reuse-0.5.1.md) implemented 39 visually confirmed replacements, initially retaining 167 original files unchanged. The subsequent [AI-artwork decision](decisions/ai-artwork.md) applies four reviewed redraws; 163 other local files remain unchanged. The inventory and candidate tables below remain historical discovery evidence.
+The [0.5.1 artwork pass](asset-reuse-0.5.1.md) implemented 39 visually confirmed replacements, initially retaining 167 original files unchanged. The subsequent [AI-artwork decision](decisions/ai-artwork.md) applies four reviewed redraws; 163 other local files remain unchanged. The latest [arrow-overlay pass](decisions/trade-arrow-overlays.md) removes 49 more variants and leaves 118 local images (four AI redraws and 114 originals). The inventory and candidate tables below remain historical discovery evidence.
 
 ## Preserve unused assets and disabled code
 

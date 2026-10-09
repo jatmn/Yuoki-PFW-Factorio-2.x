@@ -12,6 +12,10 @@ Review subsequent batches against the originals at their intended game sizes. Ke
 
 Preserve unused unique artwork and disabled source. Reusing parent artwork remains the first choice for confirmed duplicates. Artwork changes do not resolve pending item ownership, activate disabled recipes, change gameplay or authorize migrations. Version remains **0.5.1** until the owner requests another bump.
 
+## Arrow variants
+
+The owner confirmed this candidate works, then chose [Yuoki-generated arrow overlays](trade-arrow-overlays.md). Future AI work redraws base artwork only. The following first-batch record predates that overlay pass, which removes 49 redundant variants and leaves 118 local images (four AI redraws, 114 originals).
+
 ## First batch
 
 The four reviewed AI samples are installed as 64×64 transparent icons:

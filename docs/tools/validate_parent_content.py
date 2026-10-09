@@ -104,6 +104,39 @@ def replace_visuals(value):
     return value
 
 replace_visuals(expected)
+trade_map = json.loads((ROOT / 'docs/data/trade-icons-0.5.1.json').read_text())
+arrow_variants = {a['path']: a for a in trade_map['removed_variants']}
+assert len(arrow_variants) == 49
+assert not arrow_variants.keys() & (replacements.keys() | redraws.keys())
+assert len(trade_map['trades']) == 56
+assert len({t['recipe'] for t in trade_map['trades']}) == 56
+assert sum(t['direction'] == 'up' for t in trade_map['trades']) == 8
+item_types = ['item', 'tool', 'ammo', 'gun', 'armor', 'capsule', 'module', 'item-with-entity-data']
+for trade in trade_map['trades']:
+    recipe = expected['recipe'][trade['recipe']]
+    assert trade['direction'] in {'up', 'down'}
+    parts = recipe['results'] if trade['direction'] == 'up' else recipe['ingredients']
+    assert parts[0]['name'] == trade['source'], trade['recipe']
+    source = next(expected[k][trade['source']] for k in item_types if trade['source'] in expected.get(k, {}))
+    if source.get('icons'):
+        icons = copy.deepcopy(source['icons'])
+    else:
+        size = source.get('icon_size', 64)
+        icons = [{'icon': source['icon'], 'icon_size': size, 'scale': 32 / size}]
+    icons.append({'icon': '__Yuoki__/graphics/icons/atomics/atomics-' + trade['direction'] + '-arrow.png',
+                  'icon_size': 128, 'scale': 0.25})
+    recipe['icons'] = icons
+    recipe.pop('icon', None)
+    recipe.pop('icon_size', None)
+for entry in arrow_variants.values():
+    assert not (ROOT / entry['path']).exists(), entry['path']
+    for lua in ROOT.rglob('*.lua'):
+        assert '__yi_pfw__/' + entry['path'] not in lua.read_text(), lua
+    provider, relative = entry['base_icon'][2:].split('__/', 1)
+    base = (ROOT if provider == 'yi_pfw' else providers[provider]) / relative
+    content = base.read_bytes()
+    assert hashlib.sha256(content).hexdigest() == entry['base_sha256'], base
+    assert list(struct.unpack('>II', content[16:24])) == entry['base_dimensions'], base
 # Full equality catches lost recipes, changed quantities, pending mappings and parent regressions.
 for kind in expected.keys() | after.keys():
     assert expected.get(kind, {}).keys() == after.get(kind, {}).keys(), kind
@@ -119,10 +152,12 @@ for asset in assets:
         assert replacements[asset['path']]['original_sha256'] == asset['sha256'], asset['path']
     elif asset['path'] in redraws:
         assert redraws[asset['path']]['original_sha256'] == asset['sha256'], asset['path']
+    elif asset['path'] in arrow_variants:
+        assert arrow_variants[asset['path']]['original_sha256'] == asset['sha256'], asset['path']
     else:
         assert hashlib.sha256((ROOT / asset['path']).read_bytes()).hexdigest() == asset['sha256'], asset['path']
 assert len(replacements) == 39
-assert len(list((ROOT / 'graphics').rglob('*.png'))) == len(assets) - len(replacements)
+assert len(list((ROOT / 'graphics').rglob('*.png'))) == len(assets) - len(replacements) - len(arrow_variants)
 
 def check_layouts(value):
     if isinstance(value, list):
@@ -158,5 +193,5 @@ trades = [r for r in recipes if 'yrcat-retrade' in after['recipe'][r['name']].ge
 assert len(trades) == 56
 print(f'PASS: {removed} redundant declarations inactive; 105 recipe routes and quantities retained; '
       '56 trades supported; pending mappings/parent behavior preserved; 39 parent assets verified, '
-      '4 approved AI icons/source images verified, 163 original graphics unchanged; '
+      '4 approved AI icons/source images verified, 49 arrow variants replaced, 114 original graphics unchanged; '
       '0.5.1 changelog and no migrations verified.')
