@@ -1,0 +1,119 @@
+{
+  "version": "0.5.1",
+  "parent_commits": {
+    "Yuoki": "50ea38b9703a13e8644c3bcfe6e400b3bf2b4a5c",
+    "yi_engines": "8d777d015e36d93d2757a290c3f3f32a49c11280"
+  },
+  "mappings": [
+    {
+      "old": "y-retrader-1",
+      "new": "ye_trade_node",
+      "owner": "yi_engines",
+      "declarations": [
+        {
+          "type": "assembling-machine",
+          "path": "prototypes/e_basic.lua"
+        },
+        {
+          "type": "item",
+          "path": "prototypes/ir_basic.lua"
+        }
+      ]
+    },
+    {
+      "old": "y-sm-5",
+      "new": "yi_minigun",
+      "owner": "Yuoki",
+      "declarations": [
+        {
+          "type": "gun",
+          "path": "prototypes/uo_fab2.lua"
+        }
+      ]
+    },
+    {
+      "old": "y-mun-2",
+      "new": "yi_ammo_energie",
+      "owner": "Yuoki",
+      "declarations": [
+        {
+          "type": "ammo",
+          "path": "prototypes/uo_fab2.lua"
+        }
+      ]
+    },
+    {
+      "old": "y-equ-6",
+      "new": "yi_equip_generator_a",
+      "owner": "Yuoki",
+      "declarations": [
+        {
+          "type": "item",
+          "path": "prototypes/ir_fab8.lua"
+        },
+        {
+          "type": "generator-equipment",
+          "path": "prototypes/uo_fab8.lua"
+        }
+      ]
+    },
+    {
+      "old": "y-equ-9",
+      "new": "yi_equip_legs_a",
+      "owner": "Yuoki",
+      "declarations": [
+        {
+          "type": "item",
+          "path": "prototypes/ir_fab8.lua"
+        },
+        {
+          "type": "movement-bonus-equipment",
+          "path": "prototypes/uo_fab8.lua"
+        }
+      ]
+    },
+    {
+      "old": "y-cyb-8u",
+      "new": "yi_walker_a",
+      "owner": "Yuoki",
+      "declarations": [
+        {
+          "type": "armor",
+          "path": "prototypes/uo_fab3.lua"
+        }
+      ]
+    },
+    {
+      "old": "yi-pfw-walker-grid",
+      "new": "y_walker_grid",
+      "owner": "Yuoki",
+      "declarations": [
+        {
+          "type": "equipment-grid",
+          "path": "prototypes/uo_fab3.lua"
+        }
+      ]
+    },
+    {
+      "old": "yi-pfw-energy",
+      "new": "plasma",
+      "owner": "Yuoki",
+      "declarations": [
+        {
+          "type": "ammo-category",
+          "path": "prototypes/item-group/yi_pfw.lua"
+        }
+      ]
+    }
+  ],
+  "pending": [
+    "y-sm-1",
+    "y-sm-2",
+    "y-combat-armor-2",
+    "y-combat-armor-3",
+    "y-equ-1",
+    "y-equ-2",
+    "y-cyb-9u",
+    "y-zproduct-8"
+  ]
+}

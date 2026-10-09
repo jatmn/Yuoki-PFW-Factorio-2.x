@@ -2,11 +2,11 @@
 
 Research date: 2026-10-09. Subject: Yuoki Industries — Profit from War (`yi_pfw`) 0.4.15.
 
-This directory preserves the original mod's behavior and restoration research. The original Factorio 0.14 release remains in the immutable import commit. The working source is now the **0.5.0 Phase 1 candidate**; see [implementation and validation](phase-1.md) for changes, results and the pending owner graphical check. Historical inventories still describe 0.4.15.
+This directory preserves the original mod's behavior and restoration research. The original Factorio 0.14 release remains in the immutable import commit. The working source is now **0.5.1**, following the owner-tested and merged [Phase 1 startup port](phase-1.md). See [confirmed parent-content consolidation](parent-content-0.5.1.md) for current changes and validation. Historical inventories still describe 0.4.15.
 
 ## Accepted implementation priority
 
-[Build plan and release policy](build-plan.md): Phase 1 gets PFW to launch without crashing; cleanup and expansion follow. Start implementation at 0.5.0 and hold that version until the owner authorizes a bump. Add a Factorio-compliant changelog using Yuoki date formatting, update dependencies, and remove the legacy migrations for a fresh release without a 0.4.15 upgrade path.
+[Build plan and release policy](build-plan.md): Phase 1 gets PFW to launch without crashing; cleanup and expansion follow. Implementation started at 0.5.0; the owner has now authorized 0.5.1. Add a Factorio-compliant changelog using Yuoki date formatting, update dependencies, and remove the legacy migrations for a fresh release without a 0.4.15 upgrade path. All migrations are now deferred until a formal release.
 
 ## Reading order
 

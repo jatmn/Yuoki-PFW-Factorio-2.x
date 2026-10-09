@@ -1,6 +1,7 @@
 require "util"
 
 require("prototypes.item-group.yi_pfw")
+require("prototypes.parent-integration")
 require("prototypes.e_basic")
 require("prototypes.e_factory")
 

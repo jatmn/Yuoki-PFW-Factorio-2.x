@@ -1,3 +1,6 @@
+-- Parent owner: Yuoki yi_walker_a and its existing character animation.
+-- Keep the former PFW walker animation inactive for future reference.
+--[=[
 local playeranimations = {
 	idle =
 	{
@@ -118,6 +121,8 @@ mining_with_hands =
 		}
 	}
 })
+
+]=]
 
 local playeranimations_y2 = {
 	idle =

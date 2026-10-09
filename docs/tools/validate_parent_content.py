@@ -1,0 +1,80 @@
+"""Compare 0.5.1's real data dump with the merged 0.5.0 baseline.
+
+Use the same Factorio 2.1.21 and pinned parent mods for both dumps.
+Run: python3 docs/tools/validate_parent_content.py --before before.json --after after.json
+"""
+import argparse
+import copy
+import hashlib
+import json
+import re
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[2]
+parser = argparse.ArgumentParser(description=__doc__)
+parser.add_argument('--before', type=Path, required=True)
+parser.add_argument('--after', type=Path, required=True)
+args = parser.parse_args()
+before = json.loads(args.before.read_text())
+after = json.loads(args.after.read_text())
+assert before['recipe']['y-retrader-recipe']['results'][0]['name'] == 'y-retrader-1'
+mapping = json.loads((ROOT / 'docs/data/parent-content-0.5.1.json').read_text())
+expected = copy.deepcopy(before)
+item_aliases = {}
+removed = 0
+for entry in mapping['mappings']:
+    old, new = entry['old'], entry['new']
+    for declaration in entry['declarations']:
+        kind = declaration['type']
+        assert new in before[kind], (kind, new)
+        del expected[kind][old]
+        removed += 1
+        if kind in {'item', 'gun', 'ammo', 'armor'}:
+            item_aliases[old] = new
+        source = (ROOT / declaration['path']).read_text()
+        marker = f"-- Parent owner: {entry['owner']}, {kind} {new}."
+        assert marker in source, (kind, old)
+        inactive = source.split(marker, 1)[1].split('--[=[', 1)[1].split(']=]', 1)[0]
+        assert re.search(r'name\s*=\s*"' + re.escape(old) + '"', inactive), old
+
+recipes = json.loads((ROOT / 'docs/data/recipes.json').read_text())
+for old in recipes:
+    recipe = expected['recipe'][old['name']]
+    for field in ['ingredients', 'results']:
+        for part in recipe[field]:
+            part['name'] = item_aliases.get(part['name'], part['name'])
+for gun in ['y-sm-1', 'y-sm-2']:
+    expected['gun'][gun]['attack_parameters']['ammo_category'] = 'plasma'
+expected['assembling-machine']['ye_trade_node']['crafting_categories'].append('yrcat-retrade')
+animations = expected['character']['character']['animations']
+expected['character']['character']['animations'] = [
+    a for a in animations if a.get('armors') != ['y-cyb-8u']
+]
+# Full equality catches lost recipes, changed quantities, pending mappings and parent regressions.
+for kind in expected.keys() | after.keys():
+    assert expected.get(kind, {}).keys() == after.get(kind, {}).keys(), kind
+    for name, prototype in expected.get(kind, {}).items():
+        assert prototype == after[kind][name], (kind, name)
+for recipe in json.loads((ROOT / 'docs/data/recipe-ownership-audit.json').read_text()):
+    if recipe['state'] == 'commented':
+        assert recipe['name'] not in after['recipe'], recipe['name']
+manifest = json.loads((ROOT / 'docs/data/archive-manifest.json').read_text())
+assets = [a for a in manifest['files'] if a['path'].startswith('graphics/')]
+for asset in assets:
+    assert hashlib.sha256((ROOT / asset['path']).read_bytes()).hexdigest() == asset['sha256'], asset['path']
+assert not list(ROOT.glob('**/migrations/*'))
+info = json.loads((ROOT / 'info.json').read_text())
+assert info['version'] == '0.5.1' and info['factorio_version'] == '2.1'
+assert info['dependencies'] == ['base >= 2.1.21', 'Yuoki >= 1.3.0', 'yi_engines >= 1.3.0']
+lines = (ROOT / 'changelog.txt').read_text().splitlines()
+assert [x for x in lines if x.startswith('Version:')] == ['Version: 0.5.1', 'Version: 0.5.0']
+for i, line in enumerate(lines):
+    assert line == line.rstrip() and '\t' not in line
+    if line.startswith('Version:'):
+        assert lines[i-1] == '-' * 99
+        assert re.fullmatch(r'Date: [1-9][0-9]?\. [1-9][0-9]?\. [0-9]{4}', lines[i+1])
+trades = [r for r in recipes if 'yrcat-retrade' in after['recipe'][r['name']].get('categories', [])]
+assert len(trades) == 56
+print(f'PASS: {removed} redundant declarations inactive; 105 recipe routes and quantities retained; '
+      '56 trades supported; pending mappings/parent prototypes preserved; 206 graphics unchanged; '
+      '0.5.1 changelog and no migrations verified.')

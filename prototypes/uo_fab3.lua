@@ -1,7 +1,9 @@
--- PFW 12x12 grid: distinct from Yuoki's existing 14x14 y_walker_grid.
+-- First walker now belongs to Yuoki; the second armor mapping remains pending.
 data:extend(
 {
 
+	-- Parent owner: Yuoki, equipment-grid y_walker_grid. Preserved inactive PFW definition.
+	--[=[
 	{
 		type = "equipment-grid",
 		name = "yi-pfw-walker-grid",
@@ -9,6 +11,7 @@ data:extend(
 		height = 12,
 		equipment_categories = {"armor"},
 	},
+	]=]
 
 	{
 		type = "equipment-grid",
@@ -19,9 +22,12 @@ data:extend(
 	},
 	
 	
+	-- Parent armor: Yuoki yi_walker_a. This distinct conversion remains inactive.
 	--{ type = "recipe", name = "y-fab3ix_y8-recipe", energy_required = 5, ingredients = {{"y-cyb-8",1},{"y-fame",1}, }, result = "y-cyb-8u", enabled = "true", result_count = 1, order="sm-8", subgroup = "yi-basic", },			
 	--{ type = "recipe", name = "y-fab3ix_y9-recipe", energy_required = 5, ingredients = {{"y-cyb-9",1},{"y-fame",3}, }, result = "y-cyb-9u", enabled = "true", result_count = 1, order="sm-9", subgroup = "yi-basic", },		
 	
+	-- Parent owner: Yuoki, armor yi_walker_a. Preserved inactive PFW definition.
+	--[=[
 	{
 		type = "armor",
 		name = "y-cyb-8u",
@@ -39,6 +45,7 @@ data:extend(
 		equipment_grid = "yi-pfw-walker-grid",
 		inventory_size_bonus = 30						
 	},
+	]=]
 
 	{
 		type = "armor",

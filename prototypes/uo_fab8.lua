@@ -140,6 +140,8 @@ data:extend(
 		categories = {"armor"},
 	},
 	
+	-- Parent owner: Yuoki, generator-equipment yi_equip_generator_a. Preserved inactive PFW definition.
+	--[=[
 	{
 		type = "generator-equipment",
 		name = "y-equ-6",
@@ -163,8 +165,11 @@ data:extend(
 		},
 		power = "15MW",
 		categories = {"armor"},
-	},	
+	},
+	]=]
 	
+	-- Parent owner: Yuoki, movement-bonus-equipment yi_equip_legs_a. Preserved inactive PFW definition.
+	--[=[
 	{
 		type = "movement-bonus-equipment",
 		name = "y-equ-9",
@@ -190,6 +195,7 @@ data:extend(
 		movement_bonus = 0.275,
 		categories = {"armor"},
 	},
+	]=]
 	
 	
 })

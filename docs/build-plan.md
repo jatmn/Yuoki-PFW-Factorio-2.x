@@ -1,14 +1,14 @@
 # Accepted build sequence and release policy
 
-Owner requirements recorded 2026-10-09. These govern implementation and supersede the earlier suggested order where it put comprehensive cleanup ahead of getting the game to launch. Implementation status and evidence are recorded in [Phase 1](phase-1.md); graphical owner validation is pending.
+Owner requirements recorded 2026-10-09. These govern implementation and supersede the earlier suggested order where it put comprehensive cleanup ahead of getting the game to launch. The owner confirmed the Phase 1 candidate works and merged PR #5. Implementation continues with [0.5.1 confirmed parent-content consolidation](parent-content-0.5.1.md).
 
 ## Version and changelog
 
 - Start the restored mod at **0.5.0** when implementation begins. Set `info.json`, the package version and the first changelog section consistently.
-- **Hold at 0.5.0 until the owner explicitly authorizes another version.** Commits, PRs, completed phases and fixes do not authorize an automatic bump. Accumulate changes in the single 0.5.0 section.
+- The owner explicitly authorized **0.5.1** after merging Phase 1. Keep the 0.5.0 changelog section intact and accumulate this pass in 0.5.1. Hold at 0.5.1 until another version is authorized; commits, PRs and completed phases do not authorize an automatic bump.
 - Add a root `changelog.txt` when building. There is no existing changelog to carry forward; do not invent historical release entries. Record implemented changes rather than prospective discovery tasks.
 - Use Yuoki Industries' date convention: `Date: D. M. YYYY`, with unpadded day/month and spaces after the dots; for example `Date: 8. 10. 2026`. Use the applicable release date, not the example or discovery date by default. Reference: [Yuoki 1.3.0 changelog](https://github.com/jatmn/Yuoki-Factorio-2.x/blob/50ea38b9703a13e8644c3bcfe6e400b3bf2b4a5c/changelog.txt).
-- Follow Factorio's parser format: exactly 99 hyphens for the section separator, immediately followed by `Version: 0.5.0`; category lines indented two spaces and ending in a colon; entries indented four spaces then `- `; continuation lines indented six spaces. Avoid tabs, trailing spaces and duplicate version sections.
+- Follow Factorio's parser format: exactly 99 hyphens for the section separator, immediately followed by the section version (currently `Version: 0.5.1`); category lines indented two spaces and ending in a colon; entries indented four spaces then `- `; continuation lines indented six spaces. Avoid tabs, trailing spaces and duplicate version sections.
 
 The in-game browser parses this structure; the Mod Portal displays the file as plain text. Use the same file for both and verify it displays correctly in the game with no changelog parsing errors. The date format itself is unrestricted by Factorio, so Yuoki's convention is compatible. [Official changelog specification](https://lua-api.factorio.com/2.1.21/auxiliary/changelog-format.html).
 
@@ -35,7 +35,7 @@ When parent definitions/assets are used, resolve them against the loaded provide
 
 Do not repair, relocate or execute those files. Do not add a 0.4.15 → 0.5.0 migration or an old-save upgrade path. Validate new games and saves created by 0.5.0. The original archive/import and discovery records retain historical evidence; the future package should not carry these legacy migrations.
 
-This is a specific exception to the general rule preserving disabled code. All other disabled/commented content and unused unique artwork remain subject to the preservation requirements. This decision does not forbid migrations for future releases if the owner later requests them.
+This is a specific exception to the general rule preserving disabled code. All other disabled/commented content and unused unique artwork remain subject to the preservation requirements. **Updated owner direction: do not add any migrations before a formal release.** Use fresh games for development-version validation; save/reload checks use the same development version.
 
 ## Phase 1 — launch successfully
 
@@ -57,4 +57,4 @@ This milestone establishes a working launch baseline. It does not assert complet
 
 Continue the documented parent-content consolidation, unique-recipe restoration, duplicate-asset replacement/removal, retained-artwork upscaling, balance work, cleanup and expansion **after the startup milestone**. These requirements remain in force; they are not prerequisites for Phase 1 except where a specific compatibility fix is needed to launch.
 
-Preserve unique recipes when a machine/item moves to a parent. Retain redundant prototype definitions commented and annotated, and preserve other disabled content and unused unique assets. Apply only the explicit legacy-migration removal exception above. Completing later work also does not authorize a bump beyond 0.5.0.
+Preserve unique recipes when a machine/item moves to a parent. Retain redundant prototype definitions commented and annotated, and preserve other disabled content and unused unique assets. Apply only the explicit legacy-migration removal exception above. Completing later work does not authorize a bump beyond the explicitly approved current version, 0.5.1.

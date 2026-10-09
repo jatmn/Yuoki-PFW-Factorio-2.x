@@ -1,7 +1,10 @@
 data:extend(
 {
-	-- Keep the legacy PFW gun/ammo pair separate until parent-content consolidation.
+	-- Energy ammunition now belongs to Yuoki; retain the former category as inactive source.
+	-- Parent owner: Yuoki, ammo-category plasma. Preserved inactive PFW definition.
+	--[=[
 	{ type = "ammo-category", name = "yi-pfw-energy" },
+	]=]
 
 	{	type = "item-group", name = "yi_special", --[[Legacy field: inventory_order = "yis",]] icon = "__yi_pfw__/graphics/mpfw_ticon2.png", icon_size = 64, order = "yi-s", },
 

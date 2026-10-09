@@ -3,6 +3,8 @@ data:extend(
 {  
 
 	-- ReTrader
+	-- Parent owner: yi_engines, assembling-machine ye_trade_node. Preserved inactive PFW definition.
+	--[=[
 	{
 		type = "assembling-machine",
 		name = "y-retrader-1",
@@ -34,7 +36,8 @@ data:extend(
 		ingredient_count = 5,		
 		order="a",
 		subgroup = "yi-basic",
-	},	
+	},
+	]=]
 
 	-- Rich-1
 	{

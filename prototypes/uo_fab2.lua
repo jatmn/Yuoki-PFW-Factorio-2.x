@@ -41,6 +41,8 @@ data:extend(
 	]]
 	
 	-- Minigun
+	-- Parent owner: Yuoki, gun yi_minigun. Preserved inactive PFW definition.
+	--[=[
 	{
 		type = "gun",
 		name = "y-sm-5",
@@ -77,7 +79,9 @@ data:extend(
 		},
 		stack_size = 100
 	},
+	]=]
 
+	-- Identity mapping pending; use Yuoki yi_ammo_energie (plasma) ammunition.
 	-- Lasergun
 	{
 		type = "gun",
@@ -88,7 +92,7 @@ data:extend(
 		attack_parameters =
 		{
 			type = "projectile",
-			ammo_category = "yi-pfw-energy",
+			ammo_category = "plasma",
 			cooldown = 20,
 			movement_slow_down_factor = 0.0,
 			projectile_creation_distance = 0.6,
@@ -105,6 +109,7 @@ data:extend(
 		stack_size = 100
 	},
 
+	-- Identity mapping pending; use Yuoki yi_ammo_energie (plasma) ammunition.
 	-- Plasmagun
 	{
 		type = "gun",
@@ -115,7 +120,7 @@ data:extend(
 		attack_parameters =
 		{
 			type = "projectile",
-			ammo_category = "yi-pfw-energy",
+			ammo_category = "plasma",
 			cooldown = 7,
 			movement_slow_down_factor = 0.2,
 			projectile_creation_distance = 0.6,
@@ -132,6 +137,8 @@ data:extend(
 		stack_size = 100
 	},
 
+	-- Parent owner: Yuoki, ammo yi_ammo_energie. Preserved inactive PFW definition.
+	--[=[
 	{
 		type = "ammo",
 		name = "y-mun-2",
@@ -167,7 +174,8 @@ data:extend(
 		subgroup = "ammo",
 		order = "c[railgun]",
 		stack_size = 1000
-	},	
+	},
+	]=]
 	
 	
 	-- Parent owner: Yuoki/prototypes/objects/y_player_equipment.lua, projectile p2.
