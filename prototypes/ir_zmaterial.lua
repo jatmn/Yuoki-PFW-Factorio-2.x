@@ -35,10 +35,10 @@ data:extend(
 		results = {{type="item", name="y-combat-armor-2", amount=2,},}, 
 		enabled = "true", order="factory", subgroup = "yi-material", 
 		category= "yrcat-material",
-		icon = "__yi_pfw__/graphics/zmaterial/panz5_32.png"
+		icon = "__Yuoki__/graphics/armor/panz5_32.png", icon_size = 64
 	},	
 	]]	
-	{ type = "item", name = "y-combat-armor-2", icon = "__yi_pfw__/graphics/zmaterial/panz5_32.png", icon_size = 32, order = "a", stack_size = 250, place_as_equipment_result = "y-combat-armor-2",},
+	{ type = "item", name = "y-combat-armor-2", icon = "__Yuoki__/graphics/armor/panz5_32.png", icon_size = 64, order = "a", stack_size = 250, place_as_equipment_result = "y-combat-armor-2",},
 
 	-- Combat Armor 3
 	--[[
@@ -48,10 +48,10 @@ data:extend(
 		results = {{type="item", name="y-combat-armor-3", amount=2,},}, 
 		enabled = "true", order="factory", subgroup = "yi-material", 
 		category= "yrcat-material",
-		icon = "__yi_pfw__/graphics/zmaterial/panz4_32.png"
+		icon = "__Yuoki__/graphics/armor/panz4_32.png", icon_size = 64
 	},	
 	]]	
-	{ type = "item", name = "y-combat-armor-3", icon = "__yi_pfw__/graphics/zmaterial/panz4_32.png", icon_size = 32, order = "a", stack_size = 250, place_as_equipment_result = "y-combat-armor-3",},
+	{ type = "item", name = "y-combat-armor-3", icon = "__Yuoki__/graphics/armor/panz4_32.png", icon_size = 64, order = "a", stack_size = 250, place_as_equipment_result = "y-combat-armor-3",},
 
 	{ type = "recipe", name = "y-zproduct-5-recipe", 
 		energy_required= 4, 

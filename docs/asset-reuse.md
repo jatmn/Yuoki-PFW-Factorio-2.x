@@ -6,6 +6,10 @@ On 2026-10-09, the owner added the requirement that the Factorio 2.1 restoration
 
 The [accepted build plan](build-plan.md) puts a crash-free launch first. Comprehensive asset ownership, replacement/removal and upscaling follow Phase 1; mapping still precedes deletion. Phase 1 may correct asset paths and metadata as needed for startup. The original import remains the historical record; subsequent implementation commits can remove replaced files without losing that record. This discovery PR records the requirement and audit, and makes no original-source or asset changes.
 
+## Current implementation status
+
+The [0.5.1 artwork pass](asset-reuse-0.5.1.md) implements 39 visually confirmed replacements, with 167 original files retained unchanged. The inventory and candidate tables below remain historical discovery evidence.
+
 ## Preserve unused assets and disabled code
 
 The owner explicitly requires keeping unused assets and disabled/commented-out code for future reuse. Preserve them in the maintained source tree; having the originals in Git history is not a substitute for this requirement. Disabled code remains disabled until its behavior is deliberately revisited.

@@ -1,0 +1,959 @@
+{
+  "version": "0.5.1",
+  "parent_commits": {
+    "Yuoki": "50ea38b9703a13e8644c3bcfe6e400b3bf2b4a5c",
+    "yi_engines": "8d777d015e36d93d2757a290c3f3f32a49c11280"
+  },
+  "review": "Compared 206 original PNGs against 1311 provider PNGs, basename candidates, small-image similarity and manual visual review. Compared every 80x100 tile in the 14 same-layout character sheets; visually inspected every direction of the active armor2 sheets. Similarity scores alone never authorize removal.",
+  "replacements": [
+    {
+      "pfw_path": "graphics/armor/armor2_dig.png",
+      "provider": "Yuoki",
+      "provider_path": "graphics/armor/armor2_dig.png",
+      "original_dimensions": [
+        80,
+        800
+      ],
+      "provider_dimensions": [
+        80,
+        800
+      ],
+      "original_sha256": "75c03492cb4a83ba5da0a9d054e5711c3b5d8f0c587bf7d77d5b5f8b3afc8b15",
+      "provider_sha256": "2ab0a3c77e158d7419258c0669f762c9fdbd52e43c31d1ae9aee66d4d6b875cd",
+      "source_references_before": [
+        "prototypes/uo_fabx.lua:154",
+        "prototypes/uo_fabx.lua:166"
+      ],
+      "evidence": "Visually confirmed same artwork family; decoded pixels differ. Parent version used directly.",
+      "metadata": "Icon size follows provider dimensions; equal-sized sprites retain all frame, direction, shift and scale fields.",
+      "frame_comparison": {
+        "path": "graphics/armor/armor2_dig.png",
+        "frame_size": [
+          80,
+          100
+        ],
+        "tiles_checked": 8,
+        "maximum_mean_rgba_difference": 1.075
+      }
+    },
+    {
+      "pfw_path": "graphics/armor/armor2_idle.png",
+      "provider": "Yuoki",
+      "provider_path": "graphics/armor/armor2_idle.png",
+      "original_dimensions": [
+        80,
+        800
+      ],
+      "provider_dimensions": [
+        80,
+        800
+      ],
+      "original_sha256": "600a677862c64863eea623543a743e1d5293c48859478df7c095ef9fef250be7",
+      "provider_sha256": "32dfa45e7bd6d3c94ab1e845b3b77d5e45ef43cf71d716c607a82955805ad2d0",
+      "source_references_before": [],
+      "evidence": "Visually confirmed same artwork family; decoded pixels differ. Parent version used directly.",
+      "metadata": "Icon size follows provider dimensions; equal-sized sprites retain all frame, direction, shift and scale fields.",
+      "frame_comparison": {
+        "path": "graphics/armor/armor2_idle.png",
+        "frame_size": [
+          80,
+          100
+        ],
+        "tiles_checked": 8,
+        "maximum_mean_rgba_difference": 0.771
+      },
+      "future_use": "Unused duplicate: provider path and dimensions retained here for future use."
+    },
+    {
+      "pfw_path": "graphics/armor/armor2_idle_sheet.png",
+      "provider": "Yuoki",
+      "provider_path": "graphics/armor/armor2_idle_sheet.png",
+      "original_dimensions": [
+        1280,
+        800
+      ],
+      "provider_dimensions": [
+        1280,
+        800
+      ],
+      "original_sha256": "2a5af0308b5f0a3c0ef6f2d811d516103100b04d97c070647c79f484c12422e5",
+      "provider_sha256": "ec4fbac4089840167b1220c35466659e200f30156eb50cad83a3d9462e939591",
+      "source_references_before": [
+        "prototypes/uo_fabx.lua:130",
+        "prototypes/uo_fabx.lua:142"
+      ],
+      "evidence": "Visually confirmed same artwork family; decoded pixels differ. Parent version used directly.",
+      "metadata": "Icon size follows provider dimensions; equal-sized sprites retain all frame, direction, shift and scale fields.",
+      "frame_comparison": {
+        "path": "graphics/armor/armor2_idle_sheet.png",
+        "frame_size": [
+          80,
+          100
+        ],
+        "tiles_checked": 128,
+        "maximum_mean_rgba_difference": 0.913
+      }
+    },
+    {
+      "pfw_path": "graphics/armor/armor2_walk.png",
+      "provider": "Yuoki",
+      "provider_path": "graphics/armor/armor2_walk.png",
+      "original_dimensions": [
+        80,
+        800
+      ],
+      "provider_dimensions": [
+        80,
+        800
+      ],
+      "original_sha256": "600a677862c64863eea623543a743e1d5293c48859478df7c095ef9fef250be7",
+      "provider_sha256": "32dfa45e7bd6d3c94ab1e845b3b77d5e45ef43cf71d716c607a82955805ad2d0",
+      "source_references_before": [],
+      "evidence": "Visually confirmed same artwork family; decoded pixels differ. Parent version used directly.",
+      "metadata": "Icon size follows provider dimensions; equal-sized sprites retain all frame, direction, shift and scale fields.",
+      "frame_comparison": {
+        "path": "graphics/armor/armor2_walk.png",
+        "frame_size": [
+          80,
+          100
+        ],
+        "tiles_checked": 8,
+        "maximum_mean_rgba_difference": 0.771
+      },
+      "future_use": "Unused duplicate: provider path and dimensions retained here for future use."
+    },
+    {
+      "pfw_path": "graphics/armor/armor2_walk_gun.png",
+      "provider": "Yuoki",
+      "provider_path": "graphics/armor/armor2_walk_gun.png",
+      "original_dimensions": [
+        80,
+        1800
+      ],
+      "provider_dimensions": [
+        80,
+        1800
+      ],
+      "original_sha256": "d2afd010f71394cd93a2952a8f1ace36ddf9916a21e83dac2b57d9f89b64b9ce",
+      "provider_sha256": "9fc7c784b636f3d4ba04078fba63edf2d548883f9648658c701034b87cf21384",
+      "source_references_before": [
+        "prototypes/uo_fabx.lua:178"
+      ],
+      "evidence": "Visually confirmed same artwork family; decoded pixels differ. Parent version used directly.",
+      "metadata": "Icon size follows provider dimensions; equal-sized sprites retain all frame, direction, shift and scale fields.",
+      "frame_comparison": {
+        "path": "graphics/armor/armor2_walk_gun.png",
+        "frame_size": [
+          80,
+          100
+        ],
+        "tiles_checked": 18,
+        "maximum_mean_rgba_difference": 1.795
+      }
+    },
+    {
+      "pfw_path": "graphics/armor/armor2_walk_sheet.png",
+      "provider": "Yuoki",
+      "provider_path": "graphics/armor/armor2_walk_sheet.png",
+      "original_dimensions": [
+        1760,
+        800
+      ],
+      "provider_dimensions": [
+        1760,
+        800
+      ],
+      "original_sha256": "1894998d786e936fbf7ba6933bae65d814e132ad401bc80e2ecda649fccbf697",
+      "provider_sha256": "157ef204ecd09579f9243ce144306e50aea7e6192d535e28c8e7b5f62c9dc442",
+      "source_references_before": [
+        "prototypes/uo_fabx.lua:188"
+      ],
+      "evidence": "Visually confirmed same artwork family; decoded pixels differ. Parent version used directly.",
+      "metadata": "Icon size follows provider dimensions; equal-sized sprites retain all frame, direction, shift and scale fields.",
+      "frame_comparison": {
+        "path": "graphics/armor/armor2_walk_sheet.png",
+        "frame_size": [
+          80,
+          100
+        ],
+        "tiles_checked": 176,
+        "maximum_mean_rgba_difference": 0.851
+      }
+    },
+    {
+      "pfw_path": "graphics/armor/cb3_dig.png",
+      "provider": "Yuoki",
+      "provider_path": "graphics/armor/cb3_dig.png",
+      "original_dimensions": [
+        80,
+        800
+      ],
+      "provider_dimensions": [
+        80,
+        800
+      ],
+      "original_sha256": "acde4cc8bd20eb95e2cd4879f0776a054d5a33f7f0ff0862e9eab247a976b64f",
+      "provider_sha256": "5a42f0eb170db24d1941621bd309ddf43f3c1a3a3819b3caf772a5756306a030",
+      "source_references_before": [],
+      "evidence": "Visually confirmed same artwork family; decoded pixels differ. Parent version used directly.",
+      "metadata": "Icon size follows provider dimensions; equal-sized sprites retain all frame, direction, shift and scale fields.",
+      "frame_comparison": {
+        "path": "graphics/armor/cb3_dig.png",
+        "frame_size": [
+          80,
+          100
+        ],
+        "tiles_checked": 8,
+        "maximum_mean_rgba_difference": 1.269
+      },
+      "future_use": "Unused duplicate: provider path and dimensions retained here for future use."
+    },
+    {
+      "pfw_path": "graphics/armor/cb3_idle_sheet.png",
+      "provider": "Yuoki",
+      "provider_path": "graphics/armor/cb3_idle_sheet.png",
+      "original_dimensions": [
+        1280,
+        800
+      ],
+      "provider_dimensions": [
+        1280,
+        800
+      ],
+      "original_sha256": "a8daaf724a5bcefaf9db0c768b63f15d4488489f5dcdf2a1761ebe58bae9315f",
+      "provider_sha256": "38f52c4791af817eb1384476151c4d0963bd5d5ab28bfc88b892716d18595b91",
+      "source_references_before": [],
+      "evidence": "Visually confirmed same artwork family; decoded pixels differ. Parent version used directly.",
+      "metadata": "Icon size follows provider dimensions; equal-sized sprites retain all frame, direction, shift and scale fields.",
+      "frame_comparison": {
+        "path": "graphics/armor/cb3_idle_sheet.png",
+        "frame_size": [
+          80,
+          100
+        ],
+        "tiles_checked": 128,
+        "maximum_mean_rgba_difference": 1.282
+      },
+      "future_use": "Unused duplicate: provider path and dimensions retained here for future use."
+    },
+    {
+      "pfw_path": "graphics/armor/cb3_walk_gun.png",
+      "provider": "Yuoki",
+      "provider_path": "graphics/armor/cb3_walk_gun.png",
+      "original_dimensions": [
+        80,
+        1800
+      ],
+      "provider_dimensions": [
+        80,
+        1800
+      ],
+      "original_sha256": "07b7b7482a1e5235145a754f749700223785526b966c64686c343d7b7dc83642",
+      "provider_sha256": "64d4792dc9251e048b108e59448b2fcf6b216bfa221523f267cf5e984b49131d",
+      "source_references_before": [],
+      "evidence": "Visually confirmed same artwork family; decoded pixels differ. Parent version used directly.",
+      "metadata": "Icon size follows provider dimensions; equal-sized sprites retain all frame, direction, shift and scale fields.",
+      "frame_comparison": {
+        "path": "graphics/armor/cb3_walk_gun.png",
+        "frame_size": [
+          80,
+          100
+        ],
+        "tiles_checked": 18,
+        "maximum_mean_rgba_difference": 1.834
+      },
+      "future_use": "Unused duplicate: provider path and dimensions retained here for future use."
+    },
+    {
+      "pfw_path": "graphics/armor/cb3_walk_sheet.png",
+      "provider": "Yuoki",
+      "provider_path": "graphics/armor/cb3_walk_sheet.png",
+      "original_dimensions": [
+        1760,
+        800
+      ],
+      "provider_dimensions": [
+        1760,
+        800
+      ],
+      "original_sha256": "5e49da5880215e42cf4e2f3fe0ecc5f3139ec70f1d04f3d4a203d4cea2778ea8",
+      "provider_sha256": "fce25ec9941f2345293dc0d53382e5332d62d9a789f76fd8682a491efdb944eb",
+      "source_references_before": [],
+      "evidence": "Visually confirmed same artwork family; decoded pixels differ. Parent version used directly.",
+      "metadata": "Icon size follows provider dimensions; equal-sized sprites retain all frame, direction, shift and scale fields.",
+      "frame_comparison": {
+        "path": "graphics/armor/cb3_walk_sheet.png",
+        "frame_size": [
+          80,
+          100
+        ],
+        "tiles_checked": 176,
+        "maximum_mean_rgba_difference": 1.274
+      },
+      "future_use": "Unused duplicate: provider path and dimensions retained here for future use."
+    },
+    {
+      "pfw_path": "graphics/armor/robo1_dig.png",
+      "provider": "Yuoki",
+      "provider_path": "graphics/armor/robo1_dig.png",
+      "original_dimensions": [
+        1280,
+        800
+      ],
+      "provider_dimensions": [
+        1280,
+        800
+      ],
+      "original_sha256": "6dbbdb4ce5d848343bf85e67f36a64a1457cca5d39d2c9c9cbf693005359ac76",
+      "provider_sha256": "29fa599a728a7e964f9fe3a7edf25b386b8976fee155aff85916196edb41cfbc",
+      "source_references_before": [
+        "prototypes/uo_fabx.lua:31",
+        "prototypes/uo_fabx.lua:43"
+      ],
+      "evidence": "Visually confirmed same artwork family; decoded pixels differ. Parent version used directly.",
+      "metadata": "Icon size follows provider dimensions; equal-sized sprites retain all frame, direction, shift and scale fields.",
+      "frame_comparison": {
+        "path": "graphics/armor/robo1_dig.png",
+        "frame_size": [
+          80,
+          100
+        ],
+        "tiles_checked": 128,
+        "maximum_mean_rgba_difference": 1.61
+      }
+    },
+    {
+      "pfw_path": "graphics/armor/robo1_idle.png",
+      "provider": "Yuoki",
+      "provider_path": "graphics/armor/robo1_idle.png",
+      "original_dimensions": [
+        1280,
+        800
+      ],
+      "provider_dimensions": [
+        1280,
+        800
+      ],
+      "original_sha256": "70481ca1cc9cb8f7e00b0ef94178c5befe80fd944b2a68db31aba23dc4f9c1bb",
+      "provider_sha256": "f71bd7fe3d8f22c1fc02de66566332cad07116559447bce07ccdb9d816e04699",
+      "source_references_before": [
+        "prototypes/uo_fabx.lua:7",
+        "prototypes/uo_fabx.lua:19"
+      ],
+      "evidence": "Visually confirmed same artwork family; decoded pixels differ. Parent version used directly.",
+      "metadata": "Icon size follows provider dimensions; equal-sized sprites retain all frame, direction, shift and scale fields.",
+      "frame_comparison": {
+        "path": "graphics/armor/robo1_idle.png",
+        "frame_size": [
+          80,
+          100
+        ],
+        "tiles_checked": 128,
+        "maximum_mean_rgba_difference": 1.131
+      }
+    },
+    {
+      "pfw_path": "graphics/armor/robo1_walk.png",
+      "provider": "Yuoki",
+      "provider_path": "graphics/armor/robo1_walk.png",
+      "original_dimensions": [
+        1760,
+        800
+      ],
+      "provider_dimensions": [
+        1760,
+        800
+      ],
+      "original_sha256": "a9da6f08b01ad79c483b3f0118f0048746055e4b607f0fc2ef716c35d3cba633",
+      "provider_sha256": "e0592bed75c2018694de9749e229117a3893fd14678191892f0dc659d2638594",
+      "source_references_before": [
+        "prototypes/uo_fabx.lua:65"
+      ],
+      "evidence": "Visually confirmed same artwork family; decoded pixels differ. Parent version used directly.",
+      "metadata": "Icon size follows provider dimensions; equal-sized sprites retain all frame, direction, shift and scale fields.",
+      "frame_comparison": {
+        "path": "graphics/armor/robo1_walk.png",
+        "frame_size": [
+          80,
+          100
+        ],
+        "tiles_checked": 176,
+        "maximum_mean_rgba_difference": 1.23
+      }
+    },
+    {
+      "pfw_path": "graphics/armor/robo1_walk_gun.png",
+      "provider": "Yuoki",
+      "provider_path": "graphics/armor/robo1_walk_gun.png",
+      "original_dimensions": [
+        80,
+        1800
+      ],
+      "provider_dimensions": [
+        80,
+        1800
+      ],
+      "original_sha256": "485ff3c2d4fedbba4b17f040f89b38ab7485857619880fd89b8b75d9b28763f0",
+      "provider_sha256": "d2f121e071855abfade280a1a834152a6194d359addd04a6c65196a534595193",
+      "source_references_before": [
+        "prototypes/uo_fabx.lua:55"
+      ],
+      "evidence": "Visually confirmed same artwork family; decoded pixels differ. Parent version used directly.",
+      "metadata": "Icon size follows provider dimensions; equal-sized sprites retain all frame, direction, shift and scale fields.",
+      "frame_comparison": {
+        "path": "graphics/armor/robo1_walk_gun.png",
+        "frame_size": [
+          80,
+          100
+        ],
+        "tiles_checked": 18,
+        "maximum_mean_rgba_difference": 2.614
+      }
+    },
+    {
+      "pfw_path": "graphics/caseing-icon.png",
+      "provider": "yi_engines",
+      "provider_path": "graphics/caseing-icon.png",
+      "original_dimensions": [
+        32,
+        32
+      ],
+      "provider_dimensions": [
+        32,
+        32
+      ],
+      "original_sha256": "de9c139ff48782be3ed57b74f44c18e6e2c4c7f0e41d8be41ee85b3811bd4656",
+      "provider_sha256": "50dde66f434b808c9d8223980420c40c6c495c517e4e0677374489986aa0f36f",
+      "source_references_before": [],
+      "evidence": "Visually confirmed same artwork family; decoded pixels differ. Parent version used directly.",
+      "metadata": "Icon size follows provider dimensions; equal-sized sprites retain all frame, direction, shift and scale fields.",
+      "future_use": "Unused duplicate: provider path and dimensions retained here for future use."
+    },
+    {
+      "pfw_path": "graphics/entity/gearbox-icon.png",
+      "provider": "yi_engines",
+      "provider_path": "graphics/entity/gearbox-icon.png",
+      "original_dimensions": [
+        32,
+        32
+      ],
+      "provider_dimensions": [
+        32,
+        32
+      ],
+      "original_sha256": "c9c0ba167740528bd9738e81f98fd02d252e592f63a29d85100a1353a99087be",
+      "provider_sha256": "e316cae115d656a8800683692c637bec9e7c1926f95ba713d0adafdd6f4cdef7",
+      "source_references_before": [],
+      "evidence": "Visually confirmed same artwork family; decoded pixels differ. Parent version used directly.",
+      "metadata": "Icon size follows provider dimensions; equal-sized sprites retain all frame, direction, shift and scale fields.",
+      "future_use": "Unused duplicate: provider path and dimensions retained here for future use."
+    },
+    {
+      "pfw_path": "graphics/equip/energy-128e.png",
+      "provider": "Yuoki",
+      "provider_path": "graphics/armor/energy-128e.png",
+      "original_dimensions": [
+        128,
+        128
+      ],
+      "provider_dimensions": [
+        128,
+        128
+      ],
+      "original_sha256": "be1d9e74e01aec33cbe444af64e5287bf8db8786d72fd611a0e80329d802005a",
+      "provider_sha256": "1449c72c795e70ea50fa22bf50efb43d7cdf0b36c47da486fb8e43d5674f07df",
+      "source_references_before": [
+        "prototypes/uo_fab8.lua:150"
+      ],
+      "evidence": "Visually confirmed same artwork family; decoded pixels differ. Parent version used directly.",
+      "metadata": "Icon size follows provider dimensions; equal-sized sprites retain all frame, direction, shift and scale fields."
+    },
+    {
+      "pfw_path": "graphics/equip/energy_icon.png",
+      "provider": "Yuoki",
+      "provider_path": "graphics/armor/energy_icon.png",
+      "original_dimensions": [
+        32,
+        32
+      ],
+      "provider_dimensions": [
+        64,
+        64
+      ],
+      "original_sha256": "4df1936d8e8df11801f309cc8fafd636951ffdc5ddbfbc803550fd1933699393",
+      "provider_sha256": "1bd8265bef9ba79f08363bcd484404e3572560a999a0ba32829f5c8d818aca77",
+      "source_references_before": [],
+      "evidence": "Visually confirmed same artwork family; decoded pixels differ. Parent version used directly.",
+      "metadata": "Icon size follows provider dimensions; equal-sized sprites retain all frame, direction, shift and scale fields.",
+      "future_use": "Unused duplicate: provider path and dimensions retained here for future use."
+    },
+    {
+      "pfw_path": "graphics/equip/exo1_icon_e.png",
+      "provider": "Yuoki",
+      "provider_path": "graphics/armor/exo1_icon_e.png",
+      "original_dimensions": [
+        32,
+        32
+      ],
+      "provider_dimensions": [
+        64,
+        64
+      ],
+      "original_sha256": "b974ce8b8761471e91b22ae4f08e85ba8414c0929acce13c5faa37f11bf58630",
+      "provider_sha256": "ac3646a72249c1e2034e5243ec74456a87aa02827edc0241ff24d6e7a317817f",
+      "source_references_before": [
+        "prototypes/ir_fab8.lua:53"
+      ],
+      "evidence": "Visually confirmed same artwork family; decoded pixels differ. Parent version used directly.",
+      "metadata": "Icon size follows provider dimensions; equal-sized sprites retain all frame, direction, shift and scale fields."
+    },
+    {
+      "pfw_path": "graphics/equip/exo1_upgrade_e.png",
+      "provider": "Yuoki",
+      "provider_path": "graphics/armor/exo1_upgrade_e.png",
+      "original_dimensions": [
+        64,
+        96
+      ],
+      "provider_dimensions": [
+        64,
+        96
+      ],
+      "original_sha256": "79d24af719f519027c4efe85d8ed1042762f9c3436a5c574d72e7ddf2f82510a",
+      "provider_sha256": "d16a25691f051da506f70e9425b0a8cbdf9538efe5bfa6e713cae0c98bd0d20c",
+      "source_references_before": [
+        "prototypes/uo_fab8.lua:178"
+      ],
+      "evidence": "Visually confirmed same artwork family; decoded pixels differ. Parent version used directly.",
+      "metadata": "Icon size follows provider dimensions; equal-sized sprites retain all frame, direction, shift and scale fields."
+    },
+    {
+      "pfw_path": "graphics/equip/lfg13_64.png",
+      "provider": "Yuoki",
+      "provider_path": "graphics/armor/lfg13_64.png",
+      "original_dimensions": [
+        64,
+        64
+      ],
+      "provider_dimensions": [
+        64,
+        64
+      ],
+      "original_sha256": "a8a1ed90dea4deb21a777534c463d0997330b64f6593a824a94bb0c06163bec1",
+      "provider_sha256": "8b22b6bf7fd59e972a485bda7a60d7b229f22cbe99799a903ba5329a74b9016b",
+      "source_references_before": [
+        "prototypes/uo_fab8.lua:65"
+      ],
+      "evidence": "Visually confirmed same artwork family; decoded pixels differ. Parent version used directly.",
+      "metadata": "Icon size follows provider dimensions; equal-sized sprites retain all frame, direction, shift and scale fields."
+    },
+    {
+      "pfw_path": "graphics/equip/mfg28_96.png",
+      "provider": "Yuoki",
+      "provider_path": "graphics/armor/mfg28_96.png",
+      "original_dimensions": [
+        96,
+        96
+      ],
+      "provider_dimensions": [
+        96,
+        96
+      ],
+      "original_sha256": "856bcc8eac68a4c9c0e88440726bd76454342891f47d8c0b30d2799d62fe9b7a",
+      "provider_sha256": "cae14f377f1113b9cc9df3f6aefff8debe78468961177a17adc9c67e6dbef042",
+      "source_references_before": [
+        "prototypes/uo_fab8.lua:93"
+      ],
+      "evidence": "Visually confirmed same artwork family; decoded pixels differ. Parent version used directly.",
+      "metadata": "Icon size follows provider dimensions; equal-sized sprites retain all frame, direction, shift and scale fields."
+    },
+    {
+      "pfw_path": "graphics/equip/panz_4-96be.png",
+      "provider": "Yuoki",
+      "provider_path": "graphics/armor/panz_4-96be.png",
+      "original_dimensions": [
+        96,
+        64
+      ],
+      "provider_dimensions": [
+        96,
+        64
+      ],
+      "original_sha256": "6a731f39ff28c556b261b640e7f37ec98c52cd3227ee2438d533c6579866731c",
+      "provider_sha256": "9bb3207a1d234f8cf583a107e5ac0c03230a33f74ac98a5a718c29f86a480070",
+      "source_references_before": [
+        "prototypes/uo_fab8.lua:37"
+      ],
+      "evidence": "Visually confirmed same artwork family; decoded pixels differ. Parent version used directly.",
+      "metadata": "Icon size follows provider dimensions; equal-sized sprites retain all frame, direction, shift and scale fields."
+    },
+    {
+      "pfw_path": "graphics/equip/panz_5-96be.png",
+      "provider": "Yuoki",
+      "provider_path": "graphics/armor/panz_5-96be.png",
+      "original_dimensions": [
+        96,
+        64
+      ],
+      "provider_dimensions": [
+        96,
+        64
+      ],
+      "original_sha256": "bbab9f351cc30d4b80ee063c79aba1384f102c216b231e50be3c587f4c79d726",
+      "provider_sha256": "2fe38407f953723b2838327ed09f28312322e6e4bc3e9bf211cb085d88145c2f",
+      "source_references_before": [
+        "prototypes/uo_fab8.lua:9"
+      ],
+      "evidence": "Visually confirmed same artwork family; decoded pixels differ. Parent version used directly.",
+      "metadata": "Icon size follows provider dimensions; equal-sized sprites retain all frame, direction, shift and scale fields."
+    },
+    {
+      "pfw_path": "graphics/fab1/bst_z2.png",
+      "provider": "Yuoki",
+      "provider_path": "graphics/armor/bst_z2.png",
+      "original_dimensions": [
+        32,
+        32
+      ],
+      "provider_dimensions": [
+        64,
+        64
+      ],
+      "original_sha256": "071c5af650f0d4f9f4dc372a1ccdab7b3939a3674ed14b479bacba502022df27",
+      "provider_sha256": "54f93918df89238c74effdd68c9395e72e1cd76549a29a3a23d60662df46c24a",
+      "source_references_before": [],
+      "evidence": "Visually confirmed same artwork family; decoded pixels differ. Parent version used directly.",
+      "metadata": "Icon size follows provider dimensions; equal-sized sprites retain all frame, direction, shift and scale fields.",
+      "future_use": "Unused duplicate: provider path and dimensions retained here for future use."
+    },
+    {
+      "pfw_path": "graphics/fab2/lasergun.png",
+      "provider": "Yuoki",
+      "provider_path": "graphics/armor/lasergun.png",
+      "original_dimensions": [
+        32,
+        32
+      ],
+      "provider_dimensions": [
+        64,
+        64
+      ],
+      "original_sha256": "256dc9ad527b7c44d27c2ce7b69ecdc084d567d235153ce180be5e33a51d9841",
+      "provider_sha256": "43300ef294cddfba7b6299098062f9748673e9f42c0e65d4f59b1aa7cfbabee0",
+      "source_references_before": [
+        "prototypes/uo_fab2.lua:89",
+        "prototypes/ir_fab2.lua:39"
+      ],
+      "evidence": "Visually confirmed same artwork family; decoded pixels differ. Parent version used directly.",
+      "metadata": "Icon size follows provider dimensions; equal-sized sprites retain all frame, direction, shift and scale fields."
+    },
+    {
+      "pfw_path": "graphics/fab2/minigun.png",
+      "provider": "Yuoki",
+      "provider_path": "graphics/armor/minigun.png",
+      "original_dimensions": [
+        32,
+        32
+      ],
+      "provider_dimensions": [
+        64,
+        64
+      ],
+      "original_sha256": "1adb8b77face5f995ea52084a640b89beb8f36e39490dce8959b533ab14b423d",
+      "provider_sha256": "e923e39a984731ead95c10824b3adbbcbc4c87b489952880ca6f8e610988da6e",
+      "source_references_before": [
+        "prototypes/uo_fab2.lua:49",
+        "prototypes/ir_fab2.lua:44"
+      ],
+      "evidence": "Visually confirmed same artwork family; decoded pixels differ. Parent version used directly.",
+      "metadata": "Icon size follows provider dimensions; equal-sized sprites retain all frame, direction, shift and scale fields."
+    },
+    {
+      "pfw_path": "graphics/fab3/brain-parasite-1.png",
+      "provider": "yi_engines",
+      "provider_path": "graphics/icons/brain-parasite-1.png",
+      "original_dimensions": [
+        32,
+        32
+      ],
+      "provider_dimensions": [
+        32,
+        32
+      ],
+      "original_sha256": "d86170590eab6750d8f1a5976c09865b541d8f83031fcea9f5cdea678ab458a6",
+      "provider_sha256": "30d680dc4b3475eccd3ddf76fc000f54913861c24f9ad314e861718203f7aa47",
+      "source_references_before": [
+        "prototypes/ir_fab3.lua:24"
+      ],
+      "evidence": "Visually confirmed same artwork family; decoded pixels differ. Parent version used directly.",
+      "metadata": "Icon size follows provider dimensions; equal-sized sprites retain all frame, direction, shift and scale fields."
+    },
+    {
+      "pfw_path": "graphics/fab3/neron_u3_32.png",
+      "provider": "Yuoki",
+      "provider_path": "graphics/armor/neron_u3_32.png",
+      "original_dimensions": [
+        32,
+        32
+      ],
+      "provider_dimensions": [
+        64,
+        64
+      ],
+      "original_sha256": "71c34dcb67efdf7e2e3508d2fd8ac4fb91d5dc1ec5f0016b304b99db6a8ddc23",
+      "provider_sha256": "c9f7b4ccc024675735ea17c4bdbcb7c38fe5ad2c2bab7b7191838db8ee2d8435",
+      "source_references_before": [
+        "prototypes/uo_fab3.lua:34",
+        "prototypes/ir_fab3.lua:32"
+      ],
+      "evidence": "Visually confirmed same artwork family; decoded pixels differ. Parent version used directly.",
+      "metadata": "Icon size follows provider dimensions; equal-sized sprites retain all frame, direction, shift and scale fields."
+    },
+    {
+      "pfw_path": "graphics/fab8/energy_icon.png",
+      "provider": "Yuoki",
+      "provider_path": "graphics/armor/energy_icon.png",
+      "original_dimensions": [
+        32,
+        32
+      ],
+      "provider_dimensions": [
+        64,
+        64
+      ],
+      "original_sha256": "4df1936d8e8df11801f309cc8fafd636951ffdc5ddbfbc803550fd1933699393",
+      "provider_sha256": "1bd8265bef9ba79f08363bcd484404e3572560a999a0ba32829f5c8d818aca77",
+      "source_references_before": [
+        "prototypes/ir_fab8.lua:47",
+        "prototypes/ir_fab8.lua:65"
+      ],
+      "evidence": "Visually confirmed same artwork family; decoded pixels differ. Parent version used directly.",
+      "metadata": "Icon size follows provider dimensions; equal-sized sprites retain all frame, direction, shift and scale fields."
+    },
+    {
+      "pfw_path": "graphics/fab8/lfg13.png",
+      "provider": "Yuoki",
+      "provider_path": "graphics/armor/lfg13.png",
+      "original_dimensions": [
+        32,
+        32
+      ],
+      "provider_dimensions": [
+        64,
+        64
+      ],
+      "original_sha256": "bb0d7118e3a923d6265b535cf635f7d8f691cceb60a14439e1f2fc645a8c237c",
+      "provider_sha256": "d60a6ce7de0386335cc2f1a1c330be0ea578e18eed36ef1c07baae630d0745a1",
+      "source_references_before": [
+        "prototypes/ir_fab8.lua:40"
+      ],
+      "evidence": "Visually confirmed same artwork family; decoded pixels differ. Parent version used directly.",
+      "metadata": "Icon size follows provider dimensions; equal-sized sprites retain all frame, direction, shift and scale fields."
+    },
+    {
+      "pfw_path": "graphics/fab8/mfg28.png",
+      "provider": "Yuoki",
+      "provider_path": "graphics/armor/mfg28.png",
+      "original_dimensions": [
+        32,
+        32
+      ],
+      "provider_dimensions": [
+        64,
+        64
+      ],
+      "original_sha256": "cf375be4146c04618777e2244ad1fabb992d9abad510106fa0d5b6007e622c15",
+      "provider_sha256": "42fbf3d67377d3499d5ad8a0a4ef569d6f13cc4727fc160c1fe4ab9e1a5bc514",
+      "source_references_before": [
+        "prototypes/ir_fab8.lua:41"
+      ],
+      "evidence": "Visually confirmed same artwork family; decoded pixels differ. Parent version used directly.",
+      "metadata": "Icon size follows provider dimensions; equal-sized sprites retain all frame, direction, shift and scale fields."
+    },
+    {
+      "pfw_path": "graphics/heat-pipe.png",
+      "provider": "Yuoki",
+      "provider_path": "graphics/icons/heat-pipe.png",
+      "original_dimensions": [
+        32,
+        32
+      ],
+      "provider_dimensions": [
+        64,
+        64
+      ],
+      "original_sha256": "eff3d20f1b7ed6b30a8b934e6b135fa83d9d88b73185d0f626ab0230c0d64798",
+      "provider_sha256": "4b5bf36ccaf9b199c4b40e27dd2ca7f6982846af4677e81f8117f34969b312c1",
+      "source_references_before": [],
+      "evidence": "Visually confirmed same artwork family; decoded pixels differ. Parent version used directly.",
+      "metadata": "Icon size follows provider dimensions; equal-sized sprites retain all frame, direction, shift and scale fields.",
+      "future_use": "Unused duplicate: provider path and dimensions retained here for future use."
+    },
+    {
+      "pfw_path": "graphics/imports/trader_sign.png",
+      "provider": "Yuoki",
+      "provider_path": "graphics/icons/trader_sign_x.png",
+      "original_dimensions": [
+        32,
+        32
+      ],
+      "provider_dimensions": [
+        64,
+        64
+      ],
+      "original_sha256": "b8e42d84b9daddb9a991d4e401fd0489837c158169862c6feec96ec4e92c6601",
+      "provider_sha256": "65b73ba1d9ac60421a49c26cf3ce7255ec605906697a198ad5134da02b46edcd",
+      "source_references_before": [
+        "prototypes/ir_imports.lua:4"
+      ],
+      "evidence": "Visually confirmed same artwork family; decoded pixels differ. Parent version used directly.",
+      "metadata": "Icon size follows provider dimensions; equal-sized sprites retain all frame, direction, shift and scale fields."
+    },
+    {
+      "pfw_path": "graphics/package_common.png",
+      "provider": "yi_engines",
+      "provider_path": "graphics/icons/package_carni.png",
+      "original_dimensions": [
+        32,
+        32
+      ],
+      "provider_dimensions": [
+        32,
+        32
+      ],
+      "original_sha256": "ae343c95f686458a5b91458f9f5efac042ed807f7c4d6225dae3b8712cd32861",
+      "provider_sha256": "8be468a142549bf1563dc9c4d8a69ff6408daacfc4b50b450c85fb744c91191f",
+      "source_references_before": [
+        "prototypes/ir_fab1.lua:24",
+        "prototypes/ir_fab1.lua:25",
+        "prototypes/ir_fab1.lua:28",
+        "prototypes/ir_fab1.lua:29",
+        "prototypes/ir_fab1.lua:30",
+        "prototypes/ir_fab1.lua:31",
+        "prototypes/ir_fab1.lua:32",
+        "prototypes/ir_fab1.lua:33",
+        "prototypes/ir_fab1.lua:34",
+        "prototypes/ir_fab5.lua:24",
+        "prototypes/ir_fab5.lua:25",
+        "prototypes/ir_fab5.lua:26",
+        "prototypes/ir_fab5.lua:27",
+        "prototypes/ir_fab5.lua:28",
+        "prototypes/ir_fab5.lua:29",
+        "prototypes/ir_fab5.lua:30",
+        "prototypes/ir_fab5.lua:32",
+        "prototypes/ir_fab2.lua:38",
+        "prototypes/ir_fab2.lua:41",
+        "prototypes/ir_fab2.lua:42",
+        "prototypes/ir_fab2.lua:45",
+        "prototypes/ir_fab3.lua:25",
+        "prototypes/ir_fab3.lua:26",
+        "prototypes/ir_fab3.lua:27",
+        "prototypes/ir_fab3.lua:28",
+        "prototypes/ir_fab3.lua:29",
+        "prototypes/ir_fab3.lua:30",
+        "prototypes/ir_fab3.lua:31",
+        "prototypes/ir_fab3.lua:33"
+      ],
+      "evidence": "Visually confirmed same artwork family; decoded pixels differ. Parent version used directly.",
+      "metadata": "Icon size follows provider dimensions; equal-sized sprites retain all frame, direction, shift and scale fields."
+    },
+    {
+      "pfw_path": "graphics/quantrinum-32.png",
+      "provider": "yi_engines",
+      "provider_path": "graphics/quantrinum-32.png",
+      "original_dimensions": [
+        32,
+        32
+      ],
+      "provider_dimensions": [
+        32,
+        32
+      ],
+      "original_sha256": "7110d87a728160e83f5d823e3e458016d4d30045f634d8af80c5d94ea7313d87",
+      "provider_sha256": "2a6ece50b2057a0522ce0c52bd7948679b4a5474f8034fcb0b8d5b3c3fdab3ce",
+      "source_references_before": [],
+      "evidence": "Visually confirmed same artwork family; decoded pixels differ. Parent version used directly.",
+      "metadata": "Icon size follows provider dimensions; equal-sized sprites retain all frame, direction, shift and scale fields.",
+      "future_use": "Unused duplicate: provider path and dimensions retained here for future use."
+    },
+    {
+      "pfw_path": "graphics/waste1-icon.png",
+      "provider": "yi_engines",
+      "provider_path": "graphics/waste1-icon.png",
+      "original_dimensions": [
+        32,
+        32
+      ],
+      "provider_dimensions": [
+        32,
+        32
+      ],
+      "original_sha256": "cc6c0cabeb7b982b5fff685d021334f53dc38240105fc36541e50da054dfd496",
+      "provider_sha256": "fd4c24cc4ff9116a3b3792846dc10cd1f8335a5ac405b20ee7463676e2905104",
+      "source_references_before": [],
+      "evidence": "Visually confirmed same artwork family; decoded pixels differ. Parent version used directly.",
+      "metadata": "Icon size follows provider dimensions; equal-sized sprites retain all frame, direction, shift and scale fields.",
+      "future_use": "Unused duplicate: provider path and dimensions retained here for future use."
+    },
+    {
+      "pfw_path": "graphics/zmaterial/panz4_32.png",
+      "provider": "Yuoki",
+      "provider_path": "graphics/armor/panz4_32.png",
+      "original_dimensions": [
+        32,
+        32
+      ],
+      "provider_dimensions": [
+        64,
+        64
+      ],
+      "original_sha256": "d38f7dc92469b0143d9b6e156713fc62efdd91ff93dc4705e266a04f65efc626",
+      "provider_sha256": "c5816f6bbaa55609e027d57f4bac06d0b4d005baa70c4fdbacd0fdb635d4441f",
+      "source_references_before": [
+        "prototypes/ir_zmaterial.lua:51",
+        "prototypes/ir_zmaterial.lua:54"
+      ],
+      "evidence": "Visually confirmed same artwork family; decoded pixels differ. Parent version used directly.",
+      "metadata": "Icon size follows provider dimensions; equal-sized sprites retain all frame, direction, shift and scale fields."
+    },
+    {
+      "pfw_path": "graphics/zmaterial/panz5_32.png",
+      "provider": "Yuoki",
+      "provider_path": "graphics/armor/panz5_32.png",
+      "original_dimensions": [
+        32,
+        32
+      ],
+      "provider_dimensions": [
+        64,
+        64
+      ],
+      "original_sha256": "23c23c7d4db242504753cb3398b8fb69b68fa5558a5709cd2519b0e84527401e",
+      "provider_sha256": "91fd8c5a15f45663821b3a15b44ecc12c249f86a3999cc628386719a678e62e5",
+      "source_references_before": [
+        "prototypes/ir_zmaterial.lua:38",
+        "prototypes/ir_zmaterial.lua:41"
+      ],
+      "evidence": "Visually confirmed same artwork family; decoded pixels differ. Parent version used directly.",
+      "metadata": "Icon size follows provider dimensions; equal-sized sprites retain all frame, direction, shift and scale fields."
+    }
+  ],
+  "retained_candidates": [
+    {
+      "path": "graphics/imports/barren_silver16.png",
+      "reason": "Only same-named candidate is in Engines _obsolete; no supported current replacement selected."
+    },
+    {
+      "path": "graphics/entity/gearbox.png",
+      "reason": "Only confirmed counterpart found is a 32px icon; keep this richer 96px future-use image."
+    },
+    {
+      "path": "graphics/fab1/ammo_acid_small.png",
+      "reason": "Similarity matched an unrelated signal pole; rejected visually."
+    },
+    {
+      "path": "graphics/fab1/rakete_ba_32.png",
+      "reason": "Similarity matched an empty image; rejected visually."
+    }
+  ]
+}

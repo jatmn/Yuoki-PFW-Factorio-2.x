@@ -1,7 +1,7 @@
 data:extend(
 {  
 	
-	--{ type = "item", name = "ypfw_trader_sign", icon = "__yi_pfw__/graphics/imports/trader_sign.png", flags = {"goes-to-main-inventory"}, order = "a", stack_size = 900, },
+	--{ type = "item", name = "ypfw_trader_sign", icon = "__Yuoki__/graphics/icons/trader_sign_x.png", icon_size = 64, flags = {"goes-to-main-inventory"}, order = "a", stack_size = 900, },
 	
 	
 	{ type = "recipe", name = "y-import1-recipe", ingredients = {{type="item", name="y-unicomp-a2", amount=3}, {type="item", name="ypfw_trader_sign", amount=9},  }, results = {{type="item", name="y-redcoil", amount=1}}, enabled = true,  order="factory", subgroup = "yi-imports", categories={"yrcat-retrade"},},

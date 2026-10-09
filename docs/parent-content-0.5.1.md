@@ -4,7 +4,7 @@ The owner confirmed the 0.5.0 candidate appears to work, merged PR #5, and expli
 
 ## Ownership changes
 
-The central [mapping record](data/parent-content-0.5.1.json) identifies every suppressed declaration, its source file, parent and replacement ID. All 11 redundant declarations remain in source inside annotated Lua comments. The first walker's redundant character animation is also retained commented. No artwork was changed or deleted.
+The central [mapping record](data/parent-content-0.5.1.json) identifies every suppressed declaration, its source file, parent and replacement ID. All 11 redundant declarations remain in source inside annotated Lua comments. The first walker's redundant character animation is also retained commented. The subsequent [artwork pass](asset-reuse-0.5.1.md) replaces 39 confirmed duplicate files; 167 originals remain unchanged.
 
 | Former PFW ID | Active parent owner / ID | Preserved behavior and differences |
 |---|---|---|
@@ -16,7 +16,7 @@ The central [mapping record](data/parent-content-0.5.1.json) identifies every su
 | `y-cyb-8u` armor and `yi-pfw-walker-grid` | Yuoki `yi_walker_a` and `y_walker_grid` | Use the parent's armor, 14×14 grid and animation. Preserve the disabled cyborg-to-walker conversion. The PFW cyborg commodity `y-cyb-8` remains distinct and active. |
 | `yi-pfw-energy` ammunition category | Yuoki `plasma` | The two pending PFW energy guns use the confirmed parent ammunition. Their IDs, range, cooldown and damage multipliers remain unchanged; their ownership decisions stay pending. |
 
-Both required mods are explicitly checked in the integration module. Required dependency versions remain `base >= 2.1.21`, `Yuoki >= 1.3.0`, and `yi_engines >= 1.3.0`. Reused prototypes bring their parent-owned graphics, sounds and behavior; local image files remain for the separate artwork consolidation pass.
+Both required mods are explicitly checked in the integration module. Required dependency versions remain `base >= 2.1.21`, `Yuoki >= 1.3.0`, and `yi_engines >= 1.3.0`. Reused prototypes bring their parent-owned graphics, sounds and behavior; the [artwork follow-up](asset-reuse-0.5.1.md) removes the local copies only where a visual replacement was confirmed.
 
 ### Recipe and balance decisions
 
@@ -38,7 +38,7 @@ All 35 previously disabled recipes remain inactive. The movement recipe `y-fab8k
 - The second armor `y-cyb-9u` and its animation/grid: no unambiguous successor selected.
 - Filled/empty PFW energy cells and wearable battery separation: keep fuel, refill and export behavior intact.
 - Previously unavailable inputs/recipes, factory-8 ingredient capacity, balancing and disabled-content restoration.
-- Duplicate image replacement/removal and retained-artwork upscaling. All 206 original graphics remain byte-identical for this content pass, including unused images.
+- Retained-artwork upscaling and any still-unconfirmed duplicates. The follow-up maps/removes 39 confirmed duplicates and preserves all 167 other images, including unused images.
 - All migrations until a formal release. Reload validation concerns a save created with 0.5.1 itself.
 
 ## Verification
@@ -47,23 +47,23 @@ Tested with Factorio **2.1.21 Linux headless**, Yuoki **1.3.0** at `50ea38b9703a
 
 The official [crafting-machine schema](https://lua-api.factorio.com/latest/prototypes/AssemblingMachinePrototype.html) was checked for category and result handling, and the matching 2.1.21 runtime schema for equipment insertion/removal and character ammunition checks.
 
-- Full before/after prototype comparison: only the recorded suppressions, five recipe references, two ammunition categories, one removed PFW character-animation entry and Trade Node category addition differ. All unrelated parent prototypes and pending mappings remain unchanged.
-- Preservation: all 105 recipes and their quantities retained, all 35 historical disabled recipes still inactive, all 206 graphics unchanged, all 232 original archive files intact at the immutable import commit.
+- Full before/after prototype comparison: only the recorded suppressions, five recipe references, two ammunition categories, one removed PFW character-animation entry, Trade Node category addition and subsequent approved artwork substitutions differ. All unrelated parent prototypes and pending content identities/statistics remain unchanged.
+- Preservation: all 105 recipes and their quantities retained, all 35 historical disabled recipes still inactive, 167 remaining graphics unchanged and 39 removals verified against the artwork manifest, all 232 original archive files intact at the immutable import commit.
 - Live crafting: all 56 PFW trades completed in Engines nodes with exact output quantities, including four-product exports and energy-cell exchanges. The parent's existing `y_exchange_b1` trade also completed.
 - Live construction/production: PFW's constructor produced ten parent nodes; the cyborg recipe consumed the parent minigun and produced its expected result. Tests supplied ingredients and power directly; they do not prove natural progression is complete.
 - Equipment: the parent generator and movement equipment were inserted into and removed from both the parent walker and the retained PFW second armor, returning the correct parent item IDs.
 - Ammunition: both pending PFW energy guns fired and consumed the parent ammunition. The engine also accepted the parent minigun/bullet pairing through `can_shoot`; a complete bullet-combat simulation is not claimed.
 - New 0.5.1 game, save and reload: successful; reload ran another 600 ticks. Data loading also checked with official optional mods enabled.
-- Graphical baseline: owner tested 0.5.0. This 0.5.1 pass is headless-validated; inspect the candidate locally for presentation, parent-node selection and equipment appearance.
+- Graphical baseline: the owner tested 0.5.0 and confirmed the initial 0.5.1 candidate loads. The subsequent artwork revision is headless-validated; inspect its candidate locally for icons, equipment and second-armor animation appearance.
 
-Selected output and package identity are in [validation evidence](data/parent-content-0.5.1-validation.txt).
+Initial content-pass output and package identity are in [validation evidence](data/parent-content-0.5.1-validation.txt); the current package is recorded in the [artwork follow-up](data/asset-reuse-0.5.1-validation.txt).
 
 ### Reproduce the comparison
 
 Generate `--dump-data` output using the exact same engine, parent sources, mod list and startup settings for the baseline revision and this candidate. Baseline mod list: base, Yuoki, yi_engines and yi_pfw enabled; Space Age, Quality, Elevated Rails and Recycler disabled. Keep output/config directories isolated.
 
 ```sh
-python3 docs/tools/validate_parent_content.py --before /path/to/0.5.0-dump.json --after /path/to/0.5.1-dump.json
+python3 docs/tools/validate_parent_content.py --before /path/to/0.5.0-dump.json --after /path/to/0.5.1-dump.json --yuoki /path/to/Yuoki --engines /path/to/yi_engines
 python3 docs/tools/verify_original.py --archive-only
 factorio --config /path/to/config.ini --mod-directory /path/to/mods --create /path/to/051-new.zip --map-gen-seed 147 --preset default
 factorio --config /path/to/config.ini --mod-directory /path/to/mods --benchmark /path/to/051-new.zip --benchmark-ticks 600 --benchmark-runs 1

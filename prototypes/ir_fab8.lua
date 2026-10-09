@@ -37,20 +37,20 @@ data:extend(
 		
 		
 	{ type = "item", name = "y-equ-0", icon = "__yi_pfw__/graphics/fab8/teil_04_32.png", icon_size = 32, order = "a", stack_size = 100, },
-	{ type = "item", name = "y-equ-1", icon = "__yi_pfw__/graphics/fab8/lfg13.png", icon_size = 32, order = "a", stack_size = 100, place_as_equipment_result = "y-equ-1",},
-	{ type = "item", name = "y-equ-2", icon = "__yi_pfw__/graphics/fab8/mfg28.png", icon_size = 32, order = "a", stack_size = 100, place_as_equipment_result = "y-equ-2",},
+	{ type = "item", name = "y-equ-1", icon = "__Yuoki__/graphics/armor/lfg13.png", icon_size = 64, order = "a", stack_size = 100, place_as_equipment_result = "y-equ-1",},
+	{ type = "item", name = "y-equ-2", icon = "__Yuoki__/graphics/armor/mfg28.png", icon_size = 64, order = "a", stack_size = 100, place_as_equipment_result = "y-equ-2",},
 	{ type = "item", name = "y-equ-3", icon = "__yi_pfw__/graphics/fab8/msg-cb.png", icon_size = 32, order = "a", stack_size = 100, },
 	{ type = "item", name = "y-equ-4", icon = "__yi_pfw__/graphics/fab8/sfg400.png", icon_size = 32, order = "a", stack_size = 100, },
 	{ type = "item", name = "y-equ-5", icon = "__yi_pfw__/graphics/fab8/teil_02.png", icon_size = 32, order = "a", stack_size = 100, },
 	-- Parent owner: Yuoki, item yi_equip_generator_a. Preserved inactive PFW definition.
 	--[=[
-	{ type = "item", name = "y-equ-6", icon = "__yi_pfw__/graphics/fab8/energy_icon.png", icon_size = 32, order = "a", stack_size = 100, place_as_equipment_result = "y-equ-6",},
+	{ type = "item", name = "y-equ-6", icon = "__Yuoki__/graphics/armor/energy_icon.png", icon_size = 64, order = "a", stack_size = 100, place_as_equipment_result = "y-equ-6",},
 	]=]
 	--{ type = "item", name = "y-equ-7", icon = "__yi_pfw__/graphics/fab8/mcb_sani_32.png", flags = {"goes-to-main-inventory"}, order = "a", stack_size = 100, },
 	--{ type = "item", name = "y-equ-8", icon = "__yi_pfw__/graphics/fab8/neron_u3_32.png", flags = {"goes-to-main-inventory"}, order = "a", stack_size = 100, },	
 	-- Parent owner: Yuoki, item yi_equip_legs_a. Preserved inactive PFW definition.
 	--[=[
-	{ type = "item", name = "y-equ-9", icon = "__yi_pfw__/graphics/equip/exo1_icon_e.png", icon_size = 32, order = "a", stack_size = 100, place_as_equipment_result = "y-equ-9",},
+	{ type = "item", name = "y-equ-9", icon = "__Yuoki__/graphics/armor/exo1_icon_e.png", icon_size = 64, order = "a", stack_size = 100, place_as_equipment_result = "y-equ-9",},
 	]=]
 	
 	
@@ -62,7 +62,7 @@ data:extend(
 	
 	{ type = "recipe", name = "y-rfab8e-recipe", ingredients = {{type="item", name="y-equ-4", amount=1},}, results = {{type="item", name="y-stuff-4", amount=2,},{type="item", name="y-stuff-5", amount=3,},{type="item", name="ypfw_trader_sign", amount=1,},}, enabled = true, order="equ-4", subgroup = "yi-retrade8", categories={"yrcat-retrade"}, icon = "__yi_pfw__/graphics/fab8/sfg400-sell.png", icon_size = 32 },
 	{ type = "recipe", name = "y-rfab8f-recipe", ingredients = {{type="item", name="y-equ-5", amount=1},}, results = {{type="item", name="y-stuff-6", amount=1,},{type="item", name="y-unicomp-a2", amount=245,},{type="item", name="ypfw_trader_sign", amount=1,},}, enabled = true, order="equ-5", subgroup = "yi-retrade8", categories={"yrcat-retrade"}, icon = "__yi_pfw__/graphics/fab8/teil_02-sell.png", icon_size = 32 },
-	{ type = "recipe", name = "y-rfab8g-recipe", ingredients = {{type="item", name="yi_equip_generator_a", amount=1},}, results = {{type="item", name="y-stuff-1", amount=8,},{type="item", name="y-stuff-2", amount=6,},{type="item", name="ypfw_trader_sign", amount=1,},}, enabled = true, order="equ-6", subgroup = "yi-retrade8", categories={"yrcat-retrade"}, icon = "__yi_pfw__/graphics/fab8/energy_icon.png", icon_size = 32 },
+	{ type = "recipe", name = "y-rfab8g-recipe", ingredients = {{type="item", name="yi_equip_generator_a", amount=1},}, results = {{type="item", name="y-stuff-1", amount=8,},{type="item", name="y-stuff-2", amount=6,},{type="item", name="ypfw_trader_sign", amount=1,},}, enabled = true, order="equ-6", subgroup = "yi-retrade8", categories={"yrcat-retrade"}, icon = "__Yuoki__/graphics/armor/energy_icon.png", icon_size = 64 },
 	--{ type = "recipe", name = "y-rfab8h-recipe", ingredients = {{"y-equ-7",9},}, results = {{type="item", name="y-unicomp-a2", amount=1,}, {type="item", name="y-stuff-2", amount=2,},}, enabled = "true", order="equ-7", subgroup = "yi-retrade", category="yrcat-retrade", icon = "__yi_pfw__/graphics/fab8/mcb_sani-sell.png" },	
 	--{ type = "recipe", name = "y-rfab8i-recipe", ingredients = {{"y-equ-8",2},}, results = {{type="item", name="y-stuff-4", amount=1,}, {type="item", name="y-stuff-3", amount=3,},{type="item", name="y-unicomp-a2", amount=10,}}, enabled = "true", order="equ-8", subgroup = "yi-retrade", category="yrcat-retrade", icon = "__yi_pfw__/graphics/fab8/neron_u3-sell.png" },	
 	-- Parent reference for future restoration: y-equ-9 -> yi_equip_legs_a. Keep this declaration inactive.

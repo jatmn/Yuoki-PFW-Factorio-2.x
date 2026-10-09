@@ -46,7 +46,7 @@ data:extend(
 	{
 		type = "gun",
 		name = "y-sm-5",
-		icon = "__yi_pfw__/graphics/fab2/minigun.png", icon_size = 32,
+		icon = "__Yuoki__/graphics/armor/minigun.png", icon_size = 64,
 		subgroup = "gun",
 		order = "a[basic-clips]-b[submachine-gun]",
 		attack_parameters =
@@ -86,7 +86,7 @@ data:extend(
 	{
 		type = "gun",
 		name = "y-sm-1",
-		icon = "__yi_pfw__/graphics/fab2/lasergun.png", icon_size = 32,
+		icon = "__Yuoki__/graphics/armor/lasergun.png", icon_size = 64,
 		subgroup = "gun",
 		order = "c[railgun]",
 		attack_parameters =

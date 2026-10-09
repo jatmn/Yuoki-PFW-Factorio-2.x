@@ -21,17 +21,17 @@ data:extend({
 	{ type = "recipe", name = "y-fab1i-recipe", ingredients = {{type="item", name="y-mun-5", amount=1},{type="item", name="y-toxic-dust", amount=4},{type="item", name="y-stuff-5", amount=1},{type="item", name="y_sc11", amount=1},}, results = {{type="item", name="y-mun-8", amount=1}}, enabled = true,  order="mun-8", subgroup = "yi-muntion", categories={"yrcat-munition"},},
 	{ type = "recipe", name = "y-fab1k-recipe", ingredients = {{type="item", name="y-mun-5", amount=1},{type="item", name="y-stuff-1", amount=1},{type="item", name="y-stuff-6", amount=1},{type="item", name="y_sc11", amount=1},}, results = {{type="item", name="y-mun-9", amount=1}}, enabled = true,  order="mun-9", subgroup = "yi-muntion", categories={"yrcat-munition"},},
 		
-	{ type = "item", name = "y-mun-0", icon = "__yi_pfw__/graphics/package_common.png", icon_size = 32, order = "a", stack_size = 5000, },
-	{ type = "item", name = "y-mun-1", icon = "__yi_pfw__/graphics/package_common.png", icon_size = 32, order = "a", stack_size = 2500, },
+	{ type = "item", name = "y-mun-0", icon = "__yi_engines__/graphics/icons/package_carni.png", icon_size = 32, order = "a", stack_size = 5000, },
+	{ type = "item", name = "y-mun-1", icon = "__yi_engines__/graphics/icons/package_carni.png", icon_size = 32, order = "a", stack_size = 2500, },
 	-- Parent reference for future restoration: y-mun-2 -> yi_ammo_energie. Keep this declaration inactive.
 	--{ type = "item", name = "y-mun-2", icon = "__yi_pfw__/graphics/fab1/bst_z1.png", flags = {"goes-to-main-inventory"}, order = "a", stack_size = 5000, },
-	{ type = "item", name = "y-mun-3", icon = "__yi_pfw__/graphics/package_common.png", icon_size = 32, order = "a", stack_size = 1000, },
-	{ type = "item", name = "y-mun-4", icon = "__yi_pfw__/graphics/package_common.png", icon_size = 32, order = "a", stack_size = 1000, },
-	{ type = "item", name = "y-mun-5", icon = "__yi_pfw__/graphics/package_common.png", icon_size = 32, order = "a", stack_size = 100, },
-	{ type = "item", name = "y-mun-6", icon = "__yi_pfw__/graphics/package_common.png", icon_size = 32, order = "a", stack_size = 100, },
-	{ type = "item", name = "y-mun-7", icon = "__yi_pfw__/graphics/package_common.png", icon_size = 32, order = "a", stack_size = 100, },
-	{ type = "item", name = "y-mun-8", icon = "__yi_pfw__/graphics/package_common.png", icon_size = 32, order = "a", stack_size = 100, },
-	{ type = "item", name = "y-mun-9", icon = "__yi_pfw__/graphics/package_common.png", icon_size = 32, order = "a", stack_size = 100, },
+	{ type = "item", name = "y-mun-3", icon = "__yi_engines__/graphics/icons/package_carni.png", icon_size = 32, order = "a", stack_size = 1000, },
+	{ type = "item", name = "y-mun-4", icon = "__yi_engines__/graphics/icons/package_carni.png", icon_size = 32, order = "a", stack_size = 1000, },
+	{ type = "item", name = "y-mun-5", icon = "__yi_engines__/graphics/icons/package_carni.png", icon_size = 32, order = "a", stack_size = 100, },
+	{ type = "item", name = "y-mun-6", icon = "__yi_engines__/graphics/icons/package_carni.png", icon_size = 32, order = "a", stack_size = 100, },
+	{ type = "item", name = "y-mun-7", icon = "__yi_engines__/graphics/icons/package_carni.png", icon_size = 32, order = "a", stack_size = 100, },
+	{ type = "item", name = "y-mun-8", icon = "__yi_engines__/graphics/icons/package_carni.png", icon_size = 32, order = "a", stack_size = 100, },
+	{ type = "item", name = "y-mun-9", icon = "__yi_engines__/graphics/icons/package_carni.png", icon_size = 32, order = "a", stack_size = 100, },
 	
 	-- Retrade !!!		
 	{ type = "recipe", name = "y-rfab1a-recipe", ingredients = {{type="item", name="y-mun-0", amount=8},}, results = {{type="item", name="y-stuff-2", amount=1,},{type="item", name="ypfw_trader_sign", amount=1,},},  	enabled = true, order="mun-0", subgroup = "yi-retrade1", categories={"yrcat-retrade"}, icon = "__yi_pfw__/graphics/package_common_retrade.png", icon_size = 32},

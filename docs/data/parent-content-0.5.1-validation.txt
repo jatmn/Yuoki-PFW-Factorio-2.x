@@ -1,3 +1,4 @@
+Historical first content pass at commit 311b6af; package superseded by asset-reuse-0.5.1-validation.txt.
 0.5.1 confirmed parent-content consolidation; 2026-10-09
 Engine: Factorio 2.1.21 Linux x86-64 headless
 Parents: Yuoki 1.3.0 / yi_engines 1.3.0 at the commits in parent-content-0.5.1.json

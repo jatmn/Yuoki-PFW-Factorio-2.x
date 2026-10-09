@@ -4,7 +4,7 @@
 local playeranimations = {
 	idle =
 	{
-		filename = "__yi_pfw__/graphics/armor/robo1_idle.png",
+		filename = "__Yuoki__/graphics/armor/robo1_idle.png",
 		priority = "very-low",
 		width = 80,
 		height = 100,
@@ -16,7 +16,7 @@ local playeranimations = {
 	},
 	idlewithgun =
 	{
-		filename = "__yi_pfw__/graphics/armor/robo1_idle.png",
+		filename = "__Yuoki__/graphics/armor/robo1_idle.png",
 		priority = "very-low",
 		width = 80,
 		height = 100,
@@ -28,7 +28,7 @@ local playeranimations = {
 	},
 	miningwithhands =
 	{
-		filename = "__yi_pfw__/graphics/armor/robo1_dig.png",
+		filename = "__Yuoki__/graphics/armor/robo1_dig.png",
 		priority = "very-low",
 		width = 80,
 		height = 100,
@@ -40,7 +40,7 @@ local playeranimations = {
 	},
 	miningwithtool =
 	{
-		filename = "__yi_pfw__/graphics/armor/robo1_dig.png",
+		filename = "__Yuoki__/graphics/armor/robo1_dig.png",
 		priority = "very-low",
 		width = 80,
 		height = 100,
@@ -52,7 +52,7 @@ local playeranimations = {
 	},
 	runningwithgun =
 	{
-		filename = "__yi_pfw__/graphics/armor/robo1_walk_gun.png",
+		filename = "__Yuoki__/graphics/armor/robo1_walk_gun.png",
 		priority = "very-low",
 		width = 80,
 		height = 100,
@@ -62,7 +62,7 @@ local playeranimations = {
 	},
 	running =
 	{
-		filename = "__yi_pfw__/graphics/armor/robo1_walk.png",
+		filename = "__Yuoki__/graphics/armor/robo1_walk.png",
 		priority = "very-low",
 		width = 80,
 		height = 100,
@@ -127,7 +127,7 @@ mining_with_hands =
 local playeranimations_y2 = {
 	idle =
 	{
-		filename = "__yi_pfw__/graphics/armor/armor2_idle_sheet.png",
+		filename = "__Yuoki__/graphics/armor/armor2_idle_sheet.png",
 		priority = "very-low",
 		width = 80,
 		height = 100,
@@ -139,7 +139,7 @@ local playeranimations_y2 = {
 	},
 	idlewithgun =
 	{
-		filename = "__yi_pfw__/graphics/armor/armor2_idle_sheet.png",
+		filename = "__Yuoki__/graphics/armor/armor2_idle_sheet.png",
 		priority = "very-low",
 		width = 80,
 		height = 100,
@@ -151,7 +151,7 @@ local playeranimations_y2 = {
 	},
 	miningwithhands =
 	{
-		filename = "__yi_pfw__/graphics/armor/armor2_dig.png",
+		filename = "__Yuoki__/graphics/armor/armor2_dig.png",
 		priority = "very-low",
 		width = 80,
 		height = 100,
@@ -163,7 +163,7 @@ local playeranimations_y2 = {
 	},
 	miningwithtool =
 	{
-		filename = "__yi_pfw__/graphics/armor/armor2_dig.png",
+		filename = "__Yuoki__/graphics/armor/armor2_dig.png",
 		priority = "very-low",
 		width = 80,
 		height = 100,
@@ -175,7 +175,7 @@ local playeranimations_y2 = {
 	},
 	runningwithgun =
 	{
-		filename = "__yi_pfw__/graphics/armor/armor2_walk_gun.png",
+		filename = "__Yuoki__/graphics/armor/armor2_walk_gun.png",
 		priority = "very-low",
 		width = 80,
 		height = 100,
@@ -185,7 +185,7 @@ local playeranimations_y2 = {
 	},
 	running =
 	{
-		filename = "__yi_pfw__/graphics/armor/armor2_walk_sheet.png",
+		filename = "__Yuoki__/graphics/armor/armor2_walk_sheet.png",
 		priority = "very-low",
 		width = 80,
 		height = 100,

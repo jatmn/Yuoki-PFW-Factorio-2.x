@@ -21,15 +21,15 @@ data:extend(
 	{ type = "recipe", name = "y-fab5i-recipe", ingredients = {{type="item", name="y-veh-2", amount=1},{type="item", name="y-basic-t2-mf", amount=1},{type="item", name="y-tank-8000", amount=1},{type="item", name="y-chip-2", amount=4}, }, results = {{type="item", name="y-veh-8", amount=1}}, enabled = true,  order="veh-8", subgroup = "yi-fahrzeuge", categories={"yrcat-fahrzeuge"},},
 	{ type = "recipe", name = "y-fab5k-recipe", ingredients = {{type="item", name="y-grycoil", amount=3},{type="item", name="iron-plate", amount=4}, }, results = {{type="item", name="y-veh-9", amount=10}}, enabled = true,  order="veh-9", subgroup = "yi-fahrzeuge", categories={"yrcat-fahrzeuge"},},
 		
-	{ type = "item", name = "y-veh-0", icon = "__yi_pfw__/graphics/package_common.png", icon_size = 32, order = "a", stack_size = 150, },
-	{ type = "item", name = "y-veh-1", icon = "__yi_pfw__/graphics/package_common.png", icon_size = 32, order = "a", stack_size = 150, },
-	{ type = "item", name = "y-veh-2", icon = "__yi_pfw__/graphics/package_common.png", icon_size = 32, order = "a", stack_size = 150, },
-	{ type = "item", name = "y-veh-3", icon = "__yi_pfw__/graphics/package_common.png", icon_size = 32, order = "a", stack_size = 50, },
-	{ type = "item", name = "y-veh-4", icon = "__yi_pfw__/graphics/package_common.png", icon_size = 32, order = "a", stack_size = 50, },
-	{ type = "item", name = "y-veh-5", icon = "__yi_pfw__/graphics/package_common.png", icon_size = 32, order = "a", stack_size = 30, },
-	{ type = "item", name = "y-veh-6", icon = "__yi_pfw__/graphics/package_common.png", icon_size = 32, order = "a", stack_size = 30, },
+	{ type = "item", name = "y-veh-0", icon = "__yi_engines__/graphics/icons/package_carni.png", icon_size = 32, order = "a", stack_size = 150, },
+	{ type = "item", name = "y-veh-1", icon = "__yi_engines__/graphics/icons/package_carni.png", icon_size = 32, order = "a", stack_size = 150, },
+	{ type = "item", name = "y-veh-2", icon = "__yi_engines__/graphics/icons/package_carni.png", icon_size = 32, order = "a", stack_size = 150, },
+	{ type = "item", name = "y-veh-3", icon = "__yi_engines__/graphics/icons/package_carni.png", icon_size = 32, order = "a", stack_size = 50, },
+	{ type = "item", name = "y-veh-4", icon = "__yi_engines__/graphics/icons/package_carni.png", icon_size = 32, order = "a", stack_size = 50, },
+	{ type = "item", name = "y-veh-5", icon = "__yi_engines__/graphics/icons/package_carni.png", icon_size = 32, order = "a", stack_size = 30, },
+	{ type = "item", name = "y-veh-6", icon = "__yi_engines__/graphics/icons/package_carni.png", icon_size = 32, order = "a", stack_size = 30, },
 	--	{ type = "item", name = "y-veh-7", icon = "__yi_pfw__/graphics/fab5/mcb_sani_32.png", flags = {"goes-to-main-inventory"}, order = "a", stack_size = 100, },
-	{ type = "item", name = "y-veh-8", icon = "__yi_pfw__/graphics/package_common.png", icon_size = 32, order = "a", stack_size = 30, },
+	{ type = "item", name = "y-veh-8", icon = "__yi_engines__/graphics/icons/package_carni.png", icon_size = 32, order = "a", stack_size = 30, },
 	{ type = "item", name = "y-veh-9", icon = "__yi_pfw__/graphics/fab5/reifen.png", icon_size = 32, order = "a", stack_size = 500, },
 		
 	-- Retrade !!!		
