@@ -2,6 +2,8 @@
 
 Status: **accepted on 2026-10-09**. After confirming the first AI-icon candidate works, the owner requested replacing duplicate pink-arrow images with Yuoki's existing up/down-arrow helper.
 
+The counts and previews below describe the arrow conversion at `da0aa93`. The [second AI batch](../ai-artwork-batch-2.md) later redraws eight retained base icons; the helper stays unchanged and the current total is 12 AI icons plus 106 originals.
+
 ## Implementation
 
 PFW now calls `yi.lib.recipe.atomics.item_down(item_name)` for its **48 export recipes** and `item_up(item_name)` for its **eight import recipes**. Exports show the item consumed; imports show the item received. The helper reads the current item's icon and appends Yuoki's arrow layer. The plasma gun, tire and filled-cell export icons therefore inherit their accepted AI redraws automatically; future base-icon changes can follow the same path without another arrow PNG.

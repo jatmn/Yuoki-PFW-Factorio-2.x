@@ -969,10 +969,10 @@
       "original_sha256": "be95c3287c82f014285550ba009804e5cd629b07c1b6bbad3704743fcd952b5c",
       "base_icon": "__yi_pfw__/graphics/imports/barren_mixed_11.png",
       "base_dimensions": [
-        32,
-        32
+        64,
+        64
       ],
-      "base_sha256": "2f6aaa36bd4b4d3d52d57b93235d022bd24d1044d9afeb65d87bda0886e7e7cf",
+      "base_sha256": "a2e8b9c49edacb68198e6165b33b6e33e74704581d819cd47b450aa26e02b73f",
       "direction": "down",
       "source_references_before": [
         {
@@ -980,17 +980,18 @@
           "line_before": 32
         }
       ],
-      "future_use": "Register or restore the intended item with this base artwork, then use yi.lib.recipe.atomics.item_down(item_name). Do not recreate a baked arrow image."
+      "future_use": "Register or restore the intended item with this base artwork, then use yi.lib.recipe.atomics.item_down(item_name). Do not recreate a baked arrow image.",
+      "base_revision_note": "Base redrawn in AI batch2; removed original variant/hash unchanged."
     },
     {
       "path": "graphics/imports/barren_mixed_9-sell.png",
       "original_sha256": "ce56317a8b2a07b5c471ac34ff0fa133bd9aaa9431edaefc0c437d7935e8b616",
       "base_icon": "__yi_pfw__/graphics/imports/barren_mixed_9.png",
       "base_dimensions": [
-        32,
-        32
+        64,
+        64
       ],
-      "base_sha256": "b67e69030da1b9ab36dd63a46c842cd1676daa6c80b217cda45ed6f583a4e21b",
+      "base_sha256": "ed3c6ffe6210adf6f4d412dea0663838a62501236026244329b5338518aca9b1",
       "direction": "down",
       "source_references_before": [
         {
@@ -998,17 +999,18 @@
           "line_before": 31
         }
       ],
-      "future_use": "Register or restore the intended item with this base artwork, then use yi.lib.recipe.atomics.item_down(item_name). Do not recreate a baked arrow image."
+      "future_use": "Register or restore the intended item with this base artwork, then use yi.lib.recipe.atomics.item_down(item_name). Do not recreate a baked arrow image.",
+      "base_revision_note": "Base redrawn in AI batch2; removed original variant/hash unchanged."
     },
     {
       "path": "graphics/imports/coilsgr32-sell.png",
       "original_sha256": "71f1a480b61b24ed5c1c50e44209eebbcbaf330794ae10ef0a99b6862a26ceb6",
       "base_icon": "__yi_pfw__/graphics/imports/coilsgr32.png",
       "base_dimensions": [
-        32,
-        32
+        64,
+        64
       ],
-      "base_sha256": "27b62f330b6b2eb6e531593bb9abe4a61f65bd7919ce79cd1196f8e1f231edd5",
+      "base_sha256": "99d370ffc6981d3aeea28edf401106f760f5c0bd6fdc5471a1ddfd36cc63bbc5",
       "direction": "down",
       "source_references_before": [
         {
@@ -1016,17 +1018,18 @@
           "line_before": 26
         }
       ],
-      "future_use": "Register or restore the intended item with this base artwork, then use yi.lib.recipe.atomics.item_down(item_name). Do not recreate a baked arrow image."
+      "future_use": "Register or restore the intended item with this base artwork, then use yi.lib.recipe.atomics.item_down(item_name). Do not recreate a baked arrow image.",
+      "base_revision_note": "Base redrawn in AI batch2; removed original variant/hash unchanged."
     },
     {
       "path": "graphics/imports/coilsr32-sell.png",
       "original_sha256": "8f55f1b2c99fe6b4ac9363b42b7c74f9ca17bef2de1f3d480ab7697b2a512995",
       "base_icon": "__yi_pfw__/graphics/imports/coilsr32.png",
       "base_dimensions": [
-        32,
-        32
+        64,
+        64
       ],
-      "base_sha256": "2a8cd83d514bf840c1a2955b9dd89f05c865e6597cd41c89ed13be4e057b9a73",
+      "base_sha256": "0309a42e1201859bb485c1610443ca222fbcff8ab27e879ab05f635cac7b95e4",
       "direction": "down",
       "source_references_before": [
         {
@@ -1034,17 +1037,18 @@
           "line_before": 25
         }
       ],
-      "future_use": "Register or restore the intended item with this base artwork, then use yi.lib.recipe.atomics.item_down(item_name). Do not recreate a baked arrow image."
+      "future_use": "Register or restore the intended item with this base artwork, then use yi.lib.recipe.atomics.item_down(item_name). Do not recreate a baked arrow image.",
+      "base_revision_note": "Base redrawn in AI batch2; removed original variant/hash unchanged."
     },
     {
       "path": "graphics/imports/crystal_1-sell.png",
       "original_sha256": "659ea3c40be91d699952670515283620a3030a0214fab3793794399b014249ad",
       "base_icon": "__yi_pfw__/graphics/imports/crystal_1.png",
       "base_dimensions": [
-        32,
-        32
+        64,
+        64
       ],
-      "base_sha256": "47532397564434ed81ed663ec1e0745dafc399829cb4d4cfd8681e39062de063",
+      "base_sha256": "f94cd7ca5ad4abdbbd687e2e2b23824165f43385d5a22dc15e365508bc19c107",
       "direction": "down",
       "source_references_before": [
         {
@@ -1052,17 +1056,18 @@
           "line_before": 27
         }
       ],
-      "future_use": "Register or restore the intended item with this base artwork, then use yi.lib.recipe.atomics.item_down(item_name). Do not recreate a baked arrow image."
+      "future_use": "Register or restore the intended item with this base artwork, then use yi.lib.recipe.atomics.item_down(item_name). Do not recreate a baked arrow image.",
+      "base_revision_note": "Base redrawn in AI batch2; removed original variant/hash unchanged."
     },
     {
       "path": "graphics/imports/crystal_green-sell.png",
       "original_sha256": "bb3a614903e30de5ef5fcaf436dd667972896c876e47c6a117992af92ed8dac1",
       "base_icon": "__yi_pfw__/graphics/imports/crystal_green.png",
       "base_dimensions": [
-        32,
-        32
+        64,
+        64
       ],
-      "base_sha256": "bc3c032ec8dc800fdda6691af830feb37309634b28bbef1fedbbfe1061ba2c51",
+      "base_sha256": "e8594aabda720930b400f1201fd4563ad69f7ddfb648ad86c225e7133546f7fe",
       "direction": "down",
       "source_references_before": [
         {
@@ -1070,17 +1075,18 @@
           "line_before": 28
         }
       ],
-      "future_use": "Register or restore the intended item with this base artwork, then use yi.lib.recipe.atomics.item_down(item_name). Do not recreate a baked arrow image."
+      "future_use": "Register or restore the intended item with this base artwork, then use yi.lib.recipe.atomics.item_down(item_name). Do not recreate a baked arrow image.",
+      "base_revision_note": "Base redrawn in AI batch2; removed original variant/hash unchanged."
     },
     {
       "path": "graphics/imports/uni-com-pro-sell.png",
       "original_sha256": "12b40533fa63e73e77b82ebf248164c09fe14de6ea42ad0521dc8e7a760b232c",
       "base_icon": "__yi_pfw__/graphics/imports/uni-com-pro.png",
       "base_dimensions": [
-        32,
-        32
+        64,
+        64
       ],
-      "base_sha256": "745678d784d1afcb013f21844c1713ac8db22df818d58997846e740eb8c66f0c",
+      "base_sha256": "98baa920a9051fbb48645bade7cf8f4aaa353f0583c327b7732e2bb8dba16d58",
       "direction": "down",
       "source_references_before": [
         {
@@ -1088,17 +1094,18 @@
           "line_before": 30
         }
       ],
-      "future_use": "Register or restore the intended item with this base artwork, then use yi.lib.recipe.atomics.item_down(item_name). Do not recreate a baked arrow image."
+      "future_use": "Register or restore the intended item with this base artwork, then use yi.lib.recipe.atomics.item_down(item_name). Do not recreate a baked arrow image.",
+      "base_revision_note": "Base redrawn in AI batch2; removed original variant/hash unchanged."
     },
     {
       "path": "graphics/imports/wire_2-sell.png",
       "original_sha256": "99b9295483ae6109c02ccde3b7dc39fbebaff80d6b4e3f9e0dfcef16608979e7",
       "base_icon": "__yi_pfw__/graphics/imports/wire_2.png",
       "base_dimensions": [
-        32,
-        32
+        64,
+        64
       ],
-      "base_sha256": "9f20581a1eeb85e2430705c9b907404d8129780e36dd278c2a2208dff0c27ddd",
+      "base_sha256": "9e8222ec33dc7fccdcdbe17191fc1e0c2cb20f492597fef1d6520cbbae58e008",
       "direction": "down",
       "source_references_before": [
         {
@@ -1106,7 +1113,8 @@
           "line_before": 29
         }
       ],
-      "future_use": "Register or restore the intended item with this base artwork, then use yi.lib.recipe.atomics.item_down(item_name). Do not recreate a baked arrow image."
+      "future_use": "Register or restore the intended item with this base artwork, then use yi.lib.recipe.atomics.item_down(item_name). Do not recreate a baked arrow image.",
+      "base_revision_note": "Base redrawn in AI batch2; removed original variant/hash unchanged."
     },
     {
       "path": "graphics/package_common_retrade.png",

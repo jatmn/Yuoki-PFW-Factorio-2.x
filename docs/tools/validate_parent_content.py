@@ -64,6 +64,10 @@ redraw_paths = {'__yi_pfw__/' + path: entry for path, entry in redraws.items()}
 assert set(redraws) == {
     'graphics/entity/fabrik-ammo-icon.png', 'graphics/fab2/plasma-gun.png',
     'graphics/fab5/reifen.png', 'graphics/fab8/fusion-cell.png',
+    'graphics/imports/coilsr32.png', 'graphics/imports/coilsgr32.png',
+    'graphics/imports/crystal_1.png', 'graphics/imports/crystal_green.png',
+    'graphics/imports/wire_2.png', 'graphics/imports/uni-com-pro.png',
+    'graphics/imports/barren_mixed_9.png', 'graphics/imports/barren_mixed_11.png',
 }
 assert not redraws.keys() & replacements.keys()
 for entry in redraws.values():
@@ -193,5 +197,5 @@ trades = [r for r in recipes if 'yrcat-retrade' in after['recipe'][r['name']].ge
 assert len(trades) == 56
 print(f'PASS: {removed} redundant declarations inactive; 105 recipe routes and quantities retained; '
       '56 trades supported; pending mappings/parent behavior preserved; 39 parent assets verified, '
-      '4 approved AI icons/source images verified, 49 arrow variants replaced, 114 original graphics unchanged; '
+      '12 AI icons/source images verified, 49 arrow variants replaced, 106 original graphics unchanged; '
       '0.5.1 changelog and no migrations verified.')
