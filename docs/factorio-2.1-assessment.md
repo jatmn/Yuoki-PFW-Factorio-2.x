@@ -2,7 +2,7 @@
 
 A restoration appears feasible, but changing `factorio_version` would not produce a working mod. The work includes modernizing prototypes, restoring production paths, reconciling parent-mod ownership, and rebalancing an incomplete economic design.
 
-This assessment is a discovery record. The owner has added an explicit requirement to reuse assets from loaded Yuoki/Engines and remove redundant local copies; see [asset reuse](asset-reuse.md). The complete implementation sequence and new gameplay features remain undecided. No PFW 2.1 load test was performed.
+This assessment is a discovery record. The owner has added explicit requirements to reuse assets from loaded Yuoki/Engines, remove redundant local copies, and modernize the resolution of retained PFW artwork; see [asset reuse](asset-reuse.md). The complete implementation sequence and new gameplay features remain undecided. No PFW 2.1 load test was performed.
 
 ## Existing infrastructure
 
@@ -12,7 +12,7 @@ All external ingredient/product names referenced by active PFW recipes appeared 
 
 ## Asset ownership before the port
 
-Map existing artwork to supported parent-owned assets before modernizing its prototype references. Keep both parent mods required, detect their enabled versions in the data stage, and use their files or visual definitions. Remove duplicate PFW files after replacement references and graphical validation are complete. This is a required part of restoration, not optional later package cleanup. The [initial audit](asset-reuse.md) records 39 same-named candidates, with resolution/layout differences still requiring review.
+Map existing artwork to supported parent-owned assets before modernizing its prototype references. Keep both parent mods required, detect their enabled versions in the data stage, and use their files or visual definitions. Remove duplicate PFW files after replacement references and graphical validation are complete. Upscale retained low-resolution PFW assets to reviewed targets, with correct icon/frame metadata and preserved world size. Measure visual quality and runtime performance separately; increased resolution alone is not a performance optimization. These are required parts of restoration, not optional later package cleanup. The [initial audit](asset-reuse.md) records 39 same-named candidates, with resolution/layout differences still requiring review.
 
 ## Required compatibility work
 
@@ -25,7 +25,7 @@ Map existing artwork to supported parent-owned assets before modernizing its pro
 | **2.1 categories** | Singular recipe `category` | `categories = { ... }` under the current 2.1 schema |
 | Machine graphics | Top-level `animation` | Current `graphics_set` structure |
 | Old fields | Inventory flags, mining hardness, old emissions and ingredient limits | Remove or convert according to the target prototype API |
-| Icons | Legacy 32-pixel icons without size metadata | Specify actual icon sizes; decide separately whether upscaling is worthwhile |
+| Icons | Legacy 32-pixel icons without size metadata | Upscale retained low-resolution icons to reviewed modern targets and specify actual icon sizes |
 | Vanilla names | `flame-thrower`, `raw-wood` | Update the flamethrower reference and redesign the old processed/raw-wood conversion |
 | Fluids | Water quantities from the pre-0.15 fluid scale | Re-evaluate modern amounts rather than copying the numeric values blindly |
 | Character | `data.raw.player.player.animations` | Current `character` prototype and armor-animation array handling |

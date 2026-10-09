@@ -6,6 +6,20 @@ On 2026-10-09, the owner added the requirement that the Factorio 2.1 restoration
 
 Asset ownership and mapping should happen before the prototype port and before deleting artwork. The original import remains the historical record; subsequent implementation commits can remove replaced files without losing that record. This discovery PR records the requirement and audit, and makes no original-source or asset changes.
 
+## Retained artwork resolution requirement
+
+The owner also confirmed that retained PFW-owned artwork should be brought up to suitable modern resolution, consistent with the assets already upgraded in the parent mods. Reuse the parent versions first; upscale retained low-resolution assets after ownership and retention are decided. This requirement does not mean scaling parent-provided files again.
+
+- Inventory retained images by role: GUI/item icons, equipment sprites, entity sheets, and character animation sheets. Record source dimensions, per-frame dimensions, intended display size, and the chosen target.
+- Bring retained legacy 32×32 item icons to a reviewed 64×64 target where appropriate, setting `icon_size` to the actual new dimensions. Do not infer image dimensions from filenames such as `*_32.png`.
+- Choose sprite and animation targets per asset rather than applying a blanket multiplier. When increasing frame resolution, update frame dimensions and layout metadata together and compensate sprite scale to preserve the intended in-world footprint. Check shifts, layers, shadows, and every animation direction/state.
+- Preserve the existing artwork, transparency, silhouettes, and consistent appearance across animation frames. Select the resampling/enhancement method through representative visual comparisons; upscaling cannot recover missing original detail automatically.
+- Keep the original artwork recoverable through the baseline commit; avoid shipping old and upscaled copies together when only one is used.
+
+Resolution improvement and runtime performance must be validated separately. Enlarging an image alone does not establish faster rendering: doubling both dimensions gives four times as many pixels before compression and can increase texture-memory requirements. Factorio developers have documented memory/performance pressure from higher-resolution sprites. These historical reports explain the tradeoff; actual Factorio 2.1 results must be measured on the final assets. [Rendering and memory](https://www.factorio.com/blog/post/fff-227), [texture streaming](https://www.factorio.com/blog/post/fff-264).
+
+Record visual quality, package size, loading time, and graphics-memory/rendering behavior separately using the same game version, mod set, save/view, zoom, hardware, and graphics settings. Report whether reuse, removal, and upscaling improve or regress each measurement; do not claim an FPS/UPS improvement from increased resolution alone.
+
 ## Dependency and selection policy
 
 Both `Yuoki` and `yi_engines` are already required dependencies in the original [info.json](../info.json). Keep them required for the initial restoration and select supported minimum versions once replacements are verified. No standalone mode or bundled duplicate fallback has been requested.
@@ -55,7 +69,8 @@ These are candidates, not approved deletion instructions. The audit also records
 3. Update the modernized PFW prototypes to use those provider assets. Reusing modern item/equipment prototypes and merely sharing their visuals must remain distinguishable.
 4. Resolve every PFW reference to each selected local file, including restored/conditional code paths. Retain unique PFW artwork that has no approved parent replacement.
 5. Remove each redundant local file after its consumers have switched. Do not reintroduce bundled copies as implicit missing-provider fallbacks; unsupported/missing required dependencies should fail clearly.
-6. Build the actual distribution ZIP and report both file-count and compressed/uncompressed size changes against the original. Do not ship discovery data as game assets merely because `/docs` is in the repository; define packaging scope explicitly when release tooling is added.
+6. Modernize the retained low-resolution PFW artwork under the resolution requirement above, updating associated prototype metadata and verifying appearance.
+7. Build the actual distribution ZIP and report both file-count and compressed/uncompressed size changes against the original. Do not ship discovery data as game assets merely because `/docs` is in the repository; define packaging scope explicitly when release tooling is added.
 
 ## Acceptance checks for the future port
 
@@ -65,6 +80,8 @@ These are candidates, not approved deletion instructions. The audit also records
 - No loaded PFW prototype references a removed `__yi_pfw__` asset.
 - Normal graphical Factorio startup and in-game visual inspection confirm icons, machines, equipment, and every retained armor animation. A headless prototype dump alone does not verify appearance.
 - The distribution contains no local copies of the approved replaced assets, and unique retained assets still work.
+- Retained low-resolution artwork has a documented target and reviewed upscale where needed; icons remain clear and animated assets preserve frame alignment, alpha edges, and intended world size.
+- Performance and memory claims use comparable before/after measurements; larger image dimensions are not accepted as evidence of a speed improvement.
 - Package-size measurements describe the actual release archive, with no assumption that filename-match totals equal savings.
 
 Reproduce the initial audit with Python 3:
