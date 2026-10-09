@@ -18,6 +18,8 @@ The owner confirmed the [second batch](../ai-artwork-batch-2.md) works. The [thi
 
 Before future drawing, inspect the existing sprite/animation sheets and check both Yuoki Industries and Yuoki Engines for related artwork. Reuse confirmed parent assets directly. Otherwise reference both the original icon and actual sprite frames, preserving camera, footprint, structure and colors. The owner rejected icon-only component/shared-factory drafts because their structures were inaccurate. The processor's earlier color correction also remains binding: red center, eight blue outer cells. Full batch records retain the reference and correction evidence. First-batch counts below remain historical.
 
+The owner subsequently accepted the third batch's appearance and requested the [ammunition-factory correction](../ammunition-factory-artwork.md). Its original first-batch redraw is superseded by a sprite-referenced version; the first-batch comparison below remains historical. Counts remain 19 AI icons and 98 unchanged originals.
+
 ## Arrow variants
 
 The owner confirmed this candidate works, then chose [Yuoki-generated arrow overlays](trade-arrow-overlays.md). Future AI work redraws base artwork only. The following first-batch record predates that overlay pass, which removes 49 redundant variants and leaves 118 local images (four AI redraws, 114 originals).

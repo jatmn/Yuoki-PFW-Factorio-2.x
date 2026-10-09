@@ -17,14 +17,39 @@
         64,
         64
       ],
-      "sha256": "00860a1aa3d61fc31cb7e1f1e8f9656ab9c8f1c526a818013af143b37fff4a79",
+      "sha256": "ed46454771c14af3286e140b90b008b4049dd5addcba3de2a9dbfc25e9db77db",
       "source_path": "docs/artwork/ai-redraw-0.5.1/fabrik-ammo-icon-source.png",
       "source_dimensions": [
         1254,
         1254
       ],
-      "source_sha256": "428b554d87d8f3d64ea5824bec9cdf71009329a5c9b5c10e14c503cd727ff99a",
-      "prompt": "Use case: precise-object-edit. Edit target: the attached enlarged pixel reference of a legacy Factorio Yuoki PFW inventory icon (original 32x32 pixels). Primary request: create a conservative AI-assisted higher-resolution redraw of exactly this icon for comparison with a conventional 2x upscale. Subject: A compact industrial ammunition factory viewed isometrically: tall cylindrical dark steel processing tower at left/rear, dense mechanical pipes and orange/copper details, squat adjoining production units at right/front. Carefully preserve the original arrangement, footprint, perspective, silhouette, colors and highlight direction. Style: faithfully match the original gritty pre-rendered industrial game art; refine ambiguous pixel edges and small surfaces enough to read at 64x64, without redesigning the object. Composition: one object only, square canvas, retain the reference object's relative canvas occupancy and center; keep a small transparent margin. Background: genuine transparency. Constraints: preserve the object identity and original orientation; no labels, text, border, checkerboard drawn into the image, new props, ground plane, dramatic glow or cast shadow outside the object. This is one sample icon, not a sheet or comparison panel."
+      "source_sha256": "2bc6e7f886b1d070a55f6590a927578d044584e8a4bf84c5e7fe338bcddf3719",
+      "prompt": "Use case: precise-object-edit. Create a faithful replacement inventory icon for the Yuoki PFW ammunition factory, to be reduced to64x64. Input1 is the authoritative original animation frame: COPY its machine geometry, steep overhead/isometric camera, silhouette, object layout and color locations. Input2 is the original32px icon for identity and framing. Input3 is an approved equipment-factory redraw: use ONLY its rendering style, clean worn-metal material detail and overhead presentation, never its green lights or red-spoke assembly. Subject: a LOW factory production line arranged back-to-front along the ground. At left are TWO distinct grey-rimmed upward-facing circular stations, one at rear/top and one midway toward front, linked by dark grey/silver slanted side trusses. Near upper-center/right is a dark round top rotor in a BLUE-trimmed square housing with tiny ORANGE marker tabs. From it, a broad curved dark cover with an orange band extends toward the front-center circular rotor with tiny orange marker tabs and a blue base. The right is a clearly visible low dark work platform: THREE separate silver-grey tapered ammunition projectiles lie horizontally, parallel, their pointed noses facing right, in a row at the back of this platform; FOUR small upright brass/copper cartridge cases are grouped two-by-two in the front of the platform (rear pair partly occluded). Copy these pieces and their scale from input1. Crucial: stations are separate horizontal positions, not floors of a tower. No tall smokestack, tanks, invented tubes or large pipes. Preserve original muted dark steel, grey socket rims, blue center trim, small orange markings and brass/copper cases. Match original footprint and steep camera; refine pixels without redesigning geometry. Center whole object on a square transparent canvas with small margins; remove only the external cast shadow from original. No ground, backdrop, text, arrows, labels, border or glow. Real transparent background.",
+      "superseded_versions": [
+        {
+          "commit": "dedaf639cd7b5562972cab6efeaec96567dbd41d",
+          "sha256": "00860a1aa3d61fc31cb7e1f1e8f9656ab9c8f1c526a818013af143b37fff4a79",
+          "source_path": "docs/artwork/ai-redraw-0.5.1/fabrik-ammo-icon-source.png",
+          "source_sha256": "428b554d87d8f3d64ea5824bec9cdf71009329a5c9b5c10e14c503cd727ff99a",
+          "prompt": "Use case: precise-object-edit. Edit target: the attached enlarged pixel reference of a legacy Factorio Yuoki PFW inventory icon (original 32x32 pixels). Primary request: create a conservative AI-assisted higher-resolution redraw of exactly this icon for comparison with a conventional 2x upscale. Subject: A compact industrial ammunition factory viewed isometrically: tall cylindrical dark steel processing tower at left/rear, dense mechanical pipes and orange/copper details, squat adjoining production units at right/front. Carefully preserve the original arrangement, footprint, perspective, silhouette, colors and highlight direction. Style: faithfully match the original gritty pre-rendered industrial game art; refine ambiguous pixel edges and small surfaces enough to read at 64x64, without redesigning the object. Composition: one object only, square canvas, retain the reference object's relative canvas occupancy and center; keep a small transparent margin. Background: genuine transparency. Constraints: preserve the object identity and original orientation; no labels, text, border, checkerboard drawn into the image, new props, ground plane, dramatic glow or cast shadow outside the object. This is one sample icon, not a sheet or comparison panel.",
+          "reason": "Owner requested sprite-referenced correction after batch3; first redraw misinterpreted ground-level machinery as a tall tower."
+        }
+      ],
+      "sprite_reference": {
+        "sprite": "__yi_pfw__/graphics/entity/fab-ammo-sheet.png",
+        "sprite_sha256": "59368a1d6909b2f30e20f082c6bfebcb8654396aa250613781f481fb0985c0bf",
+        "frame": {
+          "index": 0,
+          "x": 0,
+          "y": 0,
+          "width": 128,
+          "height": 128
+        },
+        "review": "All16 frames inspected; frame0 chosen. Both pinned parents checked using batch3 visual inventory and refreshed filename search; no equivalent ammunition-factory replacement found in reviewed assets.",
+        "style_reference": "docs/artwork/ai-redraw-0.5.1/fabrik-equip-icon-source.png",
+        "style_reference_sha256": "2d8bc04516e003fdcdd4bef01ffc18588f964dcbcc8f61eff9bb843d7972ffb7"
+      },
+      "correction_date": "2026-10-09"
     },
     {
       "label": "Plasma gun",
