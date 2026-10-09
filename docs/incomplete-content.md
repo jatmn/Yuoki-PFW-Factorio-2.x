@@ -1,5 +1,7 @@
 # Incomplete and overlapping content
 
+The later [content ownership evaluation](content-evaluation.md) compares all active/commented declarations against freshly pinned parent sources and records replacement decisions. The inventory below describes the original release and initial discovery.
+
 This release already contains unfinished or disconnected content. “Defined,” “craftable,” and “usable” are different states. The counts below describe declarations in the ZIP; they do not prove reachability in every historical dependency combination.
 
 The owner requires retaining the disabled/commented-out code and unused assets for future development. The inventory below identifies restoration opportunities, not content to prune. Confirmed duplicate artwork may be replaced by parent-owned assets with its mapping preserved; unique unused assets and inactive code stay in the maintained source tree.
@@ -58,7 +60,7 @@ The bundled migration JSON names replacements such as:
 
 The modern Yuoki snapshot contains those replacement names. This supports reusing modern Yuoki content, but does not make the old IDs aliases automatically or prove the migration ever ran.
 
-The JSON is malformed (including trailing commas and a missing separator between sections), is stored under `prototypes/migrations/`, and includes inappropriate entries such as gun names in its equipment mapping. The neighboring Lua file only calls `game.reload_script()`. These files need deliberate replacement if save migration becomes part of a future port.
+The JSON is malformed (including trailing commas and a missing separator between sections), is stored under `prototypes/migrations/`, and includes inappropriate entries such as gun names in its equipment mapping. The neighboring Lua file only calls `game.reload_script()`. The owner subsequently chose a fresh 0.5.0 release: remove both legacy migration files during implementation and do not create a 0.4.15 upgrade migration. Their contents remain historical evidence here; see the [build plan](build-plan.md).
 
 ## Direct modern collisions
 

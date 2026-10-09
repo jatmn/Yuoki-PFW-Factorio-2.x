@@ -2,7 +2,7 @@
 
 A restoration appears feasible, but changing `factorio_version` would not produce a working mod. The work includes modernizing prototypes, restoring production paths, reconciling parent-mod ownership, and rebalancing an incomplete economic design.
 
-This assessment is a discovery record. The owner has added explicit requirements to reuse assets from loaded Yuoki/Engines, remove redundant local copies, and modernize the resolution of retained PFW artwork; see [asset reuse](asset-reuse.md). Unused assets and disabled/commented-out code must remain in the maintained source tree for future reuse; only confirmed parent-owned asset duplicates may be removed through the mapped replacement process. The complete implementation sequence and new gameplay features remain undecided. No PFW 2.1 load test was performed.
+This assessment is a discovery record. The owner has added explicit requirements to reuse assets from loaded Yuoki/Engines, remove redundant local copies, and modernize the resolution of retained PFW artwork; see [asset reuse](asset-reuse.md). Unused assets and disabled/commented-out code must remain in the maintained source tree for future reuse; only confirmed parent-owned asset duplicates may be removed through the mapped replacement process. The owner has now set the [build sequence and release policy](build-plan.md): Phase 1 is a crash-free launch, with cleanup and expansion afterward; the first build stays at 0.5.0 until an explicit version-bump instruction. The bundled legacy migrations will be removed for this fresh release, as a specific preservation exception. No PFW 2.1 load test was performed.
 
 ## Existing infrastructure
 
@@ -10,27 +10,27 @@ Local, clean Yuoki and Engines checkouts inspected during discovery both identif
 
 All external ingredient/product names referenced by active PFW recipes appeared somewhere in that dump except `flame-thrower` and `raw-wood`. This comparison checks names, not type correctness, reachability, balance, or full compatibility. The dump came from prior workspace activity and was not freshly generated for this discovery. [Snapshot identities and limitations](data/dependency-comparison.json).
 
-## Asset ownership before the port
+## Asset ownership after the startup milestone
 
-Map existing artwork to supported parent-owned assets before modernizing its prototype references. Keep both parent mods required, detect their enabled versions in the data stage, and use their files or visual definitions. Remove duplicate PFW files after replacement references and graphical validation are complete. Upscale retained low-resolution PFW assets to reviewed targets, with correct icon/frame metadata and preserved world size. These are required parts of restoration, not optional later cleanup. The [initial audit](asset-reuse.md) records 39 same-named candidates, with resolution/layout differences still requiring review.
+Under the accepted Phase 1 priority, first make the mod launch. Then map existing artwork to supported parent-owned assets before the comprehensive asset replacement pass. Apply only the reference/metadata fixes needed for startup during Phase 1. Keep both parent mods required, detect their enabled versions in the data stage, and use their files or visual definitions. Remove duplicate PFW files after replacement references and graphical validation are complete. Upscale retained low-resolution PFW assets to reviewed targets, with correct icon/frame metadata and preserved world size. These remain required parts of restoration after the startup milestone. The [initial audit](asset-reuse.md) records 39 same-named candidates, with resolution/layout differences still requiring review.
 
 ## Required compatibility work
 
 | Area | Observed legacy source | Required direction |
 |---|---|---|
-| Metadata | Factorio 0.14 and old minimum dependency versions | Select modern minimum versions after confirming dependency compatibility |
+| Metadata | Factorio 0.14 and old minimum dependency versions | Update during Phase 1; initial candidates are base >= 2.1.20 and both parents >= 1.3.0, with advertised minimums verified before release |
 | Ingredients | Positional pairs such as `{"iron-plate", 1}` | Explicit typed records with `type`, `name`, and `amount` |
 | Products | `result` and `result_count` | Modern `results` arrays; meaningful main products/localization for multi-output trade recipes |
 | Booleans | `enabled = "true"` | Boolean `true` |
 | **2.1 categories** | Singular recipe `category` | `categories = { ... }` under the current 2.1 schema |
 | Machine graphics | Top-level `animation` | Current `graphics_set` structure |
 | Old fields | Inventory flags, mining hardness, old emissions and ingredient limits | Remove or convert according to the target prototype API |
-| Icons | Legacy 32-pixel icons without size metadata | Upscale retained low-resolution icons to reviewed modern targets and specify actual icon sizes |
+| Icons | Legacy 32-pixel icons without size metadata | Specify correct actual icon sizes for Phase 1; upscale retained low-resolution icons in the subsequent artwork pass |
 | Vanilla names | `flame-thrower`, `raw-wood` | Update the flamethrower reference and redesign the old processed/raw-wood conversion |
 | Fluids | Water quantities from the pre-0.15 fluid scale | Re-evaluate modern amounts rather than copying the numeric values blindly |
 | Character | `data.raw.player.player.animations` | Current `character` prototype and armor-animation array handling |
 | Equipment | Old definitions, names, energy fields, and armor properties | Prefer modern parent-mod equipment or explicitly restore distinct PFW items |
-| Migrations | Malformed files in `prototypes/migrations` | Valid root `migrations/` files only if supported upgrade paths are chosen |
+| Migrations | Malformed files in `prototypes/migrations` | Remove the bundled legacy files; 0.5.0 is a fresh release with no migration from 0.4.15 |
 
 Official reference: [RecipePrototype](https://lua-api.factorio.com/latest/prototypes/RecipePrototype.html), [ItemIngredientPrototype](https://lua-api.factorio.com/latest/types/ItemIngredientPrototype.html), [CraftingMachinePrototype](https://lua-api.factorio.com/latest/prototypes/CraftingMachinePrototype.html), [CharacterPrototype](https://lua-api.factorio.com/latest/prototypes/CharacterPrototype.html), [migrations](https://lua-api.factorio.com/latest/auxiliary/migrations.html).
 
@@ -58,18 +58,12 @@ Preserve currently disabled recipes, placeholder content, and their unique asset
 - If Space Age is supported, decide whether offworld lore remains flavor or gains actual planet/logistics requirements. The original mod did not implement these.
 - Clarify whether progression stays ingredient-gated or gains technologies; the original addon has no technology prototypes.
 
-## Suggested bounded first playable scope
+## Accepted first milestone
 
-This is a recommendation, not an accepted implementation plan:
-
-1. Map and reuse parent-owned artwork under the accepted asset-reuse requirement, then preserve the six functional factory roles, Trade Nodes, and eight exotic materials.
-2. Restore a small set of complete production/export/import loops using modern dependency items.
-3. Validate that every intended product can be obtained without editor spawning.
-4. Evaluate costs and returns before expanding the remaining chains.
-5. Reintroduce custom walker visuals only after resolving equipment ownership and character compatibility.
+The owner has selected a narrower first milestone than the earlier playable-loop proposal: **get PFW to launch and enter a new game without crashing**. Follow the [build plan](build-plan.md) for 0.5.0 version hold, changelog format, dependency updates, legacy-migration removal and completion evidence. Comprehensive ownership/asset cleanup, production-loop restoration, balance and expansion follow Phase 1. Fix only the subset necessary for startup first.
 
 Deployable cyborgs, drivable trucks, demand-based markets, missions, and actual interplanetary trade would be new features. Their names and graphics in the old archive do not establish existing implementations to port.
 
 ## Validation needed for an implementation
 
-A future port should load against a pinned Factorio 2.1 build and dependency revisions, create a new save, exercise complete production and trade loops, and check equipment behavior. Quality/recycling combinations and existing-save migrations need separate coverage if they are supported. Prototype loading alone would not prove economy balance or recipe accessibility.
+A future port should load against a pinned Factorio 2.1 build and dependency revisions, create a new save, exercise complete production and trade loops, and check equipment behavior. Quality/recycling combinations need separate coverage if supported. Test new 0.5.0 saves; no legacy-save migration is planned or required. Prototype loading alone would not prove economy balance or recipe accessibility.

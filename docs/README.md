@@ -4,6 +4,10 @@ Research date: 2026-10-09. Subject: Yuoki Industries — Profit from War (`yi_pf
 
 This directory records the original mod's behavior and the initial investigation into a possible Factorio 2.1 restoration. It does not implement or approve a port. The mod source remains the original Factorio 0.14 release, including its incomplete content and defects.
 
+## Accepted implementation priority
+
+[Build plan and release policy](build-plan.md): Phase 1 gets PFW to launch without crashing; cleanup and expansion follow. Start implementation at 0.5.0 and hold that version until the owner authorizes a bump. Add a Factorio-compliant changelog using Yuoki date formatting, update dependencies, and remove the legacy migrations for a fresh release without a 0.4.15 upgrade path.
+
 ## Reading order
 
 1. [Provenance and scope](provenance.md): original archive identity, preservation guarantees, historical dates, and limits of this research.
@@ -13,8 +17,9 @@ This directory records the original mod's behavior and the initial investigation
 5. [Factorio 2.1 assessment](factorio-2.1-assessment.md): concrete compatibility work and decisions that remain open.
 6. [Parent-mod asset reuse](asset-reuse.md): accepted reuse/removal, unused-content preservation, and retained-artwork resolution requirements, initial ownership candidates, and validation before changing local artwork.
 7. [Content ownership](content-ownership.md): reuse parent-owned machines, items, guns, and equivalent recipes while preserving unique PFW recipes and commenting out redundant definitions.
-8. [Repository protections](repository-protections.md): the existing Yuoki policy used when creating this repository.
-9. [Sources and verification](sources-and-verification.md): evidence, reproducibility commands, and work not performed.
+8. [Completed content evaluation](content-evaluation.md): current parent ownership candidates, all active/commented recipe dispositions, machine compatibility and unresolved mappings.
+9. [Repository protections](repository-protections.md): the existing Yuoki policy used when creating this repository.
+10. [Sources and verification](sources-and-verification.md): evidence, reproducibility commands, and work not performed.
 
 ## Machine-readable records
 
@@ -24,6 +29,7 @@ This directory records the original mod's behavior and the initial investigation
 - [All 105 active recipes, JSON](data/recipes.json).
 - [Prototype and recipe counts](data/inventory-summary.json).
 - [Dependency comparison record](data/dependency-comparison.json).
+- [Content evaluation provenance](data/content-evaluation.json), [prototype dispositions](data/prototype-ownership-inventory.csv), [140-recipe audit](data/recipe-ownership-audit.csv), [detailed recipe comparison](data/recipe-ownership-audit.json), and [parent prototype evidence](data/parent-content-evidence.json).
 - [Complete PNG audit](data/asset-audit.json) and [parent-asset reuse candidates](data/asset-reuse-candidates.csv).
 
 “Active” means an uncommented declaration in the supplied source, not a recipe proven reachable or working in-game. Material costs and equipment statistics describe the original source unless explicitly marked as a modern comparison.

@@ -1,0 +1,7132 @@
+[
+  {
+    "type": "recipe",
+    "name": "y-retrader-recipe",
+    "source": "prototypes/ir_basic.lua",
+    "line": 4,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-basic-t1-mf",
+        "amount": 2.0
+      },
+      {
+        "type": "item",
+        "name": "y-bluegear",
+        "amount": 6.0
+      },
+      {
+        "type": "item",
+        "name": "y-stargate",
+        "amount": 1.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-retrader-1",
+        "amount": 10.0
+      }
+    ],
+    "category": "crafting",
+    "seconds": 0.5,
+    "scenario_references": {
+      "y-retrader-1": "ye_trade_node"
+    },
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [
+      "ye_trade_node"
+    ],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-rich-1-recipe",
+    "source": "prototypes/ir_basic.lua",
+    "line": 6,
+    "state": "commented",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-stuff-6",
+        "amount": 250.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-rich-1",
+        "amount": 1.0
+      }
+    ],
+    "category": "crafting",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [],
+    "assessment": "preserve_commented_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-rich-2-recipe",
+    "source": "prototypes/ir_basic.lua",
+    "line": 7,
+    "state": "commented",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-rich-1",
+        "amount": 4.0
+      },
+      {
+        "type": "item",
+        "name": "y-stuff-6",
+        "amount": 250.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-rich-2",
+        "amount": 1.0
+      }
+    ],
+    "category": "crafting",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [],
+    "assessment": "preserve_commented_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-fab1a-recipe",
+    "source": "prototypes/ir_fab1.lua",
+    "line": 12,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-ammo-hohlspitz",
+        "amount": 8.0
+      },
+      {
+        "type": "item",
+        "name": "wooden-chest",
+        "amount": 1.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-mun-0",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-munition",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-fab1b-recipe",
+    "source": "prototypes/ir_fab1.lua",
+    "line": 13,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-ammo-acid-2",
+        "amount": 6.0
+      },
+      {
+        "type": "item",
+        "name": "iron-chest",
+        "amount": 1.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-mun-1",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-munition",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-fab1c-recipe",
+    "source": "prototypes/ir_fab1.lua",
+    "line": 14,
+    "state": "commented",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-battery-single-use2",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "iron-plate",
+        "amount": 1.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-mun-2",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-munition",
+    "seconds": 0.5,
+    "scenario_references": {
+      "y-mun-2": "yi_ammo_energie"
+    },
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [
+      "yi_ammo_energie"
+    ],
+    "assessment": "preserve_commented_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-fab1d-recipe",
+    "source": "prototypes/ir_fab1.lua",
+    "line": 15,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-ammo-poison",
+        "amount": 5.0
+      },
+      {
+        "type": "item",
+        "name": "y-grycoil",
+        "amount": 1.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-mun-3",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-munition",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-fab1e-recipe",
+    "source": "prototypes/ir_fab1.lua",
+    "line": 16,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "rocket",
+        "amount": 3.0
+      },
+      {
+        "type": "item",
+        "name": "wooden-chest",
+        "amount": 1.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-mun-4",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-munition",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-fab1f-recipe",
+    "source": "prototypes/ir_fab1.lua",
+    "line": 17,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "iron-plate",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "explosives",
+        "amount": 1.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-mun-5",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-munition",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-fab1g-recipe",
+    "source": "prototypes/ir_fab1.lua",
+    "line": 18,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-mun-5",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "y-chip-1",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "iron-plate",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "wooden-chest",
+        "amount": 1.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-mun-6",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-munition",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-fab1h-recipe",
+    "source": "prototypes/ir_fab1.lua",
+    "line": 19,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-mun-5",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "y-chip-1",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "y-biomass",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "iron-chest",
+        "amount": 1.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-mun-7",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-munition",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-fab1i-recipe",
+    "source": "prototypes/ir_fab1.lua",
+    "line": 20,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-mun-5",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "y-toxic-dust",
+        "amount": 4.0
+      },
+      {
+        "type": "item",
+        "name": "y-stuff-5",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "y_sc11",
+        "amount": 1.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-mun-8",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-munition",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-fab1k-recipe",
+    "source": "prototypes/ir_fab1.lua",
+    "line": 21,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-mun-5",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "y-stuff-1",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "y-stuff-6",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "y_sc11",
+        "amount": 1.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-mun-9",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-munition",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-rfab1a-recipe",
+    "source": "prototypes/ir_fab1.lua",
+    "line": 35,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-mun-0",
+        "amount": 8.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-stuff-2",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "ypfw_trader_sign",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [
+      "j_yi_roboport1",
+      "y-ammo-biggun",
+      "y-ammo-explosiv",
+      "y-ammo-krakon",
+      "y-ammo-poison",
+      "y_ammo_flame",
+      "ye_buechse_blau_export",
+      "ye_buechse_fleisch_export",
+      "ye_buechse_gelb_export",
+      "ye_buechse_rosa_export",
+      "ye_buechse_weiss_export",
+      "ye_export01",
+      "ye_export02",
+      "ye_export03",
+      "ye_export04",
+      "ye_export05",
+      "ye_export06",
+      "ye_export_fish1",
+      "ye_export_fish2",
+      "yi_artillery_shell",
+      "yi_beacon",
+      "yi_cannon_shell",
+      "yi_construction-robot",
+      "yi_logistic-robot",
+      "yi_mine_impact",
+      "yi_mine_plasma",
+      "yi_roboport",
+      "ypfw_trader_sign"
+    ],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-rfab1b-recipe",
+    "source": "prototypes/ir_fab1.lua",
+    "line": 36,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-mun-1",
+        "amount": 4.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-redcoil",
+        "amount": 3.0
+      },
+      {
+        "type": "item",
+        "name": "ypfw_trader_sign",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [
+      "j_yi_roboport1",
+      "y-ammo-biggun",
+      "y-ammo-explosiv",
+      "y-ammo-krakon",
+      "y-ammo-poison",
+      "y_ammo_flame",
+      "ye_buechse_blau_export",
+      "ye_buechse_fleisch_export",
+      "ye_buechse_gelb_export",
+      "ye_buechse_rosa_export",
+      "ye_buechse_weiss_export",
+      "ye_export01",
+      "ye_export02",
+      "ye_export03",
+      "ye_export04",
+      "ye_export05",
+      "ye_export06",
+      "ye_export_fish1",
+      "ye_export_fish2",
+      "yi_artillery_shell",
+      "yi_beacon",
+      "yi_cannon_shell",
+      "yi_construction-robot",
+      "yi_logistic-robot",
+      "yi_mine_impact",
+      "yi_mine_plasma",
+      "yi_roboport",
+      "ypfw_trader_sign"
+    ],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-rfab1c-recipe",
+    "source": "prototypes/ir_fab1.lua",
+    "line": 37,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-mun-2",
+        "amount": 7.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-unicomp-a2",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "ypfw_trader_sign",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "scenario_references": {
+      "y-mun-2": "yi_ammo_energie"
+    },
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [
+      "j-cw2uc-recipe",
+      "j_yi_roboport1",
+      "y-ac-crystal2uc",
+      "y-ac-mud2uc",
+      "y-ac-slag2uc",
+      "y-ac-toxic2uc",
+      "y-ammo-biggun",
+      "y-ammo-explosiv",
+      "y-ammo-krakon",
+      "y-ammo-poison",
+      "y-heavyoil2uc",
+      "y-lightoil2uc",
+      "y-liquid2uc",
+      "y-lubricant2uc",
+      "y-petroleum",
+      "y-press-richdust",
+      "y_ammo_flame",
+      "ye_buechse_blau_export",
+      "ye_buechse_fleisch_export",
+      "ye_buechse_gelb_export",
+      "ye_buechse_rosa_export",
+      "ye_buechse_weiss_export",
+      "ye_export01",
+      "ye_export02",
+      "ye_export03",
+      "ye_export04",
+      "ye_export05",
+      "ye_export06",
+      "ye_export_fish1",
+      "ye_export_fish2",
+      "ye_trademeat1",
+      "yi_artillery_shell",
+      "yi_beacon",
+      "yi_cannon_shell",
+      "yi_construction-robot",
+      "yi_logistic-robot",
+      "yi_mine_impact",
+      "yi_mine_plasma",
+      "yi_roboport",
+      "ypfw_trader_sign"
+    ],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-rfab1d-recipe",
+    "source": "prototypes/ir_fab1.lua",
+    "line": 38,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-mun-3",
+        "amount": 2.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-unicomp-a2",
+        "amount": 5.0
+      },
+      {
+        "type": "item",
+        "name": "ypfw_trader_sign",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [
+      "j-cw2uc-recipe",
+      "j_yi_roboport1",
+      "y-ac-crystal2uc",
+      "y-ac-mud2uc",
+      "y-ac-slag2uc",
+      "y-ac-toxic2uc",
+      "y-ammo-biggun",
+      "y-ammo-explosiv",
+      "y-ammo-krakon",
+      "y-ammo-poison",
+      "y-heavyoil2uc",
+      "y-lightoil2uc",
+      "y-liquid2uc",
+      "y-lubricant2uc",
+      "y-petroleum",
+      "y-press-richdust",
+      "y_ammo_flame",
+      "ye_buechse_blau_export",
+      "ye_buechse_fleisch_export",
+      "ye_buechse_gelb_export",
+      "ye_buechse_rosa_export",
+      "ye_buechse_weiss_export",
+      "ye_export01",
+      "ye_export02",
+      "ye_export03",
+      "ye_export04",
+      "ye_export05",
+      "ye_export06",
+      "ye_export_fish1",
+      "ye_export_fish2",
+      "ye_trademeat1",
+      "yi_artillery_shell",
+      "yi_beacon",
+      "yi_cannon_shell",
+      "yi_construction-robot",
+      "yi_logistic-robot",
+      "yi_mine_impact",
+      "yi_mine_plasma",
+      "yi_roboport",
+      "ypfw_trader_sign"
+    ],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-rfab1e-recipe",
+    "source": "prototypes/ir_fab1.lua",
+    "line": 39,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-mun-4",
+        "amount": 4.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-grycoil",
+        "amount": 9.0
+      },
+      {
+        "type": "item",
+        "name": "ypfw_trader_sign",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [
+      "j_yi_roboport1",
+      "y-ammo-biggun",
+      "y-ammo-explosiv",
+      "y-ammo-krakon",
+      "y-ammo-poison",
+      "y_ammo_flame",
+      "ye_buechse_blau_export",
+      "ye_buechse_fleisch_export",
+      "ye_buechse_gelb_export",
+      "ye_buechse_rosa_export",
+      "ye_buechse_weiss_export",
+      "ye_export01",
+      "ye_export02",
+      "ye_export03",
+      "ye_export04",
+      "ye_export05",
+      "ye_export06",
+      "ye_export_fish1",
+      "ye_export_fish2",
+      "yi_artillery_shell",
+      "yi_beacon",
+      "yi_cannon_shell",
+      "yi_construction-robot",
+      "yi_logistic-robot",
+      "yi_mine_impact",
+      "yi_mine_plasma",
+      "yi_roboport",
+      "ypfw_trader_sign"
+    ],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-rfab1f-recipe",
+    "source": "prototypes/ir_fab1.lua",
+    "line": 40,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-mun-5",
+        "amount": 15.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-unicomp-a2",
+        "amount": 4.0
+      },
+      {
+        "type": "item",
+        "name": "ypfw_trader_sign",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [
+      "j-cw2uc-recipe",
+      "j_yi_roboport1",
+      "y-ac-crystal2uc",
+      "y-ac-mud2uc",
+      "y-ac-slag2uc",
+      "y-ac-toxic2uc",
+      "y-ammo-biggun",
+      "y-ammo-explosiv",
+      "y-ammo-krakon",
+      "y-ammo-poison",
+      "y-heavyoil2uc",
+      "y-lightoil2uc",
+      "y-liquid2uc",
+      "y-lubricant2uc",
+      "y-petroleum",
+      "y-press-richdust",
+      "y_ammo_flame",
+      "ye_buechse_blau_export",
+      "ye_buechse_fleisch_export",
+      "ye_buechse_gelb_export",
+      "ye_buechse_rosa_export",
+      "ye_buechse_weiss_export",
+      "ye_export01",
+      "ye_export02",
+      "ye_export03",
+      "ye_export04",
+      "ye_export05",
+      "ye_export06",
+      "ye_export_fish1",
+      "ye_export_fish2",
+      "ye_trademeat1",
+      "yi_artillery_shell",
+      "yi_beacon",
+      "yi_cannon_shell",
+      "yi_construction-robot",
+      "yi_logistic-robot",
+      "yi_mine_impact",
+      "yi_mine_plasma",
+      "yi_roboport",
+      "ypfw_trader_sign"
+    ],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-rfab1g-recipe",
+    "source": "prototypes/ir_fab1.lua",
+    "line": 41,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-mun-6",
+        "amount": 8.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-unicomp-a2",
+        "amount": 5.0
+      },
+      {
+        "type": "item",
+        "name": "y-richdust",
+        "amount": 22.0
+      },
+      {
+        "type": "item",
+        "name": "ypfw_trader_sign",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [
+      "j-cw2uc-recipe",
+      "j_yi_roboport1",
+      "y-ac-crystal2uc",
+      "y-ac-mud2uc",
+      "y-ac-slag2uc",
+      "y-ac-toxic2uc",
+      "y-ammo-biggun",
+      "y-ammo-explosiv",
+      "y-ammo-krakon",
+      "y-ammo-poison",
+      "y-heavyoil2uc",
+      "y-lightoil2uc",
+      "y-liquid2uc",
+      "y-lubricant2uc",
+      "y-mixing-rich",
+      "y-petroleum",
+      "y-press-richdust",
+      "y_ammo_flame",
+      "ye_buechse_blau_export",
+      "ye_buechse_fleisch_export",
+      "ye_buechse_gelb_export",
+      "ye_buechse_rosa_export",
+      "ye_buechse_weiss_export",
+      "ye_export01",
+      "ye_export02",
+      "ye_export03",
+      "ye_export04",
+      "ye_export05",
+      "ye_export06",
+      "ye_export_fish1",
+      "ye_export_fish2",
+      "ye_trademeat1",
+      "yi_artillery_shell",
+      "yi_beacon",
+      "yi_cannon_shell",
+      "yi_construction-robot",
+      "yi_logistic-robot",
+      "yi_mine_impact",
+      "yi_mine_plasma",
+      "yi_roboport",
+      "ypfw_trader_sign"
+    ],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-rfab1h-recipe",
+    "source": "prototypes/ir_fab1.lua",
+    "line": 42,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-mun-7",
+        "amount": 4.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-unicomp-a2",
+        "amount": 4.0
+      },
+      {
+        "type": "item",
+        "name": "ypfw_trader_sign",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [
+      "j-cw2uc-recipe",
+      "j_yi_roboport1",
+      "y-ac-crystal2uc",
+      "y-ac-mud2uc",
+      "y-ac-slag2uc",
+      "y-ac-toxic2uc",
+      "y-ammo-biggun",
+      "y-ammo-explosiv",
+      "y-ammo-krakon",
+      "y-ammo-poison",
+      "y-heavyoil2uc",
+      "y-lightoil2uc",
+      "y-liquid2uc",
+      "y-lubricant2uc",
+      "y-petroleum",
+      "y-press-richdust",
+      "y_ammo_flame",
+      "ye_buechse_blau_export",
+      "ye_buechse_fleisch_export",
+      "ye_buechse_gelb_export",
+      "ye_buechse_rosa_export",
+      "ye_buechse_weiss_export",
+      "ye_export01",
+      "ye_export02",
+      "ye_export03",
+      "ye_export04",
+      "ye_export05",
+      "ye_export06",
+      "ye_export_fish1",
+      "ye_export_fish2",
+      "ye_trademeat1",
+      "yi_artillery_shell",
+      "yi_beacon",
+      "yi_cannon_shell",
+      "yi_construction-robot",
+      "yi_logistic-robot",
+      "yi_mine_impact",
+      "yi_mine_plasma",
+      "yi_roboport",
+      "ypfw_trader_sign"
+    ],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-rfab1i-recipe",
+    "source": "prototypes/ir_fab1.lua",
+    "line": 43,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-mun-8",
+        "amount": 2.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-unicomp-a2",
+        "amount": 6.0
+      },
+      {
+        "type": "item",
+        "name": "y-stuff-5",
+        "amount": 2.0
+      },
+      {
+        "type": "item",
+        "name": "ypfw_trader_sign",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [
+      "j-cw2uc-recipe",
+      "j_yi_roboport1",
+      "y-ac-crystal2uc",
+      "y-ac-mud2uc",
+      "y-ac-slag2uc",
+      "y-ac-toxic2uc",
+      "y-ammo-biggun",
+      "y-ammo-explosiv",
+      "y-ammo-krakon",
+      "y-ammo-poison",
+      "y-heavyoil2uc",
+      "y-lightoil2uc",
+      "y-liquid2uc",
+      "y-lubricant2uc",
+      "y-petroleum",
+      "y-press-richdust",
+      "y_ammo_flame",
+      "ye_buechse_blau_export",
+      "ye_buechse_fleisch_export",
+      "ye_buechse_gelb_export",
+      "ye_buechse_rosa_export",
+      "ye_buechse_weiss_export",
+      "ye_export01",
+      "ye_export02",
+      "ye_export03",
+      "ye_export04",
+      "ye_export05",
+      "ye_export06",
+      "ye_export_fish1",
+      "ye_export_fish2",
+      "ye_trademeat1",
+      "yi_artillery_shell",
+      "yi_beacon",
+      "yi_cannon_shell",
+      "yi_construction-robot",
+      "yi_logistic-robot",
+      "yi_mine_impact",
+      "yi_mine_plasma",
+      "yi_roboport",
+      "ypfw_trader_sign"
+    ],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-rfab1k-recipe",
+    "source": "prototypes/ir_fab1.lua",
+    "line": 44,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-mun-9",
+        "amount": 1.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-unicomp-a2",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "y-stuff-4",
+        "amount": 2.0
+      },
+      {
+        "type": "item",
+        "name": "y-stuff-1",
+        "amount": 2.0
+      },
+      {
+        "type": "item",
+        "name": "ypfw_trader_sign",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [
+      "j-cw2uc-recipe",
+      "j_yi_roboport1",
+      "y-ac-crystal2uc",
+      "y-ac-mud2uc",
+      "y-ac-slag2uc",
+      "y-ac-toxic2uc",
+      "y-ammo-biggun",
+      "y-ammo-explosiv",
+      "y-ammo-krakon",
+      "y-ammo-poison",
+      "y-heavyoil2uc",
+      "y-lightoil2uc",
+      "y-liquid2uc",
+      "y-lubricant2uc",
+      "y-petroleum",
+      "y-press-richdust",
+      "y_ammo_flame",
+      "ye_buechse_blau_export",
+      "ye_buechse_fleisch_export",
+      "ye_buechse_gelb_export",
+      "ye_buechse_rosa_export",
+      "ye_buechse_weiss_export",
+      "ye_export01",
+      "ye_export02",
+      "ye_export03",
+      "ye_export04",
+      "ye_export05",
+      "ye_export06",
+      "ye_export_fish1",
+      "ye_export_fish2",
+      "ye_trademeat1",
+      "yi_artillery_shell",
+      "yi_beacon",
+      "yi_cannon_shell",
+      "yi_construction-robot",
+      "yi_logistic-robot",
+      "yi_mine_impact",
+      "yi_mine_plasma",
+      "yi_roboport",
+      "ypfw_trader_sign"
+    ],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-fab2a-recipe",
+    "source": "prototypes/ir_fab2.lua",
+    "line": 24,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-refined-yres1",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "steel-plate",
+        "amount": 1.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-sm-0",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-handwaffen",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-fab2b-recipe",
+    "source": "prototypes/ir_fab2.lua",
+    "line": 25,
+    "state": "commented",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "iron-plate",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "y-stuff-1",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "y-mun-2",
+        "amount": 1.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-sm-1",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-handwaffen",
+    "seconds": 0.5,
+    "scenario_references": {
+      "y-mun-2": "yi_ammo_energie",
+      "y-sm-1": "yi_lasergun"
+    },
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [
+      "yi_lasergun"
+    ],
+    "assessment": "preserve_commented_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-fab2c-recipe",
+    "source": "prototypes/ir_fab2.lua",
+    "line": 26,
+    "state": "commented",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-refined-yres2",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "y-stuff-2",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "y-mun-2",
+        "amount": 1.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-sm-2",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-handwaffen",
+    "seconds": 0.5,
+    "scenario_references": {
+      "y-mun-2": "yi_ammo_energie",
+      "y-sm-2": "yi_lasergun"
+    },
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [
+      "yi_lasergun"
+    ],
+    "assessment": "preserve_commented_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-fab2d-recipe",
+    "source": "prototypes/ir_fab2.lua",
+    "line": 27,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-refined-yres1",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "iron-plate",
+        "amount": 5.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-sm-3",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-handwaffen",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-fab2e-recipe",
+    "source": "prototypes/ir_fab2.lua",
+    "line": 28,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "iron-plate",
+        "amount": 4.0
+      },
+      {
+        "type": "item",
+        "name": "y-zielfern",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "y-grycoil",
+        "amount": 1.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-sm-4",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-handwaffen",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-fab2f-recipe",
+    "source": "prototypes/ir_fab2.lua",
+    "line": 29,
+    "state": "commented",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-refined-yres1",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "y-redcoil",
+        "amount": 1.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-sm-5",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-handwaffen",
+    "seconds": 0.5,
+    "scenario_references": {
+      "y-sm-5": "yi_minigun"
+    },
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [
+      "yi_minigun"
+    ],
+    "assessment": "preserve_commented_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-fab2g-recipe",
+    "source": "prototypes/ir_fab2.lua",
+    "line": 30,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-richdust",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "y-biomass",
+        "amount": 7.0
+      },
+      {
+        "type": "item",
+        "name": "y-stuff-5",
+        "amount": 1.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-sm-6",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-handwaffen",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-fab2h-recipe",
+    "source": "prototypes/ir_fab2.lua",
+    "line": 31,
+    "state": "commented",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-unicomp-a2",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "iron-plate",
+        "amount": 1.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-sm-7",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-handwaffen",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [],
+    "assessment": "preserve_commented_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-fab2i-recipe",
+    "source": "prototypes/ir_fab2.lua",
+    "line": 32,
+    "state": "commented",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-unicomp-a2",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "iron-plate",
+        "amount": 1.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-sm-8",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-handwaffen",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [],
+    "assessment": "preserve_commented_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-fab2k-recipe",
+    "source": "prototypes/ir_fab2.lua",
+    "line": 33,
+    "state": "commented",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-unicomp-a2",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "iron-plate",
+        "amount": 1.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-sm-9",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-handwaffen",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [],
+    "assessment": "preserve_commented_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-rfab2a-recipe",
+    "source": "prototypes/ir_fab2.lua",
+    "line": 47,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-sm-0",
+        "amount": 7.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-unicomp-a2",
+        "amount": 3.0
+      },
+      {
+        "type": "item",
+        "name": "ypfw_trader_sign",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [
+      "j-cw2uc-recipe",
+      "j_yi_roboport1",
+      "y-ac-crystal2uc",
+      "y-ac-mud2uc",
+      "y-ac-slag2uc",
+      "y-ac-toxic2uc",
+      "y-ammo-biggun",
+      "y-ammo-explosiv",
+      "y-ammo-krakon",
+      "y-ammo-poison",
+      "y-heavyoil2uc",
+      "y-lightoil2uc",
+      "y-liquid2uc",
+      "y-lubricant2uc",
+      "y-petroleum",
+      "y-press-richdust",
+      "y_ammo_flame",
+      "ye_buechse_blau_export",
+      "ye_buechse_fleisch_export",
+      "ye_buechse_gelb_export",
+      "ye_buechse_rosa_export",
+      "ye_buechse_weiss_export",
+      "ye_export01",
+      "ye_export02",
+      "ye_export03",
+      "ye_export04",
+      "ye_export05",
+      "ye_export06",
+      "ye_export_fish1",
+      "ye_export_fish2",
+      "ye_trademeat1",
+      "yi_artillery_shell",
+      "yi_beacon",
+      "yi_cannon_shell",
+      "yi_construction-robot",
+      "yi_logistic-robot",
+      "yi_mine_impact",
+      "yi_mine_plasma",
+      "yi_roboport",
+      "ypfw_trader_sign"
+    ],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-rfab2b-recipe",
+    "source": "prototypes/ir_fab2.lua",
+    "line": 48,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-sm-1",
+        "amount": 3.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-unicomp-a2",
+        "amount": 41.0
+      },
+      {
+        "type": "item",
+        "name": "ypfw_trader_sign",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "scenario_references": {
+      "y-sm-1": "yi_lasergun"
+    },
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [
+      "j-cw2uc-recipe",
+      "j_yi_roboport1",
+      "y-ac-crystal2uc",
+      "y-ac-mud2uc",
+      "y-ac-slag2uc",
+      "y-ac-toxic2uc",
+      "y-ammo-biggun",
+      "y-ammo-explosiv",
+      "y-ammo-krakon",
+      "y-ammo-poison",
+      "y-heavyoil2uc",
+      "y-lightoil2uc",
+      "y-liquid2uc",
+      "y-lubricant2uc",
+      "y-petroleum",
+      "y-press-richdust",
+      "y_ammo_flame",
+      "ye_buechse_blau_export",
+      "ye_buechse_fleisch_export",
+      "ye_buechse_gelb_export",
+      "ye_buechse_rosa_export",
+      "ye_buechse_weiss_export",
+      "ye_export01",
+      "ye_export02",
+      "ye_export03",
+      "ye_export04",
+      "ye_export05",
+      "ye_export06",
+      "ye_export_fish1",
+      "ye_export_fish2",
+      "ye_trademeat1",
+      "yi_artillery_shell",
+      "yi_beacon",
+      "yi_cannon_shell",
+      "yi_construction-robot",
+      "yi_logistic-robot",
+      "yi_mine_impact",
+      "yi_mine_plasma",
+      "yi_roboport",
+      "ypfw_trader_sign"
+    ],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-rfab2c-recipe",
+    "source": "prototypes/ir_fab2.lua",
+    "line": 49,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-sm-2",
+        "amount": 6.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-unicomp-a2",
+        "amount": 50.0
+      },
+      {
+        "type": "item",
+        "name": "ypfw_trader_sign",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "scenario_references": {
+      "y-sm-2": "yi_lasergun"
+    },
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [
+      "j-cw2uc-recipe",
+      "j_yi_roboport1",
+      "y-ac-crystal2uc",
+      "y-ac-mud2uc",
+      "y-ac-slag2uc",
+      "y-ac-toxic2uc",
+      "y-ammo-biggun",
+      "y-ammo-explosiv",
+      "y-ammo-krakon",
+      "y-ammo-poison",
+      "y-heavyoil2uc",
+      "y-lightoil2uc",
+      "y-liquid2uc",
+      "y-lubricant2uc",
+      "y-petroleum",
+      "y-press-richdust",
+      "y_ammo_flame",
+      "ye_buechse_blau_export",
+      "ye_buechse_fleisch_export",
+      "ye_buechse_gelb_export",
+      "ye_buechse_rosa_export",
+      "ye_buechse_weiss_export",
+      "ye_export01",
+      "ye_export02",
+      "ye_export03",
+      "ye_export04",
+      "ye_export05",
+      "ye_export06",
+      "ye_export_fish1",
+      "ye_export_fish2",
+      "ye_trademeat1",
+      "yi_artillery_shell",
+      "yi_beacon",
+      "yi_cannon_shell",
+      "yi_construction-robot",
+      "yi_logistic-robot",
+      "yi_mine_impact",
+      "yi_mine_plasma",
+      "yi_roboport",
+      "ypfw_trader_sign"
+    ],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-rfab2d-recipe",
+    "source": "prototypes/ir_fab2.lua",
+    "line": 50,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-sm-3",
+        "amount": 7.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-unicomp-a2",
+        "amount": 3.0
+      },
+      {
+        "type": "item",
+        "name": "ypfw_trader_sign",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [
+      "j-cw2uc-recipe",
+      "j_yi_roboport1",
+      "y-ac-crystal2uc",
+      "y-ac-mud2uc",
+      "y-ac-slag2uc",
+      "y-ac-toxic2uc",
+      "y-ammo-biggun",
+      "y-ammo-explosiv",
+      "y-ammo-krakon",
+      "y-ammo-poison",
+      "y-heavyoil2uc",
+      "y-lightoil2uc",
+      "y-liquid2uc",
+      "y-lubricant2uc",
+      "y-petroleum",
+      "y-press-richdust",
+      "y_ammo_flame",
+      "ye_buechse_blau_export",
+      "ye_buechse_fleisch_export",
+      "ye_buechse_gelb_export",
+      "ye_buechse_rosa_export",
+      "ye_buechse_weiss_export",
+      "ye_export01",
+      "ye_export02",
+      "ye_export03",
+      "ye_export04",
+      "ye_export05",
+      "ye_export06",
+      "ye_export_fish1",
+      "ye_export_fish2",
+      "ye_trademeat1",
+      "yi_artillery_shell",
+      "yi_beacon",
+      "yi_cannon_shell",
+      "yi_construction-robot",
+      "yi_logistic-robot",
+      "yi_mine_impact",
+      "yi_mine_plasma",
+      "yi_roboport",
+      "ypfw_trader_sign"
+    ],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-rfab2e-recipe",
+    "source": "prototypes/ir_fab2.lua",
+    "line": 51,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-sm-4",
+        "amount": 5.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-unicomp-a2",
+        "amount": 24.0
+      },
+      {
+        "type": "item",
+        "name": "ypfw_trader_sign",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [
+      "j-cw2uc-recipe",
+      "j_yi_roboport1",
+      "y-ac-crystal2uc",
+      "y-ac-mud2uc",
+      "y-ac-slag2uc",
+      "y-ac-toxic2uc",
+      "y-ammo-biggun",
+      "y-ammo-explosiv",
+      "y-ammo-krakon",
+      "y-ammo-poison",
+      "y-heavyoil2uc",
+      "y-lightoil2uc",
+      "y-liquid2uc",
+      "y-lubricant2uc",
+      "y-petroleum",
+      "y-press-richdust",
+      "y_ammo_flame",
+      "ye_buechse_blau_export",
+      "ye_buechse_fleisch_export",
+      "ye_buechse_gelb_export",
+      "ye_buechse_rosa_export",
+      "ye_buechse_weiss_export",
+      "ye_export01",
+      "ye_export02",
+      "ye_export03",
+      "ye_export04",
+      "ye_export05",
+      "ye_export06",
+      "ye_export_fish1",
+      "ye_export_fish2",
+      "ye_trademeat1",
+      "yi_artillery_shell",
+      "yi_beacon",
+      "yi_cannon_shell",
+      "yi_construction-robot",
+      "yi_logistic-robot",
+      "yi_mine_impact",
+      "yi_mine_plasma",
+      "yi_roboport",
+      "ypfw_trader_sign"
+    ],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-rfab2f-recipe",
+    "source": "prototypes/ir_fab2.lua",
+    "line": 52,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-sm-5",
+        "amount": 4.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-unicomp-a2",
+        "amount": 14.0
+      },
+      {
+        "type": "item",
+        "name": "ypfw_trader_sign",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "scenario_references": {
+      "y-sm-5": "yi_minigun"
+    },
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [
+      "j-cw2uc-recipe",
+      "j_yi_roboport1",
+      "y-ac-crystal2uc",
+      "y-ac-mud2uc",
+      "y-ac-slag2uc",
+      "y-ac-toxic2uc",
+      "y-ammo-biggun",
+      "y-ammo-explosiv",
+      "y-ammo-krakon",
+      "y-ammo-poison",
+      "y-heavyoil2uc",
+      "y-lightoil2uc",
+      "y-liquid2uc",
+      "y-lubricant2uc",
+      "y-petroleum",
+      "y-press-richdust",
+      "y_ammo_flame",
+      "ye_buechse_blau_export",
+      "ye_buechse_fleisch_export",
+      "ye_buechse_gelb_export",
+      "ye_buechse_rosa_export",
+      "ye_buechse_weiss_export",
+      "ye_export01",
+      "ye_export02",
+      "ye_export03",
+      "ye_export04",
+      "ye_export05",
+      "ye_export06",
+      "ye_export_fish1",
+      "ye_export_fish2",
+      "ye_trademeat1",
+      "yi_artillery_shell",
+      "yi_beacon",
+      "yi_cannon_shell",
+      "yi_construction-robot",
+      "yi_logistic-robot",
+      "yi_mine_impact",
+      "yi_mine_plasma",
+      "yi_roboport",
+      "ypfw_trader_sign"
+    ],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-rfab2g-recipe",
+    "source": "prototypes/ir_fab2.lua",
+    "line": 53,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-sm-6",
+        "amount": 2.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-unicomp-a2",
+        "amount": 50.0
+      },
+      {
+        "type": "item",
+        "name": "ypfw_trader_sign",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [
+      "j-cw2uc-recipe",
+      "j_yi_roboport1",
+      "y-ac-crystal2uc",
+      "y-ac-mud2uc",
+      "y-ac-slag2uc",
+      "y-ac-toxic2uc",
+      "y-ammo-biggun",
+      "y-ammo-explosiv",
+      "y-ammo-krakon",
+      "y-ammo-poison",
+      "y-heavyoil2uc",
+      "y-lightoil2uc",
+      "y-liquid2uc",
+      "y-lubricant2uc",
+      "y-petroleum",
+      "y-press-richdust",
+      "y_ammo_flame",
+      "ye_buechse_blau_export",
+      "ye_buechse_fleisch_export",
+      "ye_buechse_gelb_export",
+      "ye_buechse_rosa_export",
+      "ye_buechse_weiss_export",
+      "ye_export01",
+      "ye_export02",
+      "ye_export03",
+      "ye_export04",
+      "ye_export05",
+      "ye_export06",
+      "ye_export_fish1",
+      "ye_export_fish2",
+      "ye_trademeat1",
+      "yi_artillery_shell",
+      "yi_beacon",
+      "yi_cannon_shell",
+      "yi_construction-robot",
+      "yi_logistic-robot",
+      "yi_mine_impact",
+      "yi_mine_plasma",
+      "yi_roboport",
+      "ypfw_trader_sign"
+    ],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-rfab2h-recipe",
+    "source": "prototypes/ir_fab2.lua",
+    "line": 54,
+    "state": "commented",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-sm-7",
+        "amount": 1.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-unicomp-a2",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "y-richdust",
+        "amount": 1.0
+      }
+    ],
+    "category": "crafting",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [
+      "j-cw2uc-recipe",
+      "y-ac-crystal2uc",
+      "y-ac-mud2uc",
+      "y-ac-slag2uc",
+      "y-ac-toxic2uc",
+      "y-heavyoil2uc",
+      "y-lightoil2uc",
+      "y-liquid2uc",
+      "y-lubricant2uc",
+      "y-mixing-rich",
+      "y-petroleum",
+      "y-press-richdust",
+      "ye_trademeat1"
+    ],
+    "assessment": "preserve_commented_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-rfab2i-recipe",
+    "source": "prototypes/ir_fab2.lua",
+    "line": 55,
+    "state": "commented",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-sm-8",
+        "amount": 1.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-unicomp-a2",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "y-richdust",
+        "amount": 1.0
+      }
+    ],
+    "category": "crafting",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [
+      "j-cw2uc-recipe",
+      "y-ac-crystal2uc",
+      "y-ac-mud2uc",
+      "y-ac-slag2uc",
+      "y-ac-toxic2uc",
+      "y-heavyoil2uc",
+      "y-lightoil2uc",
+      "y-liquid2uc",
+      "y-lubricant2uc",
+      "y-mixing-rich",
+      "y-petroleum",
+      "y-press-richdust",
+      "ye_trademeat1"
+    ],
+    "assessment": "preserve_commented_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-rfab2k-recipe",
+    "source": "prototypes/ir_fab2.lua",
+    "line": 56,
+    "state": "commented",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-sm-9",
+        "amount": 1.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-unicomp-a2",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "y-richdust",
+        "amount": 1.0
+      }
+    ],
+    "category": "crafting",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [
+      "j-cw2uc-recipe",
+      "y-ac-crystal2uc",
+      "y-ac-mud2uc",
+      "y-ac-slag2uc",
+      "y-ac-toxic2uc",
+      "y-heavyoil2uc",
+      "y-lightoil2uc",
+      "y-liquid2uc",
+      "y-lubricant2uc",
+      "y-mixing-rich",
+      "y-petroleum",
+      "y-press-richdust",
+      "ye_trademeat1"
+    ],
+    "assessment": "preserve_commented_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-fab3a-recipe",
+    "source": "prototypes/ir_fab3.lua",
+    "line": 13,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-biomass",
+        "amount": 3.0
+      },
+      {
+        "type": "item",
+        "name": "y-combat-train",
+        "amount": 1.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-cyb-0",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-cyborgs",
+    "seconds": 3.0,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-fab3b-recipe",
+    "source": "prototypes/ir_fab3.lua",
+    "line": 14,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-cyb-0",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "submachine-gun",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "y-combat-armor-1",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "y-combat-train",
+        "amount": 1.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-cyb-1",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-cyborgs",
+    "seconds": 3.0,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-fab3c-recipe",
+    "source": "prototypes/ir_fab3.lua",
+    "line": 15,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-cyb-0",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "y-sm-0",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "y-combat-armor-2",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "y-combat-train",
+        "amount": 2.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-cyb-2",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-cyborgs",
+    "seconds": 3.0,
+    "scenario_references": {
+      "y-combat-armor-2": "yi_equip_shield_a"
+    },
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-fab3d-recipe",
+    "source": "prototypes/ir_fab3.lua",
+    "line": 16,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-biomass",
+        "amount": 4.0
+      },
+      {
+        "type": "item",
+        "name": "y-sm-1",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "y-combat-armor-1",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "y-combat-train",
+        "amount": 2.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-cyb-3",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-cyborgs",
+    "seconds": 4.0,
+    "scenario_references": {
+      "y-sm-1": "yi_lasergun"
+    },
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-fab3e-recipe",
+    "source": "prototypes/ir_fab3.lua",
+    "line": 17,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-cyb-0",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "flame-thrower",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "y-combat-armor-1",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "y-biomass",
+        "amount": 1.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-cyb-4",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-cyborgs",
+    "seconds": 4.0,
+    "scenario_references": {
+      "flame-thrower": "flamethrower"
+    },
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-fab3f-recipe",
+    "source": "prototypes/ir_fab3.lua",
+    "line": 18,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-biomass",
+        "amount": 5.0
+      },
+      {
+        "type": "item",
+        "name": "y-sm-5",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "y-combat-armor-2",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "y-combat-train",
+        "amount": 4.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-cyb-5",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-cyborgs",
+    "seconds": 4.0,
+    "scenario_references": {
+      "y-sm-5": "yi_minigun",
+      "y-combat-armor-2": "yi_equip_shield_a"
+    },
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-fab3g-recipe",
+    "source": "prototypes/ir_fab3.lua",
+    "line": 19,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-biomass",
+        "amount": 4.0
+      },
+      {
+        "type": "item",
+        "name": "y-sm-4",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "y-combat-armor-1",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "y-combat-train",
+        "amount": 6.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-cyb-6",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-cyborgs",
+    "seconds": 4.0,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-fab3h-recipe",
+    "source": "prototypes/ir_fab3.lua",
+    "line": 20,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-biomass",
+        "amount": 5.0
+      },
+      {
+        "type": "item",
+        "name": "y-medic",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "y-combat-train",
+        "amount": 5.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-cyb-7",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-cyborgs",
+    "seconds": 4.0,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-fab3i-recipe",
+    "source": "prototypes/ir_fab3.lua",
+    "line": 21,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-basic-t1-mf",
+        "amount": 2.0
+      },
+      {
+        "type": "item",
+        "name": "y-sm-1",
+        "amount": 2.0
+      },
+      {
+        "type": "item",
+        "name": "y-combat-armor-3",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "y-chip-2",
+        "amount": 1.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-cyb-8",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-cyborgs",
+    "seconds": 5.0,
+    "scenario_references": {
+      "y-sm-1": "yi_lasergun",
+      "y-combat-armor-3": "yi_equip_shield_a"
+    },
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-fab3k-recipe",
+    "source": "prototypes/ir_fab3.lua",
+    "line": 22,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-basic-t2-mf",
+        "amount": 2.0
+      },
+      {
+        "type": "item",
+        "name": "y-sm-2",
+        "amount": 3.0
+      },
+      {
+        "type": "item",
+        "name": "y-combat-armor-3",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "y-chip-2",
+        "amount": 1.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-cyb-9",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-cyborgs",
+    "seconds": 5.0,
+    "scenario_references": {
+      "y-sm-2": "yi_lasergun",
+      "y-combat-armor-3": "yi_equip_shield_a"
+    },
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-rfab3a-recipe",
+    "source": "prototypes/ir_fab3.lua",
+    "line": 36,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-cyb-0",
+        "amount": 9.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-unicomp-a2",
+        "amount": 2.0
+      },
+      {
+        "type": "item",
+        "name": "ypfw_trader_sign",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [
+      "j-cw2uc-recipe",
+      "j_yi_roboport1",
+      "y-ac-crystal2uc",
+      "y-ac-mud2uc",
+      "y-ac-slag2uc",
+      "y-ac-toxic2uc",
+      "y-ammo-biggun",
+      "y-ammo-explosiv",
+      "y-ammo-krakon",
+      "y-ammo-poison",
+      "y-heavyoil2uc",
+      "y-lightoil2uc",
+      "y-liquid2uc",
+      "y-lubricant2uc",
+      "y-petroleum",
+      "y-press-richdust",
+      "y_ammo_flame",
+      "ye_buechse_blau_export",
+      "ye_buechse_fleisch_export",
+      "ye_buechse_gelb_export",
+      "ye_buechse_rosa_export",
+      "ye_buechse_weiss_export",
+      "ye_export01",
+      "ye_export02",
+      "ye_export03",
+      "ye_export04",
+      "ye_export05",
+      "ye_export06",
+      "ye_export_fish1",
+      "ye_export_fish2",
+      "ye_trademeat1",
+      "yi_artillery_shell",
+      "yi_beacon",
+      "yi_cannon_shell",
+      "yi_construction-robot",
+      "yi_logistic-robot",
+      "yi_mine_impact",
+      "yi_mine_plasma",
+      "yi_roboport",
+      "ypfw_trader_sign"
+    ],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-rfab3b-recipe",
+    "source": "prototypes/ir_fab3.lua",
+    "line": 37,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-cyb-1",
+        "amount": 5.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-unicomp-a2",
+        "amount": 6.0
+      },
+      {
+        "type": "item",
+        "name": "y-stuff-2",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "ypfw_trader_sign",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [
+      "j-cw2uc-recipe",
+      "j_yi_roboport1",
+      "y-ac-crystal2uc",
+      "y-ac-mud2uc",
+      "y-ac-slag2uc",
+      "y-ac-toxic2uc",
+      "y-ammo-biggun",
+      "y-ammo-explosiv",
+      "y-ammo-krakon",
+      "y-ammo-poison",
+      "y-heavyoil2uc",
+      "y-lightoil2uc",
+      "y-liquid2uc",
+      "y-lubricant2uc",
+      "y-petroleum",
+      "y-press-richdust",
+      "y_ammo_flame",
+      "ye_buechse_blau_export",
+      "ye_buechse_fleisch_export",
+      "ye_buechse_gelb_export",
+      "ye_buechse_rosa_export",
+      "ye_buechse_weiss_export",
+      "ye_export01",
+      "ye_export02",
+      "ye_export03",
+      "ye_export04",
+      "ye_export05",
+      "ye_export06",
+      "ye_export_fish1",
+      "ye_export_fish2",
+      "ye_trademeat1",
+      "yi_artillery_shell",
+      "yi_beacon",
+      "yi_cannon_shell",
+      "yi_construction-robot",
+      "yi_logistic-robot",
+      "yi_mine_impact",
+      "yi_mine_plasma",
+      "yi_roboport",
+      "ypfw_trader_sign"
+    ],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-rfab3c-recipe",
+    "source": "prototypes/ir_fab3.lua",
+    "line": 38,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-cyb-2",
+        "amount": 6.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-unicomp-a2",
+        "amount": 2.0
+      },
+      {
+        "type": "item",
+        "name": "y-stuff-1",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "ypfw_trader_sign",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [
+      "j-cw2uc-recipe",
+      "j_yi_roboport1",
+      "y-ac-crystal2uc",
+      "y-ac-mud2uc",
+      "y-ac-slag2uc",
+      "y-ac-toxic2uc",
+      "y-ammo-biggun",
+      "y-ammo-explosiv",
+      "y-ammo-krakon",
+      "y-ammo-poison",
+      "y-heavyoil2uc",
+      "y-lightoil2uc",
+      "y-liquid2uc",
+      "y-lubricant2uc",
+      "y-petroleum",
+      "y-press-richdust",
+      "y_ammo_flame",
+      "ye_buechse_blau_export",
+      "ye_buechse_fleisch_export",
+      "ye_buechse_gelb_export",
+      "ye_buechse_rosa_export",
+      "ye_buechse_weiss_export",
+      "ye_export01",
+      "ye_export02",
+      "ye_export03",
+      "ye_export04",
+      "ye_export05",
+      "ye_export06",
+      "ye_export_fish1",
+      "ye_export_fish2",
+      "ye_trademeat1",
+      "yi_artillery_shell",
+      "yi_beacon",
+      "yi_cannon_shell",
+      "yi_construction-robot",
+      "yi_logistic-robot",
+      "yi_mine_impact",
+      "yi_mine_plasma",
+      "yi_roboport",
+      "ypfw_trader_sign"
+    ],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-rfab3d-recipe",
+    "source": "prototypes/ir_fab3.lua",
+    "line": 39,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-cyb-3",
+        "amount": 5.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-unicomp-a2",
+        "amount": 50.0
+      },
+      {
+        "type": "item",
+        "name": "y-grycoil",
+        "amount": 25.0
+      },
+      {
+        "type": "item",
+        "name": "ypfw_trader_sign",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [
+      "j-cw2uc-recipe",
+      "j_yi_roboport1",
+      "y-ac-crystal2uc",
+      "y-ac-mud2uc",
+      "y-ac-slag2uc",
+      "y-ac-toxic2uc",
+      "y-ammo-biggun",
+      "y-ammo-explosiv",
+      "y-ammo-krakon",
+      "y-ammo-poison",
+      "y-heavyoil2uc",
+      "y-lightoil2uc",
+      "y-liquid2uc",
+      "y-lubricant2uc",
+      "y-petroleum",
+      "y-press-richdust",
+      "y_ammo_flame",
+      "ye_buechse_blau_export",
+      "ye_buechse_fleisch_export",
+      "ye_buechse_gelb_export",
+      "ye_buechse_rosa_export",
+      "ye_buechse_weiss_export",
+      "ye_export01",
+      "ye_export02",
+      "ye_export03",
+      "ye_export04",
+      "ye_export05",
+      "ye_export06",
+      "ye_export_fish1",
+      "ye_export_fish2",
+      "ye_trademeat1",
+      "yi_artillery_shell",
+      "yi_beacon",
+      "yi_cannon_shell",
+      "yi_construction-robot",
+      "yi_logistic-robot",
+      "yi_mine_impact",
+      "yi_mine_plasma",
+      "yi_roboport",
+      "ypfw_trader_sign"
+    ],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-rfab3e-recipe",
+    "source": "prototypes/ir_fab3.lua",
+    "line": 40,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-cyb-4",
+        "amount": 7.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-unicomp-a2",
+        "amount": 3.0
+      },
+      {
+        "type": "item",
+        "name": "y-stuff-5",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "ypfw_trader_sign",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [
+      "j-cw2uc-recipe",
+      "j_yi_roboport1",
+      "y-ac-crystal2uc",
+      "y-ac-mud2uc",
+      "y-ac-slag2uc",
+      "y-ac-toxic2uc",
+      "y-ammo-biggun",
+      "y-ammo-explosiv",
+      "y-ammo-krakon",
+      "y-ammo-poison",
+      "y-heavyoil2uc",
+      "y-lightoil2uc",
+      "y-liquid2uc",
+      "y-lubricant2uc",
+      "y-petroleum",
+      "y-press-richdust",
+      "y_ammo_flame",
+      "ye_buechse_blau_export",
+      "ye_buechse_fleisch_export",
+      "ye_buechse_gelb_export",
+      "ye_buechse_rosa_export",
+      "ye_buechse_weiss_export",
+      "ye_export01",
+      "ye_export02",
+      "ye_export03",
+      "ye_export04",
+      "ye_export05",
+      "ye_export06",
+      "ye_export_fish1",
+      "ye_export_fish2",
+      "ye_trademeat1",
+      "yi_artillery_shell",
+      "yi_beacon",
+      "yi_cannon_shell",
+      "yi_construction-robot",
+      "yi_logistic-robot",
+      "yi_mine_impact",
+      "yi_mine_plasma",
+      "yi_roboport",
+      "ypfw_trader_sign"
+    ],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-rfab3f-recipe",
+    "source": "prototypes/ir_fab3.lua",
+    "line": 41,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-cyb-5",
+        "amount": 3.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-unicomp-a2",
+        "amount": 5.0
+      },
+      {
+        "type": "item",
+        "name": "y-stuff-1",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "ypfw_trader_sign",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [
+      "j-cw2uc-recipe",
+      "j_yi_roboport1",
+      "y-ac-crystal2uc",
+      "y-ac-mud2uc",
+      "y-ac-slag2uc",
+      "y-ac-toxic2uc",
+      "y-ammo-biggun",
+      "y-ammo-explosiv",
+      "y-ammo-krakon",
+      "y-ammo-poison",
+      "y-heavyoil2uc",
+      "y-lightoil2uc",
+      "y-liquid2uc",
+      "y-lubricant2uc",
+      "y-petroleum",
+      "y-press-richdust",
+      "y_ammo_flame",
+      "ye_buechse_blau_export",
+      "ye_buechse_fleisch_export",
+      "ye_buechse_gelb_export",
+      "ye_buechse_rosa_export",
+      "ye_buechse_weiss_export",
+      "ye_export01",
+      "ye_export02",
+      "ye_export03",
+      "ye_export04",
+      "ye_export05",
+      "ye_export06",
+      "ye_export_fish1",
+      "ye_export_fish2",
+      "ye_trademeat1",
+      "yi_artillery_shell",
+      "yi_beacon",
+      "yi_cannon_shell",
+      "yi_construction-robot",
+      "yi_logistic-robot",
+      "yi_mine_impact",
+      "yi_mine_plasma",
+      "yi_roboport",
+      "ypfw_trader_sign"
+    ],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-rfab3g-recipe",
+    "source": "prototypes/ir_fab3.lua",
+    "line": 42,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-cyb-6",
+        "amount": 3.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-unicomp-a2",
+        "amount": 3.0
+      },
+      {
+        "type": "item",
+        "name": "y-redcoil",
+        "amount": 5.0
+      },
+      {
+        "type": "item",
+        "name": "ypfw_trader_sign",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [
+      "j-cw2uc-recipe",
+      "j_yi_roboport1",
+      "y-ac-crystal2uc",
+      "y-ac-mud2uc",
+      "y-ac-slag2uc",
+      "y-ac-toxic2uc",
+      "y-ammo-biggun",
+      "y-ammo-explosiv",
+      "y-ammo-krakon",
+      "y-ammo-poison",
+      "y-heavyoil2uc",
+      "y-lightoil2uc",
+      "y-liquid2uc",
+      "y-lubricant2uc",
+      "y-petroleum",
+      "y-press-richdust",
+      "y_ammo_flame",
+      "ye_buechse_blau_export",
+      "ye_buechse_fleisch_export",
+      "ye_buechse_gelb_export",
+      "ye_buechse_rosa_export",
+      "ye_buechse_weiss_export",
+      "ye_export01",
+      "ye_export02",
+      "ye_export03",
+      "ye_export04",
+      "ye_export05",
+      "ye_export06",
+      "ye_export_fish1",
+      "ye_export_fish2",
+      "ye_trademeat1",
+      "yi_artillery_shell",
+      "yi_beacon",
+      "yi_cannon_shell",
+      "yi_construction-robot",
+      "yi_logistic-robot",
+      "yi_mine_impact",
+      "yi_mine_plasma",
+      "yi_roboport",
+      "ypfw_trader_sign"
+    ],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-rfab3h-recipe",
+    "source": "prototypes/ir_fab3.lua",
+    "line": 43,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-cyb-7",
+        "amount": 9.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-unicomp-a2",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "y-stuff-2",
+        "amount": 2.0
+      },
+      {
+        "type": "item",
+        "name": "ypfw_trader_sign",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [
+      "j-cw2uc-recipe",
+      "j_yi_roboport1",
+      "y-ac-crystal2uc",
+      "y-ac-mud2uc",
+      "y-ac-slag2uc",
+      "y-ac-toxic2uc",
+      "y-ammo-biggun",
+      "y-ammo-explosiv",
+      "y-ammo-krakon",
+      "y-ammo-poison",
+      "y-heavyoil2uc",
+      "y-lightoil2uc",
+      "y-liquid2uc",
+      "y-lubricant2uc",
+      "y-petroleum",
+      "y-press-richdust",
+      "y_ammo_flame",
+      "ye_buechse_blau_export",
+      "ye_buechse_fleisch_export",
+      "ye_buechse_gelb_export",
+      "ye_buechse_rosa_export",
+      "ye_buechse_weiss_export",
+      "ye_export01",
+      "ye_export02",
+      "ye_export03",
+      "ye_export04",
+      "ye_export05",
+      "ye_export06",
+      "ye_export_fish1",
+      "ye_export_fish2",
+      "ye_trademeat1",
+      "yi_artillery_shell",
+      "yi_beacon",
+      "yi_cannon_shell",
+      "yi_construction-robot",
+      "yi_logistic-robot",
+      "yi_mine_impact",
+      "yi_mine_plasma",
+      "yi_roboport",
+      "ypfw_trader_sign"
+    ],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-rfab3i-recipe",
+    "source": "prototypes/ir_fab3.lua",
+    "line": 44,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-cyb-8",
+        "amount": 2.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-stuff-4",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "y-stuff-3",
+        "amount": 3.0
+      },
+      {
+        "type": "item",
+        "name": "y-unicomp-a2",
+        "amount": 10.0
+      },
+      {
+        "type": "item",
+        "name": "ypfw_trader_sign",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [
+      "j-cw2uc-recipe",
+      "j_yi_roboport1",
+      "y-ac-crystal2uc",
+      "y-ac-mud2uc",
+      "y-ac-slag2uc",
+      "y-ac-toxic2uc",
+      "y-ammo-biggun",
+      "y-ammo-explosiv",
+      "y-ammo-krakon",
+      "y-ammo-poison",
+      "y-heavyoil2uc",
+      "y-lightoil2uc",
+      "y-liquid2uc",
+      "y-lubricant2uc",
+      "y-petroleum",
+      "y-press-richdust",
+      "y_ammo_flame",
+      "ye_buechse_blau_export",
+      "ye_buechse_fleisch_export",
+      "ye_buechse_gelb_export",
+      "ye_buechse_rosa_export",
+      "ye_buechse_weiss_export",
+      "ye_export01",
+      "ye_export02",
+      "ye_export03",
+      "ye_export04",
+      "ye_export05",
+      "ye_export06",
+      "ye_export_fish1",
+      "ye_export_fish2",
+      "ye_trademeat1",
+      "yi_artillery_shell",
+      "yi_beacon",
+      "yi_cannon_shell",
+      "yi_construction-robot",
+      "yi_logistic-robot",
+      "yi_mine_impact",
+      "yi_mine_plasma",
+      "yi_roboport",
+      "ypfw_trader_sign"
+    ],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-rfab3k-recipe",
+    "source": "prototypes/ir_fab3.lua",
+    "line": 45,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-cyb-9",
+        "amount": 2.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-stuff-6",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "y-stuff-5",
+        "amount": 4.0
+      },
+      {
+        "type": "item",
+        "name": "ypfw_trader_sign",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [
+      "j_yi_roboport1",
+      "y-ammo-biggun",
+      "y-ammo-explosiv",
+      "y-ammo-krakon",
+      "y-ammo-poison",
+      "y_ammo_flame",
+      "ye_buechse_blau_export",
+      "ye_buechse_fleisch_export",
+      "ye_buechse_gelb_export",
+      "ye_buechse_rosa_export",
+      "ye_buechse_weiss_export",
+      "ye_export01",
+      "ye_export02",
+      "ye_export03",
+      "ye_export04",
+      "ye_export05",
+      "ye_export06",
+      "ye_export_fish1",
+      "ye_export_fish2",
+      "yi_artillery_shell",
+      "yi_beacon",
+      "yi_cannon_shell",
+      "yi_construction-robot",
+      "yi_logistic-robot",
+      "yi_mine_impact",
+      "yi_mine_plasma",
+      "yi_roboport",
+      "ypfw_trader_sign"
+    ],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-fab5a-recipe",
+    "source": "prototypes/ir_fab5.lua",
+    "line": 13,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-veh-9",
+        "amount": 4.0
+      },
+      {
+        "type": "item",
+        "name": "steel-plate",
+        "amount": 8.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-veh-0",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-fahrzeuge",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-fab5b-recipe",
+    "source": "prototypes/ir_fab5.lua",
+    "line": 14,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-veh-9",
+        "amount": 10.0
+      },
+      {
+        "type": "item",
+        "name": "steel-plate",
+        "amount": 14.0
+      },
+      {
+        "type": "item",
+        "name": "y-ffe",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "y_blocked_capa",
+        "amount": 2.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-veh-1",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-fahrzeuge",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-fab5c-recipe",
+    "source": "prototypes/ir_fab5.lua",
+    "line": 15,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-basic-t2-mf",
+        "amount": 2.0
+      },
+      {
+        "type": "item",
+        "name": "y-basic-t1-mf",
+        "amount": 4.0
+      },
+      {
+        "type": "item",
+        "name": "y-seg",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "y-accumulator-b",
+        "amount": 4.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-veh-2",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-fahrzeuge",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-fab5d-recipe",
+    "source": "prototypes/ir_fab5.lua",
+    "line": 16,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-veh-0",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "wood",
+        "amount": 14.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-veh-3",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-fahrzeuge",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-fab5e-recipe",
+    "source": "prototypes/ir_fab5.lua",
+    "line": 17,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-veh-0",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "storage-tank",
+        "amount": 1.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-veh-4",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-fahrzeuge",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-fab5f-recipe",
+    "source": "prototypes/ir_fab5.lua",
+    "line": 18,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-veh-1",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "storage-tank",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "wood",
+        "amount": 8.0
+      },
+      {
+        "type": "item",
+        "name": "y-basic-t1-mf",
+        "amount": 2.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-veh-5",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-fahrzeuge",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-fab5g-recipe",
+    "source": "prototypes/ir_fab5.lua",
+    "line": 19,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-veh-1",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "steel-chest",
+        "amount": 3.0
+      },
+      {
+        "type": "item",
+        "name": "y-basic-t1-mf",
+        "amount": 4.0
+      },
+      {
+        "type": "item",
+        "name": "y-basic-t2-mf",
+        "amount": 1.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-veh-6",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-fahrzeuge",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-fab5h-recipe",
+    "source": "prototypes/ir_fab5.lua",
+    "line": 20,
+    "state": "commented",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-biomass",
+        "amount": 5.0
+      },
+      {
+        "type": "item",
+        "name": "y-medic",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "y-combat-train",
+        "amount": 5.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-veh-7",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-fahrzeuge",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [],
+    "assessment": "preserve_commented_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-fab5i-recipe",
+    "source": "prototypes/ir_fab5.lua",
+    "line": 21,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-veh-2",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "y-basic-t2-mf",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "y-tank-8000",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "y-chip-2",
+        "amount": 4.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-veh-8",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-fahrzeuge",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-fab5k-recipe",
+    "source": "prototypes/ir_fab5.lua",
+    "line": 22,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-grycoil",
+        "amount": 3.0
+      },
+      {
+        "type": "item",
+        "name": "iron-plate",
+        "amount": 4.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-veh-9",
+        "amount": 10.0
+      }
+    ],
+    "category": "yrcat-fahrzeuge",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-rfab5a-recipe",
+    "source": "prototypes/ir_fab5.lua",
+    "line": 36,
+    "state": "commented",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-veh-0",
+        "amount": 9.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-unicomp-a2",
+        "amount": 2.0
+      }
+    ],
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [
+      "j-cw2uc-recipe",
+      "y-ac-crystal2uc",
+      "y-ac-mud2uc",
+      "y-ac-slag2uc",
+      "y-ac-toxic2uc",
+      "y-heavyoil2uc",
+      "y-lightoil2uc",
+      "y-liquid2uc",
+      "y-lubricant2uc",
+      "y-petroleum",
+      "y-press-richdust",
+      "ye_trademeat1"
+    ],
+    "assessment": "preserve_commented_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-rfab5b-recipe",
+    "source": "prototypes/ir_fab5.lua",
+    "line": 37,
+    "state": "commented",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-veh-1",
+        "amount": 5.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-unicomp-a2",
+        "amount": 6.0
+      },
+      {
+        "type": "item",
+        "name": "y-stuff-2",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [
+      "j-cw2uc-recipe",
+      "y-ac-crystal2uc",
+      "y-ac-mud2uc",
+      "y-ac-slag2uc",
+      "y-ac-toxic2uc",
+      "y-heavyoil2uc",
+      "y-lightoil2uc",
+      "y-liquid2uc",
+      "y-lubricant2uc",
+      "y-petroleum",
+      "y-press-richdust",
+      "ye_trademeat1"
+    ],
+    "assessment": "preserve_commented_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-rfab5c-recipe",
+    "source": "prototypes/ir_fab5.lua",
+    "line": 38,
+    "state": "commented",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-veh-2",
+        "amount": 6.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-unicomp-a2",
+        "amount": 2.0
+      },
+      {
+        "type": "item",
+        "name": "y-stuff-1",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [
+      "j-cw2uc-recipe",
+      "y-ac-crystal2uc",
+      "y-ac-mud2uc",
+      "y-ac-slag2uc",
+      "y-ac-toxic2uc",
+      "y-heavyoil2uc",
+      "y-lightoil2uc",
+      "y-liquid2uc",
+      "y-lubricant2uc",
+      "y-petroleum",
+      "y-press-richdust",
+      "ye_trademeat1"
+    ],
+    "assessment": "preserve_commented_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-rfab5d-recipe",
+    "source": "prototypes/ir_fab5.lua",
+    "line": 39,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-veh-3",
+        "amount": 3.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-unicomp-a2",
+        "amount": 11.0
+      },
+      {
+        "type": "item",
+        "name": "y-richdust",
+        "amount": 20.0
+      },
+      {
+        "type": "item",
+        "name": "ypfw_trader_sign",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [
+      "j-cw2uc-recipe",
+      "j_yi_roboport1",
+      "y-ac-crystal2uc",
+      "y-ac-mud2uc",
+      "y-ac-slag2uc",
+      "y-ac-toxic2uc",
+      "y-ammo-biggun",
+      "y-ammo-explosiv",
+      "y-ammo-krakon",
+      "y-ammo-poison",
+      "y-heavyoil2uc",
+      "y-lightoil2uc",
+      "y-liquid2uc",
+      "y-lubricant2uc",
+      "y-mixing-rich",
+      "y-petroleum",
+      "y-press-richdust",
+      "y_ammo_flame",
+      "ye_buechse_blau_export",
+      "ye_buechse_fleisch_export",
+      "ye_buechse_gelb_export",
+      "ye_buechse_rosa_export",
+      "ye_buechse_weiss_export",
+      "ye_export01",
+      "ye_export02",
+      "ye_export03",
+      "ye_export04",
+      "ye_export05",
+      "ye_export06",
+      "ye_export_fish1",
+      "ye_export_fish2",
+      "ye_trademeat1",
+      "yi_artillery_shell",
+      "yi_beacon",
+      "yi_cannon_shell",
+      "yi_construction-robot",
+      "yi_logistic-robot",
+      "yi_mine_impact",
+      "yi_mine_plasma",
+      "yi_roboport",
+      "ypfw_trader_sign"
+    ],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-rfab5e-recipe",
+    "source": "prototypes/ir_fab5.lua",
+    "line": 40,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-veh-4",
+        "amount": 2.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-unicomp-a2",
+        "amount": 12.0
+      },
+      {
+        "type": "item",
+        "name": "y-richdust",
+        "amount": 10.0
+      },
+      {
+        "type": "item",
+        "name": "ypfw_trader_sign",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [
+      "j-cw2uc-recipe",
+      "j_yi_roboport1",
+      "y-ac-crystal2uc",
+      "y-ac-mud2uc",
+      "y-ac-slag2uc",
+      "y-ac-toxic2uc",
+      "y-ammo-biggun",
+      "y-ammo-explosiv",
+      "y-ammo-krakon",
+      "y-ammo-poison",
+      "y-heavyoil2uc",
+      "y-lightoil2uc",
+      "y-liquid2uc",
+      "y-lubricant2uc",
+      "y-mixing-rich",
+      "y-petroleum",
+      "y-press-richdust",
+      "y_ammo_flame",
+      "ye_buechse_blau_export",
+      "ye_buechse_fleisch_export",
+      "ye_buechse_gelb_export",
+      "ye_buechse_rosa_export",
+      "ye_buechse_weiss_export",
+      "ye_export01",
+      "ye_export02",
+      "ye_export03",
+      "ye_export04",
+      "ye_export05",
+      "ye_export06",
+      "ye_export_fish1",
+      "ye_export_fish2",
+      "ye_trademeat1",
+      "yi_artillery_shell",
+      "yi_beacon",
+      "yi_cannon_shell",
+      "yi_construction-robot",
+      "yi_logistic-robot",
+      "yi_mine_impact",
+      "yi_mine_plasma",
+      "yi_roboport",
+      "ypfw_trader_sign"
+    ],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-rfab5f-recipe",
+    "source": "prototypes/ir_fab5.lua",
+    "line": 41,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-veh-5",
+        "amount": 1.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-stuff-5",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "y-grycoil",
+        "amount": 12.0
+      },
+      {
+        "type": "item",
+        "name": "ypfw_trader_sign",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [
+      "j_yi_roboport1",
+      "y-ammo-biggun",
+      "y-ammo-explosiv",
+      "y-ammo-krakon",
+      "y-ammo-poison",
+      "y_ammo_flame",
+      "ye_buechse_blau_export",
+      "ye_buechse_fleisch_export",
+      "ye_buechse_gelb_export",
+      "ye_buechse_rosa_export",
+      "ye_buechse_weiss_export",
+      "ye_export01",
+      "ye_export02",
+      "ye_export03",
+      "ye_export04",
+      "ye_export05",
+      "ye_export06",
+      "ye_export_fish1",
+      "ye_export_fish2",
+      "yi_artillery_shell",
+      "yi_beacon",
+      "yi_cannon_shell",
+      "yi_construction-robot",
+      "yi_logistic-robot",
+      "yi_mine_impact",
+      "yi_mine_plasma",
+      "yi_roboport",
+      "ypfw_trader_sign"
+    ],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-rfab5g-recipe",
+    "source": "prototypes/ir_fab5.lua",
+    "line": 42,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-veh-6",
+        "amount": 1.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-stuff-5",
+        "amount": 2.0
+      },
+      {
+        "type": "item",
+        "name": "y-unicomp-a2",
+        "amount": 8.0
+      },
+      {
+        "type": "item",
+        "name": "ypfw_trader_sign",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [
+      "j-cw2uc-recipe",
+      "j_yi_roboport1",
+      "y-ac-crystal2uc",
+      "y-ac-mud2uc",
+      "y-ac-slag2uc",
+      "y-ac-toxic2uc",
+      "y-ammo-biggun",
+      "y-ammo-explosiv",
+      "y-ammo-krakon",
+      "y-ammo-poison",
+      "y-heavyoil2uc",
+      "y-lightoil2uc",
+      "y-liquid2uc",
+      "y-lubricant2uc",
+      "y-petroleum",
+      "y-press-richdust",
+      "y_ammo_flame",
+      "ye_buechse_blau_export",
+      "ye_buechse_fleisch_export",
+      "ye_buechse_gelb_export",
+      "ye_buechse_rosa_export",
+      "ye_buechse_weiss_export",
+      "ye_export01",
+      "ye_export02",
+      "ye_export03",
+      "ye_export04",
+      "ye_export05",
+      "ye_export06",
+      "ye_export_fish1",
+      "ye_export_fish2",
+      "ye_trademeat1",
+      "yi_artillery_shell",
+      "yi_beacon",
+      "yi_cannon_shell",
+      "yi_construction-robot",
+      "yi_logistic-robot",
+      "yi_mine_impact",
+      "yi_mine_plasma",
+      "yi_roboport",
+      "ypfw_trader_sign"
+    ],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-rfab5h-recipe",
+    "source": "prototypes/ir_fab5.lua",
+    "line": 43,
+    "state": "commented",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-veh-7",
+        "amount": 9.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-unicomp-a2",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "y-stuff-2",
+        "amount": 2.0
+      }
+    ],
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [
+      "j-cw2uc-recipe",
+      "y-ac-crystal2uc",
+      "y-ac-mud2uc",
+      "y-ac-slag2uc",
+      "y-ac-toxic2uc",
+      "y-heavyoil2uc",
+      "y-lightoil2uc",
+      "y-liquid2uc",
+      "y-lubricant2uc",
+      "y-petroleum",
+      "y-press-richdust",
+      "ye_trademeat1"
+    ],
+    "assessment": "preserve_commented_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-rfab5i-recipe",
+    "source": "prototypes/ir_fab5.lua",
+    "line": 44,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-veh-8",
+        "amount": 1.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-stuff-4",
+        "amount": 2.0
+      },
+      {
+        "type": "item",
+        "name": "y-unicomp-a2",
+        "amount": 10.0
+      },
+      {
+        "type": "item",
+        "name": "ypfw_trader_sign",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [
+      "j-cw2uc-recipe",
+      "j_yi_roboport1",
+      "y-ac-crystal2uc",
+      "y-ac-mud2uc",
+      "y-ac-slag2uc",
+      "y-ac-toxic2uc",
+      "y-ammo-biggun",
+      "y-ammo-explosiv",
+      "y-ammo-krakon",
+      "y-ammo-poison",
+      "y-heavyoil2uc",
+      "y-lightoil2uc",
+      "y-liquid2uc",
+      "y-lubricant2uc",
+      "y-petroleum",
+      "y-press-richdust",
+      "y_ammo_flame",
+      "ye_buechse_blau_export",
+      "ye_buechse_fleisch_export",
+      "ye_buechse_gelb_export",
+      "ye_buechse_rosa_export",
+      "ye_buechse_weiss_export",
+      "ye_export01",
+      "ye_export02",
+      "ye_export03",
+      "ye_export04",
+      "ye_export05",
+      "ye_export06",
+      "ye_export_fish1",
+      "ye_export_fish2",
+      "ye_trademeat1",
+      "yi_artillery_shell",
+      "yi_beacon",
+      "yi_cannon_shell",
+      "yi_construction-robot",
+      "yi_logistic-robot",
+      "yi_mine_impact",
+      "yi_mine_plasma",
+      "yi_roboport",
+      "ypfw_trader_sign"
+    ],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-rfab5k-recipe",
+    "source": "prototypes/ir_fab5.lua",
+    "line": 45,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-veh-9",
+        "amount": 3.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-unicomp-a2",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "ypfw_trader_sign",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [
+      "j-cw2uc-recipe",
+      "j_yi_roboport1",
+      "y-ac-crystal2uc",
+      "y-ac-mud2uc",
+      "y-ac-slag2uc",
+      "y-ac-toxic2uc",
+      "y-ammo-biggun",
+      "y-ammo-explosiv",
+      "y-ammo-krakon",
+      "y-ammo-poison",
+      "y-heavyoil2uc",
+      "y-lightoil2uc",
+      "y-liquid2uc",
+      "y-lubricant2uc",
+      "y-petroleum",
+      "y-press-richdust",
+      "y_ammo_flame",
+      "ye_buechse_blau_export",
+      "ye_buechse_fleisch_export",
+      "ye_buechse_gelb_export",
+      "ye_buechse_rosa_export",
+      "ye_buechse_weiss_export",
+      "ye_export01",
+      "ye_export02",
+      "ye_export03",
+      "ye_export04",
+      "ye_export05",
+      "ye_export06",
+      "ye_export_fish1",
+      "ye_export_fish2",
+      "ye_trademeat1",
+      "yi_artillery_shell",
+      "yi_beacon",
+      "yi_cannon_shell",
+      "yi_construction-robot",
+      "yi_logistic-robot",
+      "yi_mine_impact",
+      "yi_mine_plasma",
+      "yi_roboport",
+      "ypfw_trader_sign"
+    ],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-fab8a-recipe",
+    "source": "prototypes/ir_fab8.lua",
+    "line": 22,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-stuff-4",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "y-iron-case",
+        "amount": 8.0
+      },
+      {
+        "type": "item",
+        "name": "y-refined-yres1",
+        "amount": 8.0
+      },
+      {
+        "type": "item",
+        "name": "y-chip-1",
+        "amount": 8.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-equ-0",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-material",
+    "seconds": 3.0,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-fab8b-recipe",
+    "source": "prototypes/ir_fab8.lua",
+    "line": 23,
+    "state": "commented",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-equ-0",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "y-stuff-5",
+        "amount": 2.0
+      },
+      {
+        "type": "item",
+        "name": "y_blocked_capa",
+        "amount": 2.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-equ-1",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-material",
+    "seconds": 3.0,
+    "scenario_references": {
+      "y-equ-1": "yi_equip_shield_b"
+    },
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [
+      "yi_equip_shield_b"
+    ],
+    "assessment": "preserve_commented_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-fab8c-recipe",
+    "source": "prototypes/ir_fab8.lua",
+    "line": 24,
+    "state": "commented",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-equ-0",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "y-stuff-5",
+        "amount": 4.0
+      },
+      {
+        "type": "item",
+        "name": "y-accumulator-m",
+        "amount": 6.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-equ-2",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-material",
+    "seconds": 3.0,
+    "scenario_references": {
+      "y-equ-2": "yi_equip_shield_b"
+    },
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [
+      "yi_equip_shield_b"
+    ],
+    "assessment": "preserve_commented_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-fab8d-recipe",
+    "source": "prototypes/ir_fab8.lua",
+    "line": 25,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-zielfern",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "y-equ-0",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "y-sm-1",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "y-cyb-0",
+        "amount": 4.0
+      },
+      {
+        "type": "item",
+        "name": "y-iron-case",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "y-zproduct-8",
+        "amount": 1.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-equ-3",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-material",
+    "seconds": 3.0,
+    "scenario_references": {
+      "y-sm-1": "yi_lasergun"
+    },
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-fab8e-recipe",
+    "source": "prototypes/ir_fab8.lua",
+    "line": 27,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-meg-s",
+        "amount": 2.0
+      },
+      {
+        "type": "item",
+        "name": "y-beg",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "y-ups-flywheel-b",
+        "amount": 2.0
+      },
+      {
+        "type": "item",
+        "name": "y-stirling-solar-dish",
+        "amount": 8.0
+      },
+      {
+        "type": "item",
+        "name": "y-conductive-wire-1",
+        "amount": 12.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-equ-4",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-material",
+    "seconds": 3.0,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-fab8f-recipe",
+    "source": "prototypes/ir_fab8.lua",
+    "line": 28,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-ups-flywheel-b",
+        "amount": 4.0
+      },
+      {
+        "type": "item",
+        "name": "y-accumulator-b",
+        "amount": 8.0
+      },
+      {
+        "type": "item",
+        "name": "y-stuff-3",
+        "amount": 3.0
+      },
+      {
+        "type": "item",
+        "name": "y-conductive-wire-1",
+        "amount": 14.0
+      },
+      {
+        "type": "item",
+        "name": "y-iron-case",
+        "amount": 4.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-equ-5",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-material",
+    "seconds": 3.0,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-fab8g-recipe",
+    "source": "prototypes/ir_fab8.lua",
+    "line": 29,
+    "state": "commented",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-stuff-3",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "y-stuff-4",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "y-stuff-5",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "y-basic-t2-mf",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "y-iron-case",
+        "amount": 1.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-equ-6",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-material",
+    "seconds": 3.0,
+    "scenario_references": {
+      "y-equ-6": "yi_equip_generator_a"
+    },
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [
+      "yi_equip_generator_a"
+    ],
+    "assessment": "preserve_commented_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-fab8h-recipe",
+    "source": "prototypes/ir_fab8.lua",
+    "line": 31,
+    "state": "commented",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-biomass",
+        "amount": 5.0
+      },
+      {
+        "type": "item",
+        "name": "y-medic",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "y-combat-train",
+        "amount": 5.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-equ-7",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-material",
+    "seconds": 2.0,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [],
+    "assessment": "preserve_commented_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-fab8i-recipe",
+    "source": "prototypes/ir_fab8.lua",
+    "line": 32,
+    "state": "commented",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-basic-t1-mf",
+        "amount": 2.0
+      },
+      {
+        "type": "item",
+        "name": "y-sm-1",
+        "amount": 2.0
+      },
+      {
+        "type": "item",
+        "name": "y-combat-armor-3",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "y-chip-2",
+        "amount": 1.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-equ-8",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-material",
+    "seconds": 2.0,
+    "scenario_references": {
+      "y-sm-1": "yi_lasergun",
+      "y-combat-armor-3": "yi_equip_shield_a"
+    },
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [],
+    "assessment": "preserve_commented_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-fab8k-recipe",
+    "source": "prototypes/ir_fab8.lua",
+    "line": 33,
+    "state": "commented",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-basic-t2-mf",
+        "amount": 8.0
+      },
+      {
+        "type": "item",
+        "name": "y_structure_element",
+        "amount": 12.0
+      },
+      {
+        "type": "item",
+        "name": "y-bluegear",
+        "amount": 8.0
+      },
+      {
+        "type": "item",
+        "name": "y-chip-2",
+        "amount": 2.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-equ-9",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-material",
+    "seconds": 2.0,
+    "scenario_references": {
+      "y-equ-9": "yi_equip_legs_a"
+    },
+    "original_material_matches": [],
+    "scenario_material_matches": [
+      "yi_equip_legs_a"
+    ],
+    "same_product_parent_recipes": [
+      "yi_equip_legs_a"
+    ],
+    "assessment": "preserve_commented_material_duplicate_with_different_access"
+  },
+  {
+    "type": "recipe",
+    "name": "y-rfab8a-recipe",
+    "source": "prototypes/ir_fab8.lua",
+    "line": 49,
+    "state": "commented",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-equ-0",
+        "amount": 1.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-unicomp-a2",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [
+      "j-cw2uc-recipe",
+      "y-ac-crystal2uc",
+      "y-ac-mud2uc",
+      "y-ac-slag2uc",
+      "y-ac-toxic2uc",
+      "y-heavyoil2uc",
+      "y-lightoil2uc",
+      "y-liquid2uc",
+      "y-lubricant2uc",
+      "y-petroleum",
+      "y-press-richdust",
+      "ye_trademeat1"
+    ],
+    "assessment": "preserve_commented_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-rfab8b-recipe",
+    "source": "prototypes/ir_fab8.lua",
+    "line": 50,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-equ-1",
+        "amount": 1.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-stuff-1",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "y-redcoil",
+        "amount": 3.0
+      },
+      {
+        "type": "item",
+        "name": "ypfw_trader_sign",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "scenario_references": {
+      "y-equ-1": "yi_equip_shield_b"
+    },
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [
+      "j_yi_roboport1",
+      "y-ammo-biggun",
+      "y-ammo-explosiv",
+      "y-ammo-krakon",
+      "y-ammo-poison",
+      "y_ammo_flame",
+      "ye_buechse_blau_export",
+      "ye_buechse_fleisch_export",
+      "ye_buechse_gelb_export",
+      "ye_buechse_rosa_export",
+      "ye_buechse_weiss_export",
+      "ye_export01",
+      "ye_export02",
+      "ye_export03",
+      "ye_export04",
+      "ye_export05",
+      "ye_export06",
+      "ye_export_fish1",
+      "ye_export_fish2",
+      "yi_artillery_shell",
+      "yi_beacon",
+      "yi_cannon_shell",
+      "yi_construction-robot",
+      "yi_logistic-robot",
+      "yi_mine_impact",
+      "yi_mine_plasma",
+      "yi_roboport",
+      "ypfw_trader_sign"
+    ],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-rfab8c-recipe",
+    "source": "prototypes/ir_fab8.lua",
+    "line": 51,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-equ-2",
+        "amount": 1.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-stuff-4",
+        "amount": 2.0
+      },
+      {
+        "type": "item",
+        "name": "y-stuff-2",
+        "amount": 4.0
+      },
+      {
+        "type": "item",
+        "name": "ypfw_trader_sign",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "scenario_references": {
+      "y-equ-2": "yi_equip_shield_b"
+    },
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [
+      "j_yi_roboport1",
+      "y-ammo-biggun",
+      "y-ammo-explosiv",
+      "y-ammo-krakon",
+      "y-ammo-poison",
+      "y_ammo_flame",
+      "ye_buechse_blau_export",
+      "ye_buechse_fleisch_export",
+      "ye_buechse_gelb_export",
+      "ye_buechse_rosa_export",
+      "ye_buechse_weiss_export",
+      "ye_export01",
+      "ye_export02",
+      "ye_export03",
+      "ye_export04",
+      "ye_export05",
+      "ye_export06",
+      "ye_export_fish1",
+      "ye_export_fish2",
+      "yi_artillery_shell",
+      "yi_beacon",
+      "yi_cannon_shell",
+      "yi_construction-robot",
+      "yi_logistic-robot",
+      "yi_mine_impact",
+      "yi_mine_plasma",
+      "yi_roboport",
+      "ypfw_trader_sign"
+    ],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-rfab8d-recipe",
+    "source": "prototypes/ir_fab8.lua",
+    "line": 52,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-equ-3",
+        "amount": 1.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-stuff-2",
+        "amount": 4.0
+      },
+      {
+        "type": "item",
+        "name": "y-grycoil",
+        "amount": 6.0
+      },
+      {
+        "type": "item",
+        "name": "ypfw_trader_sign",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [
+      "j_yi_roboport1",
+      "y-ammo-biggun",
+      "y-ammo-explosiv",
+      "y-ammo-krakon",
+      "y-ammo-poison",
+      "y_ammo_flame",
+      "ye_buechse_blau_export",
+      "ye_buechse_fleisch_export",
+      "ye_buechse_gelb_export",
+      "ye_buechse_rosa_export",
+      "ye_buechse_weiss_export",
+      "ye_export01",
+      "ye_export02",
+      "ye_export03",
+      "ye_export04",
+      "ye_export05",
+      "ye_export06",
+      "ye_export_fish1",
+      "ye_export_fish2",
+      "yi_artillery_shell",
+      "yi_beacon",
+      "yi_cannon_shell",
+      "yi_construction-robot",
+      "yi_logistic-robot",
+      "yi_mine_impact",
+      "yi_mine_plasma",
+      "yi_roboport",
+      "ypfw_trader_sign"
+    ],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-rfab8e-recipe",
+    "source": "prototypes/ir_fab8.lua",
+    "line": 54,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-equ-4",
+        "amount": 1.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-stuff-4",
+        "amount": 2.0
+      },
+      {
+        "type": "item",
+        "name": "y-stuff-5",
+        "amount": 3.0
+      },
+      {
+        "type": "item",
+        "name": "ypfw_trader_sign",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [
+      "j_yi_roboport1",
+      "y-ammo-biggun",
+      "y-ammo-explosiv",
+      "y-ammo-krakon",
+      "y-ammo-poison",
+      "y_ammo_flame",
+      "ye_buechse_blau_export",
+      "ye_buechse_fleisch_export",
+      "ye_buechse_gelb_export",
+      "ye_buechse_rosa_export",
+      "ye_buechse_weiss_export",
+      "ye_export01",
+      "ye_export02",
+      "ye_export03",
+      "ye_export04",
+      "ye_export05",
+      "ye_export06",
+      "ye_export_fish1",
+      "ye_export_fish2",
+      "yi_artillery_shell",
+      "yi_beacon",
+      "yi_cannon_shell",
+      "yi_construction-robot",
+      "yi_logistic-robot",
+      "yi_mine_impact",
+      "yi_mine_plasma",
+      "yi_roboport",
+      "ypfw_trader_sign"
+    ],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-rfab8f-recipe",
+    "source": "prototypes/ir_fab8.lua",
+    "line": 55,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-equ-5",
+        "amount": 1.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-stuff-6",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "y-unicomp-a2",
+        "amount": 245.0
+      },
+      {
+        "type": "item",
+        "name": "ypfw_trader_sign",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [
+      "j-cw2uc-recipe",
+      "j_yi_roboport1",
+      "y-ac-crystal2uc",
+      "y-ac-mud2uc",
+      "y-ac-slag2uc",
+      "y-ac-toxic2uc",
+      "y-ammo-biggun",
+      "y-ammo-explosiv",
+      "y-ammo-krakon",
+      "y-ammo-poison",
+      "y-heavyoil2uc",
+      "y-lightoil2uc",
+      "y-liquid2uc",
+      "y-lubricant2uc",
+      "y-petroleum",
+      "y-press-richdust",
+      "y_ammo_flame",
+      "ye_buechse_blau_export",
+      "ye_buechse_fleisch_export",
+      "ye_buechse_gelb_export",
+      "ye_buechse_rosa_export",
+      "ye_buechse_weiss_export",
+      "ye_export01",
+      "ye_export02",
+      "ye_export03",
+      "ye_export04",
+      "ye_export05",
+      "ye_export06",
+      "ye_export_fish1",
+      "ye_export_fish2",
+      "ye_trademeat1",
+      "yi_artillery_shell",
+      "yi_beacon",
+      "yi_cannon_shell",
+      "yi_construction-robot",
+      "yi_logistic-robot",
+      "yi_mine_impact",
+      "yi_mine_plasma",
+      "yi_roboport",
+      "ypfw_trader_sign"
+    ],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-rfab8g-recipe",
+    "source": "prototypes/ir_fab8.lua",
+    "line": 56,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-equ-6",
+        "amount": 1.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-stuff-1",
+        "amount": 8.0
+      },
+      {
+        "type": "item",
+        "name": "y-stuff-2",
+        "amount": 6.0
+      },
+      {
+        "type": "item",
+        "name": "ypfw_trader_sign",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "scenario_references": {
+      "y-equ-6": "yi_equip_generator_a"
+    },
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [
+      "j_yi_roboport1",
+      "y-ammo-biggun",
+      "y-ammo-explosiv",
+      "y-ammo-krakon",
+      "y-ammo-poison",
+      "y_ammo_flame",
+      "ye_buechse_blau_export",
+      "ye_buechse_fleisch_export",
+      "ye_buechse_gelb_export",
+      "ye_buechse_rosa_export",
+      "ye_buechse_weiss_export",
+      "ye_export01",
+      "ye_export02",
+      "ye_export03",
+      "ye_export04",
+      "ye_export05",
+      "ye_export06",
+      "ye_export_fish1",
+      "ye_export_fish2",
+      "yi_artillery_shell",
+      "yi_beacon",
+      "yi_cannon_shell",
+      "yi_construction-robot",
+      "yi_logistic-robot",
+      "yi_mine_impact",
+      "yi_mine_plasma",
+      "yi_roboport",
+      "ypfw_trader_sign"
+    ],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-rfab8h-recipe",
+    "source": "prototypes/ir_fab8.lua",
+    "line": 57,
+    "state": "commented",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-equ-7",
+        "amount": 9.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-unicomp-a2",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "y-stuff-2",
+        "amount": 2.0
+      }
+    ],
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [
+      "j-cw2uc-recipe",
+      "y-ac-crystal2uc",
+      "y-ac-mud2uc",
+      "y-ac-slag2uc",
+      "y-ac-toxic2uc",
+      "y-heavyoil2uc",
+      "y-lightoil2uc",
+      "y-liquid2uc",
+      "y-lubricant2uc",
+      "y-petroleum",
+      "y-press-richdust",
+      "ye_trademeat1"
+    ],
+    "assessment": "preserve_commented_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-rfab8i-recipe",
+    "source": "prototypes/ir_fab8.lua",
+    "line": 58,
+    "state": "commented",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-equ-8",
+        "amount": 2.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-stuff-4",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "y-stuff-3",
+        "amount": 3.0
+      },
+      {
+        "type": "item",
+        "name": "y-unicomp-a2",
+        "amount": 10.0
+      }
+    ],
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [
+      "j-cw2uc-recipe",
+      "y-ac-crystal2uc",
+      "y-ac-mud2uc",
+      "y-ac-slag2uc",
+      "y-ac-toxic2uc",
+      "y-heavyoil2uc",
+      "y-lightoil2uc",
+      "y-liquid2uc",
+      "y-lubricant2uc",
+      "y-petroleum",
+      "y-press-richdust",
+      "ye_trademeat1"
+    ],
+    "assessment": "preserve_commented_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-rfab8k-recipe",
+    "source": "prototypes/ir_fab8.lua",
+    "line": 59,
+    "state": "commented",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-equ-9",
+        "amount": 2.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-stuff-6",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "y-stuff-5",
+        "amount": 4.0
+      }
+    ],
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "scenario_references": {
+      "y-equ-9": "yi_equip_legs_a"
+    },
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [],
+    "assessment": "preserve_commented_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-fab1-recipe",
+    "source": "prototypes/ir_factory.lua",
+    "line": 14,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-basic-t1-mf",
+        "amount": 2.0
+      },
+      {
+        "type": "item",
+        "name": "y-bluegear",
+        "amount": 6.0
+      },
+      {
+        "type": "item",
+        "name": "y-chip-1",
+        "amount": 4.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-factory-1",
+        "amount": 1.0
+      }
+    ],
+    "category": "crafting",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-fab2-recipe",
+    "source": "prototypes/ir_factory.lua",
+    "line": 15,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-basic-t1-mf",
+        "amount": 2.0
+      },
+      {
+        "type": "item",
+        "name": "y-bluegear",
+        "amount": 6.0
+      },
+      {
+        "type": "item",
+        "name": "y-chip-1",
+        "amount": 4.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-factory-2",
+        "amount": 1.0
+      }
+    ],
+    "category": "crafting",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-fab3-recipe",
+    "source": "prototypes/ir_factory.lua",
+    "line": 16,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-basic-t1-mf",
+        "amount": 2.0
+      },
+      {
+        "type": "item",
+        "name": "y-bluegear",
+        "amount": 6.0
+      },
+      {
+        "type": "item",
+        "name": "y-chip-1",
+        "amount": 4.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-factory-3",
+        "amount": 1.0
+      }
+    ],
+    "category": "crafting",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-fab4-recipe",
+    "source": "prototypes/ir_factory.lua",
+    "line": 17,
+    "state": "commented",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-basic-t1-mf",
+        "amount": 2.0
+      },
+      {
+        "type": "item",
+        "name": "y-bluegear",
+        "amount": 6.0
+      },
+      {
+        "type": "item",
+        "name": "y-chip-1",
+        "amount": 4.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-factory-4",
+        "amount": 1.0
+      }
+    ],
+    "category": "crafting",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [],
+    "assessment": "preserve_commented_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-fab5-recipe",
+    "source": "prototypes/ir_factory.lua",
+    "line": 18,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-basic-t1-mf",
+        "amount": 2.0
+      },
+      {
+        "type": "item",
+        "name": "y-bluegear",
+        "amount": 6.0
+      },
+      {
+        "type": "item",
+        "name": "y-chip-1",
+        "amount": 4.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-factory-5",
+        "amount": 1.0
+      }
+    ],
+    "category": "crafting",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-fab6-recipe",
+    "source": "prototypes/ir_factory.lua",
+    "line": 19,
+    "state": "commented",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-basic-t1-mf",
+        "amount": 2.0
+      },
+      {
+        "type": "item",
+        "name": "y-bluegear",
+        "amount": 6.0
+      },
+      {
+        "type": "item",
+        "name": "y-chip-1",
+        "amount": 4.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-factory-6",
+        "amount": 1.0
+      }
+    ],
+    "category": "crafting",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [],
+    "assessment": "preserve_commented_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-fab7-recipe",
+    "source": "prototypes/ir_factory.lua",
+    "line": 20,
+    "state": "commented",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-basic-t1-mf",
+        "amount": 2.0
+      },
+      {
+        "type": "item",
+        "name": "y-bluegear",
+        "amount": 6.0
+      },
+      {
+        "type": "item",
+        "name": "y-chip-1",
+        "amount": 4.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-factory-7",
+        "amount": 1.0
+      }
+    ],
+    "category": "crafting",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [],
+    "assessment": "preserve_commented_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-fab8-recipe",
+    "source": "prototypes/ir_factory.lua",
+    "line": 21,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-basic-t1-mf",
+        "amount": 2.0
+      },
+      {
+        "type": "item",
+        "name": "y-bluegear",
+        "amount": 6.0
+      },
+      {
+        "type": "item",
+        "name": "y-chip-1",
+        "amount": 4.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-factory-8",
+        "amount": 1.0
+      }
+    ],
+    "category": "crafting",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-fab9-recipe",
+    "source": "prototypes/ir_factory.lua",
+    "line": 22,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-basic-t1-mf",
+        "amount": 2.0
+      },
+      {
+        "type": "item",
+        "name": "y-bluegear",
+        "amount": 6.0
+      },
+      {
+        "type": "item",
+        "name": "y-chip-1",
+        "amount": 4.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-factory-9",
+        "amount": 1.0
+      }
+    ],
+    "category": "crafting",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-import1-recipe",
+    "source": "prototypes/ir_imports.lua",
+    "line": 7,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-unicomp-a2",
+        "amount": 3.0
+      },
+      {
+        "type": "item",
+        "name": "ypfw_trader_sign",
+        "amount": 9.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-redcoil",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-import2-recipe",
+    "source": "prototypes/ir_imports.lua",
+    "line": 8,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-unicomp-a2",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "ypfw_trader_sign",
+        "amount": 3.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-grycoil",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-import3-recipe",
+    "source": "prototypes/ir_imports.lua",
+    "line": 9,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-unicomp-a2",
+        "amount": 12.0
+      },
+      {
+        "type": "item",
+        "name": "ypfw_trader_sign",
+        "amount": 36.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-stuff-1",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-import4-recipe",
+    "source": "prototypes/ir_imports.lua",
+    "line": 10,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-unicomp-a2",
+        "amount": 7.0
+      },
+      {
+        "type": "item",
+        "name": "ypfw_trader_sign",
+        "amount": 21.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-stuff-2",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-import5-recipe",
+    "source": "prototypes/ir_imports.lua",
+    "line": 11,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-unicomp-a2",
+        "amount": 35.0
+      },
+      {
+        "type": "item",
+        "name": "ypfw_trader_sign",
+        "amount": 105.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-stuff-3",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-import6-recipe",
+    "source": "prototypes/ir_imports.lua",
+    "line": 12,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-unicomp-a2",
+        "amount": 50.0
+      },
+      {
+        "type": "item",
+        "name": "ypfw_trader_sign",
+        "amount": 150.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-stuff-4",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-import7-recipe",
+    "source": "prototypes/ir_imports.lua",
+    "line": 13,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-unicomp-a2",
+        "amount": 20.0
+      },
+      {
+        "type": "item",
+        "name": "ypfw_trader_sign",
+        "amount": 60.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-stuff-5",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-import8-recipe",
+    "source": "prototypes/ir_imports.lua",
+    "line": 14,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-unicomp-a2",
+        "amount": 100.0
+      },
+      {
+        "type": "item",
+        "name": "ypfw_trader_sign",
+        "amount": 300.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-stuff-6",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-rimp1-recipe",
+    "source": "prototypes/ir_imports.lua",
+    "line": 25,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-redcoil",
+        "amount": 1.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-richdust",
+        "amount": 50.0
+      },
+      {
+        "type": "item",
+        "name": "ypfw_trader_sign",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [
+      "j_yi_roboport1",
+      "y-ammo-biggun",
+      "y-ammo-explosiv",
+      "y-ammo-krakon",
+      "y-ammo-poison",
+      "y-mixing-rich",
+      "y_ammo_flame",
+      "ye_buechse_blau_export",
+      "ye_buechse_fleisch_export",
+      "ye_buechse_gelb_export",
+      "ye_buechse_rosa_export",
+      "ye_buechse_weiss_export",
+      "ye_export01",
+      "ye_export02",
+      "ye_export03",
+      "ye_export04",
+      "ye_export05",
+      "ye_export06",
+      "ye_export_fish1",
+      "ye_export_fish2",
+      "yi_artillery_shell",
+      "yi_beacon",
+      "yi_cannon_shell",
+      "yi_construction-robot",
+      "yi_logistic-robot",
+      "yi_mine_impact",
+      "yi_mine_plasma",
+      "yi_roboport",
+      "ypfw_trader_sign"
+    ],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-rimp2-recipe",
+    "source": "prototypes/ir_imports.lua",
+    "line": 26,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-grycoil",
+        "amount": 1.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-richdust",
+        "amount": 16.0
+      },
+      {
+        "type": "item",
+        "name": "ypfw_trader_sign",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [
+      "j_yi_roboport1",
+      "y-ammo-biggun",
+      "y-ammo-explosiv",
+      "y-ammo-krakon",
+      "y-ammo-poison",
+      "y-mixing-rich",
+      "y_ammo_flame",
+      "ye_buechse_blau_export",
+      "ye_buechse_fleisch_export",
+      "ye_buechse_gelb_export",
+      "ye_buechse_rosa_export",
+      "ye_buechse_weiss_export",
+      "ye_export01",
+      "ye_export02",
+      "ye_export03",
+      "ye_export04",
+      "ye_export05",
+      "ye_export06",
+      "ye_export_fish1",
+      "ye_export_fish2",
+      "yi_artillery_shell",
+      "yi_beacon",
+      "yi_cannon_shell",
+      "yi_construction-robot",
+      "yi_logistic-robot",
+      "yi_mine_impact",
+      "yi_mine_plasma",
+      "yi_roboport",
+      "ypfw_trader_sign"
+    ],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-rimp3-recipe",
+    "source": "prototypes/ir_imports.lua",
+    "line": 27,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-stuff-1",
+        "amount": 1.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-unicomp-a2",
+        "amount": 10.0
+      },
+      {
+        "type": "item",
+        "name": "ypfw_trader_sign",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [
+      "j-cw2uc-recipe",
+      "j_yi_roboport1",
+      "y-ac-crystal2uc",
+      "y-ac-mud2uc",
+      "y-ac-slag2uc",
+      "y-ac-toxic2uc",
+      "y-ammo-biggun",
+      "y-ammo-explosiv",
+      "y-ammo-krakon",
+      "y-ammo-poison",
+      "y-heavyoil2uc",
+      "y-lightoil2uc",
+      "y-liquid2uc",
+      "y-lubricant2uc",
+      "y-petroleum",
+      "y-press-richdust",
+      "y_ammo_flame",
+      "ye_buechse_blau_export",
+      "ye_buechse_fleisch_export",
+      "ye_buechse_gelb_export",
+      "ye_buechse_rosa_export",
+      "ye_buechse_weiss_export",
+      "ye_export01",
+      "ye_export02",
+      "ye_export03",
+      "ye_export04",
+      "ye_export05",
+      "ye_export06",
+      "ye_export_fish1",
+      "ye_export_fish2",
+      "ye_trademeat1",
+      "yi_artillery_shell",
+      "yi_beacon",
+      "yi_cannon_shell",
+      "yi_construction-robot",
+      "yi_logistic-robot",
+      "yi_mine_impact",
+      "yi_mine_plasma",
+      "yi_roboport",
+      "ypfw_trader_sign"
+    ],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-rimp4-recipe",
+    "source": "prototypes/ir_imports.lua",
+    "line": 28,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-stuff-2",
+        "amount": 1.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-unicomp-a2",
+        "amount": 6.0
+      },
+      {
+        "type": "item",
+        "name": "ypfw_trader_sign",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [
+      "j-cw2uc-recipe",
+      "j_yi_roboport1",
+      "y-ac-crystal2uc",
+      "y-ac-mud2uc",
+      "y-ac-slag2uc",
+      "y-ac-toxic2uc",
+      "y-ammo-biggun",
+      "y-ammo-explosiv",
+      "y-ammo-krakon",
+      "y-ammo-poison",
+      "y-heavyoil2uc",
+      "y-lightoil2uc",
+      "y-liquid2uc",
+      "y-lubricant2uc",
+      "y-petroleum",
+      "y-press-richdust",
+      "y_ammo_flame",
+      "ye_buechse_blau_export",
+      "ye_buechse_fleisch_export",
+      "ye_buechse_gelb_export",
+      "ye_buechse_rosa_export",
+      "ye_buechse_weiss_export",
+      "ye_export01",
+      "ye_export02",
+      "ye_export03",
+      "ye_export04",
+      "ye_export05",
+      "ye_export06",
+      "ye_export_fish1",
+      "ye_export_fish2",
+      "ye_trademeat1",
+      "yi_artillery_shell",
+      "yi_beacon",
+      "yi_cannon_shell",
+      "yi_construction-robot",
+      "yi_logistic-robot",
+      "yi_mine_impact",
+      "yi_mine_plasma",
+      "yi_roboport",
+      "ypfw_trader_sign"
+    ],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-rimp5-recipe",
+    "source": "prototypes/ir_imports.lua",
+    "line": 29,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-stuff-3",
+        "amount": 1.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-unicomp-a2",
+        "amount": 31.0
+      },
+      {
+        "type": "item",
+        "name": "ypfw_trader_sign",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [
+      "j-cw2uc-recipe",
+      "j_yi_roboport1",
+      "y-ac-crystal2uc",
+      "y-ac-mud2uc",
+      "y-ac-slag2uc",
+      "y-ac-toxic2uc",
+      "y-ammo-biggun",
+      "y-ammo-explosiv",
+      "y-ammo-krakon",
+      "y-ammo-poison",
+      "y-heavyoil2uc",
+      "y-lightoil2uc",
+      "y-liquid2uc",
+      "y-lubricant2uc",
+      "y-petroleum",
+      "y-press-richdust",
+      "y_ammo_flame",
+      "ye_buechse_blau_export",
+      "ye_buechse_fleisch_export",
+      "ye_buechse_gelb_export",
+      "ye_buechse_rosa_export",
+      "ye_buechse_weiss_export",
+      "ye_export01",
+      "ye_export02",
+      "ye_export03",
+      "ye_export04",
+      "ye_export05",
+      "ye_export06",
+      "ye_export_fish1",
+      "ye_export_fish2",
+      "ye_trademeat1",
+      "yi_artillery_shell",
+      "yi_beacon",
+      "yi_cannon_shell",
+      "yi_construction-robot",
+      "yi_logistic-robot",
+      "yi_mine_impact",
+      "yi_mine_plasma",
+      "yi_roboport",
+      "ypfw_trader_sign"
+    ],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-rimp6-recipe",
+    "source": "prototypes/ir_imports.lua",
+    "line": 30,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-stuff-4",
+        "amount": 1.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-unicomp-a2",
+        "amount": 45.0
+      },
+      {
+        "type": "item",
+        "name": "ypfw_trader_sign",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [
+      "j-cw2uc-recipe",
+      "j_yi_roboport1",
+      "y-ac-crystal2uc",
+      "y-ac-mud2uc",
+      "y-ac-slag2uc",
+      "y-ac-toxic2uc",
+      "y-ammo-biggun",
+      "y-ammo-explosiv",
+      "y-ammo-krakon",
+      "y-ammo-poison",
+      "y-heavyoil2uc",
+      "y-lightoil2uc",
+      "y-liquid2uc",
+      "y-lubricant2uc",
+      "y-petroleum",
+      "y-press-richdust",
+      "y_ammo_flame",
+      "ye_buechse_blau_export",
+      "ye_buechse_fleisch_export",
+      "ye_buechse_gelb_export",
+      "ye_buechse_rosa_export",
+      "ye_buechse_weiss_export",
+      "ye_export01",
+      "ye_export02",
+      "ye_export03",
+      "ye_export04",
+      "ye_export05",
+      "ye_export06",
+      "ye_export_fish1",
+      "ye_export_fish2",
+      "ye_trademeat1",
+      "yi_artillery_shell",
+      "yi_beacon",
+      "yi_cannon_shell",
+      "yi_construction-robot",
+      "yi_logistic-robot",
+      "yi_mine_impact",
+      "yi_mine_plasma",
+      "yi_roboport",
+      "ypfw_trader_sign"
+    ],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-rimp7-recipe",
+    "source": "prototypes/ir_imports.lua",
+    "line": 31,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-stuff-5",
+        "amount": 1.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-unicomp-a2",
+        "amount": 18.0
+      },
+      {
+        "type": "item",
+        "name": "ypfw_trader_sign",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [
+      "j-cw2uc-recipe",
+      "j_yi_roboport1",
+      "y-ac-crystal2uc",
+      "y-ac-mud2uc",
+      "y-ac-slag2uc",
+      "y-ac-toxic2uc",
+      "y-ammo-biggun",
+      "y-ammo-explosiv",
+      "y-ammo-krakon",
+      "y-ammo-poison",
+      "y-heavyoil2uc",
+      "y-lightoil2uc",
+      "y-liquid2uc",
+      "y-lubricant2uc",
+      "y-petroleum",
+      "y-press-richdust",
+      "y_ammo_flame",
+      "ye_buechse_blau_export",
+      "ye_buechse_fleisch_export",
+      "ye_buechse_gelb_export",
+      "ye_buechse_rosa_export",
+      "ye_buechse_weiss_export",
+      "ye_export01",
+      "ye_export02",
+      "ye_export03",
+      "ye_export04",
+      "ye_export05",
+      "ye_export06",
+      "ye_export_fish1",
+      "ye_export_fish2",
+      "ye_trademeat1",
+      "yi_artillery_shell",
+      "yi_beacon",
+      "yi_cannon_shell",
+      "yi_construction-robot",
+      "yi_logistic-robot",
+      "yi_mine_impact",
+      "yi_mine_plasma",
+      "yi_roboport",
+      "ypfw_trader_sign"
+    ],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-rimp8-recipe",
+    "source": "prototypes/ir_imports.lua",
+    "line": 32,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-stuff-6",
+        "amount": 1.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-unicomp-a2",
+        "amount": 90.0
+      },
+      {
+        "type": "item",
+        "name": "ypfw_trader_sign",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [
+      "j-cw2uc-recipe",
+      "j_yi_roboport1",
+      "y-ac-crystal2uc",
+      "y-ac-mud2uc",
+      "y-ac-slag2uc",
+      "y-ac-toxic2uc",
+      "y-ammo-biggun",
+      "y-ammo-explosiv",
+      "y-ammo-krakon",
+      "y-ammo-poison",
+      "y-heavyoil2uc",
+      "y-lightoil2uc",
+      "y-liquid2uc",
+      "y-lubricant2uc",
+      "y-petroleum",
+      "y-press-richdust",
+      "y_ammo_flame",
+      "ye_buechse_blau_export",
+      "ye_buechse_fleisch_export",
+      "ye_buechse_gelb_export",
+      "ye_buechse_rosa_export",
+      "ye_buechse_weiss_export",
+      "ye_export01",
+      "ye_export02",
+      "ye_export03",
+      "ye_export04",
+      "ye_export05",
+      "ye_export06",
+      "ye_export_fish1",
+      "ye_export_fish2",
+      "ye_trademeat1",
+      "yi_artillery_shell",
+      "yi_beacon",
+      "yi_cannon_shell",
+      "yi_construction-robot",
+      "yi_logistic-robot",
+      "yi_mine_impact",
+      "yi_mine_plasma",
+      "yi_roboport",
+      "ypfw_trader_sign"
+    ],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-zproduct-1-recipe",
+    "source": "prototypes/ir_zmaterial.lua",
+    "line": 7,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "wood",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "y-dirt",
+        "amount": 10.0
+      },
+      {
+        "type": "fluid",
+        "name": "water",
+        "amount": 25.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "raw-wood",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "y-biomass",
+        "amount": 2.0
+      }
+    ],
+    "category": "chemistry",
+    "seconds": 10.0,
+    "scenario_references": {
+      "raw-wood": "wood"
+    },
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [
+      "y_unlimited_wood",
+      "ye_synwood"
+    ],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-zproduct-2-recipe",
+    "source": "prototypes/ir_zmaterial.lua",
+    "line": 19,
+    "state": "commented",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-refined-yres1",
+        "amount": 2.0
+      },
+      {
+        "type": "item",
+        "name": "iron-plate",
+        "amount": 4.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-combat-armor-1",
+        "amount": 2.0
+      }
+    ],
+    "category": "yrcat-material",
+    "seconds": 1.0,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [],
+    "assessment": "preserve_commented_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-zproduct-3-recipe",
+    "source": "prototypes/ir_zmaterial.lua",
+    "line": 32,
+    "state": "commented",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-grycoil",
+        "amount": 2.0
+      },
+      {
+        "type": "item",
+        "name": "iron-plate",
+        "amount": 4.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-combat-armor-2",
+        "amount": 2.0
+      }
+    ],
+    "category": "yrcat-material",
+    "seconds": 1.0,
+    "scenario_references": {
+      "y-combat-armor-2": "yi_equip_shield_a"
+    },
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [
+      "yi_equip_shield_a"
+    ],
+    "assessment": "preserve_commented_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-zproduct-4-recipe",
+    "source": "prototypes/ir_zmaterial.lua",
+    "line": 45,
+    "state": "commented",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-redcoil",
+        "amount": 2.0
+      },
+      {
+        "type": "item",
+        "name": "y-stuff-3",
+        "amount": 2.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-combat-armor-3",
+        "amount": 2.0
+      }
+    ],
+    "category": "yrcat-material",
+    "seconds": 1.0,
+    "scenario_references": {
+      "y-combat-armor-3": "yi_equip_shield_a"
+    },
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [
+      "yi_equip_shield_a"
+    ],
+    "assessment": "preserve_commented_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-zproduct-5-recipe",
+    "source": "prototypes/ir_zmaterial.lua",
+    "line": 56,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-chip-1",
+        "amount": 1.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-combat-train",
+        "amount": 6.0
+      }
+    ],
+    "category": "yrcat-component",
+    "seconds": 4.0,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-zproduct-6-recipe",
+    "source": "prototypes/ir_zmaterial.lua",
+    "line": 66,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-biomass",
+        "amount": 2.0
+      },
+      {
+        "type": "item",
+        "name": "y-basic-t1-mf",
+        "amount": 1.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-medic",
+        "amount": 6.0
+      }
+    ],
+    "category": "yrcat-component",
+    "seconds": 4.0,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-zproduct-7-recipe",
+    "source": "prototypes/ir_zmaterial.lua",
+    "line": 76,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-chip-1",
+        "amount": 2.0
+      },
+      {
+        "type": "item",
+        "name": "y-stuff-1",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "iron-plate",
+        "amount": 4.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-zielfern",
+        "amount": 4.0
+      }
+    ],
+    "category": "yrcat-component",
+    "seconds": 4.0,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-zproduct-8-recipe",
+    "source": "prototypes/ir_zmaterial.lua",
+    "line": 87,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-iron-case",
+        "amount": 2.0
+      },
+      {
+        "type": "item",
+        "name": "y-refined-yres1",
+        "amount": 6.0
+      },
+      {
+        "type": "item",
+        "name": "y-infused-uca2",
+        "amount": 3.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-zproduct-8",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-component",
+    "seconds": 2.0,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-zproduct-8charge-recipe",
+    "source": "prototypes/ir_zmaterial.lua",
+    "line": 88,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-zproduct-8-empty",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "y-infused-uca2",
+        "amount": 3.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-zproduct-8",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-component",
+    "seconds": 2.0,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-rzproduct-8-recipe",
+    "source": "prototypes/ir_zmaterial.lua",
+    "line": 92,
+    "state": "active",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-zproduct-8",
+        "amount": 1.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-stuff-2",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "y-redcoil",
+        "amount": 3.0
+      },
+      {
+        "type": "item",
+        "name": "y-grycoil",
+        "amount": 3.0
+      },
+      {
+        "type": "item",
+        "name": "y-zproduct-8-empty",
+        "amount": 1.0
+      }
+    ],
+    "category": "yrcat-retrade",
+    "seconds": 0.5,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [],
+    "assessment": "retain_distinct_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-fab3ix_y8-recipe",
+    "source": "prototypes/uo_fab3.lua",
+    "line": 21,
+    "state": "commented",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-cyb-8",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "y-fame",
+        "amount": 1.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-cyb-8u",
+        "amount": 1.0
+      }
+    ],
+    "category": "crafting",
+    "seconds": 5.0,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [],
+    "assessment": "preserve_commented_recipe"
+  },
+  {
+    "type": "recipe",
+    "name": "y-fab3ix_y9-recipe",
+    "source": "prototypes/uo_fab3.lua",
+    "line": 22,
+    "state": "commented",
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "y-cyb-9",
+        "amount": 1.0
+      },
+      {
+        "type": "item",
+        "name": "y-fame",
+        "amount": 3.0
+      }
+    ],
+    "results": [
+      {
+        "type": "item",
+        "name": "y-cyb-9u",
+        "amount": 1.0
+      }
+    ],
+    "category": "crafting",
+    "seconds": 5.0,
+    "scenario_references": {},
+    "original_material_matches": [],
+    "scenario_material_matches": [],
+    "same_product_parent_recipes": [],
+    "assessment": "preserve_commented_recipe"
+  }
+]
