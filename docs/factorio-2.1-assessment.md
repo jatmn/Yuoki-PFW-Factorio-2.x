@@ -2,13 +2,17 @@
 
 A restoration appears feasible, but changing `factorio_version` would not produce a working mod. The work includes modernizing prototypes, restoring production paths, reconciling parent-mod ownership, and rebalancing an incomplete economic design.
 
-This assessment is a discovery record. No implementation sequence or new gameplay feature has been approved. No PFW 2.1 load test was performed.
+This assessment is a discovery record. The owner has added an explicit requirement to reuse assets from loaded Yuoki/Engines and remove redundant local copies; see [asset reuse](asset-reuse.md). The complete implementation sequence and new gameplay features remain undecided. No PFW 2.1 load test was performed.
 
 ## Existing infrastructure
 
 Local, clean Yuoki and Engines checkouts inspected during discovery both identified themselves as version 1.3.0 targeting Factorio 2.1, requiring base 2.1.20 or later. An existing Factorio 2.1.21 data dump was used for a name comparison. This is stronger evidence than the stale portal pages that still listed the mods as 2.0, but it is a local snapshot rather than proof of a particular public release status.
 
 All external ingredient/product names referenced by active PFW recipes appeared somewhere in that dump except `flame-thrower` and `raw-wood`. This comparison checks names, not type correctness, reachability, balance, or full compatibility. The dump came from prior workspace activity and was not freshly generated for this discovery. [Snapshot identities and limitations](data/dependency-comparison.json).
+
+## Asset ownership before the port
+
+Map existing artwork to supported parent-owned assets before modernizing its prototype references. Keep both parent mods required, detect their enabled versions in the data stage, and use their files or visual definitions. Remove duplicate PFW files after replacement references and graphical validation are complete. This is a required part of restoration, not optional later package cleanup. The [initial audit](asset-reuse.md) records 39 same-named candidates, with resolution/layout differences still requiring review.
 
 ## Required compatibility work
 
@@ -54,7 +58,7 @@ No runtime control system is present in the old archive. The existing trade mech
 
 This is a recommendation, not an accepted implementation plan:
 
-1. Preserve the six functional factory roles, Trade Nodes, and eight exotic materials.
+1. Map and reuse parent-owned artwork under the accepted asset-reuse requirement, then preserve the six functional factory roles, Trade Nodes, and eight exotic materials.
 2. Restore a small set of complete production/export/import loops using modern dependency items.
 3. Validate that every intended product can be obtained without editor spawning.
 4. Evaluate costs and returns before expanding the remaining chains.

@@ -49,6 +49,14 @@ python3 docs/tools/extract_inventory.py --reference-dump /path/to/data-raw-dump.
 
 The comparison prints name-level differences only. A matching name does not establish a matching prototype type or recipe accessibility. The historical dependency comparison is recorded separately so it is not silently overwritten when using a different modern mod set.
 
+## Reproduce the asset candidate audit
+
+```sh
+python3 docs/tools/audit_assets.py --yuoki /path/to/Yuoki --engines /path/to/yi_engines
+```
+
+This reads both provider checkouts, hashes PNG files, records dimensions, and locates exact-byte or filename candidates. It also scans uncommented Lua for literal asset references. It does not establish visual equivalence or authorize deletion. [Asset reuse requirements and limitations](asset-reuse.md). The [data lifecycle](https://lua-api.factorio.com/latest/auxiliary/data-lifecycle.html) and [FileName](https://lua-api.factorio.com/latest/types/FileName.html) references document enabled-mod detection and asset paths.
+
 ## Verify preservation
 
 ```sh
