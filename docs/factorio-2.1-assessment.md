@@ -2,7 +2,7 @@
 
 A restoration appears feasible, but changing `factorio_version` would not produce a working mod. The work includes modernizing prototypes, restoring production paths, reconciling parent-mod ownership, and rebalancing an incomplete economic design.
 
-This assessment is a discovery record. The owner has added explicit requirements to reuse assets from loaded Yuoki/Engines, remove redundant local copies, and modernize the resolution of retained PFW artwork; see [asset reuse](asset-reuse.md). The complete implementation sequence and new gameplay features remain undecided. No PFW 2.1 load test was performed.
+This assessment is a discovery record. The owner has added explicit requirements to reuse assets from loaded Yuoki/Engines, remove redundant local copies, and modernize the resolution of retained PFW artwork; see [asset reuse](asset-reuse.md). Unused assets and disabled/commented-out code must remain in the maintained source tree for future reuse; only confirmed parent-owned asset duplicates may be removed through the mapped replacement process. The complete implementation sequence and new gameplay features remain undecided. No PFW 2.1 load test was performed.
 
 ## Existing infrastructure
 
@@ -43,6 +43,8 @@ Resolve the 18 items lacking a producing recipe and the two direct name collisio
 Reusing `yi_lasergun`, `yi_minigun`, `yi_ammo_energie`, and modern equipment would fit the intent suggested by the bundled migration file. It would also change recipe costs and possibly create different recycling paths. Mapping names is not sufficient to preserve economics.
 
 No runtime control system is present in the old archive. The existing trade mechanism can remain data-stage recipes and assembling machines; a new scripted market is not necessary to restore its original concept.
+
+Preserve currently disabled recipes, placeholder content, and their unique assets while deciding how to restore them. Neither lack of a live recipe path nor lack of an asset reference authorizes pruning. Keep disabled behavior inactive until it is deliberately revisited.
 
 ## Balance and optional DLC
 

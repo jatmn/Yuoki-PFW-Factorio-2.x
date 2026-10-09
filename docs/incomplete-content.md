@@ -2,6 +2,8 @@
 
 This release already contains unfinished or disconnected content. “Defined,” “craftable,” and “usable” are different states. The counts below describe declarations in the ZIP; they do not prove reachability in every historical dependency combination.
 
+The owner requires retaining the disabled/commented-out code and unused assets for future development. The inventory below identifies restoration opportunities, not content to prune. Confirmed duplicate artwork may be replaced by parent-owned assets with its mapping preserved; unique unused assets and inactive code stay in the maintained source tree.
+
 ## Items without a producing recipe in this archive
 
 | Group | Internal names | Consequence |
