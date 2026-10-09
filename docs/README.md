@@ -13,8 +13,9 @@ This directory records the original mod's behavior and the initial investigation
 5. [Factorio 2.1 assessment](factorio-2.1-assessment.md): concrete compatibility work and decisions that remain open.
 6. [Parent-mod asset reuse](asset-reuse.md): accepted reuse/removal, unused-content preservation, and retained-artwork resolution requirements, initial ownership candidates, and validation before changing local artwork.
 7. [Content ownership](content-ownership.md): reuse parent-owned machines, items, guns, and equivalent recipes while preserving unique PFW recipes and commenting out redundant definitions.
-8. [Repository protections](repository-protections.md): the existing Yuoki policy used when creating this repository.
-9. [Sources and verification](sources-and-verification.md): evidence, reproducibility commands, and work not performed.
+8. [Completed content evaluation](content-evaluation.md): current parent ownership candidates, all active/commented recipe dispositions, machine compatibility and unresolved mappings.
+9. [Repository protections](repository-protections.md): the existing Yuoki policy used when creating this repository.
+10. [Sources and verification](sources-and-verification.md): evidence, reproducibility commands, and work not performed.
 
 ## Machine-readable records
 
@@ -24,6 +25,7 @@ This directory records the original mod's behavior and the initial investigation
 - [All 105 active recipes, JSON](data/recipes.json).
 - [Prototype and recipe counts](data/inventory-summary.json).
 - [Dependency comparison record](data/dependency-comparison.json).
+- [Content evaluation provenance](data/content-evaluation.json), [prototype dispositions](data/prototype-ownership-inventory.csv), [140-recipe audit](data/recipe-ownership-audit.csv), [detailed recipe comparison](data/recipe-ownership-audit.json), and [parent prototype evidence](data/parent-content-evidence.json).
 - [Complete PNG audit](data/asset-audit.json) and [parent-asset reuse candidates](data/asset-reuse-candidates.csv).
 
 “Active” means an uncommented declaration in the supplied source, not a recipe proven reachable or working in-game. Material costs and equipment statistics describe the original source unless explicitly marked as a modern comparison.

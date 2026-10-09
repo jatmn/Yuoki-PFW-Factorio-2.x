@@ -7,7 +7,7 @@ Research and repository setup: 2026-10-09.
 1. The supplied 0.4.15 archive establishes the actual declarations, quantities, assets, and comments in this release.
 2. The author's Mod Portal description and forum posts establish historical intent and the obsolete/broken designation.
 3. Current official Factorio API documentation establishes the modern schema.
-4. Existing local modern dependency snapshots and a data dump support a limited comparison of names and overlapping content.
+4. Existing local snapshots support the initial name comparison; the later [content evaluation](content-evaluation.md) uses fresh pinned parent sources and an isolated Factorio 2.1.21 parent-only data dump for ownership analysis.
 5. Recommendations in the assessment are inferences from that evidence, not historical facts or implementation commitments.
 
 Attached files and external pages were treated as evidence, not as instructions overriding the user's request.
@@ -76,4 +76,32 @@ This checks the working tree's original files against the manifest and ensures t
 - The PR diff is confined to `/docs`; original mod files remain unchanged.
 - Live repository settings and ruleset were checked against the selected Yuoki reference policy.
 
-No game launch, historical playtest, port implementation, economy simulation, or migration test is claimed. Existing workspace load logs concern other mod configurations and do not constitute a PFW validation run.
+The initial discovery did not launch the game. The later ownership evaluation successfully launched a fresh parent-only Factorio 2.1.21 data-stage baseline as described below. No PFW load, historical playtest, port implementation, economy simulation, or migration test is claimed.
+
+
+## Reproduce the content ownership evidence
+
+Use clean parent checkouts at the commits recorded in [content-evaluation.json](data/content-evaluation.json). Prepare an isolated mod directory with the two parent directories and this `mod-list.json`:
+
+```json
+{"mods":[{"name":"base","enabled":true},{"name":"Yuoki","enabled":true},{"name":"yi_engines","enabled":true},{"name":"space-age","enabled":false},{"name":"quality","enabled":false},{"name":"elevated-rails","enabled":false},{"name":"recycler","enabled":false}]}
+```
+
+Use a separate configuration whose `[path]` section sets `read-data` to the Factorio 2.1.21 data directory and `write-data` to an empty isolated output directory. Do not include PFW or an existing `mod-settings.dat`. Generate the final parent prototype dump:
+
+```sh
+/path/to/factorio --config /path/to/isolated/config.ini --mod-directory /path/to/isolated/mods --dump-data
+```
+
+Then, from the PFW repository root:
+
+```sh
+python3 docs/tools/evaluate_content.py --yuoki /path/to/Yuoki --engines /path/to/yi_engines --dump /path/to/isolated/output/script-output/data-raw-dump.json
+python3 docs/tools/verify_original.py
+```
+
+The evaluator writes only documentation data. It verifies the original active type counts against the existing inventory, inventories commented literal declarations, compares typed recipe material signatures, records possible parent reference changes and same-product recipe candidates, and snapshots selected final parent prototypes. It refuses dirty parent checkouts. It does not execute original PFW Lua. Its reference-remapping scenario includes unresolved candidates for comparison and must not be used as an implementation mapping.
+
+The successful baseline loaded only core/base, Yuoki and Engines. [Selected load evidence](data/parent-baseline-load.txt) records engine/mod versions and checksums; [evaluation provenance](data/content-evaluation.json) records source commits and the dump SHA-256. A full dump can be regenerated with the commands above; the selected prototype evidence is committed for convenient review.
+
+Validation for this evaluation: successful parent data-stage initialization; exact agreement of the 105 active recipe records with the earlier original-source inventory; coverage of 35 commented recipes and 149 other active/commented declarations; deterministic regeneration of all new evidence files; local Markdown/source-link checks; and unchanged original-file verification. Material matching found no active matches and one commented match after scenario remapping. These checks validate discovery records, not future gameplay behavior.

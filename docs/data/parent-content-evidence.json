@@ -1,0 +1,3138 @@
+[
+  {
+    "type": "item",
+    "name": "y-stargate",
+    "locations": [
+      {
+        "mod": "Yuoki",
+        "source": "prototypes/item/ir_stargate.lua",
+        "line": 103
+      }
+    ],
+    "prototype": {
+      "type": "item",
+      "name": "y-stargate",
+      "place_result": "y-stargate",
+      "icon_size": 64,
+      "icon": "__Yuoki__/graphics/icons/laika-gate-icon.png",
+      "group": "yuoki-energy",
+      "subgroup": "y_ultimate_products",
+      "stack_size": 3
+    }
+  },
+  {
+    "type": "item",
+    "name": "y-fame-gen",
+    "locations": [
+      {
+        "mod": "Yuoki",
+        "source": "prototypes/item/ir_stargate.lua",
+        "line": 138
+      }
+    ],
+    "prototype": {
+      "type": "item",
+      "name": "y-fame-gen",
+      "place_result": "y-fame-gen",
+      "icon_size": 64,
+      "icon": "__Yuoki__/graphics/entity/thanks-icon.png",
+      "group": "yuoki-energy",
+      "subgroup": "y_ultimate_products",
+      "stack_size": 6
+    }
+  },
+  {
+    "type": "item",
+    "name": "yi_equip_shield_a",
+    "locations": [
+      {
+        "mod": "Yuoki",
+        "source": "prototypes/objects/y_player_equipment.lua",
+        "line": 203
+      }
+    ],
+    "prototype": {
+      "type": "item",
+      "name": "yi_equip_shield_a",
+      "icon_size": 64,
+      "icon": "__Yuoki__/graphics/armor/panz4_32.png",
+      "order": "a1",
+      "stack_size": 15,
+      "place_as_equipment_result": "yi_equip_shield_a",
+      "group": "yuoki-energy",
+      "subgroup": "y_personal_equip"
+    }
+  },
+  {
+    "type": "item",
+    "name": "yi_equip_shield_b",
+    "locations": [
+      {
+        "mod": "Yuoki",
+        "source": "prototypes/objects/y_player_equipment.lua",
+        "line": 215
+      }
+    ],
+    "prototype": {
+      "type": "item",
+      "name": "yi_equip_shield_b",
+      "icon_size": 64,
+      "icon": "__Yuoki__/graphics/armor/panz5_32.png",
+      "order": "a2",
+      "stack_size": 15,
+      "place_as_equipment_result": "yi_equip_shield_b",
+      "group": "yuoki-energy",
+      "subgroup": "y_personal_equip"
+    }
+  },
+  {
+    "type": "item",
+    "name": "yi_equip_battery_a",
+    "locations": [
+      {
+        "mod": "Yuoki",
+        "source": "prototypes/objects/y_player_equipment.lua",
+        "line": 227
+      }
+    ],
+    "prototype": {
+      "type": "item",
+      "name": "yi_equip_battery_a",
+      "icon_size": 64,
+      "icon": "__Yuoki__/graphics/armor/lfg13.png",
+      "order": "b1",
+      "stack_size": 15,
+      "place_as_equipment_result": "yi_equip_battery_a",
+      "group": "yuoki-energy",
+      "subgroup": "y_personal_equip"
+    }
+  },
+  {
+    "type": "item",
+    "name": "yi_equip_generator_a",
+    "locations": [
+      {
+        "mod": "Yuoki",
+        "source": "prototypes/objects/y_player_equipment.lua",
+        "line": 239
+      }
+    ],
+    "prototype": {
+      "type": "item",
+      "name": "yi_equip_generator_a",
+      "icon_size": 64,
+      "icon": "__Yuoki__/graphics/armor/energy_icon.png",
+      "order": "c1",
+      "stack_size": 15,
+      "place_as_equipment_result": "yi_equip_generator_a",
+      "group": "yuoki-energy",
+      "subgroup": "y_personal_equip"
+    }
+  },
+  {
+    "type": "item",
+    "name": "yi_equip_legs_a",
+    "locations": [
+      {
+        "mod": "Yuoki",
+        "source": "prototypes/objects/y_player_equipment.lua",
+        "line": 251
+      }
+    ],
+    "prototype": {
+      "type": "item",
+      "name": "yi_equip_legs_a",
+      "icon_size": 64,
+      "icon": "__Yuoki__/graphics/armor/exo1_icon_e.png",
+      "order": "d1",
+      "stack_size": 15,
+      "place_as_equipment_result": "yi_equip_legs_a",
+      "group": "yuoki-energy",
+      "subgroup": "y_personal_equip"
+    }
+  },
+  {
+    "type": "item",
+    "name": "ypfw_trader_sign",
+    "locations": [
+      {
+        "mod": "Yuoki",
+        "source": "prototypes/z_items.lua",
+        "line": 424
+      }
+    ],
+    "prototype": {
+      "type": "item",
+      "name": "ypfw_trader_sign",
+      "icon_size": 64,
+      "icon": "__Yuoki__/graphics/icons/sign_trader_icon.png",
+      "group": "yuoki",
+      "subgroup": "y-stargate-r",
+      "order": "a",
+      "stack_size": 100000,
+      "auto_recycle": false
+    }
+  },
+  {
+    "type": "item",
+    "name": "y_organic_dust",
+    "locations": [
+      {
+        "mod": "Yuoki",
+        "source": "prototypes/z_items.lua",
+        "line": 727
+      }
+    ],
+    "prototype": {
+      "type": "item",
+      "name": "y_organic_dust",
+      "icon_size": 64,
+      "icon": "__Yuoki__/graphics/icons/sawdust_32.png",
+      "group": "yuoki_liquids",
+      "subgroup": "y_refine_material",
+      "order": "a1",
+      "stack_size": 700
+    }
+  },
+  {
+    "type": "item",
+    "name": "ye_trade_node",
+    "locations": [
+      {
+        "mod": "yi_engines",
+        "source": "prototypes/z_items.lua",
+        "line": 56
+      }
+    ],
+    "prototype": {
+      "type": "item",
+      "name": "ye_trade_node",
+      "icon_size": 32,
+      "icon": "__yi_engines__/graphics/icons/trade_node_icon.png",
+      "group": "yi_engines",
+      "subgroup": "yie_machinery2",
+      "order": "a2",
+      "stack_size": 30,
+      "default_request_amount": 5,
+      "place_result": "ye_trade_node"
+    }
+  },
+  {
+    "type": "item",
+    "name": "ye_fassembly1",
+    "locations": [
+      {
+        "mod": "yi_engines",
+        "source": "prototypes/z_items.lua",
+        "line": 608
+      }
+    ],
+    "prototype": {
+      "type": "item",
+      "name": "ye_fassembly1",
+      "icon_size": 32,
+      "icon": "__yi_engines__/graphics/entity/factory_var_1_icon.png",
+      "group": "yi_engines",
+      "subgroup": "yie_machinery2",
+      "order": "f1",
+      "stack_size": 20,
+      "default_request_amount": 5,
+      "place_result": "ye_fassembly1"
+    }
+  },
+  {
+    "type": "item",
+    "name": "ye_fassembly_sp",
+    "locations": [
+      {
+        "mod": "yi_engines",
+        "source": "prototypes/z_items.lua",
+        "line": 621
+      }
+    ],
+    "prototype": {
+      "type": "item",
+      "name": "ye_fassembly_sp",
+      "icon_size": 32,
+      "icon": "__yi_engines__/graphics/entity/factory_var_3_icon.png",
+      "group": "yi_engines",
+      "subgroup": "yie_machinery2",
+      "order": "f3",
+      "stack_size": 20,
+      "default_request_amount": 5,
+      "place_result": "ye_fassembly_sp"
+    }
+  },
+  {
+    "type": "item",
+    "name": "ye_fassembly2",
+    "locations": [
+      {
+        "mod": "yi_engines",
+        "source": "prototypes/z_items.lua",
+        "line": 634
+      }
+    ],
+    "prototype": {
+      "type": "item",
+      "name": "ye_fassembly2",
+      "icon_size": 32,
+      "icon": "__yi_engines__/graphics/entity/factory_var_2_icon.png",
+      "group": "yi_engines",
+      "subgroup": "yie_machinery2",
+      "order": "f2",
+      "stack_size": 20,
+      "default_request_amount": 5,
+      "place_result": "ye_fassembly2"
+    }
+  },
+  {
+    "type": "item",
+    "name": "ye_biomixed",
+    "locations": [
+      {
+        "mod": "yi_engines",
+        "source": "prototypes/z_items.lua",
+        "line": 1095
+      }
+    ],
+    "prototype": {
+      "type": "item",
+      "name": "ye_biomixed",
+      "icon_size": 32,
+      "icon": "__yi_engines__/graphics/biomixed.png",
+      "group": "yie_harvest",
+      "subgroup": "yie_agroproducts",
+      "order": "a",
+      "stack_size": 150,
+      "default_request_amount": 25,
+      "fuel_value": "80MJ",
+      "fuel_categories": [
+        "chemical"
+      ]
+    }
+  },
+  {
+    "type": "recipe",
+    "name": "y-stargate",
+    "locations": [
+      {
+        "mod": "Yuoki",
+        "source": "prototypes/item/ir_stargate.lua",
+        "line": 81
+      }
+    ],
+    "prototype": {
+      "type": "recipe",
+      "name": "y-stargate",
+      "energy_required": 5,
+      "enabled": true,
+      "ingredients": [
+        {
+          "type": "item",
+          "name": "y-accumulator-crystal-m",
+          "amount": 1
+        },
+        {
+          "type": "item",
+          "name": "y-alien-infuser",
+          "amount": 1
+        },
+        {
+          "type": "item",
+          "name": "y-crystal2",
+          "amount": 150
+        },
+        {
+          "type": "item",
+          "name": "y-chip-2",
+          "amount": 8
+        },
+        {
+          "type": "item",
+          "name": "y-fame",
+          "amount": 10
+        }
+      ],
+      "results": [
+        {
+          "type": "item",
+          "name": "y-stargate",
+          "amount": 1
+        }
+      ],
+      "main_product": "y-stargate",
+      "group": "yuoki-energy",
+      "subgroup": "y_ultimate_products",
+      "order": "2"
+    }
+  },
+  {
+    "type": "recipe",
+    "name": "y-fame-gen",
+    "locations": [
+      {
+        "mod": "Yuoki",
+        "source": "prototypes/item/ir_stargate.lua",
+        "line": 115
+      }
+    ],
+    "prototype": {
+      "type": "recipe",
+      "name": "y-fame-gen",
+      "energy_required": 5,
+      "enabled": true,
+      "ingredients": [
+        {
+          "type": "item",
+          "name": "y-alien-infuser",
+          "amount": 1
+        },
+        {
+          "type": "item",
+          "name": "y-ups-flywheel-b",
+          "amount": 1
+        },
+        {
+          "type": "item",
+          "name": "y-unicomp-a2",
+          "amount": 100
+        }
+      ],
+      "results": [
+        {
+          "type": "item",
+          "name": "y-fame-gen",
+          "amount": 1
+        },
+        {
+          "type": "item",
+          "name": "y_rwtechsign",
+          "amount": 10
+        }
+      ],
+      "main_product": "y-fame-gen",
+      "icon_size": 64,
+      "icon": "__Yuoki__/graphics/entity/thanks-icon.png",
+      "group": "yuoki-energy",
+      "subgroup": "y_ultimate_products",
+      "order": "1"
+    }
+  },
+  {
+    "type": "recipe",
+    "name": "yi_armor_gray",
+    "locations": [
+      {
+        "mod": "Yuoki",
+        "source": "prototypes/objects/y_player_styles_items.lua",
+        "line": 3
+      }
+    ],
+    "prototype": {
+      "type": "recipe",
+      "name": "yi_armor_gray",
+      "energy_required": 5,
+      "ingredients": [
+        {
+          "type": "item",
+          "name": "y-fame",
+          "amount": 1
+        },
+        {
+          "type": "item",
+          "name": "y_quantrinum_infused",
+          "amount": 2
+        },
+        {
+          "type": "item",
+          "name": "y-basic-t2-mf",
+          "amount": 6
+        },
+        {
+          "type": "item",
+          "name": "y_rwtechsign",
+          "amount": 1500
+        },
+        {
+          "type": "item",
+          "name": "y_structure_element",
+          "amount": 22
+        }
+      ],
+      "results": [
+        {
+          "type": "item",
+          "name": "yi_armor_gray",
+          "amount": 1
+        }
+      ],
+      "enabled": true,
+      "order": "sm-1",
+      "subgroup": "y_personal",
+      "group": "yuoki-energy"
+    }
+  },
+  {
+    "type": "recipe",
+    "name": "yi_walker_a",
+    "locations": [
+      {
+        "mod": "Yuoki",
+        "source": "prototypes/objects/y_player_styles_items.lua",
+        "line": 62
+      }
+    ],
+    "prototype": {
+      "type": "recipe",
+      "name": "yi_walker_a",
+      "energy_required": 10,
+      "ingredients": [
+        {
+          "type": "item",
+          "name": "yi_armor_gold",
+          "amount": 1
+        },
+        {
+          "type": "item",
+          "name": "y-fame",
+          "amount": 8
+        },
+        {
+          "type": "item",
+          "name": "y_quantrinum_infused",
+          "amount": 2
+        },
+        {
+          "type": "item",
+          "name": "y-basic-t2-mf",
+          "amount": 12
+        },
+        {
+          "type": "item",
+          "name": "y_rwtechsign",
+          "amount": 10000
+        },
+        {
+          "type": "item",
+          "name": "y_structure_element",
+          "amount": 40
+        }
+      ],
+      "results": [
+        {
+          "type": "item",
+          "name": "yi_walker_a",
+          "amount": 1
+        }
+      ],
+      "enabled": true,
+      "order": "sm-4",
+      "subgroup": "y_personal",
+      "group": "yuoki-energy"
+    }
+  },
+  {
+    "type": "recipe",
+    "name": "yi_walker_c",
+    "locations": [
+      {
+        "mod": "Yuoki",
+        "source": "prototypes/objects/y_player_styles_items.lua",
+        "line": 82
+      }
+    ],
+    "prototype": {
+      "type": "recipe",
+      "name": "yi_walker_c",
+      "energy_required": 10,
+      "ingredients": [
+        {
+          "type": "item",
+          "name": "yi_walker_a",
+          "amount": 1
+        },
+        {
+          "type": "item",
+          "name": "y-fame",
+          "amount": 20
+        },
+        {
+          "type": "item",
+          "name": "y_quantrinum_infused",
+          "amount": 10
+        },
+        {
+          "type": "item",
+          "name": "y-basic-t2-mf",
+          "amount": 25
+        },
+        {
+          "type": "item",
+          "name": "y_rwtechsign",
+          "amount": 25000
+        },
+        {
+          "type": "item",
+          "name": "y_structure_element",
+          "amount": 100
+        }
+      ],
+      "results": [
+        {
+          "type": "item",
+          "name": "yi_walker_c",
+          "amount": 1
+        }
+      ],
+      "enabled": true,
+      "order": "sm-6",
+      "subgroup": "y_personal",
+      "group": "yuoki-energy"
+    }
+  },
+  {
+    "type": "recipe",
+    "name": "yi_equip_shield_a",
+    "locations": [
+      {
+        "mod": "Yuoki",
+        "source": "prototypes/objects/y_player_equipment.lua",
+        "line": 2
+      }
+    ],
+    "prototype": {
+      "type": "recipe",
+      "name": "yi_equip_shield_a",
+      "energy_required": 3,
+      "ingredients": [
+        {
+          "type": "item",
+          "name": "y-accumulator-b",
+          "amount": 1
+        },
+        {
+          "type": "item",
+          "name": "y_structure_element",
+          "amount": 4
+        }
+      ],
+      "results": [
+        {
+          "type": "item",
+          "name": "yi_equip_shield_a",
+          "amount": 1
+        }
+      ],
+      "main_product": "yi_equip_shield_a",
+      "enabled": true,
+      "order": "a1",
+      "group": "yuoki-energy",
+      "subgroup": "y_personal_equip",
+      "categories": [
+        "yuoki-wonder"
+      ]
+    }
+  },
+  {
+    "type": "recipe",
+    "name": "yi_equip_shield_b",
+    "locations": [
+      {
+        "mod": "Yuoki",
+        "source": "prototypes/objects/y_player_equipment.lua",
+        "line": 21
+      }
+    ],
+    "prototype": {
+      "type": "recipe",
+      "name": "yi_equip_shield_b",
+      "energy_required": 3,
+      "ingredients": [
+        {
+          "type": "item",
+          "name": "y-accumulator-b-t2",
+          "amount": 1
+        },
+        {
+          "type": "item",
+          "name": "y_structure_element",
+          "amount": 8
+        }
+      ],
+      "results": [
+        {
+          "type": "item",
+          "name": "yi_equip_shield_b",
+          "amount": 1
+        }
+      ],
+      "main_product": "yi_equip_shield_b",
+      "enabled": true,
+      "order": "a2",
+      "group": "yuoki-energy",
+      "subgroup": "y_personal_equip",
+      "categories": [
+        "yuoki-wonder"
+      ]
+    }
+  },
+  {
+    "type": "recipe",
+    "name": "yi_equip_battery_a",
+    "locations": [
+      {
+        "mod": "Yuoki",
+        "source": "prototypes/objects/y_player_equipment.lua",
+        "line": 40
+      }
+    ],
+    "prototype": {
+      "type": "recipe",
+      "name": "yi_equip_battery_a",
+      "energy_required": 3,
+      "ingredients": [
+        {
+          "type": "item",
+          "name": "y-raw-fuelnium",
+          "amount": 8
+        },
+        {
+          "type": "item",
+          "name": "y-chip-2",
+          "amount": 6
+        },
+        {
+          "type": "item",
+          "name": "y_structure_vessel",
+          "amount": 2
+        }
+      ],
+      "results": [
+        {
+          "type": "item",
+          "name": "yi_equip_battery_a",
+          "amount": 1
+        }
+      ],
+      "main_product": "yi_equip_battery_a",
+      "enabled": true,
+      "order": "b1",
+      "group": "yuoki-energy",
+      "subgroup": "y_personal_equip",
+      "categories": [
+        "yuoki-wonder"
+      ]
+    }
+  },
+  {
+    "type": "recipe",
+    "name": "yi_equip_generator_a",
+    "locations": [
+      {
+        "mod": "Yuoki",
+        "source": "prototypes/objects/y_player_equipment.lua",
+        "line": 60
+      }
+    ],
+    "prototype": {
+      "type": "recipe",
+      "name": "yi_equip_generator_a",
+      "energy_required": 3,
+      "ingredients": [
+        {
+          "type": "item",
+          "name": "y_steam_turbine_mc",
+          "amount": 1
+        },
+        {
+          "type": "item",
+          "name": "y-infused-uca2",
+          "amount": 4
+        },
+        {
+          "type": "item",
+          "name": "y-basic-t2-mf",
+          "amount": 8
+        },
+        {
+          "type": "item",
+          "name": "y_structure_vessel",
+          "amount": 8
+        }
+      ],
+      "results": [
+        {
+          "type": "item",
+          "name": "yi_equip_generator_a",
+          "amount": 1
+        }
+      ],
+      "main_product": "yi_equip_generator_a",
+      "enabled": true,
+      "order": "c1",
+      "group": "yuoki-energy",
+      "subgroup": "y_personal_equip",
+      "categories": [
+        "yuoki-wonder"
+      ]
+    }
+  },
+  {
+    "type": "recipe",
+    "name": "yi_equip_legs_a",
+    "locations": [
+      {
+        "mod": "Yuoki",
+        "source": "prototypes/objects/y_player_equipment.lua",
+        "line": 81
+      }
+    ],
+    "prototype": {
+      "type": "recipe",
+      "name": "yi_equip_legs_a",
+      "energy_required": 3,
+      "ingredients": [
+        {
+          "type": "item",
+          "name": "y-basic-t2-mf",
+          "amount": 8
+        },
+        {
+          "type": "item",
+          "name": "y_structure_element",
+          "amount": 12
+        },
+        {
+          "type": "item",
+          "name": "y-bluegear",
+          "amount": 8
+        },
+        {
+          "type": "item",
+          "name": "y-chip-2",
+          "amount": 2
+        }
+      ],
+      "results": [
+        {
+          "type": "item",
+          "name": "yi_equip_legs_a",
+          "amount": 1
+        }
+      ],
+      "main_product": "yi_equip_legs_a",
+      "enabled": true,
+      "order": "d1",
+      "group": "yuoki-energy",
+      "subgroup": "y_personal_equip",
+      "categories": [
+        "yuoki-wonder"
+      ]
+    }
+  },
+  {
+    "type": "recipe",
+    "name": "yi_minigun",
+    "locations": [
+      {
+        "mod": "Yuoki",
+        "source": "prototypes/objects/y_player_equipment.lua",
+        "line": 102
+      }
+    ],
+    "prototype": {
+      "type": "recipe",
+      "name": "yi_minigun",
+      "energy_required": 3,
+      "ingredients": [
+        {
+          "type": "item",
+          "name": "y-basic-t2-mf",
+          "amount": 1
+        },
+        {
+          "type": "item",
+          "name": "y_structure_element",
+          "amount": 4
+        },
+        {
+          "type": "item",
+          "name": "y-bluegear",
+          "amount": 3
+        }
+      ],
+      "results": [
+        {
+          "type": "item",
+          "name": "yi_minigun",
+          "amount": 1
+        }
+      ],
+      "main_product": "yi_minigun",
+      "enabled": true,
+      "order": "w1",
+      "group": "yuoki-energy",
+      "subgroup": "y_personal_equip",
+      "categories": [
+        "yuoki-wonder"
+      ]
+    }
+  },
+  {
+    "type": "recipe",
+    "name": "yi_lasergun",
+    "locations": [
+      {
+        "mod": "Yuoki",
+        "source": "prototypes/objects/y_player_equipment.lua",
+        "line": 122
+      }
+    ],
+    "prototype": {
+      "type": "recipe",
+      "name": "yi_lasergun",
+      "energy_required": 3,
+      "ingredients": [
+        {
+          "type": "item",
+          "name": "y-raw-fuelnium",
+          "amount": 3
+        },
+        {
+          "type": "item",
+          "name": "y-crystal-cnd",
+          "amount": 1
+        },
+        {
+          "type": "item",
+          "name": "y_structure_element",
+          "amount": 3
+        }
+      ],
+      "results": [
+        {
+          "type": "item",
+          "name": "yi_lasergun",
+          "amount": 1
+        }
+      ],
+      "main_product": "yi_lasergun",
+      "enabled": true,
+      "order": "w2",
+      "group": "yuoki-energy",
+      "subgroup": "y_personal_equip",
+      "categories": [
+        "yuoki-wonder"
+      ]
+    }
+  },
+  {
+    "type": "recipe",
+    "name": "yi_ammo_energie",
+    "locations": [
+      {
+        "mod": "Yuoki",
+        "source": "prototypes/objects/y_player_equipment.lua",
+        "line": 142
+      }
+    ],
+    "prototype": {
+      "type": "recipe",
+      "name": "yi_ammo_energie",
+      "energy_required": 2,
+      "ingredients": [
+        {
+          "type": "item",
+          "name": "y-raw-fuelnium",
+          "amount": 1
+        },
+        {
+          "type": "item",
+          "name": "y_structure_element",
+          "amount": 2
+        },
+        {
+          "type": "item",
+          "name": "y-conductive-wire-1",
+          "amount": 1
+        }
+      ],
+      "results": [
+        {
+          "type": "item",
+          "name": "yi_ammo_energie",
+          "amount": 10
+        }
+      ],
+      "main_product": "yi_ammo_energie",
+      "enabled": true,
+      "order": "x1",
+      "group": "yuoki-energy",
+      "subgroup": "y_personal_equip",
+      "categories": [
+        "crafting"
+      ]
+    }
+  },
+  {
+    "type": "recipe",
+    "name": "ypfw_trader_sign",
+    "locations": [
+      {
+        "mod": "Yuoki",
+        "source": "prototypes/z_recipes.lua",
+        "line": 771
+      }
+    ],
+    "prototype": {
+      "type": "recipe",
+      "name": "ypfw_trader_sign",
+      "categories": [
+        "yuoki_trader_ultimate"
+      ],
+      "enabled": true,
+      "energy_required": 30,
+      "ingredients": {},
+      "results": [
+        {
+          "type": "item",
+          "name": "ypfw_trader_sign",
+          "amount": 1
+        }
+      ],
+      "main_product": "ypfw_trader_sign",
+      "icon": "__Yuoki__/graphics/icons/sign_trader_icon.png",
+      "icon_size": 64,
+      "order": "a",
+      "group": "yuoki",
+      "subgroup": "y-stargate-4"
+    }
+  },
+  {
+    "type": "recipe",
+    "name": "ye_fassembly1",
+    "locations": [
+      {
+        "mod": "yi_engines",
+        "source": "prototypes/z_recipes.lua",
+        "line": 1959
+      }
+    ],
+    "prototype": {
+      "type": "recipe",
+      "name": "ye_fassembly1",
+      "categories": [
+        "crafting"
+      ],
+      "enabled": true,
+      "energy_required": 5,
+      "ingredients": [
+        {
+          "type": "item",
+          "name": "arithmetic-combinator",
+          "amount": 1
+        },
+        {
+          "type": "item",
+          "name": "y-basic-t1-mf",
+          "amount": 2
+        },
+        {
+          "type": "item",
+          "name": "y-chip-1",
+          "amount": 4
+        },
+        {
+          "type": "item",
+          "name": "y-bluegear",
+          "amount": 4
+        }
+      ],
+      "results": [
+        {
+          "type": "item",
+          "name": "ye_fassembly1",
+          "amount": 1
+        }
+      ],
+      "main_product": "ye_fassembly1",
+      "icon": "__yi_engines__/graphics/entity/factory_var_1_icon.png",
+      "icon_size": 32,
+      "order": "as-a",
+      "group": "yi_engines",
+      "subgroup": "yie_machinery2"
+    }
+  },
+  {
+    "type": "recipe",
+    "name": "ye_fassembly_sp",
+    "locations": [
+      {
+        "mod": "yi_engines",
+        "source": "prototypes/z_recipes.lua",
+        "line": 1983
+      }
+    ],
+    "prototype": {
+      "type": "recipe",
+      "name": "ye_fassembly_sp",
+      "categories": [
+        "crafting"
+      ],
+      "enabled": true,
+      "energy_required": 5,
+      "ingredients": [
+        {
+          "type": "item",
+          "name": "ye_science_blue",
+          "amount": 3
+        },
+        {
+          "type": "item",
+          "name": "yie_hard_metals",
+          "amount": 8
+        },
+        {
+          "type": "item",
+          "name": "ye_fassembly1",
+          "amount": 1
+        },
+        {
+          "type": "item",
+          "name": "y_structure_element",
+          "amount": 8
+        }
+      ],
+      "results": [
+        {
+          "type": "item",
+          "name": "ye_fassembly_sp",
+          "amount": 1
+        }
+      ],
+      "main_product": "ye_fassembly_sp",
+      "icon": "__yi_engines__/graphics/entity/factory_var_3_icon.png",
+      "icon_size": 32,
+      "order": "as-c",
+      "group": "yi_engines",
+      "subgroup": "yie_machinery2"
+    }
+  },
+  {
+    "type": "recipe",
+    "name": "ye_fassembly2",
+    "locations": [
+      {
+        "mod": "yi_engines",
+        "source": "prototypes/z_recipes.lua",
+        "line": 2007
+      }
+    ],
+    "prototype": {
+      "type": "recipe",
+      "name": "ye_fassembly2",
+      "categories": [
+        "crafting"
+      ],
+      "enabled": true,
+      "energy_required": 5,
+      "ingredients": [
+        {
+          "type": "item",
+          "name": "ye_science_blue",
+          "amount": 1
+        },
+        {
+          "type": "item",
+          "name": "yie_hard_metals",
+          "amount": 4
+        },
+        {
+          "type": "item",
+          "name": "ye_fassembly1",
+          "amount": 1
+        },
+        {
+          "type": "item",
+          "name": "y_structure_element",
+          "amount": 4
+        }
+      ],
+      "results": [
+        {
+          "type": "item",
+          "name": "ye_fassembly2",
+          "amount": 1
+        }
+      ],
+      "main_product": "ye_fassembly2",
+      "icon": "__yi_engines__/graphics/entity/factory_var_2_icon.png",
+      "icon_size": 32,
+      "order": "as-b",
+      "group": "yi_engines",
+      "subgroup": "yie_machinery2"
+    }
+  },
+  {
+    "type": "recipe",
+    "name": "ye_biomixed",
+    "locations": [
+      {
+        "mod": "yi_engines",
+        "source": "prototypes/z_recipes.lua",
+        "line": 2906
+      }
+    ],
+    "prototype": {
+      "type": "recipe",
+      "name": "ye_biomixed",
+      "categories": [
+        "advanced-crafting"
+      ],
+      "enabled": true,
+      "energy_required": 1,
+      "ingredients": [
+        {
+          "type": "item",
+          "name": "ye_sugar",
+          "amount": 4
+        },
+        {
+          "type": "item",
+          "name": "ye_corn_a",
+          "amount": 70
+        }
+      ],
+      "results": [
+        {
+          "type": "item",
+          "name": "ye_biomixed",
+          "amount": 1
+        },
+        {
+          "type": "item",
+          "name": "y_greensign",
+          "amount": 3
+        }
+      ],
+      "main_product": "ye_biomixed",
+      "icon": "__yi_engines__/graphics/biomixed.png",
+      "icon_size": 32,
+      "order": "p02",
+      "group": "yie_harvest",
+      "subgroup": "yie_agroproducts"
+    }
+  },
+  {
+    "type": "recipe",
+    "name": "ye_trade_node",
+    "locations": [
+      {
+        "mod": "yi_engines",
+        "source": "prototypes/r_externs.lua",
+        "line": 3
+      }
+    ],
+    "prototype": {
+      "type": "recipe",
+      "name": "ye_trade_node",
+      "ingredients": [
+        {
+          "type": "item",
+          "name": "y-stargate",
+          "amount": 1
+        },
+        {
+          "type": "item",
+          "name": "y-bluegear",
+          "amount": 2
+        },
+        {
+          "type": "item",
+          "name": "iron-plate",
+          "amount": 4
+        }
+      ],
+      "results": [
+        {
+          "type": "item",
+          "name": "ye_trade_node",
+          "amount": 1
+        }
+      ],
+      "enabled": true,
+      "order": "a2",
+      "subgroup": "yie_machinery2"
+    }
+  },
+  {
+    "type": "assembling-machine",
+    "name": "y-stargate",
+    "locations": [
+      {
+        "mod": "Yuoki",
+        "source": "prototypes/entity/e_ultimates.lua",
+        "line": 4
+      }
+    ],
+    "prototype": {
+      "type": "assembling-machine",
+      "name": "y-stargate",
+      "minable": {
+        "hardness": 0.2,
+        "mining_time": 0.5,
+        "result": "y-stargate"
+      },
+      "icon_size": 64,
+      "icon": "__Yuoki__/graphics/icons/laika-gate-icon.png",
+      "flags": [
+        "placeable-neutral",
+        "player-creation"
+      ],
+      "max_health": 200,
+      "resistances": [
+        {
+          "type": "fire",
+          "percent": 70
+        }
+      ],
+      "collision_box": [
+        [
+          -1.7,
+          -1.7
+        ],
+        [
+          1.7,
+          1.7
+        ]
+      ],
+      "selection_box": [
+        [
+          -2,
+          -2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "graphics_set": {
+        "animation": {
+          "layers": [
+            {
+              "filename": "__Yuoki__/graphics/entity/laika.png",
+              "priority": "medium",
+              "width": 160,
+              "height": 160,
+              "frame_count": 1,
+              "shift": [
+                0.5,
+                -0.5
+              ]
+            }
+          ]
+        }
+      },
+      "crafting_categories": [
+        "yuoki-stargate"
+      ],
+      "crafting_speed": 1,
+      "energy_source": {
+        "type": "electric",
+        "input_priority": "secondary",
+        "usage_priority": "secondary-input",
+        "emissions_per_minute": {
+          "pollution": 5
+        }
+      },
+      "energy_usage": "25MW",
+      "ingredient_count": 4,
+      "order": "laika-gate"
+    }
+  },
+  {
+    "type": "assembling-machine",
+    "name": "y-fame-gen",
+    "locations": [
+      {
+        "mod": "Yuoki",
+        "source": "prototypes/entity/e_ultimates.lua",
+        "line": 42
+      }
+    ],
+    "prototype": {
+      "type": "assembling-machine",
+      "name": "y-fame-gen",
+      "minable": {
+        "hardness": 0.2,
+        "mining_time": 0.5,
+        "result": "y-fame-gen"
+      },
+      "icon_size": 64,
+      "icon": "__Yuoki__/graphics/entity/thanks-icon.png",
+      "flags": [
+        "placeable-neutral",
+        "player-creation"
+      ],
+      "max_health": 500,
+      "resistances": [
+        {
+          "type": "fire",
+          "percent": 70
+        }
+      ],
+      "collision_box": [
+        [
+          -2.6,
+          -2.6
+        ],
+        [
+          2.6,
+          2.6
+        ]
+      ],
+      "selection_box": [
+        [
+          -3,
+          -3
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "graphics_set": {
+        "animation": {
+          "layers": [
+            {
+              "filename": "__Yuoki__/graphics/entity/thanks-sheet.png",
+              "priority": "medium",
+              "width": 192,
+              "height": 192,
+              "frame_count": 12,
+              "line_length": 6,
+              "shift": [
+                0,
+                0
+              ],
+              "animation_speed": 0.1
+            }
+          ]
+        }
+      },
+      "crafting_categories": [
+        "yuoki-fame"
+      ],
+      "crafting_speed": 1,
+      "energy_source": {
+        "type": "electric",
+        "input_priority": "secondary",
+        "usage_priority": "secondary-input",
+        "emissions_per_minute": {
+          "pollution": 10
+        }
+      },
+      "energy_usage": "2MW",
+      "ingredient_count": 1
+    }
+  },
+  {
+    "type": "assembling-machine",
+    "name": "ye_fassembly1",
+    "locations": [
+      {
+        "mod": "yi_engines",
+        "source": "prototypes/e_assemblys.lua",
+        "line": 46
+      }
+    ],
+    "prototype": {
+      "type": "assembling-machine",
+      "name": "ye_fassembly1",
+      "icon_size": 32,
+      "icon": "__yi_engines__/graphics/entity/factory_var_1_icon.png",
+      "flags": [
+        "placeable-neutral",
+        "placeable-player",
+        "player-creation"
+      ],
+      "minable": {
+        "hardness": 0.2,
+        "mining_time": 0.5,
+        "result": "ye_fassembly1"
+      },
+      "max_health": 450,
+      "corpse": "big-remnants",
+      "resistances": [
+        {
+          "type": "physical",
+          "percent": 60
+        }
+      ],
+      "collision_box": [
+        [
+          -1.2,
+          -1.2
+        ],
+        [
+          1.2,
+          1.2
+        ]
+      ],
+      "selection_box": [
+        [
+          -1.5,
+          -1.5
+        ],
+        [
+          1.5,
+          1.5
+        ]
+      ],
+      "fast_replaceable_group": "assembling-machine",
+      "next_upgrade": "ye_fassembly2",
+      "fluid_boxes": [
+        {
+          "production_type": "input",
+          "pipe_picture": {
+            "north": {
+              "priority": "extra-high",
+              "scale": 0.5,
+              "width": 52,
+              "height": 20,
+              "shift": [
+                0.015625,
+                0.34375
+              ],
+              "line_length": 1,
+              "filename": "__base__/graphics/entity/assembling-machine-2/assembling-machine-2-pipe-N.png"
+            },
+            "east": {
+              "priority": "extra-high",
+              "scale": 0.5,
+              "width": 32,
+              "height": 72,
+              "shift": [
+                -0.71875,
+                0.046875
+              ],
+              "line_length": 1,
+              "filename": "__base__/graphics/entity/assembling-machine-2/assembling-machine-2-pipe-E.png"
+            },
+            "south": {
+              "priority": "extra-high",
+              "scale": 0.5,
+              "width": 64,
+              "height": 70,
+              "shift": [
+                0,
+                -0.75
+              ],
+              "line_length": 1,
+              "filename": "__base__/graphics/entity/assembling-machine-2/assembling-machine-2-pipe-S.png"
+            },
+            "west": {
+              "priority": "extra-high",
+              "scale": 0.5,
+              "width": 30,
+              "height": 74,
+              "shift": [
+                0.71875,
+                0.015625
+              ],
+              "line_length": 1,
+              "filename": "__base__/graphics/entity/assembling-machine-2/assembling-machine-2-pipe-W.png"
+            }
+          },
+          "pipe_covers": {
+            "north": {
+              "layers": [
+                {
+                  "filename": "__base__/graphics/entity/pipe-covers/pipe-cover-north.png",
+                  "priority": "extra-high",
+                  "width": 128,
+                  "height": 128,
+                  "scale": 0.5
+                },
+                {
+                  "filename": "__base__/graphics/entity/pipe-covers/pipe-cover-north-shadow.png",
+                  "priority": "extra-high",
+                  "width": 128,
+                  "height": 128,
+                  "scale": 0.5,
+                  "draw_as_shadow": true
+                }
+              ]
+            },
+            "east": {
+              "layers": [
+                {
+                  "filename": "__base__/graphics/entity/pipe-covers/pipe-cover-east.png",
+                  "priority": "extra-high",
+                  "width": 128,
+                  "height": 128,
+                  "scale": 0.5
+                },
+                {
+                  "filename": "__base__/graphics/entity/pipe-covers/pipe-cover-east-shadow.png",
+                  "priority": "extra-high",
+                  "width": 128,
+                  "height": 128,
+                  "scale": 0.5,
+                  "draw_as_shadow": true
+                }
+              ]
+            },
+            "south": {
+              "layers": [
+                {
+                  "filename": "__base__/graphics/entity/pipe-covers/pipe-cover-south.png",
+                  "priority": "extra-high",
+                  "width": 128,
+                  "height": 128,
+                  "scale": 0.5
+                },
+                {
+                  "filename": "__base__/graphics/entity/pipe-covers/pipe-cover-south-shadow.png",
+                  "priority": "extra-high",
+                  "width": 128,
+                  "height": 128,
+                  "scale": 0.5,
+                  "draw_as_shadow": true
+                }
+              ]
+            },
+            "west": {
+              "layers": [
+                {
+                  "filename": "__base__/graphics/entity/pipe-covers/pipe-cover-west.png",
+                  "priority": "extra-high",
+                  "width": 128,
+                  "height": 128,
+                  "scale": 0.5
+                },
+                {
+                  "filename": "__base__/graphics/entity/pipe-covers/pipe-cover-west-shadow.png",
+                  "priority": "extra-high",
+                  "width": 128,
+                  "height": 128,
+                  "scale": 0.5,
+                  "draw_as_shadow": true
+                }
+              ]
+            }
+          },
+          "volume": 1000,
+          "pipe_connections": [
+            {
+              "flow_direction": "input",
+              "direction": 0,
+              "position": [
+                0,
+                -1
+              ]
+            }
+          ],
+          "secondary_draw_orders": {
+            "north": -1
+          }
+        },
+        {
+          "production_type": "output",
+          "pipe_picture": {
+            "north": {
+              "priority": "extra-high",
+              "scale": 0.5,
+              "width": 52,
+              "height": 20,
+              "shift": [
+                0.015625,
+                0.34375
+              ],
+              "line_length": 1,
+              "filename": "__base__/graphics/entity/assembling-machine-2/assembling-machine-2-pipe-N.png"
+            },
+            "east": {
+              "priority": "extra-high",
+              "scale": 0.5,
+              "width": 32,
+              "height": 72,
+              "shift": [
+                -0.71875,
+                0.046875
+              ],
+              "line_length": 1,
+              "filename": "__base__/graphics/entity/assembling-machine-2/assembling-machine-2-pipe-E.png"
+            },
+            "south": {
+              "priority": "extra-high",
+              "scale": 0.5,
+              "width": 64,
+              "height": 70,
+              "shift": [
+                0,
+                -0.75
+              ],
+              "line_length": 1,
+              "filename": "__base__/graphics/entity/assembling-machine-2/assembling-machine-2-pipe-S.png"
+            },
+            "west": {
+              "priority": "extra-high",
+              "scale": 0.5,
+              "width": 30,
+              "height": 74,
+              "shift": [
+                0.71875,
+                0.015625
+              ],
+              "line_length": 1,
+              "filename": "__base__/graphics/entity/assembling-machine-2/assembling-machine-2-pipe-W.png"
+            }
+          },
+          "pipe_covers": {
+            "north": {
+              "layers": [
+                {
+                  "filename": "__base__/graphics/entity/pipe-covers/pipe-cover-north.png",
+                  "priority": "extra-high",
+                  "width": 128,
+                  "height": 128,
+                  "scale": 0.5
+                },
+                {
+                  "filename": "__base__/graphics/entity/pipe-covers/pipe-cover-north-shadow.png",
+                  "priority": "extra-high",
+                  "width": 128,
+                  "height": 128,
+                  "scale": 0.5,
+                  "draw_as_shadow": true
+                }
+              ]
+            },
+            "east": {
+              "layers": [
+                {
+                  "filename": "__base__/graphics/entity/pipe-covers/pipe-cover-east.png",
+                  "priority": "extra-high",
+                  "width": 128,
+                  "height": 128,
+                  "scale": 0.5
+                },
+                {
+                  "filename": "__base__/graphics/entity/pipe-covers/pipe-cover-east-shadow.png",
+                  "priority": "extra-high",
+                  "width": 128,
+                  "height": 128,
+                  "scale": 0.5,
+                  "draw_as_shadow": true
+                }
+              ]
+            },
+            "south": {
+              "layers": [
+                {
+                  "filename": "__base__/graphics/entity/pipe-covers/pipe-cover-south.png",
+                  "priority": "extra-high",
+                  "width": 128,
+                  "height": 128,
+                  "scale": 0.5
+                },
+                {
+                  "filename": "__base__/graphics/entity/pipe-covers/pipe-cover-south-shadow.png",
+                  "priority": "extra-high",
+                  "width": 128,
+                  "height": 128,
+                  "scale": 0.5,
+                  "draw_as_shadow": true
+                }
+              ]
+            },
+            "west": {
+              "layers": [
+                {
+                  "filename": "__base__/graphics/entity/pipe-covers/pipe-cover-west.png",
+                  "priority": "extra-high",
+                  "width": 128,
+                  "height": 128,
+                  "scale": 0.5
+                },
+                {
+                  "filename": "__base__/graphics/entity/pipe-covers/pipe-cover-west-shadow.png",
+                  "priority": "extra-high",
+                  "width": 128,
+                  "height": 128,
+                  "scale": 0.5,
+                  "draw_as_shadow": true
+                }
+              ]
+            }
+          },
+          "volume": 1000,
+          "pipe_connections": [
+            {
+              "flow_direction": "output",
+              "direction": 8,
+              "position": [
+                0,
+                1
+              ]
+            }
+          ],
+          "secondary_draw_orders": {
+            "north": -1
+          }
+        }
+      ],
+      "fluid_boxes_off_when_no_fluid_recipe": true,
+      "graphics_set": {
+        "animation": {
+          "layers": [
+            {
+              "filename": "__yi_engines__/graphics/entity/av1_sheet.png",
+              "width": 320,
+              "height": 320,
+              "shift": [
+                1,
+                -1
+              ],
+              "frame_count": 16,
+              "line_length": 4,
+              "animation_speed": 0.25,
+              "scale": 0.5
+            }
+          ]
+        }
+      },
+      "crafting_categories": [
+        "crafting",
+        "advanced-crafting"
+      ],
+      "crafting_speed": 2,
+      "energy_source": {
+        "type": "electric",
+        "usage_priority": "secondary-input",
+        "emissions_per_minute": {
+          "pollution": 4.8
+        }
+      },
+      "energy_usage": "300kW",
+      "ingredient_count": 6,
+      "module_slots": 3,
+      "icons_positioning": [
+        {
+          "inventory_index": 4,
+          "max_icons_per_row": 5,
+          "scale": 0.5
+        }
+      ],
+      "allowed_effects": [
+        "consumption",
+        "speed",
+        "productivity",
+        "pollution"
+      ],
+      "order": "a[atomics]",
+      "subgroup": "yie_machinery2"
+    }
+  },
+  {
+    "type": "assembling-machine",
+    "name": "ye_fassembly2",
+    "locations": [
+      {
+        "mod": "yi_engines",
+        "source": "prototypes/e_assemblys.lua",
+        "line": 119
+      }
+    ],
+    "prototype": {
+      "type": "assembling-machine",
+      "name": "ye_fassembly2",
+      "icon_size": 32,
+      "icon": "__yi_engines__/graphics/entity/factory_var_2_icon.png",
+      "flags": [
+        "placeable-neutral",
+        "placeable-player",
+        "player-creation"
+      ],
+      "minable": {
+        "hardness": 0.2,
+        "mining_time": 0.5,
+        "result": "ye_fassembly2"
+      },
+      "max_health": 500,
+      "corpse": "big-remnants",
+      "resistances": [
+        {
+          "type": "physical",
+          "percent": 60
+        }
+      ],
+      "collision_box": [
+        [
+          -1.2,
+          -1.2
+        ],
+        [
+          1.2,
+          1.2
+        ]
+      ],
+      "selection_box": [
+        [
+          -1.5,
+          -1.5
+        ],
+        [
+          1.5,
+          1.5
+        ]
+      ],
+      "fast_replaceable_group": "assembling-machine",
+      "next_upgrade": "ye_fassembly_sp",
+      "fluid_boxes": [
+        {
+          "volume": 200,
+          "production_type": "input",
+          "pipe_picture": {
+            "north": {
+              "priority": "extra-high",
+              "scale": 0.5,
+              "width": 52,
+              "height": 20,
+              "shift": [
+                0.015625,
+                0.34375
+              ],
+              "line_length": 1,
+              "filename": "__base__/graphics/entity/assembling-machine-2/assembling-machine-2-pipe-N.png"
+            },
+            "east": {
+              "priority": "extra-high",
+              "scale": 0.5,
+              "width": 32,
+              "height": 72,
+              "shift": [
+                -0.71875,
+                0.046875
+              ],
+              "line_length": 1,
+              "filename": "__base__/graphics/entity/assembling-machine-2/assembling-machine-2-pipe-E.png"
+            },
+            "south": {
+              "priority": "extra-high",
+              "scale": 0.5,
+              "width": 64,
+              "height": 70,
+              "shift": [
+                0,
+                -0.75
+              ],
+              "line_length": 1,
+              "filename": "__base__/graphics/entity/assembling-machine-2/assembling-machine-2-pipe-S.png"
+            },
+            "west": {
+              "priority": "extra-high",
+              "scale": 0.5,
+              "width": 30,
+              "height": 74,
+              "shift": [
+                0.71875,
+                0.015625
+              ],
+              "line_length": 1,
+              "filename": "__base__/graphics/entity/assembling-machine-2/assembling-machine-2-pipe-W.png"
+            }
+          },
+          "pipe_covers": {
+            "north": {
+              "layers": [
+                {
+                  "filename": "__base__/graphics/entity/pipe-covers/pipe-cover-north.png",
+                  "priority": "extra-high",
+                  "width": 128,
+                  "height": 128,
+                  "scale": 0.5
+                },
+                {
+                  "filename": "__base__/graphics/entity/pipe-covers/pipe-cover-north-shadow.png",
+                  "priority": "extra-high",
+                  "width": 128,
+                  "height": 128,
+                  "scale": 0.5,
+                  "draw_as_shadow": true
+                }
+              ]
+            },
+            "east": {
+              "layers": [
+                {
+                  "filename": "__base__/graphics/entity/pipe-covers/pipe-cover-east.png",
+                  "priority": "extra-high",
+                  "width": 128,
+                  "height": 128,
+                  "scale": 0.5
+                },
+                {
+                  "filename": "__base__/graphics/entity/pipe-covers/pipe-cover-east-shadow.png",
+                  "priority": "extra-high",
+                  "width": 128,
+                  "height": 128,
+                  "scale": 0.5,
+                  "draw_as_shadow": true
+                }
+              ]
+            },
+            "south": {
+              "layers": [
+                {
+                  "filename": "__base__/graphics/entity/pipe-covers/pipe-cover-south.png",
+                  "priority": "extra-high",
+                  "width": 128,
+                  "height": 128,
+                  "scale": 0.5
+                },
+                {
+                  "filename": "__base__/graphics/entity/pipe-covers/pipe-cover-south-shadow.png",
+                  "priority": "extra-high",
+                  "width": 128,
+                  "height": 128,
+                  "scale": 0.5,
+                  "draw_as_shadow": true
+                }
+              ]
+            },
+            "west": {
+              "layers": [
+                {
+                  "filename": "__base__/graphics/entity/pipe-covers/pipe-cover-west.png",
+                  "priority": "extra-high",
+                  "width": 128,
+                  "height": 128,
+                  "scale": 0.5
+                },
+                {
+                  "filename": "__base__/graphics/entity/pipe-covers/pipe-cover-west-shadow.png",
+                  "priority": "extra-high",
+                  "width": 128,
+                  "height": 128,
+                  "scale": 0.5,
+                  "draw_as_shadow": true
+                }
+              ]
+            }
+          },
+          "base_area": 5,
+          "base_level": -1,
+          "pipe_connections": [
+            {
+              "flow_direction": "input",
+              "direction": 0,
+              "position": [
+                0,
+                -1
+              ]
+            }
+          ]
+        },
+        {
+          "volume": 200,
+          "pipe_picture": {
+            "north": {
+              "priority": "extra-high",
+              "scale": 0.5,
+              "width": 52,
+              "height": 20,
+              "shift": [
+                0.015625,
+                0.34375
+              ],
+              "line_length": 1,
+              "filename": "__base__/graphics/entity/assembling-machine-2/assembling-machine-2-pipe-N.png"
+            },
+            "east": {
+              "priority": "extra-high",
+              "scale": 0.5,
+              "width": 32,
+              "height": 72,
+              "shift": [
+                -0.71875,
+                0.046875
+              ],
+              "line_length": 1,
+              "filename": "__base__/graphics/entity/assembling-machine-2/assembling-machine-2-pipe-E.png"
+            },
+            "south": {
+              "priority": "extra-high",
+              "scale": 0.5,
+              "width": 64,
+              "height": 70,
+              "shift": [
+                0,
+                -0.75
+              ],
+              "line_length": 1,
+              "filename": "__base__/graphics/entity/assembling-machine-2/assembling-machine-2-pipe-S.png"
+            },
+            "west": {
+              "priority": "extra-high",
+              "scale": 0.5,
+              "width": 30,
+              "height": 74,
+              "shift": [
+                0.71875,
+                0.015625
+              ],
+              "line_length": 1,
+              "filename": "__base__/graphics/entity/assembling-machine-2/assembling-machine-2-pipe-W.png"
+            }
+          },
+          "pipe_covers": {
+            "north": {
+              "layers": [
+                {
+                  "filename": "__base__/graphics/entity/pipe-covers/pipe-cover-north.png",
+                  "priority": "extra-high",
+                  "width": 128,
+                  "height": 128,
+                  "scale": 0.5
+                },
+                {
+                  "filename": "__base__/graphics/entity/pipe-covers/pipe-cover-north-shadow.png",
+                  "priority": "extra-high",
+                  "width": 128,
+                  "height": 128,
+                  "scale": 0.5,
+                  "draw_as_shadow": true
+                }
+              ]
+            },
+            "east": {
+              "layers": [
+                {
+                  "filename": "__base__/graphics/entity/pipe-covers/pipe-cover-east.png",
+                  "priority": "extra-high",
+                  "width": 128,
+                  "height": 128,
+                  "scale": 0.5
+                },
+                {
+                  "filename": "__base__/graphics/entity/pipe-covers/pipe-cover-east-shadow.png",
+                  "priority": "extra-high",
+                  "width": 128,
+                  "height": 128,
+                  "scale": 0.5,
+                  "draw_as_shadow": true
+                }
+              ]
+            },
+            "south": {
+              "layers": [
+                {
+                  "filename": "__base__/graphics/entity/pipe-covers/pipe-cover-south.png",
+                  "priority": "extra-high",
+                  "width": 128,
+                  "height": 128,
+                  "scale": 0.5
+                },
+                {
+                  "filename": "__base__/graphics/entity/pipe-covers/pipe-cover-south-shadow.png",
+                  "priority": "extra-high",
+                  "width": 128,
+                  "height": 128,
+                  "scale": 0.5,
+                  "draw_as_shadow": true
+                }
+              ]
+            },
+            "west": {
+              "layers": [
+                {
+                  "filename": "__base__/graphics/entity/pipe-covers/pipe-cover-west.png",
+                  "priority": "extra-high",
+                  "width": 128,
+                  "height": 128,
+                  "scale": 0.5
+                },
+                {
+                  "filename": "__base__/graphics/entity/pipe-covers/pipe-cover-west-shadow.png",
+                  "priority": "extra-high",
+                  "width": 128,
+                  "height": 128,
+                  "scale": 0.5,
+                  "draw_as_shadow": true
+                }
+              ]
+            }
+          },
+          "production_type": "output",
+          "base_area": 5,
+          "base_level": 1,
+          "pipe_connections": [
+            {
+              "flow_direction": "output",
+              "direction": 8,
+              "position": [
+                0,
+                1
+              ]
+            }
+          ]
+        }
+      ],
+      "fluid_boxes_off_when_no_fluid_recipe": true,
+      "graphics_set": {
+        "animation": {
+          "layers": [
+            {
+              "filename": "__yi_engines__/graphics/entity/av2_sheet.png",
+              "width": 256,
+              "height": 256,
+              "shift": [
+                0.5,
+                -0.5
+              ],
+              "frame_count": 36,
+              "line_length": 6,
+              "animation_speed": 0.2,
+              "scale": 0.5
+            }
+          ]
+        }
+      },
+      "crafting_categories": [
+        "crafting",
+        "advanced-crafting",
+        "crafting-with-fluid"
+      ],
+      "crafting_speed": 3,
+      "energy_source": {
+        "type": "electric",
+        "usage_priority": "secondary-input",
+        "emissions_per_minute": {
+          "pollution": 8
+        }
+      },
+      "energy_usage": "500kW",
+      "ingredient_count": 6,
+      "module_slots": 3,
+      "icons_positioning": [
+        {
+          "inventory_index": 4,
+          "max_icons_per_row": 5,
+          "scale": 0.5
+        }
+      ],
+      "allowed_effects": [
+        "consumption",
+        "speed",
+        "productivity",
+        "pollution"
+      ],
+      "order": "a[atomics]",
+      "subgroup": "yie_machinery2"
+    }
+  },
+  {
+    "type": "assembling-machine",
+    "name": "ye_fassembly_sp",
+    "locations": [
+      {
+        "mod": "yi_engines",
+        "source": "prototypes/e_assemblys.lua",
+        "line": 196
+      }
+    ],
+    "prototype": {
+      "type": "assembling-machine",
+      "name": "ye_fassembly_sp",
+      "icon_size": 32,
+      "icon": "__yi_engines__/graphics/entity/factory_var_3_icon.png",
+      "flags": [
+        "placeable-neutral",
+        "placeable-player",
+        "player-creation"
+      ],
+      "minable": {
+        "hardness": 0.2,
+        "mining_time": 0.5,
+        "result": "ye_fassembly_sp"
+      },
+      "max_health": 550,
+      "corpse": "big-remnants",
+      "resistances": [
+        {
+          "type": "physical",
+          "percent": 60
+        }
+      ],
+      "collision_box": [
+        [
+          -1.2,
+          -1.2
+        ],
+        [
+          1.2,
+          1.2
+        ]
+      ],
+      "selection_box": [
+        [
+          -1.5,
+          -1.5
+        ],
+        [
+          1.5,
+          1.5
+        ]
+      ],
+      "fast_replaceable_group": "assembling-machine",
+      "fluid_boxes": [
+        {
+          "volume": 200,
+          "pipe_picture": {
+            "north": {
+              "priority": "extra-high",
+              "scale": 0.5,
+              "width": 52,
+              "height": 20,
+              "shift": [
+                0.015625,
+                0.34375
+              ],
+              "line_length": 1,
+              "filename": "__base__/graphics/entity/assembling-machine-2/assembling-machine-2-pipe-N.png"
+            },
+            "east": {
+              "priority": "extra-high",
+              "scale": 0.5,
+              "width": 32,
+              "height": 72,
+              "shift": [
+                -0.71875,
+                0.046875
+              ],
+              "line_length": 1,
+              "filename": "__base__/graphics/entity/assembling-machine-2/assembling-machine-2-pipe-E.png"
+            },
+            "south": {
+              "priority": "extra-high",
+              "scale": 0.5,
+              "width": 64,
+              "height": 70,
+              "shift": [
+                0,
+                -0.75
+              ],
+              "line_length": 1,
+              "filename": "__base__/graphics/entity/assembling-machine-2/assembling-machine-2-pipe-S.png"
+            },
+            "west": {
+              "priority": "extra-high",
+              "scale": 0.5,
+              "width": 30,
+              "height": 74,
+              "shift": [
+                0.71875,
+                0.015625
+              ],
+              "line_length": 1,
+              "filename": "__base__/graphics/entity/assembling-machine-2/assembling-machine-2-pipe-W.png"
+            }
+          },
+          "pipe_covers": {
+            "north": {
+              "layers": [
+                {
+                  "filename": "__base__/graphics/entity/pipe-covers/pipe-cover-north.png",
+                  "priority": "extra-high",
+                  "width": 128,
+                  "height": 128,
+                  "scale": 0.5
+                },
+                {
+                  "filename": "__base__/graphics/entity/pipe-covers/pipe-cover-north-shadow.png",
+                  "priority": "extra-high",
+                  "width": 128,
+                  "height": 128,
+                  "scale": 0.5,
+                  "draw_as_shadow": true
+                }
+              ]
+            },
+            "east": {
+              "layers": [
+                {
+                  "filename": "__base__/graphics/entity/pipe-covers/pipe-cover-east.png",
+                  "priority": "extra-high",
+                  "width": 128,
+                  "height": 128,
+                  "scale": 0.5
+                },
+                {
+                  "filename": "__base__/graphics/entity/pipe-covers/pipe-cover-east-shadow.png",
+                  "priority": "extra-high",
+                  "width": 128,
+                  "height": 128,
+                  "scale": 0.5,
+                  "draw_as_shadow": true
+                }
+              ]
+            },
+            "south": {
+              "layers": [
+                {
+                  "filename": "__base__/graphics/entity/pipe-covers/pipe-cover-south.png",
+                  "priority": "extra-high",
+                  "width": 128,
+                  "height": 128,
+                  "scale": 0.5
+                },
+                {
+                  "filename": "__base__/graphics/entity/pipe-covers/pipe-cover-south-shadow.png",
+                  "priority": "extra-high",
+                  "width": 128,
+                  "height": 128,
+                  "scale": 0.5,
+                  "draw_as_shadow": true
+                }
+              ]
+            },
+            "west": {
+              "layers": [
+                {
+                  "filename": "__base__/graphics/entity/pipe-covers/pipe-cover-west.png",
+                  "priority": "extra-high",
+                  "width": 128,
+                  "height": 128,
+                  "scale": 0.5
+                },
+                {
+                  "filename": "__base__/graphics/entity/pipe-covers/pipe-cover-west-shadow.png",
+                  "priority": "extra-high",
+                  "width": 128,
+                  "height": 128,
+                  "scale": 0.5,
+                  "draw_as_shadow": true
+                }
+              ]
+            }
+          },
+          "production_type": "input",
+          "base_area": 5,
+          "base_level": -1,
+          "pipe_connections": [
+            {
+              "flow_direction": "input",
+              "direction": 0,
+              "position": [
+                0,
+                -1
+              ]
+            }
+          ]
+        }
+      ],
+      "fluid_boxes_off_when_no_fluid_recipe": true,
+      "graphics_set": {
+        "animation": {
+          "layers": [
+            {
+              "filename": "__yi_engines__/graphics/entity/av3_sheet.png",
+              "width": 256,
+              "height": 256,
+              "shift": [
+                0.5,
+                -0.5
+              ],
+              "frame_count": 25,
+              "line_length": 5,
+              "animation_speed": 0.1,
+              "scale": 0.5
+            }
+          ]
+        }
+      },
+      "crafting_categories": [
+        "crafting",
+        "advanced-crafting",
+        "crafting-with-fluid"
+      ],
+      "crafting_speed": 5,
+      "energy_source": {
+        "type": "electric",
+        "usage_priority": "secondary-input",
+        "emissions_per_minute": {
+          "pollution": 11.2
+        }
+      },
+      "energy_usage": "700kW",
+      "ingredient_count": 6,
+      "module_slots": 2,
+      "icons_positioning": [
+        {
+          "inventory_index": 4,
+          "max_icons_per_row": 5,
+          "scale": 0.5
+        }
+      ],
+      "allowed_effects": [
+        "consumption",
+        "speed",
+        "productivity",
+        "pollution"
+      ],
+      "order": "a[atomics]",
+      "subgroup": "yie_machinery2"
+    }
+  },
+  {
+    "type": "assembling-machine",
+    "name": "ye_trade_node",
+    "locations": [
+      {
+        "mod": "yi_engines",
+        "source": "prototypes/e_andere.lua",
+        "line": 156
+      }
+    ],
+    "prototype": {
+      "type": "assembling-machine",
+      "name": "ye_trade_node",
+      "icon_size": 32,
+      "icon": "__yi_engines__/graphics/icons/trade_node_icon.png",
+      "flags": [
+        "placeable-neutral",
+        "placeable-player",
+        "player-creation"
+      ],
+      "minable": {
+        "hardness": 0.2,
+        "mining_time": 0.1,
+        "result": "ye_trade_node"
+      },
+      "max_health": 500,
+      "corpse": "medium-remnants",
+      "collision_box": [
+        [
+          -0.7,
+          -0.7
+        ],
+        [
+          0.7,
+          0.7
+        ]
+      ],
+      "selection_box": [
+        [
+          -1,
+          -1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "graphics_set": {
+        "animation": {
+          "layers": [
+            {
+              "filename": "__yi_engines__/graphics/entity/trade_node_sheet.png",
+              "width": 192,
+              "height": 192,
+              "scale": 0.5,
+              "shift": [
+                0.5,
+                -0.5
+              ],
+              "frame_count": 9,
+              "line_length": 3,
+              "animation_speed": 0.5
+            }
+          ]
+        }
+      },
+      "crafting_categories": [
+        "yuoki-stargate"
+      ],
+      "crafting_speed": 0.5,
+      "energy_source": {
+        "type": "electric",
+        "usage_priority": "secondary-input",
+        "emissions_per_minute": {
+          "pollution": 16
+        }
+      },
+      "energy_usage": "7.5MW",
+      "ingredient_count": 4,
+      "order": "a2",
+      "subgroup": "yie_machinery2"
+    }
+  },
+  {
+    "type": "ammo",
+    "name": "yi_ammo_energie",
+    "locations": [
+      {
+        "mod": "Yuoki",
+        "source": "prototypes/objects/y_player_equipment.lua",
+        "line": 471
+      }
+    ],
+    "prototype": {
+      "type": "ammo",
+      "name": "yi_ammo_energie",
+      "icon_size": 64,
+      "icon": "__Yuoki__/graphics/armor/bst_z2.png",
+      "ammo_category": "plasma",
+      "ammo_type": {
+        "target_type": "direction",
+        "action": {
+          "type": "direct",
+          "repeat_count": 16,
+          "action_delivery": {
+            "type": "projectile",
+            "projectile": "p2",
+            "starting_speed": 1.5,
+            "direction_deviation": 0,
+            "range_deviation": 0,
+            "max_range": 20,
+            "target_effects": [
+              {
+                "type": "create-entity",
+                "entity_name": "explosion-hit"
+              },
+              {
+                "type": "damage",
+                "damage": {
+                  "amount": 20,
+                  "type": "fire"
+                }
+              },
+              {
+                "type": "damage",
+                "damage": {
+                  "amount": 5,
+                  "type": "impact"
+                }
+              }
+            ]
+          }
+        }
+      },
+      "magazine_size": 25,
+      "subgroup": "y_personal_equip",
+      "group": "yuoki-energy",
+      "order": "c[railgun]",
+      "stack_size": 1000
+    }
+  },
+  {
+    "type": "gun",
+    "name": "yi_minigun",
+    "locations": [
+      {
+        "mod": "Yuoki",
+        "source": "prototypes/objects/y_player_equipment.lua",
+        "line": 408
+      }
+    ],
+    "prototype": {
+      "type": "gun",
+      "name": "yi_minigun",
+      "icon_size": 64,
+      "icon": "__Yuoki__/graphics/armor/minigun.png",
+      "subgroup": "y_personal_equip",
+      "group": "yuoki-energy",
+      "order": "a[basic-clips]-b[submachine-gun]",
+      "attack_parameters": {
+        "type": "projectile",
+        "ammo_category": "bullet",
+        "cooldown": 2,
+        "movement_slow_down_factor": 0.8,
+        "damage_modifier": 2,
+        "shell_particle": {
+          "name": "shell-particle",
+          "direction_deviation": 0.1,
+          "speed": 0.1,
+          "speed_deviation": 0.03,
+          "center": [
+            0,
+            0.6
+          ],
+          "creation_distance": 0.6,
+          "starting_frame_speed": 0.4,
+          "starting_frame_speed_deviation": 0.1
+        },
+        "projectile_creation_distance": 0.6,
+        "range": 18,
+        "sound": [
+          {
+            "filename": "__Yuoki__/sounds/railgun.ogg",
+            "volume": 0.2
+          }
+        ]
+      },
+      "stack_size": 100
+    }
+  },
+  {
+    "type": "gun",
+    "name": "yi_lasergun",
+    "locations": [
+      {
+        "mod": "Yuoki",
+        "source": "prototypes/objects/y_player_equipment.lua",
+        "line": 445
+      }
+    ],
+    "prototype": {
+      "type": "gun",
+      "name": "yi_lasergun",
+      "icon_size": 64,
+      "icon": "__Yuoki__/graphics/armor/lasergun.png",
+      "subgroup": "y_personal_equip",
+      "group": "yuoki-energy",
+      "order": "c[railgun]",
+      "attack_parameters": {
+        "type": "projectile",
+        "ammo_category": "plasma",
+        "cooldown": 8,
+        "movement_slow_down_factor": 0.1,
+        "projectile_creation_distance": 0.6,
+        "range": 30,
+        "damage_modifier": 1,
+        "sound": [
+          {
+            "filename": "__Yuoki__/sounds/plasma-1.ogg",
+            "volume": 0.2
+          }
+        ]
+      },
+      "stack_size": 10
+    }
+  },
+  {
+    "type": "armor",
+    "name": "yi_armor_gray",
+    "locations": [
+      {
+        "mod": "Yuoki",
+        "source": "prototypes/objects/y_player_styles_items.lua",
+        "line": 139
+      }
+    ],
+    "prototype": {
+      "type": "armor",
+      "name": "yi_armor_gray",
+      "icon_size": 64,
+      "icon": "__Yuoki__/graphics/armor/mcb_icon.png",
+      "resistances": [
+        {
+          "type": "physical",
+          "decrease": 12,
+          "percent": 55
+        },
+        {
+          "type": "acid",
+          "decrease": 12,
+          "percent": 55
+        },
+        {
+          "type": "explosion",
+          "decrease": 20,
+          "percent": 55
+        }
+      ],
+      "durability": 25000,
+      "subgroup": "y_personal",
+      "group": "yuoki-energy",
+      "order": "a1",
+      "stack_size": 1,
+      "equipment_grid": "y_armor_grid_a",
+      "inventory_size_bonus": 10
+    }
+  },
+  {
+    "type": "armor",
+    "name": "yi_walker_a",
+    "locations": [
+      {
+        "mod": "Yuoki",
+        "source": "prototypes/objects/y_player_styles_items.lua",
+        "line": 198
+      }
+    ],
+    "prototype": {
+      "type": "armor",
+      "name": "yi_walker_a",
+      "icon_size": 64,
+      "icon": "__Yuoki__/graphics/armor/neron_u3_32.png",
+      "resistances": [
+        {
+          "type": "physical",
+          "decrease": 14,
+          "percent": 75
+        },
+        {
+          "type": "acid",
+          "decrease": 14,
+          "percent": 75
+        },
+        {
+          "type": "explosion",
+          "decrease": 20,
+          "percent": 75
+        }
+      ],
+      "durability": 30000,
+      "subgroup": "y_personal",
+      "group": "yuoki-energy",
+      "order": "a4",
+      "stack_size": 1,
+      "equipment_grid": "y_walker_grid",
+      "inventory_size_bonus": 40
+    }
+  },
+  {
+    "type": "armor",
+    "name": "yi_walker_c",
+    "locations": [
+      {
+        "mod": "Yuoki",
+        "source": "prototypes/objects/y_player_styles_items.lua",
+        "line": 217
+      }
+    ],
+    "prototype": {
+      "type": "armor",
+      "name": "yi_walker_c",
+      "icon_size": 64,
+      "icon": "__Yuoki__/graphics/armor/cb4_icon.png",
+      "resistances": [
+        {
+          "type": "physical",
+          "decrease": 20,
+          "percent": 75
+        },
+        {
+          "type": "acid",
+          "decrease": 20,
+          "percent": 75
+        },
+        {
+          "type": "explosion",
+          "decrease": 20,
+          "percent": 75
+        },
+        {
+          "type": "impact",
+          "decrease": 15,
+          "percent": 60
+        }
+      ],
+      "durability": 50000,
+      "subgroup": "y_personal",
+      "group": "yuoki-energy",
+      "order": "a6",
+      "stack_size": 1,
+      "equipment_grid": "y_walker_grid_b",
+      "inventory_size_bonus": 50
+    }
+  },
+  {
+    "type": "equipment-grid",
+    "name": "y_armor_grid_a",
+    "locations": [
+      {
+        "mod": "Yuoki",
+        "source": "prototypes/objects/y_player_styles_items.lua",
+        "line": 103
+      }
+    ],
+    "prototype": {
+      "type": "equipment-grid",
+      "name": "y_armor_grid_a",
+      "width": 9,
+      "height": 9,
+      "equipment_categories": [
+        "armor"
+      ]
+    }
+  },
+  {
+    "type": "equipment-grid",
+    "name": "y_walker_grid",
+    "locations": [
+      {
+        "mod": "Yuoki",
+        "source": "prototypes/objects/y_player_styles_items.lua",
+        "line": 124
+      }
+    ],
+    "prototype": {
+      "type": "equipment-grid",
+      "name": "y_walker_grid",
+      "width": 14,
+      "height": 14,
+      "equipment_categories": [
+        "armor"
+      ]
+    }
+  },
+  {
+    "type": "equipment-grid",
+    "name": "y_walker_grid_b",
+    "locations": [
+      {
+        "mod": "Yuoki",
+        "source": "prototypes/objects/y_player_styles_items.lua",
+        "line": 131
+      }
+    ],
+    "prototype": {
+      "type": "equipment-grid",
+      "name": "y_walker_grid_b",
+      "width": 16,
+      "height": 16,
+      "equipment_categories": [
+        "armor"
+      ]
+    }
+  },
+  {
+    "type": "projectile",
+    "name": "p2",
+    "locations": [
+      {
+        "mod": "Yuoki",
+        "source": "prototypes/objects/y_player_equipment.lua",
+        "line": 509
+      }
+    ],
+    "prototype": {
+      "type": "projectile",
+      "name": "p2",
+      "flags": [
+        "not-on-map"
+      ],
+      "collision_box": [
+        [
+          -0.05,
+          -1
+        ],
+        [
+          0.05,
+          1
+        ]
+      ],
+      "acceleration": 0,
+      "direction_only": true,
+      "action": {
+        "type": "direct",
+        "action_delivery": {
+          "type": "instant",
+          "target_effects": {
+            "type": "damage",
+            "damage": {
+              "amount": 8,
+              "type": "impact"
+            }
+          }
+        }
+      },
+      "animation": {
+        "filename": "__base__/graphics/entity/piercing-bullet/piercing-bullet.png",
+        "tint": {
+          "r": 0,
+          "g": 1,
+          "b": 0
+        },
+        "frame_count": 1,
+        "width": 3,
+        "height": 50,
+        "priority": "high"
+      }
+    }
+  },
+  {
+    "type": "energy-shield-equipment",
+    "name": "yi_equip_shield_a",
+    "locations": [
+      {
+        "mod": "Yuoki",
+        "source": "prototypes/objects/y_player_equipment.lua",
+        "line": 287
+      }
+    ],
+    "prototype": {
+      "type": "energy-shield-equipment",
+      "name": "yi_equip_shield_a",
+      "sprite": {
+        "filename": "__Yuoki__/graphics/armor/panz_4-96be.png",
+        "width": 96,
+        "height": 64,
+        "priority": "medium"
+      },
+      "shape": {
+        "width": 3,
+        "height": 2,
+        "type": "full"
+      },
+      "max_shield_value": 350,
+      "energy_source": {
+        "type": "electric",
+        "buffer_capacity": "350kJ",
+        "input_flow_limit": "700kW",
+        "usage_priority": "primary-input"
+      },
+      "energy_per_shield": "30kJ",
+      "categories": [
+        "armor"
+      ]
+    }
+  },
+  {
+    "type": "energy-shield-equipment",
+    "name": "yi_equip_shield_b",
+    "locations": [
+      {
+        "mod": "Yuoki",
+        "source": "prototypes/objects/y_player_equipment.lua",
+        "line": 312
+      }
+    ],
+    "prototype": {
+      "type": "energy-shield-equipment",
+      "name": "yi_equip_shield_b",
+      "sprite": {
+        "filename": "__Yuoki__/graphics/armor/panz_5-96be.png",
+        "width": 96,
+        "height": 64,
+        "priority": "medium"
+      },
+      "shape": {
+        "width": 3,
+        "height": 2,
+        "type": "full"
+      },
+      "max_shield_value": 600,
+      "energy_source": {
+        "type": "electric",
+        "buffer_capacity": "600kJ",
+        "input_flow_limit": "1.2MW",
+        "usage_priority": "primary-input"
+      },
+      "energy_per_shield": "30kJ",
+      "categories": [
+        "armor"
+      ]
+    }
+  },
+  {
+    "type": "battery-equipment",
+    "name": "yi_equip_battery_a",
+    "locations": [
+      {
+        "mod": "Yuoki",
+        "source": "prototypes/objects/y_player_equipment.lua",
+        "line": 337
+      }
+    ],
+    "prototype": {
+      "type": "battery-equipment",
+      "name": "yi_equip_battery_a",
+      "sprite": {
+        "filename": "__Yuoki__/graphics/armor/lfg13_64.png",
+        "width": 64,
+        "height": 64,
+        "priority": "medium"
+      },
+      "shape": {
+        "width": 2,
+        "height": 2,
+        "type": "full"
+      },
+      "energy_source": {
+        "type": "electric",
+        "buffer_capacity": "300MJ",
+        "input_flow_limit": "2GW",
+        "output_flow_limit": "2GW",
+        "usage_priority": "tertiary"
+      },
+      "categories": [
+        "armor"
+      ]
+    }
+  },
+  {
+    "type": "generator-equipment",
+    "name": "yi_equip_generator_a",
+    "locations": [
+      {
+        "mod": "Yuoki",
+        "source": "prototypes/objects/y_player_equipment.lua",
+        "line": 361
+      }
+    ],
+    "prototype": {
+      "type": "generator-equipment",
+      "name": "yi_equip_generator_a",
+      "sprite": {
+        "filename": "__Yuoki__/graphics/armor/energy-128e.png",
+        "width": 128,
+        "height": 128,
+        "priority": "medium"
+      },
+      "shape": {
+        "width": 4,
+        "height": 4,
+        "type": "full"
+      },
+      "energy_source": {
+        "type": "electric",
+        "usage_priority": "primary-output"
+      },
+      "power": "1.6MW",
+      "categories": [
+        "armor"
+      ]
+    }
+  },
+  {
+    "type": "movement-bonus-equipment",
+    "name": "yi_equip_legs_a",
+    "locations": [
+      {
+        "mod": "Yuoki",
+        "source": "prototypes/objects/y_player_equipment.lua",
+        "line": 384
+      }
+    ],
+    "prototype": {
+      "type": "movement-bonus-equipment",
+      "name": "yi_equip_legs_a",
+      "sprite": {
+        "filename": "__Yuoki__/graphics/armor/exo1_upgrade_e.png",
+        "width": 64,
+        "height": 96,
+        "priority": "medium"
+      },
+      "shape": {
+        "width": 2,
+        "height": 3,
+        "type": "full"
+      },
+      "energy_source": {
+        "type": "electric",
+        "usage_priority": "secondary-input"
+      },
+      "energy_consumption": "250kW",
+      "movement_bonus": 0.275,
+      "categories": [
+        "armor"
+      ]
+    }
+  }
+]

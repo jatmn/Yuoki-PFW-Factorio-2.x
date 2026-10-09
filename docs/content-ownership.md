@@ -6,7 +6,7 @@ The restoration must audit content already moved into Yuoki Industries or Yuoki 
 
 Keep redundant PFW definitions in the maintained source as commented-out, inactive code, with the owning mod and replacement prototype/recipe ID recorded beside them. Do not delete them or rely only on Git history. Already-disabled code remains available for later review and is not automatically enabled by this work.
 
-This is an additional requirement for the future implementation. The initial discovery identified equipment replacement names and two name collisions, but has not completed a functional-equivalence audit across all content. Neither similar artwork nor matching output items alone proves two definitions redundant.
+The [completed discovery evaluation](content-evaluation.md) applies this requirement to all active and commented literal declarations against pinned Yuoki and Engines 1.3.0 sources. It records confirmed overlap, replacement candidates, unique routes and unresolved mapping decisions. Neither similar artwork nor matching output items alone proves two definitions redundant.
 
 ## Evaluate each definition separately
 
@@ -56,4 +56,4 @@ For every reviewed definition, record the PFW type/ID and source location, paren
 - Parent content retains its unrelated recipes, capabilities, and behavior.
 - No unused assets or disabled code are pruned because they lack current consumers.
 
-The existing [incomplete-content inventory](incomplete-content.md) and [dependency comparison](data/dependency-comparison.json) are starting evidence, not a completed duplicate-content decision list. This discovery PR changes documentation only.
+The [evaluation and disposition records](content-evaluation.md) now provide the duplicate-content decision list, including explicit pending cases. The older [incomplete-content inventory](incomplete-content.md) and [dependency comparison](data/dependency-comparison.json) remain historical discovery evidence. The evaluation changes documentation only.

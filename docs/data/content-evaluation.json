@@ -1,0 +1,92 @@
+{
+  "date": "2026-10-09",
+  "engine": "2.1.21",
+  "enabled_mods": [
+    "base",
+    "Yuoki",
+    "yi_engines"
+  ],
+  "default_startup_settings": true,
+  "providers": {
+    "Yuoki": {
+      "commit": "50ea38b9703a13e8644c3bcfe6e400b3bf2b4a5c",
+      "version": "1.3.0"
+    },
+    "yi_engines": {
+      "commit": "8d777d015e36d93d2757a290c3f3f32a49c11280",
+      "version": "1.3.0"
+    }
+  },
+  "dump_sha256": "7494de27637f98a43bf59a1125f3b9f96d7d89d066a8b0180512c2b46379d3cf",
+  "parent_baseline_recipe_count": 727,
+  "active_count": 234,
+  "active_counts": {
+    "ammo": 1,
+    "armor": 2,
+    "assembling-machine": 12,
+    "battery-equipment": 1,
+    "energy-shield-equipment": 4,
+    "equipment-grid": 2,
+    "generator-equipment": 1,
+    "gun": 3,
+    "item": 69,
+    "item-group": 1,
+    "item-subgroup": 21,
+    "movement-bonus-equipment": 1,
+    "projectile": 1,
+    "recipe": 105,
+    "recipe-category": 10
+  },
+  "commented_counts": {
+    "gun": 1,
+    "item": 11,
+    "recipe": 35,
+    "recipe-category": 8
+  },
+  "same_type_name_collisions": [
+    {
+      "type": "projectile",
+      "name": "p2",
+      "source": "prototypes/uo_fab2.lua",
+      "line": 177
+    },
+    {
+      "type": "equipment-grid",
+      "name": "y_walker_grid",
+      "source": "prototypes/uo_fab3.lua",
+      "line": 4
+    }
+  ],
+  "external_item_references_missing": [
+    "flame-thrower",
+    "raw-wood"
+  ],
+  "parent_machines_supporting_pfw_categories": {
+    "yrcat-munition": [],
+    "yrcat-handwaffen": [],
+    "yrcat-cyborgs": [],
+    "yrcat-swwaffen": [],
+    "yrcat-fahrzeuge": [],
+    "yrcat-panzer": [],
+    "yrcat-support": [],
+    "yrcat-material": [],
+    "yrcat-component": [],
+    "yrcat-retrade": []
+  },
+  "comparison_scenario": {
+    "y-sm-1": "yi_lasergun",
+    "y-sm-2": "yi_lasergun",
+    "y-sm-5": "yi_minigun",
+    "y-mun-2": "yi_ammo_energie",
+    "y-combat-armor-2": "yi_equip_shield_a",
+    "y-combat-armor-3": "yi_equip_shield_a",
+    "y-equ-1": "yi_equip_shield_b",
+    "y-equ-2": "yi_equip_shield_b",
+    "y-equ-6": "yi_equip_generator_a",
+    "y-equ-9": "yi_equip_legs_a",
+    "y-retrader-1": "ye_trade_node",
+    "raw-wood": "wood",
+    "flame-thrower": "flamethrower"
+  },
+  "limitations": "Static original-source scan plus parent-only data-stage dump. Material signatures are candidate detection, not complete recipe equivalence. No PFW load/playtest or approved migration."
+}
