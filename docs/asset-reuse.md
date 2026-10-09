@@ -1,8 +1,8 @@
-# Parent-mod asset reuse and package reduction
+# Parent-mod asset reuse and duplicate removal
 
 ## Accepted restoration requirement
 
-On 2026-10-09, the owner added the requirement that the Factorio 2.1 restoration detect Yuoki Industries and Yuoki Engines, reuse the assets those mods now provide, and remove redundant PFW copies to reduce the distributed package size. This extends the earlier recommendation to reuse parent-owned equipment into an explicit graphics/asset requirement.
+On 2026-10-09, the owner added the requirement that the Factorio 2.1 restoration detect Yuoki Industries and Yuoki Engines, reuse the assets those mods now provide, and remove redundant PFW copies so the addon does not carry artwork already supplied by those two mods. Reuse and removal of duplicate assets are the objective. This extends the earlier recommendation to reuse parent-owned equipment into an explicit graphics/asset requirement.
 
 Asset ownership and mapping should happen before the prototype port and before deleting artwork. The original import remains the historical record; subsequent implementation commits can remove replaced files without losing that record. This discovery PR records the requirement and audit, and makes no original-source or asset changes.
 
@@ -16,7 +16,7 @@ The owner also confirmed that retained PFW-owned artwork should be brought up to
 - Preserve the existing artwork, transparency, silhouettes, and consistent appearance across animation frames. Select the resampling/enhancement method through representative visual comparisons; upscaling cannot recover missing original detail automatically.
 - Keep the original artwork recoverable through the baseline commit; avoid shipping old and upscaled copies together when only one is used.
 
-Validate the updated artwork in-game at representative zoom levels. Review icon clarity, transparency, animation alignment, and intended world size, and record the resulting distribution package size.
+Validate the updated artwork in-game at representative zoom levels. Review icon clarity, transparency, animation alignment, and intended world size, and correct use of parent-provided assets.
 
 ## Dependency and selection policy
 
@@ -33,14 +33,12 @@ The audit compares the original archive against the same clean Yuoki and Engines
 | Measurement | Result |
 |---|---:|
 | PFW PNG files | 206 |
-| PFW PNG file bytes | 11,110,505 |
 | PFW files with byte-identical matches anywhere in either parent snapshot | 0 |
 | PFW files with same-basename candidates in the parents | 39 |
-| Bytes occupied by those 39 PFW candidates | 7,900,540 |
 | Candidates with active literal references in PFW Lua | 24 |
 | All PFW PNGs with no active literal reference found | 115 |
 
-The 7.9 MB figure is the uncompressed size of candidate local files, not achieved savings, a deletion-approved total, or a ZIP-size estimate. Parents have changed images over time, so differing hashes do not disprove shared artwork. Conversely, matching names or dimensions do not establish identical visuals or compatible sprite layouts. This first pass does not find all renamed or resized equivalents.
+Parents have changed images over time, so differing hashes do not disprove shared artwork. Treat scaled, recompressed, or renamed versions of the same artwork as reuse candidates too; byte equality is not a prerequisite for replacing the local copy. Conversely, matching names or dimensions do not establish identical visuals or compatible sprite layouts. This first pass does not find all renamed or resized equivalents.
 
 Literal reference scanning excludes Lua comments. An absent literal reference is a cleanup lead, not proof of unused content: generated paths, dependency interactions, optional integration, and intended restoration of currently disabled content still need review. Some parent candidates also live in obsolete directories or lack literal references; their mere presence is insufficient reason to make them a supported dependency contract.
 
@@ -68,7 +66,7 @@ These are candidates, not approved deletion instructions. The audit also records
 4. Resolve every PFW reference to each selected local file, including restored/conditional code paths. Retain unique PFW artwork that has no approved parent replacement.
 5. Remove each redundant local file after its consumers have switched. Do not reintroduce bundled copies as implicit missing-provider fallbacks; unsupported/missing required dependencies should fail clearly.
 6. Modernize the retained low-resolution PFW artwork under the resolution requirement above, updating associated prototype metadata and verifying appearance.
-7. Build the actual distribution ZIP and report both file-count and compressed/uncompressed size changes against the original. Do not ship discovery data as game assets merely because `/docs` is in the repository; define packaging scope explicitly when release tooling is added.
+7. Check the built distribution itself: approved shared assets must resolve to Yuoki or Engines, with no redundant PFW copies included.
 
 ## Acceptance checks for the future port
 
@@ -79,7 +77,7 @@ These are candidates, not approved deletion instructions. The audit also records
 - Normal graphical Factorio startup and in-game visual inspection confirm icons, machines, equipment, and every retained armor animation. A headless prototype dump alone does not verify appearance.
 - The distribution contains no local copies of the approved replaced assets, and unique retained assets still work.
 - Retained low-resolution artwork has a documented target and reviewed upscale where needed; icons remain clear and animated assets preserve frame alignment, alpha edges, and intended world size.
-- Package-size measurements describe the actual release archive, with no assumption that filename-match totals equal savings.
+- The release archive is checked for redundant artwork as well as broken references; success means using the parent-owned assets and retaining only artwork PFW needs to supply itself.
 
 Reproduce the initial audit with Python 3:
 
