@@ -12,6 +12,7 @@ Date: 9. 10. 2026
     - Redraw the eight import commodity base icons at 64px; generated trade arrows follow the updated artwork.
     - Redraw seven factory/display icons from their original sprite references; reuse Engines artwork for the shared-factory icon.
     - Correct the ammunition-factory icon from its original animation sheet to match the sprite-referenced factory artwork.
+    - Redraw biomass, combat training, medical equipment, combat armor Mk.1 and riflescope component icons at 64px.
   Compatibility:
     - Keep the two pending PFW energy guns compatible with Yuoki's energy ammunition.
     - Keep migrations deferred until a formal release; validate this development version with fresh games.

@@ -10,9 +10,9 @@ data:extend(
 		results = {{type="item", name="wood", amount=1,}, {type="item", name="y-biomass", amount=2,},},
 		enabled = true, order="factory", subgroup = "yi-component",
 		categories={"chemistry"},
-		icon = "__yi_pfw__/graphics/zmaterial/biomass-icon.png", icon_size = 32
+		icon = "__yi_pfw__/graphics/zmaterial/biomass-icon.png", icon_size = 64
 	},					
-	{ type = "item", name = "y-biomass", icon = "__yi_pfw__/graphics/zmaterial/biomass-icon.png", icon_size = 32, order = "a", stack_size = 250, },
+	{ type = "item", name = "y-biomass", icon = "__yi_pfw__/graphics/zmaterial/biomass-icon.png", icon_size = 64, order = "a", stack_size = 250, },
 	
 	-- Combat Armor 1
 	--[[
@@ -22,10 +22,10 @@ data:extend(
 		results = {{type="item", name="y-combat-armor-1", amount=2,},}, 
 		enabled = "true", order="factory", subgroup = "yi-material", 
 		category= "yrcat-material",
-		icon = "__yi_pfw__/graphics/zmaterial/panz1_32.png"
+		icon = "__yi_pfw__/graphics/zmaterial/panz1_32.png", icon_size = 64
 	},	
 	]]	
-	{ type = "item", name = "y-combat-armor-1", icon = "__yi_pfw__/graphics/zmaterial/panz1_32.png", icon_size = 32, order = "a", stack_size = 250, },
+	{ type = "item", name = "y-combat-armor-1", icon = "__yi_pfw__/graphics/zmaterial/panz1_32.png", icon_size = 64, order = "a", stack_size = 250, },
 
 	-- Combat Armor 2
 	--[[
@@ -59,9 +59,9 @@ data:extend(
 		results = {{type="item", name="y-combat-train", amount=6,},}, 
 		enabled = true, order="factory", subgroup = "yi-component",
 		categories={"yrcat-component"},
-		icon = "__yi_pfw__/graphics/zmaterial/combattrain-icon.png", icon_size = 32
+		icon = "__yi_pfw__/graphics/zmaterial/combattrain-icon.png", icon_size = 64
 	},						
-	{ type = "item", name = "y-combat-train", icon = "__yi_pfw__/graphics/zmaterial/combattrain-icon.png", icon_size = 32, order = "a", stack_size = 2500, },
+	{ type = "item", name = "y-combat-train", icon = "__yi_pfw__/graphics/zmaterial/combattrain-icon.png", icon_size = 64, order = "a", stack_size = 2500, },
 
 	{ type = "recipe", name = "y-zproduct-6-recipe", 
 		energy_required= 4, 
@@ -69,9 +69,9 @@ data:extend(
 		results = {{type="item", name="y-medic", amount=6,},}, 
 		enabled = true, order="factory", subgroup = "yi-component",
 		categories={"yrcat-component"},
-		icon = "__yi_pfw__/graphics/zmaterial/medic-icon.png", icon_size = 32,
+		icon = "__yi_pfw__/graphics/zmaterial/medic-icon.png", icon_size = 64,
 	},						
-	{ type = "item", name = "y-medic", icon = "__yi_pfw__/graphics/zmaterial/medic-icon.png", icon_size = 32, order = "a", stack_size = 2500, },
+	{ type = "item", name = "y-medic", icon = "__yi_pfw__/graphics/zmaterial/medic-icon.png", icon_size = 64, order = "a", stack_size = 2500, },
 
 	{ type = "recipe", name = "y-zproduct-7-recipe", 
 		energy_required= 4, 
@@ -79,9 +79,9 @@ data:extend(
 		results = {{type="item", name="y-zielfern", amount=4,},}, 
 		enabled = true, order="factory", subgroup = "yi-component",
 		categories={"yrcat-component"},
-		icon = "__yi_pfw__/graphics/zmaterial/zielfern-icon.png", icon_size = 32,
+		icon = "__yi_pfw__/graphics/zmaterial/zielfern-icon.png", icon_size = 64,
 	},						
-	{ type = "item", name = "y-zielfern", icon = "__yi_pfw__/graphics/zmaterial/zielfern-icon.png", icon_size = 32, order = "a", stack_size = 2500, },
+	{ type = "item", name = "y-zielfern", icon = "__yi_pfw__/graphics/zmaterial/zielfern-icon.png", icon_size = 64, order = "a", stack_size = 2500, },
 	
 	
 	{ type = "recipe", name = "y-zproduct-8-recipe", energy_required = 2, ingredients = {{type="item", name="y-iron-case", amount=2},{type="item", name="y-refined-yres1", amount=6},{type="item", name="y-infused-uca2", amount=3}, }, results = {{type="item", name="y-zproduct-8", amount=1}}, enabled = true,  order="y-zproduct-8", subgroup = "yi-component", categories={"yrcat-component"},},

@@ -543,6 +543,126 @@
         "method": "AI"
       },
       "sha256": "101e1bf5ab7875d1e0e83af8dc45b8f0c71a9e1eb77cf291931b7ecb550923e5"
+    },
+    {
+      "label": "Biomass",
+      "batch": 4,
+      "path": "graphics/zmaterial/biomass-icon.png",
+      "original_dimensions": [
+        32,
+        32
+      ],
+      "original_sha256": "29d44868bfb132da914892e33d698ad49eb76fa827de39f66ba208cc93b2da13",
+      "dimensions": [
+        64,
+        64
+      ],
+      "sha256": "dce3210abd758eb0363e0025ba91052782a42e240c64f5b54e8594438e1911df",
+      "source_path": "docs/artwork/ai-redraw-0.5.1/biomass-icon-source.png",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "source_sha256": "083f3ba20b1c610586db97ef0dd6dc8f7ff7bb4278312efaef1f7dd67cd39884",
+      "prompt": "Use case: precise-object-edit. Edit target image1: enlarged original32px Yuoki PFW inventory icon, authoritative for original shape, orientation and colors. Faithfully redraw for a64px game icon, following the established industrial pre-rendered artwork method. An upright compact rectangular block of green biomass in three-quarter isometric view. Bright pale/lime GREEN top face, medium leafy-green front face, darker green left side; soft irregular organic surface, nearly cuboid shape. Keep the plain green block silhouette and original camera. This is biomass, not a metal crate, tank, gem or slime character. Do not add container rims, lids, bolts or mechanical framing. Refine unclear pixel edges conservatively, maintaining original object identity, proportions, color positions and relative canvas occupancy. One whole object centered on square transparent canvas, small clear margins; no external cast shadow or floor. Subtle surface detail readable at64px, not a new concept design. No arrows, text, watermark, border, backdrop or unrelated props. Real transparent background.",
+      "reference_review": "Item-only component: no corresponding assigned entity/equipment/animation. Original enlarged icon and locale description inspected. Both pinned parents checked; no equivalent replacement selected."
+    },
+    {
+      "label": "Combat Training Unit",
+      "batch": 4,
+      "path": "graphics/zmaterial/combattrain-icon.png",
+      "original_dimensions": [
+        32,
+        32
+      ],
+      "original_sha256": "b429a333c846f6e7b9ed9cc2d47feb7f4e870bbdc3db6dc1e07cf7b4440428cf",
+      "dimensions": [
+        64,
+        64
+      ],
+      "sha256": "663f9e55ff2f35e993b897899dfc51ae87911b9e1ba4ede7c86f5bc17d3c4956",
+      "source_path": "docs/artwork/ai-redraw-0.5.1/combattrain-icon-source.png",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "source_sha256": "02deba4d514b258b8cb7297a02eeded2ec7645c00b4950cbb8c617ad6d5af091",
+      "prompt": "Use case: precise-object-edit. Edit target image1: enlarged original32px Yuoki PFW inventory icon, authoritative for original shape, orientation and colors. Faithfully redraw for a64px game icon, following the established industrial pre-rendered artwork method. A flat eight-point starburst-like implanted training module/badge seen face-on. EIGHT pointed rays at compass and diagonal positions, orange central star body, darker deep red outer tips/rim, one round dark red central disk. Preserve this simple symmetric eight-point silhouette and orange/red color layout. Add restrained material definition without adding weapons, circuitry sprawl, letters or extra points. Refine unclear pixel edges conservatively, maintaining original object identity, proportions, color positions and relative canvas occupancy. One whole object centered on square transparent canvas, small clear margins; no external cast shadow or floor. Subtle surface detail readable at64px, not a new concept design. No arrows, text, watermark, border, backdrop or unrelated props. Real transparent background.",
+      "reference_review": "Item-only component: no corresponding assigned entity/equipment/animation. Original enlarged icon and locale description inspected. Both pinned parents checked; no equivalent replacement selected."
+    },
+    {
+      "label": "Medic & Repair Set",
+      "batch": 4,
+      "path": "graphics/zmaterial/medic-icon.png",
+      "original_dimensions": [
+        32,
+        32
+      ],
+      "original_sha256": "4a6efda8443a5f42f7e2a43b5a8866904494dfd24989ac6266fe88959697500f",
+      "dimensions": [
+        64,
+        64
+      ],
+      "sha256": "cab673ff1902e46a294628b757605eada3dc2d7cf40a62946c61abc1ba291a43",
+      "source_path": "docs/artwork/ai-redraw-0.5.1/medic-icon-source.png",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "source_sha256": "9439fd62d08a113bf3549d42f95833fff2e6f6f2cbc1e6cfbb0fcb3a50345e1c",
+      "prompt": "Use case: precise-object-edit. Edit target image1: enlarged original32px Yuoki PFW inventory icon, authoritative for original shape, orientation and colors. Faithfully redraw for a64px game icon, following the established industrial pre-rendered artwork method. A small sci-fi medical/repair implement lying diagonally from upper-left to lower-right. At upper-left a squat angular silver-grey/dark mechanical head with a short small protrusion toward left. Long narrow central capsule/tool body extends lower-right: vivid GREEN side windows/rails with cyan/teal outer highlights, dark reddish-brown central strip. At lower-right are small grey metallic end fittings/twin connectors. Preserve exact narrow diagonal silhouette, relative part sizes, green/cyan/grey palette and dark central stripe. Do not turn into a pistol, large gun, medical bag or syringe with an invented long needle. Refine unclear pixel edges conservatively, maintaining original object identity, proportions, color positions and relative canvas occupancy. One whole object centered on square transparent canvas, small clear margins; no external cast shadow or floor. Subtle surface detail readable at64px, not a new concept design. No arrows, text, watermark, border, backdrop or unrelated props. Real transparent background.",
+      "reference_review": "Item-only component: no corresponding assigned entity/equipment/animation. Original enlarged icon and locale description inspected. Both pinned parents checked; no equivalent replacement selected."
+    },
+    {
+      "label": "Combat Armor Mk.1",
+      "batch": 4,
+      "path": "graphics/zmaterial/panz1_32.png",
+      "original_dimensions": [
+        32,
+        32
+      ],
+      "original_sha256": "517fbf080823052334092ee0b4489402a96fc479f1da88ce7d720b192c17be72",
+      "dimensions": [
+        64,
+        64
+      ],
+      "sha256": "6ca141314046327e0be2bf7217464b6a5b0386f2f9c46e0e15dca5536cc0e2e4",
+      "source_path": "docs/artwork/ai-redraw-0.5.1/panz1_32-source.png",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "source_sha256": "d2fddec52c0415f660e8c80a37cdc727a1b82779727f59c22ec39a3c2a40261f",
+      "prompt": "Use case: precise-object-edit. Edit target image1: enlarged original32px Yuoki PFW inventory icon, authoritative for original shape, orientation and colors. Faithfully redraw for a64px game icon, following the established industrial pre-rendered artwork method. A small upright assembly of overlapping curved rectangular protective plates in three-quarter perspective: three stepped/layered GREY metal panels fan out behind the broad front plate, with a narrow pale silver/white lattice-like strip at the right/rear. Match original left-to-right perspective, compact horizontal proportions and tall rectangular contour. This is a stack/section of armor plates, not a wearable vest, helmet or complete robot. Use image2 (the parent's colored higher-tier panz5 icon) ONLY to clarify the related layered panel geometry. Keep image1's neutral grey/silver palette, not image2's purple/brown tier colors or the cyan color of other parent tiers. Preserve the pale right-side strip. Refine unclear pixel edges conservatively, maintaining original object identity, proportions, color positions and relative canvas occupancy. One whole object centered on square transparent canvas, small clear margins; no external cast shadow or floor. Subtle surface detail readable at64px, not a new concept design. No arrows, text, watermark, border, backdrop or unrelated props. Real transparent background.",
+      "reference_review": "Item-only component: no corresponding assigned entity/equipment/animation. Original enlarged icon and locale description inspected. Both pinned parents checked; no equivalent replacement selected.",
+      "related_reference": {
+        "path": "__Yuoki__/graphics/armor/panz5_32.png",
+        "sha256": "91fd8c5a15f45663821b3a15b44ecc12c249f86a3999cc628386719a678e62e5",
+        "role": "Geometry of layered plates only. Preserve original neutral-grey tier1 colors; parent colored tier already used separately. Not an ownership mapping."
+      }
+    },
+    {
+      "label": "Riflescope",
+      "batch": 4,
+      "path": "graphics/zmaterial/zielfern-icon.png",
+      "original_dimensions": [
+        32,
+        32
+      ],
+      "original_sha256": "5ffecb1f3be89dc9332967bdb8168a1dee456d41b80f14d2dbd58e7613e31845",
+      "dimensions": [
+        64,
+        64
+      ],
+      "sha256": "e0e570486dd42098a1424cfc2ac1dd39ed195be678588e040bd42a2598be934b",
+      "source_path": "docs/artwork/ai-redraw-0.5.1/zielfern-icon-source.png",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "source_sha256": "79423af679a01712eae5ff88383f7cc8cfe1cb4642c9ab87f7bb4cbc82157cf1",
+      "prompt": "Use case: precise-object-edit. Edit target image1: enlarged original32px Yuoki PFW inventory icon, authoritative for original shape, orientation and colors. Faithfully redraw for a64px game icon, following the established industrial pre-rendered artwork method. A compact futuristic self-adjusting optical scope, diagonal from upper-left to lower-right. Two neighboring elongated grey/silver forms: a slender dark-grey optical tube on the left with a small pale rounded end at upper-left, and a broader pale silver sloped/ribbed housing on the right. A short grey bracket joins them near the lower end. At the lower-right/front end, dark housing surrounds a small green optical area with a RED center indicator/lens. Preserve original diagonal camera, asymmetrical two-part silhouette, pale grey ribbing and small red/green accents. No rifle, hand, tripod, extra lenses, text or redesign into binoculars. Refine unclear pixel edges conservatively, maintaining original object identity, proportions, color positions and relative canvas occupancy. One whole object centered on square transparent canvas, small clear margins; no external cast shadow or floor. Subtle surface detail readable at64px, not a new concept design. No arrows, text, watermark, border, backdrop or unrelated props. Real transparent background.",
+      "reference_review": "Item-only component: no corresponding assigned entity/equipment/animation. Original enlarged icon and locale description inspected. Both pinned parents checked; no equivalent replacement selected."
     }
   ],
   "batches": [
@@ -576,6 +696,19 @@
         "profit-show-2-icon"
       ],
       "review": "Icon-only drafts rejected following owner feedback. Selected redraws use actual PFW sprite frames; both parent mods checked. Shared factory icon reused from Engines. Full source and64px review; integrated graphical check pending."
+    },
+    {
+      "batch": 4,
+      "date": "2026-10-09",
+      "starting_head": "66c68cb58ab3eb1cce8d2da485ed52583bdafcb5",
+      "assets": [
+        "biomass-icon",
+        "combattrain-icon",
+        "medic-icon",
+        "panz1_32",
+        "zielfern-icon"
+      ],
+      "review": "Original/full-source/64px comparison; locale and both-parent reference checks. No assigned animations for these item-only components. Integrated graphical check pending."
     }
   ]
 }
