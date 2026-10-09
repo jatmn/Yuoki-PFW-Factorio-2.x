@@ -8,15 +8,7 @@ Batch3 had already reused this machine family's parent icon, but deferred animat
 
 Yuoki and Engines remain at the previously reviewed revisions `50ea38b9703a13e8644c3bcfe6e400b3bf2b4a5c` and `8d777d015e36d93d2757a290c3f3f32a49c11280`. Both revisions were rechecked; the prior 242-path parent-building review is reused. Engines' unused `tut-2.png` was also inspected and is a different static structure. No further parent counterpart was confirmed.
 
-These comparison rows show PFW east/west, the parent at the same display size, then the retained PFW north/south view. Frame indices are zero-based.
-
-![Frames 0–7](artwork/animation-batch-9/all-frames-0.png)
-
-![Frames 8–15](artwork/animation-batch-9/all-frames-1.png)
-
 Across all 16 east/west pairs, the largest mean RGB difference on grey is 1.9283 on a 0–255 scale; the largest mean alpha difference is 0.9012. Parent frames were resampled from 128px to 120px for this comparison. These measurements support the visual match; the originals and parent are not byte-identical. [Hashes, frame metrics and mappings](data/animation-batch-9-references.json) record the evidence.
-
-![East/west loop comparison, slowed for inspection](artwork/animation-batch-9/east-west-comparison.gif)
 
 ## Runtime change and validation
 

@@ -31,7 +31,7 @@
     "metadata": "Only east/west of y-factory-4,6,7: width/height128 and scale0.9375 preserve120px display extent; shift0.3,0, frame_count16, line_length16 and default speed1 unchanged.",
     "batch": 9
   },
-  "comparison": "Original120x120 E/W frames against each128x128 parent frame Lanczos-resized to120px, composited over RGB120 grey. Numeric scores support the all-frame visual assessment; they do not independently authorize reuse. GIF slowed to150ms/frame for inspection, not playback timing.",
+  "comparison": "Original120x120 E/W frames against each128x128 parent frame Lanczos-resized to120px, composited over RGB120 grey. Numeric scores support the all-frame visual assessment; they do not independently authorize reuse.",
   "frame_metrics": [
     {
       "frame": 0,
