@@ -1,0 +1,43 @@
+PFW path,PFW bytes,PFW dimensions,PFW literal references,Provider,Provider path,Provider dimensions,Same bytes,Same dimensions,Provider literal references,Replacement approved
+graphics/armor/armor2_dig.png,65750,80x800,prototypes/uo_fabx.lua:146; prototypes/uo_fabx.lua:158,Yuoki,graphics/armor/armor2_dig.png,80x800,False,True,prototypes/objects/y_player_styles.lua:148; prototypes/objects/y_player_styles.lua:159,False
+graphics/armor/armor2_idle.png,61586,80x800,,Yuoki,graphics/armor/armor2_idle.png,80x800,False,True,,False
+graphics/armor/armor2_idle_sheet.png,695176,1280x800,prototypes/uo_fabx.lua:122; prototypes/uo_fabx.lua:134,Yuoki,graphics/armor/armor2_idle_sheet.png,1280x800,False,True,prototypes/objects/y_player_styles.lua:126; prototypes/objects/y_player_styles.lua:137,False
+graphics/armor/armor2_walk.png,61586,80x800,,Yuoki,graphics/armor/armor2_walk.png,80x800,False,True,,False
+graphics/armor/armor2_walk_gun.png,170174,80x1800,prototypes/uo_fabx.lua:170,Yuoki,graphics/armor/armor2_walk_gun.png,80x1800,False,True,prototypes/objects/y_player_styles.lua:170,False
+graphics/armor/armor2_walk_sheet.png,1128175,1760x800,prototypes/uo_fabx.lua:180,Yuoki,graphics/armor/armor2_walk_sheet.png,1760x800,False,True,prototypes/objects/y_player_styles.lua:179,False
+graphics/armor/cb3_dig.png,70421,80x800,,Yuoki,graphics/armor/cb3_dig.png,80x800,False,True,prototypes/objects/y_player_styles.lua:271; prototypes/objects/y_player_styles.lua:282,False
+graphics/armor/cb3_idle_sheet.png,637920,1280x800,,Yuoki,graphics/armor/cb3_idle_sheet.png,1280x800,False,True,prototypes/objects/y_player_styles.lua:249; prototypes/objects/y_player_styles.lua:260,False
+graphics/armor/cb3_walk_gun.png,174859,80x1800,,Yuoki,graphics/armor/cb3_walk_gun.png,80x1800,False,True,prototypes/objects/y_player_styles.lua:293,False
+graphics/armor/cb3_walk_sheet.png,1250865,1760x800,,Yuoki,graphics/armor/cb3_walk_sheet.png,1760x800,False,True,prototypes/objects/y_player_styles.lua:302,False
+graphics/armor/robo1_dig.png,923215,1280x800,prototypes/uo_fabx.lua:28; prototypes/uo_fabx.lua:40,Yuoki,graphics/armor/robo1_dig.png,1280x800,False,True,prototypes/objects/y_player_styles.lua:25; prototypes/objects/y_player_styles.lua:36,False
+graphics/armor/robo1_idle.png,798155,1280x800,prototypes/uo_fabx.lua:4; prototypes/uo_fabx.lua:16,Yuoki,graphics/armor/robo1_idle.png,1280x800,False,True,prototypes/objects/y_player_styles.lua:3; prototypes/objects/y_player_styles.lua:14,False
+graphics/armor/robo1_walk.png,1505412,1760x800,prototypes/uo_fabx.lua:62,Yuoki,graphics/armor/robo1_walk.png,1760x800,False,True,prototypes/objects/y_player_styles.lua:56,False
+graphics/armor/robo1_walk_gun.png,205471,80x1800,prototypes/uo_fabx.lua:52,Yuoki,graphics/armor/robo1_walk_gun.png,80x1800,False,True,prototypes/objects/y_player_styles.lua:47,False
+graphics/caseing-icon.png,2409,32x32,,yi_engines,graphics/caseing-icon.png,32x32,False,True,prototypes/z_items.lua:1281; prototypes/z_recipes.lua:3429,False
+graphics/entity/gearbox-icon.png,2759,32x32,,yi_engines,graphics/entity/gearbox-icon.png,32x32,False,True,,False
+graphics/equip/energy-128e.png,31967,128x128,prototypes/uo_fab8.lua:148,Yuoki,graphics/armor/energy-128e.png,128x128,False,True,prototypes/objects/y_player_equipment.lua:365,False
+graphics/equip/energy_icon.png,3484,32x32,,Yuoki,graphics/armor/energy_icon.png,64x64,False,False,prototypes/objects/y_player_equipment.lua:243,False
+graphics/equip/exo1_icon_e.png,3271,32x32,prototypes/ir_fab8.lua:45,Yuoki,graphics/armor/exo1_icon_e.png,64x64,False,False,prototypes/objects/y_player_equipment.lua:255,False
+graphics/equip/exo1_upgrade_e.png,10640,64x96,prototypes/uo_fab8.lua:173,Yuoki,graphics/armor/exo1_upgrade_e.png,64x96,False,True,prototypes/objects/y_player_equipment.lua:388,False
+graphics/equip/lfg13_64.png,8984,64x64,prototypes/uo_fab8.lua:65,Yuoki,graphics/armor/lfg13_64.png,64x64,False,True,prototypes/objects/y_player_equipment.lua:341,False
+graphics/equip/mfg28_96.png,18382,96x96,prototypes/uo_fab8.lua:93,Yuoki,graphics/armor/mfg28_96.png,96x96,False,True,,False
+graphics/equip/panz_4-96be.png,12234,96x64,prototypes/uo_fab8.lua:37,Yuoki,graphics/armor/panz_4-96be.png,96x64,False,True,prototypes/objects/y_player_equipment.lua:291,False
+graphics/equip/panz_5-96be.png,9424,96x64,prototypes/uo_fab8.lua:9,Yuoki,graphics/armor/panz_5-96be.png,96x64,False,True,prototypes/objects/y_player_equipment.lua:316,False
+graphics/fab1/bst_z2.png,2439,32x32,,Yuoki,graphics/armor/bst_z2.png,64x64,False,False,prototypes/objects/y_player_equipment.lua:475,False
+graphics/fab2/lasergun.png,2546,32x32,prototypes/uo_fab2.lua:86,Yuoki,graphics/armor/lasergun.png,64x64,False,False,prototypes/objects/y_player_equipment.lua:449,False
+graphics/fab2/minigun.png,3053,32x32,prototypes/uo_fab2.lua:47,Yuoki,graphics/armor/minigun.png,64x64,False,False,prototypes/objects/y_player_equipment.lua:412,False
+graphics/fab3/brain-parasite-1.png,3064,32x32,prototypes/ir_fab3.lua:24,yi_engines,graphics/icons/brain-parasite-1.png,32x32,False,True,,False
+graphics/fab3/neron_u3_32.png,3074,32x32,prototypes/ir_fab3.lua:32; prototypes/uo_fab3.lua:27,Yuoki,graphics/armor/neron_u3_32.png,64x64,False,False,prototypes/objects/y_player_styles_items.lua:202,False
+graphics/fab8/energy_icon.png,3484,32x32,prototypes/ir_fab8.lua:42; prototypes/ir_fab8.lua:56,Yuoki,graphics/armor/energy_icon.png,64x64,False,False,prototypes/objects/y_player_equipment.lua:243,False
+graphics/fab8/lfg13.png,3535,32x32,prototypes/ir_fab8.lua:37,Yuoki,graphics/armor/lfg13.png,64x64,False,False,prototypes/objects/y_player_equipment.lua:231,False
+graphics/fab8/mfg28.png,3304,32x32,prototypes/ir_fab8.lua:38,Yuoki,graphics/armor/mfg28.png,64x64,False,False,,False
+graphics/heat-pipe.png,2820,32x32,,Yuoki,graphics/icons/heat-pipe.png,64x64,False,False,,False
+graphics/heat-pipe.png,2820,32x32,,Yuoki,graphics/icons/obs/heat-pipe.png,64x64,False,False,,False
+graphics/heat-pipe.png,2820,32x32,,yi_engines,graphics/heat-pipe.png,32x32,False,True,,False
+graphics/imports/barren_silver16.png,4940,32x32,,yi_engines,graphics/_obsolete/barren_silver16.png,32x32,False,True,,False
+graphics/imports/trader_sign.png,3505,32x32,,Yuoki,graphics/icons/obs/trader_sign.png,64x64,False,False,,False
+graphics/imports/trader_sign.png,3505,32x32,,Yuoki,graphics/icons/trader_sign.png,64x64,False,False,,False
+graphics/quantrinum-32.png,3454,32x32,,yi_engines,graphics/quantrinum-32.png,32x32,False,True,prototypes/z_items.lua:1394; prototypes/z_recipes.lua:3518,False
+graphics/waste1-icon.png,2258,32x32,,yi_engines,graphics/waste1-icon.png,32x32,False,True,prototypes/r_externs.lua:82,False
+graphics/zmaterial/panz4_32.png,3385,32x32,prototypes/ir_zmaterial.lua:54,Yuoki,graphics/armor/panz4_32.png,64x64,False,False,prototypes/objects/y_player_equipment.lua:207,False
+graphics/zmaterial/panz5_32.png,3360,32x32,prototypes/ir_zmaterial.lua:41,Yuoki,graphics/armor/panz5_32.png,64x64,False,False,prototypes/objects/y_player_equipment.lua:219,False
