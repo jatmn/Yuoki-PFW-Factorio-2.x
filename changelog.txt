@@ -15,6 +15,7 @@ Date: 9. 10. 2026
     - Redraw biomass, combat training, medical equipment, combat armor Mk.1 and riflescope component icons at 64px.
     - Redraw four battlefield-support component icons at 64px; preserve the energy-support unit as a box with a side-mounted cylinder.
     - Redraw the empty energy-cell and second-armor icons at 64px; match the empty cell to the filled model with its lights off.
+    - Redraw the PFW crafting-tab icon and energy-cell equipment image at 128px; keep the equipment display size and shared cell model.
   Compatibility:
     - Keep the two pending PFW energy guns compatible with Yuoki's energy ammunition.
     - Keep migrations deferred until a formal release; validate this development version with fresh games.

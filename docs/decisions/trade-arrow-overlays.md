@@ -36,4 +36,6 @@ The preview below composites the actual dump's layers for inspection; it is not 
 
 Continue AI redraws on base artwork only. Do not generate, restore or carry a separate baked-arrow version; use this helper convention for restored/new import and export recipes. Review animation consistency separately before changing any animation sheet.
 
-The [sixth batch](../artwork-batch-6.md) brings the current total to 30 AI icons and 87 originals. One inactive second-armor arrow mapping receives its new base hash/dimensions; active arrow recipes are unchanged.
+The [sixth batch](../artwork-batch-6.md) brings the total to 30 AI icons and 87 originals. One inactive second-armor arrow mapping receives its new base hash/dimensions; active arrow recipes are unchanged.
+
+The [seventh batch](../artwork-batch-7.md) adds a group icon and equipment sprite: current total32 AI artwork assets and85 originals. All trade-arrow data remains unchanged.

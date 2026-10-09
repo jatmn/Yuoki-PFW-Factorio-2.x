@@ -86,6 +86,8 @@ assert set(redraws) == {
     'graphics/fab8/teil_02.png',
     'graphics/fab8/fusion-cell-empty.png',
     'graphics/fab3/neron_u5_32.png',
+    'graphics/mpfw_ticon2.png',
+    'graphics/equip/fusion-cell-64.png',
 }
 assert not redraws.keys() & replacements.keys()
 for entry in redraws.values():
@@ -96,7 +98,10 @@ for entry in redraws.values():
         content = (ROOT / path).read_bytes()
         assert hashlib.sha256(content).hexdigest() == digest, path
         assert list(struct.unpack('>II', content[16:24])) == dimensions, path
-    assert entry['dimensions'] == [64, 64]
+    expected_size = 128 if entry['path'] in {
+        'graphics/mpfw_ticon2.png', 'graphics/equip/fusion-cell-64.png'
+    } else 64
+    assert entry['dimensions'] == [expected_size, expected_size]
 providers = {'Yuoki': args.yuoki, 'yi_engines': args.engines}
 provider_paths = {}
 for entry in replacements.values():
@@ -115,7 +120,7 @@ def replace_visuals(value):
         if isinstance(value.get('icon'), str) and value['icon'] in paths:
             value['icon_size'] = paths[value['icon']]['provider_dimensions'][0]
         if isinstance(value.get('icon'), str) and value['icon'] in redraw_paths:
-            value['icon_size'] = 64
+            value['icon_size'] = redraw_paths[value['icon']]['dimensions'][0]
         for key, child in value.items():
             value[key] = replace_visuals(child)
     elif isinstance(value, list):
@@ -126,6 +131,11 @@ def replace_visuals(value):
     return value
 
 replace_visuals(expected)
+# Batch7 doubles only this equipment image's source resolution at the same display size.
+cell_sprite = expected['battery-equipment']['y-zproduct-8']['sprite']
+assert cell_sprite['filename'] == '__yi_pfw__/graphics/equip/fusion-cell-64.png'
+assert (cell_sprite['width'], cell_sprite['height'], cell_sprite.get('scale', 1)) == (64, 64, 1)
+cell_sprite.update(width=128, height=128, scale=0.5)
 trade_map = json.loads((ROOT / 'docs/data/trade-icons-0.5.1.json').read_text())
 arrow_variants = {a['path']: a for a in trade_map['removed_variants']}
 assert len(arrow_variants) == 49
@@ -215,5 +225,5 @@ trades = [r for r in recipes if 'yrcat-retrade' in after['recipe'][r['name']].ge
 assert len(trades) == 56
 print(f'PASS: {removed} redundant declarations inactive; 105 recipe routes and quantities retained; '
       '56 trades supported; pending mappings/parent behavior preserved; 40 parent assets verified, '
-      '30 AI icons/source images verified, 49 arrow variants replaced, 87 original graphics unchanged; '
+      '32 AI artwork/source images verified, 49 arrow variants replaced, 85 original graphics unchanged; '
       '0.5.1 changelog and no migrations verified.')

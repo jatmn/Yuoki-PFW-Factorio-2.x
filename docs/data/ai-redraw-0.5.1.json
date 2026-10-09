@@ -841,6 +841,68 @@
         }
       ],
       "reference_review": "Assigned character sheet gives material/context; original open-frame icon remains silhouette authority. Related parent neron_u3 belongs to different armor. Both parents checked; no equivalent replacement selected; ownership stays pending."
+    },
+    {
+      "label": "PFW crafting tab",
+      "batch": 7,
+      "path": "graphics/mpfw_ticon2.png",
+      "original_dimensions": [
+        64,
+        64
+      ],
+      "original_sha256": "3b7bb53dff9d092262a1d2d5eaefce18a76918ba36e881ee3d465f2bdd4cd9b8",
+      "dimensions": [
+        128,
+        128
+      ],
+      "sha256": "8eac1ac9297859db5ea75bf2ee2abf6b385cf614febbd9525582b3679f40af0c",
+      "source_path": "docs/artwork/ai-redraw-0.5.1/mpfw_ticon2-source.png",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "source_sha256": "439d2748adc68892a1541e8789ea8e3d400d8cbc31a1b4c589c56fbec395a740",
+      "prompt": "Use case: precise-object-edit. Edit this original Yuoki PFW crafting-tab icon, preserving its exact emblem and lettering. Faithfully redraw at high resolution for a128px game group icon. Upper roughly three-quarters: chunky dark grey industrial device shaped like an X or four diagonal open rectangular metal arms, with silver outer rims, blue-grey inner struts and a bright pale CYAN circular central lens. Keep the original top-down oblique camera, four diagonal rectangular lobes, dark red side/base accents and layered base underneath. Lower portion: EXACT readable text 'YI PFW' on one line. 'YI' saturated yellow/gold, 'PFW' saturated magenta/pink, matching original simple upright narrow sans-serif letter shapes. No extra text, expanded words, hyphen or different letters. Retain composition with emblem above and lettering overlapping its lower edge. Conservative industrial pre-rendered metal detail, crisp small-scale text and shapes; no invented machinery. Square truly transparent canvas with small outer margins, whole emblem and text visible, no floor or cast shadow. Do not replace with a different logo.",
+      "derivative": "Pillow RGBA128x128 Lanczos; overrides earlier64px default",
+      "reference_review": "Original artwork and both parent families inspected. No confirmed duplicate selected.",
+      "references": [
+        {
+          "path": "graphics/mpfw_ticon.png",
+          "sha256": "40565395caff97905982836650428191a500f036f56bc115eeea4b45a82f4f83"
+        }
+      ],
+      "display": "ItemGroup128px icon; transparent, original YI PFW lettering/colors. No assigned animation sheet."
+    },
+    {
+      "label": "Energy-cell equipment sprite",
+      "batch": 7,
+      "path": "graphics/equip/fusion-cell-64.png",
+      "original_dimensions": [
+        64,
+        64
+      ],
+      "original_sha256": "45e1c5df3d92d4f1db4672d99a91c4a94753ccfbb940e47cecd6d1e3e3f3a3e9",
+      "dimensions": [
+        128,
+        128
+      ],
+      "sha256": "900de42b6bef4e243f22f10696976f9b70d41ffb38e36b7b6cd710c5c529d6eb",
+      "source_path": "docs/artwork/ai-redraw-0.5.1/fusion-cell-equipment-source.png",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "source_sha256": "36cb34ae6c98dbb1793ba0bff92e1c59e795ca69fbb42deeb132228108bbe8da",
+      "prompt": "Use case: compositing. Image1 is the accepted filled energy-cell model and MUST remain exactly the same physical object: preserve its geometry, circular top cap, stacked ring count, dark ribs, three inset magenta glowing windows, proportions, front three-quarter camera and material scratches. Image2 is the old equipment-grid sprite, used ONLY for its blue square backing and object placement. Make a128px-ready equipment sprite by placing the exact filled model from image1 on a square muted medium-blue panel with thin pale cyan beveled border like image2. Fill the square background completely opaque, including all corners. Preserve a small margin around the object while it nearly fills the panel's height, matching image2. The cell stays lit bright magenta; no text or arrows. No new hardware, no redesigned model, no rotated perspective, no extra shadow outside the panel. The sole composition change from image1 is the blue equipment backing. The equipment image must visibly match the already accepted filled inventory icon.",
+      "derivative": "Pillow RGBA128x128 Lanczos; overrides earlier64px default",
+      "reference_review": "Original artwork and both parent families inspected. No confirmed duplicate selected.",
+      "references": [
+        {
+          "path": "docs/artwork/ai-redraw-0.5.1/fusion-cell-source.png",
+          "sha256": "df13252d5a239440a15b20df4fe64e46e9f3b80f2c5b5a2201751cfe1c28e749"
+        }
+      ],
+      "display": "128x128 source at scale0.5; original2x2 equipment shape and blue opaque backing retained."
     }
   ],
   "batches": [
@@ -909,6 +971,16 @@
         "neron_u5_32"
       ],
       "review": "Original and sprite references plus both-parent check; paired filled/empty64px comparison. Final integrated graphical check pending."
+    },
+    {
+      "batch": 7,
+      "date": "2026-10-09",
+      "starting_head": "a6e14dd624f89df672983d7150d400c4f0d42ae0",
+      "assets": [
+        "mpfw_ticon2",
+        "fusion-cell-equipment"
+      ],
+      "review": "Original/full-source/128px/64px comparison; cell uses accepted filled model. Both parent group and battery families checked. Graphical confirmation pending."
     }
   ]
 }

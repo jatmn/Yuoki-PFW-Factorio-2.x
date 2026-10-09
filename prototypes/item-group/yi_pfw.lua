@@ -6,7 +6,7 @@ data:extend(
 	{ type = "ammo-category", name = "yi-pfw-energy" },
 	]=]
 
-	{	type = "item-group", name = "yi_special", --[[Legacy field: inventory_order = "yis",]] icon = "__yi_pfw__/graphics/mpfw_ticon2.png", icon_size = 64, order = "yi-s", },
+	{	type = "item-group", name = "yi_special", --[[Legacy field: inventory_order = "yis",]] icon = "__yi_pfw__/graphics/mpfw_ticon2.png", icon_size = 128, order = "yi-s", },
 
 	{	type = "item-subgroup",	name = "yi-basic", group = "yi_special", order = "0" },		-- start/basic rezepte
 	{	type = "item-subgroup",	name = "yi-muntion", group = "yi_special", order = "a" },	-- fab 1 

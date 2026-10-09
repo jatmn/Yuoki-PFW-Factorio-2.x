@@ -119,8 +119,9 @@ data:extend(
 		sprite = 
 		{
 			filename = "__yi_pfw__/graphics/equip/fusion-cell-64.png",
-			width = 64,
-			height = 64,
+			width = 128,
+			height = 128,
+			scale = 0.5,
 			priority = "medium"
 		},
 		shape =

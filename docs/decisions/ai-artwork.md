@@ -48,3 +48,7 @@ Factorio's [2.1.21 icon documentation](https://lua-api.factorio.com/2.1.21/types
 ## Paired states and batch 6
 
 The owner requires the empty energy cell to use the same physical model as the first-round filled cell. The [sixth batch](../artwork-batch-6.md) directly edits the accepted filled master to switch off its glow, and redraws the second-armor icon after inspecting its assigned parent character sheet. Current inventory: 30 AI icons and 87 originals. Existing filled artwork and animation sheets remain unchanged; graphical confirmation of batch6 is pending.
+
+## Static GUI artwork, batch 7
+
+The [seventh batch](../artwork-batch-7.md) adds the PFW crafting-tab icon and energy-cell equipment sprite at128px. Equipment scale0.5 preserves the64px display dimensions and existing2x2 shape. Current inventory:32 AI artwork assets (31icons and one equipment sprite),85 originals. Prompts and per-entry derivative dimensions supersede the earlier64px default for these two only; owner graphical confirmation remains pending.
