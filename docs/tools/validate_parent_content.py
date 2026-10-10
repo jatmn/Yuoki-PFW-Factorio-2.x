@@ -159,7 +159,7 @@ for name, width, height, shift in [
     ('base', 256, 256, [0.5, 0]),
     ('upper', 44, 35, [0.046875, -0.6953125]),
     ('front', 44, 41, [0.0625, 1.1015625]),
-    ('rear', 44, 32, [0.1875, -1.53125]),
+    ('rear', 44, 41, [0.0625, -1.3671875]),
     ('shadow', 256, 256, [0.5, 0]),
 ]:
     layer = dict(filename='__yi_pfw__/graphics/entity/fab-ammo-' + name + '.png',

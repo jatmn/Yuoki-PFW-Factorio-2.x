@@ -1082,7 +1082,7 @@
   "layered_animations": [
     {
       "prototype": "y-factory-1",
-      "method": "Fixed accepted AI body, rotor axes and lighting; projected cutouts and indicators move together, original rear trajectory and shadow; see docs/tools/build_ammo_animation.py.",
+      "method": "Fixed accepted AI body and axes; two opposing cutout/light assemblies on each drum share cylinder projection, with rear housing occlusion; original motion reference and shadow. See docs/tools/build_ammo_animation.py.",
       "frame_count": 16,
       "scale": 0.5,
       "original": {
@@ -1120,7 +1120,7 @@
         },
         {
           "path": "graphics/entity/fab-ammo-front.png",
-          "sha256": "a421563b5beeec56aaac2200fd1d6915021ee1147c46e50ce24c54bd56b618c5",
+          "sha256": "db7624d6692b6ffff8b886f993b87ae383aed893804e7c5a1ca52db7a27247c4",
           "dimensions": [
             704,
             41
@@ -1128,10 +1128,10 @@
         },
         {
           "path": "graphics/entity/fab-ammo-rear.png",
-          "sha256": "1eb05cd268a2c0c17dd862de3794cfde4e94eb56e5b8c2c83903c8c94ec5a036",
+          "sha256": "603b292e9043249c8d2b42293dc6e486cd6acfa4bea23c96e92d71d02233dd39",
           "dimensions": [
             704,
-            32
+            41
           ]
         },
         {

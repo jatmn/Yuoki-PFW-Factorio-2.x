@@ -22,7 +22,7 @@ data:extend(
 			{ filename = "__yi_pfw__/graphics/entity/fab-ammo-front.png",
 				width = 44, height = 41, scale = 0.5, shift = {0.0625, 1.1015625}, frame_count = 16, line_length = 16 },
 			{ filename = "__yi_pfw__/graphics/entity/fab-ammo-rear.png",
-				width = 44, height = 32, scale = 0.5, shift = {0.1875, -1.53125}, frame_count = 16, line_length = 16 },
+				width = 44, height = 41, scale = 0.5, shift = {0.0625, -1.3671875}, frame_count = 16, line_length = 16 },
 			{ filename = "__yi_pfw__/graphics/entity/fab-ammo-shadow.png",
 				width = 256, height = 256, scale = 0.5, shift = {0.5, 0}, frame_count = 1, repeat_count = 16, draw_as_shadow = true },
 		} } },
