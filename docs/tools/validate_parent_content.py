@@ -1,6 +1,7 @@
 """Compare 0.5.1's real data dump with the merged 0.5.0 baseline.
 
 Use the same Factorio 2.1.21 and pinned parent mods for both dumps.
+Run in a Git checkout containing the immutable 0.4.15 import for source-art checks.
 Run: python3 docs/tools/validate_parent_content.py --before before.json --after after.json
      --yuoki /path/to/Yuoki --engines /path/to/yi_engines
 """
@@ -10,10 +11,28 @@ import hashlib
 import json
 import re
 import struct
+import subprocess
 import math
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
+# Superseded sheets stay available only in the immutable original import.
+REMOVED_SHEETS = {
+    'graphics/entity/fab-ammo-sheet.png',
+    'graphics/entity/fab-bio-sheet.png',
+    'graphics/entity/fab-comp-sheet.png',
+    'graphics/entity/fab-equip-sheet.png',
+    'graphics/entity/fab-trucks-sheet.png',
+    'graphics/entity/fab-weapons-sheet.png',
+    'graphics/entity/tut-vai1.png',
+}
+ORIGINAL_COMMIT = "103efa8acc74ab86b282b5388f64f333d06660dd"
+
+def asset_bytes(path):
+    if path in REMOVED_SHEETS:
+        return subprocess.check_output(["git", "-C", str(ROOT), "show", ORIGINAL_COMMIT + ":" + path])
+    return (ROOT / path).read_bytes()
+
 parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument('--before', type=Path, required=True)
 parser.add_argument('--after', type=Path, required=True)
@@ -162,7 +181,7 @@ for name, filename in [('y-rich-1', 'profit-show-2.png'), ('y-rich-2', 'profit-s
     assert (sprite['width'], sprite['height'], sprite.get('scale', 1)) == (160, 160, 1)
     sprite.update(width=320, height=320, scale=0.5)
 # These non-rotating factories display north; all directions reuse Engines.
-# The former north/south sheet remains an unchanged original asset for future use.
+# The former north/south sheet is superseded; its source remains in Git history.
 for name in ['y-factory-4', 'y-factory-6', 'y-factory-7']:
     for direction in ['north', 'east', 'south', 'west']:
         sprite = expected['assembling-machine'][name]['graphics_set']['animation'][direction]
@@ -255,7 +274,7 @@ for name, palette in palettes.items():
 all_layer_sets = {'y-factory-1': ammo_layers, 'y-factory-3': bio_layers, **shared_layers}
 shared = redraw_map['shared_factory_module']
 for entry in shared['sources']:
-    content = (ROOT / entry['path']).read_bytes()
+    content = asset_bytes(entry['path'])
     assert hashlib.sha256(content).hexdigest() == entry['sha256'], entry['path']
 assert hashlib.sha256((ROOT / shared['palettes']['path']).read_bytes()).hexdigest() == shared['palettes']['sha256']
 layered_entries = {e['prototype']: e for e in redraw_map['layered_animations']}
@@ -270,7 +289,7 @@ for prototype, layers in all_layer_sets.items():
         layer['filename'].removeprefix('__yi_pfw__/') for layer in layers
     }
     for entry in [layered['original'], layered['source'], *output_entries]:
-        content = (ROOT / entry['path']).read_bytes()
+        content = asset_bytes(entry['path'])
         assert hashlib.sha256(content).hexdigest() == entry['sha256'], entry['path']
         assert list(struct.unpack('>II', content[16:24])) == entry['dimensions'], entry['path']
     for layer in layers:
@@ -334,10 +353,13 @@ for asset in assets:
         assert redraws[asset['path']]['original_sha256'] == asset['sha256'], asset['path']
     elif asset['path'] in arrow_variants:
         assert arrow_variants[asset['path']]['original_sha256'] == asset['sha256'], asset['path']
+    elif asset['path'] in REMOVED_SHEETS:
+        assert not (ROOT / asset['path']).exists(), asset['path']
+        assert hashlib.sha256(asset_bytes(asset['path'])).hexdigest() == asset['sha256'], asset['path']
     else:
         assert hashlib.sha256((ROOT / asset['path']).read_bytes()).hexdigest() == asset['sha256'], asset['path']
 assert len(replacements) == 41
-assert len(list((ROOT / 'graphics').rglob('*.png'))) == len(assets) - len(replacements) - len(arrow_variants) + len({layer['filename'] for layers in all_layer_sets.values() for layer in layers})
+assert len(list((ROOT / 'graphics').rglob('*.png'))) == len(assets) - len(replacements) - len(arrow_variants) - len(REMOVED_SHEETS) + len({layer['filename'] for layers in all_layer_sets.values() for layer in layers})
 
 def check_layouts(value):
     if isinstance(value, list):
@@ -373,7 +395,7 @@ trades = [r for r in recipes if 'yrcat-retrade' in after['recipe'][mapping['reci
 assert len(trades) == 56
 print(f'PASS: {removed} redundant declarations inactive; 105 recipe routes and quantities retained, Mk.1 constructor restored; '
       '56 trades supported; pending mappings/parent behavior preserved; 41 parent assets verified, '
-      '34 AI artwork/source images verified, 49 arrow variants replaced, 82 original graphics unchanged; '
+      '34 AI artwork/source images verified, 49 arrow variants replaced, 7 superseded sheets removed, 75 original graphics unchanged; '
       '0.5.1 changelog and no migrations verified.')
 
 if args.locale_dir:

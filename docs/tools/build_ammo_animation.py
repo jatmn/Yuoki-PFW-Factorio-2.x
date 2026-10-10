@@ -1,15 +1,19 @@
 #!/usr/bin/env python3
 """Build ammunition-factory layers from the accepted AI master (requires Pillow).
 
-Run from any directory. Original animation supplies the motion reference and ground shadow.
+Run from any directory in a Git checkout containing the 0.4.15 import.
+Original animation from Git history supplies the motion reference and ground shadow.
 Both drums use paired projected cutouts; the rear housing masks the hidden portions. No preview media is written to the repo.
 """
 import math
+import io
+import subprocess
 from pathlib import Path
 from PIL import Image, ImageDraw, ImageChops
 
 ROOT = Path(__file__).resolve().parents[2]
 OUT = ROOT / 'graphics/entity'
+ORIGINAL_COMMIT = "103efa8acc74ab86b282b5388f64f333d06660dd"
 MASTER = ROOT / 'docs/artwork/ai-redraw-0.5.1/fabrik-ammo-icon-source.png'
 CROP = (67, 63, 1159, 1196)
 PLACEMENT = (2, 16)
@@ -19,7 +23,8 @@ FRAMES = 16
 
 def build():
     master = Image.open(MASTER).convert('RGBA')
-    old = Image.open(OUT / 'fab-ammo-sheet.png').convert('RGBA')
+    old = Image.open(io.BytesIO(subprocess.check_output(
+        ['git', '-C', str(ROOT), 'show', ORIGINAL_COMMIT + ':graphics/entity/fab-ammo-sheet.png']))).convert('RGBA')
     clean = master.copy()
     # Reconstruct continuous metal beneath the complete rear/front cutouts,
     # not just their orange centers. Interpolate across the narrow axial strip

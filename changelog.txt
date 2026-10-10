@@ -12,9 +12,10 @@ Date: 2026-10-09
     - Return an empty energy cell after fuel use when the burner has a spent-fuel output slot; otherwise burn normally and discard the container. Burner definitions remain unchanged.
     - Keep the second-armor mapping pending; preserve unique original artwork and other disabled content.
   Graphics:
+    - Remove seven superseded factory animation sheets; artwork tools read original shadow sources from Git history. Keep otherwise-unused artwork.
     - Include the original Mod Portal thumbnail in the package for the in-game mod browser.
     - Replace 41 confirmed duplicate artwork files with references to Yuoki Industries or Yuoki Engines, including the shared-factory icon and animation.
-    - Use Engines' animation for the Heavy Weapons, Tank and Supply factories in all directions, including their fixed in-game view; retain the original alternate sheet for future use.
+    - Use Engines' animation for the Heavy Weapons, Tank and Supply factories in all directions, including their fixed in-game view; the original alternate sheet remains in Git history.
     - Generate import/export arrows with Yuoki helpers instead of 49 precomposed arrow-icon variants.
     - Refresh retained factory, display, commodity, weapon, material, armor and support-item icons with AI-assisted artwork based on original sprites.
     - Match the empty and filled energy-cell icons to one model; retain the energy-support unit's box and side-mounted cylinder.

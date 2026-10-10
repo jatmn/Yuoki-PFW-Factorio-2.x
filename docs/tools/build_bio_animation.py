@@ -1,14 +1,18 @@
 #!/usr/bin/env python3
 """Build fixed cyborg-factory hardware plus its original fill/color/drain cycle.
 
-Requires Pillow. Reuses the accepted AI master and original shadow; does not
+Requires Pillow and a Git checkout containing the 0.4.15 import.
+Reuses the accepted AI master and original shadow from history; does not
 write preview media. Layer coordinates match the factory3 prototype contract.
 """
+import io
+import subprocess
 from pathlib import Path
 from PIL import Image, ImageDraw, ImageChops
 
 ROOT = Path(__file__).resolve().parents[2]
 OUT = ROOT / 'graphics/entity'
+ORIGINAL_COMMIT = "103efa8acc74ab86b282b5388f64f333d06660dd"
 MASTER = ROOT / 'docs/artwork/ai-redraw-0.5.1/fabrik-bio-icon-source.png'
 CROP = (75, 61, 1179, 1182)
 SIZE = (188, 216)
@@ -51,7 +55,8 @@ def build():
     base = Image.new('RGBA', (256,256))
     base.paste(body.crop(CROP).resize(SIZE, Image.Resampling.LANCZOS), (2,16))
     base.save(OUT / 'fab-bio-base.png')
-    old = Image.open(OUT / 'fab-bio-sheet.png').convert('RGBA').crop((0,0,128,128))
+    old = Image.open(io.BytesIO(subprocess.check_output(
+        ['git', '-C', str(ROOT), 'show', ORIGINAL_COMMIT + ':graphics/entity/fab-bio-sheet.png']))).convert('RGBA').crop((0,0,128,128))
     shadow = Image.new('RGBA', old.size)
     shadow.putdata([(0,0,0,a) if r == g == b == 0 else (0,0,0,0) for r,g,b,a in old.getdata()])
     shadow.resize((256,256), Image.Resampling.LANCZOS).save(OUT / 'fab-bio-shadow.png')
