@@ -146,13 +146,19 @@ for name, filename in [('y-rich-1', 'profit-show-2.png'), ('y-rich-2', 'profit-s
     assert sprite['filename'] == '__yi_pfw__/graphics/entity/' + filename
     assert (sprite['width'], sprite['height'], sprite.get('scale', 1)) == (160, 160, 1)
     sprite.update(width=320, height=320, scale=0.5)
-# Batch9 reuses only the matching east/west frames; north/south remain unchanged.
+# These non-rotating factories display north; all directions reuse Engines.
+# The former north/south sheet remains an unchanged original asset for future use.
 for name in ['y-factory-4', 'y-factory-6', 'y-factory-7']:
-    for direction in ['east', 'west']:
+    for direction in ['north', 'east', 'south', 'west']:
         sprite = expected['assembling-machine'][name]['graphics_set']['animation'][direction]
-        assert sprite['filename'] == '__yi_engines__/graphics/entity/science_gen.png'
-        assert (sprite['width'], sprite['height'], sprite.get('scale', 1)) == (120, 120, 1)
-        sprite.update(width=128, height=128, scale=0.9375)
+        if direction in ['north', 'south']:
+            assert sprite['filename'] == '__yi_pfw__/graphics/entity/tut-vai1.png'
+            assert (sprite['width'], sprite['height'], sprite.get('scale', 1)) == (120, 128, 1)
+        else:
+            assert sprite['filename'] == '__yi_engines__/graphics/entity/science_gen.png'
+            assert (sprite['width'], sprite['height'], sprite.get('scale', 1)) == (120, 120, 1)
+        sprite.update(filename='__yi_engines__/graphics/entity/science_gen.png',
+                      width=128, height=128, scale=0.9375)
 # The ammunition factory shares one layered animation in all directions.
 ammo_layers = []
 for name, width, height, shift in [

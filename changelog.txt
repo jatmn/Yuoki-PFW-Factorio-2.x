@@ -7,8 +7,8 @@ Date: 9. 10. 2026
     - Keep redundant PFW definitions commented with parent ownership references; retain all distinct recipes and quantities.
     - Leave ambiguous gun, shield, second-armor and fuel-cell mappings pending; preserve unique original artwork and previously disabled content.
   Graphics:
-    - Replace 41 confirmed duplicate artwork files with references to Yuoki Industries or Yuoki Engines, including the shared-factory icon and matching east/west animation.
-    - Retain the shared factory's distinct north/south artwork and preserve its animation display size.
+    - Replace 41 confirmed duplicate artwork files with references to Yuoki Industries or Yuoki Engines, including the shared-factory icon and animation.
+    - Use Engines' animation for the Heavy Weapons, Tank and Supply factories in all directions, including their fixed in-game view; retain the original alternate sheet for future use.
     - Generate import/export arrows with Yuoki helpers instead of 49 precomposed arrow-icon variants.
     - Refresh retained factory, display, commodity, weapon, material, armor and support-item icons with AI-assisted artwork based on original sprites.
     - Match the empty and filled energy-cell icons to one model; retain the energy-support unit's box and side-mounted cylinder.

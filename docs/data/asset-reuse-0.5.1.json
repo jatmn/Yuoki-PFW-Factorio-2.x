@@ -986,8 +986,16 @@
         "prototypes/e_factory.lua:204"
       ],
       "evidence": "All 16 east/west frames match the parent machine and rotating front assembly; the distinct north/south sheet is retained.",
-      "metadata": "Only east/west of y-factory-4,6,7: width/height128 and scale0.9375 preserve120px display extent; shift0.3,0, frame_count16, line_length16 and default speed1 unchanged.",
-      "batch": 9
+      "metadata": "All directions of y-factory-4,6,7 use width/height128 and scale0.9375 (120px display extent), shift0.3,0, frame_count16, line_length16 and default speed1. Runtime placement forces north and refuses rotation.",
+      "batch": 9,
+      "additional_reuse": {
+        "retained_pfw_path": "graphics/entity/tut-vai1.png",
+        "directions": [
+          "north",
+          "south"
+        ],
+        "decision": "Owner selected Engines artwork for the displayed view as well. Keep the distinct original north/south sheet unchanged for future use."
+      }
     }
   ],
   "retained_candidates": [
