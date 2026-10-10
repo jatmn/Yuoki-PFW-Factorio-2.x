@@ -155,6 +155,7 @@ def build():
         for n in range(count):
             f=original.crop((128*n,0,128*(n+1),128))
             f.putdata([(0,0,0,a) if r==g==b==0 else (0,0,0,0) for r,g,b,a in f.getdata()])
+            if name=='comp':f=component_ground_shadow(f)
             sheet.paste(f.resize((256,256),Image.Resampling.LANCZOS),(256*n,0))
         sheet.save(OUT/f'fab-{name}-shadow.png')
     # Generated palette table: data-stage tints and authoring previews use one input.
@@ -228,8 +229,80 @@ def build_component_right():
         frame=Image.new('RGBA',source.size)
         count=0 if n==15 else min(n//2,6)
         for position in positions[:count]:frame.alpha_composite(cell,position)
-        sheet.paste(module(frame),(92*n,0))
+        shaded=component_cast_shadows(frame,platform,positions[:count],crop,cell)
+        sheet.paste(shaded,(92*n,0))
     sheet.save(OUT/'factory-comp-cells.png')
+
+
+def component_ground_shadow(frame):
+    """Keep the two connected ground shadows, not black details inside old cells."""
+    pixels=frame.load()
+    remaining={(x,y) for y in range(128) for x in range(128) if pixels[x,y][3]}
+    groups=[]
+    while remaining:
+        seed=remaining.pop();group={seed};pending=[seed]
+        while pending:
+            x,y=pending.pop()
+            for point in [(x-1,y),(x+1,y),(x,y-1),(x,y+1)]:
+                if point in remaining:
+                    remaining.remove(point);group.add(point);pending.append(point)
+        groups.append(group)
+    keep=set().union(*sorted(groups,key=len,reverse=True)[:2])
+    for y in range(128):
+        for x in range(128):
+            if (x,y) not in keep:pixels[x,y]=(0,0,0,0)
+    return frame
+
+
+def component_cast_shadows(cells,platform,positions,crop,cell):
+    """Bake directional occlusion onto receiving cells/floor, never empty space.
+
+    Approximate the accepted cells as upright cylinders in an orthographic scene.
+    Depth projects at 1/2 scale; screen y also includes the cell's height. Rays
+    toward the upper-left light test only material above the receiving surface,
+    so equal-height caps cannot cast a pasted silhouette across each other.
+    """
+    size=(184,432)  # twice runtime resolution for soft, stable shadow boundaries
+    visible=cells.crop(crop).resize(size,Image.Resampling.LANCZOS)
+    if not positions:return visible.resize((92,216),Image.Resampling.LANCZOS)
+    floor=platform.crop(crop).resize(size,Image.Resampling.LANCZOS)
+    receiving=ImageChops.lighter(visible.getchannel('A'),floor.getchannel('A'))
+    shade=Image.new('L',size);sp=shade.load();alpha=cell.getchannel('A').load();rp=receiving.load()
+    radius,height=96,195
+    centers=[(x+100,(y+260)*2) for x,y in positions]
+    light_x,light_depth=-1.2,-1.0
+    a=light_x**2+light_depth**2
+    for v in range(size[1]):
+        y=crop[1]+(v+.5)*(crop[3]-crop[1])/size[1]
+        for u in range(size[0]):
+            if rp[u,v]<128:continue
+            x=crop[0]+(u+.5)*(crop[2]-crop[0])/size[0]
+            owner=None;z=0
+            # Frontmost opaque cell owns this pixel; cylindrical depth gives its
+            # surface height. The floor is the receiver when no cell is present.
+            for i,(px,py) in enumerate(positions):
+                if px<=x<px+201 and py<=y<py+308:
+                    # Sample the shared complete cell before overlap/compositing.
+                    sx=int(x-px);sy=int(y-py)
+                    if alpha[sx,sy]>128:
+                        owner=i
+                        front=.5*math.sqrt(max(0,radius**2-(x-px-100)**2))
+                        z=max(0,min(height,py+260+front-y))
+            depth=(y+z)*2
+            for i,(cx,cy) in enumerate(centers):
+                if i==owner:continue
+                dx,dy=x-cx,depth-cy
+                b=2*(dx*light_x+dy*light_depth)
+                discriminant=b*b-4*a*(dx*dx+dy*dy-radius**2)
+                if discriminant<0:continue
+                root=math.sqrt(discriminant)
+                enter=(-b-root)/(2*a);leave=(-b+root)/(2*a)
+                if leave>1 and max(enter,1)<height-z:
+                    sp[u,v]=105;break
+    shade=ImageChops.multiply(shade.filter(ImageFilter.GaussianBlur(.8)),receiving)
+    overlay=Image.new('RGBA',size,(0,0,0,0));overlay.putalpha(shade)
+    visible.alpha_composite(overlay)
+    return visible.resize((92,216),Image.Resampling.LANCZOS)
 
 
 def render(name,n,shadow=True, palette=None):
