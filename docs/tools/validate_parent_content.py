@@ -361,12 +361,12 @@ info = json.loads((ROOT / 'info.json').read_text())
 assert info['version'] == '0.5.1' and info['factorio_version'] == '2.1'
 assert info['dependencies'] == ['base >= 2.1.21', 'Yuoki >= 1.3.0', 'yi_engines >= 1.3.0']
 lines = (ROOT / 'changelog.txt').read_text().splitlines()
-assert [x for x in lines if x.startswith('Version:')] == ['Version: 0.5.1', 'Version: 0.5.0']
+assert [x for x in lines if x.startswith('Version:')] == ['Version: 0.5.1', 'Version: 0.5.0', 'Version: 0.4.15']
 for i, line in enumerate(lines):
     assert line == line.rstrip() and '\t' not in line
     if line.startswith('Version:'):
         assert lines[i-1] == '-' * 99
-        assert re.fullmatch(r'Date: [1-9][0-9]?\. [1-9][0-9]?\. [0-9]{4}', lines[i+1])
+        assert re.fullmatch(r'Date: [0-9]{4}-[0-9]{2}-[0-9]{2}', lines[i+1])
 trades = [r for r in recipes if 'yrcat-retrade' in after['recipe'][mapping['recipe_names'].get(r['name'], r['name'])].get('categories', [])]
 assert len(trades) == 56
 print(f'PASS: {removed} redundant declarations inactive; 105 recipe routes and quantities retained, Mk.1 constructor restored; '

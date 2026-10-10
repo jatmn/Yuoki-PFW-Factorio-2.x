@@ -6,11 +6,11 @@ Owner requirements recorded 2026-10-09. These govern implementation and supersed
 
 - Start the restored mod at **0.5.0** when implementation begins. Set `info.json`, the package version and the first changelog section consistently.
 - The owner explicitly authorized **0.5.1** after merging Phase 1. Keep the 0.5.0 changelog section intact and accumulate this pass in 0.5.1. Hold at 0.5.1 until another version is authorized; commits, PRs and completed phases do not authorize an automatic bump.
-- Add a root `changelog.txt` when building. There is no existing changelog to carry forward; do not invent historical release entries. Record implemented changes rather than prospective discovery tasks.
-- Use Yuoki Industries' date convention: `Date: D. M. YYYY`, with unpadded day/month and spaces after the dots; for example `Date: 8. 10. 2026`. Use the applicable release date, not the example or discovery date by default. Reference: [Yuoki 1.3.0 changelog](https://github.com/jatmn/Yuoki-Factorio-2.x/blob/50ea38b9703a13e8644c3bcfe6e400b3bf2b4a5c/changelog.txt).
+- Maintain root `changelog.txt` with implemented changes rather than prospective discovery tasks. The owner supplied the historical 0.4.15 entry dated 2016-10-23: "still unfinished, but now aviable at mods.factorio.com". Preserve that wording; do not invent other historical entries.
+- Updated owner direction: use `Date: YYYY-MM-DD`, with zero-padded month/day. The current 0.5.0 and 0.5.1 sections use `Date: 2026-10-09`; historical 0.4.15 uses `Date: 2016-10-23`. This supersedes the earlier Yuoki-style date instruction.
 - Follow Factorio's parser format: exactly 99 hyphens for the section separator, immediately followed by the section version (currently `Version: 0.5.1`); category lines indented two spaces and ending in a colon; entries indented four spaces then `- `; continuation lines indented six spaces. Avoid tabs, trailing spaces and duplicate version sections.
 
-The in-game browser parses this structure; the Mod Portal displays the file as plain text. Use the same file for both and verify it displays correctly in the game with no changelog parsing errors. The date format itself is unrestricted by Factorio, so Yuoki's convention is compatible. [Official changelog specification](https://lua-api.factorio.com/2.1.21/auxiliary/changelog-format.html).
+The in-game browser parses this structure; the Mod Portal displays the file as plain text. Use the same file for both and verify it displays correctly in the game with no changelog parsing errors. The date format itself is unrestricted by Factorio; use the owner’s year-month-day convention. [Official changelog specification](https://lua-api.factorio.com/2.1.21/auxiliary/changelog-format.html).
 
 ## Dependencies and target
 
@@ -49,7 +49,7 @@ Completion evidence:
 2. Data-stage validation completes without fatal errors.
 3. A graphical client reaches the main menu and creates/enters a new game with PFW enabled, with no startup, asset-loading or initialization crash. A headless dump alone cannot establish this.
 4. The new game runs for a brief smoke test, can be saved, and that 0.5.0 save reloads successfully. No legacy-save migration is expected.
-5. The root changelog has a single valid 0.5.0 section, uses Yuoki's date style, and displays correctly. Record remaining gameplay/visual issues as later work.
+5. The root changelog has valid version sections and displays correctly. Current date/history requirements above supersede the original Phase 1 single-section/date-style check. Record remaining gameplay/visual issues as later work.
 
 This milestone establishes a working launch baseline. It does not assert complete recipe accessibility, correct economics, finished ownership consolidation or final artwork quality.
 

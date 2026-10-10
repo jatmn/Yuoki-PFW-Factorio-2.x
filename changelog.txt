@@ -1,6 +1,6 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.5.1
-Date: 9. 10. 2026
+Date: 2026-10-09
   Changes:
     - Reuse Engines' Trade Node and Yuoki's minigun, energy ammunition, mobile generator, movement equipment and first walker.
     - Allow the Engines Trade Node to process PFW trades while retaining its existing categories and operating statistics.
@@ -37,7 +37,7 @@ Date: 9. 10. 2026
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.5.0
-Date: 9. 10. 2026
+Date: 2026-10-09
   Changes:
     - Begin the fresh Factorio 2.1 release; require Factorio 2.1.21, Yuoki 1.3.0 and Yuoki Engines 1.3.0.
     - Remove the obsolete legacy migrations; this release starts with a new game.
@@ -46,3 +46,9 @@ Date: 9. 10. 2026
     - Update character animation registration and replace obsolete weapon sound references.
     - Preserve Yuoki's projectile and equipment grid instead of overwriting parent definitions.
     - Keep all 105 existing recipe routes; update the removed vanilla wood and flamethrower references.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.4.15
+Date: 2016-10-23
+  Initial release:
+    - still unfinished, but now aviable at mods.factorio.com
