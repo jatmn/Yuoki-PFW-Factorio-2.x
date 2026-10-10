@@ -962,6 +962,40 @@
       "evidence": "Batch3 sprite review: same four circular stations, blue central rotor and front rotor machine family. Parent icon is a newer rendering/state, not byte-identical. Reuse directly; do not generate another copy. PFW directional sheets remain for later frame-specific assessment.",
       "metadata": "All six icon paths use parent image directly at its existing32px size; no entity or recipe alias.",
       "batch": 3
+    },
+    {
+      "pfw_path": "graphics/entity/tut-hai1.png",
+      "provider": "yi_engines",
+      "provider_path": "graphics/entity/science_gen.png",
+      "original_dimensions": [
+        1920,
+        120
+      ],
+      "provider_dimensions": [
+        2048,
+        128
+      ],
+      "original_sha256": "3fdc36f07c81a4afbe0135a4e5e478170fca6bcce66420dc7c37608b7533aa40",
+      "provider_sha256": "54063d71f7796748d530f99fb2ebd2f8828473e1961c20d1d46146c373b8ebd8",
+      "source_references_before": [
+        "prototypes/e_factory.lua:105",
+        "prototypes/e_factory.lua:111",
+        "prototypes/e_factory.lua:167",
+        "prototypes/e_factory.lua:173",
+        "prototypes/e_factory.lua:198",
+        "prototypes/e_factory.lua:204"
+      ],
+      "evidence": "All 16 east/west frames match the parent machine and rotating front assembly; the distinct north/south sheet is retained.",
+      "metadata": "All directions of y-factory-4,6,7 use width/height128 and scale0.9375 (120px display extent), shift0.3,0, frame_count16, line_length16 and default speed1. Runtime placement forces north and refuses rotation.",
+      "batch": 9,
+      "additional_reuse": {
+        "retained_pfw_path": "graphics/entity/tut-vai1.png",
+        "directions": [
+          "north",
+          "south"
+        ],
+        "decision": "Owner selected Engines artwork for the displayed view as well. Keep the distinct original north/south sheet unchanged for future use."
+      }
     }
   ],
   "retained_candidates": [

@@ -53,7 +53,7 @@ data:extend(
 
 		graphics_set = { animation = {
 			filename = "__yi_pfw__/graphics/entity/profit-show-2.png",			
-			width = 160, height = 160, shift = {0.5, -0.25}, frame_count = 1, line_length = 1,
+			width = 320, height = 320, scale = 0.5, shift = {0.5, -0.25}, frame_count = 1, line_length = 1,
 		} },
 		crafting_categories = {"yuoki-fame"}, crafting_speed = 6,
 		energy_source = {type = "electric", usage_priority = "secondary-input", emissions_per_minute = { pollution = 0.04 / 2.5 * 10000 } },
@@ -76,7 +76,7 @@ data:extend(
 		fast_replaceable_group = "assembling-machine",
 		graphics_set = { animation = {
 			filename = "__yi_pfw__/graphics/entity/profit-show-1.png",			
-			width = 160, height = 160, shift = {1.0, -0.25}, frame_count = 1, line_length = 1,
+			width = 320, height = 320, scale = 0.5, shift = {1.0, -0.25}, frame_count = 1, line_length = 1,
 		} },
 		crafting_categories = {"yuoki-fame"}, crafting_speed = 18,
 		energy_source = {type = "electric", usage_priority = "secondary-input", emissions_per_minute = { pollution = 0.04 / 2.5 * 25000 } },

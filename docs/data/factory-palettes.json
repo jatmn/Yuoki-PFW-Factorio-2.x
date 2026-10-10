@@ -1,0 +1,6 @@
+{
+  "weapons": {"prototype": "y-factory-2", "speed": 1, "trim": [0.48, 0.43, 0.34], "rings": [1, 0.88, 0.55], "panels": [1, 0.48, 0.08], "lights": [0.35, 1, 0.06], "opening_glow": false},
+  "trucks": {"prototype": "y-factory-5", "speed": 1, "trim": [0.9, 0.5, 0.27], "rings": [1, 0.56, 0.32], "panels": [0.07, 0.29, 1], "lights": [0.1, 0.55, 1], "opening_glow": false},
+  "equip": {"prototype": "y-factory-8", "speed": 1, "trim": [1, 0.55, 0.28], "rings": [1, 1, 1], "panels": [0.1, 0.4, 1], "lights": [0.35, 1, 0.06], "opening_glow": false},
+  "comp": {"prototype": "y-factory-9", "speed": 0.2, "trim": [1, 0.86, 0.52], "rings": [1, 1, 1], "panels": [1, 0.18, 0.04], "lights": [1, 0.62, 0.06], "opening_glow": [1, 0.57, 0.06]}
+}

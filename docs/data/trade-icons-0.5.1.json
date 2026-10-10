@@ -120,13 +120,13 @@
     },
     {
       "recipe": "y-rfab2b-recipe",
-      "source": "y-sm-1",
+      "source": "yi_lasergun",
       "direction": "down",
       "old_icon": "__yi_pfw__/graphics/fab2/lasergun-sell.png"
     },
     {
       "recipe": "y-rfab2c-recipe",
-      "source": "y-sm-2",
+      "source": "yi_lasergun",
       "direction": "down",
       "old_icon": "__yi_pfw__/graphics/fab2/plasma-gun-sell.png"
     },
@@ -252,13 +252,13 @@
     },
     {
       "recipe": "y-rfab8b-recipe",
-      "source": "y-equ-1",
+      "source": "yi_equip_shield_a",
       "direction": "down",
       "old_icon": "__yi_pfw__/graphics/fab8/lfg13-sell.png"
     },
     {
       "recipe": "y-rfab8c-recipe",
-      "source": "y-equ-2",
+      "source": "yi_equip_shield_b",
       "direction": "down",
       "old_icon": "__yi_pfw__/graphics/fab8/mfg28-sell.png"
     },
@@ -734,10 +734,10 @@
       "original_sha256": "66947aefaeb77258b4fc8cd2b5a7a897538a50f626ba7e4341359cf44d2ebead",
       "base_icon": "__yi_pfw__/graphics/fab3/neron_u5_32.png",
       "base_dimensions": [
-        32,
-        32
+        64,
+        64
       ],
-      "base_sha256": "45a671f378cb6eaded55bc04923cdc9b57a49eca77605773271e943f53c57dda",
+      "base_sha256": "dd57a7eea6c812f0fa42e6e3563cf513f9abf95f9e25bfbce7e105716579c4bb",
       "direction": "down",
       "source_references_before": [],
       "future_use": "Register or restore the intended item with this base artwork, then use yi.lib.recipe.atomics.item_down(item_name). Do not recreate a baked arrow image."
@@ -897,10 +897,10 @@
       "original_sha256": "b8a8a7039e0096728082944f81fb217511f17d7ed04e9b976c74c405a7246996",
       "base_icon": "__yi_pfw__/graphics/fab8/msg-cb.png",
       "base_dimensions": [
-        32,
-        32
+        64,
+        64
       ],
-      "base_sha256": "c12c4ef6336208787b1e5a925a0b16418664ef9f9e45afa1b14b67bf74b400c8",
+      "base_sha256": "bfb06630b72a6c08a1024228bdb6aec5b236bf9106773e2acd32f13296f9c9e6",
       "direction": "down",
       "source_references_before": [
         {
@@ -915,10 +915,10 @@
       "original_sha256": "9ac3f1c0197996ddd1c8d77bd7171965b28bd43b5a72da4b9e88392ba1c889cc",
       "base_icon": "__yi_pfw__/graphics/fab8/sfg400.png",
       "base_dimensions": [
-        32,
-        32
+        64,
+        64
       ],
-      "base_sha256": "8c29f1d44bc25977c98d066648c75d5e07f28cdc97d45a9322b7bbf840b83d1e",
+      "base_sha256": "eeabc2d5f75021f095c4b8947bdcb17f38447d116011f247fa3414c406a22655",
       "direction": "down",
       "source_references_before": [
         {
@@ -933,10 +933,10 @@
       "original_sha256": "675880d3eabd79397ff1ff9989daf64508c560d5010218e79a674d0859fac973",
       "base_icon": "__yi_pfw__/graphics/fab8/teil_02.png",
       "base_dimensions": [
-        32,
-        32
+        64,
+        64
       ],
-      "base_sha256": "bb51b72072fb3641718452454c7585c282b8730710343a0757912daf808159b8",
+      "base_sha256": "9bae4d0da4c33849a3cfab5937fd1d7c41bb4fe10e0965f456ece81706c8026b",
       "direction": "down",
       "source_references_before": [
         {
@@ -951,10 +951,10 @@
       "original_sha256": "eae98ac0ccfd16547f5172fc2d3822152e2b074b4e30d425bf71f5276166cf9f",
       "base_icon": "__yi_pfw__/graphics/fab8/teil_04_32.png",
       "base_dimensions": [
-        32,
-        32
+        64,
+        64
       ],
-      "base_sha256": "e07eeffa746f36959c45296dd26501858214c521bf8b8dacf69ec03905e2b920",
+      "base_sha256": "7a24f64a465e0bbf13537eea5014b2f4e116fa9527b748634185b9a59a057d5a",
       "direction": "down",
       "source_references_before": [
         {

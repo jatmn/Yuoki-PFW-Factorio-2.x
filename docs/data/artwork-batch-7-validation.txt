@@ -1,0 +1,35 @@
+0.5.1 artwork batch7, 2026-10-09
+Starting heada6e14dd624f89df672983d7150d400c4f0d42ae0.
+Two128px static GUI assets: crafting-tab emblem and filled-cell equipment sprite. Original emblem/alternate and both parent group families inspected; cell uses accepted filled master and original blue backing.
+Official Factorio2.1.21 ItemGroup and Sprite documentation checked before implementation.
+PASS: group transparency preserved; equipment alpha remains fully opaque;128px/64px comparison reviewed.
+PASS: full Phase1-to-current data/preservation validator;128px permitted only for the two exact paths, all other redraws64px.
+PASS: independent batch6 dump comparison exactly group icon_size128 plus equipment width/height128 and scale0.5; no other differences.
+PASS:128*0.5=64 displayed dimensions,2x2 shape/energy properties unchanged; exact Lua byte substitutions verified.
+PASS: previous30 AI entries/runtime files unchanged;32 AI artwork/source identities,85 original PNGs,117 total.
+PASS:105recipes/quantities,35disabled states,232original archive files,40parent replacements and49arrow variant mappings retained.
+PASS: package144files equals runtime source, docs/masters excluded; load,new game,reload600ticks with Factorio2.1.21 and pinned Yuoki/Engines1.3.0.
+PASS: version0.5.1 unchanged, no migrations.
+Package:yi_pfw_0.5.1.zip
+SHA256:ec0a0f63e0a440861e566f09f4909af2149c6115f17ee6f02fdb4c4b6d70c1af
+Graphical tab/equipment-grid check:pending owner local client.
+
+batch7-data:
+   0.176 Loading mod yi_pfw 0.5.1 (data.lua)
+   0.395 Prototype list checksum: 755479145
+   0.882 Factorio initialised
+   0.904 Goodbye
+
+batch7-new:
+   0.182 Loading mod yi_pfw 0.5.1 (data.lua)
+   0.408 Prototype list checksum: 755479145
+   0.433 Factorio initialised
+   0.433 Info Create.cpp:32: Creating new map /home/pi/pr-review/fix-issue-jatmn-Yuoki-PFW-Factorio-2.x-repository-BdhQTWPf/runtime/game/saves/pfw-batch7-new.zip
+   1.065 Goodbye
+
+batch7-reload:
+   0.174 Loading mod yi_pfw 0.5.1 (data.lua)
+   0.401 Prototype list checksum: 755479145
+   0.431 Factorio initialised
+  Performed 600 updates in 50.498 ms
+   0.545 Goodbye

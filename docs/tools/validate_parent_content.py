@@ -19,6 +19,7 @@ parser.add_argument('--before', type=Path, required=True)
 parser.add_argument('--after', type=Path, required=True)
 parser.add_argument('--yuoki', type=Path, required=True)
 parser.add_argument('--engines', type=Path, required=True)
+parser.add_argument('--locale-dir', type=Path, help='Engine --dump-prototype-locale output directory')
 args = parser.parse_args()
 before = json.loads(args.before.read_text())
 after = json.loads(args.after.read_text())
@@ -39,8 +40,10 @@ for entry in mapping['mappings']:
         source = (ROOT / declaration['path']).read_text()
         marker = f"-- Parent owner: {entry['owner']}, {kind} {new}."
         assert marker in source, (kind, old)
-        inactive = source.split(marker, 1)[1].split('--[=[', 1)[1].split(']=]', 1)[0]
-        assert re.search(r'name\s*=\s*"' + re.escape(old) + '"', inactive), old
+        inactive = [part.split('--[=[', 1)[1].split(']=]', 1)[0]
+                    for part in source.split(marker)[1:]]
+        assert any(re.search(r'name\s*=\s*"' + re.escape(old) + '"', block)
+                   for block in inactive), old
 
 recipes = json.loads((ROOT / 'docs/data/recipes.json').read_text())
 for old in recipes:
@@ -48,13 +51,25 @@ for old in recipes:
     for field in ['ingredients', 'results']:
         for part in recipe[field]:
             part['name'] = item_aliases.get(part['name'], part['name'])
-for gun in ['y-sm-1', 'y-sm-2']:
-    expected['gun'][gun]['attack_parameters']['ammo_category'] = 'plasma'
+# Restore only the explicitly approved historical Mk.1 constructor.
+expected['recipe']['y-zproduct-2-recipe'] = {
+    'type': 'recipe', 'name': 'y-zproduct-2-recipe', 'energy_required': 1,
+    'ingredients': [{'type': 'item', 'name': 'y-refined-yres1', 'amount': 2},
+                    {'type': 'item', 'name': 'iron-plate', 'amount': 4}],
+    'results': [{'type': 'item', 'name': 'y-combat-armor-1', 'amount': 2}],
+    'enabled': True, 'order': 'factory', 'subgroup': 'yi-material',
+    'categories': ['yrcat-material'],
+    'icon': '__yi_pfw__/graphics/zmaterial/panz1_32.png', 'icon_size': 64,
+}
 expected['assembling-machine']['ye_trade_node']['crafting_categories'].append('yrcat-retrade')
 animations = expected['character']['character']['animations']
 expected['character']['character']['animations'] = [
     a for a in animations if a.get('armors') != ['y-cyb-8u']
 ]
+# War Material's existing six-item targeting recipe must fit its intended factory.
+assert len(expected['recipe']['y-fab8d-recipe']['ingredients']) == 6
+assert expected['assembling-machine']['y-factory-8']['ingredient_count'] == 5
+expected['assembling-machine']['y-factory-8']['ingredient_count'] = 6
 asset_map = json.loads((ROOT / 'docs/data/asset-reuse-0.5.1.json').read_text())
 replacements = {a['pfw_path']: a for a in asset_map['replacements']}
 paths = {'__yi_pfw__/' + a['pfw_path']: a for a in replacements.values()}
@@ -75,6 +90,21 @@ assert set(redraws) == {
     'graphics/entity/fabrik-weapons-icon.png',
     'graphics/entity/profit-show-1-icon.png',
     'graphics/entity/profit-show-2-icon.png',
+    'graphics/zmaterial/biomass-icon.png',
+    'graphics/zmaterial/combattrain-icon.png',
+    'graphics/zmaterial/medic-icon.png',
+    'graphics/zmaterial/panz1_32.png',
+    'graphics/zmaterial/zielfern-icon.png',
+    'graphics/fab8/teil_04_32.png',
+    'graphics/fab8/msg-cb.png',
+    'graphics/fab8/sfg400.png',
+    'graphics/fab8/teil_02.png',
+    'graphics/fab8/fusion-cell-empty.png',
+    'graphics/fab3/neron_u5_32.png',
+    'graphics/mpfw_ticon2.png',
+    'graphics/equip/fusion-cell-64.png',
+    'graphics/entity/profit-show-1.png',
+    'graphics/entity/profit-show-2.png',
 }
 assert not redraws.keys() & replacements.keys()
 for entry in redraws.values():
@@ -85,7 +115,12 @@ for entry in redraws.values():
         content = (ROOT / path).read_bytes()
         assert hashlib.sha256(content).hexdigest() == digest, path
         assert list(struct.unpack('>II', content[16:24])) == dimensions, path
-    assert entry['dimensions'] == [64, 64]
+    expected_size = 320 if entry['path'] in {
+        'graphics/entity/profit-show-1.png', 'graphics/entity/profit-show-2.png'
+    } else 128 if entry['path'] in {
+        'graphics/mpfw_ticon2.png', 'graphics/equip/fusion-cell-64.png'
+    } else 64
+    assert entry['dimensions'] == [expected_size, expected_size]
 providers = {'Yuoki': args.yuoki, 'yi_engines': args.engines}
 provider_paths = {}
 for entry in replacements.values():
@@ -104,7 +139,7 @@ def replace_visuals(value):
         if isinstance(value.get('icon'), str) and value['icon'] in paths:
             value['icon_size'] = paths[value['icon']]['provider_dimensions'][0]
         if isinstance(value.get('icon'), str) and value['icon'] in redraw_paths:
-            value['icon_size'] = 64
+            value['icon_size'] = redraw_paths[value['icon']]['dimensions'][0]
         for key, child in value.items():
             value[key] = replace_visuals(child)
     elif isinstance(value, list):
@@ -115,6 +150,132 @@ def replace_visuals(value):
     return value
 
 replace_visuals(expected)
+# Batch7 doubles only this equipment image's source resolution at the same display size.
+cell_sprite = expected['battery-equipment']['y-zproduct-8']['sprite']
+assert cell_sprite['filename'] == '__yi_pfw__/graphics/equip/fusion-cell-64.png'
+assert (cell_sprite['width'], cell_sprite['height'], cell_sprite.get('scale', 1)) == (64, 64, 1)
+cell_sprite.update(width=128, height=128, scale=0.5)
+# Batch8 changes only the two static profit-display source dimensions/scale.
+for name, filename in [('y-rich-1', 'profit-show-2.png'), ('y-rich-2', 'profit-show-1.png')]:
+    sprite = expected['assembling-machine'][name]['graphics_set']['animation']
+    assert sprite['filename'] == '__yi_pfw__/graphics/entity/' + filename
+    assert (sprite['width'], sprite['height'], sprite.get('scale', 1)) == (160, 160, 1)
+    sprite.update(width=320, height=320, scale=0.5)
+# These non-rotating factories display north; all directions reuse Engines.
+# The former north/south sheet remains an unchanged original asset for future use.
+for name in ['y-factory-4', 'y-factory-6', 'y-factory-7']:
+    for direction in ['north', 'east', 'south', 'west']:
+        sprite = expected['assembling-machine'][name]['graphics_set']['animation'][direction]
+        if direction in ['north', 'south']:
+            assert sprite['filename'] == '__yi_pfw__/graphics/entity/tut-vai1.png'
+            assert (sprite['width'], sprite['height'], sprite.get('scale', 1)) == (120, 128, 1)
+        else:
+            assert sprite['filename'] == '__yi_engines__/graphics/entity/science_gen.png'
+            assert (sprite['width'], sprite['height'], sprite.get('scale', 1)) == (120, 120, 1)
+        sprite.update(filename='__yi_engines__/graphics/entity/science_gen.png',
+                      width=128, height=128, scale=0.9375)
+# The ammunition factory shares one layered animation in all directions.
+ammo_layers = []
+for name, width, height, shift in [
+    ('base', 256, 256, [0.5, 0]),
+    ('upper', 44, 35, [0.046875, -0.6953125]),
+    ('front', 44, 41, [0.0625, 1.1015625]),
+    ('rear', 44, 41, [0.0625, -1.3671875]),
+    ('shadow', 256, 256, [0.5, 0]),
+]:
+    layer = dict(filename='__yi_pfw__/graphics/entity/fab-ammo-' + name + '.png',
+                 width=width, height=height, scale=0.5, shift=shift)
+    if name in {'base', 'shadow'}:
+        layer.update(frame_count=1, repeat_count=16)
+    else:
+        layer.update(frame_count=16, line_length=16)
+    if name == 'shadow':
+        layer['draw_as_shadow'] = True
+    ammo_layers.append(layer)
+expected['assembling-machine']['y-factory-1']['graphics_set']['animation'] = {'layers': ammo_layers}
+bio_layers = []
+for name, width, height, shift in [
+    ('base', 256, 256, [0.5, 0]),
+    ('liquid', 169, 61, [0.0078125, 0.2734375]),
+    ('shadow', 256, 256, [0.5, 0]),
+]:
+    layer = dict(filename='__yi_pfw__/graphics/entity/fab-bio-' + name + '.png',
+                 width=width, height=height, scale=0.5, shift=shift, animation_speed=0.2)
+    if name == 'liquid':
+        layer.update(frame_count=16, line_length=16)
+    else:
+        layer.update(frame_count=1, repeat_count=16)
+    if name == 'shadow':
+        layer['draw_as_shadow'] = True
+    bio_layers.append(layer)
+expected['assembling-machine']['y-factory-3']['graphics_set']['animation'] = {'layers': bio_layers}
+# Four factories share neutral geometry; only their configured tints, right side
+# and cycle speed differ. Keep every gameplay field equal to the phase-1 dump.
+palettes = json.loads((ROOT / 'docs/data/factory-palettes.json').read_text())
+assert {k: (v['prototype'], v['speed']) for k, v in palettes.items()} == {
+    'weapons': ('y-factory-2', 1), 'trucks': ('y-factory-5', 1),
+    'equip': ('y-factory-8', 1), 'comp': ('y-factory-9', 0.2),
+}
+shared_layers = {}
+for name, palette in palettes.items():
+    layers = []
+    def add(file, w, h, x, y, animated=False, tint=None, shadow=False):
+        layer = dict(filename='__yi_pfw__/graphics/entity/' + file + '.png',
+                     width=w, height=h, scale=0.5,
+                     shift=[0.5 + (x + w / 2 - 128) / 64, (y + h / 2 - 128) / 64],
+                     animation_speed=palette['speed'], frame_count=16 if animated else 1)
+        layer.update(line_length=16) if animated else layer.update(repeat_count=16)
+        if tint:
+            layer['tint'] = tint
+        if shadow:
+            layer['draw_as_shadow'] = True
+        layers.append(layer)
+    component = name == 'comp'
+    add('factory-' + name + '-right', 92, 216, 112, 16)
+    if component: add('factory-comp-cells', 92, 216, 112, 16, True)
+    add('factory-left-base', 110, 216, 2, 16)
+    for material in ['trim', 'rings', 'panels']:
+        add('factory-left-' + material, 110, 216, 2, 16, tint=palette[material])
+    for rotor, w, h, x, y in [('upper',54,48,43,61), ('front',67,65,36,171), ('rear',64,55,41,15)]:
+        add('factory-left-' + rotor + '-cutouts', w,h,x,y, True)
+        add('factory-left-' + rotor + '-lights', w,h,x,y, True, palette['lights'])
+    if palette['opening_glow']:
+        add('factory-left-opening-glow',54,110,45,28,True,palette['opening_glow'])
+    add('fab-' + name + '-shadow',256,256,0,0,component,shadow=True)
+    # Factorio's Lua JSON writer can round e.g. 0.88 to 0.8800000000000001.
+    actual_layers = after['assembling-machine'][palette['prototype']]['graphics_set']['animation']['layers']
+    assert len(actual_layers) == len(layers)
+    for layer, actual_layer in zip(layers, actual_layers):
+        if 'tint' in layer:
+            actual_tint = actual_layer['tint']
+            assert len(actual_tint) == 3 and all(abs(a-b) < 1e-14 for a,b in zip(layer['tint'], actual_tint))
+            layer['tint'] = actual_tint
+    shared_layers[palette['prototype']] = layers
+    expected['assembling-machine'][palette['prototype']]['graphics_set']['animation'] = {'layers': layers}
+all_layer_sets = {'y-factory-1': ammo_layers, 'y-factory-3': bio_layers, **shared_layers}
+shared = redraw_map['shared_factory_module']
+for entry in shared['sources']:
+    content = (ROOT / entry['path']).read_bytes()
+    assert hashlib.sha256(content).hexdigest() == entry['sha256'], entry['path']
+assert hashlib.sha256((ROOT / shared['palettes']['path']).read_bytes()).hexdigest() == shared['palettes']['sha256']
+layered_entries = {e['prototype']: e for e in redraw_map['layered_animations']}
+assert set(layered_entries) == set(all_layer_sets)
+for prototype, layers in all_layer_sets.items():
+    layered = layered_entries[prototype]
+    output_entries = layered['outputs']
+    if prototype in shared_layers:
+        paths_used = {layer['filename'].removeprefix('__yi_pfw__/') for layer in layers}
+        output_entries = output_entries + [e for e in shared['outputs'] if e['path'] in paths_used]
+    assert {e['path'] for e in output_entries} == {
+        layer['filename'].removeprefix('__yi_pfw__/') for layer in layers
+    }
+    for entry in [layered['original'], layered['source'], *output_entries]:
+        content = (ROOT / entry['path']).read_bytes()
+        assert hashlib.sha256(content).hexdigest() == entry['sha256'], entry['path']
+        assert list(struct.unpack('>II', content[16:24])) == entry['dimensions'], entry['path']
+    for layer in layers:
+        content = (ROOT / layer['filename'].removeprefix('__yi_pfw__/')).read_bytes()
+        assert struct.unpack('>II', content[16:24]) == (layer['width'] * layer.get('line_length', 1), layer['height'])
 trade_map = json.loads((ROOT / 'docs/data/trade-icons-0.5.1.json').read_text())
 arrow_variants = {a['path']: a for a in trade_map['removed_variants']}
 assert len(arrow_variants) == 49
@@ -148,13 +309,21 @@ for entry in arrow_variants.values():
     content = base.read_bytes()
     assert hashlib.sha256(content).hexdigest() == entry['base_sha256'], base
     assert list(struct.unpack('>II', content[16:24])) == entry['base_dimensions'], base
+# Primary manufacture shares the product ID for 2.x locale/Factoriopedia merging.
+for old, new in mapping['recipe_names'].items():
+    assert new not in expected['recipe']
+    expected['recipe'][new] = expected['recipe'].pop(old)
+    expected['recipe'][new]['name'] = new
+    assert new in {p['name'] for p in expected['recipe'][new]['results']}
+    expected['recipe'][new]['main_product'] = new
+    expected['item'][new]['subgroup'] = expected['recipe'][new]['subgroup']
 # Full equality catches lost recipes, changed quantities, pending mappings and parent regressions.
 for kind in expected.keys() | after.keys():
     assert expected.get(kind, {}).keys() == after.get(kind, {}).keys(), kind
     for name, prototype in expected.get(kind, {}).items():
         assert prototype == after[kind][name], (kind, name)
 for recipe in json.loads((ROOT / 'docs/data/recipe-ownership-audit.json').read_text()):
-    if recipe['state'] == 'commented':
+    if recipe['state'] == 'commented' and recipe['name'] != 'y-zproduct-2-recipe':
         assert recipe['name'] not in after['recipe'], recipe['name']
 manifest = json.loads((ROOT / 'docs/data/archive-manifest.json').read_text())
 assets = [a for a in manifest['files'] if a['path'].startswith('graphics/')]
@@ -167,8 +336,8 @@ for asset in assets:
         assert arrow_variants[asset['path']]['original_sha256'] == asset['sha256'], asset['path']
     else:
         assert hashlib.sha256((ROOT / asset['path']).read_bytes()).hexdigest() == asset['sha256'], asset['path']
-assert len(replacements) == 40
-assert len(list((ROOT / 'graphics').rglob('*.png'))) == len(assets) - len(replacements) - len(arrow_variants)
+assert len(replacements) == 41
+assert len(list((ROOT / 'graphics').rglob('*.png'))) == len(assets) - len(replacements) - len(arrow_variants) + len({layer['filename'] for layers in all_layer_sets.values() for layer in layers})
 
 def check_layouts(value):
     if isinstance(value, list):
@@ -200,9 +369,29 @@ for i, line in enumerate(lines):
     if line.startswith('Version:'):
         assert lines[i-1] == '-' * 99
         assert re.fullmatch(r'Date: [1-9][0-9]?\. [1-9][0-9]?\. [0-9]{4}', lines[i+1])
-trades = [r for r in recipes if 'yrcat-retrade' in after['recipe'][r['name']].get('categories', [])]
+trades = [r for r in recipes if 'yrcat-retrade' in after['recipe'][mapping['recipe_names'].get(r['name'], r['name'])].get('categories', [])]
 assert len(trades) == 56
-print(f'PASS: {removed} redundant declarations inactive; 105 recipe routes and quantities retained; '
-      '56 trades supported; pending mappings/parent behavior preserved; 40 parent assets verified, '
-      '19 AI icons/source images verified, 49 arrow variants replaced, 98 original graphics unchanged; '
+print(f'PASS: {removed} redundant declarations inactive; 105 recipe routes and quantities retained, Mk.1 constructor restored; '
+      '56 trades supported; pending mappings/parent behavior preserved; 41 parent assets verified, '
+      '34 AI artwork/source images verified, 49 arrow variants replaced, 82 original graphics unchanged; '
       '0.5.1 changelog and no migrations verified.')
+
+if args.locale_dir:
+    # The engine omits unresolved names from these dumps; check actual resolution,
+    # including entity/equipment fallbacks, rather than guessing from CFG keys.
+    localized = {kind: json.loads((args.locale_dir / (kind + '-locale.json')).read_text())['names']
+                 for kind in ['recipe', 'item', 'entity', 'equipment', 'fluid', 'item-group']}
+    recipe_names = {mapping['recipe_names'].get(r['name'], r['name']) for r in recipes}
+    recipe_names.add('y-combat-armor-1')
+    assert len(recipe_names) == 106
+    assert recipe_names <= localized['recipe'].keys(), sorted(recipe_names - localized['recipe'].keys())
+    for name in mapping['recipe_names'].values():
+        assert localized['recipe'][name] == localized['item'][name], name
+    for kind, locale_kind in [('item', 'item'), ('armor', 'item'), ('assembling-machine', 'entity'),
+                              ('battery-equipment', 'equipment'), ('fluid', 'fluid'), ('item-group', 'item-group')]:
+        declared = set()
+        for source in (ROOT / 'prototypes').rglob('*.lua'):
+            declared.update(re.findall(r'type\s*=\s*"' + kind + r'",\s*name\s*=\s*"([^"\n]+)"', source.read_text()))
+        active = declared & after.get(kind, {}).keys()
+        assert active <= localized[locale_kind].keys(), (kind, sorted(active - localized[locale_kind].keys()))
+    print('PASS: engine-resolved names for all 106 PFW recipes and retained items/entities/equipment; 48 primary recipe names match their products.')

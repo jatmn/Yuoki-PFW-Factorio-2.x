@@ -1,3 +1,5 @@
+local factory_visuals = require("prototypes.factory_visuals")
+
 -- Legacy emissions coefficient multiplied by rated kW gives pollution per minute.
 data:extend(
 {  
@@ -14,18 +16,18 @@ data:extend(
 		selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
 		fast_replaceable_group = "assembling-machine",
 
-		graphics_set = { animation = {
-			north= { filename = "__yi_pfw__/graphics/entity/fab-ammo-sheet.png",			
-				width = 128, height = 128, shift = {0.5, 0}, frame_count = 16, line_length = 16,},
-			east= {	filename = "__yi_pfw__/graphics/entity/fab-ammo-sheet.png", 
-				width = 128, height = 128, shift = {0.5, 0}, frame_count = 16, line_length = 16,},
-			south= {
-				filename = "__yi_pfw__/graphics/entity/fab-ammo-sheet.png",			
-				width = 128, height = 128, shift = {0.5, 0}, frame_count = 16, line_length = 16,},
-			west= {
-				filename = "__yi_pfw__/graphics/entity/fab-ammo-sheet.png",			
-				width = 128, height = 128, shift = {0.5, 0}, frame_count = 16, line_length = 16,},			
-		} },
+		graphics_set = { animation = { layers = {
+			{ filename = "__yi_pfw__/graphics/entity/fab-ammo-base.png",
+				width = 256, height = 256, scale = 0.5, shift = {0.5, 0}, frame_count = 1, repeat_count = 16 },
+			{ filename = "__yi_pfw__/graphics/entity/fab-ammo-upper.png",
+				width = 44, height = 35, scale = 0.5, shift = {0.046875, -0.6953125}, frame_count = 16, line_length = 16 },
+			{ filename = "__yi_pfw__/graphics/entity/fab-ammo-front.png",
+				width = 44, height = 41, scale = 0.5, shift = {0.0625, 1.1015625}, frame_count = 16, line_length = 16 },
+			{ filename = "__yi_pfw__/graphics/entity/fab-ammo-rear.png",
+				width = 44, height = 41, scale = 0.5, shift = {0.0625, -1.3671875}, frame_count = 16, line_length = 16 },
+			{ filename = "__yi_pfw__/graphics/entity/fab-ammo-shadow.png",
+				width = 256, height = 256, scale = 0.5, shift = {0.5, 0}, frame_count = 1, repeat_count = 16, draw_as_shadow = true },
+		} } },
 		crafting_categories = {"yrcat-munition"}, crafting_speed = 1.0,
 		energy_source = {type = "electric", usage_priority = "secondary-input", emissions_per_minute = { pollution = 0.04 / 2.5 * 3000 } },
 		energy_usage = "3000kW",
@@ -45,18 +47,7 @@ data:extend(
 		selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
 		fast_replaceable_group = "assembling-machine",
 
-		graphics_set = { animation = {
-			north= { filename = "__yi_pfw__/graphics/entity/fab-weapons-sheet.png",			
-				width = 128, height = 128, shift = {0.5, 0}, frame_count = 16, line_length = 16,},
-			east= {	filename = "__yi_pfw__/graphics/entity/fab-weapons-sheet.png", 
-				width = 128, height = 128, shift = {0.5, 0}, frame_count = 16, line_length = 16,},
-			south= {
-				filename = "__yi_pfw__/graphics/entity/fab-weapons-sheet.png",			
-				width = 128, height = 128, shift = {0.5, 0}, frame_count = 16, line_length = 16,},
-			west= {
-				filename = "__yi_pfw__/graphics/entity/fab-weapons-sheet.png",			
-				width = 128, height = 128, shift = {0.5, 0}, frame_count = 16, line_length = 16,},			
-		} },
+		graphics_set = { animation = factory_visuals("weapons") },
 		crafting_categories = {"yrcat-handwaffen"}, crafting_speed = 1.0,
 		energy_source = {type = "electric", usage_priority = "secondary-input", emissions_per_minute = { pollution = 0.04 / 2.5 * 3000 } },
 		energy_usage = "3000kW",
@@ -75,10 +66,14 @@ data:extend(
 		collision_box = {{-1.4, -1.4}, {1.4, 1.4}},
 		selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
 		fast_replaceable_group = "assembling-machine",
-		graphics_set = { animation = {
-			filename = "__yi_pfw__/graphics/entity/fab-bio-sheet.png",			
-			width = 128, height = 128, shift = {0.5, 0}, frame_count = 16, line_length = 16, animation_speed=0.2;
-		} },
+		graphics_set = { animation = { layers = {
+			{ filename = "__yi_pfw__/graphics/entity/fab-bio-base.png",
+				width = 256, height = 256, scale = 0.5, shift = {0.5, 0}, frame_count = 1, repeat_count = 16, animation_speed = 0.2 },
+			{ filename = "__yi_pfw__/graphics/entity/fab-bio-liquid.png",
+				width = 169, height = 61, scale = 0.5, shift = {0.0078125, 0.2734375}, frame_count = 16, line_length = 16, animation_speed = 0.2 },
+			{ filename = "__yi_pfw__/graphics/entity/fab-bio-shadow.png",
+				width = 256, height = 256, scale = 0.5, shift = {0.5, 0}, frame_count = 1, repeat_count = 16, animation_speed = 0.2, draw_as_shadow = true },
+		} } },
 		crafting_categories = {"yrcat-cyborgs"}, crafting_speed = 1.0,
 		energy_source = {type = "electric", usage_priority = "secondary-input", emissions_per_minute = { pollution = 0.04 / 2.5 * 3000 } },
 		energy_usage = "3000kW",
@@ -100,16 +95,16 @@ data:extend(
 		fast_replaceable_group = "assembling-machine",
 
 		graphics_set = { animation = {
-			north= { filename = "__yi_pfw__/graphics/entity/tut-vai1.png",			
-				width = 120, height = 128, shift = {0.3, 0}, frame_count = 16, line_length = 16,},
-			east= {	filename = "__yi_pfw__/graphics/entity/tut-hai1.png", 
-				width = 120, height = 120, shift = {0.3, 0}, frame_count = 16, line_length = 16,},
+			north= { filename = "__yi_engines__/graphics/entity/science_gen.png",
+				width = 128, height = 128, scale = 0.9375, shift = {0.3, 0}, frame_count = 16, line_length = 16,},
+			east= {	filename = "__yi_engines__/graphics/entity/science_gen.png",
+				width = 128, height = 128, scale = 0.9375, shift = {0.3, 0}, frame_count = 16, line_length = 16,},
 			south= {
-				filename = "__yi_pfw__/graphics/entity/tut-vai1.png",			
-				width = 120, height = 128, shift = {0.3, 0}, frame_count = 16, line_length = 16,},
+				filename = "__yi_engines__/graphics/entity/science_gen.png",
+				width = 128, height = 128, scale = 0.9375, shift = {0.3, 0}, frame_count = 16, line_length = 16,},
 			west= {
-				filename = "__yi_pfw__/graphics/entity/tut-hai1.png",			
-				width = 120, height = 120, shift = {0.3, 0}, frame_count = 16, line_length = 16,},			
+				filename = "__yi_engines__/graphics/entity/science_gen.png",
+				width = 128, height = 128, scale = 0.9375, shift = {0.3, 0}, frame_count = 16, line_length = 16,},
 		} },
 		crafting_categories = {"yrcat-swwaffen"}, crafting_speed = 1.0,
 		energy_source = {type = "electric", usage_priority = "secondary-input", emissions_per_minute = { pollution = 0.04 / 2.5 * 3000 } },
@@ -130,18 +125,7 @@ data:extend(
 		selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
 		fast_replaceable_group = "assembling-machine",
 
-		graphics_set = { animation = {
-			north= { filename = "__yi_pfw__/graphics/entity/fab-trucks-sheet.png",			
-				width = 128, height = 128, shift = {0.5, 0}, frame_count = 16, line_length = 16,},
-			east= {	filename = "__yi_pfw__/graphics/entity/fab-trucks-sheet.png", 
-				width = 128, height = 128, shift = {0.5, 0}, frame_count = 16, line_length = 16,},
-			south= {
-				filename = "__yi_pfw__/graphics/entity/fab-trucks-sheet.png",			
-				width = 128, height = 128, shift = {0.5, 0}, frame_count = 16, line_length = 16,},
-			west= {
-				filename = "__yi_pfw__/graphics/entity/fab-trucks-sheet.png",			
-				width = 128, height = 128, shift = {0.5, 0}, frame_count = 16, line_length = 16,},			
-		} },
+		graphics_set = { animation = factory_visuals("trucks") },
 		crafting_categories = {"yrcat-fahrzeuge"}, crafting_speed = 1.0,
 		energy_source = {type = "electric", usage_priority = "secondary-input", emissions_per_minute = { pollution = 0.04 / 2.5 * 3000 } },
 		energy_usage = "3000kW",
@@ -162,16 +146,16 @@ data:extend(
 		fast_replaceable_group = "assembling-machine",
 
 		graphics_set = { animation = {
-			north= { filename = "__yi_pfw__/graphics/entity/tut-vai1.png",			
-				width = 120, height = 128, shift = {0.3, 0}, frame_count = 16, line_length = 16,},
-			east= {	filename = "__yi_pfw__/graphics/entity/tut-hai1.png", 
-				width = 120, height = 120, shift = {0.3, 0}, frame_count = 16, line_length = 16,},
+			north= { filename = "__yi_engines__/graphics/entity/science_gen.png",
+				width = 128, height = 128, scale = 0.9375, shift = {0.3, 0}, frame_count = 16, line_length = 16,},
+			east= {	filename = "__yi_engines__/graphics/entity/science_gen.png",
+				width = 128, height = 128, scale = 0.9375, shift = {0.3, 0}, frame_count = 16, line_length = 16,},
 			south= {
-				filename = "__yi_pfw__/graphics/entity/tut-vai1.png",			
-				width = 120, height = 128, shift = {0.3, 0}, frame_count = 16, line_length = 16,},
+				filename = "__yi_engines__/graphics/entity/science_gen.png",
+				width = 128, height = 128, scale = 0.9375, shift = {0.3, 0}, frame_count = 16, line_length = 16,},
 			west= {
-				filename = "__yi_pfw__/graphics/entity/tut-hai1.png",			
-				width = 120, height = 120, shift = {0.3, 0}, frame_count = 16, line_length = 16,},			
+				filename = "__yi_engines__/graphics/entity/science_gen.png",
+				width = 128, height = 128, scale = 0.9375, shift = {0.3, 0}, frame_count = 16, line_length = 16,},
 		} },
 		crafting_categories = {"yrcat-panzer"}, crafting_speed = 1.0,
 		energy_source = {type = "electric", usage_priority = "secondary-input", emissions_per_minute = { pollution = 0.04 / 2.5 * 3000 } },
@@ -193,16 +177,16 @@ data:extend(
 		fast_replaceable_group = "assembling-machine",
 
 		graphics_set = { animation = {
-			north= { filename = "__yi_pfw__/graphics/entity/tut-vai1.png",			
-				width = 120, height = 128, shift = {0.3, 0}, frame_count = 16, line_length = 16,},
-			east= {	filename = "__yi_pfw__/graphics/entity/tut-hai1.png", 
-				width = 120, height = 120, shift = {0.3, 0}, frame_count = 16, line_length = 16,},
+			north= { filename = "__yi_engines__/graphics/entity/science_gen.png",
+				width = 128, height = 128, scale = 0.9375, shift = {0.3, 0}, frame_count = 16, line_length = 16,},
+			east= {	filename = "__yi_engines__/graphics/entity/science_gen.png",
+				width = 128, height = 128, scale = 0.9375, shift = {0.3, 0}, frame_count = 16, line_length = 16,},
 			south= {
-				filename = "__yi_pfw__/graphics/entity/tut-vai1.png",			
-				width = 120, height = 128, shift = {0.3, 0}, frame_count = 16, line_length = 16,},
+				filename = "__yi_engines__/graphics/entity/science_gen.png",
+				width = 128, height = 128, scale = 0.9375, shift = {0.3, 0}, frame_count = 16, line_length = 16,},
 			west= {
-				filename = "__yi_pfw__/graphics/entity/tut-hai1.png",			
-				width = 120, height = 120, shift = {0.3, 0}, frame_count = 16, line_length = 16,},			
+				filename = "__yi_engines__/graphics/entity/science_gen.png",
+				width = 128, height = 128, scale = 0.9375, shift = {0.3, 0}, frame_count = 16, line_length = 16,},
 		} },
 		crafting_categories = {"yrcat-support"}, crafting_speed = 1.0,
 		energy_source = {type = "electric", usage_priority = "secondary-input", emissions_per_minute = { pollution = 0.04 / 2.5 * 3000 } },
@@ -223,22 +207,11 @@ data:extend(
 		selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
 		fast_replaceable_group = "assembling-machine",
 
-		graphics_set = { animation = {
-			north= { filename = "__yi_pfw__/graphics/entity/fab-equip-sheet.png",			
-				width = 128, height = 128, shift = {0.5, 0}, frame_count = 16, line_length = 16,},
-			east= {	filename = "__yi_pfw__/graphics/entity/fab-equip-sheet.png", 
-				width = 128, height = 128, shift = {0.5, 0}, frame_count = 16, line_length = 16,},
-			south= {
-				filename = "__yi_pfw__/graphics/entity/fab-equip-sheet.png",			
-				width = 128, height = 128, shift = {0.5, 0}, frame_count = 16, line_length = 16,},
-			west= {
-				filename = "__yi_pfw__/graphics/entity/fab-equip-sheet.png",			
-				width = 128, height = 128, shift = {0.5, 0}, frame_count = 16, line_length = 16,},			
-		} },
+		graphics_set = { animation = factory_visuals("equip") },
 		crafting_categories = {"yrcat-material"}, crafting_speed = 1.0,
 		energy_source = {type = "electric", usage_priority = "secondary-input", emissions_per_minute = { pollution = 0.04 / 2.5 * 3000 } },
 		energy_usage = "3000kW",
-		ingredient_count = 5,		
+		ingredient_count = 6,
 		order="a",
 		subgroup = "yi-material",
 	},	
@@ -255,11 +228,7 @@ data:extend(
 		selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
 		fast_replaceable_group = "assembling-machine",
 
-		graphics_set = { animation = {
-			filename = "__yi_pfw__/graphics/entity/fab-comp-sheet.png",			
-			width = 128, height = 128, shift = {0.5, 0}, frame_count = 16, line_length = 16,			
-			animation_speed=0.2;		
-		} },
+		graphics_set = { animation = factory_visuals("comp") },
 		crafting_categories = {"yrcat-component"}, crafting_speed = 1.0,
 		energy_source = {type = "electric", usage_priority = "secondary-input", emissions_per_minute = { pollution = 0.04 / 2.5 * 2000 } },
 		energy_usage = "2000kW",

@@ -1,0 +1,33 @@
+0.5.1 artwork batch6, 2026-10-09
+Starting head75e0802febd02df92a1f4ff3695b02f7aeee0fb7.
+Two64px icons: empty cell,second armor. Empty final directly edits accepted filled master; same-model requirement recorded, paired64px review performed. Armor assigned parent sheet inspected in8directions; original inventory frame preserved.
+PASS: full data/preservation validator with Factorio2.1.21 and pinned Yuoki/Engines1.3.0.
+PASS: independent previous-candidate dump comparison: exactly three icon_size32->64 changes, no other prototype differences.
+PASS: production Lua reconstructed as precisely those three substitutions; previous28 AI entries/runtime files unchanged.
+PASS:30 AI source/output identities and87 original PNGs,117 local total;40 parent replacements and49 removed arrow variants retained.
+PASS:105 recipe routes/quantities,35 disabled states and232 original archive files preserved; version0.5.1 and no migrations.
+PASS: source alpha/margins and64px comparison;144-file ZIP equals runtime source, excludes docs/masters.
+PASS: package load,fresh game,same-version save reload600ticks.
+Package:yi_pfw_0.5.1.zip
+SHA256:e8376771a9fd2c54808ea1a8083e87f75f3b09358a98732e56b7411484a34f6a
+Integrated graphical confirmation:pending owner.
+
+batch6-data:
+   0.181 Loading mod yi_pfw 0.5.1 (data.lua)
+   0.404 Prototype list checksum: 755479145
+   0.883 Factorio initialised
+   0.906 Goodbye
+
+batch6-new:
+   0.177 Loading mod yi_pfw 0.5.1 (data.lua)
+   0.402 Prototype list checksum: 755479145
+   0.427 Factorio initialised
+   0.427 Info Create.cpp:32: Creating new map /home/pi/pr-review/fix-issue-jatmn-Yuoki-PFW-Factorio-2.x-repository-BdhQTWPf/runtime/game/saves/pfw-batch6-new.zip
+   1.058 Goodbye
+
+batch6-reload:
+   0.175 Loading mod yi_pfw 0.5.1 (data.lua)
+   0.401 Prototype list checksum: 755479145
+   0.428 Factorio initialised
+  Performed 600 updates in 50.705 ms
+   0.538 Goodbye
