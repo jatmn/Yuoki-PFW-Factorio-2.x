@@ -1248,6 +1248,70 @@
           ]
         }
       ]
+    },
+    {
+      "prototype": "y-factory-5",
+      "method": "Fixed accepted AI body with projected blue light/cutout assemblies and rear housing occlusion; original shadow.",
+      "frame_count": 16,
+      "scale": 0.5,
+      "original": {
+        "path": "graphics/entity/fab-trucks-sheet.png",
+        "sha256": "451d00fac551c4f99b82f4add1099f01f77f6dc4b1d4e29a58d2c761ac39d61c",
+        "dimensions": [
+          2048,
+          128
+        ]
+      },
+      "source": {
+        "path": "docs/artwork/ai-redraw-0.5.1/fabrik-trucks-icon-source.png",
+        "sha256": "7a770d0de4717ea666ad4dbcac4d1ff2ee23f245e2fcce43ec1959336f9748e1",
+        "dimensions": [
+          1254,
+          1254
+        ]
+      },
+      "outputs": [
+        {
+          "path": "graphics/entity/fab-trucks-base.png",
+          "sha256": "da88034365d8e50908a31f09e991176024bbdacbf903bdc88c7e735b95cf49ac",
+          "dimensions": [
+            256,
+            256
+          ]
+        },
+        {
+          "path": "graphics/entity/fab-trucks-upper.png",
+          "sha256": "9b2134eb47946cf956489a99dbd0ee108db477465672f935c51f1f3917f5d273",
+          "dimensions": [
+            784,
+            38
+          ]
+        },
+        {
+          "path": "graphics/entity/fab-trucks-front.png",
+          "sha256": "c0b5768b73d1954c91a89fbb1efc228ada6d8cecb2d5f1a84901e9b3904e69cc",
+          "dimensions": [
+            1008,
+            55
+          ]
+        },
+        {
+          "path": "graphics/entity/fab-trucks-rear.png",
+          "sha256": "57c45a824a7b17d22fcb27a999623a34ec3e44ac280b42f272a4c4bd9fe98561",
+          "dimensions": [
+            912,
+            49
+          ]
+        },
+        {
+          "path": "graphics/entity/fab-trucks-shadow.png",
+          "sha256": "27c82c7af60a944a3baa8fe21ff26e7ec2a30a3add0ac2bdab0a765498a0ee80",
+          "dimensions": [
+            256,
+            256
+          ]
+        }
+      ]
     }
   ]
 }

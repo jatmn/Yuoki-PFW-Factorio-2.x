@@ -205,9 +205,27 @@ for name, width, height, shift in [
         layer['draw_as_shadow'] = True
     bio_layers.append(layer)
 expected['assembling-machine']['y-factory-3']['graphics_set']['animation'] = {'layers': bio_layers}
+trucks_layers = []
+for name, width, height, shift in [
+    ('base', 256, 256, [0.5, 0]),
+    ('upper', 49, 38, [-0.4296875, -0.75]),
+    ('front', 63, 55, [-0.4140625, 1.0546875]),
+    ('rear', 57, 49, [-0.3984375, -1.3828125]),
+    ('shadow', 256, 256, [0.5, 0]),
+]:
+    layer = dict(filename='__yi_pfw__/graphics/entity/fab-trucks-' + name + '.png',
+                 width=width, height=height, scale=0.5, shift=shift)
+    if name in {'base', 'shadow'}:
+        layer.update(frame_count=1, repeat_count=16)
+    else:
+        layer.update(frame_count=16, line_length=16)
+    if name == 'shadow':
+        layer['draw_as_shadow'] = True
+    trucks_layers.append(layer)
+expected['assembling-machine']['y-factory-5']['graphics_set']['animation'] = {'layers': trucks_layers}
 layered_entries = {e['prototype']: e for e in redraw_map['layered_animations']}
-assert set(layered_entries) == {'y-factory-1', 'y-factory-2', 'y-factory-3'}
-for prototype, layers in [('y-factory-1', ammo_layers), ('y-factory-2', weapons_layers), ('y-factory-3', bio_layers)]:
+assert set(layered_entries) == {'y-factory-1', 'y-factory-2', 'y-factory-3', 'y-factory-5'}
+for prototype, layers in [('y-factory-1', ammo_layers), ('y-factory-2', weapons_layers), ('y-factory-3', bio_layers), ('y-factory-5', trucks_layers)]:
     layered = layered_entries[prototype]
     assert {e['path'] for e in layered['outputs']} == {
         layer['filename'].removeprefix('__yi_pfw__/') for layer in layers
@@ -272,7 +290,7 @@ for asset in assets:
     else:
         assert hashlib.sha256((ROOT / asset['path']).read_bytes()).hexdigest() == asset['sha256'], asset['path']
 assert len(replacements) == 41
-assert len(list((ROOT / 'graphics').rglob('*.png'))) == len(assets) - len(replacements) - len(arrow_variants) + len(ammo_layers) + len(weapons_layers) + len(bio_layers)
+assert len(list((ROOT / 'graphics').rglob('*.png'))) == len(assets) - len(replacements) - len(arrow_variants) + len(ammo_layers) + len(weapons_layers) + len(bio_layers) + len(trucks_layers)
 
 def check_layouts(value):
     if isinstance(value, list):

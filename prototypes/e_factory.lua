@@ -132,18 +132,13 @@ data:extend(
 		selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
 		fast_replaceable_group = "assembling-machine",
 
-		graphics_set = { animation = {
-			north= { filename = "__yi_pfw__/graphics/entity/fab-trucks-sheet.png",			
-				width = 128, height = 128, shift = {0.5, 0}, frame_count = 16, line_length = 16,},
-			east= {	filename = "__yi_pfw__/graphics/entity/fab-trucks-sheet.png", 
-				width = 128, height = 128, shift = {0.5, 0}, frame_count = 16, line_length = 16,},
-			south= {
-				filename = "__yi_pfw__/graphics/entity/fab-trucks-sheet.png",			
-				width = 128, height = 128, shift = {0.5, 0}, frame_count = 16, line_length = 16,},
-			west= {
-				filename = "__yi_pfw__/graphics/entity/fab-trucks-sheet.png",			
-				width = 128, height = 128, shift = {0.5, 0}, frame_count = 16, line_length = 16,},			
-		} },
+		graphics_set = { animation = { layers = {
+			{ filename = "__yi_pfw__/graphics/entity/fab-trucks-base.png", width = 256, height = 256, scale = 0.5, shift = {0.5, 0}, frame_count = 1, repeat_count = 16 },
+			{ filename = "__yi_pfw__/graphics/entity/fab-trucks-upper.png", width = 49, height = 38, scale = 0.5, shift = {-0.4296875, -0.75}, frame_count = 16, line_length = 16 },
+			{ filename = "__yi_pfw__/graphics/entity/fab-trucks-front.png", width = 63, height = 55, scale = 0.5, shift = {-0.4140625, 1.0546875}, frame_count = 16, line_length = 16 },
+			{ filename = "__yi_pfw__/graphics/entity/fab-trucks-rear.png", width = 57, height = 49, scale = 0.5, shift = {-0.3984375, -1.3828125}, frame_count = 16, line_length = 16 },
+			{ filename = "__yi_pfw__/graphics/entity/fab-trucks-shadow.png", width = 256, height = 256, scale = 0.5, shift = {0.5, 0}, frame_count = 1, repeat_count = 16, draw_as_shadow = true },
+		} } },
 		crafting_categories = {"yrcat-fahrzeuge"}, crafting_speed = 1.0,
 		energy_source = {type = "electric", usage_priority = "secondary-input", emissions_per_minute = { pollution = 0.04 / 2.5 * 3000 } },
 		energy_usage = "3000kW",
