@@ -7,6 +7,7 @@ Date: 9. 10. 2026
     - Keep redundant PFW definitions commented with parent ownership references; retain all distinct recipes and quantities.
     - Leave ambiguous gun, shield, second-armor and fuel-cell mappings pending; preserve unique original artwork and previously disabled content.
   Graphics:
+    - Include the original Mod Portal thumbnail in the package for the in-game mod browser.
     - Replace 41 confirmed duplicate artwork files with references to Yuoki Industries or Yuoki Engines, including the shared-factory icon and animation.
     - Use Engines' animation for the Heavy Weapons, Tank and Supply factories in all directions, including their fixed in-game view; retain the original alternate sheet for future use.
     - Generate import/export arrows with Yuoki helpers instead of 49 precomposed arrow-icon variants.

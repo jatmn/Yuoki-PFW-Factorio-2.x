@@ -34,6 +34,28 @@ The War Material Factory now accepts six item ingredients, allowing its existing
 
 All 35 previously disabled recipes remain inactive. The movement recipe `y-fab8k-recipe` is annotated as having the same material transformation as parent `yi_equip_legs_a`, with distinct time/category access. Its original text remains intact.
 
+## Missing-input chains: review before restoration
+
+The owner explicitly chose to **keep Combat Armor Mk.1 manufacture disabled** while reviewing these chains. The current 2.1.21 prototype dump with the parent revisions below contains no producing recipe for seven PFW inputs. They directly block 13 of the 105 active PFW recipes; nine further export recipes depend on the blocked products, for **22 affected routes** total. This is a bounded recipe-dependency audit, assuming other base/parent supplies are available; the remaining 83 routes are not a claim of complete natural progression. The older discovery documents describe the original release and retain their historical counts.
+
+| Missing input | Direct consumers and downstream effect | Preserved recipe / ownership decision |
+|---|---|---|
+| Combat Armor Mk.1 (`y-combat-armor-1`) | Shaden, Nakajima, Pyroon and Sentinel manufacture, then their exports. Nakajima also needs the missing laser. | `y-zproduct-2-recipe`: 2 refined N4 + 4 iron plates → 2 components, 1 second in War Material. Ordinary intermediate, no confirmed parent replacement; **remain disabled**. |
+| Combat Armor Mk.2 (`y-combat-armor-2`) | Scuptor and Defender manufacture, then exports. | `y-zproduct-3-recipe`: 2 grey coils + 4 iron plates → 2. Historical mapping to `yi_equip_shield_a` remains ambiguous. |
+| Combat Armor Mk.3 (`y-combat-armor-3`) | MKE-C3D-Sirus and SWE-W21-Fxxt manufacture, then exports; also require laser and plasma respectively. | `y-zproduct-4-recipe`: 2 red coils + 2 `y-stuff-3` → 2. Same historical parent shield mapping as Mk.2, losing the separate tier identity. |
+| Lasergun (`y-sm-1`) | Its export, Nakajima, MKE-C3D-Sirus and Advanced Targeting Device manufacture; those products' exports follow. | `y-fab2b-recipe` remains commented. Historical successor `yi_lasergun` is also the proposed plasma successor. |
+| Plasmagun (`y-sm-2`) | Its export and SWE-W21-Fxxt manufacture/export. | `y-fab2c-recipe` remains commented; same parent gun ambiguity. |
+| CF-56 shield (`y-equ-1`) | Shield export `y-rfab8b-recipe`. | `y-fab8b-recipe` remains commented; historical successor `yi_equip_shield_b` is also the proposed KT-34 successor. |
+| KT-34 shield (`y-equ-2`) | Shield export `y-rfab8c-recipe`. | `y-fab8c-recipe` remains commented; distinct construction cost and export payout from CF-56. |
+
+The eight blocked cyborg products are `y-cyb-1` through `y-cyb-6`, plus `y-cyb-8` and `y-cyb-9`. Brain parasites and the medic cyborg are not blocked by these seven missing inputs. Advanced Targeting Device is the ninth downstream product. Its six-slot machine fix permits crafting when ingredients are supplied; it does **not** supply the missing laser.
+
+The existing Yuoki recipes produce `yi_lasergun`, `yi_equip_shield_a` and `yi_equip_shield_b`, but their IDs do not satisfy the retained PFW ingredient IDs. Blind substitution changes trade choices: three lasers pay 41 UC plus one Trader Sign, while six plasma guns pay 50 UC plus one sign. If both become the same parent gun, six guns could instead earn 82 UC and two signs through two laser exports. The two shield exports also have distinct material payouts. These mappings remain pending as instructed.
+
+The disabled gun constructors still reference the suppressed `y-mun-2` ammunition; any later deliberate restoration must adapt that input to the confirmed parent ammunition and modernize the legacy recipe syntax. Enabling their old text verbatim is insufficient. No constructor or mapping was changed by this review.
+
+Resolving Mk.1 alone would remove these blockers from Shaden, Pyroon and Sentinel manufacture/export (six routes); Nakajima would still need the laser. Resolving the laser alone would free its export and Advanced Targeting Device manufacture/export (three routes), while its two cyborg consumers would remain armor-blocked. These are dependency projections, not implemented changes or live progression tests.
+
 ## Explicitly pending
 
 - Laser/plasma gun identity collapse and the four shield-to-parent tier mappings: deferred by owner choice. Their existing export contracts remain distinct.
