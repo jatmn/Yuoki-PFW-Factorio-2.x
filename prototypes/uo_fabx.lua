@@ -149,6 +149,8 @@ local playeranimations_y2 = {
 		shift = {0.13, -0.25},
 		-- Legacy, no longer read by RotatedAnimation: axially_symmetrical = false
 	},
+	-- Preserved legacy helper: CharacterArmorAnimation no longer has mining_with_hands.
+	--[[
 	miningwithhands =
 	{
 		filename = "__Yuoki__/graphics/armor/armor2_dig.png",
@@ -161,6 +163,7 @@ local playeranimations_y2 = {
 		shift = {0.13, -0.25},
 		-- Legacy, no longer read by RotatedAnimation: axially_symmetrical = false
 	},
+	]]
 	miningwithtool =
 	{
 		filename = "__Yuoki__/graphics/armor/armor2_dig.png",

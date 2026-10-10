@@ -67,6 +67,8 @@ All 56 trades and the separate ten-node constructor and cell-charging recipe ret
 
 Before this correction, the engine's English prototype-locale dump omitted 63 active PFW recipe names and the retained armor name. Use `--dump-prototype-locale` separately from `--dump-data`, then pass its output directory as `--locale-dir` to the existing validator to check the actual resolved names. Headless checks establish names, matching IDs and main-product metadata; the merged graphical Factoriopedia presentation still needs the owner's client check.
 
+The subsequent [manual progression/API audit](incomplete-content.md#051-audit-2026-10-09) traces all 106 active routes, verifies factory construction and a trade bootstrap in headless, and separates original unfinished content from 0.5.x suppressions. Its test limits and six still-unobtainable prototype items are recorded there.
+
 ## Explicitly pending
 
 - Balance the retained gun/shield export contracts and cyborg costs after parent consolidation.

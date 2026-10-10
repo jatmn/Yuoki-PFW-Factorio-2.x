@@ -2,6 +2,7 @@
 Version: 0.5.1
 Date: 2026-10-09
   Changes:
+    - Keep the unused legacy bare-hand mining animation helper commented for future reference.
     - Reuse Engines' Trade Node and Yuoki's minigun, energy ammunition, mobile generator, movement equipment and first walker.
     - Allow the Engines Trade Node to process PFW trades while retaining its existing categories and operating statistics.
     - Keep redundant PFW definitions commented with parent ownership references; retain all distinct recipes and quantities.
