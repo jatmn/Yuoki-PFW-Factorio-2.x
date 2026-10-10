@@ -2,16 +2,19 @@
 """Build four factories from one neutral left module, masks and swappable right sides.
 
 Requires Pillow. Edit docs/data/factory-palettes.json, then run this script to
-regenerate palette Lua and matching icons. Original masters/sheets stay intact.
+regenerate palette Lua and matching icons. AI masters stay intact; original shadows are read from the 0.4.15 Git import.
 """
 import hashlib
 import json
 import math
+import io
+import subprocess
 from pathlib import Path
 from PIL import Image, ImageDraw, ImageChops, ImageFilter
 
 ROOT = Path(__file__).resolve().parents[2]
 OUT = ROOT / 'graphics/entity'
+ORIGINAL_COMMIT = "103efa8acc74ab86b282b5388f64f333d06660dd"
 ART = ROOT / 'docs/artwork/ai-redraw-0.5.1'
 PALETTES = json.loads((ROOT / 'docs/data/factory-palettes.json').read_text())
 CROP = (94, 51, 672, 1178)
@@ -149,7 +152,8 @@ def build():
     build_component_right()
     # Per-variant original shadows; component shadows follow the cell buildup.
     for name in PALETTES:
-        original=Image.open(OUT/f'fab-{name}-sheet.png').convert('RGBA')
+        original=Image.open(io.BytesIO(subprocess.check_output(
+            ['git', '-C', str(ROOT), 'show', f'{ORIGINAL_COMMIT}:graphics/entity/fab-{name}-sheet.png']))).convert('RGBA')
         count=16 if name=='comp' else 1
         sheet=Image.new('RGBA',(256*count,256))
         for n in range(count):

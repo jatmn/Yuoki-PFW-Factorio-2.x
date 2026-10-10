@@ -1,6 +1,7 @@
 """Compare 0.5.1's real data dump with the merged 0.5.0 baseline.
 
 Use the same Factorio 2.1.21 and pinned parent mods for both dumps.
+Run in a Git checkout containing the immutable 0.4.15 import for source-art checks.
 Run: python3 docs/tools/validate_parent_content.py --before before.json --after after.json
      --yuoki /path/to/Yuoki --engines /path/to/yi_engines
 """
@@ -10,10 +11,28 @@ import hashlib
 import json
 import re
 import struct
+import subprocess
 import math
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
+# Superseded sheets stay available only in the immutable original import.
+REMOVED_SHEETS = {
+    'graphics/entity/fab-ammo-sheet.png',
+    'graphics/entity/fab-bio-sheet.png',
+    'graphics/entity/fab-comp-sheet.png',
+    'graphics/entity/fab-equip-sheet.png',
+    'graphics/entity/fab-trucks-sheet.png',
+    'graphics/entity/fab-weapons-sheet.png',
+    'graphics/entity/tut-vai1.png',
+}
+ORIGINAL_COMMIT = "103efa8acc74ab86b282b5388f64f333d06660dd"
+
+def asset_bytes(path):
+    if path in REMOVED_SHEETS:
+        return subprocess.check_output(["git", "-C", str(ROOT), "show", ORIGINAL_COMMIT + ":" + path])
+    return (ROOT / path).read_bytes()
+
 parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument('--before', type=Path, required=True)
 parser.add_argument('--after', type=Path, required=True)
@@ -45,7 +64,26 @@ for entry in mapping['mappings']:
         assert any(re.search(r'name\s*=\s*"' + re.escape(old) + '"', block)
                    for block in inactive), old
 
-recipes = json.loads((ROOT / 'docs/data/recipes.json').read_text())
+recipes = [r for r in json.loads((ROOT / 'docs/data/recipes.json').read_text())
+           if r['name'] not in mapping['removed_recipes']]
+assert mapping['removed_recipes'] == ['y-fab3k-recipe', 'y-fab3ix_y9-recipe', 'y-fab3i-recipe']
+del expected['recipe']['y-fab3k-recipe']
+del expected['item']['y-cyb-9']
+del expected['recipe']['y-fab3i-recipe']
+del expected['item']['y-cyb-8']
+expected['recipe']['y-rfab3i-recipe']['ingredients'] = [
+    {'type': 'item', 'name': 'yi_walker_a', 'amount': 1}]
+expected['recipe']['y-rfab3i-recipe']['results'] = [
+    {'type': 'item', 'name': 'y-stuff-6', 'amount': 100},
+    {'type': 'item', 'name': 'y-stuff-5', 'amount': 250},
+    {'type': 'item', 'name': 'ypfw_trader_sign', 'amount': 5000}]
+assert not re.search(r'type\s*=\s*"(?:recipe|item)",\s*name\s*=\s*"y-cyb-8"',
+                     (ROOT / 'prototypes/ir_fab3.lua').read_text())
+expected['recipe']['y-rfab3k-recipe']['ingredients'] = [
+    {'type': 'item', 'name': 'yi_armor_gray', 'amount': 1}]
+for filename in ['ir_fab3.lua', 'uo_fab3.lua']:
+    source = (ROOT / 'prototypes' / filename).read_text()
+    assert not re.search(r'type\s*=\s*"recipe",\s*name\s*=\s*"(?:y-cyb-9|y-fab3ix_y9-recipe)"', source)
 for old in recipes:
     recipe = expected['recipe'][old['name']]
     for field in ['ingredients', 'results']:
@@ -64,7 +102,7 @@ expected['recipe']['y-zproduct-2-recipe'] = {
 expected['assembling-machine']['ye_trade_node']['crafting_categories'].append('yrcat-retrade')
 animations = expected['character']['character']['animations']
 expected['character']['character']['animations'] = [
-    a for a in animations if a.get('armors') != ['y-cyb-8u']
+    a for a in animations if a.get('armors') not in [['y-cyb-8u'], ['y-cyb-9u']]
 ]
 # War Material's existing six-item targeting recipe must fit its intended factory.
 assert len(expected['recipe']['y-fab8d-recipe']['ingredients']) == 6
@@ -112,7 +150,12 @@ for entry in redraws.values():
         (entry['path'], entry['sha256'], entry['dimensions']),
         (entry['source_path'], entry['source_sha256'], entry['source_dimensions']),
     ]:
-        content = (ROOT / path).read_bytes()
+        if entry.get('removed'):
+            assert not (ROOT / path).exists(), path
+            content = subprocess.check_output(['git', '-C', str(ROOT), 'show',
+                                               entry['last_present_commit'] + ':' + path])
+        else:
+            content = (ROOT / path).read_bytes()
         assert hashlib.sha256(content).hexdigest() == digest, path
         assert list(struct.unpack('>II', content[16:24])) == dimensions, path
     expected_size = 320 if entry['path'] in {
@@ -150,11 +193,11 @@ def replace_visuals(value):
     return value
 
 replace_visuals(expected)
-# Batch7 doubles only this equipment image's source resolution at the same display size.
-cell_sprite = expected['battery-equipment']['y-zproduct-8']['sprite']
-assert cell_sprite['filename'] == '__yi_pfw__/graphics/equip/fusion-cell-64.png'
-assert (cell_sprite['width'], cell_sprite['height'], cell_sprite.get('scale', 1)) == (64, 64, 1)
-cell_sprite.update(width=128, height=128, scale=0.5)
+# Only wearable placement is removed; the cell remains a fuel and recipe item.
+assert expected['item']['y-zproduct-8'].pop('place_as_equipment_result') == 'y-zproduct-8'
+# Native conditional fuel recovery; burner prototypes remain unchanged.
+expected['item']['y-zproduct-8']['burnt_result'] = 'y-zproduct-8-empty'
+# The equipment image remains preserved and hash-checked by the artwork manifest.
 # Batch8 changes only the two static profit-display source dimensions/scale.
 for name, filename in [('y-rich-1', 'profit-show-2.png'), ('y-rich-2', 'profit-show-1.png')]:
     sprite = expected['assembling-machine'][name]['graphics_set']['animation']
@@ -162,7 +205,7 @@ for name, filename in [('y-rich-1', 'profit-show-2.png'), ('y-rich-2', 'profit-s
     assert (sprite['width'], sprite['height'], sprite.get('scale', 1)) == (160, 160, 1)
     sprite.update(width=320, height=320, scale=0.5)
 # These non-rotating factories display north; all directions reuse Engines.
-# The former north/south sheet remains an unchanged original asset for future use.
+# The former north/south sheet is superseded; its source remains in Git history.
 for name in ['y-factory-4', 'y-factory-6', 'y-factory-7']:
     for direction in ['north', 'east', 'south', 'west']:
         sprite = expected['assembling-machine'][name]['graphics_set']['animation'][direction]
@@ -255,7 +298,7 @@ for name, palette in palettes.items():
 all_layer_sets = {'y-factory-1': ammo_layers, 'y-factory-3': bio_layers, **shared_layers}
 shared = redraw_map['shared_factory_module']
 for entry in shared['sources']:
-    content = (ROOT / entry['path']).read_bytes()
+    content = asset_bytes(entry['path'])
     assert hashlib.sha256(content).hexdigest() == entry['sha256'], entry['path']
 assert hashlib.sha256((ROOT / shared['palettes']['path']).read_bytes()).hexdigest() == shared['palettes']['sha256']
 layered_entries = {e['prototype']: e for e in redraw_map['layered_animations']}
@@ -270,7 +313,7 @@ for prototype, layers in all_layer_sets.items():
         layer['filename'].removeprefix('__yi_pfw__/') for layer in layers
     }
     for entry in [layered['original'], layered['source'], *output_entries]:
-        content = (ROOT / entry['path']).read_bytes()
+        content = asset_bytes(entry['path'])
         assert hashlib.sha256(content).hexdigest() == entry['sha256'], entry['path']
         assert list(struct.unpack('>II', content[16:24])) == entry['dimensions'], entry['path']
     for layer in layers:
@@ -317,6 +360,48 @@ for old, new in mapping['recipe_names'].items():
     assert new in {p['name'] for p in expected['recipe'][new]['results']}
     expected['recipe'][new]['main_product'] = new
     expected['item'][new]['subgroup'] = expected['recipe'][new]['subgroup']
+# Items without a primary manufacture still need their own Factoriopedia subgroup.
+for subgroup, names in {
+    'yi-basic': ['y-factory-4', 'y-factory-6', 'y-factory-7', 'y-rich-1', 'y-rich-2'],
+    'yi-imports': ['y-redcoil', 'y-grycoil'] + [f'y-stuff-{i}' for i in range(1, 7)],
+    'yi-component': ['y-zproduct-8-empty'],
+}.items():
+    assert after['item-subgroup'][subgroup]['group'] == 'yi_special'
+    for name in names:
+        assert 'subgroup' not in expected['item'][name], name
+        expected['item'][name]['subgroup'] = subgroup
+# Catch ungrouped retained PFW items, including imports and unfinished buildings.
+for name, original in before['item'].items():
+    if name in after['item'] and '__yi_pfw__/' in original.get('icon', ''):
+        assert after['item'][name].get('subgroup', 'other') != 'other', name
+# Restore the two historical wealth constructors without changing machine statistics.
+wealth_ingredients = {
+    'y-rich-1': [{'type': 'item', 'name': 'y-stuff-6', 'amount': 250}],
+    'y-rich-2': [{'type': 'item', 'name': 'y-rich-1', 'amount': 4},
+                 {'type': 'item', 'name': 'y-stuff-6', 'amount': 250}],
+}
+for name, ingredients in wealth_ingredients.items():
+    expected['recipe'][name] = {
+        'type': 'recipe', 'name': name, 'main_product': name,
+        'ingredients': ingredients, 'results': [{'type': 'item', 'name': name, 'amount': 1}],
+        'enabled': True, 'order': 'factory', 'subgroup': 'yi-basic',
+    }
+# Unfinished factories remain source-only, with no Factoriopedia registrations.
+inactive_factories = ['y-factory-4', 'y-factory-6', 'y-factory-7']
+for kind, names in {
+    'item': inactive_factories,
+    'assembling-machine': inactive_factories,
+    'recipe-category': ['yrcat-swwaffen', 'yrcat-panzer', 'yrcat-support'],
+    'item-subgroup': ['yi-swwaffen', 'yi-panzer', 'yi-support',
+                      'yi-retrade4', 'yi-retrade6', 'yi-retrade7'],
+}.items():
+    for name in names:
+        del expected[kind][name]
+for filename in ['e_factory.lua', 'ir_factory.lua']:
+    source = (ROOT / 'prototypes' / filename).read_text()
+    blocks = re.findall(r'--\[=\[(.*?)\]=\]', source, re.S)
+    for name in inactive_factories:
+        assert any(f'name = "{name}"' in block for block in blocks), (filename, name)
 # Full equality catches lost recipes, changed quantities, pending mappings and parent regressions.
 for kind in expected.keys() | after.keys():
     assert expected.get(kind, {}).keys() == after.get(kind, {}).keys(), kind
@@ -334,10 +419,13 @@ for asset in assets:
         assert redraws[asset['path']]['original_sha256'] == asset['sha256'], asset['path']
     elif asset['path'] in arrow_variants:
         assert arrow_variants[asset['path']]['original_sha256'] == asset['sha256'], asset['path']
+    elif asset['path'] in REMOVED_SHEETS:
+        assert not (ROOT / asset['path']).exists(), asset['path']
+        assert hashlib.sha256(asset_bytes(asset['path'])).hexdigest() == asset['sha256'], asset['path']
     else:
         assert hashlib.sha256((ROOT / asset['path']).read_bytes()).hexdigest() == asset['sha256'], asset['path']
 assert len(replacements) == 41
-assert len(list((ROOT / 'graphics').rglob('*.png'))) == len(assets) - len(replacements) - len(arrow_variants) + len({layer['filename'] for layers in all_layer_sets.values() for layer in layers})
+assert len(list((ROOT / 'graphics').rglob('*.png'))) == len(assets) - len(replacements) - len(arrow_variants) - len(REMOVED_SHEETS) - sum(bool(e.get("removed")) for e in redraws.values()) + len({layer['filename'] for layers in all_layer_sets.values() for layer in layers})
 
 def check_layouts(value):
     if isinstance(value, list):
@@ -363,17 +451,17 @@ info = json.loads((ROOT / 'info.json').read_text())
 assert info['version'] == '0.5.1' and info['factorio_version'] == '2.1'
 assert info['dependencies'] == ['base >= 2.1.21', 'Yuoki >= 1.3.0', 'yi_engines >= 1.3.0']
 lines = (ROOT / 'changelog.txt').read_text().splitlines()
-assert [x for x in lines if x.startswith('Version:')] == ['Version: 0.5.1', 'Version: 0.5.0']
+assert [x for x in lines if x.startswith('Version:')] == ['Version: 0.5.1', 'Version: 0.5.0', 'Version: 0.4.15']
 for i, line in enumerate(lines):
     assert line == line.rstrip() and '\t' not in line
     if line.startswith('Version:'):
         assert lines[i-1] == '-' * 99
-        assert re.fullmatch(r'Date: [1-9][0-9]?\. [1-9][0-9]?\. [0-9]{4}', lines[i+1])
+        assert re.fullmatch(r'Date: [0-9]{4}-[0-9]{2}-[0-9]{2}', lines[i+1])
 trades = [r for r in recipes if 'yrcat-retrade' in after['recipe'][mapping['recipe_names'].get(r['name'], r['name'])].get('categories', [])]
 assert len(trades) == 56
-print(f'PASS: {removed} redundant declarations inactive; 105 recipe routes and quantities retained, Mk.1 constructor restored; '
+print(f'PASS: {removed} redundant declarations inactive; 103 original routes retained (both armor exports retargeted), Mk.1 and both wealth constructors restored; '
       '56 trades supported; pending mappings/parent behavior preserved; 41 parent assets verified, '
-      '34 AI artwork/source images verified, 49 arrow variants replaced, 82 original graphics unchanged; '
+      '33 retained AI artwork/source pairs and one removed pair verified, 49 arrow variants replaced, 7 superseded sheets removed, 75 original graphics unchanged; '
       '0.5.1 changelog and no migrations verified.')
 
 if args.locale_dir:
@@ -382,10 +470,10 @@ if args.locale_dir:
     localized = {kind: json.loads((args.locale_dir / (kind + '-locale.json')).read_text())['names']
                  for kind in ['recipe', 'item', 'entity', 'equipment', 'fluid', 'item-group']}
     recipe_names = {mapping['recipe_names'].get(r['name'], r['name']) for r in recipes}
-    recipe_names.add('y-combat-armor-1')
+    recipe_names.update(['y-combat-armor-1', *wealth_ingredients])
     assert len(recipe_names) == 106
     assert recipe_names <= localized['recipe'].keys(), sorted(recipe_names - localized['recipe'].keys())
-    for name in mapping['recipe_names'].values():
+    for name in [*mapping['recipe_names'].values(), *wealth_ingredients]:
         assert localized['recipe'][name] == localized['item'][name], name
     for kind, locale_kind in [('item', 'item'), ('armor', 'item'), ('assembling-machine', 'entity'),
                               ('battery-equipment', 'equipment'), ('fluid', 'fluid'), ('item-group', 'item-group')]:

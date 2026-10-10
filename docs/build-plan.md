@@ -6,11 +6,11 @@ Owner requirements recorded 2026-10-09. These govern implementation and supersed
 
 - Start the restored mod at **0.5.0** when implementation begins. Set `info.json`, the package version and the first changelog section consistently.
 - The owner explicitly authorized **0.5.1** after merging Phase 1. Keep the 0.5.0 changelog section intact and accumulate this pass in 0.5.1. Hold at 0.5.1 until another version is authorized; commits, PRs and completed phases do not authorize an automatic bump.
-- Add a root `changelog.txt` when building. There is no existing changelog to carry forward; do not invent historical release entries. Record implemented changes rather than prospective discovery tasks.
-- Use Yuoki Industries' date convention: `Date: D. M. YYYY`, with unpadded day/month and spaces after the dots; for example `Date: 8. 10. 2026`. Use the applicable release date, not the example or discovery date by default. Reference: [Yuoki 1.3.0 changelog](https://github.com/jatmn/Yuoki-Factorio-2.x/blob/50ea38b9703a13e8644c3bcfe6e400b3bf2b4a5c/changelog.txt).
+- Maintain root `changelog.txt` with implemented changes rather than prospective discovery tasks. The owner supplied the historical 0.4.15 entry dated 2016-10-23: "still unfinished, but now aviable at mods.factorio.com". Preserve that wording; do not invent other historical entries.
+- Updated owner direction: use `Date: YYYY-MM-DD`, with zero-padded month/day. The current 0.5.0 and 0.5.1 sections use `Date: 2026-10-09`; historical 0.4.15 uses `Date: 2016-10-23`. This supersedes the earlier Yuoki-style date instruction.
 - Follow Factorio's parser format: exactly 99 hyphens for the section separator, immediately followed by the section version (currently `Version: 0.5.1`); category lines indented two spaces and ending in a colon; entries indented four spaces then `- `; continuation lines indented six spaces. Avoid tabs, trailing spaces and duplicate version sections.
 
-The in-game browser parses this structure; the Mod Portal displays the file as plain text. Use the same file for both and verify it displays correctly in the game with no changelog parsing errors. The date format itself is unrestricted by Factorio, so Yuoki's convention is compatible. [Official changelog specification](https://lua-api.factorio.com/2.1.21/auxiliary/changelog-format.html).
+The in-game browser parses this structure; the Mod Portal displays the file as plain text. Use the same file for both and verify it displays correctly in the game with no changelog parsing errors. The date format itself is unrestricted by Factorio; use the owner’s year-month-day convention. [Official changelog specification](https://lua-api.factorio.com/2.1.21/auxiliary/changelog-format.html).
 
 ## Dependencies and target
 
@@ -49,7 +49,7 @@ Completion evidence:
 2. Data-stage validation completes without fatal errors.
 3. A graphical client reaches the main menu and creates/enters a new game with PFW enabled, with no startup, asset-loading or initialization crash. A headless dump alone cannot establish this.
 4. The new game runs for a brief smoke test, can be saved, and that 0.5.0 save reloads successfully. No legacy-save migration is expected.
-5. The root changelog has a single valid 0.5.0 section, uses Yuoki's date style, and displays correctly. Record remaining gameplay/visual issues as later work.
+5. The root changelog has valid version sections and displays correctly. Current date/history requirements above supersede the original Phase 1 single-section/date-style check. Record remaining gameplay/visual issues as later work.
 
 This milestone establishes a working launch baseline. It does not assert complete recipe accessibility, correct economics, finished ownership consolidation or final artwork quality.
 
@@ -66,3 +66,14 @@ On 2026-10-09 the owner selected **AI-assisted redraws** after reviewing four co
 The owner also selected [Yuoki-generated trade arrows](decisions/trade-arrow-overlays.md). Redraw base artwork only and generate arrow variants through the parent helper; do not create separate baked-arrow PNGs.
 
 For building artwork, the owner requires inspecting existing sprite/animation sheets and checking both parents before drawing. Reuse confirmed parent art directly; otherwise use both icon and sprite references. Preserve structural identity and colors. See the [batch3 reference correction](artwork-batch-3.md).
+
+## Follow-up work after the current 0.5.1 pass
+
+Recorded at the owner's request on 2026-10-09. The active content has no known startup or missing-input blockers from the completed checks. These are follow-ups, not claims that a full playthrough or release review is complete. Keep version **0.5.1** and defer migrations until a formal release; this list does not authorize balance changes or disabled-content restoration.
+
+- [ ] **Latest Walker export graphical check:** verify the parent Walker icon/generated arrow, displayed name, input and payout in the client: one Walker - T.R. → 100 Katalex + 250 Neotix + 5000 Trader Signs. Actual manufacture/export and save/reload already passed headless. Review the current [PR #9](https://github.com/jatmn/Yuoki-PFW-Factorio-2.x/pull/9) before merging.
+- [ ] **Trade-economy audit:** compare current parent manufacturing costs with PFW returns; identify inconsistent contracts and profitable exchange loops, then present proposed changes before adjusting payouts. Include gun/shield exports, cyborg costs, both direct armor exports, wealth-machine costs and the PFW constructor yielding ten Trade Nodes. Concrete example: three identical parent laser guns currently pay 41 UC + one Trader Sign, while six pay 50 UC + one sign; two smaller exports instead pay 82 UC + two signs. Recommended next substantive task.
+- [ ] **Ordinary progression playthrough:** establish practical acquisition costs, timing and trading progression from resources through factories, the first Trade Node and later exports/imports. Structural reachability and supplied-input crafting checks do not replace this playthrough.
+- [ ] **Optional disabled-content review:** examine future weapons, vehicle/chassis trades and equipment concepts individually for usefulness and overlap with both parents. Preserve their code/art while deciding whether to restore anything. Heavy Weapons, Tank and Supply factories stay disabled; restoring them needs a functional design, not just constructors.
+- [ ] **Deferred Engines Research Center artwork:** carry out [issue #8](https://github.com/jatmn/Yuoki-PFW-Factorio-2.x/issues/8) in an Engines PR: directional views, recolorable material/light masks and validated animation/shadows. Keep PFW's three placeholders disabled; the artwork task does not automatically require a PFW change.
+- [ ] **Status-document reconciliation and release preparation:** refresh existing current-status counts and stale pending statements against accepted changes and user checks, while preserving clearly labeled historical discovery records. Reconcile the implemented changelog before a formal release. Reuse existing records; add no duplicate screenshots or documentation files. Release publication, version changes and any migration work remain separate decisions.

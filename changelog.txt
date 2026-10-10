@@ -1,21 +1,29 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.5.1
-Date: 9. 10. 2026
+Date: 2026-10-09
   Changes:
+    - Replace the MKE-C3D-Sirus commodity and manufacture with direct export of one Yuoki Walker - T.R. for 100 Katalex, 250 Neotix and 5000 Trader Signs; reuse its parent icon.
+    - Restore Nagshell Theocrafting Center construction for 250 Katalex, and Be Rich and Show this for four Nagshell centers plus 250 Katalex; retain existing machine statistics.
+    - Export one Standard YI Work & Protection Suit for one Katalex, four Neotix and one Trader Sign; use the parent suit icon with the generated export arrow.
+    - Remove SWE-W21-Fxxt packaged-item manufacture and its disabled armor conversion. Preserve obsolete item, armor, grid and animation definitions in comments.
+    - Keep the unused legacy bare-hand mining animation helper commented for future reference.
     - Reuse Engines' Trade Node and Yuoki's minigun, energy ammunition, mobile generator, movement equipment and first walker.
     - Allow the Engines Trade Node to process PFW trades while retaining its existing categories and operating statistics.
-    - Keep redundant PFW definitions commented with parent ownership references; retain all distinct recipes and quantities.
+    - Keep redundant PFW definitions commented with parent ownership references; retain remaining distinct recipes and quantities except the explicitly replaced armor commodity routes.
     - Reuse Yuoki's Lasergun for both old energy guns, CF-35 for Reactive/Shielded Armor, CF-35 for CF-56, and KT-60 for KT-34; preserve all export quantities and payouts for later balancing.
     - Restore Combat Armor Mk.1 manufacture: two refined N4 and four iron plates produce two components in one second in the War Material Factory.
-    - Keep second-armor and fuel-cell mappings pending; preserve unique original artwork and other disabled content.
+    - Disable only the PFW energy cell's wearable-battery function; use Yuoki's existing battery for wearable storage. Preserve the cell's fuel value, all recipes, commented equipment code and artwork.
+    - Return an empty energy cell after fuel use when the burner has a spent-fuel output slot; otherwise burn normally and discard the container. Burner definitions remain unchanged.
+    - Reuse Yuoki's Standard YI Work & Protection Suit for the second armor; keep the parent recipe and statistics unchanged.
   Graphics:
+    - Remove the unused SWE-W21-Fxxt armor icon and its AI source image after parent-suit consolidation.
+    - Remove seven superseded factory animation sheets; artwork tools read original shadow sources from Git history. Keep otherwise-unused artwork.
     - Include the original Mod Portal thumbnail in the package for the in-game mod browser.
-    - Replace 41 confirmed duplicate artwork files with references to Yuoki Industries or Yuoki Engines, including the shared-factory icon and animation.
-    - Use Engines' animation for the Heavy Weapons, Tank and Supply factories in all directions, including their fixed in-game view; retain the original alternate sheet for future use.
+    - Replace 41 confirmed duplicate artwork files with references to Yuoki Industries or Yuoki Engines.
     - Generate import/export arrows with Yuoki helpers instead of 49 precomposed arrow-icon variants.
     - Refresh retained factory, display, commodity, weapon, material, armor and support-item icons with AI-assisted artwork based on original sprites.
     - Match the empty and filled energy-cell icons to one model; retain the energy-support unit's box and side-mounted cylinder.
-    - Redraw the crafting-tab icon and energy-cell equipment image at 128px, preserving the equipment display size.
+    - Redraw the crafting-tab icon at 128px; preserve the 128px energy-cell equipment image for future use.
     - Redraw both static profit-display world sprites at double resolution while preserving their display size and placement.
     - Use one neutral left-hand body and shared moving parts for weapons, vehicle, equipment and component factories, with independent material and light tints and separate right-hand assemblies.
     - Generate those four factory icons from the same shared parts and palettes as their world sprites.
@@ -26,6 +34,7 @@ Date: 9. 10. 2026
     - Rebuild the cyborg factory with fixed vat shells and a separate green-to-pink fill/drain animation.
     - Preserve the original 16-frame animation cycles, including the slower cyborg and component factory speeds.
   Bugfixes:
+    - Assign PFW subgroups to imported materials, the empty energy cell and wealth-machine items so they no longer appear under Unsorted in Factoriopedia.
     - Match 48 primary manufacturing recipe IDs to their products and set main products for names and Factoriopedia grouping.
     - Put those products in their manufacturing subgroups; keep imports, exports and alternate recipes distinct.
     - Supply missing recipe and armor names; update gun and shield export labels to their current parent items.
@@ -36,7 +45,7 @@ Date: 9. 10. 2026
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.5.0
-Date: 9. 10. 2026
+Date: 2026-10-09
   Changes:
     - Begin the fresh Factorio 2.1 release; require Factorio 2.1.21, Yuoki 1.3.0 and Yuoki Engines 1.3.0.
     - Remove the obsolete legacy migrations; this release starts with a new game.
@@ -45,3 +54,9 @@ Date: 9. 10. 2026
     - Update character animation registration and replace obsolete weapon sound references.
     - Preserve Yuoki's projectile and equipment grid instead of overwriting parent definitions.
     - Keep all 105 existing recipe routes; update the removed vanilla wood and flamethrower references.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.4.15
+Date: 2016-10-23
+  Initial release:
+    - still unfinished, but now aviable at mods.factorio.com

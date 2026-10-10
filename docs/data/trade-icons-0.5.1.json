@@ -204,13 +204,13 @@
     },
     {
       "recipe": "y-rfab3i-recipe",
-      "source": "y-cyb-8",
+      "source": "yi_walker_a",
       "direction": "down",
       "old_icon": "__yi_pfw__/graphics/package_common_retrade.png"
     },
     {
       "recipe": "y-rfab3k-recipe",
-      "source": "y-cyb-9",
+      "source": "yi_armor_gray",
       "direction": "down",
       "old_icon": "__yi_pfw__/graphics/package_common_retrade.png"
     },
@@ -732,15 +732,15 @@
     {
       "path": "graphics/fab3/neron_u5-sell.png",
       "original_sha256": "66947aefaeb77258b4fc8cd2b5a7a897538a50f626ba7e4341359cf44d2ebead",
-      "base_icon": "__yi_pfw__/graphics/fab3/neron_u5_32.png",
+      "base_icon": "__Yuoki__/graphics/armor/mcb_icon.png",
       "base_dimensions": [
         64,
         64
       ],
-      "base_sha256": "dd57a7eea6c812f0fa42e6e3563cf513f9abf95f9e25bfbce7e105716579c4bb",
+      "base_sha256": "c60deadf7dece4e399c46ccd106427645c042aadf275b7f6f76a829061f2b458",
       "direction": "down",
       "source_references_before": [],
-      "future_use": "Register or restore the intended item with this base artwork, then use yi.lib.recipe.atomics.item_down(item_name). Do not recreate a baked arrow image."
+      "future_use": "The active armor export uses yi_armor_gray and the parent down-arrow helper; the obsolete local armor icon was removed."
     },
     {
       "path": "graphics/fab4/teil_05-sell.png",
