@@ -82,6 +82,8 @@ data:extend(
 		subgroup = "yi-cyborgs",
 	},	
 
+	-- Unfinished factory: no production recipes. Preserve inactive; artwork follow-up: PFW issue #8.
+	--[=[
 	-- heavy weapons
 	{
 		type = "assembling-machine",
@@ -113,6 +115,7 @@ data:extend(
 		order="a",
 		subgroup = "yi-swwaffen",
 	},	
+	]=]
 	-- trucks
 	{
 		type = "assembling-machine",
@@ -133,6 +136,8 @@ data:extend(
 		order="a",
 		subgroup = "yi-fahrzeuge",
 	},	
+	-- Unfinished factory: no production recipes. Preserve inactive; artwork follow-up: PFW issue #8.
+	--[=[
 	-- tank
 	{
 		type = "assembling-machine",
@@ -164,6 +169,9 @@ data:extend(
 		order="a",
 		subgroup = "yi-panzer",
 	},	
+	]=]
+	-- Unfinished factory: no production recipes. Preserve inactive; artwork follow-up: PFW issue #8.
+	--[=[
 	-- supply
 	{
 		type = "assembling-machine",
@@ -195,6 +203,7 @@ data:extend(
 		order="a",
 		subgroup = "yi-support",
 	},	
+	]=]
 	-- war material
 	{
 		type = "assembling-machine",

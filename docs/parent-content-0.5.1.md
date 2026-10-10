@@ -79,7 +79,9 @@ Headless verification crafts the parent suit from its actual recipe, transfers t
 
 ### Restored wealth-machine construction
 
-The owner approved the original costs: 250 Katalex → one Nagshell Theocrafting Center (`y-rich-1`); four centers + 250 Katalex → one Be Rich and Show this (`y-rich-2`). The recipes are enabled from the start, use the matching item IDs/main products and `yi-basic`, and retain the default crafting category/time. Machine stats, art and both parent Reputation recipes are unchanged. The three unfinished factory constructors remain disabled. Version stays 0.5.1 with no migrations. Headless tests manufactured five centers, consumed four in the upgrade, then operated both resulting machines with both Reputation recipes and verified mining/replacement. Materials and power were supplied; this was not a natural-resource playthrough.
+The owner approved the original costs: 250 Katalex → one Nagshell Theocrafting Center (`y-rich-1`); four centers + 250 Katalex → one Be Rich and Show this (`y-rich-2`). The recipes are enabled from the start, use the matching item IDs/main products and `yi-basic`, and retain the default crafting category/time. Machine stats, art and both parent Reputation recipes are unchanged. The three unfinished factories are now entirely inactive: entity/item/category/subgroup declarations remain commented, along with their constructors. Version stays 0.5.1 with no migrations. Headless tests manufactured five centers, consumed four in the upgrade, then operated both resulting machines with both Reputation recipes and verified mining/replacement. Materials and power were supplied; this was not a natural-resource playthrough.
+
+The Heavy Weapons, Tank and Supply placeholders have no production recipes and are no longer registered in Factoriopedia. Existing artwork is unchanged; shared-factory reference sheets remain available in Git history for [Engines artwork issue #8](https://github.com/jatmn/Yuoki-PFW-Factorio-2.x/issues/8). They currently have no gameplay function in PFW.
 
 ## Explicitly pending
 

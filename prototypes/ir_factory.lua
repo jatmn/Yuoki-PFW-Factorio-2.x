@@ -25,10 +25,19 @@ data:extend(
 	{ type = "item", name = "y-factory-1", subgroup = "yi-basic", icon = "__yi_pfw__/graphics/entity/fabrik-ammo-icon.png", icon_size = 64, order = "a", place_result = "y-factory-1", stack_size = 20, },
 	{ type = "item", name = "y-factory-2", subgroup = "yi-basic", icon = "__yi_pfw__/graphics/entity/fabrik-weapons-icon.png", icon_size = 64, order = "a", place_result = "y-factory-2", stack_size = 20, },
 	{ type = "item", name = "y-factory-3", subgroup = "yi-basic", icon = "__yi_pfw__/graphics/entity/fabrik-bio-icon.png", icon_size = 64, order = "a", place_result = "y-factory-3", stack_size = 20, },
+	-- Unfinished factory item; preserve inactive with its entity.
+	--[=[
 	{ type = "item", name = "y-factory-4", subgroup = "yi-basic", icon = "__yi_engines__/graphics/entity/science_gen_icon.png", icon_size = 32, order = "a", place_result = "y-factory-4", stack_size = 20, },
+	]=]
 	{ type = "item", name = "y-factory-5", subgroup = "yi-basic", icon = "__yi_pfw__/graphics/entity/fabrik-trucks-icon.png", icon_size = 64, order = "a", place_result = "y-factory-5", stack_size = 20, },
+	-- Unfinished factory item; preserve inactive with its entity.
+	--[=[
 	{ type = "item", name = "y-factory-6", subgroup = "yi-basic", icon = "__yi_engines__/graphics/entity/science_gen_icon.png", icon_size = 32, order = "a", place_result = "y-factory-6", stack_size = 20, },
+	]=]
+	-- Unfinished factory item; preserve inactive with its entity.
+	--[=[
 	{ type = "item", name = "y-factory-7", subgroup = "yi-basic", icon = "__yi_engines__/graphics/entity/science_gen_icon.png", icon_size = 32, order = "a", place_result = "y-factory-7", stack_size = 20, },
+	]=]
 	{ type = "item", name = "y-factory-8", subgroup = "yi-basic", icon = "__yi_pfw__/graphics/entity/fabrik-equip-icon.png", icon_size = 64, order = "a", place_result = "y-factory-8", stack_size = 20, },
 	{ type = "item", name = "y-factory-9", subgroup = "yi-basic", icon = "__yi_pfw__/graphics/entity/fabrik-comp-icon.png", icon_size = 64, order = "a", place_result = "y-factory-9", stack_size = 20, },
 	

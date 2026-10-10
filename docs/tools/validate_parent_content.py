@@ -376,6 +376,22 @@ for name, ingredients in wealth_ingredients.items():
         'ingredients': ingredients, 'results': [{'type': 'item', 'name': name, 'amount': 1}],
         'enabled': True, 'order': 'factory', 'subgroup': 'yi-basic',
     }
+# Unfinished factories remain source-only, with no Factoriopedia registrations.
+inactive_factories = ['y-factory-4', 'y-factory-6', 'y-factory-7']
+for kind, names in {
+    'item': inactive_factories,
+    'assembling-machine': inactive_factories,
+    'recipe-category': ['yrcat-swwaffen', 'yrcat-panzer', 'yrcat-support'],
+    'item-subgroup': ['yi-swwaffen', 'yi-panzer', 'yi-support',
+                      'yi-retrade4', 'yi-retrade6', 'yi-retrade7'],
+}.items():
+    for name in names:
+        del expected[kind][name]
+for filename in ['e_factory.lua', 'ir_factory.lua']:
+    source = (ROOT / 'prototypes' / filename).read_text()
+    blocks = re.findall(r'--\[=\[(.*?)\]=\]', source, re.S)
+    for name in inactive_factories:
+        assert any(f'name = "{name}"' in block for block in blocks), (filename, name)
 # Full equality catches lost recipes, changed quantities, pending mappings and parent regressions.
 for kind in expected.keys() | after.keys():
     assert expected.get(kind, {}).keys() == after.get(kind, {}).keys(), kind

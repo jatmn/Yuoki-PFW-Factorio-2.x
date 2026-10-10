@@ -18,8 +18,7 @@ Date: 2026-10-09
     - Remove the unused SWE-W21-Fxxt armor icon and its AI source image after parent-suit consolidation.
     - Remove seven superseded factory animation sheets; artwork tools read original shadow sources from Git history. Keep otherwise-unused artwork.
     - Include the original Mod Portal thumbnail in the package for the in-game mod browser.
-    - Replace 41 confirmed duplicate artwork files with references to Yuoki Industries or Yuoki Engines, including the shared-factory icon and animation.
-    - Use Engines' animation for the Heavy Weapons, Tank and Supply factories in all directions, including their fixed in-game view; the original alternate sheet remains in Git history.
+    - Replace 41 confirmed duplicate artwork files with references to Yuoki Industries or Yuoki Engines.
     - Generate import/export arrows with Yuoki helpers instead of 49 precomposed arrow-icon variants.
     - Refresh retained factory, display, commodity, weapon, material, armor and support-item icons with AI-assisted artwork based on original sprites.
     - Match the empty and filled energy-cell icons to one model; retain the energy-support unit's box and side-mounted cylinder.
@@ -34,7 +33,7 @@ Date: 2026-10-09
     - Rebuild the cyborg factory with fixed vat shells and a separate green-to-pink fill/drain animation.
     - Preserve the original 16-frame animation cycles, including the slower cyborg and component factory speeds.
   Bugfixes:
-    - Assign PFW subgroups to imported materials, the empty energy cell and five unfinished building items so they no longer appear under Unsorted in Factoriopedia.
+    - Assign PFW subgroups to imported materials, the empty energy cell and wealth-machine items so they no longer appear under Unsorted in Factoriopedia.
     - Match 48 primary manufacturing recipe IDs to their products and set main products for names and Factoriopedia grouping.
     - Put those products in their manufacturing subgroups; keep imports, exports and alternate recipes distinct.
     - Supply missing recipe and armor names; update gun and shield export labels to their current parent items.

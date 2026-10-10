@@ -961,7 +961,8 @@
       ],
       "evidence": "Batch3 sprite review: same four circular stations, blue central rotor and front rotor machine family. Parent icon is a newer rendering/state, not byte-identical. Reuse directly; do not generate another copy. PFW directional sheets remain for later frame-specific assessment.",
       "metadata": "All six icon paths use parent image directly at its existing32px size; no entity or recipe alias.",
-      "batch": 3
+      "batch": 3,
+      "current_usage": "References preserved only in commented PFW factory definitions; no active PFW use. Original sheets remain in Git history for Engines Research Center artwork issue #8."
     },
     {
       "pfw_path": "graphics/entity/tut-hai1.png",
@@ -995,7 +996,8 @@
         ],
         "decision": "Owner selected Engines artwork for the displayed view. Subsequent cleanup removes the superseded local sheet; the original remains in the immutable 0.4.15 Git import.",
         "historical_pfw_path": "graphics/entity/tut-vai1.png"
-      }
+      },
+      "current_usage": "References preserved only in commented PFW factory definitions; no active PFW use. Original sheets remain in Git history for Engines Research Center artwork issue #8."
     }
   ],
   "retained_candidates": [
