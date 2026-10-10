@@ -2,6 +2,7 @@
 Version: 0.5.1
 Date: 2026-10-09
   Changes:
+    - Restore Nagshell Theocrafting Center construction for 250 Katalex, and Be Rich and Show this for four Nagshell centers plus 250 Katalex; retain existing machine statistics.
     - Export one Standard YI Work & Protection Suit for one Katalex, four Neotix and one Trader Sign; use the parent suit icon with the generated export arrow.
     - Remove SWE-W21-Fxxt packaged-item manufacture and its disabled armor conversion. Preserve obsolete item, armor, grid and animation definitions in comments.
     - Keep the unused legacy bare-hand mining animation helper commented for future reference.

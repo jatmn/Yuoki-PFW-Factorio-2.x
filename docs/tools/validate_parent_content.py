@@ -364,6 +364,18 @@ for subgroup, names in {
 for name, original in before['item'].items():
     if name in after['item'] and '__yi_pfw__/' in original.get('icon', ''):
         assert after['item'][name].get('subgroup', 'other') != 'other', name
+# Restore the two historical wealth constructors without changing machine statistics.
+wealth_ingredients = {
+    'y-rich-1': [{'type': 'item', 'name': 'y-stuff-6', 'amount': 250}],
+    'y-rich-2': [{'type': 'item', 'name': 'y-rich-1', 'amount': 4},
+                 {'type': 'item', 'name': 'y-stuff-6', 'amount': 250}],
+}
+for name, ingredients in wealth_ingredients.items():
+    expected['recipe'][name] = {
+        'type': 'recipe', 'name': name, 'main_product': name,
+        'ingredients': ingredients, 'results': [{'type': 'item', 'name': name, 'amount': 1}],
+        'enabled': True, 'order': 'factory', 'subgroup': 'yi-basic',
+    }
 # Full equality catches lost recipes, changed quantities, pending mappings and parent regressions.
 for kind in expected.keys() | after.keys():
     assert expected.get(kind, {}).keys() == after.get(kind, {}).keys(), kind
@@ -421,7 +433,7 @@ for i, line in enumerate(lines):
         assert re.fullmatch(r'Date: [0-9]{4}-[0-9]{2}-[0-9]{2}', lines[i+1])
 trades = [r for r in recipes if 'yrcat-retrade' in after['recipe'][mapping['recipe_names'].get(r['name'], r['name'])].get('categories', [])]
 assert len(trades) == 56
-print(f'PASS: {removed} redundant declarations inactive; 104 original routes retained (one armor export retargeted), Mk.1 constructor restored; '
+print(f'PASS: {removed} redundant declarations inactive; 104 original routes retained (one armor export retargeted), Mk.1 and both wealth constructors restored; '
       '56 trades supported; pending mappings/parent behavior preserved; 41 parent assets verified, '
       '33 retained AI artwork/source pairs and one removed pair verified, 49 arrow variants replaced, 7 superseded sheets removed, 75 original graphics unchanged; '
       '0.5.1 changelog and no migrations verified.')
@@ -432,10 +444,10 @@ if args.locale_dir:
     localized = {kind: json.loads((args.locale_dir / (kind + '-locale.json')).read_text())['names']
                  for kind in ['recipe', 'item', 'entity', 'equipment', 'fluid', 'item-group']}
     recipe_names = {mapping['recipe_names'].get(r['name'], r['name']) for r in recipes}
-    recipe_names.add('y-combat-armor-1')
-    assert len(recipe_names) == 105
+    recipe_names.update(['y-combat-armor-1', *wealth_ingredients])
+    assert len(recipe_names) == 107
     assert recipe_names <= localized['recipe'].keys(), sorted(recipe_names - localized['recipe'].keys())
-    for name in mapping['recipe_names'].values():
+    for name in [*mapping['recipe_names'].values(), *wealth_ingredients]:
         assert localized['recipe'][name] == localized['item'][name], name
     for kind, locale_kind in [('item', 'item'), ('armor', 'item'), ('assembling-machine', 'entity'),
                               ('battery-equipment', 'equipment'), ('fluid', 'fluid'), ('item-group', 'item-group')]:
@@ -444,4 +456,4 @@ if args.locale_dir:
             declared.update(re.findall(r'type\s*=\s*"' + kind + r'",\s*name\s*=\s*"([^"\n]+)"', source.read_text()))
         active = declared & after.get(kind, {}).keys()
         assert active <= localized[locale_kind].keys(), (kind, sorted(active - localized[locale_kind].keys()))
-    print('PASS: engine-resolved names for all 105 PFW recipes and retained items/entities/equipment; 47 primary recipe names match their products.')
+    print('PASS: engine-resolved names for all 107 PFW recipes and retained items/entities/equipment; 49 primary recipe names match their products.')

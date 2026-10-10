@@ -24,7 +24,7 @@ Both required mods are explicitly checked in the integration module. Required de
 
 ### Recipe and balance decisions
 
-**104 original active recipe routes** remain, plus the restored Mk.1 constructor for **105 routes**. The owner removed packaged `y-cyb-9` manufacture and its disabled armor conversion; its export now consumes one parent suit with the prior payout retained. The first consolidation changed five recipes:
+**104 original active recipe routes** remain, plus the restored Mk.1 and two wealth-machine constructors for **107 routes**. The owner removed packaged `y-cyb-9` manufacture and its disabled armor conversion; its export now consumes one parent suit with the prior payout retained. The first consolidation changed five recipes:
 
 - `y-retrader-recipe`: output is ten `ye_trade_node`; original ingredient quantities remain.
 - `y-rfab1c-recipe`: consumes seven `yi_ammo_energie` instead of seven PFW magazines.
@@ -77,6 +77,10 @@ Removed the former `y-cyb-9` manufacturing recipe (historically `y-fab3k-recipe`
 
 Headless verification crafts the parent suit from its actual recipe, transfers that output to the Trade Node, and checks consumption of exactly one suit with the exact three-product payout. Inputs and power are supplied by the test, not mined. Full prototype comparison confirmed no unrelated parent or PFW change.
 
+### Restored wealth-machine construction
+
+The owner approved the original costs: 250 Katalex → one Nagshell Theocrafting Center (`y-rich-1`); four centers + 250 Katalex → one Be Rich and Show this (`y-rich-2`). The recipes are enabled from the start, use the matching item IDs/main products and `yi-basic`, and retain the default crafting category/time. Machine stats, art and both parent Reputation recipes are unchanged. The three unfinished factory constructors remain disabled. Version stays 0.5.1 with no migrations. Headless tests manufactured five centers, consumed four in the upgrade, then operated both resulting machines with both Reputation recipes and verified mining/replacement. Materials and power were supplied; this was not a natural-resource playthrough.
+
 ## Explicitly pending
 
 - Balance the retained gun/shield export contracts and cyborg costs after parent consolidation.
@@ -90,8 +94,8 @@ Tested with Factorio **2.1.21 Linux headless**, Yuoki **1.3.0** at `50ea38b9703a
 
 The official [crafting-machine schema](https://lua-api.factorio.com/latest/prototypes/AssemblingMachinePrototype.html) was checked for category and result handling, and the matching 2.1.21 runtime schema for equipment insertion/removal and character ammunition checks.
 
-- Full before/after prototype comparison: only the recorded suppressions, approved recipe references, the restored Mk.1 constructor, primary recipe IDs/main products/item subgroups, both removed PFW character-animation entries, Trade Node category addition, the War Material Factory ingredient limit (five to six), the removal of PFW cell wearable placement/equipment, its conditional empty-cell burn result, and subsequent approved artwork substitutions differ. All unrelated parent prototypes and remaining pending content identities/statistics remain unchanged.
-- Preservation: 104 original active recipes retained (the suit export retargeted), 33 historical disabled recipes preserved, the old packaged-suit manufacture/conversion removed and Mk.1 restored, 75 remaining original graphics unchanged; seven superseded sheets removed, 33 retained AI artwork updates and one removed armor icon/source pair verified, 41 parent replacements and 49 arrow-variant removals verified against their manifests, all 232 original archive files intact at the immutable import commit.
+- Full before/after prototype comparison: only the recorded suppressions, approved recipe references, the restored Mk.1 and wealth constructors, primary recipe IDs/main products/item subgroups, both removed PFW character-animation entries, Trade Node category addition, the War Material Factory ingredient limit (five to six), the removal of PFW cell wearable placement/equipment, its conditional empty-cell burn result, and subsequent approved artwork substitutions differ. All unrelated parent prototypes and remaining pending content identities/statistics remain unchanged.
+- Preservation: 104 original active recipes retained (the suit export retargeted), 31 historical disabled recipes preserved, the old packaged-suit manufacture/conversion removed and Mk.1/both wealth constructors restored, 75 remaining original graphics unchanged; seven superseded sheets removed, 33 retained AI artwork updates and one removed armor icon/source pair verified, 41 parent replacements and 49 arrow-variant removals verified against their manifests, all 232 original archive files intact at the immutable import commit.
 - Restored-chain crafting: Mk.1 and all three parent equipment recipes produced the required supplies, then all nine affected manufacturing recipes and 13 affected exports completed with exact outputs and empty input inventories. The harness carried verified output counts between stages and supplied other ingredients/power; this is not a full natural-progression playthrough.
 - Earlier naming/tier correction: engine locale dumps resolved all 106 then-active recipe names and retained item/entity/equipment names in English and German. All 48 renamed primary recipes are enabled, select in their intended machines, match their main products/subgroups, and craft with exact outputs. Both CF-35/KT-60 exports craft with preserved payouts. The resulting save reloads for 600 ticks.
 - Live crafting: all 56 PFW trades completed in Engines nodes with exact output quantities, including four-product exports and energy-cell exchanges. The parent's existing `y_exchange_b1` trade also completed.
