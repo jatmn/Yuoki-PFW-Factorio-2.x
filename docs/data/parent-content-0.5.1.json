@@ -186,11 +186,21 @@
           "path": "prototypes/uo_fab8.lua"
         }
       ]
+    },
+    {
+      "old": "y-zproduct-8",
+      "new": "yi_equip_battery_a",
+      "owner": "Yuoki",
+      "declarations": [
+        {
+          "type": "battery-equipment",
+          "path": "prototypes/uo_fab8.lua"
+        }
+      ]
     }
   ],
   "pending": [
-    "y-cyb-9u",
-    "y-zproduct-8"
+    "y-cyb-9u"
   ],
   "recipe_names": {
     "y-fab1-recipe": "y-factory-1",

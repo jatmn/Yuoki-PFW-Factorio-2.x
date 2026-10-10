@@ -91,7 +91,9 @@ data:extend(
 	{ type = "recipe", name = "y-zproduct-8", main_product = "y-zproduct-8", energy_required = 2, ingredients = {{type="item", name="y-iron-case", amount=2},{type="item", name="y-refined-yres1", amount=6},{type="item", name="y-infused-uca2", amount=3}, }, results = {{type="item", name="y-zproduct-8", amount=1}}, enabled = true,  order="y-zproduct-8", subgroup = "yi-component", categories={"yrcat-component"},},
 	{ type = "recipe", name = "y-zproduct-8charge-recipe", energy_required = 2, ingredients = {{type="item", name="y-zproduct-8-empty", amount=1},{type="item", name="y-infused-uca2", amount=3}, }, results = {{type="item", name="y-zproduct-8", amount=1}}, enabled = true,  order="y-zproduct-8", subgroup = "yi-component", categories={"yrcat-component"}, icon = "__yi_pfw__/graphics/fab8/fusion-cell-empty.png", icon_size = 64,},
 	
-	{ type = "item", name = "y-zproduct-8", subgroup = "yi-component", icon = "__yi_pfw__/graphics/fab8/fusion-cell.png", icon_size = 64, order = "a", stack_size = 100, fuel_value="12GJ", fuel_categories={"chemical"}, place_as_equipment_result = "y-zproduct-8",},
+	-- Wearable storage is supplied by Yuoki yi_equip_battery_a; preserve the former item property:
+	-- place_as_equipment_result = "y-zproduct-8",
+	{ type = "item", name = "y-zproduct-8", subgroup = "yi-component", icon = "__yi_pfw__/graphics/fab8/fusion-cell.png", icon_size = 64, order = "a", stack_size = 100, fuel_value="12GJ", fuel_categories={"chemical"},},
 	{ type = "item", name = "y-zproduct-8-empty", icon = "__yi_pfw__/graphics/fab8/fusion-cell-empty.png", icon_size = 64, order = "a", stack_size = 400,},
 	{ type = "recipe", name = "y-rzproduct-8-recipe", ingredients = {{type="item", name="y-zproduct-8", amount=1},}, results = {{type="item", name="y-stuff-2", amount=1,},{type="item", name="y-redcoil", amount=3,},{type="item", name="y-grycoil", amount=3,},{type="item", name="y-zproduct-8-empty", amount=1,},}, enabled = true, order="y-zproduct-8", subgroup = "yi-retrade", categories={"yrcat-retrade"}, },
 	

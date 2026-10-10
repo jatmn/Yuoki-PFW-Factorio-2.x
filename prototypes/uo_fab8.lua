@@ -1,5 +1,6 @@
-data:extend(
-{
+-- All wearable equipment below is preserved inactive; use Yuoki equipment.
+-- data:extend(
+-- {
 
 	-- Parent owner: Yuoki, energy-shield-equipment yi_equip_shield_a. Preserved inactive PFW definition.
 	--[=[
@@ -125,6 +126,9 @@ data:extend(
 	},
 	]=]
 	
+	-- Parent owner: Yuoki, battery-equipment yi_equip_battery_a. Preserved inactive PFW definition.
+	-- The PFW cell remains a distinct fuel and trade item.
+	--[=[
 	{
 		type = "battery-equipment",
 		name = "y-zproduct-8",
@@ -153,6 +157,8 @@ data:extend(
 		categories = {"armor"},
 	},
 	
+	]=]
+
 	-- Parent owner: Yuoki, generator-equipment yi_equip_generator_a. Preserved inactive PFW definition.
 	--[=[
 	{
@@ -211,4 +217,4 @@ data:extend(
 	]=]
 	
 	
-})
+-- })

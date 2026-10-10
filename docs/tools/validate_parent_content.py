@@ -150,11 +150,9 @@ def replace_visuals(value):
     return value
 
 replace_visuals(expected)
-# Batch7 doubles only this equipment image's source resolution at the same display size.
-cell_sprite = expected['battery-equipment']['y-zproduct-8']['sprite']
-assert cell_sprite['filename'] == '__yi_pfw__/graphics/equip/fusion-cell-64.png'
-assert (cell_sprite['width'], cell_sprite['height'], cell_sprite.get('scale', 1)) == (64, 64, 1)
-cell_sprite.update(width=128, height=128, scale=0.5)
+# Only wearable placement is removed; the cell remains a fuel and recipe item.
+assert expected['item']['y-zproduct-8'].pop('place_as_equipment_result') == 'y-zproduct-8'
+# The equipment image remains preserved and hash-checked by the artwork manifest.
 # Batch8 changes only the two static profit-display source dimensions/scale.
 for name, filename in [('y-rich-1', 'profit-show-2.png'), ('y-rich-2', 'profit-show-1.png')]:
     sprite = expected['assembling-machine'][name]['graphics_set']['animation']
