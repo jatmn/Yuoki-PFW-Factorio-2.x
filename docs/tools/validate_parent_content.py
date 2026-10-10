@@ -152,6 +152,8 @@ def replace_visuals(value):
 replace_visuals(expected)
 # Only wearable placement is removed; the cell remains a fuel and recipe item.
 assert expected['item']['y-zproduct-8'].pop('place_as_equipment_result') == 'y-zproduct-8'
+# Native conditional fuel recovery; burner prototypes remain unchanged.
+expected['item']['y-zproduct-8']['burnt_result'] = 'y-zproduct-8-empty'
 # The equipment image remains preserved and hash-checked by the artwork manifest.
 # Batch8 changes only the two static profit-display source dimensions/scale.
 for name, filename in [('y-rich-1', 'profit-show-2.png'), ('y-rich-2', 'profit-show-1.png')]:
