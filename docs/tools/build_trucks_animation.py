@@ -13,7 +13,7 @@ OUT = ROOT / 'graphics/entity'
 MASTER = ROOT / 'docs/artwork/ai-redraw-0.5.1/fabrik-trucks-icon-source.png'
 CROP = (114, 80, 1107, 1141)
 SIZE = (200, 216)
-REGIONS = {'upper': (44, 61, 93, 99), 'front': (38, 168, 101, 223),
+REGIONS = {'upper': (44, 61, 93, 99), 'front': (38, 168, 101, 233),
            'rear': (42, 15, 99, 64)}
 FRAMES = 16
 
@@ -27,9 +27,8 @@ def placed(image):
 def build():
     master = Image.open(MASTER).convert('RGBA')
     clean = master.copy()
-    # Continue the metal across the complete axial recess, including its lip.
-    for x0, y0, x1, y1 in [(427, 84, 465, 113), (421, 860, 483, 947),
-                           (421, 1025, 483, 1073)]:
+    # The corrected front is already unmarked. Remove only the rear recess.
+    for x0, y0, x1, y1 in [(427, 84, 465, 113)]:
         for y in range(y0, y1):
             left, right = master.getpixel((x0 - 1, y)), master.getpixel((x1, y))
             for x in range(x0, x1):
@@ -65,8 +64,9 @@ def build():
         def point(angle, radius=1, depth=0):
             if name == 'upper':
                 return (448 + 87 * radius * math.sin(angle), 397 - 65 * radius * math.cos(angle))
-            center_y = 993 if name == 'front' else 245
-            return (453 + 108 * radius * math.sin(angle), center_y - 58 * radius * math.cos(angle) - depth)
+            if name == 'front':
+                return (458 + 104 * radius * math.sin(angle), 1018 - 90 * radius * math.cos(angle) - depth)
+            return (453 + 108 * radius * math.sin(angle), 245 - 58 * radius * math.cos(angle) - depth)
 
         for n in range(FRAMES):
             frame = Image.new('RGBA', master.size)
@@ -76,7 +76,7 @@ def build():
                 angle = marker * math.tau / count + n * math.tau / FRAMES * (-1 if name == 'upper' else 1)
                 angle = (angle + math.pi) % math.tau - math.pi
                 if name != 'upper':
-                    extent = 66 if name == 'front' else 85
+                    extent = 60 if name == 'front' else 85
                     for half_width, depth, color, lip in [
                         (0.17, extent + 5, (16, 20, 28, 255), True),
                         (0.11, extent, (22, 120, 252, 255), False),
@@ -100,6 +100,11 @@ def build():
                         draw.line([point(a, 0.94), point(b, 0.94)], fill=(149, 233, 255, 255), width=2)
             frame.putalpha(ImageChops.multiply(frame.getchannel('A'), visible))
             sheet.paste(placed(frame).crop(box), (width * n, 0))
+            if name == 'front' and n == 0:
+                # Inventory and world sprites must use the same corrected model.
+                icon = master.copy()
+                icon.alpha_composite(frame)
+                icon.resize((64, 64), Image.Resampling.LANCZOS).save(OUT / 'fabrik-trucks-icon.png')
         sheet.save(OUT / ('fab-trucks-' + name + '.png'))
 
 

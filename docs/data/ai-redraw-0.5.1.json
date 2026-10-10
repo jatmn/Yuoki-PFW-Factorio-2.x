@@ -418,7 +418,7 @@
         1254,
         1254
       ],
-      "source_sha256": "7a770d0de4717ea666ad4dbcac4d1ff2ee23f245e2fcce43ec1959336f9748e1",
+      "source_sha256": "c0561acec92e8085bce46e51265eb8493e1595a28a2827a6aebecbd283d33d7c",
       "initial_prompt": "Use case: precise-object-edit. Edit target: the attached nearest-neighbor enlargement of the original 32px Yuoki PFW game inventory icon. Create a faithful high-resolution redraw for a 64px runtime icon. Subject and original color assignments: Vehicle factory: tall tower on left with copper cap and copper middle ring, copper side pipe, very dark body and deep blue windows. Shorter machine on right is strongly orange/gold, with stepped orange top, dark charcoal middle band, orange lower body and dark blue base. Preserve blue/copper tall section versus orange/gold right section. Style: gritty pre-rendered industrial game art, subtle worn metal and controlled highlights, readable when reduced to64px. Treat the reference as authoritative for silhouette, relative proportions, exact orientation and color locations; clarify pixel edges without redesigning the machine. Center one whole building on a square transparent canvas with small clear margins; match reference occupancy. Preserve original hues rather than harmonizing the palette. No ground plane, extra buildings, arrows, labels, lettering, border, watermark, dramatic glow or backdrop. True transparent background.",
       "prompt": "Use case: precise-object-edit. Input1: authoritative original world sprite/frame for this Yuoki PFW building's real geometry. Input2: original32px inventory icon for framing, colors and intended animation state. Create a faithful higher-resolution redraw to be reduced to64px. The left half is a LOW production line extending back-to-front along the ground, separate top-facing circular sockets and rotors, copper rims/trusses and blue indicator dots. These are horizontal stations, NOT levels of a tower. The right is a dark flat platform with an orange/yellow industrial vehicle or bulldozer-like assembly: a compact cab at the back/top, chassis and dark wheel/tread shapes, and a wide rectangular orange front blade at bottom. It is NOT an orange cylindrical tank. Copy sprite geometry. Match the original sprite camera, footprint, silhouette and relative proportions closely. Keep muted original hues in their original places; refine edges and materials using restrained pre-rendered industrial game art. Do not invent geometry from blurry pixels. Center whole building with small transparent margins in a square canvas, no floor or external shadow, no arrows, lettering, labels or background. True transparency. Preserve original object identity over ornate new detail.",
       "sprite_reference": {
@@ -434,7 +434,12 @@
         },
         "method": "AI"
       },
-      "sha256": "0b452dc27742d1aac9bc24beaeea589a8d90813351f947f6433f3b0f1cfa3b63"
+      "sha256": "ef53e2599935d44fa1f383be951558200a6b35647b8f98208a8704a1d1060228",
+      "cylinder_correction": {
+        "reason": "Owner identified a sliced front cylinder in the initial redraw; restore complete concentric face and centered hub from original sprite reference.",
+        "prompt": "Use case: precise-object-edit. Edit target Image 1 is an existing Factorio-style vehicle factory icon on transparent background. Supporting shape reference Image 2 is a close-up of the original low-resolution cylinder. Correct ONLY the silver forward-facing cylindrical drum near bottom-left of Image 1 (roughly x=330..565,y=850..1070 in the 1254px source). It currently looks sliced off at the bottom with a badly off-center hub. Make it a COMPLETE solid cylindrical drum projecting toward the viewer, with a continuous full elliptical front face, concentric metal rings and a hub CENTERED in that face, including a clearly visible intact lower half and lower rim. Keep the existing viewing angle, axis, industrial grey metal texture and lighting. Its upper curved barrel is foreshortened, but the front cap is a complete ellipse, not a crescent or cutaway. Keep roughly the same width/position and extend the lower face only as needed to complete the geometry. For animation authoring, remove the two blue lamps AND their rectangular dark/gold recesses from this front drum only; render uninterrupted clean metal at those positions. All other blue lights, the rear copper rings, loader, platform, camera and surrounding machine must stay EXACTLY unchanged. No text, no labels, no added parts. Preserve transparent background.",
+        "method": "Built-in imagegen edit, composited only within the front-cylinder patch. Source front drum is unlit; build_trucks_animation.py adds its projected frame-zero cutouts to the 64px icon."
+      }
     },
     {
       "label": "Weapons factory",
@@ -1251,7 +1256,7 @@
     },
     {
       "prototype": "y-factory-5",
-      "method": "Fixed accepted AI body with projected blue light/cutout assemblies and rear housing occlusion; original shadow.",
+      "method": "Fixed AI body with corrected complete front cylinder and centered hub; projected blue light/cutout assemblies fitted to the face, rear housing occlusion and original shadow.",
       "frame_count": 16,
       "scale": 0.5,
       "original": {
@@ -1264,7 +1269,7 @@
       },
       "source": {
         "path": "docs/artwork/ai-redraw-0.5.1/fabrik-trucks-icon-source.png",
-        "sha256": "7a770d0de4717ea666ad4dbcac4d1ff2ee23f245e2fcce43ec1959336f9748e1",
+        "sha256": "c0561acec92e8085bce46e51265eb8493e1595a28a2827a6aebecbd283d33d7c",
         "dimensions": [
           1254,
           1254
@@ -1273,7 +1278,7 @@
       "outputs": [
         {
           "path": "graphics/entity/fab-trucks-base.png",
-          "sha256": "da88034365d8e50908a31f09e991176024bbdacbf903bdc88c7e735b95cf49ac",
+          "sha256": "c82e3a4cd837b2eb8b954ff5b5c4f65d8cac7af0a1815b0d2fb6be7386596ceb",
           "dimensions": [
             256,
             256
@@ -1289,10 +1294,10 @@
         },
         {
           "path": "graphics/entity/fab-trucks-front.png",
-          "sha256": "c0b5768b73d1954c91a89fbb1efc228ada6d8cecb2d5f1a84901e9b3904e69cc",
+          "sha256": "49d7f5309e60fcfe097db1b9c2ca94c11c375ccc5d0cfae136e2b66a4ab18e5f",
           "dimensions": [
             1008,
-            55
+            65
           ]
         },
         {

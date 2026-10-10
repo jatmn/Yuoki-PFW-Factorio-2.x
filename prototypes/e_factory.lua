@@ -135,7 +135,7 @@ data:extend(
 		graphics_set = { animation = { layers = {
 			{ filename = "__yi_pfw__/graphics/entity/fab-trucks-base.png", width = 256, height = 256, scale = 0.5, shift = {0.5, 0}, frame_count = 1, repeat_count = 16 },
 			{ filename = "__yi_pfw__/graphics/entity/fab-trucks-upper.png", width = 49, height = 38, scale = 0.5, shift = {-0.4296875, -0.75}, frame_count = 16, line_length = 16 },
-			{ filename = "__yi_pfw__/graphics/entity/fab-trucks-front.png", width = 63, height = 55, scale = 0.5, shift = {-0.4140625, 1.0546875}, frame_count = 16, line_length = 16 },
+			{ filename = "__yi_pfw__/graphics/entity/fab-trucks-front.png", width = 63, height = 65, scale = 0.5, shift = {-0.4140625, 1.1328125}, frame_count = 16, line_length = 16 },
 			{ filename = "__yi_pfw__/graphics/entity/fab-trucks-rear.png", width = 57, height = 49, scale = 0.5, shift = {-0.3984375, -1.3828125}, frame_count = 16, line_length = 16 },
 			{ filename = "__yi_pfw__/graphics/entity/fab-trucks-shadow.png", width = 256, height = 256, scale = 0.5, shift = {0.5, 0}, frame_count = 1, repeat_count = 16, draw_as_shadow = true },
 		} } },
