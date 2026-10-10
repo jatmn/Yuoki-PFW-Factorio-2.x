@@ -172,18 +172,37 @@ for name, width, height, shift in [
         layer['draw_as_shadow'] = True
     ammo_layers.append(layer)
 expected['assembling-machine']['y-factory-1']['graphics_set']['animation'] = {'layers': ammo_layers}
-layered, = redraw_map['layered_animations']
-assert layered['prototype'] == 'y-factory-1'
-assert {e['path'] for e in layered['outputs']} == {
-    layer['filename'].removeprefix('__yi_pfw__/') for layer in ammo_layers
-}
-for entry in [layered['original'], layered['source'], *layered['outputs']]:
-    content = (ROOT / entry['path']).read_bytes()
-    assert hashlib.sha256(content).hexdigest() == entry['sha256'], entry['path']
-    assert list(struct.unpack('>II', content[16:24])) == entry['dimensions'], entry['path']
-for layer in ammo_layers:
-    content = (ROOT / layer['filename'].removeprefix('__yi_pfw__/')).read_bytes()
-    assert struct.unpack('>II', content[16:24]) == (layer['width'] * layer.get('line_length', 1), layer['height'])
+weapons_layers = []
+for name, width, height, shift in [
+    ('base', 256, 256, [0.5, 0]),
+    ('upper', 44, 32, [-0.5, -0.734375]),
+    ('front', 46, 43, [-0.484375, 1.0390625]),
+    ('shadow', 256, 256, [0.5, 0]),
+]:
+    layer = dict(filename='__yi_pfw__/graphics/entity/fab-weapons-' + name + '.png',
+                 width=width, height=height, scale=0.5, shift=shift)
+    if name in {'base', 'shadow'}:
+        layer.update(frame_count=1, repeat_count=16)
+    else:
+        layer.update(frame_count=16, line_length=16)
+    if name == 'shadow':
+        layer['draw_as_shadow'] = True
+    weapons_layers.append(layer)
+expected['assembling-machine']['y-factory-2']['graphics_set']['animation'] = {'layers': weapons_layers}
+layered_entries = {e['prototype']: e for e in redraw_map['layered_animations']}
+assert set(layered_entries) == {'y-factory-1', 'y-factory-2'}
+for prototype, layers in [('y-factory-1', ammo_layers), ('y-factory-2', weapons_layers)]:
+    layered = layered_entries[prototype]
+    assert {e['path'] for e in layered['outputs']} == {
+        layer['filename'].removeprefix('__yi_pfw__/') for layer in layers
+    }
+    for entry in [layered['original'], layered['source'], *layered['outputs']]:
+        content = (ROOT / entry['path']).read_bytes()
+        assert hashlib.sha256(content).hexdigest() == entry['sha256'], entry['path']
+        assert list(struct.unpack('>II', content[16:24])) == entry['dimensions'], entry['path']
+    for layer in layers:
+        content = (ROOT / layer['filename'].removeprefix('__yi_pfw__/')).read_bytes()
+        assert struct.unpack('>II', content[16:24]) == (layer['width'] * layer.get('line_length', 1), layer['height'])
 trade_map = json.loads((ROOT / 'docs/data/trade-icons-0.5.1.json').read_text())
 arrow_variants = {a['path']: a for a in trade_map['removed_variants']}
 assert len(arrow_variants) == 49
@@ -237,7 +256,7 @@ for asset in assets:
     else:
         assert hashlib.sha256((ROOT / asset['path']).read_bytes()).hexdigest() == asset['sha256'], asset['path']
 assert len(replacements) == 41
-assert len(list((ROOT / 'graphics').rglob('*.png'))) == len(assets) - len(replacements) - len(arrow_variants) + len(ammo_layers)
+assert len(list((ROOT / 'graphics').rglob('*.png'))) == len(assets) - len(replacements) - len(arrow_variants) + len(ammo_layers) + len(weapons_layers)
 
 def check_layouts(value):
     if isinstance(value, list):

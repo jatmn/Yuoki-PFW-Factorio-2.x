@@ -1143,6 +1143,62 @@
           ]
         }
       ]
+    },
+    {
+      "prototype": "y-factory-2",
+      "method": "Accepted ammunition reference: fixed shaded geometry, four green upper cutouts and paired green front cutouts projected with their lights. Original workbench remains stationary. See docs/tools/build_weapons_animation.py.",
+      "frame_count": 16,
+      "scale": 0.5,
+      "original": {
+        "path": "graphics/entity/fab-weapons-sheet.png",
+        "sha256": "b1df043a1d04793687bf9b6ceff1c7a3f0e8f3ef465f8c21f7d0b989ad1f7e2a",
+        "dimensions": [
+          2048,
+          128
+        ]
+      },
+      "source": {
+        "path": "docs/artwork/ai-redraw-0.5.1/fabrik-weapons-icon-source.png",
+        "sha256": "88bafe9bad1dde0cfc3265974ec6d98e201552f377e0b671b6a2a69464878c70",
+        "dimensions": [
+          1254,
+          1254
+        ]
+      },
+      "outputs": [
+        {
+          "path": "graphics/entity/fab-weapons-base.png",
+          "sha256": "25dffd4d1ee56c78e4fc9aca5d84d948b6c7c3c79ef57eace2c9c31a54eafc0d",
+          "dimensions": [
+            256,
+            256
+          ]
+        },
+        {
+          "path": "graphics/entity/fab-weapons-upper.png",
+          "sha256": "bfd0fb53e2a91e476d96c0abd46ac9d3c0a9a5b03cfd343348c6eb87f4d96311",
+          "dimensions": [
+            704,
+            32
+          ]
+        },
+        {
+          "path": "graphics/entity/fab-weapons-front.png",
+          "sha256": "23c4112c49c14675e1cff971764634699a142aa6c7408a09ad796c3833b2f5da",
+          "dimensions": [
+            736,
+            43
+          ]
+        },
+        {
+          "path": "graphics/entity/fab-weapons-shadow.png",
+          "sha256": "38ded521d53bca27c01943cd424258e34bfb2edc3389a25c4fcd4e7f59861e70",
+          "dimensions": [
+            256,
+            256
+          ]
+        }
+      ]
     }
   ]
 }

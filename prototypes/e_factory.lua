@@ -45,18 +45,16 @@ data:extend(
 		selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
 		fast_replaceable_group = "assembling-machine",
 
-		graphics_set = { animation = {
-			north= { filename = "__yi_pfw__/graphics/entity/fab-weapons-sheet.png",			
-				width = 128, height = 128, shift = {0.5, 0}, frame_count = 16, line_length = 16,},
-			east= {	filename = "__yi_pfw__/graphics/entity/fab-weapons-sheet.png", 
-				width = 128, height = 128, shift = {0.5, 0}, frame_count = 16, line_length = 16,},
-			south= {
-				filename = "__yi_pfw__/graphics/entity/fab-weapons-sheet.png",			
-				width = 128, height = 128, shift = {0.5, 0}, frame_count = 16, line_length = 16,},
-			west= {
-				filename = "__yi_pfw__/graphics/entity/fab-weapons-sheet.png",			
-				width = 128, height = 128, shift = {0.5, 0}, frame_count = 16, line_length = 16,},			
-		} },
+		graphics_set = { animation = { layers = {
+			{ filename = "__yi_pfw__/graphics/entity/fab-weapons-base.png",
+				width = 256, height = 256, scale = 0.5, shift = {0.5, 0}, frame_count = 1, repeat_count = 16 },
+			{ filename = "__yi_pfw__/graphics/entity/fab-weapons-upper.png",
+				width = 44, height = 32, scale = 0.5, shift = {-0.5, -0.734375}, frame_count = 16, line_length = 16 },
+			{ filename = "__yi_pfw__/graphics/entity/fab-weapons-front.png",
+				width = 46, height = 43, scale = 0.5, shift = {-0.484375, 1.0390625}, frame_count = 16, line_length = 16 },
+			{ filename = "__yi_pfw__/graphics/entity/fab-weapons-shadow.png",
+				width = 256, height = 256, scale = 0.5, shift = {0.5, 0}, frame_count = 1, repeat_count = 16, draw_as_shadow = true },
+		} } },
 		crafting_categories = {"yrcat-handwaffen"}, crafting_speed = 1.0,
 		energy_source = {type = "electric", usage_priority = "secondary-input", emissions_per_minute = { pollution = 0.04 / 2.5 * 3000 } },
 		energy_usage = "3000kW",
