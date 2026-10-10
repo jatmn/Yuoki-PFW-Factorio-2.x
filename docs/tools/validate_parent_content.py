@@ -350,6 +350,20 @@ for old, new in mapping['recipe_names'].items():
     assert new in {p['name'] for p in expected['recipe'][new]['results']}
     expected['recipe'][new]['main_product'] = new
     expected['item'][new]['subgroup'] = expected['recipe'][new]['subgroup']
+# Items without a primary manufacture still need their own Factoriopedia subgroup.
+for subgroup, names in {
+    'yi-basic': ['y-factory-4', 'y-factory-6', 'y-factory-7', 'y-rich-1', 'y-rich-2'],
+    'yi-imports': ['y-redcoil', 'y-grycoil'] + [f'y-stuff-{i}' for i in range(1, 7)],
+    'yi-component': ['y-zproduct-8-empty'],
+}.items():
+    assert after['item-subgroup'][subgroup]['group'] == 'yi_special'
+    for name in names:
+        assert 'subgroup' not in expected['item'][name], name
+        expected['item'][name]['subgroup'] = subgroup
+# Catch ungrouped retained PFW items, including imports and unfinished buildings.
+for name, original in before['item'].items():
+    if name in after['item'] and '__yi_pfw__/' in original.get('icon', ''):
+        assert after['item'][name].get('subgroup', 'other') != 'other', name
 # Full equality catches lost recipes, changed quantities, pending mappings and parent regressions.
 for kind in expected.keys() | after.keys():
     assert expected.get(kind, {}).keys() == after.get(kind, {}).keys(), kind

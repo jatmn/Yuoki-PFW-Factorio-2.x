@@ -11,7 +11,7 @@ data:extend(
 	--[=[
 	{ type = "item", name = "y-retrader-1", icon = "__yi_pfw__/graphics/entity/trade-node-icon.png", icon_size = 32, order = "a", place_result = "y-retrader-1", stack_size = 50, },
 	]=]
-	{ type = "item", name = "y-rich-1", icon = "__yi_pfw__/graphics/entity/profit-show-2-icon.png", icon_size = 64, order = "a", place_result = "y-rich-1", stack_size = 5, },
-	{ type = "item", name = "y-rich-2", icon = "__yi_pfw__/graphics/entity/profit-show-1-icon.png", icon_size = 64, order = "a", place_result = "y-rich-2", stack_size = 5, },
+	{ type = "item", name = "y-rich-1", subgroup = "yi-basic", icon = "__yi_pfw__/graphics/entity/profit-show-2-icon.png", icon_size = 64, order = "a", place_result = "y-rich-1", stack_size = 5, },
+	{ type = "item", name = "y-rich-2", subgroup = "yi-basic", icon = "__yi_pfw__/graphics/entity/profit-show-1-icon.png", icon_size = 64, order = "a", place_result = "y-rich-2", stack_size = 5, },
 })	
 	
