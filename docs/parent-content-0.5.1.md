@@ -17,7 +17,7 @@ The central [mapping record](data/parent-content-0.5.1.json) identifies every su
 | `yi-pfw-energy` ammunition category | Yuoki `plasma` | The superseded PFW guns remain commented; the parent gun uses its existing ammunition and statistics. |
 | `y-sm-1`, `y-sm-2` guns | Yuoki `yi_lasergun` | Both manufacturing consumers and both exports consume the parent gun; preserve recipe quantities and separate payouts. |
 | `y-combat-armor-2`, `y-combat-armor-3` items/equipment | Yuoki `yi_equip_shield_a` (CF-35) | Cyborg recipes use the parent shield. Original 120/240-point local equipment remains commented; parent 350-point shield unchanged. |
-| `y-equ-1`, `y-equ-2` items/equipment | Yuoki `yi_equip_shield_b` (KT-60) | Both exports consume the parent shield with distinct original payouts. Local 240/630-point equipment remains commented; parent 600-point shield unchanged. |
+| `y-equ-1`, `y-equ-2` items/equipment | Yuoki CF-35 / KT-60 respectively | The first shield export consumes `yi_equip_shield_a`, the second `yi_equip_shield_b`. Original payouts and parent statistics remain; both local definitions stay commented. |
 
 Both required mods are explicitly checked in the integration module. Required dependency versions remain `base >= 2.1.21`, `Yuoki >= 1.3.0`, and `yi_engines >= 1.3.0`. Reused prototypes bring their parent-owned graphics, sounds and behavior; the [asset mapping](data/asset-reuse-0.5.1.json) removes the local copies only where a visual replacement was confirmed.
 
@@ -33,9 +33,9 @@ All **105 original active recipe routes** remain, plus the restored Mk.1 constru
 
 The later gun/shield consolidation changes ten more recipe ingredient references (one overlaps the earlier minigun pass), and updates four trade overlays to their parent item icons. No active PFW recipe was found equivalent to a parent recipe, so none was suppressed. The ten-node construction yield remains an intentional retained PFW contract for this pass; it is much cheaper per node than Engines' own constructor. Quantities, payouts and recipe times were not rebalanced. Parent successor statistics and acquisition costs can change the economy and warrant later balancing.
 
-The War Material Factory now accepts six item ingredients, allowing its existing Advanced Targeting Device recipe (`y-fab8d-recipe`) to be selected. Recipe ingredients, quantities and outputs remain unchanged. A Factorio 2.1.21 runtime check confirmed the old limit rejected that recipe, then all four War Material recipes crafted once with exact outputs after the correction. The test supplied ingredients and electricity directly; it does not establish complete natural progression.
+The War Material Factory now accepts six item ingredients, allowing its existing Advanced Targeting Device recipe (`y-equ-3`, formerly `y-fab8d-recipe`) to be selected. Recipe ingredients, quantities and outputs remain unchanged. A Factorio 2.1.21 runtime check confirmed the old limit rejected that recipe, then all four War Material recipes crafted once with exact outputs after the correction. The test supplied ingredients and electricity directly; it does not establish complete natural progression.
 
-Of the 35 historically disabled recipes, only `y-zproduct-2-recipe` is restored; the other 34 remain inactive. The movement recipe `y-fab8k-recipe` is annotated as having the same material transformation as parent `yi_equip_legs_a`, with distinct time/category access. Its original text remains intact.
+Of the 35 historically disabled recipes, only the original `y-zproduct-2-recipe` is restored as `y-combat-armor-1`; the other 34 remain inactive. The movement recipe `y-fab8k-recipe` is annotated as having the same material transformation as parent `yi_equip_legs_a`, with distinct time/category access. Its original text remains intact.
 
 ## Missing-input acquisition
 
@@ -43,16 +43,26 @@ The previous review found seven inputs without producing recipes, directly block
 
 | Former missing input | Current acquisition |
 |---|---|
-| Combat Armor Mk.1 (`y-combat-armor-1`) | Restore `y-zproduct-2-recipe`: 2 refined N4 + 4 iron plates → 2 components, 1 second in War Material. Retain this item; do not substitute Durotal Structure Element. |
+| Combat Armor Mk.1 (`y-combat-armor-1`) | Restore the original constructor as recipe `y-combat-armor-1`: 2 refined N4 + 4 iron plates → 2 components, 1 second in War Material. Retain this item; do not substitute Durotal Structure Element. |
 | Reactive / Shielded Armor (`y-combat-armor-2`, `y-combat-armor-3`) | Use Yuoki CF-35 (`yi_equip_shield_a`) in their cyborg recipes. |
 | Lasergun / Plasmagun (`y-sm-1`, `y-sm-2`) | Use Yuoki YI-LCS (`yi_lasergun`) in cyborgs, Advanced Targeting Device and both exports. |
-| CF-56 / KT-34 (`y-equ-1`, `y-equ-2`) | Use Yuoki KT-60 (`yi_equip_shield_b`) in both exports. |
+| CF-56 / KT-34 (`y-equ-1`, `y-equ-2`) | Use Yuoki CF-35 (`yi_equip_shield_a`) for the first export, KT-60 (`yi_equip_shield_b`) for the second. |
 
 All three parent products have existing enabled manufacturing recipes. Superseded local items, guns and shield equipment remain commented with parent ownership annotations; their alternative constructors stay disabled. The former laser/plasma artwork and other unused assets remain available for future use.
 
-All 56 trade recipes remain with unchanged ingredient quantities, payout quantities and times. The former laser export now consumes three parent guns for 41 UC and one Trader Sign; the plasma export consumes six of the same gun for 50 UC and one sign. Two laser exports therefore pay 82 UC and two signs for six guns. The owner explicitly chose to retain both contracts and balance later. The two KT-60 exports likewise retain their different material baskets. Parent statistics and crafting costs are unchanged.
+All 56 trade recipes remain with unchanged ingredient quantities, payout quantities and times. The former laser export now consumes three parent guns for 41 UC and one Trader Sign; the plasma export consumes six of the same gun for 50 UC and one sign. Two laser exports therefore pay 82 UC and two signs for six guns. The owner explicitly chose to retain both contracts and balance later. The CF-35 and KT-60 exports retain their different material baskets. Parent statistics and crafting costs are unchanged.
 
 These changes resolve the seven identified missing-input routes and their 22 affected recipes; they do not establish a complete playthrough or balance the wider economy. Historical discovery documents retain the original state. No migrations are supplied.
+
+## Names and Factoriopedia
+
+Factorio 2.0 changed recipe-name inheritance: a recipe with a different ID needs its own localized name, even when it has one product or an explicit `main_product`. [Factorio staff confirmation](https://forums.factorio.com/viewtopic.php?t=135184). Matching IDs and the main product also support the merged item/recipe entry; `main_product` alone is insufficient. [Factoriopedia correction](https://forums.factorio.com/viewtopic.php?t=128120). The bundled 2.1.21 base recipes use matching IDs for ordinary manufacture such as `iron-gear-wheel`, and distinct IDs/names for alternatives such as `solid-fuel-from-light-oil`.
+
+PFW now follows that pattern: 48 primary manufacturing recipes share their product IDs and explicitly identify their main product. Biomass selects `y-biomass`, preserving the returned wood. Their items use the existing manufacturing subgroups, so they belong in the PFW groups. The old-to-new recipe IDs are recorded in the existing [mapping record](data/parent-content-0.5.1.json). All amounts, times, categories and enabled states remain unchanged. Recipe renames have no migration in this development release.
+
+All 56 trades and the separate ten-node constructor and cell-charging recipe retain their distinct IDs. Missing import/export/construction names are supplied in English and German. The two gun contracts display their shared YI-LCS input and different quantities; shield contracts name CF-35 and KT-60. The retained `y-cyb-9u` armor now has a name, but its constructor remains disabled.
+
+Before this correction, the engine's English prototype-locale dump omitted 63 active PFW recipe names and the retained armor name. Use `--dump-prototype-locale` separately from `--dump-data`, then pass its output directory as `--locale-dir` to the existing validator to check the actual resolved names. Headless checks establish names, matching IDs and main-product metadata; the merged graphical Factoriopedia presentation still needs the owner's client check.
 
 ## Explicitly pending
 
@@ -69,9 +79,10 @@ Tested with Factorio **2.1.21 Linux headless**, Yuoki **1.3.0** at `50ea38b9703a
 
 The official [crafting-machine schema](https://lua-api.factorio.com/latest/prototypes/AssemblingMachinePrototype.html) was checked for category and result handling, and the matching 2.1.21 runtime schema for equipment insertion/removal and character ammunition checks.
 
-- Full before/after prototype comparison: only the recorded suppressions, approved recipe references, the restored Mk.1 constructor, one removed PFW character-animation entry, Trade Node category addition, the War Material Factory ingredient limit (five to six), and subsequent approved artwork substitutions differ. All unrelated parent prototypes and remaining pending content identities/statistics remain unchanged.
+- Full before/after prototype comparison: only the recorded suppressions, approved recipe references, the restored Mk.1 constructor, primary recipe IDs/main products/item subgroups, one removed PFW character-animation entry, Trade Node category addition, the War Material Factory ingredient limit (five to six), and subsequent approved artwork substitutions differ. All unrelated parent prototypes and remaining pending content identities/statistics remain unchanged.
 - Preservation: all 105 recipes and their quantities retained, 34 historical disabled recipes still inactive and Mk.1 restored, 82 remaining graphics unchanged, 34 AI artwork updates verified, 41 parent replacements and 49 arrow-variant removals verified against their manifests, all 232 original archive files intact at the immutable import commit.
 - Restored-chain crafting: Mk.1 and all three parent equipment recipes produced the required supplies, then all nine affected manufacturing recipes and 13 affected exports completed with exact outputs and empty input inventories. The harness carried verified output counts between stages and supplied other ingredients/power; this is not a full natural-progression playthrough.
+- Naming/tier correction: engine locale dumps resolve all 106 recipe names and retained item/entity/equipment names in English and German. All 48 renamed primary recipes are enabled, select in their intended machines, match their main products/subgroups, and craft with exact outputs. Both CF-35/KT-60 exports craft with preserved payouts. The resulting save reloads for 600 ticks.
 - Live crafting: all 56 PFW trades completed in Engines nodes with exact output quantities, including four-product exports and energy-cell exchanges. The parent's existing `y_exchange_b1` trade also completed.
 - Live construction/production: PFW's constructor produced ten parent nodes; the cyborg recipe consumed the parent minigun and produced its expected result. Tests supplied ingredients and power directly; they do not prove natural progression is complete.
 - Equipment: the parent generator and movement equipment were inserted into and removed from both the parent walker and the retained PFW second armor, returning the correct parent item IDs.

@@ -63,7 +63,7 @@ data:extend(
 	},
 	]=]
 	
-	-- Parent owner: Yuoki, energy-shield-equipment yi_equip_shield_b. Preserved inactive PFW definition.
+	-- Parent owner: Yuoki, energy-shield-equipment yi_equip_shield_a. Preserved inactive PFW definition.
 	--[=[
 	{
 		type = "energy-shield-equipment",

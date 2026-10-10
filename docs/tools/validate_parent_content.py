@@ -19,6 +19,7 @@ parser.add_argument('--before', type=Path, required=True)
 parser.add_argument('--after', type=Path, required=True)
 parser.add_argument('--yuoki', type=Path, required=True)
 parser.add_argument('--engines', type=Path, required=True)
+parser.add_argument('--locale-dir', type=Path, help='Engine --dump-prototype-locale output directory')
 args = parser.parse_args()
 before = json.loads(args.before.read_text())
 after = json.loads(args.after.read_text())
@@ -308,6 +309,14 @@ for entry in arrow_variants.values():
     content = base.read_bytes()
     assert hashlib.sha256(content).hexdigest() == entry['base_sha256'], base
     assert list(struct.unpack('>II', content[16:24])) == entry['base_dimensions'], base
+# Primary manufacture shares the product ID for 2.x locale/Factoriopedia merging.
+for old, new in mapping['recipe_names'].items():
+    assert new not in expected['recipe']
+    expected['recipe'][new] = expected['recipe'].pop(old)
+    expected['recipe'][new]['name'] = new
+    assert new in {p['name'] for p in expected['recipe'][new]['results']}
+    expected['recipe'][new]['main_product'] = new
+    expected['item'][new]['subgroup'] = expected['recipe'][new]['subgroup']
 # Full equality catches lost recipes, changed quantities, pending mappings and parent regressions.
 for kind in expected.keys() | after.keys():
     assert expected.get(kind, {}).keys() == after.get(kind, {}).keys(), kind
@@ -360,9 +369,29 @@ for i, line in enumerate(lines):
     if line.startswith('Version:'):
         assert lines[i-1] == '-' * 99
         assert re.fullmatch(r'Date: [1-9][0-9]?\. [1-9][0-9]?\. [0-9]{4}', lines[i+1])
-trades = [r for r in recipes if 'yrcat-retrade' in after['recipe'][r['name']].get('categories', [])]
+trades = [r for r in recipes if 'yrcat-retrade' in after['recipe'][mapping['recipe_names'].get(r['name'], r['name'])].get('categories', [])]
 assert len(trades) == 56
 print(f'PASS: {removed} redundant declarations inactive; 105 recipe routes and quantities retained, Mk.1 constructor restored; '
       '56 trades supported; pending mappings/parent behavior preserved; 41 parent assets verified, '
       '34 AI artwork/source images verified, 49 arrow variants replaced, 82 original graphics unchanged; '
       '0.5.1 changelog and no migrations verified.')
+
+if args.locale_dir:
+    # The engine omits unresolved names from these dumps; check actual resolution,
+    # including entity/equipment fallbacks, rather than guessing from CFG keys.
+    localized = {kind: json.loads((args.locale_dir / (kind + '-locale.json')).read_text())['names']
+                 for kind in ['recipe', 'item', 'entity', 'equipment', 'fluid', 'item-group']}
+    recipe_names = {mapping['recipe_names'].get(r['name'], r['name']) for r in recipes}
+    recipe_names.add('y-combat-armor-1')
+    assert len(recipe_names) == 106
+    assert recipe_names <= localized['recipe'].keys(), sorted(recipe_names - localized['recipe'].keys())
+    for name in mapping['recipe_names'].values():
+        assert localized['recipe'][name] == localized['item'][name], name
+    for kind, locale_kind in [('item', 'item'), ('armor', 'item'), ('assembling-machine', 'entity'),
+                              ('battery-equipment', 'equipment'), ('fluid', 'fluid'), ('item-group', 'item-group')]:
+        declared = set()
+        for source in (ROOT / 'prototypes').rglob('*.lua'):
+            declared.update(re.findall(r'type\s*=\s*"' + kind + r'",\s*name\s*=\s*"([^"\n]+)"', source.read_text()))
+        active = declared & after.get(kind, {}).keys()
+        assert active <= localized[locale_kind].keys(), (kind, sorted(active - localized[locale_kind].keys()))
+    print('PASS: engine-resolved names for all 106 PFW recipes and retained items/entities/equipment; 48 primary recipe names match their products.')

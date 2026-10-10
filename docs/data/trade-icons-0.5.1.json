@@ -252,7 +252,7 @@
     },
     {
       "recipe": "y-rfab8b-recipe",
-      "source": "yi_equip_shield_b",
+      "source": "yi_equip_shield_a",
       "direction": "down",
       "old_icon": "__yi_pfw__/graphics/fab8/lfg13-sell.png"
     },

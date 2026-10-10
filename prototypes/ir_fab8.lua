@@ -19,13 +19,13 @@ data:extend(
 	y-equ-6=Mobile Energy Generator
 	]]
 	
-	{ type = "recipe", name = "y-fab8a-recipe", energy_required = 3, ingredients = {{type="item", name="y-stuff-4", amount=1},{type="item", name="y-iron-case", amount=8},{type="item", name="y-refined-yres1", amount=8},{type="item", name="y-chip-1", amount=8},}, results = {{type="item", name="y-equ-0", amount=1}}, enabled = true,  order="equ-0", subgroup = "yi-material", categories={"yrcat-material"},},
+	{ type = "recipe", name = "y-equ-0", main_product = "y-equ-0", energy_required = 3, ingredients = {{type="item", name="y-stuff-4", amount=1},{type="item", name="y-iron-case", amount=8},{type="item", name="y-refined-yres1", amount=8},{type="item", name="y-chip-1", amount=8},}, results = {{type="item", name="y-equ-0", amount=1}}, enabled = true,  order="equ-0", subgroup = "yi-material", categories={"yrcat-material"},},
 	--{ type = "recipe", name = "y-fab8b-recipe", energy_required = 3, ingredients = {{"y-equ-0",1},{"y-stuff-5",2},{"y_blocked_capa",2},}, result = "y-equ-1", enabled = "true", result_count = 1, order="equ-1", subgroup = "yi-material", category="yrcat-material",},		
 	--{ type = "recipe", name = "y-fab8c-recipe", energy_required = 3, ingredients = {{"y-equ-0",1},{"y-stuff-5",4},{"y-accumulator-m",6},}, result = "y-equ-2", enabled = "true", result_count = 1, order="equ-2", subgroup = "yi-material", category="yrcat-material",},		
-	{ type = "recipe", name = "y-fab8d-recipe", energy_required = 3, ingredients = {{type="item", name="y-zielfern", amount=1},{type="item", name="y-equ-0", amount=1},{type="item", name="yi_lasergun", amount=1},{type="item", name="y-cyb-0", amount=4},{type="item", name="y-iron-case", amount=1},{type="item", name="y-zproduct-8", amount=1},}, results = {{type="item", name="y-equ-3", amount=1}}, enabled = true,  order="equ-3", subgroup = "yi-material", categories={"yrcat-material"},},
+	{ type = "recipe", name = "y-equ-3", main_product = "y-equ-3", energy_required = 3, ingredients = {{type="item", name="y-zielfern", amount=1},{type="item", name="y-equ-0", amount=1},{type="item", name="yi_lasergun", amount=1},{type="item", name="y-cyb-0", amount=4},{type="item", name="y-iron-case", amount=1},{type="item", name="y-zproduct-8", amount=1},}, results = {{type="item", name="y-equ-3", amount=1}}, enabled = true,  order="equ-3", subgroup = "yi-material", categories={"yrcat-material"},},
 	
-	{ type = "recipe", name = "y-fab8e-recipe", energy_required = 3, ingredients = {{type="item", name="y-meg-s", amount=2},{type="item", name="y-beg", amount=1},{type="item", name="y-ups-flywheel-b", amount=2},{type="item", name="y-stirling-solar-dish", amount=8},{type="item", name="y-conductive-wire-1", amount=12},}, results = {{type="item", name="y-equ-4", amount=1}}, enabled = true,  order="equ-4", subgroup = "yi-material", categories={"yrcat-material"},},
-	{ type = "recipe", name = "y-fab8f-recipe", energy_required = 3, ingredients = {{type="item", name="y-ups-flywheel-b", amount=4},{type="item", name="y-accumulator-b", amount=8},{type="item", name="y-stuff-3", amount=3},{type="item", name="y-conductive-wire-1", amount=14},{type="item", name="y-iron-case", amount=4}}, results = {{type="item", name="y-equ-5", amount=1}}, enabled = true,  order="equ-5", subgroup = "yi-material", categories={"yrcat-material"},},
+	{ type = "recipe", name = "y-equ-4", main_product = "y-equ-4", energy_required = 3, ingredients = {{type="item", name="y-meg-s", amount=2},{type="item", name="y-beg", amount=1},{type="item", name="y-ups-flywheel-b", amount=2},{type="item", name="y-stirling-solar-dish", amount=8},{type="item", name="y-conductive-wire-1", amount=12},}, results = {{type="item", name="y-equ-4", amount=1}}, enabled = true,  order="equ-4", subgroup = "yi-material", categories={"yrcat-material"},},
+	{ type = "recipe", name = "y-equ-5", main_product = "y-equ-5", energy_required = 3, ingredients = {{type="item", name="y-ups-flywheel-b", amount=4},{type="item", name="y-accumulator-b", amount=8},{type="item", name="y-stuff-3", amount=3},{type="item", name="y-conductive-wire-1", amount=14},{type="item", name="y-iron-case", amount=4}}, results = {{type="item", name="y-equ-5", amount=1}}, enabled = true,  order="equ-5", subgroup = "yi-material", categories={"yrcat-material"},},
 	-- Parent reference for future restoration: y-equ-6 -> yi_equip_generator_a. Keep this declaration inactive.
 	--{ type = "recipe", name = "y-fab8g-recipe", energy_required = 3, ingredients = {{"y-stuff-3",1},{"y-stuff-4",1},{"y-stuff-5",1},{"y-basic-t2-mf",1},{"y-iron-case",1} }, result = "y-equ-6", enabled = "true", result_count = 1, order="equ-6", subgroup = "yi-material", category="yrcat-material",},		
 	
@@ -36,8 +36,8 @@ data:extend(
 	--{ type = "recipe", name = "y-fab8k-recipe", energy_required = 2, ingredients = {{"y-basic-t2-mf",8},{"y_structure_element",12},{"y-bluegear",8},{"y-chip-2",2}, }, result = "y-equ-9", enabled = "true", result_count = 1, order="equ-9", subgroup = "yi-material", category="yrcat-material",},		
 		
 		
-	{ type = "item", name = "y-equ-0", icon = "__yi_pfw__/graphics/fab8/teil_04_32.png", icon_size = 64, order = "a", stack_size = 100, },
-	-- Parent owner: Yuoki, item yi_equip_shield_b. Preserved inactive PFW definition.
+	{ type = "item", name = "y-equ-0", subgroup = "yi-material", icon = "__yi_pfw__/graphics/fab8/teil_04_32.png", icon_size = 64, order = "a", stack_size = 100, },
+	-- Parent owner: Yuoki, item yi_equip_shield_a. Preserved inactive PFW definition.
 	--[=[
 	{ type = "item", name = "y-equ-1", icon = "__Yuoki__/graphics/armor/lfg13.png", icon_size = 64, order = "a", stack_size = 100, place_as_equipment_result = "y-equ-1",},
 	]=]
@@ -45,9 +45,9 @@ data:extend(
 	--[=[
 	{ type = "item", name = "y-equ-2", icon = "__Yuoki__/graphics/armor/mfg28.png", icon_size = 64, order = "a", stack_size = 100, place_as_equipment_result = "y-equ-2",},
 	]=]
-	{ type = "item", name = "y-equ-3", icon = "__yi_pfw__/graphics/fab8/msg-cb.png", icon_size = 64, order = "a", stack_size = 100, },
-	{ type = "item", name = "y-equ-4", icon = "__yi_pfw__/graphics/fab8/sfg400.png", icon_size = 64, order = "a", stack_size = 100, },
-	{ type = "item", name = "y-equ-5", icon = "__yi_pfw__/graphics/fab8/teil_02.png", icon_size = 64, order = "a", stack_size = 100, },
+	{ type = "item", name = "y-equ-3", subgroup = "yi-material", icon = "__yi_pfw__/graphics/fab8/msg-cb.png", icon_size = 64, order = "a", stack_size = 100, },
+	{ type = "item", name = "y-equ-4", subgroup = "yi-material", icon = "__yi_pfw__/graphics/fab8/sfg400.png", icon_size = 64, order = "a", stack_size = 100, },
+	{ type = "item", name = "y-equ-5", subgroup = "yi-material", icon = "__yi_pfw__/graphics/fab8/teil_02.png", icon_size = 64, order = "a", stack_size = 100, },
 	-- Parent owner: Yuoki, item yi_equip_generator_a. Preserved inactive PFW definition.
 	--[=[
 	{ type = "item", name = "y-equ-6", icon = "__Yuoki__/graphics/armor/energy_icon.png", icon_size = 64, order = "a", stack_size = 100, place_as_equipment_result = "y-equ-6",},
@@ -62,7 +62,7 @@ data:extend(
 	
 	-- Retrade !!!		
 	--{ type = "recipe", name = "y-rfab8a-recipe", ingredients = {{"y-equ-0",1},}, results = {{type="item", name="y-unicomp-a2", amount=1,},}, enabled = "true", order="equ-0", subgroup = "yi-retrade8", category="yrcat-retrade", icons = yi.lib.recipe.atomics.item_down("y-equ-0") },
-	{ type = "recipe", name = "y-rfab8b-recipe", ingredients = {{type="item", name="yi_equip_shield_b", amount=1},}, results = {{type="item", name="y-stuff-1", amount=1,},{type="item", name="y-redcoil", amount=3,},{type="item", name="ypfw_trader_sign", amount=1,},}, enabled = true, order="equ-1", subgroup = "yi-retrade8", categories={"yrcat-retrade"}, },
+	{ type = "recipe", name = "y-rfab8b-recipe", ingredients = {{type="item", name="yi_equip_shield_a", amount=1},}, results = {{type="item", name="y-stuff-1", amount=1,},{type="item", name="y-redcoil", amount=3,},{type="item", name="ypfw_trader_sign", amount=1,},}, enabled = true, order="equ-1", subgroup = "yi-retrade8", categories={"yrcat-retrade"}, },
 	{ type = "recipe", name = "y-rfab8c-recipe", ingredients = {{type="item", name="yi_equip_shield_b", amount=1},}, results = {{type="item", name="y-stuff-4", amount=2,},{type="item", name="y-stuff-2", amount=4,},{type="item", name="ypfw_trader_sign", amount=1,},}, enabled = true, order="equ-2", subgroup = "yi-retrade8", categories={"yrcat-retrade"}, },
 	{ type = "recipe", name = "y-rfab8d-recipe", ingredients = {{type="item", name="y-equ-3", amount=1},}, results = {{type="item", name="y-stuff-2", amount=4,},{type="item", name="y-grycoil", amount=6,},{type="item", name="ypfw_trader_sign", amount=1,},}, enabled = true, order="equ-3", subgroup = "yi-retrade8", categories={"yrcat-retrade"}, },
 	
