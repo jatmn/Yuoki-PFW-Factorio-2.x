@@ -1,6 +1,8 @@
 data:extend(
 {
 
+	-- Parent owner: Yuoki, energy-shield-equipment yi_equip_shield_a. Preserved inactive PFW definition.
+	--[=[
 	{
 		type = "energy-shield-equipment",
 		name = "y-combat-armor-2",
@@ -28,7 +30,10 @@ data:extend(
 		energy_per_shield = "3kJ",
 		categories = {"armor"},
 	},
+	]=]
 	
+	-- Parent owner: Yuoki, energy-shield-equipment yi_equip_shield_a. Preserved inactive PFW definition.
+	--[=[
 	{
 		type = "energy-shield-equipment",
 		name = "y-combat-armor-3",
@@ -56,7 +61,10 @@ data:extend(
 		energy_per_shield = "5kJ",
 		categories = {"armor"},
 	},
+	]=]
 	
+	-- Parent owner: Yuoki, energy-shield-equipment yi_equip_shield_b. Preserved inactive PFW definition.
+	--[=[
 	{
 		type = "energy-shield-equipment",
 		name = "y-equ-1",
@@ -83,8 +91,11 @@ data:extend(
 		},
 		energy_per_shield = "7kJ",
 		categories = {"armor"},
-	},	
+	},
+	]=]
 	
+	-- Parent owner: Yuoki, energy-shield-equipment yi_equip_shield_b. Preserved inactive PFW definition.
+	--[=[
 	{
 		type = "energy-shield-equipment",
 		name = "y-equ-2",
@@ -112,6 +123,7 @@ data:extend(
 		energy_per_shield = "8kJ",
 		categories = {"armor"},
 	},
+	]=]
 	
 	{
 		type = "battery-equipment",

@@ -39,8 +39,10 @@ for entry in mapping['mappings']:
         source = (ROOT / declaration['path']).read_text()
         marker = f"-- Parent owner: {entry['owner']}, {kind} {new}."
         assert marker in source, (kind, old)
-        inactive = source.split(marker, 1)[1].split('--[=[', 1)[1].split(']=]', 1)[0]
-        assert re.search(r'name\s*=\s*"' + re.escape(old) + '"', inactive), old
+        inactive = [part.split('--[=[', 1)[1].split(']=]', 1)[0]
+                    for part in source.split(marker)[1:]]
+        assert any(re.search(r'name\s*=\s*"' + re.escape(old) + '"', block)
+                   for block in inactive), old
 
 recipes = json.loads((ROOT / 'docs/data/recipes.json').read_text())
 for old in recipes:
@@ -48,8 +50,16 @@ for old in recipes:
     for field in ['ingredients', 'results']:
         for part in recipe[field]:
             part['name'] = item_aliases.get(part['name'], part['name'])
-for gun in ['y-sm-1', 'y-sm-2']:
-    expected['gun'][gun]['attack_parameters']['ammo_category'] = 'plasma'
+# Restore only the explicitly approved historical Mk.1 constructor.
+expected['recipe']['y-zproduct-2-recipe'] = {
+    'type': 'recipe', 'name': 'y-zproduct-2-recipe', 'energy_required': 1,
+    'ingredients': [{'type': 'item', 'name': 'y-refined-yres1', 'amount': 2},
+                    {'type': 'item', 'name': 'iron-plate', 'amount': 4}],
+    'results': [{'type': 'item', 'name': 'y-combat-armor-1', 'amount': 2}],
+    'enabled': True, 'order': 'factory', 'subgroup': 'yi-material',
+    'categories': ['yrcat-material'],
+    'icon': '__yi_pfw__/graphics/zmaterial/panz1_32.png', 'icon_size': 64,
+}
 expected['assembling-machine']['ye_trade_node']['crafting_categories'].append('yrcat-retrade')
 animations = expected['character']['character']['animations']
 expected['character']['character']['animations'] = [
@@ -304,7 +314,7 @@ for kind in expected.keys() | after.keys():
     for name, prototype in expected.get(kind, {}).items():
         assert prototype == after[kind][name], (kind, name)
 for recipe in json.loads((ROOT / 'docs/data/recipe-ownership-audit.json').read_text()):
-    if recipe['state'] == 'commented':
+    if recipe['state'] == 'commented' and recipe['name'] != 'y-zproduct-2-recipe':
         assert recipe['name'] not in after['recipe'], recipe['name']
 manifest = json.loads((ROOT / 'docs/data/archive-manifest.json').read_text())
 assets = [a for a in manifest['files'] if a['path'].startswith('graphics/')]
@@ -352,7 +362,7 @@ for i, line in enumerate(lines):
         assert re.fullmatch(r'Date: [1-9][0-9]?\. [1-9][0-9]?\. [0-9]{4}', lines[i+1])
 trades = [r for r in recipes if 'yrcat-retrade' in after['recipe'][r['name']].get('categories', [])]
 assert len(trades) == 56
-print(f'PASS: {removed} redundant declarations inactive; 105 recipe routes and quantities retained; '
+print(f'PASS: {removed} redundant declarations inactive; 105 recipe routes and quantities retained, Mk.1 constructor restored; '
       '56 trades supported; pending mappings/parent behavior preserved; 41 parent assets verified, '
       '34 AI artwork/source images verified, 49 arrow variants replaced, 82 original graphics unchanged; '
       '0.5.1 changelog and no migrations verified.')

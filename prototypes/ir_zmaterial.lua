@@ -15,16 +15,14 @@ data:extend(
 	{ type = "item", name = "y-biomass", icon = "__yi_pfw__/graphics/zmaterial/biomass-icon.png", icon_size = 64, order = "a", stack_size = 250, },
 	
 	-- Combat Armor 1
-	--[[
 	{ type = "recipe", name = "y-zproduct-2-recipe", 
 		energy_required= 1, 
-		ingredients = {{"y-refined-yres1",2},{"iron-plate",4},}, 
+		ingredients = {{type="item", name="y-refined-yres1", amount=2},{type="item", name="iron-plate", amount=4},},
 		results = {{type="item", name="y-combat-armor-1", amount=2,},}, 
-		enabled = "true", order="factory", subgroup = "yi-material", 
-		category= "yrcat-material",
+		enabled = true, order="factory", subgroup = "yi-material",
+		categories= {"yrcat-material"},
 		icon = "__yi_pfw__/graphics/zmaterial/panz1_32.png", icon_size = 64
 	},	
-	]]	
 	{ type = "item", name = "y-combat-armor-1", icon = "__yi_pfw__/graphics/zmaterial/panz1_32.png", icon_size = 64, order = "a", stack_size = 250, },
 
 	-- Combat Armor 2
@@ -38,7 +36,10 @@ data:extend(
 		icon = "__Yuoki__/graphics/armor/panz5_32.png", icon_size = 64
 	},	
 	]]	
+	-- Parent owner: Yuoki, item yi_equip_shield_a. Preserved inactive PFW definition.
+	--[=[
 	{ type = "item", name = "y-combat-armor-2", icon = "__Yuoki__/graphics/armor/panz5_32.png", icon_size = 64, order = "a", stack_size = 250, place_as_equipment_result = "y-combat-armor-2",},
+	]=]
 
 	-- Combat Armor 3
 	--[[
@@ -51,7 +52,10 @@ data:extend(
 		icon = "__Yuoki__/graphics/armor/panz4_32.png", icon_size = 64
 	},	
 	]]	
+	-- Parent owner: Yuoki, item yi_equip_shield_a. Preserved inactive PFW definition.
+	--[=[
 	{ type = "item", name = "y-combat-armor-3", icon = "__Yuoki__/graphics/armor/panz4_32.png", icon_size = 64, order = "a", stack_size = 250, place_as_equipment_result = "y-combat-armor-3",},
+	]=]
 
 	{ type = "recipe", name = "y-zproduct-5-recipe", 
 		energy_required= 4, 

@@ -5,7 +5,9 @@ Date: 9. 10. 2026
     - Reuse Engines' Trade Node and Yuoki's minigun, energy ammunition, mobile generator, movement equipment and first walker.
     - Allow the Engines Trade Node to process PFW trades while retaining its existing categories and operating statistics.
     - Keep redundant PFW definitions commented with parent ownership references; retain all distinct recipes and quantities.
-    - Leave ambiguous gun, shield, second-armor and fuel-cell mappings pending; preserve unique original artwork and previously disabled content.
+    - Reuse Yuoki's Lasergun for both old energy guns, CF-35 for Reactive/Shielded Armor, and KT-60 for CF-56/KT-34; preserve all export quantities and payouts for later balancing.
+    - Restore Combat Armor Mk.1 manufacture: two refined N4 and four iron plates produce two components in one second in the War Material Factory.
+    - Keep second-armor and fuel-cell mappings pending; preserve unique original artwork and other disabled content.
   Graphics:
     - Include the original Mod Portal thumbnail in the package for the in-game mod browser.
     - Replace 41 confirmed duplicate artwork files with references to Yuoki Industries or Yuoki Engines, including the shared-factory icon and animation.
@@ -26,7 +28,7 @@ Date: 9. 10. 2026
   Bugfixes:
     - Allow the War Material Factory to craft the six-ingredient Advanced Targeting Device recipe.
   Compatibility:
-    - Keep the two pending PFW energy guns compatible with Yuoki's energy ammunition.
+    - Use the parent gun and shields with their existing equipment statistics, ammunition and manufacturing recipes.
     - Keep migrations deferred until a formal release; validate this development version with fresh games.
 
 ---------------------------------------------------------------------------------------------------

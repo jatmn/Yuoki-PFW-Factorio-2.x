@@ -120,13 +120,13 @@
     },
     {
       "recipe": "y-rfab2b-recipe",
-      "source": "y-sm-1",
+      "source": "yi_lasergun",
       "direction": "down",
       "old_icon": "__yi_pfw__/graphics/fab2/lasergun-sell.png"
     },
     {
       "recipe": "y-rfab2c-recipe",
-      "source": "y-sm-2",
+      "source": "yi_lasergun",
       "direction": "down",
       "old_icon": "__yi_pfw__/graphics/fab2/plasma-gun-sell.png"
     },
@@ -252,13 +252,13 @@
     },
     {
       "recipe": "y-rfab8b-recipe",
-      "source": "y-equ-1",
+      "source": "yi_equip_shield_b",
       "direction": "down",
       "old_icon": "__yi_pfw__/graphics/fab8/lfg13-sell.png"
     },
     {
       "recipe": "y-rfab8c-recipe",
-      "source": "y-equ-2",
+      "source": "yi_equip_shield_b",
       "direction": "down",
       "old_icon": "__yi_pfw__/graphics/fab8/mfg28-sell.png"
     },

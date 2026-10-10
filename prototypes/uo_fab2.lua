@@ -1,5 +1,6 @@
-data:extend(
-{
+-- All declarations below are preserved inactive; parent guns/ammo are used.
+-- data:extend(
+-- {
 
 	-- Grenade Launcher
 	--[[
@@ -81,8 +82,9 @@ data:extend(
 	},
 	]=]
 
-	-- Identity mapping pending; use Yuoki yi_ammo_energie (plasma) ammunition.
 	-- Lasergun
+	-- Parent owner: Yuoki, gun yi_lasergun. Preserved inactive PFW definition.
+	--[=[
 	{
 		type = "gun",
 		name = "y-sm-1",
@@ -108,9 +110,11 @@ data:extend(
 		},
 		stack_size = 100
 	},
+	]=]
 
-	-- Identity mapping pending; use Yuoki yi_ammo_energie (plasma) ammunition.
 	-- Plasmagun
+	-- Parent owner: Yuoki, gun yi_lasergun. Preserved inactive PFW definition.
+	--[=[
 	{
 		type = "gun",
 		name = "y-sm-2",
@@ -136,6 +140,7 @@ data:extend(
 		},
 		stack_size = 100
 	},
+	]=]
 
 	-- Parent owner: Yuoki, ammo yi_ammo_energie. Preserved inactive PFW definition.
 	--[=[
@@ -211,5 +216,5 @@ data:extend(
 		},
 	}
 	]]
-}
-)
+-- }
+-- )

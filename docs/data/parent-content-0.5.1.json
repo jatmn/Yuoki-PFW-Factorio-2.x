@@ -104,15 +104,91 @@
           "path": "prototypes/item-group/yi_pfw.lua"
         }
       ]
+    },
+    {
+      "old": "y-sm-1",
+      "new": "yi_lasergun",
+      "owner": "Yuoki",
+      "declarations": [
+        {
+          "type": "gun",
+          "path": "prototypes/uo_fab2.lua"
+        }
+      ]
+    },
+    {
+      "old": "y-sm-2",
+      "new": "yi_lasergun",
+      "owner": "Yuoki",
+      "declarations": [
+        {
+          "type": "gun",
+          "path": "prototypes/uo_fab2.lua"
+        }
+      ]
+    },
+    {
+      "old": "y-combat-armor-2",
+      "new": "yi_equip_shield_a",
+      "owner": "Yuoki",
+      "declarations": [
+        {
+          "type": "item",
+          "path": "prototypes/ir_zmaterial.lua"
+        },
+        {
+          "type": "energy-shield-equipment",
+          "path": "prototypes/uo_fab8.lua"
+        }
+      ]
+    },
+    {
+      "old": "y-combat-armor-3",
+      "new": "yi_equip_shield_a",
+      "owner": "Yuoki",
+      "declarations": [
+        {
+          "type": "item",
+          "path": "prototypes/ir_zmaterial.lua"
+        },
+        {
+          "type": "energy-shield-equipment",
+          "path": "prototypes/uo_fab8.lua"
+        }
+      ]
+    },
+    {
+      "old": "y-equ-1",
+      "new": "yi_equip_shield_b",
+      "owner": "Yuoki",
+      "declarations": [
+        {
+          "type": "item",
+          "path": "prototypes/ir_fab8.lua"
+        },
+        {
+          "type": "energy-shield-equipment",
+          "path": "prototypes/uo_fab8.lua"
+        }
+      ]
+    },
+    {
+      "old": "y-equ-2",
+      "new": "yi_equip_shield_b",
+      "owner": "Yuoki",
+      "declarations": [
+        {
+          "type": "item",
+          "path": "prototypes/ir_fab8.lua"
+        },
+        {
+          "type": "energy-shield-equipment",
+          "path": "prototypes/uo_fab8.lua"
+        }
+      ]
     }
   ],
   "pending": [
-    "y-sm-1",
-    "y-sm-2",
-    "y-combat-armor-2",
-    "y-combat-armor-3",
-    "y-equ-1",
-    "y-equ-2",
     "y-cyb-9u",
     "y-zproduct-8"
   ]
