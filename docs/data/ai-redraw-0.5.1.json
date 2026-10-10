@@ -362,7 +362,7 @@
         },
         "method": "AI"
       },
-      "sha256": "ccd5e2aa363f7911c28b6d870140ad94337ad83fd8d79232d4df870ecbb5d1da",
+      "sha256": "649879224747c900f86d9ada0a1cac21025c6f22bc0491494dd84599b2333e8e",
       "shared_module_derivative": {
         "palette": "comp",
         "builder": "docs/tools/build_shared_factories.py",
@@ -1366,10 +1366,10 @@
       "outputs": [
         {
           "path": "graphics/entity/factory-comp-right.png",
-          "sha256": "32fb12d048eec1baf0f1b640472c1958e6df483ec87072457879d096326f5157",
+          "sha256": "050634524fe50017773188fc65a3ecd13f906e85761e273f72209faaa3b37e43",
           "dimensions": [
-            1472,
-            256
+            92,
+            216
           ]
         },
         {
@@ -1378,6 +1378,14 @@
           "dimensions": [
             4096,
             256
+          ]
+        },
+        {
+          "path": "graphics/entity/factory-comp-cells.png",
+          "sha256": "5e8548e9d70e711756ef28964a573ea7cf940696eaa42a0f4dcf2c876a1070b7",
+          "dimensions": [
+            1472,
+            216
           ]
         }
       ]

@@ -20,7 +20,8 @@ return function(name)
     layers[#layers + 1] = layer
   end
   local component = name == "comp"
-  add("factory-" .. name .. "-right", 92, component and 256 or 216, 112, component and 0 or 16, component)
+  add("factory-" .. name .. "-right", 92, 216, 112, 16)
+  if component then add("factory-comp-cells", 92, 216, 112, 16, true) end
   add("factory-left-base", 110, 216, 2, 16)
   for _, material in ipairs({"trim", "rings", "panels"}) do
     add("factory-left-" .. material, 110, 216, 2, 16, false, palette[material])

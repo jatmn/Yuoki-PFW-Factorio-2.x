@@ -210,7 +210,8 @@ for name, palette in palettes.items():
             layer['draw_as_shadow'] = True
         layers.append(layer)
     component = name == 'comp'
-    add('factory-' + name + '-right', 92, 256 if component else 216, 112, 0 if component else 16, component)
+    add('factory-' + name + '-right', 92, 216, 112, 16)
+    if component: add('factory-comp-cells', 92, 216, 112, 16, True)
     add('factory-left-base', 110, 216, 2, 16)
     for material in ['trim', 'rings', 'panels']:
         add('factory-left-' + material, 110, 216, 2, 16, tint=palette[material])

@@ -141,26 +141,12 @@ def build():
             d.ellipse((cx-43,cy-19,cx+43,cy+23),fill=(255,255,255,round(230*level)))
         sheet.paste(placed(im).crop(box),(w*n,0))
     sheet.save(OUT/'factory-left-opening-glow.png')
-    # Right sides are replaceable independently of the common module. Preserve
-    # the component factory's original accumulating-cell cycle until its own redraw.
+    # Right sides are replaceable independently of the common module.
     for name, crop in [('weapons',(609,58,1101,1166)),('trucks',(637,80,1107,1141)),
                        ('equip',(672,51,1153,1178))]:
         Image.open(ART/f'fabrik-{name}-icon-source.png').convert('RGBA').crop(crop).resize(
             (92,216),Image.Resampling.LANCZOS).save(OUT/f'factory-{name}-right.png')
-    original=Image.open(OUT/'fab-comp-sheet.png').convert('RGBA')
-    sheet=Image.new('RGBA',(92*16,256))
-    for n in range(16):
-        frame=original.crop((n*128+53,0,n*128+99,128))
-        # Keep black recesses enclosed by the body; only exterior black pixels
-        # belong to the ground-shadow layer. Flood-fill the exterior with padding.
-        silhouette = Image.new('L',(48,130))
-        silhouette.paste(frame.convert('RGB').convert('L').point(lambda v:255 if v else 0),(1,1))
-        ImageDraw.floodfill(silhouette,(0,0),128)
-        exterior = silhouette.crop((1,1,47,129))
-        frame.putdata([(0,0,0,0) if r==g==blue==0 and outside==128 else (r,g,blue,a)
-                       for (r,g,blue,a),outside in zip(frame.getdata(),exterior.getdata())])
-        sheet.paste(frame.resize((92,256),Image.Resampling.LANCZOS),(92*n,0))
-    sheet.save(OUT/'factory-comp-right.png')
+    build_component_right()
     # Per-variant original shadows; component shadows follow the cell buildup.
     for name in PALETTES:
         original=Image.open(OUT/f'fab-{name}-sheet.png').convert('RGBA')
@@ -183,12 +169,6 @@ def build():
     (ROOT/'prototypes/factory-palettes.lua').write_text('\n'.join(lines+['}'])+'\n')
     for name in PALETTES:
         icon = render(name,12 if name=='comp' else 0,shadow=False)
-        if name=='comp':
-            # Keep the existing detailed AI cells in the inventory icon while
-            # the replaceable world module retains the original animated sheet.
-            icon.paste((0,0,0,0),(112,0,256,256))
-            right = Image.open(ART/'fabrik-comp-icon-source.png').convert('RGBA')
-            icon.alpha_composite(right.crop((615,61,1077,1151)).resize((92,216),Image.Resampling.LANCZOS),(112,16))
         icon.resize((64,64),Image.Resampling.LANCZOS).save(OUT/f'fabrik-{name}-icon.png')
     # Keep the existing provenance/validation manifest in sync with palette edits.
     manifest_path = ROOT / 'docs/data/ai-redraw-0.5.1.json'
@@ -209,6 +189,49 @@ def build():
     manifest_path.write_text(json.dumps(manifest, indent=2) + '\n')
 
 
+def build_component_right():
+    """Fixed platform and six identical cells, extracted from the accepted master.
+
+    Frame pairs add back-left, back-right, middle-left, middle-right, front-left,
+    front-right; frame15 clears, matching fab-comp-sheet.png. No shaded body rotates.
+    """
+    source = Image.open(ART/'fabrik-comp-icon-source.png').convert('RGBA')
+    crop = (615,61,1077,1151)
+    def module(im):
+        return im.crop(crop).resize((92,216),Image.Resampling.LANCZOS)
+    # Extend an exposed floor tile under the cells; retain the master's bottom rim.
+    platform = Image.new('RGBA',source.size)
+    platform.paste(source.crop((615,1025,1077,1151)),(615,1025))
+    tile = source.crop((641,954,749,1047))
+    platform.paste(tile.resize((462,645),Image.Resampling.LANCZOS),(615,380))
+    d=ImageDraw.Draw(platform)
+    for x in [616,760,1069]:
+        d.line((x,380,x,1050),fill=(43,24,16,255),width=5)
+        d.line((x+4,380,x+4,1050),fill=(135,72,38,255),width=2)
+    for y in [380,605,830]:
+        d.line((615,y,1076,y),fill=(43,24,16,255),width=5)
+        d.line((615,y+4,1076,y+4),fill=(135,72,38,255),width=2)
+    module(platform).save(OUT/'factory-comp-right.png')
+    # The unobscured front-right cell supplies the same complete model everywhere.
+    mask=Image.new('L',source.size)
+    ImageDraw.Draw(mask).polygon([
+        (921,721),(947,721),(949,735),(974,740),(995,753),(1011,771),
+        (1020,793),(1031,815),(1035,843),(1034,941),(1029,969),
+        (1017,989),(994,1006),(963,1019),(930,1024),(895,1018),
+        (867,1005),(850,984),(840,957),(839,845),(843,817),
+        (851,791),(865,768),(886,748),(920,736)],fill=255)
+    cell=source.copy();cell.putalpha(ImageChops.multiply(source.getchannel('A'),mask))
+    cell=cell.crop((837,719,1038,1027))
+    sheet=Image.new('RGBA',(92*16,216))
+    positions=[(628,272),(838,322),(660,446),(838,555),(628,615),(838,719)]
+    for n in range(16):
+        frame=Image.new('RGBA',source.size)
+        count=0 if n==15 else min(n//2,6)
+        for position in positions[:count]:frame.alpha_composite(cell,position)
+        sheet.paste(module(frame),(92*n,0))
+    sheet.save(OUT/'factory-comp-cells.png')
+
+
 def render(name,n,shadow=True, palette=None):
     """Authoring preview of the same layers/positions used by factory_visuals.lua."""
     p=PALETTES[name] if palette is None else palette
@@ -219,7 +242,8 @@ def render(name,n,shadow=True, palette=None):
         if color:im=tint(im,color)
         out.alpha_composite(im,(x,y))
     if shadow:add(f'fab-{name}-shadow.png',256,256,0,0,name=='comp')
-    add(f'factory-{name}-right.png',92,256 if name=='comp' else 216,112,0 if name=='comp' else 16,name=='comp')
+    add(f'factory-{name}-right.png',92,216,112,16)
+    if name=='comp':add('factory-comp-cells.png',92,216,112,16,True)
     add('factory-left-base.png',110,216,2,16)
     for material in ['trim','rings','panels']:add(f'factory-left-{material}.png',110,216,2,16,color=p[material])
     for rotor in ['upper','front','rear']:
