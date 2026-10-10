@@ -172,23 +172,6 @@ for name, width, height, shift in [
         layer['draw_as_shadow'] = True
     ammo_layers.append(layer)
 expected['assembling-machine']['y-factory-1']['graphics_set']['animation'] = {'layers': ammo_layers}
-weapons_layers = []
-for name, width, height, shift in [
-    ('base', 256, 256, [0.5, 0]),
-    ('upper', 44, 32, [-0.5, -0.734375]),
-    ('front', 46, 43, [-0.484375, 1.0390625]),
-    ('shadow', 256, 256, [0.5, 0]),
-]:
-    layer = dict(filename='__yi_pfw__/graphics/entity/fab-weapons-' + name + '.png',
-                 width=width, height=height, scale=0.5, shift=shift)
-    if name in {'base', 'shadow'}:
-        layer.update(frame_count=1, repeat_count=16)
-    else:
-        layer.update(frame_count=16, line_length=16)
-    if name == 'shadow':
-        layer['draw_as_shadow'] = True
-    weapons_layers.append(layer)
-expected['assembling-machine']['y-factory-2']['graphics_set']['animation'] = {'layers': weapons_layers}
 bio_layers = []
 for name, width, height, shift in [
     ('base', 256, 256, [0.5, 0]),
@@ -205,32 +188,66 @@ for name, width, height, shift in [
         layer['draw_as_shadow'] = True
     bio_layers.append(layer)
 expected['assembling-machine']['y-factory-3']['graphics_set']['animation'] = {'layers': bio_layers}
-trucks_layers = []
-for name, width, height, shift in [
-    ('base', 256, 256, [0.5, 0]),
-    ('upper', 49, 38, [-0.4296875, -0.75]),
-    ('front', 63, 65, [-0.4140625, 1.1328125]),
-    ('rear', 57, 49, [-0.3984375, -1.3828125]),
-    ('shadow', 256, 256, [0.5, 0]),
-]:
-    layer = dict(filename='__yi_pfw__/graphics/entity/fab-trucks-' + name + '.png',
-                 width=width, height=height, scale=0.5, shift=shift)
-    if name in {'base', 'shadow'}:
-        layer.update(frame_count=1, repeat_count=16)
-    else:
-        layer.update(frame_count=16, line_length=16)
-    if name == 'shadow':
-        layer['draw_as_shadow'] = True
-    trucks_layers.append(layer)
-expected['assembling-machine']['y-factory-5']['graphics_set']['animation'] = {'layers': trucks_layers}
+# Four factories share neutral geometry; only their configured tints, right side
+# and cycle speed differ. Keep every gameplay field equal to the phase-1 dump.
+palettes = json.loads((ROOT / 'docs/data/factory-palettes.json').read_text())
+assert {k: (v['prototype'], v['speed']) for k, v in palettes.items()} == {
+    'weapons': ('y-factory-2', 1), 'trucks': ('y-factory-5', 1),
+    'equip': ('y-factory-8', 1), 'comp': ('y-factory-9', 0.2),
+}
+shared_layers = {}
+for name, palette in palettes.items():
+    layers = []
+    def add(file, w, h, x, y, animated=False, tint=None, shadow=False):
+        layer = dict(filename='__yi_pfw__/graphics/entity/' + file + '.png',
+                     width=w, height=h, scale=0.5,
+                     shift=[0.5 + (x + w / 2 - 128) / 64, (y + h / 2 - 128) / 64],
+                     animation_speed=palette['speed'], frame_count=16 if animated else 1)
+        layer.update(line_length=16) if animated else layer.update(repeat_count=16)
+        if tint:
+            layer['tint'] = tint
+        if shadow:
+            layer['draw_as_shadow'] = True
+        layers.append(layer)
+    component = name == 'comp'
+    add('factory-' + name + '-right', 92, 256 if component else 216, 112, 0 if component else 16, component)
+    add('factory-left-base', 110, 216, 2, 16)
+    for material in ['trim', 'rings', 'panels']:
+        add('factory-left-' + material, 110, 216, 2, 16, tint=palette[material])
+    for rotor, w, h, x, y in [('upper',54,48,43,61), ('front',67,65,36,171), ('rear',64,55,41,15)]:
+        add('factory-left-' + rotor + '-cutouts', w,h,x,y, True)
+        add('factory-left-' + rotor + '-lights', w,h,x,y, True, palette['lights'])
+    if palette['opening_glow']:
+        add('factory-left-opening-glow',54,110,45,28,True,palette['opening_glow'])
+    add('fab-' + name + '-shadow',256,256,0,0,component,shadow=True)
+    # Factorio's Lua JSON writer can round e.g. 0.88 to 0.8800000000000001.
+    actual_layers = after['assembling-machine'][palette['prototype']]['graphics_set']['animation']['layers']
+    assert len(actual_layers) == len(layers)
+    for layer, actual_layer in zip(layers, actual_layers):
+        if 'tint' in layer:
+            actual_tint = actual_layer['tint']
+            assert len(actual_tint) == 3 and all(abs(a-b) < 1e-14 for a,b in zip(layer['tint'], actual_tint))
+            layer['tint'] = actual_tint
+    shared_layers[palette['prototype']] = layers
+    expected['assembling-machine'][palette['prototype']]['graphics_set']['animation'] = {'layers': layers}
+all_layer_sets = {'y-factory-1': ammo_layers, 'y-factory-3': bio_layers, **shared_layers}
+shared = redraw_map['shared_factory_module']
+for entry in shared['sources']:
+    content = (ROOT / entry['path']).read_bytes()
+    assert hashlib.sha256(content).hexdigest() == entry['sha256'], entry['path']
+assert hashlib.sha256((ROOT / shared['palettes']['path']).read_bytes()).hexdigest() == shared['palettes']['sha256']
 layered_entries = {e['prototype']: e for e in redraw_map['layered_animations']}
-assert set(layered_entries) == {'y-factory-1', 'y-factory-2', 'y-factory-3', 'y-factory-5'}
-for prototype, layers in [('y-factory-1', ammo_layers), ('y-factory-2', weapons_layers), ('y-factory-3', bio_layers), ('y-factory-5', trucks_layers)]:
+assert set(layered_entries) == set(all_layer_sets)
+for prototype, layers in all_layer_sets.items():
     layered = layered_entries[prototype]
-    assert {e['path'] for e in layered['outputs']} == {
+    output_entries = layered['outputs']
+    if prototype in shared_layers:
+        paths_used = {layer['filename'].removeprefix('__yi_pfw__/') for layer in layers}
+        output_entries = output_entries + [e for e in shared['outputs'] if e['path'] in paths_used]
+    assert {e['path'] for e in output_entries} == {
         layer['filename'].removeprefix('__yi_pfw__/') for layer in layers
     }
-    for entry in [layered['original'], layered['source'], *layered['outputs']]:
+    for entry in [layered['original'], layered['source'], *output_entries]:
         content = (ROOT / entry['path']).read_bytes()
         assert hashlib.sha256(content).hexdigest() == entry['sha256'], entry['path']
         assert list(struct.unpack('>II', content[16:24])) == entry['dimensions'], entry['path']
@@ -290,7 +307,7 @@ for asset in assets:
     else:
         assert hashlib.sha256((ROOT / asset['path']).read_bytes()).hexdigest() == asset['sha256'], asset['path']
 assert len(replacements) == 41
-assert len(list((ROOT / 'graphics').rglob('*.png'))) == len(assets) - len(replacements) - len(arrow_variants) + len(ammo_layers) + len(weapons_layers) + len(bio_layers) + len(trucks_layers)
+assert len(list((ROOT / 'graphics').rglob('*.png'))) == len(assets) - len(replacements) - len(arrow_variants) + len({layer['filename'] for layers in all_layer_sets.values() for layer in layers})
 
 def check_layouts(value):
     if isinstance(value, list):

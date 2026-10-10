@@ -22,6 +22,8 @@ Date: 9. 10. 2026
     - Apply the accepted layered animation method to the weapons factory, with paired green cutouts and a stationary workbench.
     - Rebuild the cyborg-factory vat animation with fixed shells and separate liquid, retaining its green-to-pink fill/drain cycle and slower speed.
     - Rebuild the vehicle-factory animation with separate blue rotor cutouts, rear housing occlusion and a stationary loader; correct its incomplete front cylinder in the world sprite and icon.
+    - Share one neutral left-hand module across weapons, vehicle, equipment and component factories, with selectable material/light tints and replaceable right assemblies.
+    - Separate the component factory opening glow into an optional overlay; retain its original cell-production animation and slower cycle.
   Compatibility:
     - Keep the two pending PFW energy guns compatible with Yuoki's energy ammunition.
     - Keep migrations deferred until a formal release; validate this development version with fresh games.

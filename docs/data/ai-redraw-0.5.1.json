@@ -362,7 +362,12 @@
         },
         "method": "AI"
       },
-      "sha256": "f528abf2d56765d37a3f32214b64900a38a0479f1952178ceafd5d484306d07c"
+      "sha256": "ccd5e2aa363f7911c28b6d870140ad94337ad83fd8d79232d4df870ecbb5d1da",
+      "shared_module_derivative": {
+        "palette": "comp",
+        "builder": "docs/tools/build_shared_factories.py",
+        "note": "Shared neutral left module and palette, with the existing detailed AI cell assembly on the right; world right-side cycle retains original sheet pending redraw."
+      }
     },
     {
       "label": "Equipment factory",
@@ -398,7 +403,12 @@
         },
         "method": "AI"
       },
-      "sha256": "29ec2e44a8ae8a3be17793c1ada9f0d78b128ebf21bfaa824bcbde0b1d62d412"
+      "sha256": "22b4a67f0dab0ebd9e4a50a17502c41bed06ab64204f24047dd25c32018750cb",
+      "shared_module_derivative": {
+        "palette": "equip",
+        "builder": "docs/tools/build_shared_factories.py",
+        "note": "Icon composed from the same neutral body, masks, cutouts and right assembly as the world sprite. Original AI master retained as source/reference."
+      }
     },
     {
       "label": "Vehicle factory",
@@ -434,11 +444,16 @@
         },
         "method": "AI"
       },
-      "sha256": "ef53e2599935d44fa1f383be951558200a6b35647b8f98208a8704a1d1060228",
+      "sha256": "eec89a5cb84930c3f74b95bc6ba44e9d3a6b80d291ec5d0294c8aa58887535ae",
       "cylinder_correction": {
         "reason": "Owner identified a sliced front cylinder in the initial redraw; restore complete concentric face and centered hub from original sprite reference.",
         "prompt": "Use case: precise-object-edit. Edit target Image 1 is an existing Factorio-style vehicle factory icon on transparent background. Supporting shape reference Image 2 is a close-up of the original low-resolution cylinder. Correct ONLY the silver forward-facing cylindrical drum near bottom-left of Image 1 (roughly x=330..565,y=850..1070 in the 1254px source). It currently looks sliced off at the bottom with a badly off-center hub. Make it a COMPLETE solid cylindrical drum projecting toward the viewer, with a continuous full elliptical front face, concentric metal rings and a hub CENTERED in that face, including a clearly visible intact lower half and lower rim. Keep the existing viewing angle, axis, industrial grey metal texture and lighting. Its upper curved barrel is foreshortened, but the front cap is a complete ellipse, not a crescent or cutaway. Keep roughly the same width/position and extend the lower face only as needed to complete the geometry. For animation authoring, remove the two blue lamps AND their rectangular dark/gold recesses from this front drum only; render uninterrupted clean metal at those positions. All other blue lights, the rear copper rings, loader, platform, camera and surrounding machine must stay EXACTLY unchanged. No text, no labels, no added parts. Preserve transparent background.",
-        "method": "Built-in imagegen edit, composited only within the front-cylinder patch. Source front drum is unlit; build_trucks_animation.py adds its projected frame-zero cutouts to the 64px icon."
+        "method": "Built-in imagegen edit, composited only within the front-cylinder patch. Source front drum is unlit; build_shared_factories.py adds its projected frame-zero cutouts to the 64px icon."
+      },
+      "shared_module_derivative": {
+        "palette": "trucks",
+        "builder": "docs/tools/build_shared_factories.py",
+        "note": "Icon composed from the same neutral body, masks, cutouts and right assembly as the world sprite. Original AI master retained as source/reference."
       }
     },
     {
@@ -475,7 +490,12 @@
         },
         "method": "AI"
       },
-      "sha256": "cd9be5ed31804f001aba01cd35bde3284889f0459956d8ba3260e8384e58c11f"
+      "sha256": "bbb2b2854cb18038c18021c644f2ad67d73db9dec21a80acd18ce312a7b2d804",
+      "shared_module_derivative": {
+        "palette": "weapons",
+        "builder": "docs/tools/build_shared_factories.py",
+        "note": "Icon composed from the same neutral body, masks, cutouts and right assembly as the world sprite. Original AI master retained as source/reference."
+      }
     },
     {
       "label": "Profit display 1",
@@ -1150,62 +1170,6 @@
       ]
     },
     {
-      "prototype": "y-factory-2",
-      "method": "Accepted ammunition reference: fixed shaded geometry, four green upper cutouts and paired green front cutouts projected with their lights. Original workbench remains stationary. See docs/tools/build_weapons_animation.py.",
-      "frame_count": 16,
-      "scale": 0.5,
-      "original": {
-        "path": "graphics/entity/fab-weapons-sheet.png",
-        "sha256": "b1df043a1d04793687bf9b6ceff1c7a3f0e8f3ef465f8c21f7d0b989ad1f7e2a",
-        "dimensions": [
-          2048,
-          128
-        ]
-      },
-      "source": {
-        "path": "docs/artwork/ai-redraw-0.5.1/fabrik-weapons-icon-source.png",
-        "sha256": "88bafe9bad1dde0cfc3265974ec6d98e201552f377e0b671b6a2a69464878c70",
-        "dimensions": [
-          1254,
-          1254
-        ]
-      },
-      "outputs": [
-        {
-          "path": "graphics/entity/fab-weapons-base.png",
-          "sha256": "25dffd4d1ee56c78e4fc9aca5d84d948b6c7c3c79ef57eace2c9c31a54eafc0d",
-          "dimensions": [
-            256,
-            256
-          ]
-        },
-        {
-          "path": "graphics/entity/fab-weapons-upper.png",
-          "sha256": "bfd0fb53e2a91e476d96c0abd46ac9d3c0a9a5b03cfd343348c6eb87f4d96311",
-          "dimensions": [
-            704,
-            32
-          ]
-        },
-        {
-          "path": "graphics/entity/fab-weapons-front.png",
-          "sha256": "23c4112c49c14675e1cff971764634699a142aa6c7408a09ad796c3833b2f5da",
-          "dimensions": [
-            736,
-            43
-          ]
-        },
-        {
-          "path": "graphics/entity/fab-weapons-shadow.png",
-          "sha256": "38ded521d53bca27c01943cd424258e34bfb2edc3389a25c4fcd4e7f59861e70",
-          "dimensions": [
-            256,
-            256
-          ]
-        }
-      ]
-    },
-    {
       "prototype": "y-factory-3",
       "method": "Fixed accepted AI machine and vat shells; separate AI-textured liquid preserves original fill/green-to-pink/drain sequence and speed0.2. Original shadow retained; drained wall ports reconstructed. See docs/tools/build_bio_animation.py.",
       "frame_count": 16,
@@ -1255,10 +1219,52 @@
       ]
     },
     {
-      "prototype": "y-factory-5",
-      "method": "Fixed AI body with corrected complete front cylinder and centered hub; projected blue light/cutout assemblies fitted to the face, rear housing occlusion and original shadow.",
+      "prototype": "y-factory-2",
+      "method": "Shared neutral left body, independent material/light tints, paired projected cutouts, optional opening glow and replaceable right assembly.",
       "frame_count": 16,
       "scale": 0.5,
+      "animation_speed": 1,
+      "original": {
+        "path": "graphics/entity/fab-weapons-sheet.png",
+        "sha256": "b1df043a1d04793687bf9b6ceff1c7a3f0e8f3ef465f8c21f7d0b989ad1f7e2a",
+        "dimensions": [
+          2048,
+          128
+        ]
+      },
+      "source": {
+        "path": "docs/artwork/ai-redraw-0.5.1/fabrik-weapons-icon-source.png",
+        "sha256": "88bafe9bad1dde0cfc3265974ec6d98e201552f377e0b671b6a2a69464878c70",
+        "dimensions": [
+          1254,
+          1254
+        ]
+      },
+      "outputs": [
+        {
+          "path": "graphics/entity/factory-weapons-right.png",
+          "sha256": "e83fb87db74da1bb7e8f9a2efdfbe43b26d001c11265db6f324ac167be181667",
+          "dimensions": [
+            92,
+            216
+          ]
+        },
+        {
+          "path": "graphics/entity/fab-weapons-shadow.png",
+          "sha256": "38ded521d53bca27c01943cd424258e34bfb2edc3389a25c4fcd4e7f59861e70",
+          "dimensions": [
+            256,
+            256
+          ]
+        }
+      ]
+    },
+    {
+      "prototype": "y-factory-5",
+      "method": "Shared neutral left body, independent material/light tints, paired projected cutouts, optional opening glow and replaceable right assembly.",
+      "frame_count": 16,
+      "scale": 0.5,
+      "animation_speed": 1,
       "original": {
         "path": "graphics/entity/fab-trucks-sheet.png",
         "sha256": "451d00fac551c4f99b82f4add1099f01f77f6dc4b1d4e29a58d2c761ac39d61c",
@@ -1277,35 +1283,11 @@
       },
       "outputs": [
         {
-          "path": "graphics/entity/fab-trucks-base.png",
-          "sha256": "c82e3a4cd837b2eb8b954ff5b5c4f65d8cac7af0a1815b0d2fb6be7386596ceb",
+          "path": "graphics/entity/factory-trucks-right.png",
+          "sha256": "b0b7fc299f660a99dee6301feedf16221195963bb71b63fba7a6dafa6ccb5e47",
           "dimensions": [
-            256,
-            256
-          ]
-        },
-        {
-          "path": "graphics/entity/fab-trucks-upper.png",
-          "sha256": "9b2134eb47946cf956489a99dbd0ee108db477465672f935c51f1f3917f5d273",
-          "dimensions": [
-            784,
-            38
-          ]
-        },
-        {
-          "path": "graphics/entity/fab-trucks-front.png",
-          "sha256": "49d7f5309e60fcfe097db1b9c2ca94c11c375ccc5d0cfae136e2b66a4ab18e5f",
-          "dimensions": [
-            1008,
-            65
-          ]
-        },
-        {
-          "path": "graphics/entity/fab-trucks-rear.png",
-          "sha256": "57c45a824a7b17d22fcb27a999623a34ec3e44ac280b42f272a4c4bd9fe98561",
-          "dimensions": [
-            912,
-            49
+            92,
+            216
           ]
         },
         {
@@ -1317,6 +1299,204 @@
           ]
         }
       ]
+    },
+    {
+      "prototype": "y-factory-8",
+      "method": "Shared neutral left body, independent material/light tints, paired projected cutouts, optional opening glow and replaceable right assembly.",
+      "frame_count": 16,
+      "scale": 0.5,
+      "animation_speed": 1,
+      "original": {
+        "path": "graphics/entity/fab-equip-sheet.png",
+        "sha256": "02d618c8371db616189d813f2e767402603957f18d2b9e4d12bab2f15928b717",
+        "dimensions": [
+          2048,
+          128
+        ]
+      },
+      "source": {
+        "path": "docs/artwork/ai-redraw-0.5.1/fabrik-equip-icon-source.png",
+        "sha256": "2d8bc04516e003fdcdd4bef01ffc18588f964dcbcc8f61eff9bb843d7972ffb7",
+        "dimensions": [
+          1254,
+          1254
+        ]
+      },
+      "outputs": [
+        {
+          "path": "graphics/entity/factory-equip-right.png",
+          "sha256": "bae1b3f2018d920ee9bc250f708d976ec1db821d084df03cf23f306c48ad03f3",
+          "dimensions": [
+            92,
+            216
+          ]
+        },
+        {
+          "path": "graphics/entity/fab-equip-shadow.png",
+          "sha256": "1ab2a9c3128d9fb0e6ada954e4d291ca23a29760ba2b5824418fbb48a4d015db",
+          "dimensions": [
+            256,
+            256
+          ]
+        }
+      ]
+    },
+    {
+      "prototype": "y-factory-9",
+      "method": "Shared neutral left body, independent material/light tints, paired projected cutouts, optional opening glow and replaceable right assembly.",
+      "frame_count": 16,
+      "scale": 0.5,
+      "animation_speed": 0.2,
+      "original": {
+        "path": "graphics/entity/fab-comp-sheet.png",
+        "sha256": "db636c3f7688e6866ff298c5fee2596245db288e1a1f432deb1a26dac30df954",
+        "dimensions": [
+          2048,
+          128
+        ]
+      },
+      "source": {
+        "path": "docs/artwork/ai-redraw-0.5.1/fabrik-comp-icon-source.png",
+        "sha256": "30451c194bda7e3b95c4aa59175833507d11a22253116435f2ea6d56323a7b75",
+        "dimensions": [
+          1254,
+          1254
+        ]
+      },
+      "outputs": [
+        {
+          "path": "graphics/entity/factory-comp-right.png",
+          "sha256": "32fb12d048eec1baf0f1b640472c1958e6df483ec87072457879d096326f5157",
+          "dimensions": [
+            1472,
+            256
+          ]
+        },
+        {
+          "path": "graphics/entity/fab-comp-shadow.png",
+          "sha256": "b892e8004be42af7a50fb03064cbc3e3283e9f6689d6c9d226483d15d2827c2a",
+          "dimensions": [
+            4096,
+            256
+          ]
+        }
+      ]
     }
-  ]
+  ],
+  "shared_factory_module": {
+    "builder": "docs/tools/build_shared_factories.py",
+    "sources": [
+      {
+        "path": "docs/artwork/ai-redraw-0.5.1/fabrik-equip-icon-source.png",
+        "sha256": "2d8bc04516e003fdcdd4bef01ffc18588f964dcbcc8f61eff9bb843d7972ffb7",
+        "dimensions": [
+          1254,
+          1254
+        ]
+      },
+      {
+        "path": "docs/artwork/ai-redraw-0.5.1/fabrik-trucks-icon-source.png",
+        "sha256": "c0561acec92e8085bce46e51265eb8493e1595a28a2827a6aebecbd283d33d7c",
+        "dimensions": [
+          1254,
+          1254
+        ]
+      }
+    ],
+    "palettes": {
+      "path": "docs/data/factory-palettes.json",
+      "sha256": "ff98cae41765f09337b536dba680faf09e40f5895b1dda57bd11e363f00de09c"
+    },
+    "note": "Four variants share one neutral left body; corrected vehicle drum reused. Component right-side production animation retains original pixels pending its separate redraw. Opening glow independently configurable for any variant.",
+    "outputs": [
+      {
+        "path": "graphics/entity/factory-left-base.png",
+        "sha256": "f99b7190fb4e8cfb435dac851b2a082849f2e188547539442772ccf0f01f491a",
+        "dimensions": [
+          110,
+          216
+        ]
+      },
+      {
+        "path": "graphics/entity/factory-left-front-cutouts.png",
+        "sha256": "d3579a3d90be45cf53ac3c3fddfabff60e4a48b87cb3487a60f5d23f69a44432",
+        "dimensions": [
+          1072,
+          65
+        ]
+      },
+      {
+        "path": "graphics/entity/factory-left-front-lights.png",
+        "sha256": "90712558b73fb2cb01dcd468e21a63df8a2451ddcd599f5fb36c2ef545687027",
+        "dimensions": [
+          1072,
+          65
+        ]
+      },
+      {
+        "path": "graphics/entity/factory-left-panels.png",
+        "sha256": "98c804e2b210bad065d9e063592a738bb88bf87b6bc22047d7c6ee222cfb0d61",
+        "dimensions": [
+          110,
+          216
+        ]
+      },
+      {
+        "path": "graphics/entity/factory-left-rear-cutouts.png",
+        "sha256": "e77d2e76f6e83b728f525329c394e09715cc9407aa730e4e895ca9949acf9453",
+        "dimensions": [
+          1024,
+          55
+        ]
+      },
+      {
+        "path": "graphics/entity/factory-left-rear-lights.png",
+        "sha256": "d2332a9fb10dfefff3bd98e9e0e76fc5d46e686c33f6ede513c1c9d436acc39e",
+        "dimensions": [
+          1024,
+          55
+        ]
+      },
+      {
+        "path": "graphics/entity/factory-left-rings.png",
+        "sha256": "861afaca4d4337ee2352955dfeefe8dccece6a2151747e7ab106db673c344c48",
+        "dimensions": [
+          110,
+          216
+        ]
+      },
+      {
+        "path": "graphics/entity/factory-left-trim.png",
+        "sha256": "d588d0358c4805855440fd3e7bec8ff35306673e828cfa0403f36f450f036788",
+        "dimensions": [
+          110,
+          216
+        ]
+      },
+      {
+        "path": "graphics/entity/factory-left-upper-cutouts.png",
+        "sha256": "52598c7beecf58aaff9092fd11562911451edcb8484d2ae389582c62ef708b22",
+        "dimensions": [
+          864,
+          48
+        ]
+      },
+      {
+        "path": "graphics/entity/factory-left-upper-lights.png",
+        "sha256": "e39ed8a35fb4833a2bb0bdc809abe64f00bd564b557872faaa4546057393b358",
+        "dimensions": [
+          864,
+          48
+        ]
+      },
+      {
+        "path": "graphics/entity/factory-left-opening-glow.png",
+        "sha256": "793f1479b9027cdfb88173103a6812d6d3c8fb27c862ca52be43eee6341e08f5",
+        "dimensions": [
+          864,
+          110
+        ]
+      }
+    ]
+  }
 }
