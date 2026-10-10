@@ -865,7 +865,9 @@
           "reviewed": "First frame in each of8 direction rows; front direction4 also supplied separately."
         }
       ],
-      "reference_review": "Assigned character sheet gives material/context; original open-frame icon remains silhouette authority. Related parent neron_u3 belongs to different armor. Both parents checked; no equivalent replacement selected; ownership stays pending."
+      "reference_review": "Assigned character sheet gives material/context; original open-frame icon remains silhouette authority. Related parent neron_u3 belongs to different armor. Both parents checked; no equivalent replacement selected; ownership stays pending.",
+      "removed": "Parent suit consolidation; no active consumer remains. Owner requested removal of now-unused icon and source.",
+      "last_present_commit": "8f5a80bb1ee78fb29073e7eebd57d36dd6ee68b4"
     },
     {
       "label": "PFW crafting tab",

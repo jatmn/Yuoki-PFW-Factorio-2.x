@@ -124,6 +124,8 @@ mining_with_hands =
 
 ]=]
 
+-- Parent owner: Yuoki yi_armor_gray and its existing character animation.
+--[=[
 local playeranimations_y2 = {
 	idle =
 	{
@@ -248,3 +250,5 @@ mining_with_hands =
 	}
 })
 
+
+]=]

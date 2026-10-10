@@ -197,11 +197,31 @@
           "path": "prototypes/uo_fab8.lua"
         }
       ]
+    },
+    {
+      "old": "y-cyb-9u",
+      "new": "yi_armor_gray",
+      "owner": "Yuoki",
+      "declarations": [
+        {
+          "type": "armor",
+          "path": "prototypes/uo_fab3.lua"
+        }
+      ]
+    },
+    {
+      "old": "y_armor_grid",
+      "new": "y_armor_grid_a",
+      "owner": "Yuoki",
+      "declarations": [
+        {
+          "type": "equipment-grid",
+          "path": "prototypes/uo_fab3.lua"
+        }
+      ]
     }
   ],
-  "pending": [
-    "y-cyb-9u"
-  ],
+  "pending": [],
   "recipe_names": {
     "y-fab1-recipe": "y-factory-1",
     "y-fab1a-recipe": "y-mun-0",
@@ -228,7 +248,6 @@
     "y-fab3g-recipe": "y-cyb-6",
     "y-fab3h-recipe": "y-cyb-7",
     "y-fab3i-recipe": "y-cyb-8",
-    "y-fab3k-recipe": "y-cyb-9",
     "y-fab5-recipe": "y-factory-5",
     "y-fab5a-recipe": "y-veh-0",
     "y-fab5b-recipe": "y-veh-1",
@@ -251,5 +270,9 @@
     "y-zproduct-6-recipe": "y-medic",
     "y-zproduct-7-recipe": "y-zielfern",
     "y-zproduct-8-recipe": "y-zproduct-8"
-  }
+  },
+  "removed_recipes": [
+    "y-fab3k-recipe",
+    "y-fab3ix_y9-recipe"
+  ]
 }

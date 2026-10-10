@@ -2,16 +2,19 @@
 Version: 0.5.1
 Date: 2026-10-09
   Changes:
+    - Export one Standard YI Work & Protection Suit for one Katalex, four Neotix and one Trader Sign; use the parent suit icon with the generated export arrow.
+    - Remove SWE-W21-Fxxt packaged-item manufacture and its disabled armor conversion. Preserve obsolete item, armor, grid and animation definitions in comments.
     - Keep the unused legacy bare-hand mining animation helper commented for future reference.
     - Reuse Engines' Trade Node and Yuoki's minigun, energy ammunition, mobile generator, movement equipment and first walker.
     - Allow the Engines Trade Node to process PFW trades while retaining its existing categories and operating statistics.
-    - Keep redundant PFW definitions commented with parent ownership references; retain all distinct recipes and quantities.
+    - Keep redundant PFW definitions commented with parent ownership references; retain remaining distinct recipes and quantities except the explicitly replaced packaged-armor route.
     - Reuse Yuoki's Lasergun for both old energy guns, CF-35 for Reactive/Shielded Armor, CF-35 for CF-56, and KT-60 for KT-34; preserve all export quantities and payouts for later balancing.
     - Restore Combat Armor Mk.1 manufacture: two refined N4 and four iron plates produce two components in one second in the War Material Factory.
     - Disable only the PFW energy cell's wearable-battery function; use Yuoki's existing battery for wearable storage. Preserve the cell's fuel value, all recipes, commented equipment code and artwork.
     - Return an empty energy cell after fuel use when the burner has a spent-fuel output slot; otherwise burn normally and discard the container. Burner definitions remain unchanged.
-    - Keep the second-armor mapping pending; preserve unique original artwork and other disabled content.
+    - Reuse Yuoki's Standard YI Work & Protection Suit for the second armor; keep the parent recipe and statistics unchanged.
   Graphics:
+    - Remove the unused SWE-W21-Fxxt armor icon and its AI source image after parent-suit consolidation.
     - Remove seven superseded factory animation sheets; artwork tools read original shadow sources from Git history. Keep otherwise-unused artwork.
     - Include the original Mod Portal thumbnail in the package for the in-game mod browser.
     - Replace 41 confirmed duplicate artwork files with references to Yuoki Industries or Yuoki Engines, including the shared-factory icon and animation.

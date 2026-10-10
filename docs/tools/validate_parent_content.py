@@ -64,7 +64,16 @@ for entry in mapping['mappings']:
         assert any(re.search(r'name\s*=\s*"' + re.escape(old) + '"', block)
                    for block in inactive), old
 
-recipes = json.loads((ROOT / 'docs/data/recipes.json').read_text())
+recipes = [r for r in json.loads((ROOT / 'docs/data/recipes.json').read_text())
+           if r['name'] not in mapping['removed_recipes']]
+assert mapping['removed_recipes'] == ['y-fab3k-recipe', 'y-fab3ix_y9-recipe']
+del expected['recipe']['y-fab3k-recipe']
+del expected['item']['y-cyb-9']
+expected['recipe']['y-rfab3k-recipe']['ingredients'] = [
+    {'type': 'item', 'name': 'yi_armor_gray', 'amount': 1}]
+for filename in ['ir_fab3.lua', 'uo_fab3.lua']:
+    source = (ROOT / 'prototypes' / filename).read_text()
+    assert not re.search(r'type\s*=\s*"recipe",\s*name\s*=\s*"(?:y-cyb-9|y-fab3ix_y9-recipe)"', source)
 for old in recipes:
     recipe = expected['recipe'][old['name']]
     for field in ['ingredients', 'results']:
@@ -83,7 +92,7 @@ expected['recipe']['y-zproduct-2-recipe'] = {
 expected['assembling-machine']['ye_trade_node']['crafting_categories'].append('yrcat-retrade')
 animations = expected['character']['character']['animations']
 expected['character']['character']['animations'] = [
-    a for a in animations if a.get('armors') != ['y-cyb-8u']
+    a for a in animations if a.get('armors') not in [['y-cyb-8u'], ['y-cyb-9u']]
 ]
 # War Material's existing six-item targeting recipe must fit its intended factory.
 assert len(expected['recipe']['y-fab8d-recipe']['ingredients']) == 6
@@ -131,7 +140,12 @@ for entry in redraws.values():
         (entry['path'], entry['sha256'], entry['dimensions']),
         (entry['source_path'], entry['source_sha256'], entry['source_dimensions']),
     ]:
-        content = (ROOT / path).read_bytes()
+        if entry.get('removed'):
+            assert not (ROOT / path).exists(), path
+            content = subprocess.check_output(['git', '-C', str(ROOT), 'show',
+                                               entry['last_present_commit'] + ':' + path])
+        else:
+            content = (ROOT / path).read_bytes()
         assert hashlib.sha256(content).hexdigest() == digest, path
         assert list(struct.unpack('>II', content[16:24])) == dimensions, path
     expected_size = 320 if entry['path'] in {
@@ -359,7 +373,7 @@ for asset in assets:
     else:
         assert hashlib.sha256((ROOT / asset['path']).read_bytes()).hexdigest() == asset['sha256'], asset['path']
 assert len(replacements) == 41
-assert len(list((ROOT / 'graphics').rglob('*.png'))) == len(assets) - len(replacements) - len(arrow_variants) - len(REMOVED_SHEETS) + len({layer['filename'] for layers in all_layer_sets.values() for layer in layers})
+assert len(list((ROOT / 'graphics').rglob('*.png'))) == len(assets) - len(replacements) - len(arrow_variants) - len(REMOVED_SHEETS) - sum(bool(e.get("removed")) for e in redraws.values()) + len({layer['filename'] for layers in all_layer_sets.values() for layer in layers})
 
 def check_layouts(value):
     if isinstance(value, list):
@@ -393,9 +407,9 @@ for i, line in enumerate(lines):
         assert re.fullmatch(r'Date: [0-9]{4}-[0-9]{2}-[0-9]{2}', lines[i+1])
 trades = [r for r in recipes if 'yrcat-retrade' in after['recipe'][mapping['recipe_names'].get(r['name'], r['name'])].get('categories', [])]
 assert len(trades) == 56
-print(f'PASS: {removed} redundant declarations inactive; 105 recipe routes and quantities retained, Mk.1 constructor restored; '
+print(f'PASS: {removed} redundant declarations inactive; 104 original routes retained (one armor export retargeted), Mk.1 constructor restored; '
       '56 trades supported; pending mappings/parent behavior preserved; 41 parent assets verified, '
-      '34 AI artwork/source images verified, 49 arrow variants replaced, 7 superseded sheets removed, 75 original graphics unchanged; '
+      '33 retained AI artwork/source pairs and one removed pair verified, 49 arrow variants replaced, 7 superseded sheets removed, 75 original graphics unchanged; '
       '0.5.1 changelog and no migrations verified.')
 
 if args.locale_dir:
@@ -405,7 +419,7 @@ if args.locale_dir:
                  for kind in ['recipe', 'item', 'entity', 'equipment', 'fluid', 'item-group']}
     recipe_names = {mapping['recipe_names'].get(r['name'], r['name']) for r in recipes}
     recipe_names.add('y-combat-armor-1')
-    assert len(recipe_names) == 106
+    assert len(recipe_names) == 105
     assert recipe_names <= localized['recipe'].keys(), sorted(recipe_names - localized['recipe'].keys())
     for name in mapping['recipe_names'].values():
         assert localized['recipe'][name] == localized['item'][name], name
@@ -416,4 +430,4 @@ if args.locale_dir:
             declared.update(re.findall(r'type\s*=\s*"' + kind + r'",\s*name\s*=\s*"([^"\n]+)"', source.read_text()))
         active = declared & after.get(kind, {}).keys()
         assert active <= localized[locale_kind].keys(), (kind, sorted(active - localized[locale_kind].keys()))
-    print('PASS: engine-resolved names for all 106 PFW recipes and retained items/entities/equipment; 48 primary recipe names match their products.')
+    print('PASS: engine-resolved names for all 105 PFW recipes and retained items/entities/equipment; 47 primary recipe names match their products.')

@@ -1,4 +1,6 @@
--- First walker now belongs to Yuoki; the second armor mapping remains pending.
+-- All PFW wearable definitions are preserved inactive; Yuoki owns the active suits.
+--[==[
+-- Both wearable armor definitions now belong to Yuoki; retain legacy code inactive.
 data:extend(
 {
 
@@ -13,6 +15,8 @@ data:extend(
 	},
 	]=]
 
+	-- Parent owner: Yuoki, equipment-grid y_armor_grid_a. Preserved inactive PFW definition.
+	--[=[
 	{
 		type = "equipment-grid",
 		name = "y_armor_grid",
@@ -20,11 +24,11 @@ data:extend(
 		height = 14,
 		equipment_categories = {"armor"},
 	},
+	]=]
 	
 	
 	-- Parent armor: Yuoki yi_walker_a. This distinct conversion remains inactive.
 	--{ type = "recipe", name = "y-fab3ix_y8-recipe", energy_required = 5, ingredients = {{"y-cyb-8",1},{"y-fame",1}, }, result = "y-cyb-8u", enabled = "true", result_count = 1, order="sm-8", subgroup = "yi-basic", },			
-	--{ type = "recipe", name = "y-fab3ix_y9-recipe", energy_required = 5, ingredients = {{"y-cyb-9",1},{"y-fame",3}, }, result = "y-cyb-9u", enabled = "true", result_count = 1, order="sm-9", subgroup = "yi-basic", },		
 	
 	-- Parent owner: Yuoki, armor yi_walker_a. Preserved inactive PFW definition.
 	--[=[
@@ -47,10 +51,12 @@ data:extend(
 	},
 	]=]
 
+	-- Parent owner: Yuoki, armor yi_armor_gray. Preserved inactive PFW definition.
+	--[=[
 	{
 		type = "armor",
 		name = "y-cyb-9u",
-		icon = "__yi_pfw__/graphics/fab3/neron_u5_32.png", icon_size = 64,
+		icon = "__Yuoki__/graphics/armor/mcb_icon.png", icon_size = 64,
 		resistances = 
 		{
 			{	type = "physical", decrease = 14, percent = 75 },
@@ -63,6 +69,9 @@ data:extend(
 		stack_size = 1,
 		equipment_grid = "y_armor_grid",
 	}
+	]=]
 	
 	
 })
+
+]==]
