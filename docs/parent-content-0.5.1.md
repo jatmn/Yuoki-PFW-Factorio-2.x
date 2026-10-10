@@ -72,7 +72,7 @@ The subsequent [manual progression/API audit](incomplete-content.md#051-audit-20
 ## Explicitly pending
 
 - Balance the retained gun/shield export contracts and cyborg costs after parent consolidation.
-- The second armor `y-cyb-9u` and its animation/grid: no unambiguous successor selected.
+- Second armor `y-cyb-9u`: the owner identified its appearance as Yuoki Standard YI Work & Protection Suit (`yi_armor_gray`), confirmed by the parent character-animation registration using the same `armor2_*` sheets. Parent manufacture already exists. Consolidation remains to be implemented; the legacy PFW 14×14 grid/resistances differ from the parent 9×9 suit. See [the corrected comparison](incomplete-content.md#what-the-six-missing-constructors-mean).
 - Any other unavailable content, balancing and further disabled-content restoration; the seven reviewed input chains are addressed above.
 - Retained-artwork upscaling and any still-unconfirmed duplicates. The follow-up maps/removes 39 confirmed duplicates and retains 167 other images, including unused images; four now use the accepted AI redraws, and the arrow pass removes another 49 variants.
 - All migrations until a formal release. Reload validation concerns a save created with 0.5.1 itself.
