@@ -22,6 +22,8 @@ Date: 9. 10. 2026
     - Keep the ammunition factory's distinct body and paired front/rear drum animation, with separate moving parts and shadow.
     - Rebuild the cyborg factory with fixed vat shells and a separate green-to-pink fill/drain animation.
     - Preserve the original 16-frame animation cycles, including the slower cyborg and component factory speeds.
+  Bugfixes:
+    - Allow the War Material Factory to craft the six-ingredient Advanced Targeting Device recipe.
   Compatibility:
     - Keep the two pending PFW energy guns compatible with Yuoki's energy ammunition.
     - Keep migrations deferred until a formal release; validate this development version with fresh games.

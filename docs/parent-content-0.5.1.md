@@ -30,6 +30,8 @@ All **105 active recipe routes** remain. Exactly five recipes change references:
 
 No active PFW recipe was found equivalent to a parent recipe, so none was suppressed. The ten-node construction yield remains an intentional retained PFW contract for this pass; it is much cheaper per node than Engines' own constructor. Quantities, payouts and recipe times were not rebalanced. Parent successor statistics and acquisition costs can change the economy and warrant later balancing.
 
+The War Material Factory now accepts six item ingredients, allowing its existing Advanced Targeting Device recipe (`y-fab8d-recipe`) to be selected. Recipe ingredients, quantities and outputs remain unchanged. A Factorio 2.1.21 runtime check confirmed the old limit rejected that recipe, then all four War Material recipes crafted once with exact outputs after the correction. The test supplied ingredients and electricity directly; it does not establish natural ingredient availability.
+
 All 35 previously disabled recipes remain inactive. The movement recipe `y-fab8k-recipe` is annotated as having the same material transformation as parent `yi_equip_legs_a`, with distinct time/category access. Its original text remains intact.
 
 ## Explicitly pending
@@ -37,7 +39,7 @@ All 35 previously disabled recipes remain inactive. The movement recipe `y-fab8k
 - Laser/plasma gun identity collapse and the four shield-to-parent tier mappings: deferred by owner choice. Their existing export contracts remain distinct.
 - The second armor `y-cyb-9u` and its animation/grid: no unambiguous successor selected.
 - Filled/empty PFW energy cells and wearable battery separation: keep fuel, refill and export behavior intact.
-- Previously unavailable inputs/recipes, factory-8 ingredient capacity, balancing and disabled-content restoration.
+- Previously unavailable inputs/recipes, balancing and disabled-content restoration.
 - Retained-artwork upscaling and any still-unconfirmed duplicates. The follow-up maps/removes 39 confirmed duplicates and retains 167 other images, including unused images; four now use the accepted AI redraws, and the arrow pass removes another 49 variants.
 - All migrations until a formal release. Reload validation concerns a save created with 0.5.1 itself.
 
@@ -47,7 +49,7 @@ Tested with Factorio **2.1.21 Linux headless**, Yuoki **1.3.0** at `50ea38b9703a
 
 The official [crafting-machine schema](https://lua-api.factorio.com/latest/prototypes/AssemblingMachinePrototype.html) was checked for category and result handling, and the matching 2.1.21 runtime schema for equipment insertion/removal and character ammunition checks.
 
-- Full before/after prototype comparison: only the recorded suppressions, five recipe references, two ammunition categories, one removed PFW character-animation entry, Trade Node category addition and subsequent approved artwork substitutions differ. All unrelated parent prototypes and pending content identities/statistics remain unchanged.
+- Full before/after prototype comparison: only the recorded suppressions, five recipe references, two ammunition categories, one removed PFW character-animation entry, Trade Node category addition, the War Material Factory ingredient limit (five to six), and subsequent approved artwork substitutions differ. All unrelated parent prototypes and pending content identities/statistics remain unchanged.
 - Preservation: all 105 recipes and their quantities retained, all 35 historical disabled recipes still inactive, 82 remaining graphics unchanged, 34 AI artwork updates verified, 41 parent replacements and 49 arrow-variant removals verified against their manifests, all 232 original archive files intact at the immutable import commit.
 - Live crafting: all 56 PFW trades completed in Engines nodes with exact output quantities, including four-product exports and energy-cell exchanges. The parent's existing `y_exchange_b1` trade also completed.
 - Live construction/production: PFW's constructor produced ten parent nodes; the cyborg recipe consumed the parent minigun and produced its expected result. Tests supplied ingredients and power directly; they do not prove natural progression is complete.

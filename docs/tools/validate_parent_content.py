@@ -55,6 +55,10 @@ animations = expected['character']['character']['animations']
 expected['character']['character']['animations'] = [
     a for a in animations if a.get('armors') != ['y-cyb-8u']
 ]
+# War Material's existing six-item targeting recipe must fit its intended factory.
+assert len(expected['recipe']['y-fab8d-recipe']['ingredients']) == 6
+assert expected['assembling-machine']['y-factory-8']['ingredient_count'] == 5
+expected['assembling-machine']['y-factory-8']['ingredient_count'] = 6
 asset_map = json.loads((ROOT / 'docs/data/asset-reuse-0.5.1.json').read_text())
 replacements = {a['pfw_path']: a for a in asset_map['replacements']}
 paths = {'__yi_pfw__/' + a['pfw_path']: a for a in replacements.values()}

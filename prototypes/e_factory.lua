@@ -211,7 +211,7 @@ data:extend(
 		crafting_categories = {"yrcat-material"}, crafting_speed = 1.0,
 		energy_source = {type = "electric", usage_priority = "secondary-input", emissions_per_minute = { pollution = 0.04 / 2.5 * 3000 } },
 		energy_usage = "3000kW",
-		ingredient_count = 5,		
+		ingredient_count = 6,
 		order="a",
 		subgroup = "yi-material",
 	},	
