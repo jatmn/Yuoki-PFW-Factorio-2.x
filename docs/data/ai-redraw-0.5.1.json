@@ -1199,6 +1199,55 @@
           ]
         }
       ]
+    },
+    {
+      "prototype": "y-factory-3",
+      "method": "Fixed accepted AI machine and vat shells; separate AI-textured liquid preserves original fill/green-to-pink/drain sequence and speed0.2. Original shadow retained; drained wall ports reconstructed. See docs/tools/build_bio_animation.py.",
+      "frame_count": 16,
+      "animation_speed": 0.2,
+      "scale": 0.5,
+      "original": {
+        "path": "graphics/entity/fab-bio-sheet.png",
+        "sha256": "819865577abc0166462de54c061c45aa46b3c09fe946ec95e27d8611e0abc83f",
+        "dimensions": [
+          2048,
+          128
+        ]
+      },
+      "source": {
+        "path": "docs/artwork/ai-redraw-0.5.1/fabrik-bio-icon-source.png",
+        "sha256": "22fe060731ad30aca53984c321f0007b30d85ee0fde5a36602fc494e8b8b7ad8",
+        "dimensions": [
+          1254,
+          1254
+        ]
+      },
+      "outputs": [
+        {
+          "path": "graphics/entity/fab-bio-base.png",
+          "sha256": "36f1635d1d803e770b60e6b51c27cb612b00a7c27b2204d49f8386ed3f6718f1",
+          "dimensions": [
+            256,
+            256
+          ]
+        },
+        {
+          "path": "graphics/entity/fab-bio-liquid.png",
+          "sha256": "aca14112ec44c53ea1c4cb22bae88851c7dd95b6a7ceda45526b12c477d8103f",
+          "dimensions": [
+            2704,
+            61
+          ]
+        },
+        {
+          "path": "graphics/entity/fab-bio-shadow.png",
+          "sha256": "3c1e39a95e0a4e2723ca18dc68801a8003c190ac96ef856479d8ea2d8b3b8a57",
+          "dimensions": [
+            256,
+            256
+          ]
+        }
+      ]
     }
   ]
 }

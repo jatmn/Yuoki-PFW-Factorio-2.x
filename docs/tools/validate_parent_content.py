@@ -189,9 +189,25 @@ for name, width, height, shift in [
         layer['draw_as_shadow'] = True
     weapons_layers.append(layer)
 expected['assembling-machine']['y-factory-2']['graphics_set']['animation'] = {'layers': weapons_layers}
+bio_layers = []
+for name, width, height, shift in [
+    ('base', 256, 256, [0.5, 0]),
+    ('liquid', 169, 61, [0.0078125, 0.2734375]),
+    ('shadow', 256, 256, [0.5, 0]),
+]:
+    layer = dict(filename='__yi_pfw__/graphics/entity/fab-bio-' + name + '.png',
+                 width=width, height=height, scale=0.5, shift=shift, animation_speed=0.2)
+    if name == 'liquid':
+        layer.update(frame_count=16, line_length=16)
+    else:
+        layer.update(frame_count=1, repeat_count=16)
+    if name == 'shadow':
+        layer['draw_as_shadow'] = True
+    bio_layers.append(layer)
+expected['assembling-machine']['y-factory-3']['graphics_set']['animation'] = {'layers': bio_layers}
 layered_entries = {e['prototype']: e for e in redraw_map['layered_animations']}
-assert set(layered_entries) == {'y-factory-1', 'y-factory-2'}
-for prototype, layers in [('y-factory-1', ammo_layers), ('y-factory-2', weapons_layers)]:
+assert set(layered_entries) == {'y-factory-1', 'y-factory-2', 'y-factory-3'}
+for prototype, layers in [('y-factory-1', ammo_layers), ('y-factory-2', weapons_layers), ('y-factory-3', bio_layers)]:
     layered = layered_entries[prototype]
     assert {e['path'] for e in layered['outputs']} == {
         layer['filename'].removeprefix('__yi_pfw__/') for layer in layers
@@ -256,7 +272,7 @@ for asset in assets:
     else:
         assert hashlib.sha256((ROOT / asset['path']).read_bytes()).hexdigest() == asset['sha256'], asset['path']
 assert len(replacements) == 41
-assert len(list((ROOT / 'graphics').rglob('*.png'))) == len(assets) - len(replacements) - len(arrow_variants) + len(ammo_layers) + len(weapons_layers)
+assert len(list((ROOT / 'graphics').rglob('*.png'))) == len(assets) - len(replacements) - len(arrow_variants) + len(ammo_layers) + len(weapons_layers) + len(bio_layers)
 
 def check_layouts(value):
     if isinstance(value, list):

@@ -73,10 +73,14 @@ data:extend(
 		collision_box = {{-1.4, -1.4}, {1.4, 1.4}},
 		selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
 		fast_replaceable_group = "assembling-machine",
-		graphics_set = { animation = {
-			filename = "__yi_pfw__/graphics/entity/fab-bio-sheet.png",			
-			width = 128, height = 128, shift = {0.5, 0}, frame_count = 16, line_length = 16, animation_speed=0.2;
-		} },
+		graphics_set = { animation = { layers = {
+			{ filename = "__yi_pfw__/graphics/entity/fab-bio-base.png",
+				width = 256, height = 256, scale = 0.5, shift = {0.5, 0}, frame_count = 1, repeat_count = 16, animation_speed = 0.2 },
+			{ filename = "__yi_pfw__/graphics/entity/fab-bio-liquid.png",
+				width = 169, height = 61, scale = 0.5, shift = {0.0078125, 0.2734375}, frame_count = 16, line_length = 16, animation_speed = 0.2 },
+			{ filename = "__yi_pfw__/graphics/entity/fab-bio-shadow.png",
+				width = 256, height = 256, scale = 0.5, shift = {0.5, 0}, frame_count = 1, repeat_count = 16, animation_speed = 0.2, draw_as_shadow = true },
+		} } },
 		crafting_categories = {"yrcat-cyborgs"}, crafting_speed = 1.0,
 		energy_source = {type = "electric", usage_priority = "secondary-input", emissions_per_minute = { pollution = 0.04 / 2.5 * 3000 } },
 		energy_usage = "3000kW",

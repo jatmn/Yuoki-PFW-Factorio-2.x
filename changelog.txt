@@ -20,6 +20,7 @@ Date: 9. 10. 2026
     - Reuse Engines' matching east/west factory animation; retain its original display size and the distinct north/south artwork.
     - Rebuild the ammunition-factory animation with a fixed AI-redrawn body, separate moving parts and shadow; preserve its 16-frame cycle.
     - Apply the accepted layered animation method to the weapons factory, with paired green cutouts and a stationary workbench.
+    - Rebuild the cyborg-factory vat animation with fixed shells and separate liquid, retaining its green-to-pink fill/drain cycle and slower speed.
   Compatibility:
     - Keep the two pending PFW energy guns compatible with Yuoki's energy ammunition.
     - Keep migrations deferred until a formal release; validate this development version with fresh games.
