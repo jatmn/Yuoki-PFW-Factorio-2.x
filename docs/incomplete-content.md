@@ -1,6 +1,6 @@
 # Incomplete and overlapping content
 
-For the current 0.5.1 state, see the [suit-export update](parent-content-0.5.1.md#standard-suit-export) and [restored wealth constructors](parent-content-0.5.1.md#restored-wealth-machine-construction). There are now 107 active recipe routes. The three remaining empty factories have since been fully disabled, with their source preserved in comments and artwork retained for the Engines follow-up. The audit below records the preceding state; Nagshell and Be Rich construction have since been restored at their original costs/stats.
+For the current 0.5.1 state, see the [suit-export update](parent-content-0.5.1.md#standard-suit-export) and [restored wealth constructors](parent-content-0.5.1.md#restored-wealth-machine-construction). There are now 106 active recipe routes after the approved [direct Walker export](parent-content-0.5.1.md#walker-export) replaces MKE-C3D-Sirus manufacture. The three remaining empty factories have since been fully disabled, with their source preserved in comments and artwork retained for the Engines follow-up. The audit below records the preceding state; Nagshell and Be Rich construction have since been restored at their original costs/stats.
 
 The later [content ownership evaluation](content-evaluation.md) compares all active/commented declarations against freshly pinned parent sources and records replacement decisions. The inventory below describes the original release and initial discovery.
 

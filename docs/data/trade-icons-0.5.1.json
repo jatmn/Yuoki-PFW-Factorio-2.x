@@ -204,7 +204,7 @@
     },
     {
       "recipe": "y-rfab3i-recipe",
-      "source": "y-cyb-8",
+      "source": "yi_walker_a",
       "direction": "down",
       "old_icon": "__yi_pfw__/graphics/package_common_retrade.png"
     },

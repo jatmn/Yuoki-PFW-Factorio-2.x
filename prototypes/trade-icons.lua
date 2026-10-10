@@ -36,7 +36,7 @@ local trades = {
   {"y-rfab3f-recipe", "y-cyb-5", "down"},
   {"y-rfab3g-recipe", "y-cyb-6", "down"},
   {"y-rfab3h-recipe", "y-cyb-7", "down"},
-  {"y-rfab3i-recipe", "y-cyb-8", "down"},
+  {"y-rfab3i-recipe", "yi_walker_a", "down"},
   {"y-rfab3k-recipe", "yi_armor_gray", "down"},
   {"y-rfab5d-recipe", "y-veh-3", "down"},
   {"y-rfab5e-recipe", "y-veh-4", "down"},

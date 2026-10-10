@@ -247,7 +247,6 @@
     "y-fab3f-recipe": "y-cyb-5",
     "y-fab3g-recipe": "y-cyb-6",
     "y-fab3h-recipe": "y-cyb-7",
-    "y-fab3i-recipe": "y-cyb-8",
     "y-fab5-recipe": "y-factory-5",
     "y-fab5a-recipe": "y-veh-0",
     "y-fab5b-recipe": "y-veh-1",
@@ -273,6 +272,7 @@
   },
   "removed_recipes": [
     "y-fab3k-recipe",
-    "y-fab3ix_y9-recipe"
+    "y-fab3ix_y9-recipe",
+    "y-fab3i-recipe"
   ]
 }

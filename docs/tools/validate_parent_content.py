@@ -66,9 +66,19 @@ for entry in mapping['mappings']:
 
 recipes = [r for r in json.loads((ROOT / 'docs/data/recipes.json').read_text())
            if r['name'] not in mapping['removed_recipes']]
-assert mapping['removed_recipes'] == ['y-fab3k-recipe', 'y-fab3ix_y9-recipe']
+assert mapping['removed_recipes'] == ['y-fab3k-recipe', 'y-fab3ix_y9-recipe', 'y-fab3i-recipe']
 del expected['recipe']['y-fab3k-recipe']
 del expected['item']['y-cyb-9']
+del expected['recipe']['y-fab3i-recipe']
+del expected['item']['y-cyb-8']
+expected['recipe']['y-rfab3i-recipe']['ingredients'] = [
+    {'type': 'item', 'name': 'yi_walker_a', 'amount': 1}]
+expected['recipe']['y-rfab3i-recipe']['results'] = [
+    {'type': 'item', 'name': 'y-stuff-6', 'amount': 100},
+    {'type': 'item', 'name': 'y-stuff-5', 'amount': 250},
+    {'type': 'item', 'name': 'ypfw_trader_sign', 'amount': 5000}]
+assert not re.search(r'type\s*=\s*"(?:recipe|item)",\s*name\s*=\s*"y-cyb-8"',
+                     (ROOT / 'prototypes/ir_fab3.lua').read_text())
 expected['recipe']['y-rfab3k-recipe']['ingredients'] = [
     {'type': 'item', 'name': 'yi_armor_gray', 'amount': 1}]
 for filename in ['ir_fab3.lua', 'uo_fab3.lua']:
@@ -449,7 +459,7 @@ for i, line in enumerate(lines):
         assert re.fullmatch(r'Date: [0-9]{4}-[0-9]{2}-[0-9]{2}', lines[i+1])
 trades = [r for r in recipes if 'yrcat-retrade' in after['recipe'][mapping['recipe_names'].get(r['name'], r['name'])].get('categories', [])]
 assert len(trades) == 56
-print(f'PASS: {removed} redundant declarations inactive; 104 original routes retained (one armor export retargeted), Mk.1 and both wealth constructors restored; '
+print(f'PASS: {removed} redundant declarations inactive; 103 original routes retained (both armor exports retargeted), Mk.1 and both wealth constructors restored; '
       '56 trades supported; pending mappings/parent behavior preserved; 41 parent assets verified, '
       '33 retained AI artwork/source pairs and one removed pair verified, 49 arrow variants replaced, 7 superseded sheets removed, 75 original graphics unchanged; '
       '0.5.1 changelog and no migrations verified.')
@@ -461,7 +471,7 @@ if args.locale_dir:
                  for kind in ['recipe', 'item', 'entity', 'equipment', 'fluid', 'item-group']}
     recipe_names = {mapping['recipe_names'].get(r['name'], r['name']) for r in recipes}
     recipe_names.update(['y-combat-armor-1', *wealth_ingredients])
-    assert len(recipe_names) == 107
+    assert len(recipe_names) == 106
     assert recipe_names <= localized['recipe'].keys(), sorted(recipe_names - localized['recipe'].keys())
     for name in [*mapping['recipe_names'].values(), *wealth_ingredients]:
         assert localized['recipe'][name] == localized['item'][name], name
@@ -472,4 +482,4 @@ if args.locale_dir:
             declared.update(re.findall(r'type\s*=\s*"' + kind + r'",\s*name\s*=\s*"([^"\n]+)"', source.read_text()))
         active = declared & after.get(kind, {}).keys()
         assert active <= localized[locale_kind].keys(), (kind, sorted(active - localized[locale_kind].keys()))
-    print('PASS: engine-resolved names for all 107 PFW recipes and retained items/entities/equipment; 49 primary recipe names match their products.')
+    print('PASS: engine-resolved names for all 106 PFW recipes and retained items/entities/equipment; 48 primary recipe names match their products.')
