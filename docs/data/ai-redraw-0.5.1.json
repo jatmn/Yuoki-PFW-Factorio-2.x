@@ -1082,7 +1082,7 @@
   "layered_animations": [
     {
       "prototype": "y-factory-1",
-      "method": "Fixed accepted AI body, rotor faces and lighting; projected moving markings, original rear trajectory and shadow; see docs/tools/build_ammo_animation.py.",
+      "method": "Fixed accepted AI body, rotor axes and lighting; projected cutouts and indicators move together, original rear trajectory and shadow; see docs/tools/build_ammo_animation.py.",
       "frame_count": 16,
       "scale": 0.5,
       "original": {
@@ -1104,7 +1104,7 @@
       "outputs": [
         {
           "path": "graphics/entity/fab-ammo-base.png",
-          "sha256": "71558f70e3f865997af2d01d68f5408aa4354e11adcdeaa98ad7499b944950f5",
+          "sha256": "b3d0d7f4b56797e9dc02e4bf80bb5cb3381977e923328dfd22fd7ad42c653b04",
           "dimensions": [
             256,
             256
@@ -1120,7 +1120,7 @@
         },
         {
           "path": "graphics/entity/fab-ammo-front.png",
-          "sha256": "4ee2cf3777854281cebfce0da4bbc8ff9be43151a3f45af3cb8d191763549577",
+          "sha256": "a421563b5beeec56aaac2200fd1d6915021ee1147c46e50ce24c54bd56b618c5",
           "dimensions": [
             704,
             41
@@ -1128,7 +1128,7 @@
         },
         {
           "path": "graphics/entity/fab-ammo-rear.png",
-          "sha256": "704d996ee1f8a5450ad59d3c2f2522118cf5f7989da6d321ec57c0c4cdf2009e",
+          "sha256": "1eb05cd268a2c0c17dd862de3794cfde4e94eb56e5b8c2c83903c8c94ec5a036",
           "dimensions": [
             704,
             32

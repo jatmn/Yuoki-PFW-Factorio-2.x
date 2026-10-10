@@ -6,7 +6,7 @@ and occlusion, and the ground shadow. No preview media is written to the repo.
 """
 import math
 from pathlib import Path
-from PIL import Image, ImageDraw
+from PIL import Image, ImageDraw, ImageFilter
 
 ROOT = Path(__file__).resolve().parents[2]
 OUT = ROOT / 'graphics/entity'
@@ -21,14 +21,18 @@ def build():
     master = Image.open(MASTER).convert('RGBA')
     old = Image.open(OUT / 'fab-ammo-sheet.png').convert('RGBA')
     clean = master.copy()
-    # Remove the fixed rear orange marker. Adjacent metal continues its rim;
-    # the original trajectory below supplies the moving marker instead.
-    clean.paste(master.crop((648, 90, 690, 143)).transpose(Image.Transpose.FLIP_LEFT_RIGHT), (602, 90))
-    # Keep the front drum's geometry and lighting stationary. Replace its two
-    # orange strips with adjacent metal before drawing projected moving strips.
-    for box in [(609, 920, 644, 991), (611, 1095, 644, 1135)]:
+    # Reconstruct continuous metal beneath the complete rear/front cutouts,
+    # not just their orange centers. Interpolate across the narrow axial strip
+    # instead of copying an offset piece of curved rim (which leaves a notch).
+    for box in [(594, 85, 651, 158), (600, 912, 650, 998), (604, 1091, 650, 1144)]:
         x0, y0, x1, y1 = box
-        clean.paste(master.crop((x1 + 2, y0, x1 + 2 + x1 - x0, y1)), (x0, y0))
+        for y in range(y0, y1):
+            left = master.getpixel((x0 - 1, y))
+            right = master.getpixel((x1, y))
+            for x in range(x0, x1):
+                t = (x - x0 + 1) / (x1 - x0 + 1)
+                clean.putpixel((x, y), tuple(round(a * (1 - t) + b * t)
+                                            for a, b in zip(left, right)))
     # Remove the four fixed upper markers by sampling neighboring metal at
     # the same projected radius. The face, hole and lighting never rotate.
     for box in [(600, 333, 642, 364), (704, 397, 739, 440),
@@ -63,7 +67,7 @@ def build():
                       fill=(255, 225, 116, 255), width=3)
         upper.paste(frame.resize((44, 35), Image.Resampling.LANCZOS), (44 * n, 0))
     upper.save(OUT / 'fab-ammo-upper.png')
-    # Front cylinder: project markings onto its curved side and fixed front
+    # Front cylinder: project cutouts with their lights onto the curved side and front
     # face. Rotating the whole shaded crop also rotates depth and bends the drum.
     front = Image.new('RGBA', (44 * FRAMES, 41))
     def point(angle, radius=1, depth=0):
@@ -75,12 +79,22 @@ def build():
         for marker, angle in enumerate([n * math.tau / FRAMES, n * math.tau / FRAMES + math.pi]):
             a, b = angle - 0.115, angle + 0.115
             depth = 60 if marker == 0 else 14
+            # The wider dark recess and its metal lip share the light's phase.
+            outer_a, outer_b = angle - 0.165, angle + 0.165
             if math.cos(angle) > 0:
+                recess = [point(outer_a, depth=depth + 5), point(outer_b, depth=depth + 5),
+                          point(outer_b), point(outer_a)]
+                draw.polygon(recess, fill=(18, 20, 24, 255))
+                draw.line(recess + recess[:1], fill=(106, 109, 115, 255), width=3)
                 draw.polygon([point(a, depth=depth), point(b, depth=depth),
                               point(b), point(a)], fill=(233, 126, 8, 255))
                 draw.line([point(a, depth=depth - 2), point(b, depth=depth - 2)], fill=(255, 223, 103, 255), width=3)
+            recess = [point(outer_a, 0.84), point(outer_b, 0.84),
+                      point(outer_b, 1.07), point(outer_a, 1.07)]
+            draw.polygon(recess, fill=(18, 20, 24, 255))
+            draw.line(recess + recess[:1], fill=(106, 109, 115, 255), width=3)
             draw.polygon([point(a, 0.90), point(b, 0.90),
-                          point(b, 1.08), point(a, 1.08)], fill=(255, 163, 15, 255))
+                          point(b, 1.02), point(a, 1.02)], fill=(255, 163, 15, 255))
             draw.line([point(a, 0.94), point(b, 0.94)], fill=(255, 225, 119, 255), width=2)
         front.paste(frame.resize((44, 41), Image.Resampling.LANCZOS), (44 * n, 0))
     front.save(OUT / 'fab-ammo-front.png')
@@ -97,7 +111,17 @@ def build():
                 (box[2] - box[0], box[3] - box[1]), Image.Resampling.LANCZOS)
             frame.paste(marker, box[:2])
             frame.putalpha(mask)
-            rear.paste(frame.resize((44, 32), Image.Resampling.LANCZOS), (44 * n, 0))
+            # The rear recess follows the same visible trajectory and occlusion
+            # as its light. Build its lip at output resolution around the mask.
+            light = frame.resize((44, 32), Image.Resampling.LANCZOS)
+            alpha = light.getchannel('A')
+            lip = Image.new('RGBA', light.size, (96, 99, 106, 255))
+            lip.putalpha(alpha.filter(ImageFilter.MaxFilter(5)))
+            recess = Image.new('RGBA', light.size, (16, 18, 22, 255))
+            recess.putalpha(alpha.filter(ImageFilter.MaxFilter(3)))
+            lip.alpha_composite(recess)
+            lip.alpha_composite(light)
+            rear.paste(lip, (44 * n, 0))
     rear.save(OUT / 'fab-ammo-rear.png')
 
 
