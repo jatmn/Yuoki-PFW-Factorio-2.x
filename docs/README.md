@@ -33,3 +33,9 @@ This directory preserves the original mod's behavior and restoration research. T
 - [Complete PNG audit](data/asset-audit.json) and [parent-asset reuse candidates](data/asset-reuse-candidates.csv).
 
 “Active” means an uncommented declaration in the supplied source, not a recipe proven reachable or working in-game. Material costs and equipment statistics describe the original source unless explicitly marked as a modern comparison.
+
+## Releases
+
+See [release automation and installation](releases.md) for the draft release process,
+installable ZIP assets, setup and recovery. The current mod version and compatibility
+requirements are declared in [info.json](../info.json).
