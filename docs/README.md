@@ -37,5 +37,5 @@ This directory preserves the original mod's behavior and restoration research. T
 ## Releases
 
 See [release automation and installation](releases.md) for the draft release process,
-installable ZIP assets, setup and recovery. The current mod version and compatibility
+installable ZIP assets and recovery. The current mod version and compatibility
 requirements are declared in [info.json](../info.json).
